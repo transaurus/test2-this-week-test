@@ -1,0 +1,146 @@
+---
+slug: /202
+title: "This Week In React #202: Next.js, Composition, search params, PPR, useActionState, content-visibility, Astro, MDX, Storybook, Priompt, Radon, Expo, MiniSim, CSS, Bun, Deno, Node.js..."
+authors: [slorber]
+date: 09-25-2024
+---
+
+大家好！
+
+本週 React/RN 相關公告相對平靜，但我們仍有許多優質的部落格文章以及各種有趣的 Next.js 和 CSS 新聞。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![AG Grid：全球最出色的 React 數據表格](/emails/issues/202/aggrid.jpg)](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)
+
+**[AG Grid：全球最出色的 React 數據表格](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)**
+
+AG Grid 是一款快速、免費且完全可自訂的 React 數據表格。被《財富》500 強企業中的 **90%** 所採用，AG Grid 是 **100% 開源**專案，每月 **npm 下載量超過 400 萬次**：
+
+- 🆓 **免費**：永久免費使用數百種功能，包括**排序**、**篩選**、**分頁**、**單元格編輯**等。
+- **🚀 快速**：開箱即用即可顯示**數百萬個單元格**，且不影響效能。
+- **🎨 可自訂**：在單元格、行和列中添加自訂元件，並使用 **100 多個 CSS 變數**來設計每個元素的樣式。
+- 🏢 **企業級功能**：購買授權即可終身使用進階功能，包括**透視表**、**分組**、**主從視圖**和**整合式圖表**（由我們的 React 圖表庫 [AG Charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1) 提供支援）。免費試用 - 無需試用授權。
+
+了解更多：[ag-grid.com](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-1)
+
+---
+
+## ⚛️ React {#react}
+
+[![我如何打造我的部落格](/emails/issues/202/josh.jpg)](https://www.joshwcomeau.com/blog/how-i-built-my-blog-v2/)
+
+**[我如何打造我的部落格](https://www.joshwcomeau.com/blog/how-i-built-my-blog-v2/)**
+
+Josh Comeau 分享了將一個進階部落格（10 萬行程式碼）從 Next.js Pages Router 遷移到 App Router 的經驗，並給出了審慎的評價（Lighthouse 分數下降、開發伺服器變慢等）。這是一篇整體上引人入勝的 React 相關讀物，採用當下流行的呈現方式、具有互動性，且不限於 Next.js 使用者。內容涵蓋多個依賴項的細節：MDX、Shiki、Linaria、Framer-Motion...
+
+---
+
+[![元件組合非常棒](/emails/issues/202/composition.jpg)](https://tkdodo.eu/blog/component-composition-is-great-btw)
+
+**[元件組合非常棒](https://tkdodo.eu/blog/component-composition-is-great-btw)**
+
+Dominik 解釋了 React 如何重新定義「關注點分離」的概念，以及為何應優先選擇組合與提前返回，而非根據條件渲染多種狀態。我也有相同經驗：採用這種方式元件更有可能長期保持可維護性。
+
+---
+
+- 💸 [React Component Analytics — Omlet Scans Your Codebase to Measure Component Usage to Increase Code Quality and Design Systems Adoption](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-aug-2024)
+- 👀 [Next.js PR \- `@next/codemod upgrade` CLI](https://github.com/vercel/next.js/pull/69935): Next.js 15 will have a CLI to automatically upgrade your dependencies to the latest stable, RC, or canary, with the ability to run the appropriate breaking change codemods.
+- 👀 [Next.js PR \- Update Dynamic APIs to be async](https://github.com/vercel/next.js/pull/68812): APIs like `cookies()`, `headers()`, `params` are going async in Next.js 15\. The PR is still WIP but [codemods have already been merged](https://github.com/vercel/next.js/pull/69572). The breaking change is not so well-received by the community but opens the way to upcoming innovations for the Next.js team.
+- 🔐 [Next.js Cache Poisoning vulnerability](https://github.com/advisories/GHSA-gp8f-8m3g-qvj9): Only affects Page Router non-dynamic routes, fixed in 13.5.7 and 14.2.9
+- 🧑‍🎓 [Vim for React Developers](https://vimforreactdevs.com/): Free pragmatic mini-course from Lee Robinson.
+- 🧑‍🎓 [EpicReact v2 \- React 19 update](https://www.epicreact.dev/): Kent C. Dodds released a new version of his flagship React course (paid, currently 40% off).
+- 🗓️ [React Summit US](https://reactsummit.us/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇺🇸 New-York - 19 & 22 December - [Free remote tickets are available now, click here !](https://gitnation.com/badges/react-summit-us-2024/addy_osmani?from=This+Week+In+React) 10% discount with code TWIR.
+- 🗓️ [React Advanced London](https://reactadvanced.com/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇬🇧 London - 25 & 28 October - Hurry and grab your ticket to the conference as prices are about to go up ! And fon’t forget your discount with code “TWIR”.
+- 📜 [How to control a React component with the URL](https://buildui.com/posts/how-to-control-a-react-component-with-the-url): This cool interactive blog post greatly illustrates a common antipattern among React devs using search parameters. You should consider the URL as the source of truth, instead of trying to sync your state to the URL.
+- 📜 [Partial Prerendering for Everyone with Cloudflare Workers](https://sunilpai.dev/posts/ppr-for-everyone/): Former React team member Sunil Pai shared a demo of implementing PPR from scratch outside of Next.js, using React `prerender()`, `postpone()` and `resumeToPipeableStream()`. These are very experimental APIs that may change, don’t do this at home and only use this for learning/curiosity.
+- 📜 [CSS `content-visibility` for React devs](https://dev.to/sebastienlorber/css-content-visibility-for-react-devs-4a3i): I aggregated a few interesting tweets/links explaining why React devs should care about this new CSS property that can improve your app rendering performance. It’s now in all browsers and although not widely supported, can be a progressive enhancement. You could use it as a replacement or alongside a React virtualization library to improve performance and accessibility.
+- 📜 [HTMX Essay \- You Can't Build Interactive Web Apps Except as Single Page Applications... And Other Myths](https://htmx.org/essays/you-cant/): An interesting read debunking myths and explaining what’s possible to do without an SPA framework like React. The gap between MPAs and SPAs is getting thinner thanks to modern technologies: Service Workers, View Transitions, Speculation Rules…
+- 📜 [How to fetch data in React](https://www.robinwieruch.de/react-fetching-data/): Robin Wieruch refreshed his data fetching overview post listing modern 2024 practices using React Query, useEffect, use(), RSC, and tRPC.
+- 📜 [Efficient Refresh Token Implementation with React Query and Axios](https://dev.to/elmehdiamlou/efficient-refresh-token-implementation-with-react-query-and-axios-f8d): Uses Axios interceptors to automatically add an `Authorization` header and React Query `onError` callback to refresh expired tokens and retry the query/mutation.
+- 📜 [How to reset the state of useActionState in React](https://www.nico.fyi/blog/reset-state-from-react-useactionstate): Resetting the action state is surprisingly tricky.
+- 📜 [From Parcel to Vite: A short story of a 100K LOC migration](https://blog.logto.io/parcel-to-vite): Logto migrated a React frontend to Vite and shared integration details on various React-related features: MDX, SVGR, `React.lazy`, Fast Refresh…
+- 📜 [Astro Content Layer \- A Deep Dive](https://astro.build/blog/content-layer-deep-dive/)
+- 📦 [Storybook 8.3](https://storybook.js.org/blog/storybook-8-3/): Includes a first-class Vitest integration that makes Component Testing x6 faster, and a better integration with Next.js projects.
+- 📦 [Priompt \- JSX-based prompt design library](https://www.cursor.com/blog/prompt-design): I missed that AI prompting library released last year by a Cursor dev.
+- 📦 [next-view-transitions 0.3.2 \- useTransitionRouter API](https://x.com/shuding_/status/1838000183356850240)
+- 📦 [Legend-State 3.0 beta \- Signal-based state library \- Improves on computed observables, persistence, sync](https://www.legendapp.com/open-source/state/v3/)
+- 📦 [Vaultusaurus \- Tools to integrate an Obsidian Vault with a Docusaurus site, including a graph view](https://github.com/chanjunren/vaultusaurus)
+- 🎥 [Jack Herrington \- I hacked ShadCN to Create Insane React Templates and Installers](https://www.youtube.com/watch?v=NP2ULDZxpd0): The CLI can be hijacked by writing/generating your own JSON update files.
+- 🎥 [Theo \- The React "head" Drama…](https://www.youtube.com/watch?v=qmM91SnSw8w): React 19 won’t deduplicate `<title>` tags for you and you still may want to use a lib like React Helmet.
+- 🎥 [ThePrimeTime \- Remix's Concurrent Submissions Are Fundamentally Flawed](https://www.youtube.com/watch?v=Tvms2DaG8UY)
+- 🎙️ [Frontend First 196 \- Tom Occhino on the future of React](https://www.youtube.com/watch?v=ktO2OqwvgEs): A look back at the many years of innovation at Facebook that led to the creation of RSC and Partial Prerendering as a North Star. From BigPipe to GraphQL/Relay to RSC.
+- 🎙️ [PodRocket \- TanStack and TanRouter with Tanner Linsley](https://podrocket.logrocket.com/tanstack-tanrouter-tanner-linsley)
+- 🎙️ [Syntax.fm 824 \- Taylor Otwell's opinions on PHP, React, Laravel and Lamborghini Memes](https://syntax.fm/show/824/taylor-otwell-s-opinions-on-php-react-laravel-and-lamborghini-memes)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![準備好自動化您的資料擷取了嗎？](/emails/issues/202/apryse.jpg)](https://apryse.com/capabilities/extraction?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0815)
+
+**[準備好自動化您的資料擷取了嗎？](https://apryse.com/capabilities/extraction?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0815)**
+
+Apryse IDP 簡化了從 PDF 文件中擷取資料的流程。它能以高準確度和最小設定，輕鬆從財務報告或病歷紀錄中提取細節。我們的 AI 能從各種文件擷取文字、表格和表單，減少手動工作量並提升資料品質。
+
+[立即開始使用。](https://apryse.com/capabilities/extraction?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=0815)
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [Sonny Sangha - 使用 React Native 建立 Zoom 2.0 複製品](https://go.clerk.com/jBpMIuk)
+- 🐦 [React-Native-WebGPU 在 macOS 上的示範](https://x.com/SaadNajmi/status/1838295375700201720)
+- 🐦 [Tzvetan Mikov 談為 Hermes 增加 Wasm 支援的實用性](https://x.com/tmikov/status/1837600409386734037)
+- 📊 [React Native 效能評測](https://dream-sports-labs.github.io/rn-benchmarking/)：這個有趣的網站讓我們可以根據版本、架構和平台（iOS/Android）來比較 React Native 的效能
+- 🗓️ [RNLConf](https://www.reactnativelondon.co.uk/?utm_source=thisweekinreact) \- 🇬🇧 倫敦 - 11 月 14 日至 15 日 - 使用代碼 "TWIR" 可享 9 折優惠，立即購票！
+- 📜 [React Native IDE 現已更名為 Radon IDE](https://blog.swmansion.com/react-native-ide-is-now-radon-ide-cfbdad77d43c)：TL;DR 這只是出於實際原因的更名。但仍然值得一讀他們選擇這個名字的原因（提示：原子、釙）
+- 📜 [如何在 React Native 中監聽未捕獲/未處理的錯誤](https://andrei-calazans.com/posts/how-to-global-catch-errors/)：使用 `globalThis.ErrorUtils.setGlobalHandler()`
+- 📜 [如何逐步採用 Expo](https://expo.dev/blog/how-to-incrementally-adopt-expo)
+- 📦 [MiniSim 0.9 - 實體裝置支援](https://github.com/okwasniewski/MiniSim/releases/tag/v0.9.0)
+- 📦 [React Native 0.76.0-rc.2](https://github.com/facebook/react-native/releases/tag/v0.76.0-rc.2)
+- 🎥 [Simon Grimm - 為什麼 React Native 3D 不再糟糕](https://www.youtube.com/watch?v=msErROjFY08)
+- 🎙️ [React Universe On Air - Coffee Talk 21 - 如何在 React 中開始使用 3D](https://www.youtube.com/watch?v=Olh_sE0BL1s)
+- 🎙️ [Rocket Ship 50 - 新架構、JSI、原生模組與 Rust，與 Oscar Franco 一起](https://share.transistor.fm/s/01c99662)
+- 🎙️ [RNR 308 - 編程與 ADHD，與 Chris Ferdinandi 一起](https://www.reactnativeradio.com/episodes/rnr-308-coding-and-adhd-with-chris-ferdinandi)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [CSS 數值與單位等級 5 - 首次公開工作草案](https://www.w3.org/blog/CSS/2024/09/13/css-values-5-fpwd/)
+- 👀 [CSS 網格等級 3 / 磚石佈局 - 首次公開工作草案](https://www.w3.org/blog/CSS/2024/09/24/css-grid-3-fpwd/)
+- 🐦 [Web Preference API 上溯至 CSS 媒體查詢草案規範](https://x.com/sebastienlorber/status/1836698597548593350)
+- 📜 [企業環境中正確實踐 Node.js 的 9 項原則](https://www.platformatichq.com/node-principles)
+- 📜 [在 CSS 中實現 height: auto;（及其他固有尺寸關鍵字）的動畫效果](https://developer.chrome.com/docs/css-ui/animate-to-height-auto/)
+- 📜 [為何類型化 Linting 如今需要 TypeScript](https://www.joshuakgoldberg.com/blog/why-typed-linting-needs-typescript-today/)
+- 📦 [Bun 1.1.28 - 在 JavaScript 中編譯執行 C 語言，修復 React 19 SSR](https://bun.sh/blog/compile-and-run-c-in-js)
+- 📦 [ts-blank-space - 將 TypeScript 轉換為 JavaScript 的快速類型剝離編譯器](https://bloomberg.github.io/ts-blank-space/)
+- 📦 [Deno 2.0 候選版本](https://deno.com/blog/v2.0-release-candidate)
+- 📦 [Module Federation Vite 1.0](https://www.learnbydo.ing/diary/2024-09-23-module-federation-vite-v1)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/202/meme.jpg)](https://x.com/Nateemerson/status/1836537823027134744)
+
+[![alt](/emails/issues/202/meme2.jpg)](https://x.com/laszek44/status/1832024709887631384)
+
+[![alt](/emails/issues/202/meme3.jpg)](https://x.com/jarredsumner/status/1836438965664256399)
+
+下次見！ 👋

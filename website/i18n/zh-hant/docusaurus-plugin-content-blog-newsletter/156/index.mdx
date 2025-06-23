@@ -1,0 +1,146 @@
+---
+slug: /156
+title: "This Week In React #156: Server Actions, Stale Closures, React Falls Behind, Expo Builds, Suspense Throttling, React-Aria, Natuerlich, Obsidiosaurus, Expo-SQLite, Expo DevTools..."
+authors: [slorber]
+date: 08-15-2023
+---
+
+大家好！
+
+本週，我們有許多來自 React 和 React-Native 社群的文章，以及最新的 Expo Launch Party 公告。有些文章非常長，我沒有時間全部閱讀。
+
+📷 我最近忙於創建通訊的 [**Instagram 帳號**](https://www.instagram.com/thisweekinreact/)！我計劃在那裡發布視覺化的 React 新聞和技巧，包括無法收錄在此的最佳迷因 🤭。
+
+🧑 我也移除了貢獻不大的職缺專區，後續會研究如何重新整合。
+
+👥 給 React-Native 開發者：[React Native EU](https://www.react-native.eu/)（波蘭弗羅茨瓦夫，9月7-8日）提供我們 [-15% 門票折扣](https://ti.to/react-native-eu/2023/discount/thisweekinreact15)。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 查看本期通訊](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助 {#sponsor1}
+
+[![企業級 API，適用於動態消息、聊天及視訊！](/emails/issues/153/stream.jpg)](https://getstream.io/video/voice-calling/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+[**企業級 API，適用於動態消息、聊天及視訊！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+Stream 提供企業級 **API** 和 **SDK**，協助產品和工程團隊解決兩大常見規模化問題：應用內聊天和社群動態消息。
+
+透過 Stream，開發者能以遠低於從頭建構的時間，在應用中整合各類通訊或動態消息體驗。Stream Chat 讓開發者能輕鬆整合豐富的即時通訊功能。
+
+Stream 為熱門框架提供強大的客戶端 SDK，包含 [**React**](https://getstream.io/chat/sdk/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)、[**React-Native**](https://getstream.io/chat/sdk/react-native/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)、Expo、Flutter、Android、Angular、Compose、Unreal 及 iOS。
+透過 Maker 帳戶，可免費為新創或業餘專案解鎖企業級功能、函式和 UI 元件。
+
+[**試用全新的 React 視訊教學！**](https://getstream.io/video/docs/react/?utm_source=thisweekinreact&utm_medium=sponsorship&utm_content=&utm_campaign=thisweekinreact_July2023_video_klmh22)
+
+---
+
+## ⚛️ React {#react}
+
+[![React 伺服器動作最終能修復表單嗎？](/emails/issues/156/serveractions.jpg)](https://www.mux.com/blog/what-are-react-server-actions)
+
+[**React 伺服器動作最終能修復表單嗎？**](https://www.mux.com/blog/what-are-react-server-actions)
+
+對伺服器動作的絕佳介紹，這是即將推出的 React 功能，已整合至 Next.js 13.4（實驗性）。包含上傳影片與標題的簡短教學。伺服器動作可返回回應以提供使用者反饋，但顯然這還不是理想的開發體驗。
+
+在我看來，Server Actions 應以完全支援漸進增強為目標。這可能需要引入「flash」API 來管理回饋，而無需任何客戶端 JavaScript。許多後端框架已具備此功能，Remix 也提供 ([`session.flash()`](https://remix.run/docs/en/main/utils/sessions#sessionflashkey-value)) API。你可能感興趣的相關資訊：透過 [`action.$$FORM_ACTION`](https://twitter.com/sebastienlorber/status/1689921046856474625) 可擴展 React 的漸進增強行為。
+
+---
+
+- 💸 [Zero To Shipped - 掌握快節奏全端開發並**最終**交付產品](https://www.zerotoshipped.com/)
+- 🧑‍🎓 [React.dev - 使用 TypeScript](https://react.dev/learn/typescript)：新的官方文件頁面。
+- 💬 [Next.js RFC - Google 標記管理工具與 next/third-parties 中的 gtag](https://github.com/vercel/next.js/discussions/53868)：提議使用鉤子（hook）而非元件整合 Google Analytics，並可能支援 Web Worker。
+- 🐦 [Million.js 自動模式 - 影片預告](https://twitter.com/aidenybai/status/1689773623827943424)
+- 📜 [因 React 而遺忘（或從未了解）的事](https://joshcollinsworth.com/blog/antiquated-react)：針對 React 的長篇批判，認為其是過時框架。儘管[我不同意](https://github.com/josh-collinsworth/joco-sveltekit/issues/35#issuecomment-1680817566)且認為作者有失公允，仍值得一讀。
+- 📜 [精妙閉包及其在 React 中的應用](https://www.developerway.com/posts/fantastic-closures)：解釋 React 中的陳舊閉包（stale closure）問題，列舉多種觸發情境，並提出基於 `useRef()` 的解法。
+- 📜 [理解 Next.js Server Actions 的最簡範例](https://scastiel.dev/simplest-example-server-actions-nextjs)：極簡 Server Actions 範例，清晰展示如何實現 API 的 RPC 呼叫。
+- 📜 [React Suspense 節流機制解析](https://andreigatej.dev/blog/on-react-suspense-throttling/)：揭示巢狀使用 `<Suspense>` 時 React 的意外行為。
+- 📜 [停止你的 YAP 行為](https://kyleshevlin.com/quit-your-yapping)：提倡擺脫「Yet-Another-Prop」症候群，改用組合模式。
+- 📜 [Node.js 的設定地獄問題](https://deno.com/blog/node-config-hell)：Deno 對 Next.js 等專案需大量設定檔的批評。
+- 📜 [Supabase - Vercel 整合與 Next.js App Router 支援](https://supabase.com/blog/using-supabase-with-vercel)：值得研究的整合方案，包含 `createClientComponentClient` 等趣味 API 命名 😅。
+- 📜 [Astro 啟航指南](https://remotesynthesis.com/blog/lifting-off-with-astro/)
+- 📜 [使用 React Hook Form 進行表單驗證](https://claritydev.net/blog/form-validation-react-hook-form)
+- 📜 [React Testing Library 新 Lint 規則介紹](https://blog.testdouble.com/posts/2023-07-31-a-new-rtl-lint-rule/)
+- 📜 [如何搭配 Jotai 與 useTransition 處理突變](https://blog.axlight.com/posts/how-to-use-jotai-and-use-transition-for-mutation/)
+- 📜 [編碼星空 - 用 Three.js 與 React Three Fiber 打造互動星座](https://supabase.com/blog/interactive-constellation-threejs-react-three-fiber)
+- 📦 [React Aria - 8月9日更新 - HTML 表單提交/重置、DropZone、FileTrigger...](https://react-spectrum.adobe.com/releases/2023-08-09.html)
+- 📦 [Natuerlich - 適用 WebXR 體驗的可組合互動套件 - 支援 React-Three-Fiber](https://github.com/coconut-xr/natuerlich)
+- 📦 [Reakit - 2023年8月更新](https://newsletter.ariakit.org/p/all-things)
+- 📦 [Obsidiosaurus - Obsidian → Docusaurus 轉換工具](https://github.com/CIMSTA/obsidiosaurus)
+- 📦 [tw2panda - 輕鬆遷移 Tailwind 至 Panda CSS](https://github.com/astahmer/tw2panda)
+- 🎥 [為何我棄用 Next.js 選擇 Astro](https://www.youtube.com/watch?v=BoeZqPaYw9s)
+- 🎥 [Tailwind CSS 實現響應式 Framer Motion](https://www.youtube.com/watch?v=xSuxsfn13xg)
+- 🎥 [Dominik Dorfmeister：App Router 中的 React Query](https://www.youtube.com/watch?v=R4NHXrvwZWA)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![CoderPad: 在共事之前先一起編程](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)
+
+[**CoderPad: 在共事之前先一起編程**](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)
+
+聘請前端開發人員很困難 😩。但已有 4,000+ 個工程團隊——包括 Netflix、Spotify 和 LinkedIn——找到了更好的方式！🤠 跳過算法面試，**在完全可自訂的協作式 IDE 中進行前端面試**，您可以：
+
+- 拖放 React（以及 Angular 或 Vue）程式庫
+- 透過 npm install 添加套件
+- 讓候選人在面試中即時使用 ChatGPT
+- 在面試後觀看與共享程式碼回放
+
+使用 CoderPad 進行快速、公平且真實的編碼面試，獲得候選人和面試官的信任。[立即免費註冊，自信招聘](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Expo 預覽 - EAS Build 上的完全可自訂建置](/emails/issues/156/easbuild.jpg)](https://expo.dev/changelog/2023/08-10-custom-builds)
+
+[**Expo 預覽 - EAS Build 上的完全可自訂建置**](https://expo.dev/changelog/2023/08-10-custom-builds)。
+
+Expo 為 EAS Build 推出新系統，允許透過 Yaml 檔案自訂流程，提供極大靈活性以使用您選擇的 monorepo 工具（Nx、Turbo、Rush...）或添加自己的 CI 步驟。其設計類似 GitHub Actions。今日新知：EAS 似乎在 iOS 建置中使用 Fastlane。
+
+---
+
+- 👀 [Expo 概念驗證 - expo-sqlite 與 CR-SQLite 的整合](https://expo.dev/changelog/2023/08-10-cr-sqlite)：SQLite 與 CRDT 的整合，讓開發本地優先的行動應用更輕鬆。
+- 👀 [Expo 概念驗證 - Expo CLI 開發工具外掛](https://expo.dev/changelog/2023/08-10-dev-tools-plugins)：Expo 計劃推出開發工具外掛系統，並展示 Apollo DevTools 的示範，未來將取代 Flipper 外掛。
+- 🐦 [Reanimated 在 react-native-windows 上的演示](https://twitter.com/piaskowyk/status/1689982162886430721)
+- 🐦 [非同步元件 + use() 鉤子的示範](https://twitter.com/SzymonRybczak/status/1691037156712599552)
+- 🐦 [iOS 前 20 大運動類應用中，半數採用 React Native](https://twitter.com/Baconbrix/status/1690805340290301954)
+- 📜 [Web 開發者提升大型 React Native 應用啟動效能的實戰經驗](https://medium.com/engineering-udaan/reacting-to-change-tale-of-a-web-developer-improving-startup-performance-for-a-large-react-native-854f8a4850fd)
+- 📜 [在複雜應用中整合 React Native - 四部曲系列](https://www.nearform.com/blog/adding-react-native-to-a-complex-app-part-1-planning/)
+- 📜 [React Native Storybook 入門指南](https://dev.to/dannyhw/getting-started-with-react-native-storybook-96c)
+- 📜 [探索 React Native 新架構：新架構初探](https://blog.devvivek.tech/exploring-react-natives-new-architecture-a-peek-into-the-new-architecture)
+- 🎙️ [React Native Show 播客 #25 - 行動應用資料庫：React Native 與 Realm](https://www.callstack.com/podcasts/databases-for-mobile-apps-react-native-realm)
+- 👥 [React Native EU 2023](https://www.react-native.eu/) (波蘭弗羅茨瓦夫，9月7-8日) 提供 [-15% 會議門票優惠](https://ti.to/react-native-eu/2023/discount/thisweekinreact15)，優惠碼 "thisweekinreact15"。
+
+---
+
+## 🔀 其他 {#other}
+
+- 📣 [Gecko (Firefox) - 擬實作 :has 選擇器](https://twitter.com/intenttoship/status/1690045325539520523)
+- 📜 [網頁瀏覽器基準線的意義](https://thenewstack.io/what-does-it-mean-for-web-browsers-to-have-a-baseline/)
+- 📜 [棄用 unload 事件](https://developer.chrome.com/blog/deprecating-unload/)
+- 📜 [包含所有 HTML 元素的部落格文章](https://www.patrickweaver.net/blog/a-blog-post-with-every-html-element/)
+- 📜 [版面位置如何影響三大網頁效能關鍵](https://performance.shopify.com/blogs/blog/how-layout-position-impacts-three-big-web-performance-levers)
+- 📦 [TypeScript 5.2 RC 發布](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2-rc/)
+- 📦 [Zod 3.22 - 新增 readonly()](https://twitter.com/colinhacks/status/1691172205516984322)
+- 👥 [ViteConf 2023 - 10月5日舉行](https://viteconf.org/23/)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/156/meme.jpg)](https://twitter.com/DanStepanov/status/1689511613026775040)
+
+再會！👋

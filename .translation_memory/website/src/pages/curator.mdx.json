@@ -1,0 +1,826 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "src/pages/curator.mdx",
+  "source_file_content_hash": "8edcf5df956b2587c16163b02d51a1331d34b345f71d40577100bcffcf375261",
+  "segments": [
+    {
+      "segment_id": "76e4a56a",
+      "source_content": "# This Week In React - Curator Job",
+      "source_content_hash": "d644d5584da594816dca0ef70c8dc00d59cfaa83c7b2528e7efde163d85edb16",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "# This Week In React - 策展人職位說明"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "faebdc62",
+      "source_content": "I initially created [This Week In React](https://thisweekinreact.com/) as a curation newsletter helping React devs stay up-to-date with ecosystem news.",
+      "source_content_hash": "97dc24c37909bf237f549573c8158b779c6b0cefcf3122aadad54f0423114a15",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我最初創建 [This Week In React](https://thisweekinreact.com/) 作為策展型通訊，協助 React 開發者掌握生態系最新動態。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e7ec8f99",
+      "source_content": "The long-term goal is to become a real community-driven media for React and React Native developers (similar to CSS-Tricks). I’d like it to be more than a weekly email with a list of links.",
+      "source_content_hash": "bcbeb58e8a3c63f7099ba748e355d0c2405142617311236d983507e21a4d8f4d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "長期目標是成為真正由社群驅動的 React 與 React Native 開發者媒體（類似 CSS-Tricks）。我希望它不僅是每週發送連結清單的電子報。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "To do that, I need to delegate, and would like to recruit newsletter collaborators to help me produce the weekly issues.",
+      "source_content_hash": "a6f2ec5142d85f55fe6a678f567f6327768d7b00ff4e6facb697768481a8ed68",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "為達成此目標，需要委派工作並招募協作夥伴協助產出週期內容。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "53eaf0e1",
+      "source_content": "This is **real work**: you get paid, need to be **reliable**, and be willing to spend **14-18h of work on a single email**.",
+      "source_content_hash": "49ad90c12f153c0d6ae8d3feb23130db9c188bd23c6ce7f193cab7fbd955ac67",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這是**實際工作**：您將獲得報酬，需具備**可靠性**，並願意為單期電子報投入**14-18小時工作量**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8a5f6a7b",
+      "source_content": "## Benefits for This Week In React",
+      "source_content_hash": "f31f8d817b41b13cce2a30f455df8b221f220435e43e6413a5a40144772ff9fe",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 對 This Week In React 的益處"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "180bddb1",
+      "source_content": "My main goals for this recruitment are:",
+      "source_content_hash": "8f84d1afa023cc10cd6a9f2b5a0a7ad46b955f7250653aa0f9e36c56e520dabb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本次招募的主要目標："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4269e691",
+      "source_content": "- Having a reliable a backup when I take holidays, to avoid burnout\n- Making the media look professional with 50+ issues per year\n- Making the media more community-driven\n- Making the media more diverse by rotating authors\n- Freeing up time to develop the media further\n- Ensuring the quality of the newsletter stays high",
+      "source_content_hash": "8ae560af450420e3194ad528cd5bab4b0406e05e3d3705a0dfd4b92362268ac8",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 建立可靠備援機制，避免我休假時出現斷更導致倦怠\n- 透過每年 50+ 期內容塑造專業媒體形象\n- 強化媒體的社群驅動屬性\n- 透過輪替作者提升多元性\n- 騰出時間深化媒體發展\n- 確保通訊品質維持高水準"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "I've been doing this almost alone for five years now, and what was fun at first can become a burden in the long run. I’d like to choose when I want to publish a curation newsletter, instead of being forced to. I’d like to remove myself from the equation so that the project can eventually outlive me.",
+      "source_content_hash": "b866be0e9945a0c48c51ee105c2dba436d5bc8220023785edecce1a2f9d4bec3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "近五年我幾乎獨力運作，初期有趣的事可能成為長期負擔。我希望能自主決定發布時機而非被迫產出，最終讓專案能脫離個人獨立運作。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## Benefits for our guest curators",
+      "source_content_hash": "bdf622027ac5d783bd604d517d95f4bf8792f1f4b55bf29dd30b87cbcf72cf42",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 客座策展人的收益"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "The main benefits you get:",
+      "source_content_hash": "068943f5f0bb62043e21f75404e8511d69ab87861d8e2d746b02062269882a31",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "您將獲得的主要收益："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1d13125b",
+      "source_content": "- Being **paid correctly** for each issue sent\n- Contributing to your **personal branding** and the **visibility** of your company ([example issue written by guest curators](https://thisweekinreact.com/newsletter/206))\n- Giving back to the community, contributing to a useful project",
+      "source_content_hash": "99bf23f9ebdc955ef5a49f9b6e90a6ff9526a42305f6a4401c1243d7e4c61f0e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 每期通訊獲得**合理報酬**\n- 提升**個人品牌**及所屬**企業能見度**（[客座策展人範例](https://thisweekinreact.com/newsletter/206)）\n- 回饋社群，貢獻於實用專案"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "I’m open to discuss the benefits you get if you have fancy ideas. As long as it’s a win-win.",
+      "source_content_hash": "c9d6b192f0888273ddd2050477295b5d5f150b289db5d158c75743c193d2e8c5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "若有創新想法，我樂於討論其他收益方案，前提是達成雙贏。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1b3d8cb",
+      "source_content": "## The ideal candidate",
+      "source_content_hash": "81cd25795714667d90fa076a58c37818e77943fd0696189ff5ffd2879d82b1f2",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 理想人選特質"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "I’m looking for someone who:",
+      "source_content_hash": "e0aa8ddeff13830aa854000fba2702f1302a83307fbba5ca85450e3abd697385",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我正在尋找符合以下條件者："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "157151e9",
+      "source_content": "- **Takes it seriously**, is **super reliable** and willing to do that job in the **long term**.\n- Can take **full ownership** of a single email. Remember: I’ll be on holiday and will just be there to hit send\\! You will be on your own, in my shoes.\n- Can comment on **both React and React Native news**, and provide interesting, **senior-level insight**.\n- Can spend **\\~16h on a single email** once a month. Really, **it’s not a joke**, you can’t do that as a side project and need to **schedule that time** on your agenda.\n- Can follow my curation process to find interesting links through various sources (RSS, X, organic…)\n- Read the newsletter regularly, and understand the target audience.\n- Can follow my editorial line and formatting guides.\n- Can communicate properly and simply in English, but it doesn’t need to be perfect and you can use LLMs if you want. I’m not a native speaker and it’s ok.",
+      "source_content_hash": "d05d652f5c4acdf17e1777e55a3ee6f7b1ab1640704599c1e08ba5b751e7a1b4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 態度**嚴謹認真**，具備**高度可靠性**並願意**長期投入**\n- 能**完全負責**單期電子報（記住：我度假時僅負責按下發送鈕！您將獨當一面）\n- 能針對**React 與 React Native 動態**提供具**資深水準的深度見解**\n- 每月願為單期電子報投入**約 16 小時**（鄭重聲明：**這非玩笑性質**，無法以業餘時間完成，需**預留時程**）\n- 能遵循我的策展流程，透過多元來源（RSS、X、有機渠道等）挖掘優質連結\n- 定期閱讀本通訊，理解目標受眾輪廓\n- 遵循編輯方針與格式規範\n- 具備基本英語溝通能力（可借助 LLMs 工具），非母語者完全可接受"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "Yes, I’m looking for a 5-legged sheep 😅",
+      "source_content_hash": "d37cf8b5ee9b27a21bed949ab97ddee94c953b5cc9bf68bafb4398d97397319e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "沒錯，我在找尋五腳羊啊 😅"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "The ideal candidate might not be a single person, but a React service company providing a duo of contributors. The advantages for me:",
+      "source_content_hash": "54cd5fbba36814f2513d02437888485891676488f3dd043d9fe47e1c2105442a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "理想人選可能非單一個人，而是能提供雙人協作團隊的 React 服務公司，其優勢在於："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ddd2c7ae",
+      "source_content": "- They usually take it seriously, with a long-term marketing vision.\n- They know how to manage developers and book the appropriate time in their agendas.\n- They can take ownership of an issue and care about their reputation.\n- They can provide a stable duo with distinct expertise to cover both React web and React Native\n- They can find a backup in case one of them takes holidays or doesn’t want to contribute anymore",
+      "source_content_hash": "6dae81f198153826cf646902d6d6c63abf7d4abe35a598780434dc1fa3ff39ed",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 通常具長期行銷視野並嚴肅對待\n- 擅長開發者管理與時程規劃\n- 重視聲譽且能承擔責任\n- 可組建兼具網頁/原生開發專長的穩定雙人團隊\n- 成員休假或退出時能提供備援"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "I remain open to individual contributors, but I believe companies are a better fit. I already work with [Theodo Apps](https://apps.theodo.com/) successfully ([example](https://thisweekinreact.com/newsletter/206)).",
+      "source_content_hash": "76d470b5dd9a5864c9e1696176de4e97d70ea54be77be872bb4c5febaaf45d85",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我仍開放個人申請，但認為企業合作更為合適。目前與 [Theodo Apps](https://apps.theodo.com/) 的合作相當成功（[範例](https://thisweekinreact.com/newsletter/206)）。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7283cdac",
+      "source_content": "## Onboarding",
+      "source_content_hash": "7ca9c2b308e2b3dbec0c41c9fad93c1e620158baec10d0f6d09caef6a89af858",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 入職流程"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1131ef75",
+      "source_content": "So far, the onboarding has been:",
+      "source_content_hash": "6c6e67aa219552307c08d566e448924e4b4b763e74885a476d462e2aa589d4fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "截至目前，入職流程如下："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ea0c7bae",
+      "source_content": "- You introduce yourself (or your company’s employees), explain why you think you are a good fit.\n- We run a test (paid), and assign you 2 test issues on our [newsletter calendar](https://thisweekinreact.com/calendar), weeks in advance.\n- We do an onboarding call so that I can explain the process .\n- I give you access to my curation tools to source links (RSS reader).\n- We work collaboratively on the 1st test issue so that you get used to the process and understand the subtleties.\n- You take full ownership of the 2nd test issue. I’ll answer questions and provide feedback, but you’ll do the majority of the work in autonomy.\n- We review the work. It will never be perfect, but If I’m not ashamed of the email we sent, then it’s working and likely to improve in the future.\n- We can define other dates you take ownership of.",
+      "source_content_hash": "4c248bf60ec1c8bcf41fc9bee640806a1fdb720b9a79bcba6bec3281d4ed0073",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 您自我介紹（或介紹貴公司員工），說明為何認為自己是合適人選\n- 我們進行付費測試，提前數週分配 2 期測試版通訊至[通訊行事曆](https://thisweekinreact.com/calendar)\n- 我們進行入職通話，以便我解說流程\n- 我提供您存取我的策展工具（RSS 閱讀器）以蒐集連結\n- 我們協作完成首期測試版通訊，讓您熟悉流程並掌握細節\n- 您全權負責第二期測試版通訊。我會解答問題並提供回饋，但您需自主完成主要工作\n- 我們檢視成果。雖無法完美，但只要我對發送的郵件不感慚愧，即表示運作正常且未來可持續優化\n- 我們可規劃您後續負責的其他日期"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "047c2395",
+      "source_content": "## The process",
+      "source_content_hash": "da5d82935e1959f53df2180c247f5081ce2b2fd3eac48b00d2166f59fb961993",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 流程"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "883231d4",
+      "source_content": "**TLDR**: the newsletter curation process usually starts on Mondays, and we send the newsletter on Wednesdays evening (\\~17h UTC \\- \\~9am PST). You have the responsibility to ensure that the email is 100% ready to be sent on Wednesday. Usually, it takes \\~16h of work in total, that you can eventually parallelize between 2 devs.",
+      "source_content_hash": "05092435e760acb0e93cbc300cd1cfeb272a93aeadba6deeb0968367be3b2e38",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**摘要**: 通訊策展流程通常週一開始，週三傍晚（約 UTC 17:00 - PST 9:00）發送。您需確保郵件在週三前 100% 準備就緒。通常總工時約 16 小時，可由兩位開發者並行分工。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "**Main steps:**",
+      "source_content_hash": "ad683be1afdf35cf37092fc0dd5c193a3619874f24a5aafe2793bad56d30432b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**主要步驟:**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6384b3d4",
+      "source_content": "- Planning weeks in advance the issues you’ll take ownership of\n- Sourcing roughly interesting links on X, RSS, web and organic sources\n- Adding those links to a collaborative Google Docs\n- Reviewing these links, formatting them and filtering uninteresting ones\n- Commenting the most interesting links\n- Selecting headlines\n- Selecting a meme, preferably related to the news\n- Creating a title with React / RN keywords\n- Creating an intro text\n- Converting to MDX\n- Pushing to Git and publishing the online version\n- Helping spread the word about the newsletter on social platforms",
+      "source_content_hash": "2a3498f1612db599e92616eacd422afc5e89461d8e7e923fe0efaa555379fffb",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 提前數週規劃您負責的通訊期數\n- 透過 X、RSS、網頁及自然來源初步蒐集有趣連結\n- 將連結新增至協作 Google 文件\n- 審閱連結、格式化並過濾無價值內容\n- 對精選連結添加評論\n- 選定頭條新聞\n- 挑選迷因（最好與當週新聞相關）\n- 創建含 React/RN 關鍵字的標題\n- 撰寫導言\n- 轉換為 MDX 格式\n- 推送至 Git 並發布線上版\n- 協助在社群平台推廣通訊"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "**This remains under my responsibility:**",
+      "source_content_hash": "9a0db69af124bc900f95a693f40e297b2c848c0dbac4f450e78b1eb13fd31d75",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**以下仍由我負責:**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d0b8a6db",
+      "source_content": "- Managing newsletter sponsors and ad placements\n- Converting the web newsletter to the email version and hitting send",
+      "source_content_hash": "10f64557f959d29f670151f681af837a0ea0aa9fc9cd5411bcb5bcbaeb10b92f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 管理通訊贊助商及廣告版位\n- 將網頁版通訊轉換為郵件格式並發送"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "**To be defined:**",
+      "source_content_hash": "b409621d8cf38b27d1bb1677a29a1430f112ffcd45153b93dcb4aa83942239fd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**待定事項:**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cfea4c31",
+      "source_content": "- Publishing a X thread or an article\n- Publishing on Bluesky, Reddit, LinkedIn and other platforms",
+      "source_content_hash": "11609d8315de91c4f193a987ecc3029e192b191ea226233b000b562d44ac7487",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 發布 X 主題串或文章\n- 發布至 Bluesky、Reddit、LinkedIn 等平台"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "Months in advance, we look at the [newsletter public calendar](https://thisweekinreact.com/calendar) to define which dates you will contribute to.\nOnce we decide on a date, you become the planned author of this newsletter, and you **must book \\~2 days of work** in your calendar to work on it.",
+      "source_content_hash": "d8c6a89f6eeeb149dbcc4d116d5af89aa94147e489bbbcd6f4cead1204ad7a32",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們提前數月查看[通訊公開行事曆](https://thisweekinreact.com/calendar)，確定您負責的日期。日期確認後，您即成為該期通訊指定作者，且**必須預留約 2 個工作日**進行製作。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "71169a2d",
+      "source_content": "## Curation process",
+      "source_content_hash": "23830157d10de19a02f841043565888a8e4520580ce1920947a939af4c0bcbb1",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 策展流程"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c1eaf30b",
+      "source_content": "The sourcing process is quite predictable:",
+      "source_content_hash": "7bb1f7663fd2d78572e3b4c5e8bc5ecd9846159d73eac3d071f46a585d23e2c2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "來源蒐集流程具高度可預測性:"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7a3b7c62",
+      "source_content": "- Scroll the last 7 days on this [X chronological timeline](https://slo.im/x/feed) (bookmark the redirect `https://slo.im/x/feed`)\n- Get access to my 500+ RSS feeds to monitor",
+      "source_content_hash": "ccc51b39c6a7d9f6bdc90d8a980ec5b94d1e8b43714a6d7634a1032685823c02",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 滾動瀏覽此[X 時間軸](https://slo.im/x/feed)近七日內容（書籤重定向網址 `https://slo.im/x/feed`）\n- 取得我 500+ 個監控用 RSS 訂閱源的存取權"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "You can also find interesting things your own way, organically or predictably, and help me refine this process over time. If you find interesting sources that we don’t track yet, we need to start tracking them.",
+      "source_content_hash": "0e33d2a3455a22a4c5cae07e566b12cbf3b0e8a9885bc3126a0a2dec31b60024",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "您亦可透過自有方式（自然或系統化）發掘有趣內容，協助持續優化此流程。若發現未追蹤的優質來源，需即時納入追蹤清單。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8574d51c",
+      "source_content": "## Editorial line",
+      "source_content_hash": "43c0ac2cc215f1e83e5282e8526b8c08adc89a6d8ceca437f4625955dc813725",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 編輯方針"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "**General idea:**",
+      "source_content_hash": "8f1bb5f0d48fb4b451e7cfd7bd05bc0dba47b957692a06bd9a6a1eaed1c07772",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**核心原則:**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2890f5b2",
+      "source_content": "- For **mid/senior React and React Native dev**, but not limited to React links.\n- **Fresh content**. 1 month is old already, we probably already covered it.\n- **Weak signals** to understand what the future will look like.\n- **Event-driven content**, such as a new release, a new project, a new docs page.\n- Be the **pulse of the ecosystem** instead of being a discovery tool for all the React npm packages.",
+      "source_content_hash": "affba3714863cd3b4cc38d68847d147860d1ade9c480b96b46559b9ce231ed1a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 針對**中高階 React 及 React Native 開發者**，但不限 React 相關連結\n- **新鮮內容**。一個月前的資訊即屬過時，通常已涵蓋\n- **捕捉弱訊號**以預見未來趨勢\n- **事件驅動內容**，例如新版本發布、專案啟用或文件更新\n- 成為生態系**脈搏監測器**，而非單純的 React npm 套件探索工具"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "**What to prefer:**",
+      "source_content_hash": "2aaf0fe40f7577c4831cffa9e9fa6e476ba71569eaffc3743f9651d8b45ddf5e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**優先選擇:**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82abb0a4",
+      "source_content": "- Content focusing on a **single idea** explaining a concept in **depth**.\n- Content focusing on **React core techniques**, broadly applicable by a large audience.\n- Content presenting **novel**, **innovative** or **underrated** techniques.\n- Content covering **niche topics** and **weak signals** when presented well or impactful.\n- Content with **outstanding presentation effort** and great **reading experience** such as interactive articles.",
+      "source_content_hash": "962df864d5a37ef30cc6140911f978a405a255e7b3b48a3a5188d85afb616d9e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 專注**單一概念深度解析**的內容\n- 探討**React 核心技術**且具廣泛適用性的內容\n- 呈現**新穎**、**創新**或**被低估**技術的內容\n- 針對**利基主題**與**弱訊號**且呈現優良/具影響力的內容\n- 具**卓越呈現效果**與**流暢閱讀體驗**的內容（例如互動式文章）"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "**What to avoid:**",
+      "source_content_hash": "47ad408da8f75d13f77745f0dd56c4ecbff560b2dcc38c0eb349b2a7b026087c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**我們要避免的內容：**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d8460b5b",
+      "source_content": "- Filter content produced by AI, for obvious SEO reasons, listicles, and other low-quality articles.\n- Filter content behind a paywall, requiring auth or having a bad reading UX.\n- Filter content for junior developers, basic 101s, step-by-step tutorials, paraphrasing official documentations with no added value.\n- Filter content teaching how to use a paid product (we have sponsorships for that), unless it is not too promotional and teaches something valuable about React core along the way.\n- Filter most UI libs and boilerplates, There simply are too many. The exception is when they prove high traction, a long-term maintenance commitment or come from an authority. We don’t cover “launches” for these but might cover v10 once it becomes mainstream and has proven its value to the community.\n- Filter weak signals that are too weak: if you don’t even understand it, can’t explain its impact with simple words, or think only a dozen people will benefit from a link, maybe it’s too soon, or not worth including that link.\n- Avoid X/Twitter thread/conversation links whenever possible: they require signups. Prefer external links. Eventually, individual tweets are fine if they contain all the information, a link, or a video demo.",
+      "source_content_hash": "055904733ea9a9ce17b2c88dcf26ea9c17c7ebe576536715d26e5fa131612a54",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 過濾人工智慧生成的內容（基於SEO考量）、清單式文章和其他低品質文章\n- 過濾需付費訂閱、需登入驗證或閱讀體驗不佳的內容\n- 過濾針對初階開發者的內容、基礎教學、逐步操作指南、單純複述官方文件而無附加價值的內容\n- 過濾教學如何使用付費產品的內容（我們有贊助機制處理這類需求），除非內容不過度推銷且能傳授React核心有價值的知識\n- 過濾大多數UI函式庫和樣板工具，數量實在太多。例外情況是當它們證明具高關注度、長期維護承諾或來自權威來源。我們不報導這類工具的「發佈消息」，但可能在其v10版本成為主流並證明社群價值時進行報導\n- 過濾過於薄弱的弱訊號：若您無法理解內容、無法用簡單語言解釋其影響，或認為僅少數人受益，則可能為時過早或不值得收錄\n- 盡可能避免X/Twitter串文/對話連結（需帳號登入）。優先選擇外部連結來源，個別推文若包含完整資訊、連結或影片演示則可接受"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "Exceptions can always be made for content with an outstanding presentation effort. An interactive article explaining basic React concepts is fine for example: it’s a great resource our target audience (senior devs) might share with their junior colleagues.",
+      "source_content_hash": "aa7e2b66ef7663982ca377ac4a04bd576599454d89bd12be51a2a205f892224c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "對於呈現效果極佳的內容可例外處理。例如解釋基礎React概念的互動式文章就非常合適：這是我們目標受眾（資深開發者）可能分享給初階同事的優質資源"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "734d40d8",
+      "source_content": "## Content",
+      "source_content_hash": "8a7454c28fea26099276cbed1827658cd2a47942d6ef32e76e645c81358bf357",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 內容"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "The newsletter contains a lot of links, because the React ecosystem is thriving.\nInstead of filtering links more aggressively, we optimize for providing a good reading experience despite the information density.\nThe content should be consistent, easy to scan, and information should be “inlined” whenever possible.\nWe don't want to bait someone into clicking on a link and then disappoint them.\nReading the newsletter should provide value despite not clicking a single link.",
+      "source_content_hash": "effc7bf887306e9f58c8ebdd3d5521b78da96da066c30754cf8642d12f5481da",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本通訊包含大量連結，因React生態系蓬勃發展。\n我們不採取更嚴格過濾，而是優化資訊密集度下的閱讀體驗。\n內容需保持一致性、易於掃讀，並盡可能「內嵌」資訊。\n避免引誘點擊連結卻造成失望。\n即使不點擊任何連結，閱讀通訊本身也應提供價值"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cd8185f",
+      "source_content": "### Sections",
+      "source_content_hash": "a2f0ac7e53340af5c96964e983ccdfda96baf0a41dbb372942e5c1ab22ab2bf7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### 章節"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3e8f45da",
+      "source_content": "The newsletter has 5 main sections:",
+      "source_content_hash": "3ca82f69fd3bfbd57f08c6da56a87590b8d88bc648afd36e26f4d124d50b4909",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "通訊包含5個主要章節："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1852dfef",
+      "source_content": "- Intro: a small recap of the news\n- React: for content relevant to all React devs, and React web devs\n- React Native: for content relevant to React Native devs\n- Other: for content relevant to a broader JS audience, including TS, CSS, TC39, HTML, tooling and more\n- Fun: 1-3 memes or fun screenshots, preferably related to React (private joke) and the news of the current week.",
+      "source_content_hash": "a8f216e735abed14fda5696d383ae0ba303bfc324e3ded3ed137147ef558ba0f",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 導言：新聞簡要回顧\n- React：適用所有React開發者及網頁開發者的內容\n- React Native：React Native開發者相關內容\n- 其他：更廣泛JS受眾內容，含TypeScript、CSS、TC39、HTML、工具鏈等\n- 趣聞：1-3則迷因或趣味截圖，優先選擇與React（內部梗）及當週新聞相關"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c6dd548",
+      "source_content": "### Headlines",
+      "source_content_hash": "690b8cbd3579b5721bed201f4e9b52a2b01cacd453bb0d59169c3e6b48e9a937",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### 頭條"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6f08f877",
+      "source_content": "We usually pick:",
+      "source_content_hash": "2ae87e878d9cd3639bd2992fcd58d40c24bfeb1f26e6fa2f3ab52cba75a95615",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們通常挑選："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25215977",
+      "source_content": "- 1 React headline\n- 1 React Native headline",
+      "source_content_hash": "2d29907ce38bbe5586e3d0dfda2745e9affdb57ab7712dc9f9bd25a9c617133e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 1則React頭條\n- 1則React Native頭條"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fd7ed056",
+      "source_content": "Each headline usually has a top banner image.\nIt’s preferable to pick one that represents something meaningful visually (such as a code screenshot) but a beautiful social card is ok too.",
+      "source_content_hash": "67b9164aa3dc56afe2e998eb3de1f910e898b05c5761810e2002cad2082101e6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "每則頭條通常配有頂部橫幅圖。\n優先選擇具視覺意義的圖像（如程式碼截圖），精美社群卡片亦可接受"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "827eb9a3",
+      "source_content": "Sometimes there is no clear headline for a section, sometimes there are 2\\.\nSometimes we pick a headline for the Other section.",
+      "source_content_hash": "bd326818c42625a9cc8c099c9c3843ee07e1e99e442acb308866d704c8a02fc1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "有時某章節無明確頭條，有時則有2則。\n偶爾會為「其他」章節挑選頭條"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "191265da",
+      "source_content": "### Formatting",
+      "source_content_hash": "0f5872898578063512b09f4bf45f170b75718ebd86480f8e81b40a56711ba1ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### 格式"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "85ea22dd",
+      "source_content": "All links usually follow the following convention for most links:",
+      "source_content_hash": "68e46e34e38d5932c97e69822172dd00993505f32e6a74aa1a172f4d120cb46b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "多數連結遵循此格式："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "db79148c",
+      "source_content": "- \\<Emoji\\> [Link title](https://example.com): Optional subjective comment.",
+      "source_content_hash": "c9d18ece70297e427a5e6fdd6583d56934bc0cebe636c71e11f8e802a29b1d7c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- \\<表情符號\\> [連結標題](https://example.com)：可選主觀評論"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "674abb31",
+      "source_content": "If a title is too long, click-baity or weirdly capitalized, feel free to refactor it so that all titles are relatively consistent.",
+      "source_content_hash": "f7b024b02dff7a41be0ee31414acc454c6e67b571ae38767bd047867095f710c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "若標題過長、屬點擊誘餌或大小寫異常，可調整格式使所有標題保持相對一致"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9ef42155",
+      "source_content": "For releases, we drop the “v” and the patch number (3.1, not v3.1.9). Include the major release highlight keywords directly in the link, separated with a dash `-`. Don’t include a release if there’s nothing interesting to highlight, which is often the case for patch releases. What’s “inside” the link is the “objective” part (the highlights), what’s “outside” is your subjective comment (if any). Examples:",
+      "source_content_hash": "a3529a0c13e9f9f41f5df5147d78412c862c0cce5730b9f549124fb71e7a34db",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "版本發佈資訊需省略「v」和修訂號（例如3.1而非v3.1.9）。將主要更新亮點關鍵字直接包含在連結標題中，以短橫線`-`分隔。若無值得強調的更新（常見於修訂版），則不收錄。連結「內部」為「客觀」部分（更新亮點），「外部」為主觀評論（若有）。範例："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d0f2205c",
+      "source_content": "- 📦 [Astro 5.2 \\- Tailwind 4 support, trailing slash redirects, option to disable React streaming](https://astro.build/blog/astro-520/): Streaming might be incompatible with runtime CSS-in-JS libraries.\n- 📦 [Nextra 4.0 \\- Now using App Router](https://the-guild.dev/blog/nextra-4)\n- 📦 [React Scan 0.1.2 \\- Re-render history, components tree](https://github.com/aidenybai/react-scan/releases/tag/v0.1.2)",
+      "source_content_hash": "258596e72d69a440739c8ed3594d3b78133ed72f3ba32c8c645cb92345a4a5bb",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📦 [Astro 5.2 - Tailwind 4 支援、尾部斜線重新導向、停用 React streaming 的選項](https://astro.build/blog/astro-520/)：串流可能與 runtime CSS-in-JS 函式庫不相容。\n- 📦 [Nextra 4.0 - 現採用 App Router](https://the-guild.dev/blog/nextra-4)\n- 📦 [React Scan 0.1.2 - 重新渲染歷史紀錄、元件樹狀結構](https://github.com/aidenybai/react-scan/releases/tag/v0.1.2)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5cf1bce4",
+      "source_content": "If it’s a rather new project featured for the first time, you can avoid the version number, and replace keywords by an objective project description (inspired by GitHub repo description, landing page, SEO tags):",
+      "source_content_hash": "fffcbc935da39ad08aa00bb76e3ee90fd7958b2f45b072c05ad7b4d59cb35f2d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "若為首次收錄的新專案，可省略版本號，並以客觀專案描述取代關鍵字（靈感來自 GitHub 儲存庫說明、登陸頁面、SEO 標籤）："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92dd525e",
+      "source_content": "- 📦 [Polygen \\- Run WebAssembly modules in your apps, statically, without interpreting](https://github.com/callstackincubator/polygen): This Callstack package in preview converts Wasm to C and then call it through JSI to deliver great performance.\n- 📦 [React Three Handles](https://pmndrs.github.io/xr/docs/handles/introduction): A new convenient package to build React XR interactions.\n- 📦 [mdx-prompt \\- Composable LLM Prompts with JSX](https://edspencer.net/2025/2/3/mdx-prompt-composable-prompts-with-jsx)",
+      "source_content_hash": "8a0ff16c71b005e4d6c5dbbb61e0b4c4d9e2b86ed77702bce887be866b505ce7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📦 [Polygen - 在應用程式中靜態執行 WebAssembly 模組，無需直譯](https://github.com/callstackincubator/polygen)：此 Callstack 預覽套件將 Wasm 轉換為 C 語言，透過 JSI 調用以實現卓越效能。\n- 📦 [React Three Handles](https://pmndrs.github.io/xr/docs/handles/introduction)：用於建構 React XR 互動的新型便利套件。\n- 📦 [mdx-prompt - 使用 JSX 組合式 LLM 提示](https://edspencer.net/2025/2/3/mdx-prompt-composable-prompts-with-jsx)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b27c61de",
+      "source_content": "Here’s the emoji palette we generally use",
+      "source_content_hash": "530ea6f7fc5626866727484916c44539ff00182d0b68db9915ecf27a704aa0ad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "以下為我們通常使用的 emoji 對照表"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e612e1d0",
+      "source_content": "- 💸: sponsors\n- 👀: preview, PR, weak signals\n- 💬: RFC, community discussion\n- 📊: survey, benchmark\n- 💡: interesting idea\n- 📖: docs\n- 🦋: Bluesky links\n- 🐦: Twitter/X links (avoid if possible)\n- 🎨: visual demos (posted outside X)\n- 📅: events, conference partnerships\n- 📜: articles\n- 📦: releases, npm packages plugins, repositories\n- 🔗: resources\n- 🎥: videos\n- 🎙️: podcasts",
+      "source_content_hash": "ca1a8cb89d24b823b8034e2ec4780439ef1fb39ff8e48d4edcfcad4b77ca6756",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸：贊助內容\n- 👀：預覽、Pull Request、弱訊號\n- 💬：RFC、社群討論\n- 📊：調查、基準測試\n- 💡：創新概念\n- 📖：文件\n- 🦋：Bluesky 連結\n- 🐦：Twitter/X 連結（盡可能避免）\n- 🎨：視覺化演示（非 X 平台發布）\n- 📅：活動、會議合作\n- 📜：文章\n- 📦：版本發布、npm 套件、外掛程式、儲存庫\n- 🔗：資源\n- 🎥：影片\n- 🎙️：播客"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1f9058cd",
+      "source_content": "We usually respect more or less this “emoji ordering”, leading to a consistent reading order:",
+      "source_content_hash": "0d86a8870298d58406877be3c05c3741bbe0d42fe52f7455d81588cf20a8a432",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們通常大致遵循此「emoji 排序原則」，以維持一致的閱讀順序："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fc1505a1",
+      "source_content": "- headlines\n- weak signals\n- community articles\n- media resources",
+      "source_content_hash": "7869c2490447c70d169f19a251eabb0bd609e3cc535b47a92fa7b17e4b25ad6a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 頭條新聞\n- 弱訊號\n- 社群文章\n- 媒體資源"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c277c3c0",
+      "source_content": "Example:",
+      "source_content_hash": "872887e563e75957ffc20b021332504f2ddd0a8f3964cb93070863bfaf13cdad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "範例："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4fbee4f2",
+      "source_content": "- 💸 [Add a collaborative document editor to your app](https://convex.link/0dtC5qE)\n- 👀 [Remix PR \\- Split Route Modules](https://github.com/remix-run/react-router/pull/11871): Introduce new `future.unstable_splitRouteModules` flag so that the route component and its clientLoader can be downloaded in parallel instead of sequentially.\n- 🗓️ [Paris TypeScript La Conf'](https://la-conf.typescript.paris/?utm_source=thisweekinreact) \\- 🇫🇷 Paris \\- 28 February \\- Last call to join the first ever TypeScript conference in the heart of Paris\\! Get 20% off tickets with code \"TWIR\"\\!\n- 📖 [Integrate Motion with Radix](https://motion.dev/docs/radix): New docs page presenting integration examples for exit and layout animations.\n- 📜 [Single Responsibility Principle in React: The Art of Component Focus](https://cekrem.github.io/posts/single-responsibility-principle-in-react/): I agree with this practice of designing your React app in “layers”.\n- 📜 [Persisting Form Data in React: A Modern Approach with Nuqs](https://armand-salle.fr/post/persisting-form-data-in-react-a-modern-approach-with-nuqs/): Introduces a convenient lib to use search parameters in a typesafe way with integrations for Next.js and React Router.\n- 📦 [Astro 5.2 \\- Tailwind 4 support, trailing slash redirects, option to disable React streaming](https://astro.build/blog/astro-520/): Streaming might be incompatible with runtime CSS-in-JS libraries.\n- 📦 [React Scan 0.1.2 \\- Re-render history, components tree](https://github.com/aidenybai/react-scan/releases/tag/v0.1.2)\n- 🎥 [Theo \\- Create React App is finally dead](https://www.youtube.com/watch?v=aujVi7ipkfM)\n- 🎥 [Jack Herrington \\- Stop Using Recoil, Use This Instead\\!](https://www.youtube.com/watch?v=QepeuHTxiLo)\n- 🎙️ [This Month in React 2025-01 \\- Movement on CRA, Redwood.js dead?](https://open.spotify.com/episode/45LTSjvCA5k5YAC7EM4ixk)",
+      "source_content_hash": "d5502d4c92cf5462795283902c28c619fdbbfef8b1c0e58b6ae1e017c7fa3845",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [為您的應用添加協作文件編輯器](https://convex.link/0dtC5qE)\n- 👀 [Remix PR - 拆分路由模組](https://github.com/remix-run/react-router/pull/11871)：引入新的 `future.unstable_splitRouteModules` 標誌，使路由元件及其 clientLoader 能夠並行下載而非順序下載。\n- 🗓️ [巴黎 TypeScript 大會](https://la-conf.typescript.paris/?utm_source=thisweekinreact) \\- 🇫🇷 巴黎 \\- 2月28日 \\- 最後召集！參加在巴黎市中心舉辦的首屆 TypeScript 會議！使用代碼 \"TWIR\" 可享 8 折優惠！\n- 📖 [將 Motion 與 Radix 整合](https://motion.dev/docs/radix)：新文件頁面展示退出與佈局動畫的整合範例。\n- 📜 [React 中的單一職責原則：專注元件的藝術](https://cekrem.github.io/posts/single-responsibility-principle-in-react/)：我贊同這種將 React 應用設計為「分層」的實踐方式。\n- 📜 [在 React 中持久化表單資料：使用 Nuqs 的現代方法](https://armand-salle.fr/post/persisting-form-data-in-react-a-modern-approach-with-nuqs/)：介紹透過類型安全方式使用搜尋參數的便利函式庫，整合 Next.js 和 React Router。\n- 📦 [Astro 5.2 - 支援 Tailwind 4、尾部斜線重新導向、停用 React 串流的選項](https://astro.build/blog/astro-520/)：串流可能與執行階段 CSS-in-JS 函式庫不相容。\n- 📦 [React Scan 0.1.2 - 重新渲染歷史、元件樹](https://github.com/aidenybai/react-scan/releases/tag/v0.1.2)\n- 🎥 [Theo - Create React App 終於終結](https://www.youtube.com/watch?v=aujVi7ipkfM)\n- 🎥 [Jack Herrington - 停止使用 Recoil，改用這個！](https://www.youtube.com/watch?v=QepeuHTxiLo)\n- 🎙️ [本月 React 2025-01 - CRA 動向、Redwood.js 終結？](https://open.spotify.com/episode/45LTSjvCA5k5YAC7EM4ixk)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c0f80a50",
+      "source_content": "### Comments",
+      "source_content_hash": "f78e23e1f1748669cfccf80c1aa5c949980fbd23ee608857917de5a5489ce1b3",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### 評論"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d73903fc",
+      "source_content": "Some general rules to follow:",
+      "source_content_hash": "e52c91308e87b3e65bf55ca32703261f633ca83a31eea1616704222f22e9fe28",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "需遵循的通用規則："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9ffdd332",
+      "source_content": "- It’s not needed to comment on everything.\n- For a given emoji, what we comment usually appears first.\n- It's better not to comment on something than to make the wrong comment.\n- Comments have to be concise and to the point.\n- Use a simple language.\n- Don’t add useless fluff words.",
+      "source_content_hash": "055100d0f03b2d8b68aa14e3520dfdefb155c60ca0cf6ee7456fabaa31bdeeae",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 無需評論所有內容\n- 特定表情符號的評論通常置於首位\n- 與其發表錯誤評論，不如保持沉默\n- 評論須簡明扼要\n- 使用簡潔語言\n- 避免添加無意義的冗詞"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5f4381f8",
+      "source_content": "## Conclusion",
+      "source_content_hash": "be031d37bb75d96ef08ca9ec5b0e83bb6f91172f60d3c31a78feae8d7dc4a0b0",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 結論"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "80dbdeb8",
+      "source_content": "Yes, this is a serious job that takes a lot of time.\nI hope you’ll be interested to help me\\!",
+      "source_content_hash": "0d123b690b7ae353aea43454096b01e5ac74a989149435b2cdc96f49e875903f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "是的，這是項需投入大量時間的嚴謹工作。\n希望您有興趣協助我！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6dc3e423",
+      "source_content": "Contact me at sebastien@thisweekinreact.com",
+      "source_content_hash": "c968aa4af1fbc7586343daa15cfcf2b0af7780f7d058d7353eb3a9431615736b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "請透過 sebastien@thisweekinreact.com 與我聯繫"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-pages/curator.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.133270+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "8edcf5df956b2587c16163b02d51a1331d34b345f71d40577100bcffcf375261"
+  }
+}

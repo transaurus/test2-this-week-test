@@ -1,0 +1,156 @@
+---
+slug: /197
+title: "This Week In React #197: Waku, Effect, TanStack, Framer Motion, use(), Preact, Valtio, Astro, Three.js, Nitrogen, React-Native-Web, expo-dom, Tophat, React-Navigation, Skip, TypeScript, Rspack, Volta..."
+authors: [matthieugicquel, cyrilbo]
+date: 08-21-2024
+---
+
+大家好！
+
+這裡是來自 [Theodo Apps（前身為 BAM）](https://apps.theodo.com/en?utm_source=thisweekinreact) 的 Cyril 和 Matthieu 👋，我們將代替 Seb 為您帶來 React 和 React Native 領域的最新消息。
+
+本週雖較為平靜，但仍有些重要更新：Waku 現支援 React Server Actions、TanStack/Router 使用技巧分享，並探討 React 邁向全端框架的發展歷程。此外，別錯過 React Native 0.75 的新功能！我們也帶來了 NitroModules 和 react-native-webGPU 的更新。請盡情探索！
+
+查看合作會議 **[React Advanced London](https://reactadvanced.com/?utm_source=Newsletter&utm_medium=thisweekinreact)**（🇬🇧 倫敦 - 10月25日 & 28日）。我們非常推崇深度 React 技術分享的理念，目前公布的講者陣容令人期待！👌
+
+<!-- truncate -->
+
+**💡 [在 Twitter 查看本期電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![您的 React PR 審查是否陷入元件混亂？](/emails/issues/197/coderabbit.jpg)](https://coderabbit.ai/?utm_source=newsletter&utm_medium=this-week-react-aug-21)
+
+**[您的 React PR 審查是否陷入元件混亂？](https://coderabbit.ai/?utm_source=newsletter&utm_medium=this-week-react-aug-21)**
+
+探索如何簡化 React PR 審查流程，讓團隊專注於程式碼品質的關鍵面向。我們將透過相依性管理、程式碼調和等功能審查每個 PR，使團隊能集中精力處理架構決策、元件設計與效能優化。
+
+CodeRabbit 協助項目：
+
+- 最佳實踐強化：運用 CodeRabbit 識別常見 React 反模式並建議最佳實踐，確保程式碼品質。
+- 元件結構審查：透過完整的元件結構摘要分析，獲取更佳組合方式的建議。
+- 可執行的程式碼審查意見：在 PR 中直接修正程式碼，一鍵提交建議。
+
+CodeRabbit 對所有開源儲存庫免費。[立即開始使用！](https://coderabbit.ai/?utm_source=newsletter&utm_medium=this-week-react-aug-21)
+
+---
+
+## ⚛️ React {#react}
+
+[![Waku v0.21 - 完整支援 React Server Actions](/emails/issues/197/waku.jpg)](https://waku.gg/blog/server-actions-are-here)
+
+**[Waku v0.21 - 完整支援 React Server Actions](https://waku.gg/blog/server-actions-are-here)**
+
+React 伺服器元件催生了新一代「React 框架」。由 Daishi Kato（jotai、valtio 等庫創作者）打造的 Waku 便是其中之一，也是 Next.js 之外首批支援伺服器元件的框架。
+
+隨著 Server Actions 的加入，Waku 現已支援多數 React 19 功能，讓開發完整應用時能跳過「建立 API」的步驟。
+
+---
+
+[![從 React 到 Effect](/emails/issues/197/effect.jpg)](https://effect.website/blog/from-react-to-effect)
+
+**[從 React 到 Effect](https://effect.website/blog/from-react-to-effect)**
+
+Michael Arnaldi，Effect 的創建者，解釋了 Effect 和 React 所使用的模型如何相似。雖然 Effect 是一個強大的工具包，但入門相當困難，幾乎像一門新語言，因此與我們已經熟悉的內容進行類比會有所幫助。
+
+在 Effect 中，就像在 React 中一樣，你編寫的大部分程式碼都是一個「藍圖」：你聲明你的程式應該做什麼，而不直接運行它。然後函式庫（React 或 Effect）會負責運行它。
+
+---
+
+- 💸 [TutorialKit — Create interactive tutorials instantly without building or managing any backend infrastructure.](https://tutorialkit.dev/)
+- 🗓️ [reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact) - 🇮🇹 Verona - 25 October - Get a 10% discount with code "TWIR". A, B and C will speak !
+- 🗓️ [Squiggle Conf](https://2024.squiggleconf.com/?utm_source=thisweekinreact) - 🇺🇸 Boston - 03 & 04 October - Get a 10% discount with code "TWIR". Speakers are announced, please take a tour on the conf website.
+- 📜 [Tips from 8 months of TanStack/Router in production](https://swizec.com/blog/tips-from-8-months-of-tan-stack-router-in-production/): Swizec Teller shares the guiding principles he applies, for instance when he uses loaders, suspense queries or queries
+- 📜 [React is (becoming) a Full-Stack Framework](https://www.robinwieruch.de/react-full-stack-framework/): With the addition of Server Components and Server Actions
+- 📜 [Synchronizing State In React](https://www.brenelz.com/posts/synchronizing-state-in-react/): Explains how to solve a classic bug “the right way”, not with a useEffect but by splitting components
+- 📜 [Building Swipe Actions component with React and Framer Motion](https://sinja.io/blog/swipe-actions-react-framer-motion)
+- 📜 [useStateObject: A Simple, Convenient API Around useState](https://www.jameskerr.blog/posts/use-state-object/)
+- 📜 [How to Build a React Hook That Handles Sequential Requests - Using an AbortController](https://webdeveloper.beehiiv.com/p/build-react-hook-handles-sequential-requests)
+- 📜 [Generate a PDF in React](https://spacejelly.dev/posts/generate-a-pdf-from-html-in-javascript) - html2pdf.js, React PDF, and Puppeteer
+- 📜 [Preact - Prerendering with Preset Vite](https://preactjs.com/blog/prerendering-preset-vite)
+- 📜 [Good Refactoring vs Bad Refactoring](https://www.builder.io/blog/good-vs-bad-refactoring)
+- 📜 [How Valtio Was Born](https://blog.axlight.com/posts/how-valtio-was-born/)
+- 📦 [Astro v4.14 - Experimental Content Layer API with Intellisense support in content files](https://astro.build/blog/astro-4140/)
+- 📦 [react-three/xr 6.2.0](https://github.com/pmndrs/xr/releases/tag/v6.2.0): Adds unbounded spaces, depth sensing, and secondary input sources
+- 📦 [react18-use](https://github.com/dai-shi/react18-use): Daishi Kato created a shim of the React 19 `use` hook that works in React 18. Includes the ability to 🐦 [call `use(Context)` inside `useMemo`](https://x.com/dai_shi/status/1825484689030955094) (experimental), a better alternative to context selectors the React team plans to implement.
+- 📦 [Formity](https://www.formity.app/): Define complex forms with a JSON structure, let the package handle the heavy-lifting
+- 📦 [rspack-plugin-react-refresh v1.0](https://github.com/rspack-contrib/rspack-plugin-react-refresh)
+- 🎙️ [PodRocket - Generative UI and React components with Malte Ubl](https://podrocket.logrocket.com/generative-ui-react-components-malte-ubl)
+- 🎥 [Jack Herrington - Secret React-Native Hack For React Web Devs! - use patch-package to patch a dependency not working with Server Components](https://www.youtube.com/watch?v=81oUBWJQii4)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![Storybook、Playwright 和 Cypress 的視覺測試](/emails/issues/197/chromatic.jpg)](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact&utm_medium=2nd_sponsor&utm_campaign=q3_2024)
+
+**[Storybook、Playwright 和 Cypress 的視覺化測試](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact&utm_medium=2nd_sponsor&utm_campaign=q3_2024)**
+
+厭倦了破碎的版面配置和卡頓的 UI 拖慢您的開發速度嗎？Chromatic 的視覺化測試讓您能夠自信地建構。它能捕捉功能測試遺漏的錯誤，從元素錯位、色彩不正確到 z-index 層級問題。
+
+無需額外的測試案例或設定。Chromatic 可直接整合到您現有的 Storybook、Playwright 或 Cypress 環境中，實現應用程式 UI 的視覺化測試。所有測試皆平行運行——無需額外費用——由 Chromatic 的閃電般快速 Capture Cloud 基礎架構提供支援。
+
+設定僅需兩分鐘，我們的基礎方案每月包含 5,000 次免費快照。[立即開始 »](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact&utm_medium=2nd_sponsor&utm_campaign=q3_2024)
+
+---
+
+## 📱 React-Native {#react-native}
+
+**[React Native 0.75](https://reactnative.dev/blog/2024/08/12/release-0.75)**
+
+This week marks the release of React Native 0.75, where the core team has reinforced their recommendation to use a React Native framework like Expo for building production-ready apps. Reflecting this shift, the `/template` folder has been removed from the core `react-native` package, and the `react-native init` command is set to be deprecated by the end of 2024, though both will still be accessible within the `@react-native-community` packages. Notably, this update brings significant improvements, including [enhanced performance during the auto-linking build phase](https://github.com/react-native-community/discussions-and-proposals/discussions/814) and the addition of [Yoga 3.1](https://www.yogalayout.dev/blog/announcing-yoga-3.1), which now supports the use of percentages for `gap`, `columnGap`, `rowGap`, and `translation` props when the new architecture is enabled. With these advancements, it's clear that adopting the new architecture is crucial for staying up to date with the latest features and stability improvements.
+
+---
+
+- 💸 [React Native 精通課程 - 唯一能讓你精通 React Native 和 Expo 的課程](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)
+- 👀 [React Native 0.76 將搭載單一合併動態函式庫 libreactnative.so](https://github.com/react-native-community/discussions-and-proposals/discussions/816)：這將減少應用程式大小和啟動時間
+- 🐦 [Nitrogen：NitroModules 的新程式碼生成工具](https://x.com/mrousavy/status/1823796378860184044)：Marc 展示 Nitrogen 如何生成 Swift 規格，讓你能直接實作而無需接觸 Objective-C 和 C++ 程式碼 👏
+- 🐦 [react-native-web 的型別定義現已發佈在 DefinitelyTyped](https://x.com/swmansion/status/1824379053836480771)
+- 🐦 [透過 react-native-webGPU 在 RN 中運行 three.js](https://x.com/wcandillon/status/1825862686300672124)
+- 🐦 [使用 React Three Fiber 元件的 expo-dom 示範](https://x.com/Baconbrix/status/1825128678683971733)
+- 🗓️ [React Universe 大會](https://www.reactuniverseconf.com/?utm_source=thisweekinreact) - 🇵🇱 弗羅茨瓦夫 - 9月5-6日。使用代碼 "TWIR" 可享 10% 折扣。講者：Evan Bacon、Marc Rousavy、Tzvetan Mikov、Oskar Kwaśniewski...
+- 📜 [React Native 0.75 現已隨 Expo SDK 51 推出](https://expo.dev/changelog/2024/08-14-react-native-0.75)：無需等待 SDK 52，即可利用錯誤修復、效能改進以及新架構的穩定化，且升級成本更低
+- 📜 [漸進式網路應用程式 (PWA)：邁向原生行動應用程式的踏腳石](https://www.thinkmill.com.au/blog/progressive-web-apps-pw-as-a-stepping-stone-towards-a-native-mobile-application)：對 PWA 和原生應用程式之間權衡的最新評估
+- 📦 [React Native Keyboard Controller v1.13](https://github.com/kirillzyusko/react-native-keyboard-controller/releases/tag/1.13.0)：新增對 Android 模態框和 React Native 0.75 的支援
+- 📦 [Skip v1.0](https://skip.tools/blog/skip-1_0-release/)：新跨平台框架，允許開發者用 Swift/SwiftUI 編寫 iOS 應用，同時自動生成 Android 程式碼
+- 📦 [Shopify - Tophat 現已開源](https://github.com/shopify/tophat)
+- 🎙️ [RNR 304 - 與 Satyajit Sahoo 探討 React Navigation V7](https://reactnativeradio.com/episodes/rnr-304-react-navigation-v7-with-satyajit-saho)：介紹靜態 API、改進的深度連結和強化 TypeScript 支援等新功能
+- 🎥 [Jolly Coding - Expo 讓網頁到原生的遷移更簡單 - expo-dom 示範](https://www.youtube.com/watch?v=MKoZTAcVCJU)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📊 [CSS 2024 狀態調查報告已發佈](https://survey.devographics.com/en-US/survey/state-of-css/2024)
+- 👀 [Chrome 129 將引入兩個新 JavaScript 事件 - scrollSnapChange 與 scrollSnapChanging](https://developer.chrome.com/blog/scroll-snap-events?hl=en)
+- 👀 [ECMAScript 安全賦值運算子提案](https://github.com/arthurfiorette/proposal-safe-assignment-operator) - 靈感來自函數式程式設計概念（如單子）和 Rust 的 `Result` 類型，旨在透過從函數返回元組 `[error, result]` 來簡化 JavaScript 錯誤處理。
+- 🐦 [Colin 篩選 TS 介面鍵值的技巧：](https://x.com/colinhacks/status/1824052417820021173) 使用 Omit/Pick 和字串模板字面值
+- 📜 [TypeScript 中的品牌類型](https://www.learningtypescript.com/articles/branded-types)：若想強化類型系統，品牌類型至關重要。價格不僅是數字，時間量度亦然，因此需透過收窄可接受類型來保護函數。
+- 📜 [Total TypeScript - 為何我不喜歡枚舉 - 數值 vs 字串枚舉、名義類型及其他特性](https://www.totaltypescript.com/why-i-dont-like-typescript-enums)
+- 📜 [手寫網站的語法突顯 - 直接在字型中使用 OpenType 特性實現語法突顯](https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/)
+- 📜 [容器查詢的「智能」佈局 - 容器查詢與傳統媒體查詢的比較](https://css-tricks.com/smart-layouts-with-container-queries/)
+- 📜 [切換至 Rspack 的經驗教訓 - 從 webpack 遷移到 Rspack 的挑戰與效益](https://birtles.blog/2024/08/14/lessons-learned-switching-to-rspack/)
+- 📜 [空間運算 - 讓網路決定程式碼在全球何處運行](https://sunilpai.dev/posts/spatial-compute/)
+- 📦 [Chrome 128 開發者工具更新 - Gemini 提供的控制台洞察、效能與網路面板改進](https://developer.chrome.com/blog/new-in-devtools-128?hl=en)
+- 📦 [Volta 2.0 無煩惱 JavaScript 工具管理器](https://github.com/volta-cli/volta/releases/tag/v2.0.0)
+- 🎥 [Lydia Hallie - JavaScript 視覺化 - 閉包](https://www.youtube.com/watch?v=6Ixyltr8_R0)
+
+---
+
+## 🤭 輕鬆一刻 {#fun}
+
+[![替代文字](/emails/issues/197/meme.jpg)](https://x.com/colinhacks/status/1823445912997515429)
+
+[![替代文字](/emails/issues/197/meme2.jpg)](https://x.com/nativewindcss/status/1824558552972923122)
+
+下次見！👋

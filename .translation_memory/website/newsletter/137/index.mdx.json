@@ -1,0 +1,659 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/137/index.mdx",
+  "source_file_content_hash": "32e7c4a769e8c9eb19fee63328f501ce2d3e1760071a59ada50898d665005869",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /137\ntitle: \"This Week In React #137: Code Extraction, Server Components, Signals, Forget compiler, Next.js, Astro, Deno, Remix, Preact, Signia, TypeScript...\"\nauthors: [slorber]\ndate: 03-07-2023\n---",
+      "source_content_hash": "a6bdd02077e5cf7ea9b52914cacec728230643c7f02b14ec2d961ac328daae55",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week, there is still a lot of content about signals, but it's the turn of Server Components to take over the discussions!",
+      "source_content_hash": "ff1abdf182bf27bee11bd423efbbf9a824988d6319990503547b8b9c5c588f21",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週仍有許多關於 signals 的內容，但輪到 Server Components 成為討論焦點了！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "One week left to send your talk proposal to the CFP of [React-Native-Connection](https://reactnativeconnection.io/) (Paris - June 1st).",
+      "source_content_hash": "c60a98548aa4d2af637eee36423838c417c4df7d47985242126f195040ff7a70",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "距離提交演講提案給 [React-Native-Connection](https://reactnativeconnection.io/)（巴黎 - 6月1日）的徵稿截止還有一週時間。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e883b2cc",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_e883b2cc"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**💡 [在 Twitter 上查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f7f1cb2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_92f4ea84"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_5dfba1c3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![Suncel](/emails/issues/136/suncel.jpg)](https://suncel.io/)",
+      "source_content_hash": "deee21e4180a15f059a6126299dd45c7996a497deb8d087c62d7a03242c93d41",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Suncel](/emails/issues/136/suncel.jpg)](https://suncel.io/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[Build reusable blocks. Publish content faster. Get better Core Web Vitals and SEO.](https://suncel.io/)**",
+      "source_content_hash": "420a20eef798b05b03d389e43e8d3b54fa3368aded382155deae89b180eb726e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[建立可重複使用的區塊。更快發布內容。獲得更好的 Core Web Vitals 和 SEO。](https://suncel.io/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**Content editors** : a game changer for companies that need to produce a lot of content and\nhave a strong SEO strategy. Marketers and content editors can edit and publish pages\nwithout any complexity. Eliminate long delays and publish instantly. Pages and images are\noptimized thanks to Next.js in order to achieve perfect Core Web Vitals scores.",
+      "source_content_hash": "5cec1def1c3995c6e8a5dd6d022f4969aceaa2d4a605622583bd34a5d3f6135e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**內容編輯者**：對於需要大量生產內容並具有強大 SEO 策略的公司來說是遊戲規則改變者。行銷人員和內容編輯者可以在沒有任何複雜性的情況下編輯和發布頁面。消除長時間延遲並即時發布。頁面和圖像透過 Next.js 進行優化，以實現完美的 Core Web Vitals 分數。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "**Developers :** plug and play with your existing Next.js app. Number of benefits to use\nSuncel CMS as developer :",
+      "source_content_hash": "ac9708953d84e5a57c7d8bfd21a42019b445b933b89fbff9218bf580f7ac2095",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**開發者**：可與現有 Next.js 應用程式即插即用。使用 Suncel CMS 對開發者有多項優勢："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e7bc8c38",
+      "source_content": "- Build your reusable blocks in React\n- SEO Meta and sitemap are generated automatically (thanks to our SEO module)\n- Create your own custom settings in React\n- Admin customizable in React\n- No routing system needed to fit the CMS",
+      "source_content_hash": "f0d76718a477f9949a2322ff9be2b4be5dcb38737f1dff9f8ba37a9080854df9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 使用 React 建立可重複使用的區塊\n- SEO Meta 和網站地圖自動生成（感謝我們的 SEO 模組）\n- 使用 React 建立自定義設定\n- 可透過 React 自定義管理介面\n- 無需為適應 CMS 而建立路由系統"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "**[Visit Suncel.io](https://suncel.io/)** | **[5mn demo video](https://www.youtube.com/watch?v=LUupLEZKp3w)**",
+      "source_content_hash": "6b7ac015e9e1125b6d7c2f0b41b92f6527cfc9cc3e7f060cea017cc8b20400d8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[訪問 Suncel.io](https://suncel.io/)** | **[5分鐘演示影片](https://www.youtube.com/watch?v=LUupLEZKp3w)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "406f2538",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6d28a77c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "[![WTF Is Code Extraction](/emails/issues/137/codeextraction.jpg)](https://www.builder.io/blog/wtf-is-code-extraction)",
+      "source_content_hash": "e7a88ba61a9185bd336171b600838664c84d178e3091538951d9c73e829afbe1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![WTF 什麼是程式碼提取](/emails/issues/137/codeextraction.jpg)](https://www.builder.io/blog/wtf-is-code-extraction)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "**[WTF Is Code Extraction](https://www.builder.io/blog/wtf-is-code-extraction)**",
+      "source_content_hash": "276e830dab519b0002d36069d172abcc965a6b4497a1cc376f783a3dc383ce54",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[WTF 什麼是程式碼提取](https://www.builder.io/blog/wtf-is-code-extraction)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "Miško (Qwik) explains the advantages of co-locating server/client code in the same file and the limitations of the current Next.js model (export extraction): you can only declare one `getServerSideProps` function and you have to make use of `ReturnType` to inject the right data type into the client component. Function extraction and closure extraction offer a better developer experience.",
+      "source_content_hash": "bb9019d7bee40888b9284c720c030552b2791d1bf1d5ce61f5ce608358121b0c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Miško (Qwik) 解釋了在相同檔案中共置伺服器/客戶端程式碼的優勢，以及當前 Next.js 模型（導出提取）的限制：只能宣告一個 `getServerSideProps` 函數，且必須使用 `ReturnType` 將正確的數據類型注入客戶端組件。函數提取和閉包提取提供了更好的開發者體驗。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "These techniques are not yet used in the React world today, but we can expect to see them appear in our frameworks soon. The Qwik team plans to [decouple its code extraction](https://twitter.com/manucorporat/status/1630955309890957313) from the framework. Tanner Linsley is [collaborating with them](https://twitter.com/tannerlinsley/status/1630994907405115393) and [is already using this type of extraction on Bling](https://twitter.com/tannerlinsley/status/1631003945522065409), the toolkit that should power the upcoming TanStack Start framework.",
+      "source_content_hash": "7d5b31057564bedda794b8d347dd9f770aca88906e7de94a8e57d99a75c43eb3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這些技術目前在 React 生態中尚未普及，但預計很快就會在我們的框架中出現。Qwik 團隊計劃[將其程式碼提取與框架解耦](https://twitter.com/manucorporat/status/1630955309890957313)。Tanner Linsley [正與他們合作](https://twitter.com/tannerlinsley/status/1630994907405115393)，並[已在 Bling 上使用此類提取技術](https://twitter.com/tannerlinsley/status/1631003945522065409)，該工具包將為即將推出的 TanStack Start 框架提供支援。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "I think we can also include React Server Components in the category of techniques that allow to seamlessly mix server/client code: we should rather consider this solution when discussing the current limits of Next.js.",
+      "source_content_hash": "050694f5f50dbd47ea2185ee69c6dd64f6a6ab85ad65b922594073590b95afa2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我認為在討論 Next.js 當前限制時，也應將 React Server Components 納入可無縫混合伺服器/客戶端程式碼的技術範疇。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "818747ba",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "![React Server Components](/emails/issues/137/rsc.jpg)",
+      "source_content_hash": "50ba71034da756763c55b75f3ea5044d1c8692bf87e939019d07e40a36c60f06",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "![React Server Components](/emails/issues/137/rsc.jpg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "**React Server Components**",
+      "source_content_hash": "8e55e948eb86c0a58e4d18546dace442080939586effea402c31215e51bcf5df",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**React Server Components**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "After signals, it's the turn of Server Components to be in the spotlight this week. Dan Abramov triggered many discussions while looking for good mental models to explain the new feature. You'll have to dig into these discussions to find the analogies that speak to you the most.",
+      "source_content_hash": "f3e09053a88dde626e1531f39f34d579168e902b6ee97f93531f13368a39cebe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "繼 signals 之後，本週輪到 Server Components 成為焦點。Dan Abramov 在尋找解釋此新功能的合適心智模型時引發了許多討論。您需要深入這些討論才能找到最符合您理解的類比方式。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "af7d8a35",
+      "source_content": "- 🧵 [Dan Abramov - \"I need to start collecting ways to pitch react server components\"](https://twitter.com/dan_abramov/status/1631885118355718144)\n- 🧵 [Dan Abramov - \"Ask me anything about React Server Components\"](https://twitter.com/dan_abramov/status/1631641431742857216)\n- 🧵 [Dan Abramov - `ui = client(server(data), state)`](https://twitter.com/dan_abramov/status/1632535654142713862)\n- 🧵 [Rick Hanlon - \"they move your container components to the server\"](https://twitter.com/rickhanlonii/status/1632041893960855552)\n- 🧵 [Josh Comeau on Server Components](https://twitter.com/JoshWComeau/status/1631398854632304641)\n- 🧵 [Andrew Clark on framework-agnostic vs well-integrated tools](https://twitter.com/acdlite/status/1632910367289491459)\n- 🐦 [Ben Holmes - \"React Server Components and Astro are like... the same thing\"](https://twitter.com/BHolmesDev/status/1633133090057986050)\n- 🐦 [Daishi Kato - \"This is how I put RSCs inside client components\"](https://twitter.com/dai_shi/status/1631989295866347520)\n- 🎥 [React Is A Backend Framework Now](https://www.youtube.com/watch?v=EhI6wb5nEEs)\n- 🎥 [React Server Components with Dan Abramov, Joe Savona, and Kent C. Dodds](https://www.youtube.com/watch?v=h7tur48JSaw): live discussion starting very soon, should be very interesting.",
+      "source_content_hash": "d9780c79b293a72b705e91b4353c835ba3f4c28653dcf707847a549c7eb15635",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 🧵 [Dan Abramov - 「我需要開始收集推銷 React 伺服器元件的方法」](https://twitter.com/dan_abramov/status/1631885118355718144)\n- 🧵 [Dan Abramov - 「關於 React 伺服器元件，問我任何問題」](https://twitter.com/dan_abramov/status/1631641431742857216)\n- 🧵 [Dan Abramov - `ui = client(server(data), state)`](https://twitter.com/dan_abramov/status/1632535654142713862)\n- 🧵 [Rick Hanlon - 「它們將你的容器元件移至伺服器」](https://twitter.com/rickhanlonii/status/1632041893960855552)\n- 🧵 [Josh Comeau 談伺服器元件](https://twitter.com/JoshWComeau/status/1631398854632304641)\n- 🧵 [Andrew Clark 談框架無關與整合良好的工具](https://twitter.com/acdlite/status/1632910367289491459)\n- 🐦 [Ben Holmes - 「React 伺服器元件和 Astro 就像... 同一回事」](https://twitter.com/BHolmesDev/status/1633133090057986050)\n- 🐦 [Daishi Kato - 「這是我將 RSCs 放入客戶端元件的方法」](https://twitter.com/dai_shi/status/1631989295866347520)\n- 🎥 [React 現在是一個後端框架](https://www.youtube.com/watch?v=EhI6wb5nEEs)\n- 🎥 [與 Dan Abramov、Joe Savona 和 Kent C. Dodds 一起探討 React 伺服器元件](https://www.youtube.com/watch?v=h7tur48JSaw)：現場討論即將開始，應該會非常有趣。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "Server Components could also have unsuspected benefits: [a communication layer for Electron threads](https://twitter.com/Eli_White/status/1632445703950852096) or [a flexible data-layer for static site generators](https://twitter.com/sebastienlorber/status/1632310649609920513).",
+      "source_content_hash": "28abe666f8b9d30af0f7ab5c12231a9e71a179faac11414a804fa00be23955ce",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "伺服器元件也可能帶來意想不到的好處：[Electron 執行緒的通訊層](https://twitter.com/Eli_White/status/1632445703950852096) 或 [靜態網站產生器的靈活資料層](https://twitter.com/sebastienlorber/status/1632310649609920513)。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ff0f46f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dbc17cf",
+      "source_content": "- 📜 [React vs Signals: 10 Years Later](https://dev.to/this-is-learning/react-vs-signals-10-years-later-3k71): Don't miss Dan Abramov's answer on this article by Ryan Carniato. Dan does not want the function of a React component to be \"setup\" like SolidJS: re-running the function is voluntary.\n- 📜 [Making the Case for Signals in JavaScript](https://dev.to/this-is-learning/making-the-case-for-signals-in-javascript-4c7i): Ryan Carniato goes over some good reasons to use signals with some pretty interesting arguments. I also think that you shouldn't have to change the organization of your components for performance reasons.\n- 📜 [React’s Upcoming Compiler Only Solves Part Of The Problem](https://www.builder.io/blog/react-compiler-will-not-solve-prop-drilling): explains why the React Forget compiler will not resolve intermediate re-renders, unlike signals.\n- 📜 [Were React Hooks a Mistake?](https://jakelazaroff.com/words/were-react-hooks-a-mistake/): Jake explains the problems introduced by hooks, and how signals are quite similar to React class components.\n- 📜 [Framework-defined infrastructure](https://vercel.com/blog/framework-defined-infrastructure): Vercel's CTO explains how the infra automatically adapts to your code and uses Next.js as an example.\n- 📜 [2023 Web Framework Performance Report](https://astro.build/blog/2023-web-framework-performance-report/): Fred (Astro) analyzed real-world perf data to derive trends on how frameworks influence the performance of our apps. We find performance scores for Astro, Gatsby, Remix and Next.js.\n- 📜 [Deno - You Don't Need a Build Step](https://deno.com/blog/you-dont-need-a-build-step): explains the complexity behind the 4 build steps of Next.js (compiling, minifying, bundling, code splitting). Proposes an alternative with Fresh and its Just-In-Time mode.\n- 📜 [Common Beginner Mistakes with React](https://www.joshwcomeau.com/react/common-beginner-mistakes/): great interactive article by Josh Comeau, for beginners.\n- 📜 [Wishlist for a React Compiler](https://electricui.com/blog/wishlist-for-a-react-compiler): Michael explains what he would like the React-Forget compiler to do, illustrated with many before/after compilation examples.\n- 📜 [Benchmarking Preact Signals versus the React alternatives](https://electricui.com/blog/benchmarking-preact-signals)\n- 📜 [Sentry’s Frontend Tests: Migrating from Enzyme to React Testing Library](https://blog.sentry.io/2023/02/23/sentrys-frontend-tests-migrating-from-enzyme-to-react-testing-library/)\n- 📜 [Prop drilling and component composition in React](https://alexsidorenko.com/blog/react-prop-drilling-composition/)\n- 🎨 [\"Thinking in React\" visualized](https://twitter.com/asidorenko_/status/1631967645376315400)\n- 🎥 [Rebuilding Jotai State Manager for React in 20 Minutes!](https://www.youtube.com/watch?v=gg31JTZmFUw)\n- 📦 [preact-reconcilers](https://github.com/CodyJasonBennett/preact-reconciler): a package to create custom Preact renderers. Cody is able to run [React-Three-Fiber + Preact](https://twitter.com/Cody_J_Bennett/status/1632674026408558592).\n- 📦 [Remix 1.14](https://twitter.com/kentcdodds/status/1631059357654818819): Hot Module Replacement + Hot Data Revalidation.\n- 📦 [Signia - Scalable signals for TypeScript](https://tldraw.substack.com/p/introducing-signia): new signal lib with React binding.\n- 📦 [Remix + Fastly support](https://twitter.com/FastlyDevs/status/1631031583523192832): new server adapter for Remix\n- 📦 [Mantine 6.0](https://mantine.dev/changelog/6-0-0/)\n- 📦 [Storybook-Docusaurus](https://github.com/jodyheavener/storybook-docusaurus)",
+      "source_content_hash": "87c6594c700bcd8ae4800b3324f24210e7df40f2e41d9b777deedc8a865aaeea",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📜 [React vs Signals：十年之後](https://dev.to/this-is-learning/react-vs-signals-10-years-later-3k71)：別錯過 Dan Abramov 對 Ryan Carniato 這篇文章的回應。Dan 不願讓 React 元件的函式像 SolidJS 那樣成為「設定」：重新執行函式應是自願的。\n- 📜 [為 JavaScript 中的 Signals 提出論證](https://dev.to/this-is-learning/making-the-case-for-signals-in-javascript-4c7i)：Ryan Carniato 列舉使用 signals 的充分理由，提出相當有趣的論點。我也認為不該為了效能而改變元件組織結構。\n- 📜 [React 即將推出的編譯器僅解決部分問題](https://www.builder.io/blog/react-compiler-will-not-solve-prop-drilling)：解釋為何 React Forget 編譯器無法像 signals 那樣解決中間重新渲染問題。\n- 📜 [React Hooks 是個錯誤嗎？](https://jakelazaroff.com/words/were-react-hooks-a-mistake/)：Jake 說明 hooks 帶來的問題，並指出 signals 與 React 類別元件高度相似。\n- 📜 [框架定義的基礎架構](https://vercel.com/blog/framework-defined-infrastructure)：Vercel 技術長解釋基礎設施如何自動適應程式碼，並以 Next.js 為例說明。\n- 📜 [2023 網頁框架效能報告](https://astro.build/blog/2023-web-framework-performance-report/)：Fred（Astro）分析實際效能數據，歸納框架如何影響應用程式效能的趨勢。報告包含 Astro、Gatsby、Remix 和 Next.js 的效能評分。\n- 📜 [Deno - 你不需要建置步驟](https://deno.com/blog/you-dont-need-a-build-step)：剖析 Next.js 四個建置步驟（編譯、壓縮、打包、程式碼分割）背後的複雜性，並提出 Fresh 框架的即時模式替代方案。\n- 📜 [React 初學者常見錯誤](https://www.joshwcomeau.com/react/common-beginner-mistakes/)：Josh Comeau 為初學者撰寫的互動式優質文章。\n- 📜 [對 React 編譯器的願望清單](https://electricui.com/blog/wishlist-for-a-react-compiler)：Michael 說明期望 React-Forget 編譯器實現的功能，並透過大量編譯前後範例演示。\n- 📜 [Preact Signals 與 React 替代方案的效能評比](https://electricui.com/blog/benchmarking-preact-signals)\n- 📜 [Sentry 的前端測試：從 Enzyme 遷移至 React Testing Library](https://blog.sentry.io/2023/02/23/sentrys-frontend-tests-migrating-from-enzyme-to-react-testing-library/)\n- 📜 [React 中的屬性穿透與元件組合](https://alexsidorenko.com/blog/react-prop-drilling-composition/)\n- 🎨 [可視化的「React 思考模式」](https://twitter.com/asidorenko_/status/1631967645376315400)\n- 🎥 [20 分鐘重建 React 狀態管理工具 Jotai！](https://www.youtube.com/watch?v=gg31JTZmFUw)\n- 📦 [preact-reconcilers](https://github.com/CodyJasonBennett/preact-reconciler)：建立自訂 Preact 渲染器的套件。Cody 成功運行 [React-Three-Fiber + Preact](https://twitter.com/Cody_J_Bennett/status/1632674026408558592)。\n- 📦 [Remix 1.14](https://twitter.com/kentcdodds/status/1631059357654818819)：支援熱模組替換（HMR）與熱資料重新驗證。\n- 📦 [Signia - 可擴展的 TypeScript 信號庫](https://tldraw.substack.com/p/introducing-signia)：含 React 綁定的新信號庫。\n- 📦 [Remix + Fastly 支援](https://twitter.com/FastlyDevs/status/1631031583523192832)：新增 Remix 伺服器轉接器\n- 📦 [Mantine 6.0](https://mantine.dev/changelog/6-0-0/)\n- 📦 [Storybook-Docusaurus](https://github.com/jodyheavener/storybook-docusaurus)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a3da9b2d",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_a3da9b2d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4fc5e34f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "56bc971f",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0801d969",
+      "source_content": "[![Surveyjs - Extensible JavaScript libraries for surveys and forms](/emails/issues/136/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=referral)",
+      "source_content_hash": "3ac95759a5e8d816e5ce4e274c73f8ca6de68a629b885698965697a81109aa2f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Surveyjs - 可擴展的 JavaScript 調查和表單函式庫](/emails/issues/136/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=referral)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "**[Extensible JavaScript libraries for surveys and forms](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=referral)**",
+      "source_content_hash": "1be1417fbe0e745ee61ce3da14e2657a35e358fc8fdb60acdd7d9e642c261891",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[可擴展的 JavaScript 調查和表單函式庫](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=referral)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "[SurveyJS](https://surveyjs.io/form-library?utm_source=thisweekinreact&utm_medium=referral) is a set of open-source JavaScript form libraries that you can easily integrate into your web app. It lets you **create and run multiple forms**, retaining all sensitive data on your servers, or have **your own self-hosted WYSIWYG form builder** that non-tech users can use directly.",
+      "source_content_hash": "39585fc96bdfe62b3d5f2b23b26c4b1a1e06581546643f4a2b198e25e40b06f4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[SurveyJS](https://surveyjs.io/form-library?utm_source=thisweekinreact&utm_medium=referral) 是一套開源 JavaScript 表單函式庫，可輕鬆整合至您的網頁應用程式。它讓您能**建立並執行多種表單**，所有敏感資料皆保留於您的伺服器上，或讓非技術使用者直接使用**您自行託管的 WYSIWYG 表單建構器**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44aaa880",
+      "source_content": "You can also **analyze survey results** in custom-built dashboards, save your forms to PDF, or simply **convert them to editable PDF files**. It offers native support for **React and Angular rendering** and total freedom of choice as to the backend, because **any server + database combination is fully compatible**.",
+      "source_content_hash": "9c6854e16c2168c434879a17bddc39880aa2ac00615a0ca8d969c390854fb20a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "您還能在自訂儀表板中**分析調查結果**，將表單儲存為 PDF，或直接**轉換為可編輯的 PDF 檔案**。提供對 **React 和 Angular 渲染的原生支援**，且後端選擇完全自由，因**任何伺服器與資料庫組合皆完全相容**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "513f3dff",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cbd60296",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f93a1bb7",
+      "source_content": "- 👀 [Code elimination for React Native apps demo](https://twitter.com/Baconbrix/status/1631749459389431808): upcoming Expo CLI feature to tell you which native code your app does not use and can be safely removed.\n- 👀 [React Native will soon be a Monorepo](https://twitter.com/o_kwasniewski/status/1631292628217266176)\n- 📜 [I made JSON.parse() 2x faster](https://radex.io/react-native/json-parse/): Radek proposes to improve the performance of Hermes by using very fast C++ libs based on [SIMD instructions](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data). Interesting to read even if you don't use React-Native. Ongoing discussions on the [Hermes PR](https://github.com/facebook/hermes/issues/811).\n- 📜 [Top Ten Reasons to go to Chain React](https://shift.infinite.red/top-ten-reasons-to-go-to-chain-react-665a93883e4f)\n- 🔗 [React Native Hitchhiker's Guide](https://twitter.com/ospfranco/status/1631984862474248193): Oscar shares his React-Native knowledge base. Many advanced topics, many related to JSI.\n- 🎙️ [RNR 261 - What’s the deal with EAS?](https://reactnativeradio.com/episodes/rnr-261-whats-the-deal-with-eas)\n- 🎥 [Riveo Page Curl - “Can it be done in React Native?”](https://www.youtube.com/watch?v=xNZCQvtnhIU)\n- 📦 [React-Native-Graph 1.0](https://github.com/margelo/react-native-graph/releases/tag/v1.0.1): stable version for Margelo's Skia-based graph lib.\n- 📦 [Expo Router 1.2](https://twitter.com/Baconbrix/status/1630969201421582341)\n- 📦 [React-Native-Replicache](https://github.com/Braden1996/react-native-replicache/)\n- 📦 [VisionCamera Realtime Object Detection with TensorFlow Lite](https://github.com/jaroslawkrol/vision-camera-realtime-object-detection) - [demo](https://twitter.com/mrousavy/status/1631269105796886528)",
+      "source_content_hash": "47221b923679cb03676ff327fac1eab34809cfd02787b14a20843591c4d4d9b0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 👀 [React Native 應用程式程式碼刪除示範](https://twitter.com/Baconbrix/status/1631749459389431808)：即將推出的 Expo CLI 功能，可顯示應用程式未使用的原生程式碼並安全移除。\n- 👀 [React Native 即將成為 Monorepo](https://twitter.com/o_kwasniewski/status/1631292628217266176)\n- 📜 [我讓 JSON.parse() 快兩倍](https://radex.io/react-native/json-parse/)：Radek 提議使用基於 [SIMD 指令](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data)的極速 C++ 函式庫提升 Hermes 效能。即使未使用 React-Native 也值得閱讀。[Hermes PR](https://github.com/facebook/hermes/issues/811) 的相關討論持續進行中。\n- 📜 [參加 Chain React 的十大理由](https://shift.infinite.red/top-ten-reasons-to-go-to-chain-react-665a93883e4f)\n- 🔗 [React Native 搭便車指南](https://twitter.com/ospfranco/status/1631984862474248193)：Oscar 分享其 React-Native 知識庫，含多個進階主題及 JSI 相關內容。\n- 🎙️ [RNR 261 - EAS 是怎麼回事？](https://reactnativeradio.com/episodes/rnr-261-whats-the-deal-with-eas)\n- 🎥 [Riveo 頁面捲曲效果 - 「能在 React Native 中實現嗎？」](https://www.youtube.com/watch?v=xNZCQvtnhIU)\n- 📦 [React-Native-Graph 1.0](https://github.com/margelo/react-native-graph/releases/tag/v1.0.1)：Margelo 基於 Skia 的圖表函式庫穩定版。\n- 📦 [Expo Router 1.2](https://twitter.com/Baconbrix/status/1630969201421582341)\n- 📦 [React-Native-Replicache](https://github.com/Braden1996/react-native-replicache/)\n- 📦 [VisionCamera 使用 TensorFlow Lite 進行即時物件偵測](https://github.com/jaroslawkrol/vision-camera-realtime-object-detection) - [示範](https://twitter.com/mrousavy/status/1631269105796886528)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f1a2be1a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13292277",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🧑‍💻 工作職缺 {#jobs}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e478ec2c",
+      "source_content": "🧑‍💼 [**Passionfroot - Senior Full-stack Engineer (Remix) - €160k+, Berlin/remote**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)",
+      "source_content_hash": "3532cb42fea164e6dcc868f5fea6ecb0e7fcb06975740df1803d78565f5e643e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🧑‍💼 [**Passionfroot - 資深全端工程師 (Remix) - €160k+, 柏林/遠端**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "534ac82e",
+      "source_content": "Passionfroot's mission is to empower the independent businesses of tomorrow via YouTube, Podcasts, Social Media, and Newsletters. Join us in building a tool that will empower creators globally to build scalable, sustainable businesses.",
+      "source_content_hash": "071531677ae3763a43d70c7461fb6bad05d66e66663737b2158931a241a2c33c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Passionfroot 的使命是透過 YouTube、Podcasts、社群媒體和新聞通訊賦能未來的獨立事業。加入我們共同打造工具，協助全球創作者建立可擴展、可持續的事業。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9c2a503",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🧑‍💼 [**Callstack - 高級 React Native 開發人員 - 全遠端，B2B 合約月薪淨額 21-32k 波蘭茲羅提**](https://www.callstack.com/senior-react-native-developer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "您想開發全球最多人使用的應用程式嗎？想共同打造 React Native 技術嗎？加入 Callstack 的 React 和 React Native 領導者團隊。查看我們的網站獲取更多詳情。我們期待您的申請——展現您的實力吧！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7e6e884",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "e58066ec4b83436bc9fb13f283a90aab7f999b61dfcc6deef20c2b4798312235",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🧑‍💼 [**G2i - 100% 遠端 React Native 職缺**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "17b50e81",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is ~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "22ce426f04d70bd21e8d4bf0d0e1e9b5a9243065cbb0f19a56a631f1b481d5f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們有多個 React Native 開發職缺！薪資約 16 萬美元外加 10% 獎金。需具備 RN 實際生產經驗且位於美國。私訊 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解更多，別忘了提及 This Week in React。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "719d3997",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "💡 [如何發布職缺？](https://thisweekinreact.com/sponsor)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7057b5fb",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2f2d5f01",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9fbd2efb",
+      "source_content": "- [Tether elements to each other with CSS anchor positioning](https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-positioning/): CSS draft feature that could replace positioning libs like Popper, Floating-UI or Tether.\n- [TypeScript 5.0 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/)\n- [Zod 3.21](https://twitter.com/colinhacks/status/1632472849960280064)\n- [ArkType Isomorphic types for TS/JS](https://github.com/arktypeio/arktype)\n- [JavaScript Import maps, Part 2: In-Depth Exploration](https://spidermonkey.dev/blog/2023/03/02/javascript-import-maps-part-2-in-depth-exploration.html)\n- [Can WebAssembly Solve Serverless’s Problems?](https://thenewstack.io/can-webassembly-solve-serverless-problems/)\n- [Experiments with the JavaScript Garbage Collector](https://dev.to/codux/experiments-with-the-javascript-garbage-collector-2ae3)\n- [Drizzle ORM - TypeScript ORM for SQL](https://github.com/drizzle-team/drizzle-orm)",
+      "source_content_hash": "3cffaa1abfcf3f03df2862fa45710e6c61321d3f9491fd7194f93df8c2420b31",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- [使用 CSS 錨點定位將元素彼此繫結](https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-positioning/)：可取代 Popper、Floating-UI 或 Tether 等定位函式庫的 CSS 草案功能\n- [TypeScript 5.0 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/)\n- [Zod 3.21](https://twitter.com/colinhacks/status/1632472849960280064)\n- [ArkType - 適用 TS/JS 的同構類型](https://github.com/arktypeio/arktype)\n- [JavaScript 導入映射 Part 2：深度探索](https://spidermonkey.dev/blog/2023/03/02/javascript-import-maps-part-2-in-depth-exploration.html)\n- [WebAssembly 能解決 Serverless 的問題嗎？](https://thenewstack.io/can-webassembly-solve-serverless-problems/)\n- [JavaScript 垃圾回收機制實驗](https://dev.to/codux/experiments-with-the-javascript-garbage-collector-2ae3)\n- [Drizzle ORM - 適用 SQL 的 TypeScript ORM](https://github.com/drizzle-team/drizzle-orm)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c81952ce",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "657bde08",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣味 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "827eb9a3",
+      "source_content": "[![alt](/emails/issues/137/meme.jpg)](https://twitter.com/potetotes/status/1631401117186764803)",
+      "source_content_hash": "477970b308571a8035c24889c20a8bfe083966f87947d5ef4952025d46857d24",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/137/meme.jpg)](https://twitter.com/potetotes/status/1631401117186764803)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "62d066b0",
+      "source_content": "🤣 [Other funny tweets this week](https://twitter.com/sebastienlorber/status/1633443251955875840)",
+      "source_content_hash": "a6e26ec0f404dd5f9f4daf95ed0a9eb9546c3e9221276424e55bec1799f997a7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🤣 [本週其他搞笑推文](https://twitter.com/sebastienlorber/status/1633443251955875840)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "89cf7bac",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下次見！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/137/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.081963+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "32e7c4a769e8c9eb19fee63328f501ce2d3e1760071a59ada50898d665005869"
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/212/index.mdx",
+  "source_file_content_hash": "1a857566693b878d826966ec68914f3968b034b42dae0f3d5b9db0739309c90b",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /212\ntitle: \"This Week In React #212: Astro, Next.js, Storybook, INP, Virtualization, WebXR, LiveView, Radon, Yoga, Unistyles, gluestack, Expo-Video, Node, Playwright, Prisma, Undici...\"\nauthors: [slorber]\ndate: 12-04-2024\n---",
+      "source_content_hash": "282284769b5ce5a459465a168028a835d5fef3ae91f4392d3dd0f0601b0e15d5",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week React developers have either been super grateful or busy spending money on useless things. Luckily, Astro is here to make the headline. We also have 2 great React perf articles.",
+      "source_content_hash": "abef41581d07c77065133f4615d11786ff1874ac5cfa891581eccfdf6140b42a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週 React 開發者們要麼非常感恩，要麼忙著把錢花在無用的東西上。幸運的是，Astro 登上了頭條。我們還有兩篇很棒的 React 效能文章。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "The React Native ecosystem has been more active, with the official launch of Radon IDE, and many interesting releases.",
+      "source_content_hash": "a5051a205ee62581f452114a5b7b2de321f95e8aba69cefd59f8970bbb890849",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "React Native 生態系統更加活躍，Radon IDE 正式發布，還有許多有趣的版本更新。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Node 22.12 is here, with `require(esm)` enabled by default in LTS! There's also a TC39 meeting in progress with ES proposals progressing, but that's for next week!",
+      "source_content_hash": "4e1bfaafb7eb5bcb82999551aa30489820aee95e058383195c93155e6badf02f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Node 22.12 來了，LTS 版本預設啟用了 `require(esm)`！TC39 會議正在進行中，ES 提案持續推進，但這些要等到下週了！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_6c991806"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_8f488ab5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![daily.dev:  Your personal dev news feed](/emails/issues/212/daily.jpg)](https://daily.dev/w/this-week-in-react)",
+      "source_content_hash": "70c0596107a1924f66e46971bcd9561e3fe2b2f8f2648abf34b136fa214c325c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![daily.dev：您的個人開發新聞動態](/emails/issues/212/daily.jpg)](https://daily.dev/w/this-week-in-react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[daily.dev: Your personal dev news feed](https://daily.dev/w/this-week-in-react)**",
+      "source_content_hash": "0986ce88966e167c0396b86e96779cabd5264f309e8ef13e689061efe08a5901",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[daily.dev：您的個人開發新聞動態](https://daily.dev/w/this-week-in-react)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "daily.dev brings over 1,000,000 developers a personal news feed with every update, framework and meme they need to know about. It’s totally free and you can opt out of listicles.",
+      "source_content_hash": "2682724c4ae0088f74a3626339aae49342310bfb1977534ebcd9531f2279c22a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "daily.dev 為超過 1,000,000 名開發者提供個人新聞動態，包含他們需要了解的每次更新、框架和迷因。完全免費，您還可以選擇退出清單式文章。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Suffer and learn with like minded developers.",
+      "source_content_hash": "05cd261061f048728ded059fafb04ba234feaa6be7f84b75fa29e2b42a1a10da",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "與志同道合的開發者一起學習成長。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f2c8a42b",
+      "source_content": "- Stay up to date effortlessly.\n- Discover new frameworks and devtools as they come out.\n- Be the smartest dev in the room.",
+      "source_content_hash": "a508ed749da4ba270f90aa83d5f26f4e0a7ed19d0c8447de6c7fc5a48d98f9d3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 毫不費力地保持最新狀態\n- 新框架和開發工具一出現就能發現\n- 成為房間裡最聰明的開發者"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "**It’s totally free. For the best experience,** [**download the extension**](https://chromewebstore.google.com/detail/dailydev-the-homepage-dev/jlmpjdjjbgclbocgajdjefcidcncaied?hl=en)**.**",
+      "source_content_hash": "63c27ae0d954d1fbbb865dfe3ab5854519f61bb82de5d2430a4940033a3c4c74",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**完全免費。為獲得最佳體驗，** [**下載擴充功能**](https://chromewebstore.google.com/detail/dailydev-the-homepage-dev/jlmpjdjjbgclbocgajdjefcidcncaied?hl=en)**。**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5ef5fda3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[![Astro 5.0](/emails/issues/212/astro.jpg)](https://astro.build/blog/astro-5/)",
+      "source_content_hash": "63e0d92e9749da3cc77f80be474c2e66c42addfa49a24949d71abe91db2947a2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Astro 5.0](/emails/issues/212/astro.jpg)](https://astro.build/blog/astro-5/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "**[Astro 5.0](https://astro.build/blog/astro-5/)**",
+      "source_content_hash": "27a03c072456650a346ef22d174b60468042133ee58f2e90a490cc7079f33139",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[Astro 5.0](https://astro.build/blog/astro-5/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "A new major version of Astro just dropped. While technically not a pure React framework, it’s still widely used in the React community, can easily integrate interactive React components, and relies on MDX. The headlines are:",
+      "source_content_hash": "41f541d064ca840b947355e0b47efa314ec396e33e07013546e8ee65d5bb7c0b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Astro 剛剛發布了重大更新。雖然技術上不是純 React 框架，但仍在 React 社群廣泛使用，可輕鬆整合互動式 React 元件，並依賴 MDX。重點包括："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40251870",
+      "source_content": "- Content Layer to bring all of your content into one friendly, type-safe data store. Including from CMS, APIs, and other sources.\n- Server Islands for serving an initial page response as fast as possible, while keeping the ability to interleave dynamic content into a mostly static layout. A quite interesting and simpler alternative to React Server Components and Next.js Partial Pre-Rendering.\n- Simplified prerendering, removing the “hybrid” option\n- Type-safe environment variables\n- Vite 6 with the new Environment API\n- Experimental features: image cropping, responsive image layouts, SVG components",
+      "source_content_hash": "b8d478bcf97b3d8dfc4e0b96026d79f2565fd1e1c0dc9e2cb8b3db5c2a57c278",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- Content Layer：將所有內容整合到友善、型別安全的資料儲存庫，包含來自 CMS、API 和其他來源的內容\n- Server Islands：盡快提供初始頁面回應，同時保持將動態內容嵌入靜態布局的能力。這是 React Server Components 和 Next.js 部分預渲染的有趣簡化替代方案\n- 簡化預渲染，移除了「混合」選項\n- 型別安全的環境變數\n- Vite 6 搭配全新 Environment API\n- 實驗功能：圖片裁剪、響應式圖片布局、SVG 元件"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6e9a41d8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "- 💸 [Omlet – Scan your repo and measure how and where React components are used](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-nov-2024)\n- 👀 [Next.js PR \\- Undeprecate revalidate APIs and rename expire APIs](https://github.com/vercel/next.js/pull/73193): I mentioned new expire APIs to replace the revalidate APIs, but it was a bit too early apparently. The new expire APIs are now marked as unstable and will be iterated on.\n- 👀 [Next.js Canary \\- `authInterrupts` APIs](https://nextjs.org/docs/canary/app/api-reference/config/next-config-js/authInterrupts): New forbidden/unauthorized functions and file conventions to return 401/403 status codes.\n- 👀 [Next.js Canary \\- New config option to disable CSS chunking](https://nextjs.org/docs/canary/app/api-reference/config/next-config-js/cssChunking)\n- 📜 [How To Improve INP: React](https://kurtextrem.de/posts/improve-inp-react): Interaction-to-Next-Paint is now part of Core Web Vitals, and many React sites do not have a great INP score according to the httparchive data. This article greatly explains how to optimize your app’s INP score by sharing many pragmatic tips learned from experience. Covering scheduling, concurrent features, hydration, transitions, state updates, uncontrolled inputs, effects, portals…\n- 📜 [Better Code Rendering Through Virtualization](https://sentry.engineering/blog/better-code-rendering-through-virtualization): CodeCov engineer explains the process of troubleshooting a performance problem while rendering a 52k line file from the TypeScript codebase. They successfully adopted the TanStack virtualization library and documented challenges encountered (native search and scrolling).\n- 📜 [Storybook Component Testing for RSCs](https://storybook.js.org/blog/component-testing-rscs/): Testing RSCs usually requires E2E tests, and Storybook proposes an alternative strategy (experimental) that runs faster, directly in the browser, after mocking server IOs.\n- 📜 [Thoughts on Tailwind 4](https://nmn.sh/blog/2024-11-30-thoughts-on-tailwind-4): It’s more about CSS than React, but the creator of the Meta StyleX CSS-in-JS library expressed concerns. The introduction of descendant variants breaks the atomic CSS guarantees.\n- 📜 [Introducing Efficient Valkey-Based Caching for Next.js](https://blog.platformatic.dev/introducing-efficient-valkey-based-caching-for-nextjs): Platformatic explains how they provide a scalable shared cache to their hosting platform thanks to the Next.js pluggable cache handler system.\n- 📜 [React Data Fetching Patterns](https://www.robinwieruch.de/react-data-fetching-patterns/)\n- 📜 [Getting more out of i18next in React](https://lingual.dev/blog/getting-more-out-of-i18next-in-react/)\n- 📜 [Run your Next.js SSR app on Deno Deploy](https://deno.com/blog/nextjs-on-deno-deploy)\n- 📜 [EdgePipes \\- The Alternative to SSR and RSCs](https://runspired.com/2024/12/01/edge-pipes.html)\n- 📜 [If Not React, Then What?](https://infrequently.org/2024/11/if-not-react-then-what/): I don’t know if you want me to include React criticisms like this in the newsletter. Reading it doesn’t spark me joy 😅. Please reply and tell me\\!\n- 📦 [Phoenix LiveView 1.0](https://phoenixframework.org/blog/phoenix-liveview-1.0-released): It’s an Elixir release, but I believe it’s still super relevant for React developers since LiveView and RSCs are kind-of similar in their way of making the network disappear.\n- 📦 [WebXR First Steps \\- Your first steps into immersive web development](https://github.com/meta-quest/webxr-first-steps-react): A 2-hour tutorial to build an immersive VR FPS mini-game using React-Three-XR.\n- 🎥 [Lee Robinson \\- MDX with Next.js App Router](https://www.youtube.com/watch?v=34bRv6cQezo)\n- 🎥 [Theo \\- Vite 6 is important, here's why](https://www.youtube.com/watch?v=yT4DWBWm6DM)\n- 🎥 [Ankita \\- An Honest Review of TanStack Start vs Next.js](https://www.youtube.com/watch?v=D27AfH0pSp8)\n- 🎥 [Fireship \\- Is Next.js 15 any good? \"use cache\" API first look](https://www.youtube.com/watch?v=xWkozeculPo)\n- 🎙️ [This Month in React \\- React 19 is unblocked, Next 15 is 'stable', Expo launch week](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-11-React-19-is-unblocked--Next-15-is-stable--Expo-launch-week--The-cool-kids-are-on-BlueSky-e2rn2pu)\n- 🎙️ [Syntax \\- Animating the Web With Matt Perry: Exploring Motion](https://syntax.fm/show/854/animating-the-web-with-matt-perry-exploring-motion)",
+      "source_content_hash": "dedb421643c35911c6da0458a06ae5c0b51a1770b314d7b79f689b0e4603b21b",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_30193704"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "41b1e179",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_41b1e179"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "08832b14",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1c598ecd",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "[![Introducing Waitlist mode from Clerk](/emails/issues/212/clerk.jpg)](https://go.clerk.com/tWHD2yj)",
+      "source_content_hash": "de30bef0efc56d31f2c479e26218b78bbbbcc3d8e34e71074c38630a7e00eec7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![介紹 Clerk 的 Waitlist 模式](/emails/issues/212/clerk.jpg)](https://go.clerk.com/tWHD2yj)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "**[Introducing Waitlist mode from Clerk](https://go.clerk.com/tWHD2yj)**",
+      "source_content_hash": "6ff16df3dc2f1a6c4d8aa693b9c5e744f86f728e94d7672d35815a43e8651968",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[介紹 Clerk 的 Waitlist 模式](https://go.clerk.com/tWHD2yj)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "`<Waitlist />` is a new sign-up mode and component that lets users register interest and join a waitlist for early access to your product. Manage user access and onboarding all within your Clerk Dashboard. Read our changelog announcement for more details.",
+      "source_content_hash": "ca92003ace11318c56864f211f7df81544de7907c851c0c28253971bbcbed672",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "`<Waitlist />` 是新的註冊模式和元件，讓使用者登記興趣並加入等候名單，以獲得產品早期存取權限。所有使用者存取和入職流程都可在 Clerk 儀表板中管理。詳情請閱讀我們的更新日誌公告。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cb0bf89b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5baf88e2",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "[![Radon IDE 1.0](/emails/issues/212/radon.jpg)](https://ide.swmansion.com/)",
+      "source_content_hash": "54b1952e3855841426e60a4577602b992866dd095007087d1661846937d874c1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Radon IDE 1.0](/emails/issues/212/radon.jpg)](https://ide.swmansion.com/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "**[Radon IDE 1.0](https://ide.swmansion.com/)**",
+      "source_content_hash": "b34d1790dbc2c24680a2a4d650ea046b22993fe2d32c2f8145816db8d82e5200",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[Radon IDE 1.0](https://ide.swmansion.com/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "Software Mansion created a VSCode extension (also supporting Cursor) that turns your editor into a fully fledged IDE for React Native and Expo. It’s now officially launched as a stable version. It’s a paid product, but considering the low price and the DX improvement, it’s a no-brainer that also supports the company's great open source efforts. Take a look at the [Radon IDE launch video](https://www.youtube.com/watch?v=07Un9EfE8D4) to have a quick overview of the features: simulators panel and settings, debugging, click-to-inspect, URL-driven navigation, storybook integration, and more.",
+      "source_content_hash": "1a1042903efd38e71a4f6b2f88ed299059d0595abfbd4c8014b1e533dd95e1cc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Software Mansion 開發了一款 VSCode 擴充套件（同時支援 Cursor），能將你的編輯器轉變為功能完備的 React Native 和 Expo IDE。現已正式推出穩定版本。這是一款付費產品，但考量其低廉價格與開發者體驗(DX)的提升，加上支持該公司卓越的開源貢獻，無疑是物超所值的選擇。觀看 [Radon IDE 發布影片](https://www.youtube.com/watch?v=07Un9EfE8D4)可快速了解其功能：模擬器面板與設定、偵錯、點擊檢查、URL驅動導航、Storybook整合等。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dd8754e7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cd1d0fe2",
+      "source_content": "- 💸 [React Native Mastery - Now open for enrollment!](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)\n- 👀 [React Native RFC \\- Lean Core, extract JSC (JavaScriptCore) from React Native core](https://github.com/react-native-community/discussions-and-proposals/pull/836): Since Hermes is now the default runtime, it is inefficient to include unused JSC in core.\n- 📜 [Expo-video: a simple, powerful way to play videos in apps](https://expo.dev/blog/expo-video-a-simple-powerful-way-to-play-videos-in-apps)\n- 📜 [Why Brownfield Development With React Native Is Worth Your Attention](https://www.callstack.com/blog/brownfield-development-with-react-native)\n- 📜 [Lazy load view managers in Android](https://yogeshpaliyal.com/quick-tips/rn-tip-lazy-viewmanagers-in-android/)\n- 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC2025&utm_source=TWIRpartnership&utm_content=savethedate) \\- 🇵🇱 Wrocław \\- September 2-4, 2025 \\- A limited batch of Blind Bird tickets is available (until sold out)\n- 📦 [React Native 0.77.0-rc.1 \\- fix punycode Node22 warning 😄](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.1)\n- 📦 [gluestack-ui 2.0 \\- Support for NativeWind v4.1 and RSC, remove unnecessary complexity, reduce CSS size](https://gluestack.io/blogs/gluestack-ui-v2-stable-release-with-nativewind-v4-1-support)\n- 📦 [Unistyles 3.0 beta \\- No re-renders, StyleSheet parity, Shadow Tree updates, powered by Nitro](https://www.reactnativecrossroads.com/posts/unistyles-3-preview): This upcoming version looks like a great drop-in replacement for the default StyleSheet API. I'm not quite sure how it works yet, but it sounds very interesting.\n- 📦 [Yoga 3.2- Support for CSS `box-sizing` and `display: contents`](https://www.yogalayout.dev/blog/announcing-yoga-3.2)\n- 📦 [React Navigation 7.3 \\- Support for regexp and alias in linking config](https://reactnavigation.org/docs/configuring-links/#matching-regular-expressions)\n- 📦 [Skia 1.6 \\- Opaque Android canvas to improve performance](https://github.com/Shopify/react-native-skia/releases/tag/v1.6.0)\n- 📦 [Nitro 0.18 \\- Support for macOS and tvOS](https://github.com/mrousavy/nitro/releases/tag/v0.18.0)\n- 📦 [Expo-Share-Extension 2.0 \\- Support for SDK 52](https://github.com/MaxAst/expo-share-extension)\n- 🎙️ [React Universe On Air \\- Radon IDE: Better Developer Experience for React Native Teams](https://www.youtube.com/watch?v=-GT6DPk2K_s)\n- 🎙️ [Rocket Ship 55 \\- Why Companies use React Native, Job Interviews & Open Source Trends with Jamon Holmgren](https://share.transistor.fm/s/654cb5cf)\n- 🎥 [Simon Grimm \\- React Native Debugging: From JS to Native](https://www.youtube.com/watch?v=FXn1vUGCci8)\n- 🎥 [Beto \\- How to implement a Rich Text Editor using DOM Components](https://www.youtube.com/watch?v=CxORa1tXMjw)",
+      "source_content_hash": "50a12d25fdaee13fad883417551b68a00df8e083fcff7eeb0a095ac3bf818d86",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [React Native Mastery - Now open for enrollment!](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)\n- 👀 [React Native RFC - Lean Core, extract JSC (JavaScriptCore) from React Native core](https://github.com/react-native-community/discussions-and-proposals/pull/836): 由於 Hermes 現在是預設的執行環境，在核心中包含未使用的 JSC 是低效的。\n- 📜 [Expo-video: a simple, powerful way to play videos in apps](https://expo.dev/blog/expo-video-a-simple-powerful-way-to-play-videos-in-apps)\n- 📜 [Why Brownfield Development With React Native Is Worth Your Attention](https://www.callstack.com/blog/brownfield-development-with-react-native)\n- 📜 [Lazy load view managers in Android](https://yogeshpaliyal.com/quick-tips/rn-tip-lazy-viewmanagers-in-android/)\n- 🗓️ [React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC2025&utm_source=TWIRpartnership&utm_content=savethedate) - 🇵🇱 弗羅茨瓦夫 - 2025年9月2-4日 - 限量盲鳥票現正發售（售完即止）\n- 📦 [React Native 0.77.0-rc.1 - fix punycode Node22 warning 😄](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.1)\n- 📦 [gluestack-ui 2.0 - Support for NativeWind v4.1 and RSC, remove unnecessary complexity, reduce CSS size](https://gluestack.io/blogs/gluestack-ui-v2-stable-release-with-nativewind-v4-1-support)\n- 📦 [Unistyles 3.0 beta - No re-renders, StyleSheet parity, Shadow Tree updates, powered by Nitro](https://www.reactnativecrossroads.com/posts/unistyles-3-preview): 這個即將推出的版本看起來是預設 StyleSheet API 的絕佳替代品。我還不太確定它的運作方式，但聽起來非常有趣。\n- 📦 [Yoga 3.2- Support for CSS `box-sizing` and `display: contents`](https://www.yogalayout.dev/blog/announcing-yoga-3.2)\n- 📦 [React Navigation 7.3 - Support for regexp and alias in linking config](https://reactnavigation.org/docs/configuring-links/#matching-regular-expressions)\n- 📦 [Skia 1.6 - Opaque Android canvas to improve performance](https://github.com/Shopify/react-native-skia/releases/tag/v1.6.0)\n- 📦 [Nitro 0.18 - Support for macOS and tvOS](https://github.com/mrousavy/nitro/releases/tag/v0.18.0)\n- 📦 [Expo-Share-Extension 2.0 - Support for SDK 52](https://github.com/MaxAst/expo-share-extension)\n- 🎙️ [React Universe On Air - Radon IDE: Better Developer Experience for React Native Teams](https://www.youtube.com/watch?v=-GT6DPk2K_s)\n- 🎙️ [Rocket Ship 55 - Why Companies use React Native, Job Interviews & Open Source Trends with Jamon Holmgren](https://share.transistor.fm/s/654cb5cf)\n- 🎥 [Simon Grimm - React Native Debugging: From JS to Native](https://www.youtube.com/watch?v=FXn1vUGCci8)\n- 🎥 [Beto - How to implement a Rich Text Editor using DOM Components](https://www.youtube.com/watch?v=CxORa1tXMjw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "43fd0c1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23b96cc0",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4b530389",
+      "source_content": "- 🎄 [Advent of TypeScript \\- 25 type challenges](https://www.adventofts.com/)\n- 📜 [Next-level frosted glass with backdrop-filter](https://www.joshwcomeau.com/css/backdrop-filter/)\n- 📜 [Writing Modern JavaScript without a Bundler](https://playfulprogramming.com/posts/modern-js-bundleless)\n- 📜 [Washing your code: don’t make me think](https://sapegin.me/blog/dont-make-me-think/)\n- 📜 [Try...Catch As Little As Possible](https://www.joshuakgoldberg.com/blog/try-catch-as-little-as-possible/)\n- 📦 [Node v22.12 \\- require(esm) is now enabled by default](https://nodejs.org/en/blog/release/v22.12.0)\n- 📦 [Playwright 1.48 \\- Aria snapshots, test runner improvements](https://github.com/microsoft/playwright/releases/tag/v1.49.0)\n- 📦 [Undici 7 \\- Scheduled for Node.js 24, stricter fetch() spec compliance](https://blog.platformatic.dev/undici-v7-is-here)\n- 📦 [Prisma 6 \\- Better Performance, More Flexibility & Type-Safe SQL](https://www.prisma.io/blog/prisma-6-better-performance-more-flexibility-and-type-safe-sql)",
+      "source_content_hash": "37e9e3b9843a0515dad66ee5d92bddc3eb636a3797ee2fa65d123fe236ba20c0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 🎄 [Advent of TypeScript - 25 個型別挑戰](https://www.adventofts.com/)\n- 📜 [進階毛玻璃效果：使用 backdrop-filter](https://www.joshwcomeau.com/css/backdrop-filter/)\n- 📜 [無需打包工具的現代 JavaScript 開發實踐](https://playfulprogramming.com/posts/modern-js-bundleless)\n- 📜 [程式碼清洗術：別讓我思考](https://sapegin.me/blog/dont-make-me-think/)\n- 📜 [盡可能減少 Try...Catch 的使用](https://www.joshuakgoldberg.com/blog/try-catch-as-little-as-possible/)\n- 📦 [Node v22.12 - require(esm) 現已預設啟用](https://nodejs.org/en/blog/release/v22.12.0)\n- 📦 [Playwright 1.48 - Aria 快照功能、測試執行器改進](https://github.com/microsoft/playwright/releases/tag/v1.49.0)\n- 📦 [Undici 7 - 預計隨 Node.js 24 發布，強化 fetch() 規範相容性](https://blog.platformatic.dev/undici-v7-is-here)\n- 📦 [Prisma 6 - 效能提升、更佳彈性與型別安全的 SQL](https://www.prisma.io/blog/prisma-6-better-performance-more-flexibility-and-type-safe-sql)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8bafd2d7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fff17ff8",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣味集錦 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "[![alt](/emails/issues/212/meme.jpg)](https://bsky.app/profile/astro.build/post/3lcf2lt6xik2p)",
+      "source_content_hash": "1e66c6adc8cdb6ef0d62fc235b9d8591bc6247ddef2294bed95dd3becfeb63c7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/212/meme.jpg)](https://bsky.app/profile/astro.build/post/3lcf2lt6xik2p)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "[![alt](/emails/issues/212/meme3.jpg)](https://x.com/MicrosoftEdge/status/1862149469610914126)",
+      "source_content_hash": "8131f108b1458e8b8da5d7f15cc16fb5836c24c4e55b876e3b340b9b5d643d87",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/212/meme3.jpg)](https://x.com/MicrosoftEdge/status/1862149469610914126)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "681ef526",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下次見！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/212/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.122050+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "1a857566693b878d826966ec68914f3968b034b42dae0f3d5b9db0739309c90b"
+  }
+}

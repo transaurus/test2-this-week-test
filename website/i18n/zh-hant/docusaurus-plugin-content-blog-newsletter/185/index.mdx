@@ -1,0 +1,157 @@
+---
+slug: /185
+title: "This Week In React #185: React Conf, useDeferredValue, React Query, refs, Next.js after, mini-react, Astro, MDXTS, Radix, Solid, Redwood, Pigment, Apollo, Playwright, Re.Pack, RN-Model3D, RN perf, RN Video, VisionOS, LiveView, Anchor Positioning ..."
+authors: [slorber, bndkt]
+date: 05-15-2024
+---
+
+大家好！
+
+本週在版本發布方面相當平靜，至少目前如此！我們有許多優秀的 React 文章，但也包含一些批評性內容，或是建議使用替代解決方案（如 Solid、Phoenix LiveView）的內容 😅。
+
+React Conf 今天稍晚就要開始了！我們預期會看到許多精彩的發表內容，這些將在下週報導。我今天稍早發送電子報，確保能無壓力地觀看直播 😄。
+
+[React Conf 的 YouTube 直播連結](https://www.youtube.com/watch?v=T8TZQ6k4SLE)已開放。查看[會議議程](https://conf.react.dev/agenda)，我們特別期待以下演講：
+
+- React 和 React Native 主題演講與問答
+- Expo Router 中的通用 React Server Components - Evan Bacon - Expo
+- 即時伺服器元件 - Sunil Pai - PartyKit
+- 使用 React 進行空間運算 - Michał Pierzchała - Callstack
+- 跨平台 React - Olga Zinoveva 和 Naman Goel - Meta
+
+談到會議，美國 React Native 會議 [**Chain React**](https://chainreactconf.com/?utm_source=thisweekinreact) 將於 7 月 17-19 日回歸（俄勒岡州波特蘭）。我們合作提供讀者專屬 85 折優惠碼 "TWIR"。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![輕鬆實現應用內訂閱](/emails/issues/177/revenuecat.jpg)](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)
+
+**[輕鬆實現應用內訂閱](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)**
+
+RevenueCat 提供您變現、分析與擴展應用業務所需的一切。輕鬆管理客戶存取權限與授權、處理數據，並進行定價實驗。了解為何超過 30,000 個應用程式信任 RevenueCat 來驅動其應用內購買基礎架構。
+
+---
+
+## ⚛️ React {#react}
+
+[![使用 useDeferredValue 實現流暢的 UI 優化](/emails/issues/185/useDeferredValue.jpg)](https://www.joshwcomeau.com/react/use-deferred-value/)
+
+**[使用 useDeferredValue 實現流暢的 UI 優化](https://www.joshwcomeau.com/react/use-deferred-value/)**
+
+Josh Comeau 帶來一篇精彩文章，展示 `useDeferredValue()` hook 的實用性，該功能讓您能透過將高成本元件渲染降級為低優先級任務，選擇性啟用 Concurrent React。他詳細說明實際遇到的效能問題，以及該 hook 如何協助解決。要高效運作，關鍵是使用 `memo()` 包裹高成本元件。互動式時間軸有助理解其與節流（throttling）的差異。
+
+---
+
+[![為何選擇 React Query？](/emails/issues/185/reactquery.jpg)](https://ui.dev/why-react-query)
+
+**[為何選擇 React Query？](https://ui.dev/why-react-query)**
+
+Dominik Dorfmeister 推出官方 React Query 課程，並免費發布首堂課程。這是一篇精彩的互動式文章，逐步展示 React Query 的完整功能，包括處理競態條件、請求去重複化與快取機制。它功能全面，更像是一個「非同步狀態管理器」而不僅是數據獲取庫。即使不使用 React Query，也值得所有 React 開發者一讀。
+
+---
+
+- 💸 [NLUX ― New React library to add AI features](https://nlux.dev/?utm_source=twir-m24)
+- 📖 [React Docs - StrictMode - Fixing bugs by re-running ref callbacks in development](https://19.react.dev/reference/react/StrictMode#fixing-bugs-found-by-re-running-ref-callbacks-in-development): I shared last week that refs are firing twice in React 19 StrictMode. This is for good reasons, and this new doc section explains how it can prevent bugs, notably when dealing with lists of refs.
+- 📖 [React Docs - Don’t use refs to prevent Effects from firing](https://react.dev/learn/synchronizing-with-effects#dont-use-refs-to-prevent-effects-from-firing)
+- 👀 [Next.js PR - unstable_after](http://next.js): This upcoming feature lets the user schedule a callback to be executed after the current request finishes. This requires the runtime to support a waitUntil function, a feature that [Vercel just shipped](https://vercel.com/changelog/waituntil-is-now-available-for-vercel-functions) (that Cloudflare already had). Particularly useful for logging/analytics without delaying the response.
+- 🐦 [Experimental Node.moveBefore() API - preserve DOM state across element moves & reparenting](https://twitter.com/domfarolino/status/1790407887740666335): An awesome new API could land on the web platform allowing React to reparent JSX nodes to different places without resetting the DOM state (see also [Sebastian Markbåge comment](https://github.com/whatwg/dom/issues/1255#issuecomment-2021486232)).
+- 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 Amsterdam - 14-18 June - Grab the tickets before they're sold out. Get a 10% discount with code "TWIR".
+- 🗓 [dotJS](https://www.dotjs.io/?utm_source=thisweekinreact) - 🇫🇷 Paris - June 27 - Malte Ubl, Jessica Sachs, James Q Quick, and many other international speakers will be there! 10% discount with code "TWIR"
+- 📜 [Build Your Own React.js in 400 Lines of Code](https://webdeveloper.beehiiv.com/p/build-react-400-lines-code): The author built a “mini-react” able to run the official React tic-tac-toe tutorial, in 400 lines, with Fiber/interruption support. He explains some of the main algorithms
+- 📜 [The Forensics Of React Server Components (RSCs)](https://www.smashingmagazine.com/2024/05/forensics-react-server-components/): A deep dive into RSCs, Suspense, streaming, lazy loading including many helpful schemas, annotated screenshots, and payload examples. Interesting focus on the performance and UX impact.
+- 📜 [It’s not just you, Next.js is getting harder to use](https://www.propelauth.com/post/nextjs-challenges): Argues that with App Router, Next.js is becoming more subtle and difficult to use. Illustrated with aggressive caching and inability to get the current pathname in RSCs.
+- 📜 [Animating Radix Primitives with Framer Motion](https://sinja.io/blog/animating-radix-primitives-with-framer-motion): Exit animations are more tricky to handle correctly and require using Radix in a controlled way in combination with the “forceMount” prop.
+- 📜 [A React Developer's Guide to Learning SolidJS](https://www.stashpad.com/blog/react-developer-guide-to-solid-js): Greatly explains that the code of both libraries looks similar, but fundamentally works differently, and that can trick you.
+- 📜 [Prefetching data with TanStack Query](https://tigerabrodi.blog/prefetching-data-with-tanstack-query): On a blog with a “Next Post” navigation link, you can prefetch the React Query data of the next post so that navigation is faster.
+- 📜 [React, Electron, and LLMs have a common purpose: the labour arbitrage theory of dev tool popularity](https://www.baldurbjarnason.com/2024/react-electron-llms-labour-arbitrage/): Curious read arguing devs using popular technologies like React are commodities and management favors that over technological progress 🤷‍♂️.
+- 📜 [Moving from RSC to SolidStart](https://www.brenelz.com/posts/moving-from-rsc-to-solid-start)
+- 📜 [Middleware in RedwoodJS](https://redwoodjs.com/blog/middleware-in-redwoodjs) + [New Feature: og:image Middleware](https://redwoodjs.com/blog/new-feature-ogimage-middleware)
+- 📜 [Apollo Client - Optimizing Data Fetching, leveraging useFragment and Colocated Fragments](https://www.apollographql.com/blog/optimizing-data-fetching-with-apollo-client-leveraging-usefragment-and-colocated-fragments)
+- 📜 [How To Integrate Stripe With React?](https://scientyficworld.org/how-to-integrate-stripe-with-react/)
+- 📜 [Drag and Drop with React. Writing E2E tests using Playwright](https://wanago.io/2024/05/06/react-drag-drop-e2e-playwright/)
+- 📜 [Implementing infinite scrolling with React. Writing E2E tests with Playwright](https://wanago.io/2024/04/29/react-infinite-scrolling-e2e-playwright/)
+- 📦 [Astro 4.8 - Astro Actions, Request Rewriting](https://astro.build/blog/astro-480/): Astro added new experimental features, including the ability to call typesafe server functions, validated with Zod using JSON or FormData, and supporting progressive enhancement.
+- 📦 [Pigment CSS 0.0.10](https://github.com/mui/pigment-css/releases/tag/v0.0.10): New zero-runtime CSS-in-JS lib keeps progressing (🐦 [93% of MUI components now support CSS extractions](https://twitter.com/siriwatknp/status/1788061040544194836))
+- 📦 [MDXTS 1.0 - New tool for building content and documenting libraries with MDX, TypeScript, and React](https://www.mdxts.dev/blog/introducing-mdxts)
+- 🕹 [Athena Crisis is now Open Source](https://cpojer.net/posts/athena-crisis-open-source): Christoph Nakazawa (Jest, Metro…) created a full retro indie game available on Steam. The React-DOM codebase is now open source with bounties available for contributors.
+- 🎥 [Theo - This Release Makes Me Want To Leave React](https://www.youtube.com/watch?v=aOk67eT3fpg): Phoenix LiveView [1.0 RC is out](https://www.phoenixframework.org/blog/phoenix-liveview-1.0-released) and solves problems similar to React Server Components in interesting ways. Updates can be sent to the client in real time by maintaining a WebSocket connection to the server. Note there’s an exciting React Conf talk later today on this topic: Real-time server components.
+- 🎥 [React Conf - YouTube live stream](https://www.youtube.com/watch?v=T8TZQ6k4SLE)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![Refine - 開源 Retool 替代方案](/emails/issues/177/refine.jpg)](https://github.com/refinedev/refine)
+
+**[Refine - 開源 Retool 替代方案](https://github.com/refinedev/refine)**
+
+針對 CRUD 密集型應用，在低程式碼與傳統開發之間找到完美平衡點。
+
+作為專為企業應用設計的開源 React 元框架，[Refine](https://github.com/refinedev/refine) 提供無頭解決方案，非常適合管理面板、儀表板和內部工具等任務。
+
+儘管低程式碼工具初期頗具前景，但在處理複雜情境時往往力不從心，原因包括擴展性不足、客製化選項有限以及供應商鎖定風險。
+
+Refine 讓團隊能快速開發可投入生產的應用程式，同時保持靈活性。
+
+---
+
+## 📱 React-Native {#react-native}
+
+本節由 [Benedikt](https://twitter.com/bndkt) 撰寫。
+
+- 💸 [React Native Analytics — 使用 Omlet 即時追蹤元件使用情況。透過預建圖表與自訂圖表數據優化程式碼庫](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-rn-ql-may-2024)
+- 🐦 [React Native Community CLI 的自動連結依賴功能大幅提速](https://x.com/SzymonRybczak/status/1788520827232584008)
+- 🐦 [App Store 前 100 大商業應用中，26 款採用 React Native 開發，3 款用 Flutter，8 款用 Cordova](https://x.com/Baconbrix/status/1790095033472802858)
+- 🐦 [React Native 版「非熱狗」偵測應用](https://x.com/mrousavy/status/1788895681320522048)：Vision Camera 幀處理器的精妙示範。
+- 👀 [Hermes 現已支援 visionOS](https://github.com/facebook/hermes/pull/1358)
+- 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 克拉科夫 - 5月22-24日。輸入代碼「TWIR」享[10%折扣](https://ti.to/appjs/2024/discount/TWIR)。
+- 📜 [使用 RN Skia 實作 React Native 刮刮卡](https://javascript.plainenglish.io/creating-a-scratch-card-in-react-native-using-react-native-skia-23332bd32942)：整合 Skia、Reanimated 與 Gesture Handler 的教學。
+- 📜 [在 Monorepo 中建立 React Native Web 專案](https://unicorn-utterances.com/posts/react-native-web-monorepo)：此設定包含 Vite 與 Styled Components，內容比標題更深入。
+- 📜 [處理緩慢重新渲染：透過 React DevTools 與 JavaScript Profiler 的隱藏解法](https://www.bam.tech/article/handle-slow-re-renders-a-not-so-obvious-solution-using-react-devtools-and-javascript-profiler)：效能優化是高價值技能但不易掌握，本篇提供 DevTools 與 Profiler 的詳盡入門指南。
+- 📜 [破解混合框架迷思](https://www.bam.tech/article/debunk-ideas-on-hybrid-framework)：身為 RN 開發者應已知悉，此文是反駁常見 RN 誤解的精選書籤。
+- 📜 [React Native 新架構效能基準全覽](https://dev.to/yoel/react-native-new-architecture-what-you-need-to-know-1eke)：解析 New Arch 與 Bridgeless 架構，並提供原生模組與 Fabric 視圖模組的效能測試數據，程式碼已開源於 GitHub。
+- 📜 [React-Native 鍵盤關閉指南：終結困擾](https://www.bam.tech/article/dismissing-keyboard-in-react-native-stop-the-struggle)
+- 📦 [React-Native-Model3d - 在 visionOS 應用渲染 3D 模型](https://github.com/okwasniewski/react-native-model3d)
+- 📦 [Re.Pack 4.0 - React Native 專用 Webpack - 支援新架構與 Metro 相容模組解析](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%404.0.0)
+- 📦 [React Native Video 6.0 - TypeScript 支援、RN 0.73 相容、通知控制、字幕樣式、全螢幕](https://github.com/TheWidlarzGroup/react-native-video/releases/tag/v6.0.0)
+- 🎙️ [Rocket Ship 40 - 從 Next.js 轉戰 React Native 與 Kitze 對談](https://share.transistor.fm/s/47610b15)
+- 🎙️ [The React Native Show Podcast #37 - 與 Catalin Miron 打造高效能 RN 動畫](https://www.youtube.com/watch?v=1XWmlgTYJ6k)
+- 🎥 [React Native 優化短片：Flashlist 真比預設方案優秀？](https://www.youtube.com/watch?v=2FfU-PIDN2U)
+- 🎥 [Simon Grimm - Expo SDK 51：新套件、路由、架構與範本](https://www.youtube.com/watch?v=wqS8LqRhNVY)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [CSS RFC - CSS 層級分類 - CSS4 和 CSS5](https://github.com/CSS-Next/css-next/discussions/92)
+- 📊 [2023 HTML 狀態調查 - 調查結果已公布](https://2023.stateofhtml.com/)
+- 📜 [介紹 CSS 錨點定位 API](https://developer.chrome.com/blog/anchor-positioning-api)
+- 📦 [Chrome 125 - CSS 錨點定位、Compute Pressure API](https://developer.chrome.com/blog/new-in-chrome-125)
+- 📦 [Safari 17.5 中的 WebKit 功能 - text-wrap: balance、light-dark()、@starting-style](https://webkit.org/blog/15383/webkit-features-in-safari-17-5/)
+- 📦 [esbuild 0.21 - 裝飾器](https://github.com/evanw/esbuild/releases/tag/v0.21.0)
+- 📦 [類型複雜度追蹤器 - 用於測量專案中類型複雜度的 VSCode 擴充功能](https://github.com/tsperf/tracer)
+- 📦 [Oslo - 適用於整個 JS 生態系統的簡易驗證套件](https://oslojs.dev)
+- 🗓 [GraphQLConf - 舊金山，9月10-12日 - CFP 開放至 5月22日](https://graphql.org/conf/2024/?utm_source=thisweekinreact)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/185/meme.jpg)](https://twitter.com/sebastienlorber/status/1788682484541952418)
+
+[![alt](/emails/issues/185/meme2.jpg)](https://twitter.com/vincentriemer/status/1790447746987495818)
+
+下次見！👋

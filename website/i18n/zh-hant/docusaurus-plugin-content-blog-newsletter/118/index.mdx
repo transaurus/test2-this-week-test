@@ -1,0 +1,165 @@
+---
+slug: /118
+title: "This Week In React #118: Gatsby, Beta Docs, Reactivity, Lazy Maps, Ezno, Whyframe, Reassure, Node.js, TypeScript, WASM..."
+authors: [slorber]
+date: 10-03-2022
+---
+
+大家好！
+
+好消息：新版 React beta 文檔即將推出！舊版文檔已新增連結引導至新版 beta 站點。Gatsby v5 已發布 alpha 版。
+
+當前趨勢：為 React 引入響應式特性。
+
+本週也有優質的 React-Native 內容。我們正密切關注 Expo Router、WishList 以及 Reassure 中 Web 支援的進展。
+
+TypeScript 迎來十週年。Node.js 即將引入 `--watch` 模式。另有關於 WebAssembly 的精彩內容。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本週報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Storyblok](/emails/issues/116/storyblok.png)](https://www.storyblok.com/?utm_source=thisweekinreact&utm_medium=display&utm_campaign=AWA_SPON_TWIREACT_TRA&utm_content=thisweekinreact_en)
+
+試過 [Storyblok](https://www.storyblok.com/?utm_source=thisweekinreact&utm_medium=display&utm_campaign=AWA_SPON_TWIREACT_TRA&utm_content=thisweekinreact_en) 嗎？這是專為開發者和行銷人員設計的 Headless CMS，內建視覺化編輯器！
+
+使用 Storyblok React SDK 快速建構可重用元件，獲取內容來建立 React、Next.js、Remix 甚至 React-Native 應用程式、網站或電商平台。
+
+立即探索 [技術中心](https://www.storyblok.com/technologies?utm_source=thisweekinreact&utm_medium=display&utm_campaign=AWA_SPON_TWIREACT_TRA&utm_content=thisweekinreact_en)親自體驗！
+
+---
+
+## ⚛️ React {#react}
+
+**[Gatsby v5 Alpha](https://www.gatsbyjs.com/blog/gatsby-v5-alpha-is-here-and-its-pretty-exciting/)**
+
+Gatsby v5 alpha 版推出兩大新功能：
+
+- 基於 React Server Components 的[局部水合 (partial hydration) 支援](https://www.gatsbyjs.com/blog/a-look-at-partial-hydration-in-gatsby-5/)，並在客戶端元件頂部新增 `"client export"` 指令
+- Gatsby Slices API，可在共享元件（佈局/導航欄/頁尾）需重新渲染時大幅提升建置效率
+
+**[讓 React 預設高效且真正響應式](https://legendapp.com/open-source/legend-state/)**
+
+互動式文章闡述 React 中預設未優化的重渲染問題，展示基於 observable 的 Legend-State 函式庫如何為 React 引入響應式特性（類似 SolidJS）。程式碼預設即優化，避免不必要的重渲染。
+
+**[Ezno - 實驗性編譯器](https://kaleidawave.github.io/posts/introducing-ezno/)**
+
+全新實驗性 JavaScript 型別檢查編譯器，兼容 TypeScript 註解與 JSX。採用依賴型別 (dependent typing) 實現進階靜態分析與編譯期預評估（類似 [prepack](https://prepack.io/)）。目標是將類 React 應用編譯為響應式形式，跳過 VDOM。技術性較強。
+
+**[（惰性）元件映射](https://julesblom.com/writing/lazy-component-maps)**
+
+介紹條件渲染時活用程式碼分割的實用技巧，特別適用於大型枚舉/聯合型別場景，例如 `<Icon name="my-icon-name"/>` 元件。
+
+**[Whyframe](https://whyframe.dev/)**
+
+允許將前端元件渲染隔離在 iframe 中。現已支援 [Webpack、Next.js 和 Docusaurus](https://twitter.com/bluwyoo/status/1576947013450539008)。這對於元件庫文件網站非常實用，能確保網站的全局 CSS 不影響所顯示元件的渲染效果。
+
+- 📖 Beta React 文件：[useEffect](https://twitter.com/dan_abramov/status/1575320847279071232) + [useId](https://twitter.com/dan_abramov/status/1577283961763467265) + ["所有常用 API 已記錄"](https://twitter.com/dan_abramov/status/1575367224541560833)
+- 📜 [如何將無伺服器函式與 SSR 搭配使用](https://paulie.dev/posts/2022/09/how-to-use-serverless-fucntions-with-ssr/)：說明如何在 Gatsby 中正確拆分伺服器/客戶端功能
+- 📜 [2022 年最快的前端工具鏈](https://cpojer.net/posts/fastest-frontend-tooling-in-2022)：Christoph Nakazawa 解釋其極簡模板 [vite-ts-react-tailwind-template](https://github.com/cpojer/vite-ts-react-tailwind-template) 的設計選擇
+- 📜 [改善 Next.js 網站的無障礙性](https://vercel.com/blog/improving-the-accessibility-of-our-nextjs-site)
+- 📜 [Orton 效果 - 用 CSS 和 React 實現夢幻照片特效](https://mikebifulco.com/posts/orton-effect-css-react)
+- 📜 [Mark Erikson - React 渲染行為指南 - 已更新至 React 18](https://twitter.com/acemarke/status/1577301648850014210)
+- 🚧 [no-nested-components ESLint 規則](https://github.com/facebook/react/pull/25360)：新規則可能禁止動態宣告元件
+- 🧵 [Dan Abramov - "跳過重新渲染（例如使用 memo）僅是效能優化手段"](https://twitter.com/dan_abramov/status/1575553047408902147)
+- 🧵 [Andrew Clark - "我們認真考慮過用 WASM 重寫 React"](https://twitter.com/acdlite/status/1576302675766804480)
+- [React Spectrum - React Aria - 10 月 4 日更新](https://twitter.com/devongovett/status/1577370727849680896)
+- 📦 [Redwood v3](https://community.redwoodjs.com/t/redwood-3-0-0-is-now-available/3989) + [Redwood v3 新功能解析](https://www.youtube.com/watch?v=o9LFWOxMlTs)
+- 📦 [Supabase 預建 React 驗證 UI](https://twitter.com/supabase/status/1577215238792916992)
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[**React Brussels - 實體與線上 React 會議 - 2022 年 10 月 14 日**](https://www.react.brussels/)
+
+React Brussels 以首屆**混合形式**重返歐洲中心 ❤️。議程涵蓋**最前沿技術與技能**（Playwright、WebVR、useEffect、資料獲取、Remix...），並邀請 React 領域**頂尖專家**：
+
+- Tejas Kumar：開發者關係總監 - **Xata**
+- Kathleen McMahon：資深設計系統工程師 - **Northwestern Mutual**
+- David Khourshid：創辦人 - **Stately**
+- Shaundai Person：資深軟體工程師 - **Netflix**
+- Debbie O'Brien：資深專案經理 - **Microsoft**
+
+會後派對、競賽、職缺機會、比利時 🍺、紀念品、城市導覽...所有活動將持續至會議結束後！
+
+現場票幾乎 **售罄**！動作要快，**[立即搶購](https://ti.to/bejs/react-brussels-2022/with/in-person-ticket-copy,group-3-tickets-20,group-4-tickets-25,group-5-tickets-30,student-junior-pass?source=undefined)**，加入超過 200 名開發者現場共襄盛舉！無法親臨？那就來張 [**30 歐元線上票 🎟**](https://ti.to/bejs/react-brussels-2022/discount/online_lastweek) 😜
+
+---
+
+## 📱 React-Native {#react-native}
+
+**[Reassure - 簡易連續應用效能監控方案](https://www.callstack.com/blog/app-performance-monitoring)**
+
+Callstack 估計 React-Native 中 80% 的效能問題源自 JavaScript，尤其是 React 的誤用。他們開發了 Reassure，這款全新的效能回歸測試函式庫，能無縫整合至 CI 流程，防止應用程式效能隨時間劣化。目前尚未提供 [網頁支援](https://github.com/callstack/reassure/issues/39)。
+
+- 📒 [BAM Mobile Tech Radar 2022](https://www.bam.tech/en-tech-radar)：2022 年行動開發完整報告，包含 React-Native 重要章節
+- 🔗 [fabric-library-with-custom-cpp-example](https://github.com/callstack/fabric-library-with-custom-cpp-example/)
+- 📦 React-Native [v0.70.2](https://twitter.com/Kelset/status/1577262972396744704) + [v0.69.6](https://twitter.com/titozzz/status/1574744371865346049)
+- 📦 [Jest-Native 5.0](https://github.com/testing-library/jest-native/releases)：原生 TypeScript 支援
+- 🎥 [React-Native EU 播放清單](https://www.youtube.com/watch?v=7QeINTWLUkc&list=PLZ3MwD-soTTE-qcA0MrcvZBdmkHJSIjJX)：分段影片已上線
+- 🎥 [使用 React-Native Skia、React-Native Gesture Handler 和 Reanimated 2 實現弧形滑桿](https://www.youtube.com/watch?v=fWLyKzEXaJI)
+- 📜 [如何為基於 JSI 的 React Native 函式庫指定預處理器標誌](https://dev.to/craftzdog/how-to-specify-pre-processor-flags-to-the-jsi-based-react-native-libraries-51m5)
+- 📖 [Expo Router](https://expo.github.io/router/)：文件已釋出，助您熟悉全新檔案系統路由
+- 📖 [Expo 應用圖示與啟動畫面指南已更新](https://twitter.com/amanhimself/status/1575589181237043200)
+- 🎨 [原生 iOS 底層表單演示 - iOS detents](https://twitter.com/FernandoTheRojo/status/1575247583634935808)
+- 🎨 [React-Native 願望清單演示 - 即將推出 Alpha 版](https://twitter.com/margelo_io/status/1576887456024043520)
+- 🎨 [Flipper 中實驗性支援除錯 Reanimated 的 worklet 運行環境 (Hermes)](https://twitter.com/swmansion/status/1577308811890610176)
+
+---
+
+## 🧑‍💻 工作機會 {#jobs}
+
+🧑‍💼 [**Causal 產品工程師，遠端/倫敦/紐約，$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)
+
+Causal 是 A 輪新創（由 Coatue/Accel 支持），致力打造整合式數字運算與資料視覺化工具。誠徵資深 React 工程師解決高難度 UX/效能挑戰。
+
+🧑‍💼 [**G2i - 100% 遠端 React Native 職缺**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我們為專注於 React Native 的開發者開放了多個職位！薪資約 16 萬美元外加 10% 獎金。您必須具備 RN 實際生產經驗且位於美國境內。私訊 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解更多，別忘了提及 This Week in React。
+
+💡 [如何發布職缺？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [TypeScript 的十年](https://devblogs.microsoft.com/typescript/ten-years-of-typescript)
+- [TotalTypeScript - 初學者 TypeScript](https://www.totaltypescript.com/tutorials/beginners-typescript)
+- [為何我不使用 Prettier](https://antfu.me/posts/why-not-prettier)
+- [無 .gif 的 Gifs - 當前最高效的圖像與影片方案](https://css-tricks.com/gifs-without-the-gif-the-most-performant-image-and-video-options-right-now/)
+- [CSS 比較函式的應用場景](https://ishadeed.com/article/use-cases-css-comparison-functions/)
+- [Node.js 18 - `node --watch`](https://github.com/nodejs/node/pull/44366)
+- [Node.js 19 RC.0](https://twitter.com/ruyadorno/status/1575628377372823552)
+- [Astro 1.4](https://astro.build/blog/astro-140/)
+- [Deno 1.26](https://deno.com/blog/v1.26)
+- [Rome 0.10](https://twitter.com/rometools/status/1577296196502278150)
+- [2022 CSS 現狀調查 - 開放填寫](https://stateofcss.com/en-us/)
+- [2022 GraphQL 現狀調查 - 結果公布](https://2022.stateofgraphql.com/en-US/)
+- [漸進增強打造更穩健的網路](https://jjenzz.com/progressively-enhance-for-a-more-resilient-web)
+- [Chrome 106 新功能](https://developer.chrome.com/blog/new-in-chrome-106/)
+- [九月 Web 平台新增功能](https://web.dev/web-platform-09-2022/)
+- [在 Node.js 中最小化堆積分配](https://blog.appsignal.com/2022/09/28/minimize-heap-allocations-in-nodejs.html)
+- [提供真實 HTML 內容會讓網站更快嗎？](https://blog.webpagetest.org/posts/will-html-content-make-site-faster/)
+- [什麼阻礙了 WebAssembly 的廣泛採用？](https://thenewstack.io/whats-stopping-webassembly-from-widespread-adoption/)
+- [Blink - 原型開發意向 - CSS Nesting](https://twitter.com/intenttoship/status/1576951638325186565)
+- [Postgres-WASM](https://supabase.com/blog/postgres-wasm)
+- [我將 JS 變成編譯語言（為了樂趣與 Wasm）](https://surma.dev/things/compile-js/)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![Theo T3 最佳點擊誘餌](/emails/issues/118/meme.png)](https://twitter.com/t3dotgg/status/1576467328606253057)

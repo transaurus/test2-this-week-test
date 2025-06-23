@@ -1,0 +1,149 @@
+---
+slug: /168
+title: "This Week In React #168: TanStack, useMemo, RSC, preload, flushSync, shadcn-ui, MDX, Storybook, StyleX, TWC, Tokenami, Catalyst, rsc-cache, WishList, VisionOS, Hermes, release-profiler..."
+authors: [slorber, bndkt]
+date: 01-03-2024
+---
+
+大家好！
+
+聖誕快樂，新年快樂！🥂
+
+這份電子報又回來迎接新的一年了。儘管正值假期，我們仍有一些有趣的消息，特別是關於 TanStack 的。開發者們可能藉此機會來做自己的開源副業項目 😄！
+
+別忘了填寫 [State of React Native 2023 調查](https://stateofreactnative.com/)，這是你最後的機會！
+
+再次說明，本期的作者現在有兩位：[Benedikt](https://twitter.com/bndkt) 正在協助我。
+
+我希望找時間寫一份完整的 2023 年電子報回顧。在此之前，如果你好奇，我已經在我的 [Indie Hackers 頁面](https://www.indiehackers.com/product/french-react-newsletter) 上寫了兩年的每月報告。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看這份電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![幫助您鍛鍊產品肌肉的電子報](/emails/issues/168/posthog.png)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)
+
+**[幫助您鍛鍊產品肌肉的電子報](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**
+
+[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) 是 PostHog 的電子報，致力於幫助工程師提升產品技能。學習該問使用者什麼問題、如何打造使用者喜愛的新功能，以及達成產品市場契合的路徑。[**免費訂閱**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) 以獲取關於打造優秀產品的精選建議、從構建 PostHog 中學到的教訓（和錯誤），以及對頂尖新創公司策略的深度探討。
+
+---
+
+## ⚛️ React {#react}
+
+[![TanStack Router 1.0](/emails/issues/168/tanstack-router.jpg)](https://tanstack.com/router/v1)
+
+**[TanStack Router 1.0](https://tanstack.com/router/v1)**
+
+備受期待的 TanStack Router 以穩定的 1.0 版本推出，並附帶一個精美的 [🐦 宣傳影片](https://twitter.com/tannerlinsley/status/1738709130213560497)，正好趕上聖誕節。這個新的路由在類型安全、URL 狀態管理（搜尋參數）和快取等方面，突破了可能的界限。
+
+[SSR 指南](https://tanstack.com/router/v1/docs/guide/ssr) 提到了一個 `@tanstack/react-start` 套件，可能是即將推出的 [🐦 TanStack Start 框架](https://twitter.com/sebastienlorber/status/1742589454563369123) 的預告。
+
+您可能錯過的其他近期 TanStack 套件：
+
+- 📦 [TanStack Config - 用於發布和維護高品質 JavaScript 套件的工具](https://github.com/TanStack/config)
+- 📦 [TanStack Store - 框架無關、類型安全的儲存庫，帶有響應式框架適配器](https://tanstack.com/store/latest)
+
+---
+
+- 💸 [From Dreamweaver to JSX: The Evolution of Visual Dev Tools for the Web](https://mightymeld.com/blog/browser-dev-tools-understand-code?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=link1)
+- 👀 [React Docs PR - React-DOM static resource loading functions](https://github.com/reactjs/react.dev/pull/6459)
+- 👀 [Next.js PR - Next.js is exploring moving to Lightning CSS](https://github.com/vercel/next.js/pull/58712)
+- 👀 [Remix PR - SPA Mode](https://github.com/remix-run/remix/pull/8338)
+- 🐦 [useMemo to become a better version of context selectors](https://twitter.com/sebastienlorber/status/1741218919732429108): It turns out [selectors do not compose well](https://twitter.com/dan_abramov2/status/1741200483862151663), and the plan is to improve useMemo to kind of act like a selector!
+- 🐦 [SkipRenderOnClient - interesting trick to optimize hydration performance](https://twitter.com/sebastienlorber/status/1742528219318738955)
+- 🐦 [Million.js joins Y Combinator](https://twitter.com/aidenybai/status/1737929698221682789)
+- 📜 [React Server Components: the Good, the Bad, and the Ugly](https://www.mayank.co/blog/react-server-components/): Critical, but well-informed take on the status quo of using RSC.
+- 📜 [Thoughts on Remix](https://www.viget.com/articles/thoughts-on-remix/): Balanced view on Remix - where it came from, their philosophy and how it compares to Next.js.
+- 📜 [More Than You Need to Know About ReactDOM.­flushSync](https://julesblom.com/writing/flushsync): Detailed and interactive look at React-DOM `flushSync()` method, a rarely used but sometimes crucial method enabling you to opt-out of React state update batching.
+- 📜 [Remix + MDX - How this site is built](https://remix-blog-mdx.fly.dev/): Vite features and plugins work together to power Remix + MDX.
+- 📜 [The View Transition API: A New Way to Animate Page Transitions](https://marmelab.com/blog/2023/12/21/view-transitions.html): Also shows how to use it in React Router and Remix.
+- 📜 [What should we ship?](https://rauno.me/craft/vercel): Detailed blog post about the vercel.com relaunch.
+- 📜 [Future of Storybook in 2024](https://storybook.js.org/blog/future-of-storybook-2024/): The themes for Storybook in 2024 will be application development (as opposed to isolated component development), enhanced support for non-React frameworks, and improved story generation (using AI).
+- 📜 [How to make Storybook 2-4x faster - v7.6 comes with perf improvement options, enabled by default in v8.0](https://storybook.js.org/blog/optimize-storybook-7-6/)
+- 📜 [Next.js 14 Parallel Routes](https://www.builder.io/blog/nextjs-14-parallel-routes): Simultaneously render multiple pages within the same layout (useful for dashboards).
+- 📜 [Next.js 14 Intercepting Routes](https://www.builder.io/blog/nextjs-14-intercepting-routes)
+- 📜 [Understanding React’s useFormState and useFormStatus Hooks](https://blog.logrocket.com/understanding-react-useformstate-useformstatus-hooks/)
+- 📜 [Diving into Server Actions in Next.js 14](https://blog.logrocket.com/diving-into-server-actions-next-js-14/)
+- 📦 [rsc-cache - cache expensive RSCs, with Next.js integration](https://github.com/fredkiss3/rsc-cache)
+- 📦 [Catalyst - Modern UI kit for React](https://tailwindcss.com/blog/introducing-catalyst): New official React UI kit from the Tailwind team. It's a paid product requiring a Tailwind UI license. There's also a free Headless UI update, now in v2.0 alpha.
+- 📦 [Tokenami - Atomic CSS in the style attribute](https://github.com/tokenami/tokenami): Modern type-safe styling solution with theming, responsive variant support. Supports React and Solid.
+- 📦 [shadcn-ui 0.5 - new components (Carousel, Drawer, Pagination, Resizable, Sonner) and CLI improvements](https://ui.shadcn.com/docs/changelog)
+- 📦 [StyleX 0.4.1 - ESLint and Rollup plugin improvements, autocomplete, performance, reduced runtime size, support for CSS layers...](https://stylexjs.com/blog/v0.4.1)
+- 📦 [Storybook 8.0.0 alpha 4 - no react peer dependency anymore](https://github.com/storybookjs/storybook/releases/tag/v8.0.0-alpha.4)
+- 📦 [TWC - Create reusable Tailwind CSS + React components](https://react-twc.vercel.app/)
+- 📦 [MDXTS - Build interactive, type-safe content and documentation in MDX, TypeScript, and React](https://www.mdxts.dev/)
+- 📦 [Plate - Rich-text editor framework for React, customizable, including a plugin system](https://platejs.org/)
+- 📦 [next-route-handler-pipe - Function pipelines for Next.js route handlers](https://github.com/KolbySisk/next-route-handler-pipe)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![ShipFast - 在幾天內交付你的新創公司，而不是幾週](/emails/issues/168/shipfast.jpg)](https://shipfa.st/?via=twir)
+
+**[ShipFast - 幾天內推出你的新創公司，而非幾週](https://shipfa.st/?via=twir)**
+
+這個 Next.js 樣板包含你建立 SaaS、AI 工具或任何其他網路應用所需的一切，並讓你快速在線上賺到第一筆收入。
+
+- App Router 或 Page Router
+- JavaScript 或 TypeScript
+- 7 天內可退款的保證
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [Galaxies.dev - 精通 React Native 並使用代碼 GALAXIES24 在 PRO 版節省 25%](https://galaxies.dev?utm_source=thisweekinreact.com)
+- 📊 [React Native 2023 狀態調查 - 最後召集，將於 5 日週五截止](https://stateofreactnative.com/)
+- 👀 [RFC：逐步遠離 Apple 平台上的 Obj-C](https://github.com/react-native-community/discussions-and-proposals/pull/747)：轉向 Swift 的計劃將在新架構遷移完成後才會啟動。
+- 👀 [hermes-jsi-demos - 在桌面環境無需任何框架使用 Hermes 與 JSI](https://github.com/tmikov/hermes-jsi-demos)
+- 👀 [jsi-rs - 使用 Rust 編寫超高速 React Native 模組](https://github.com/laptou/jsi-rs/)
+- 🐦 [Expo SDK 50 透過平台搖樹優化套件大小](https://twitter.com/Baconbrix/status/1740487401414275120)
+- 🐦 [Chain React 2024 大會宣布於 7 月 17-19 日舉行](https://twitter.com/ChainReactConf/status/1737578373415928100)
+- 🐦 [2023 年度熱門 React Native 推文精選](https://twitter.com/infinite_red/status/1737890233201623526)
+- 📜 [WishList 發布計畫終止](https://margelo.notion.site/WishList-Summit-b20c24d1f0da4889a0513dfa929be5ed)：歷經一年開發後，Margelo 決定不發布旨在解決 React Native 列表效能問題的函式庫。
+- 📜 [將 React Native 函式庫引入 Apple Vision Pro](https://www.oskarkwasniewski.dev/blog/bringing-react-native-libraries-to-apple-vision-pro)：新增的 out-of-tree VisionOS 平台將自動支援 JS 函式庫，多數原生函式庫僅需在 podspec 中添加 `visionos` 平台。
+- 📜 [如何正確解讀 Xcode 錯誤訊息](https://levelup.gitconnected.com/how-to-properly-read-xcode-error-7b979692333d)
+- 📜 [JavaScript 透過 Static Hermes 實現突破性效能提升](https://medium.com/@elves.silva.vieira/javascript-achieves-breakthrough-performance-with-static-hermes-6286b0ac8ef7)
+- 📦 [react-native-release-profiler - 在正式環境與發布版本中被動剖析 JS/Hermes](https://github.com/margelo/react-native-release-profiler)
+- 📦 [expo-video-metadata](https://github.com/hirbod/expo-video-metadata)：擷取本地與遠端影片檔案的時長、尺寸、方向與編解碼器等資訊。
+- 📦 [react-native-macos 0.73.1](https://www.npmjs.com/package/react-native-macos/v/0.73.1)
+- 📦 [react-native-windows 0.73.2](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.73.2)
+- 📦 [使用 Tailwind 樣式啟動通用基於檔案的 Expo 應用程式](https://github.com/expo/examples/tree/master/with-router-tailwind)：採用 Expo Router v3 與 NativeWind v4 的全新 create-expo-app 模板。
+- 🎙 [React Native Show 第 32 集 - Apple Vision Pro 與 visionOS 上的 React Native](https://www.callstack.com/podcasts/react-native-for-apple-vision-pro-and-visionos)
+- 🎙️ [RNR 第 284 集 - React Native 年度回顧 - 2023 總覽](https://reactnativeradio.com/episodes/rnr-284-react-native-rewind-2023-in-review)
+- 🎙️ [Rocket Ship 第 23 集 - 2024 年你該使用 React Native 的理由](https://podcast.galaxies.dev/episodes/023-why-you-should-use-react-native-in-2024)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [TypeScript 5.4 PR：新增對 package.json imports 欄位的自動導入功能](https://github.com/microsoft/TypeScript/pull/55015)
+- 📜 [2024 年前端預測](https://buttondown.email/whatever_jamie/archive/frontend-predictions-for-2024/)
+- 📜 [JavaScript 框架 — 邁向 2024](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2024-i3l)
+- 📜 [「Web Components」的替代未來](https://blog.carlana.net/post/2023/web-component-alternative-futures/)
+- 📜 [為什麼 JavaScript 的 promise 在技術上不是 monad](https://rybicki.io/blog/2023/12/23/promises-arent-monads.html)
+- 📜 [Shadow DOM 與封裝問題](https://nolanlawson.com/2023/12/30/shadow-dom-and-the-problem-of-encapsulation/)
+- 📦 [ESLint v9.0.0-alpha.0](https://eslint.org/blog/2023/12/eslint-v9.0.0-alpha.0-released/)
+- 📦 [quick-lint-js 3.0 - TypeScript 錯誤查找工具](https://quick-lint-js.com/blog/version-3.0/)
+
+---
+
+## 🤭 趣聞 {#fun}
+
+[![alt](/emails/issues/168/meme.jpg)](https://twitter.com/webdevcody/status/1737138310605083051)
+
+下次見！👋

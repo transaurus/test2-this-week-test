@@ -1,0 +1,142 @@
+---
+slug: /110
+title: "This Week In React #110: Fresh, Hydrogen, Next.js, Remix, Storybook, useEffect, MJML, MDX, React-Native, ES2022..."
+authors: [slorber]
+date: 06-29-2022
+---
+
+本週 React 動態 #110: Fresh、Hydrogen、Next.js、Remix、Storybook、useEffect、MJML、MDX、React-Native、ES2022...
+
+<!-- truncate -->
+
+# 本週 React 動態 #110: Fresh、Hydrogen、Next.js、Remix、Storybook、useEffect、MJML、MDX、React-Native、ES2022...
+
+大家好！
+
+又是忙碌的一週，有許多版本發布 🤪 Hydrogen 1.0、Fresh 1.0、Next.js 12.2、React-Native 0.69...
+
+我喜歡 Josh Comeau 關於 MDX 電子郵件工作流的文章：這正是我想在本通訊中採用的設置 👌。
+
+說到本通訊，我仍在尋找讓內容更易於消化的解決方案。您對每日通訊的想法如何？這意味著更頻繁但更簡短的電子郵件。
+
+🙏 **支持本通訊：**
+
+- 😘 **推薦給您的朋友**：這確實很有幫助！
+- 💸 [**贊助本週 React 動態**](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
+- 😍 [**在 Twitter 撰寫推薦**](https://twitter.com/sebastienlorber/timelines/1448942785814466561?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
+- 🧵 [**轉推最新 Twitter 討論串**](https://slo.im/thread?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
+- 📨 回覆此 [**電子郵件**](mailto:lorber.sebastien@gmail.com?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)：歡迎反饋
+- 👥 在 [**LinkedIn**](https://www.linkedin.com/company/this-week-in-react/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 上追蹤
+
+---
+
+## React 生態圈
+
+[Fresh 1.0](https://deno.com/blog/fresh-is-stable?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+由 Deno 官方支持的 Preact 框架現已發布 v1 正式版。Fresh 融合了 Remix 和 Astro 的特點：預設無 JS、漸進增強、採用島嶼架構的多頁面應用。無需建置步驟：可直接將 TypeScript/Deno 應用部署到邊緣環境，僅需數秒。
+
+[我們如何建構 Hydrogen](https://shopify.engineering/how-we-built-hydrogen?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+Shopify 的 React 元框架 Hydrogen 剛發布 v1.0，是最早採用 React Server Components 的框架之一。本文深入分享框架開發歷程，詳述各項技術決策：React Server Components、Vite、Tailwind、預加載/瀑布流問題、GraphQL 片段...
+
+[Next.js 12.2](https://nextjs.org/blog/next-12-2?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+Next.js 最新版本。核心主題是逐步採用邊緣運算和標準化 Web API：包含中介層(middleware)、API 路由和 SSR。同時改進圖片處理，並推出基於 WebAssembly 的 SWC 插件系統。
+
+[我的超棒 HTML 郵件工作流程](https://www.joshwcomeau.com/react/wonderful-emails-with-mjml-and-mdx/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+Josh Comeau 解釋他如何用 MDX 撰寫郵件，再透過 MJML、React 和 Next.js 生成最終的 HTML 輸出，確保在所有郵件客戶端都能正常顯示。這些郵件透過 ConvertKit 發送，同時也會在網頁上公開。
+
+[Remix 的數據流動](https://remix.run/blog/remix-data-flow?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+React 的初始模型可總結為 `ui = f(state)`。問題在於此模型未充分考量網絡同步（即 API 呼叫）。Jim 解釋 Remix 如何擴展 React 模型納入網絡層，從而減少對本地狀態管理的需求。
+
+[你可能不需要使用 Effect](https://beta.reactjs.org/learn/you-might-not-need-an-effect?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+由 Dan Abramov 撰寫的新文件頁面，已合併至測試版網站。Effect 用於與外部系統同步，文中以具體案例和挑戰展示多種反模式。即使是資深開發者也應閱讀，部分內容可能令人驚訝：例如 [在渲染期間使用 setState](https://twitter.com/sebastienlorber/status/1541793224561463297?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 😱。我特別喜歡 `useSyncExternalStore` 的範例。
+
+[React 18 推薦的數據加載方式是什麼？](https://www.reddit.com/r/reactjs/comments/vi6q6f/what_is_the_recommended_way_to_load_data_for/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+Dan Abramov 在 Reddit 解釋為何透過 useEffect 獲取數據並非理想方案。但若應用程式無 UX 問題則無需立即重寫：這些問題在 React 18 並非新出現，只是文件更完善。另可參閱關於 React-Native 數據獲取的評論。
+
+**延伸閱讀：**
+
+- 📜 [How to add a theme switcher to Storybook](https://storybook.js.org/blog/how-to-add-a-theme-switcher-to-storybook/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): shows how to leverage Storybook toolbar to add a theme switch. Convenient tip: displays component in both light/dark mode.
+- 📜 [React Query FAQs](https://tkdodo.eu/blog/react-query-fa-qs?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Dominik from React-Query answers the 3 most common questions.
+- 📜 [The React core team finally have opinions about CSS](https://dev.to/hypeddev/the-react-core-team-finally-have-opinions-about-css-16f0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): good summary of current trends: increasing use of no-runtime CSS-in-JS.
+- 📜 [Cut build times with Gatsby Runner](https://www.netlify.com/blog/cut-build-times-with-gatsby-runner/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): new experimental Netlify plugin to reduce Gatsby build time by delaying image processing.
+- 📜 [State Machines on the Edge](https://erikras.com/blog/remixconf-2022?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) + [Modeling React in XState](https://erikras.com/blog/modeling-react-in-xstate?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- 📜 [Demystifying The New Gatsby Framework](https://www.smashingmagazine.com/2022/06/demystifying-gatsby4-framework/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- 📜 [Should we use Lexical to edit our legal graph?](https://medium.com/doctrine/should-we-use-lexical-to-edit-our-legal-graph-61aa9cfab096?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- 🎥 [Storybook in 100 Seconds](https://www.youtube.com/watch?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter&v=gdlTFPebzAU)
+- 📈 [Front-end frameworks popularity (React, Vue, Angular and Svelte)](https://gist.github.com/tkrotoff/b1caa4c3a185629299ec234d2314e190?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- 📜 [Verbum](https://github.com/ozanyurtsever/verbum?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): text editor based on React and Lexical (new Facebook project to replace Draft.js)
+- 📦 [Storybook Variants Addon](https://twitter.com/winkerVSbecks/status/1541078873949048838?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): convenient addon: add toolbar dropdown to display all variants of a story at once. No extra code needed: based on Controls.
+- 📦 [Create-T3-App](https://github.com/nexxeln/create-t3-app?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): modern stack to start a project: Next.js, Prisma, TypeScript, tRPC, Tailwind...
+- 📦 [Gatsby 4.17](https://www.gatsbyjs.com/docs/reference/release-notes/v4.17/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): perf improvements
+- 📦 [Recoil Sync 0.1](https://recoiljs.org/blog/2022/06/21/recoil-sync-0.1.0-release?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) + [Refine 0.1](https://recoiljs.org/blog/2022/06/21/refine-0.1.0-release?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- 📦[Vavite: Develop server-side applications with Vite](https://github.com/cyco130/vavite?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- 🐦 [Preact will compile out unused class components](https://twitter.com/_developit/status/1541516098939543552?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- 🐦 [Qwik-React is coming](https://twitter.com/QwikDev/status/1540667422402920448?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+---
+
+## 💸 贊助商
+
+💡 [如何贊助本電子報](https://gist.github.com/slorber/cb732fb5d0a002c4d73236a9baeba7bb?utm_campaign=thisweekinreact&utm_medium=email&utm_source=Revue%20newsletter)
+
+[**Storetasker：Shopify 自由開發者網絡**](https://www.storetasker.com/become-an-expert?utm_campaign=thisweekinreact&utm_medium=thisweekinreact&utm_source=thisweekinreact)
+
+你好！我是 Storetasker 的 Tim。我們經營頂尖的 Shopify 自由開發者網絡。若你熱愛建立 Shopify 網站，或對運用 Shopify 的 **尖端 React 框架** 打造客製化店面感興趣：[**Hydrogen**](https://hydrogen.shopify.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)，歡迎申請加入。
+
+獲選加入網絡的開發者以自由職業模式工作，我們將提供絕佳機會與頂尖 Shopify 品牌合作（如 Alo Yoga、Chubbies、JUDY 等眾多品牌）。
+
+Storetasker 的優勢在於開發者間不存在競爭——他們只需挑選符合興趣的任務。此外，這是一個凝聚力極強的社群。
+
+歡迎直接透過此[連結](https://www.storetasker.com/become-an-expert?utm_campaign=thisweekinreact&utm_medium=thisweekinreact&utm_source=thisweekinreact)申請加入。
+
+[**TechTree - 介紹本週 React 懸賞板**](https://techtree.dev/t/sHBrozirH3xSY8jP3M7gGv?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+TechTree 正在打造首個**開發者社經平台**——協助您釋放知識與人脈的真正價值！
+
+TechTree 的首項主要功能是懸賞系統(Bounties)，協助您**透過推薦朋友**到頂尖風投支持的科技新創公司任職，或尋找適合您的工作來賺取收入！
+
+為協助您了解，我已建立專屬懸賞板——**精選遠端 React 相關職位供您申請或推薦人脈**。目前 TechTree 上已領取價值超過 30 萬美元的懸賞！
+
+正在招聘 React 開發者？您可發布懸賞職缺登上我的懸賞板！[由此處](https://www.notion.so/techtreedev/Share-your-jobs-on-my-Bounty-board-c51d2d97d9f3421bab103c42097907ae?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)閱讀詳情並開始。
+
+---
+
+## React-Native
+
+[**React Native 0.69 正式發布**](https://reactnative.dev/blog/2022/06/21/version-069?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+首個支援 React 18 的 React-Native 版本。欲使用 Concurrent React 新功能需先遷移至新架構。Hermes 分發模式同步變更：每個 React-Native 版本將綁定保證相容的 Hermes 版本。
+
+**額外內容：**
+
+- 📦 [react-native-zephyr](https://github.com/FormidableLabs/react-native-zephyr?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)：Formidable Labs 發佈了一個新的 React-Native 類型安全樣式解決方案，靈感來自 Tailwind。目前專注於移動端使用，暫不支援[跨平台](https://twitter.com/sebastienlorber/status/1541820495603064832?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)。
+- 📦 [react-native-app-clip](https://github.com/bndkt/react-native-app-clip?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)：Expo 配置插件，用於建立 iOS App Clip，讓用戶無需安裝即可測試您的應用程式（[示範](https://twitter.com/bndkt/status/1539606675291639808?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)）。
+- 📦 [react-native-safari-extension](https://github.com/andrew-levy/react-native-safari-extension?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- 📦 [link-native-assets-expo-config-plugin](https://twitter.com/Baconbrix/status/1539885820622110720?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- 🎙️ [RNR 240 - Expo SDK 45 的新功能](https://reactnativeradio.com/episodes/rnr-240-whats-new-in-expo-sdk-45?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- 📈 [React-Native 與 Flutter 熱門度比較](https://gist.github.com/tkrotoff/93f5278a4e8df7e5f6928eff98684979?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- 🐦 [Reanimated useAnimatedSensor() 示範](https://twitter.com/swmansion/status/1541433419107733505?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- 🎉 [Reanimated PR：Web 套件大小減少 80%](https://github.com/software-mansion/react-native-reanimated/pull/3278?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+## 其他
+
+- [ES2022 功能](https://h3manth.com/ES2022/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Ecma International 剛通過 ES2022 標準規範。完整功能概述：`.at()`、Error Cause、top-level await...
+- [防禦性 CSS](https://defensivecss.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): 強化 CSS 健壯性的實用技巧。
+- [樣式查詢](https://una.im/style-queries/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): CSS 容器查詢不僅限於版面佈局。
+- [StackOverflow 開發者調查 2022](https://survey.stackoverflow.co/2022/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): React 保持高使用率與喜愛度。Svelte 和 Phoenix 表現亮眼。
+- [Histoire: 編寫故事的新方式](https://histoire.dev/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): 來自 Vue 生態系的 Storybook 競爭者。
+- [FnApi](https://twitter.com/kdy1dev/status/1540673590282326018?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): Donny (swc 創建者) 的新專案，旨在減少 API 呼叫樣板程式碼
+- [Prisma 4.0](https://twitter.com/prisma/status/1541866761552908289?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- [Turborepo 1.3](https://turborepo.org/blog/turbo-1-3-0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- [SPA：理論與實踐](https://nolanlawson.com/2022/06/27/spas-theory-versus-practice/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+---
+
+![](https://user-images.githubusercontent.com/749374/176402711-1255046e-fa8b-4de4-9cbe-0632d356cef0.png)

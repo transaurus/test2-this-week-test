@@ -1,0 +1,573 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/233/index.mdx",
+  "source_file_content_hash": "1ddda682ad6ba0e6da6e6e0b2e973e6a8df641c62acebb9d92aa515530b6c425",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /233\ntitle: \"This Week In React #233: RSC, Next.js, Compiler, Unhead, Shadcn, Relay, Mantine | Expo, WebGPU, Skia, Apple fees, Reanimated, Fragment Refs | Node.js, TS, Prisma, Deno, GSAP\"\nauthors: [slorber]\ndate: 05-07-2025\n---",
+      "source_content_hash": "2c840d998cdf8cfba8771f829e2fecdd28c830dcfc37f5f15272a3dcfb1a4e0b",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week we don't have one, but 2 interesting blog posts from Dan Abramov, and various React releases.",
+      "source_content_hash": "e540eee3751d961c167f3b6402a50dd64d29634a5b228bb1c1bc871e9f545b90",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週我們有兩篇 Dan Abramov 的精彩部落格文章，以及多個 React 發布。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "I found the mobile news particularly interesting, with Expo 53, Skia Graphite, Reanimated Shared Elements Transitions, and the Apple fees court injunction.",
+      "source_content_hash": "52e601963a4eb115c66617ad491974af4e500b95af3c68c5737d4b1d88d46758",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我發現行動端新聞特別有趣，包含 Expo 53、Skia Graphite、Reanimated 共享元素轉場效果，以及蘋果收費禁令。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "My fellows at ui.dev are also launching the final content of their [react.gg](https://react.gg/?ref=twir) course (30% off now), designed to teach you all the brand-new React 19 concepts from first principles. I got access to review it and can assure you that it's a really playful way to learn React, full of interactive examples, visualizations and pragmatic quizzes.",
+      "source_content_hash": "db4f710161c64e956ab1e626da01121d3ac6ae7b3ac98d15189b1d3b8572e50c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我在 ui.dev 的同事也推出了 [react.gg](https://react.gg/?ref=twir) 課程的最終內容（現享 7 折），該課程從基礎原理教你所有全新的 React 19 概念。我提前審閱過，保證這是透過豐富的互動範例、視覺化圖表和實用測驗來玩轉式學習 React 的絕佳方式。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_6c991806"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_8f488ab5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![Cut React Code Review Time & Bugs in Half](/emails/issues/233/coderabbit.jpg)](https://coderabbit.link/this-week-in-react-7may-2025)",
+      "source_content_hash": "f252d28d949870202a0096f378d5fec9708e034518a39372d0379ebb3b1a190d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![減少 React 程式碼審查時間與錯誤量](/emails/issues/233/coderabbit.jpg)](https://coderabbit.link/this-week-in-react-7may-2025)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[Cut React Code Review Time & Bugs in Half](https://coderabbit.link/this-week-in-react-7may-2025)**",
+      "source_content_hash": "81a6e8d43c0dd6b98ddd3d6c39b87d65e468253ea31628f8ad709c01b1d7dba3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[減少 React 程式碼審查時間與錯誤量](https://coderabbit.link/this-week-in-react-7may-2025)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "Code reviews are critical but time-consuming. CodeRabbit acts as your AI co-pilot, providing instant Code review comments and potential impacts of every pull request.",
+      "source_content_hash": "d4dc5c87a27dd428494b18f89be3724778a83dbe9473b5d56ddd68f24b02e365",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "程式碼審查至關重要但耗時。CodeRabbit 作為你的 AI 副駕駛，即時提供程式碼審查意見與每個 PR 的潛在影響分析。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "Beyond just flagging issues, CodeRabbit provides one-click fix suggestions and lets you define custom code quality rules using AST Grep patterns, catching subtle issues that traditional static analysis tools might miss.",
+      "source_content_hash": "52c2493f49ddd9a07ffdd56b9b8d9489dd7702c05c5fe106c8c1ac89c80cb6d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "不僅標記問題，CodeRabbit 還提供一鍵修復建議，並讓你用 AST Grep 模式自訂程式碼品質規則，捕捉傳統靜態分析工具可能忽略的細微問題。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "CodeRabbit has so far reviewed more than 5 million PRs, installed on 1 million repositories, and used by 50 thousand Open-source projects. CodeRabbit is free for all open-source repo's. [Get started today!](https://coderabbit.link/this-week-in-react-7may-2025)",
+      "source_content_hash": "0b310c7d359b78760aae574232a499ccef9cead0bedfc68c01787807fc9a0866",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "CodeRabbit 已審查超過 500 萬個 PR，安裝於 100 萬個儲存庫，被 5 萬個開源專案使用。開源專案完全免費。[立即開始！](https://coderabbit.link/this-week-in-react-7may-2025)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0e5a8f2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "80d9e13c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e7bc8c38",
+      "source_content": "- 💸 [Product for Engineers - What engineers get wrong about communication](https://go.posthog.com/twir-may7)\n- 👀 [Next.js Docs \\- New `runAfterProductionCompile` lifecycle hook](https://nextjs.org/docs/architecture/nextjs-compiler#runafterproductioncompile): Upcoming (unreleased) feature already documented.\n- 💬 [React Compiler oxc plugin](https://github.com/oxc-project/oxc/issues/10048): Interesting discussions between the React Compiler team and the oxc team to integrate the compiler as an oxc plugin for upcoming usage with Vite and Oxc/Rolldown. The React team suggests making it happen in 2 steps (make it work, then make it fast).\n- 🧵 [shadcn introducing the registry MCP \\- One command to make any component registry mcp-compatible.](https://threadreaderapp.com/thread/1917597228513853603.html)\n- 📜 [Functional HTML](https://overreacted.io/functional-html/): Dan gradually reinvents the HTML he wants from first principles, leading to an RSC implementation.\n- 📜 [RSC for Astro Developers](https://overreacted.io/rsc-for-astro-developers/): RSC and Astro have 2 remarkably similar mental models, but Dan exposes some interesting subtle differences. RSCs may feel less intuitive at first, but they also solve some of Astro’s limitations.\n- 📜 [The future of AI interaction: Beyond just text](https://www.epicai.pro/the-future-of-ai-interaction-beyond-just-text-w22ps): Kent argues that MCPs could have a role to play in implementing generative UIs with React Server Components. He wants the protocol to allow richer return types like html and RSC payloads.\n- 📜 [Frontends are hard](https://sst.dev/blog/frontends-are-hard): The devs at SST reflect on the challenges of self-hosting modern meta-frameworks, including React ones, that led them to start the OpenNext initiative.\n- 📜 [Add a Color Scheme Toggle in React Router](https://sergiodxa.com/tutorials/add-a-color-scheme-toggle-in-react-router): This method avoids FOUC with a cookie instead of inlined JS.\n- 📜 [Robust Data Fetching Architecture For Complex React/Next.js Apps](https://www.trevorlasn.com/blog/fetching-data-for-complex-next-and-react-apps): Suggests using 3 layers: Server Components, React Query, and Optimistic Updates.\n- 📜 [Server Components Give You Optionality](https://saewitz.com/server-components-give-you-optionality): They give flexibility to choose in which environments your components run in (Server, Server+Client, or Client) and when.\n- 📜 [How We Fell Out of Love with Next.js and Back in Love with Ruby on Rails & Inertia.js](https://hardcover.app/blog/part-1-how-we-fell-out-of-love-with-next-js-and-back-in-love-with-ruby-on-rails-inertia-js)\n- 📜 [Why Kleinanzeigen.de Picked Astro Over Next.js](https://d13z.dev/blog/07-why-kleinanzeigen-picked-astro-over-nextjs/)\n- 📜 [When You Might Need to Override the Defaults in TanStack Query](https://www.kxlaa.com/articles/when-you-might-need-to-override-the-defaults-in-tanstack-query)\n- 💸 [React.gg - The interactive way to master modern React, including new v19 modules - 30% off during launch week](https://react.gg/?ref=twir)\n- 📦 [Unhead 2.0 \\- The full stack \\<head\\> package for any framework](https://unhead.unjs.io/v2): This framework-agnostic package from the UnJS ecosystem now includes React bindings. This could be a great drop-in alternative to `react-helmet` with React 19 support if the new built-in APIs are not good enough for you (see [my comment here](https://github.com/staylor/react-helmet-async/issues/239#issuecomment-2565685131)).\n- 📦 [Blade \\- Build instant web apps with React](https://github.com/ronin-co/blade): A new opinionated React meta-framework with Server Components support, that purposefully doesn’t comply with the RSC spec.\n- 📦 [Relay 19.0 \\- `@alias` required on conditional fragments, support React 19](https://relay.dev/blog/2025/04/02/relay-19/)\n- 📦 [Mantine 8.0 \\- Updated dates package, new TimePicker, Heatmap, CodeHighlight components, nested menus and more](https://mantine.dev/changelog/8-0-0/)\n- 📦 [React Error Boundary 6.0 \\- ESM-only](https://github.com/bvaughn/react-error-boundary/releases/tag/6.0.0)\n- 📦 [React Admin 5.8 \\- InPlaceEditor, DataTable, AuthLayout, MUI v7, CSS vars, theming](https://github.com/marmelab/react-admin/releases/tag/v5.8.0)\n- 📦 [Unverceled Next.js \\- A Next.js 15 Starter Kit Deployed to Cloudflare using OpenNext](https://github.com/ixahmedxi/unverceled-nextjs)\n- 📦 [Radix UI \\- New unstable PasswordToggleField and Checkbox parts](https://www.radix-ui.com/primitives/docs/overview/releases#may-5-2025)\n- 📦 [React Router DevTools 5.0 \\- Complete overhaul of the routes tab](https://github.com/forge-42/react-router-devtools/releases/tag/v5.0.0)\n- 📦 [MUI 7.1 \\- Support for Tailwind CSS 4](https://github.com/mui/material-ui/releases/tag/v7.1.0)\n- 🎥 [Jack Herrington \\- React's New Activity Component: Huge Performance Win\\!](https://www.youtube.com/watch?v=gRKVL5w-2Lc)\n- 🎥 [Fireship \\- The growing divide among React developers…](https://www.youtube.com/watch?v=lLJbHHeFSsE)\n- 🎙️ [Front-end Fire 93 \\- React Activity, Storybook 9 Beta, and AI as a Collaborator](https://front-end-fire.com/episodes/93/)",
+      "source_content_hash": "4ae62ad7000b0988b6e0e87cffb8512b643ca61ef0821b1f8f692ce497fd9777",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_e7bc8c38"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3a0902ca",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_3a0902ca"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "803be95a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d422fb13",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f01228d3",
+      "source_content": "[![App Translation Simplified with Tolgee](/emails/issues/233/tolgee.jpg)](https://tolg.ee/y1z3eb)",
+      "source_content_hash": "30bc1aa6747c14fc9756a8c619dba5187721d96afe04c189dacdab352e35df5e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![用 Tolgee 簡化應用程式翻譯](/emails/issues/233/tolgee.jpg)](https://tolg.ee/y1z3eb)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "afa378f7",
+      "source_content": "**[App Translation Simplified with Tolgee](https://tolg.ee/y1z3eb)**",
+      "source_content_hash": "d8400a4aecc9ab277b868995d73e6fb3be4e564e972b644b003f771a106ebfc3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[用 Tolgee 簡化應用程式翻譯](https://tolg.ee/y1z3eb)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e8e162a9",
+      "source_content": "[Tolgee](https://tolg.ee/y1z3eb) is an **open-source** tool that simplifies **localization** by saving developers time and eliminating endless spreadsheets of text to translate 🌎",
+      "source_content_hash": "d56f3d297589c61477fc6d0b03d66747837a1edc4341f5bccbb42de6e74349c1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[Tolgee](https://tolg.ee/y1z3eb) 是**開源工具**，透過節省開發者時間、消除無盡的翻譯試算表來簡化**在地化**流程 🌎"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "463ed165",
+      "source_content": "Speed up your work now! Tolgee helps with:",
+      "source_content_hash": "45084dde73c3ff7dc524f6a33340ae41176e6900fad9de60ef13046bf47ba4e9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "立即提升效率！Tolgee 協助："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "536b7b6b",
+      "source_content": "- Delegating translation to other team members - save the developer's time!\n- In-context translation\n- Click to translate with the browser extension\n- Get rid of unorganized spreadsheets and JSONs",
+      "source_content_hash": "b8e5a14912e5c5c788777adf24dce2a261bf181776401cbdd63bf7b272895e78",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 委派翻譯給團隊成員——節省開發時間！\n- 上下文即時翻譯\n- 瀏覽器擴充功能點擊翻譯\n- 擺脫雜亂試算表和 JSON"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "**No credit card is needed** for the free version, perfect for smaller projects! You can try all the features and integrate it into your project right away to prepare it to meet a global audience.",
+      "source_content_hash": "7f9a01d0f0b3d467ea7cfab056f86698b24b5231adfced7f0ca769c9aaaa397c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "免費版**無需信用卡**，完美適合小型專案！你可立即試用所有功能並整合至專案，為迎接全球用戶做好準備。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "233bb60e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bd30d33e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "[![Expo SDK 53](/emails/issues/233/expo53.jpg)](https://expo.dev/changelog/sdk-53)",
+      "source_content_hash": "27c0797a1829e185cb5f18e237322bae14b4d91a0c4cc3a7bf95bb8463ab4543",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Expo SDK 53](/emails/issues/233/expo53.jpg)](https://expo.dev/changelog/sdk-53)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "**[Expo SDK 53](https://expo.dev/changelog/sdk-53)**",
+      "source_content_hash": "3b9eb4597dd98b1d19e1a6beafa979889c2694fb4a7d2adab3c5adb6ebad449f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[Expo SDK 53](https://expo.dev/changelog/sdk-53)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "This is quite an impressive Expo release, with highlights:",
+      "source_content_hash": "9b4d9822e7074ec3501c59d42662d54a70233336084e5059fbf1134f6598b67e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這是相當令人印象深刻的 Expo 發布，重點包括："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "85aeef6c",
+      "source_content": "- Upgrades to React Native 0.79, React 19, and RNW 0.20\n- Turns the New Arch on by default\n- Edge-to-edge on Android is enabled by default\n- New [Expo BackgroundTask](https://expo.dev/blog/goodbye-background-fetch-hello-expo-background-task), a modern, reliable, power-efficient, and future-proof way to run background tasks using Android `WorkManager` and iOS `BGTaskScheduler` system APIs\n- New [Expo Maps](https://expo.dev/blog/introducing-expo-maps-a-modern-maps-api-for-expo-developers) (alpha) built on Expo Modules API, using SwiftUI and Jetpack Compose, expose platform default Apple Maps and Google Maps components.\n- Metro `package.json#exports` resolution enabled by default\n- Deploy development builds to TestFlight with `npx testflight`\n- Improve Android build times up to 25% with prebuilt Expo Modules\n- And way more\\!",
+      "source_content_hash": "5908a0e4d40798d8bf70938a95ee0bb772485cba626a4ecafefc14acbf6b61ba",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 升級至 React Native 0.79、React 19 和 RNW 0.20\n- 預設啟用 New Arch 架構\n- Android 預設啟用邊到邊（Edge-to-edge）顯示\n- 全新 [Expo BackgroundTask](https://expo.dev/blog/goodbye-background-fetch-hello-expo-background-task)，透過 Android `WorkManager` 和 iOS `BGTaskScheduler` 系統 API 實現現代化、可靠、節能且面向未來的背景任務執行\n- 全新 [Expo Maps](https://expo.dev/blog/introducing-expo-maps-a-modern-maps-api-for-expo-developers)（alpha 版），基於 Expo Modules API 構建，採用 SwiftUI 和 Jetpack Compose，可調用平台原生的 Apple 地圖和 Google 地圖元件\n- 預設啟用 Metro `package.json#exports` 解析功能\n- 使用 `npx testflight` 部署開發版本至 TestFlight\n- 透過預先建置的 Expo Modules 將 Android 建置時間縮短最高 25%\n- 還有更多功能！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a81544fd",
+      "source_content": "See also the [Expo Router v5](https://expo.dev/blog/expo-router-v5) related release with its own highlights:",
+      "source_content_hash": "a885bc72c4fbb5495a35d4aa32d1172925d3907f91242ed14b1bdfe32c030315",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "另請參閱相關發布 [Expo Router v5](https://expo.dev/blog/expo-router-v5) 的重點更新："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5cb70a3d",
+      "source_content": "- Requires React 19 / Expo 53\n- Improves DX, error screen and logging, leverages React owner stacks\n- Deploy versioned API Routes in production with EAS Hosting\n- React Server Functions in beta\n- Protected routes",
+      "source_content_hash": "ba38b389991d7a11050554a740a090ebff832bed4b6de75fa92c1dbdd8324b93",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 需搭配 React 19 / Expo 53\n- 改善開發者體驗（DX）、錯誤畫面與日誌記錄，充分利用 React 所有權堆疊（owner stacks）\n- 透過 EAS Hosting 在生產環境部署版本化 API 路由\n- React Server Functions 進入測試階段\n- 受保護路由機制"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "55ba2007",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "396efb28",
+      "source_content": "[![Game On - Bringing WebGPU to React Native](/emails/issues/233/skia.jpg)](https://www.youtube.com/watch?v=t9t-VXwIc4I)",
+      "source_content_hash": "a2ecb18365c93b9c6ea68a6d2aeff232d7cff133f98213a92d47f76290b2c55c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![遊戲開始 - 將 WebGPU 引入 React Native](/emails/issues/233/skia.jpg)](https://www.youtube.com/watch?v=t9t-VXwIc4I)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "558df877",
+      "source_content": "**[🎥 Game On \\- Bringing WebGPU to React Native](https://www.youtube.com/watch?v=t9t-VXwIc4I)**",
+      "source_content_hash": "f55c662cabb3b4923524e884fe6ea5123475ca9e5cba5e9518fe8e11c99f0929",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[🎥 遊戲開始 - 將 WebGPU 引入 React Native](https://www.youtube.com/watch?v=t9t-VXwIc4I)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f38d1cb0",
+      "source_content": "In a 37-minute video packed with exciting announcements, William Candillon and guests gave us a glimpse into the future of drawing and animation. Supported by Shopify, he’s bringing modern WebGPU support (Vulkan and Metal) to React Native.",
+      "source_content_hash": "46547604f1e35d329068aae1a3ac90c0d1aee6bc259f56754c3abeda78ff6f65",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "在這段 37 分鐘充滿亮點的影片中，William Candillon 與來賓們揭示了繪圖與動畫的未來藍圖。在 Shopify 支持下，他正將現代 WebGPU 支援（Vulkan 和 Metal）引入 React Native。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5f82a1e9",
+      "source_content": "By aligning to the web APIs, it's possible to copy/paste existing web examples (including Three.js) and make them work on all platforms. It also enables general-purpose use of the GPU (AI, TensorFlow.js), which you may achieve more easily thanks to a convenient low-level TypeGPU library.",
+      "source_content_hash": "d349f0c73709751fd1029cbb14ee3a7312367ae0d03228df29e50b25ef537a43",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "透過對齊 Web API，可直接複製/貼入現有 Web 範例（包含 Three.js）並跨平台運行。同時解鎖 GPU 通用運算能力（如 AI、TensorFlow.js），透過簡便的底層 TypeGPU 函式庫更易實現。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6fc234cf",
+      "source_content": "All this work was needed to create a new experimental Skia Graphite backend based on WebGPU. It enables composing and interleaving 2D/3D experiences in a performant way, like on the web, but across all platforms, with full Reanimated integration. Along the way, Skia doesn’t come with any new feature, but has significantly improved performance, reduced, crashes, and supports 3 new platforms: tvOS, macOS and Node. Keep massaging that octopus William\\!",
+      "source_content_hash": "13077f0149f9f1b083589f4ee00531906105b6c1e872e7e8b1c08148d88569a0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這些努力催生了基於 WebGPU 的全新實驗性 Skia Graphite 後端。它能以高效能方式組合與交錯 2D/3D 體驗，如同在 Web 端實現，但跨足所有平台並整合 Reanimated。Skia 雖未新增功能，卻大幅提升效能、減少崩潰，並新增支援三大平台：tvOS、macOS 與 Node。繼續優化吧 William！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cd2fd2f2",
+      "source_content": "- 💸 [React Universe Conf 2025 adds new speakers: V. Morozov & K. Hosany (Microsoft), K. Hansen (MongoDB), Z. Chapple (Zephyr Cloud) and more.](https://www.reactuniverseconf.com/?utm_campaign=7310698-RUC%202025&utm_source=TWIR&utm_content=New%20Speakers)\n- ⚖️ [Epic Games Wins Major Victory as Apple is Ordered to Comply With App Store Anti-Steering Injunction](https://www.macrumors.com/2025/04/30/apple-app-store-anti-steering-injunction-violation/): A court judged that Apple purposefully did not comply with a former injunction to let apps use alternative payment methods and bypass the 30% fee on in-app purchases. “For this Court, there is no second bite at the apple”. A major event for the mobile industry that enables Fortnite to return, the Kindle app to finally sell e-books directly, and new business models. Check [Expo](https://expo.dev/blog/mobile-app-payment-processing-best-practices) and [Vercel](https://vercel.com/blog/ios-developers-can-now-offer-commission-free-payments-on-web) guides and starters to avoid the fee.\n- 👀 [React Core PR \\- Add Fragment Refs to Fabric with intersection observer support](https://github.com/facebook/react/pull/33056): The recent React Labs post briefly mentioned an upcoming [Fragment Refs](https://react.dev/blog/2025/04/23/react-labs-view-transitions-activity-and-more#fragment-refs) feature. It looks like in the future we’ll be able to use a web-like IntersectionObserver to know when a React fragment enters the screen. Still research/work-in-progress, but exciting new features ahead.\n- 👀 [Reanimated PR \\- Shared Elements Transitions on the New Architecture](https://github.com/software-mansion/react-native-reanimated/pull/7466): Exciting draft PR from Software Mansion that plans to stabilize Shared Elements Transitions for the New Architecture (that enables sharing C++ code between platforms).\n- 📜 [Sirens, Sagas, and Stack Traces: A React Native Upgrade Odyssey](https://shift.infinite.red/sirens-sagas-and-stack-traces-a-react-native-upgrade-odyssey-52db6beb0aac)\n- 🔨 [Package Checker \\- Check for New Architecture compatibility](https://react-native-package-checker.vercel.app/)\n- 📦 [Compose Multiplatform 1.8 \\- Compose Multiplatform for iOS Is Stable and Production-Ready](https://blog.jetbrains.com/kotlin/2025/05/compose-multiplatform-1-8-0-released-compose-multiplatform-for-ios-is-stable-and-production-ready/): The cross-platform UI toolkit from JetBrains enables code sharing between iOS and Android. Unlike React Native, the iOS (and web) support is based on Skia, not using UIKit native elements.\n- 📦 [Zustand 5.0.4 \\+ Jotai 2.12.4](https://github.com/pmndrs/jotai/discussions/3041): Fixing an incompatibility issue with RN 0.79 / Expo 53 / Metro 0.82.\n- 📦 [Nitro Audio Manager \\- Nitro module for AVAudioSession/AudioManager APIs](https://github.com/ChristopherGabba/react-native-nitro-audio-manager)\n- 📦 [Expo Build Disk Cache \\- A plugin for Expo CLI to improve build time](https://github.com/WookieFPV/expo-build-disk-cache)\n- 📦 [Expo App Template \\- Modern, sensible defaults and fast Expo app template](https://github.com/nkzw-tech/expo-app-template)\n- 🎥 [Jamon Holmgren \\- How to build a Mac app with React Native for macOS](https://www.youtube.com/watch?v=0h-owMCfy5s)\n- 🎥 [React Universe Meetup \\- 3 new videos from April: Polygen, File-based router, native feel](https://www.youtube.com/playlist?list=PLZ3MwD-soTTEFaxmATqOTcitPEK5iaz1z)\n- 🎥 [Simon Grimm \\- Finally React Native UI Components (Expo 53\\)](http://youtube.com/watch?v=kGUrNO8WmCU)\n- 🎙️ [React Native Radio 330 \\- and Accessibility with Karly Lamm](https://infinite.red/react-native-radio/rnr-330-react-native-and-accessibility-with-karly-lamm)\n- 🎙️ [Rocket Ship 67 \\- Quitting RN, React Compiler, Legend List & RN Performance](https://share.transistor.fm/s/18111ecc)",
+      "source_content_hash": "96fe13df709411803bdd9b1fd857e784203ba52cdb60e4d7a2db67978a94070c",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_cd2fd2f2"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f97c407b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cd8185f",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a627a446",
+      "source_content": "- 👀 [TypeScript 5.9 Iteration Plan](https://github.com/microsoft/TypeScript/issues/61648)\n- 📖 [Node.js Docs \\- Publishing a package](https://nodejs.org/en/learn/modules/publishing-a-package): A new official guide that also covers ESM/CJS subtleties.\n- 📜 [Converting values to strings in JavaScript has pitfalls](https://2ality.com/2025/04/stringification-javascript.html)\n- 📜 [Seeking an Answer: Why can’t HTML alone do includes?](https://frontendmasters.com/blog/seeking-an-answer-why-cant-html-alone-do-includes/)\n- 📦 [Node 24.0](https://nodejs.org/en/blog/release/v24.0.0): The new Node.js version is out and set to become LTS in October, including npm 11, `AsyncLocalStorage` perf improvements, the `URLPattern` API and a major V8 upgrade to v13.6 that unlocks cool new JS APIs such as Explicit Resource Management (`using`) or `RegExp.escape()` (which is now [available everywhere](https://web-platform-dx.github.io/web-features-explorer/features/regexp-escape/)).\n- 📦 [GSAP 3.13 \\- JS animations library \\- Now 100% free, including all plugins](https://gsap.com/blog/3-13/)\n- 📦 [Deno 2.3 \\- Improved deno compile, local npm packages, deno fmt in tagged templates, and more](https://deno.com/blog/v2.3)\n- 📦 [Prisma 6.7 \\- ORM without Rust, multi-file schemas](https://github.com/prisma/prisma/releases/tag/6.7.0)",
+      "source_content_hash": "144d9e01867113fd76476c45bf8275b62c78c0a2a0a5ac7b3226923f5813b062",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 👀 [TypeScript 5.9 迭代計劃](https://github.com/microsoft/TypeScript/issues/61648)\n- 📖 [Node.js 文件 - 發佈套件](https://nodejs.org/en/learn/modules/publishing-a-package): 新版官方指南，同時涵蓋 ESM/CJS 的細微差異。\n- 📜 [JavaScript 中將值轉換為字串存在陷阱](https://2ality.com/2025/04/stringification-javascript.html)\n- 📜 [尋求解答：為何 HTML 無法獨自實現 include 功能？](https://frontendmasters.com/blog/seeking-an-answer-why-cant-html-alone-do-includes/)\n- 📦 [Node 24.0](https://nodejs.org/en/blog/release/v24.0.0): 新版 Node.js 已發布，預計十月成為 LTS 版本，包含 npm 11、`AsyncLocalStorage` 效能改進、`URLPattern` API，以及升級至 V8 v13.6 的重大更新，解鎖了諸如顯式資源管理（`using`）或 `RegExp.escape()` 等新 JS API（現已[全面可用](https://web-platform-dx.github.io/web-features-explorer/features/regexp-escape/)）。\n- 📦 [GSAP 3.13 - JS 動畫函式庫 - 現已 100% 免費，包含所有外掛](https://gsap.com/blog/3-13/)\n- 📦 [Deno 2.3 - 改進 deno compile、本地 npm 套件、標記模板中的 deno fmt 等功能](https://deno.com/blog/v2.3)\n- 📦 [Prisma 6.7 - 無需 Rust 的 ORM，支援多檔案結構描述](https://github.com/prisma/prisma/releases/tag/6.7.0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7daeccd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d4eab4a6",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 有趣 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0ddaa835",
+      "source_content": "[![alt](/emails/issues/233/meme.jpg)](https://x.com/sebastienlorber/status/1920045489371951117)",
+      "source_content_hash": "da7c57a9f3422a1819d811327eae1d1f273312d86167157867ad2cd2c228be50",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/233/meme.jpg)](https://x.com/sebastienlorber/status/1920045489371951117)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fd7ed056",
+      "source_content": "[![alt](/emails/issues/233/meme2.jpg)](https://x.com/kzzzf/status/1920091355868520557)",
+      "source_content_hash": "dfbf36e5b27da8d67c8ccfdce6bd12e77c7479363ad4b2a1f728abe3fb6e8c5d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/233/meme2.jpg)](https://x.com/kzzzf/status/1920091355868520557)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b08ad0b4",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下次見！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/233/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.138377+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "1ddda682ad6ba0e6da6e6e0b2e973e6a8df641c62acebb9d92aa515530b6c425"
+  }
+}

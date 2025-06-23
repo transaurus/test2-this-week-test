@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "React 本週動態",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "React 本週動態標誌",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Articles": {
+    "message": "文章",
+    "description": "Navbar item with label Articles"
+  },
+  "item.label.Newsletter": {
+    "message": "電子報",
+    "description": "Navbar item with label Newsletter"
+  },
+  "item.label.Thread": {
+    "message": "串文",
+    "description": "Navbar item with label Thread"
+  },
+  "item.label.Sponsor": {
+    "message": "贊助",
+    "description": "Navbar item with label Sponsor"
+  }
+}

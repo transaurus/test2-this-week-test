@@ -1,0 +1,119 @@
+---
+slug: /114
+title: "This Week In React #114: 🎉 official launch of Docusaurus 2.0 🥳️"
+authors: [slorber]
+date: 08-01-2022
+---
+
+本週 React 動態 #114：🎉 Docusaurus 2.0 正式發布 🥳️
+
+<!-- truncate -->
+
+大家好！
+
+🎉 這是 [**Docusaurus 2.0 的正式發布**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)！
+
+這是我維護的 **Meta 開源（Facebook）** 專案：一個基於 Node.js 和 React 的文件靜態網站生成器。它能讓你專注於內容：只需撰寫 Markdown 檔案。Docusaurus 高度可自訂且尊重品牌形象，目前已驅動許多知名文件網站：React-Native、Supabase、Redux、Tauri、Electron、Courier、Ionic、Figma、Snapchat、Prettier、Babel、Solana、Cardano...
+
+🙏 我們同時在 [**ProductHunt**](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)、[**Hacker News**](https://news.ycombinator.com/item?id=32303052&utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 和 [**Twitter**](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 發布：若喜歡本專案，請**投票**並分享意見 😃
+
+🎙️ 我在 [The Developer's Bakery](https://thebakery.dev/39/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 的 Docusaurus 專訪播客也上線了 😉
+
+---
+
+[![](https://s3.amazonaws.com/revue/items/images/017/224/019/mail/social-card.png?1659345670)](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+**注意**：請務必閱讀官方 [**Docusaurus 2.0 發布公告**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0)，該文比本篇個人摘要更詳盡。
+
+## 什麼是 Docusaurus？
+
+Meta 有大量內外部專案需持續編寫文件。撰寫文件已具挑戰性，若每次還需自訂網站，更會耗費大量時間。
+
+2017 年時他們開始為每個專案複製貼上 Jekyll 模板，但維護迅速變得困難。
+
+2017 年，他們決定建立 Docusaurus——基於 Node.js 和 React 的靜態網站生成器，可「隱藏」技術堆疊並讓你**專注內容**：撰寫 **Markdown** 檔案。類似 Create-React-App，但專為內容網站設計：文件、部落格、登陸頁面...
+
+Docusaurus v1 迅速普及，被 React-Native、Jest、Babel、Prettier 等專案採用...
+
+![使用 Docusaurus v1 的網站](https://s3.amazonaws.com/revue/items/images/017/224/025/original/v1.gif?1659345706)
+
+---
+
+## 邁向 Docusaurus v2
+
+v1 發布後，Meta 意識到其限制：
+
+- 僅在伺服器端使用 React：沒有水合（hydration）也沒有單頁應用程式（SPA）導航
+- 儲存庫結構相當龐大單一，難以維護和測試
+- 擴展性不足，缺乏插件系統
+- 主題功能相對有限，且 v1 網站外觀高度相似
+
+2018 年，Meta 決定**從頭重建 Docusaurus**，採用全新的架構：
+
+- 在客戶端和伺服器端都使用 React（類似 Next.js、Remix、Gatsby...）
+- 插件系統：讓社群能貢獻實用功能（OpenAPI 整合、本地搜尋引擎、Sass 支援等）
+- 更靈活的主題系統：可覆寫主題中的任何 React 元件
+- MDX（Markdown + React）讓文件具備互動性
+
+Docusaurus 2.0 經歷了 **4 年** 🤪 的 alpha/beta 階段，終於發布**首個穩定版本**！延遲發布是因先前難以符合語義化版本規範。
+
+如今 Docusaurus v2 具備眾多功能，難以完整列舉：文件系統、部落格、版本控制、主題、深色模式、國際化（i18n）、無障礙（a11y）、SEO、TypeScript、PWA、Algolia DocSearch、MDX...
+
+---
+
+## 誰在使用 Docusaurus 2.0？
+
+儘管處於 beta 階段，眾多公司已採用 Docusaurus 2.0。v2 的熱門程度遠超 v1，npm 下載量已達 Gatsby 的近半數！
+
+![npm 增長量](https://s3.amazonaws.com/revue/items/images/017/224/035/mail/npm-downloads.png?1659345822)
+
+我們的 [**網站展示區**](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 已收錄近 300 個站點。
+
+這遠非完整清單，仍有大量網站尚未加入：[Figma](https://www.figma.com/plugin-docs/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)、[Snapchat](https://docs.snap.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)、[Courier](https://www.courier.com/docs/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)、[1Password](https://developer.1password.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)...
+
+更遑論 Microsoft、LinkedIn、Shopify 等企業的眾多內部網站...
+
+部分範例：
+
+- **大型科技公司**：Microsoft、Snapchat、Shopify、LinkedIn、Meta、SAP、ByteDance、Lacework、Palo Alto Network...
+- **新創企業**：Supabase、Ionic、Hasura、Figma、Courier、CodeSandbox、StackBlitz、Redis、Algolia、Hashnode...
+- **開源專案**：React-Native、Redux、React-Navigation、Jest、Testing Library、Gulp、Babel、Lerna、pnpm、Electron、Tauri...
+- **Web3 生態**：Iota、Solana、Cardano、Neo、SushiSwap...
+
+許多網站更實現了精美客製化，完美呼應品牌形象。
+
+![使用 Docusaurus v2 的網站](https://s3.amazonaws.com/revue/items/images/017/224/051/original/showcase-2.gif?1659345869)
+
+---
+
+## 我在其中扮演的角色？
+
+兩年前，我在 Twitter 瀏覽時偶然發現：
+
+[![](https://user-images.githubusercontent.com/749374/182660849-cc39d9d0-85ad-481c-a681-743a9c5b20c7.png)](https://twitter.com/sebastienlorber/status/1232059882091749376)
+
+**專業建議**：加入 Twitter 並保持開放態度 😄 這可能會帶來有趣的職業機會！
+
+我認為這是絕佳機會：以自由工作者身份為 Facebook 從事開源專案並非天天可見。原本預計持續 3 個月，但最終延續更久：我已在 Docusaurus 上工作超過 2 年！
+
+我很幸運能以高度靈活的方式工作，擁有充分自主權，這也讓我能同時經營這份通訊。
+
+看到 Docusaurus 日益流行真的很棒，我確實感受到工作的實際影響力。希望這能激勵您嘗試此工具，期待見到您建立的網站！別忘了提交至我們的[網站展示區](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)！
+
+---
+
+## 幫助我們
+
+若您能協助我們**讓發布圓滿成功**，我將不勝感激。按讚、轉推或留言都能帶來巨大幫助！
+
+我們發布的主要平台：
+
+- [Twitter](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- [Product Hunt](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+- [Hacker News](https://news.ycombinator.com/item?id=32303052&utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)
+
+感謝您，我們將很快帶來新鮮的 React 消息 :)
+
+![我們最可愛的吉祥物 Slash 💕](https://s3.amazonaws.com/revue/items/images/017/224/190/mail/CleanShot_2022-08-01_at_11.08.03_402x.png?1659346116)
+
+我們最可愛的吉祥物 Slash 💕

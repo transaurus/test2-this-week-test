@@ -1,0 +1,122 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "src/pages/job.mdx",
+  "source_file_content_hash": "1aa14b0335b623be5c95d48f3f5647c0b550c102ab1f806fe5ec66a90bb43774",
+  "segments": [
+    {
+      "segment_id": "76e4a56a",
+      "source_content": "# This Week In React - Job offer",
+      "source_content_hash": "8e7e35875ce450b2ecc77511d5200fd0747055cc9cda532ca708179c71d4246f",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "# This Week In React - 職缺"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "faebdc62",
+      "source_content": "Hey, Sebastien from [This Week In React](http://thisweekinreact.com/) here 👋",
+      "source_content_hash": "9336966a0d783776b665897ed4516640db75ed3b3b5f07c0782fe031f7611e94",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "嗨，我是 [This Week In React](http://thisweekinreact.com/) 的 Sébastien 👋"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e7ec8f99",
+      "source_content": "I'm looking for a clone of myself to help me create the content of this newsletter 😄",
+      "source_content_hash": "de77bf80c23ff19c9c79a8f9e08aba45c978057e06589a062e32b26e1af1fc94",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我正在尋找能協助製作這份電子報內容的「分身」😄"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ef78e84",
+      "source_content": "Why would you want to help me?",
+      "source_content_hash": "1a329cd8de06fdcfc767e639310974964b3f82818660833cad42e3145d3bbc14",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "為什麼要協助我？"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "abcf54e3",
+      "source_content": "- It is paid correctly\n- It can help develop your personal brand\n- You get paid to stay up-to-date and become more knowledgeable\n- You might want to reach my audience for promoting your own things\n- We might have other aligned interests",
+      "source_content_hash": "3b1c2bc1ecd1f0799a1aae0ddf52afcf0be5727e19cd91d11dea8427c5f79c12",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 報酬合理\n- 有助建立個人品牌\n- 獲取報酬同時保持技術前沿並提升專業知識\n- 可接觸我的受眾推廣個人項目\n- 我們可能有其他共同目標"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf898102",
+      "source_content": "The ideal candidate:",
+      "source_content_hash": "f60669cf3bcb98a727dfa5e78ede6afb953cf79e7596b395a6942b61cc05fc9f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "理想人選需具備："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "84758135",
+      "source_content": "- is knowledgeable on both React and React-Native\n- is able to curate and comment a full issue on their own when I'm not available\n- is willing to commit 10-16h of work per issue\n- is willing to do this on a long term basis\n- is able to communicate clearly and use a simple, concise language\n- has a good radar for interesting weak signals, and a good bullshit content detector\n- understand the codes of social networks (Twitter, LinkedIn, Instagram...) or willing to learn",
+      "source_content_hash": "f6c85e4f0ccdac137d67c6f013e61666482c87e692dce580b3f307ff79971a8a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 熟悉 React 與 React-Native\n- 能在我缺席時獨立策劃並評論整期內容\n- 願意每期投入 10-16 小時\n- 可長期配合\n- 具備清晰簡潔的表達能力\n- 擅長捕捉技術弱信號並識別低質內容\n- 熟悉社群平台運作（Twitter/LinkedIn/Instagram）或願意學習"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f2c2bdd0",
+      "source_content": "If you can do 80% of what I do, that's ok probably for me, I know I won't find an exact clone of myself 😅",
+      "source_content_hash": "7283623ae2899cac3747909087fe535227f9cfab2b41f3084e794ca72d1d979b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "能達成我 80% 的工作成果即可，畢竟找到完全相同的分身太困難 😅"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a76548f8",
+      "source_content": "We can start small with single week test, then replace me when I'm on off, and then scale and let you write half of the issues if things go well.",
+      "source_content_hash": "48fab444654428de9322785f77d277386bdeb8fa4c65099ee28513ba57fbadbc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們可從單週測試開始，逐步在我休假時接手，若合作順利後續可讓您撰寫半數內容。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4b1d2d7d",
+      "source_content": "Interested? Email me at sebastien+twir-job@thisweekinreact.com to discuss details.",
+      "source_content_hash": "b61bff7221f908420961b9399b7eed510755e863c7b6fb7012fff1fe01ad06c3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "有興趣者請寄信至 sebastien+twir-job@thisweekinreact.com 詳談。"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-pages/job.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.137623+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "1aa14b0335b623be5c95d48f3f5647c0b550c102ab1f806fe5ec66a90bb43774"
+  }
+}

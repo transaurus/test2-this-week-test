@@ -1,0 +1,136 @@
+---
+slug: /170
+title: "This Week In React #170: Waku, Remix, Donuts, RSC resentment, React 19, Aria Components, Storybook, Postgres Components, hydration, streams, VisionOS, atob, Maestro, Orbit, Tamagui, VisionCamera..."
+authors: [slorber, bndkt]
+date: 01-17-2024
+---
+
+大家好！
+
+本週我們有一些非常棒的 React 文章，同時也有來自 Waku 和 Remix 的有趣版本發布。社群針對 React Server Components 的複雜性和所有權問題，分享了經過緩和但有趣的回饋。
+
+在 React Native 方面則較為平靜。我們正熱切等待 Expo SDK 50 的發布，這次的正式版比測試版晚了很多。我們也在等待 VisionOS 的正式推出，這是一個 React Native 將支援的新平台。
+
+我剛剛[慶祝了 10 年的 React 經驗](https://twitter.com/sebastienlorber/status/1747307299356447148) 🙉 很難相信我的職業生涯因為 React 而改變，尤其考慮到我以前真的很不喜歡 JavaScript。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本通訊](https://slo.im/thread) - 視覺格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![具有內嵌視覺編輯功能的 CMS，適用於 Next.js、Remix 和 Gatsby](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)
+
+**[具有內嵌視覺編輯功能的 CMS，適用於 Next.js、Remix 和 Gatsby](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)**
+
+[**只需 1 分鐘即可設定專案**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email) 使用 CLI，並將您自己的視覺區塊定義為 React 元件，以傳達您像素完美的企業品牌，並使用任何 CSS 框架。
+
+內容編輯者可以輕鬆使用這些區塊來視覺化地組合頁面，就像使用文書處理器一樣，而不會破壞設計系統。
+
+React Bricks 具備企業級功能，包括數位資產管理、進階 SEO、協作、排程發布、多語言、與外部資料來源整合、審核工作流程、單一登入、多環境、備份和變更歷史記錄。
+
+受到企業客戶的信賴，例如 The Weather Channel、Deel.com、La Banque Postale、領先的電子商務網站以及全球超過 8,500 名用戶。  
+[**立即開始！**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)
+
+---
+
+## ⚛️ React {#react}
+
+[![Waku 0.19](/emails/issues/170/waku.jpg)](https://waku.gg/blog/introducing-create-pages)
+
+**[Waku 0.19](https://waku.gg/blog/introducing-create-pages)**
+
+此版本引入了新的 `createPage` API，用於以程式設計方式建立佈局和頁面。這標誌著 Waku 從一個 React Server Components 的學習體驗轉變為真正的生產就緒 React 框架。預計在 v0.20 中會有一個輕量級的基於檔案的路由。
+
+---
+
+[![美味的甜甜圈元件](/emails/issues/170/donuts.jpg)](https://frontendatscale.com/blog/donut-components/)
+
+**[美味的甜甜圈元件](https://frontendatscale.com/blog/donut-components/)**
+
+這篇令人愉悅且精彩的互動文章使用甜甜圈的比喻（具有「children」孔的客戶端元件）來解釋客戶端/伺服器元件如何交錯。它還涵蓋了更進階的 RSC 組合主題。今天我學到了那個花哨的伺服器動作渲染屬性技巧！
+
+---
+
+- 💸 [參與 Developer Nation 調查 - 每完成一份回覆，Developer Nation 將捐贈給受訪者選擇的慈善機構！](https://developereconomics.net/?member_id=thisweekinreact&utm_medium=nl_ad4)
+- 🐦 [Dan Abramov -「React Server Components 並不需要伺服器」](https://twitter.com/dan_abramov2/status/1745795274977493317)：再次重要提醒，RSC 也可在構建時運行，CI 就是你的伺服器。你可以將完全靜態的 Next.js RSC 站點部署到 S3 或 GitHub Pages。
+- 🐦 [React v19 即將來臨 - React v18.3 不在計劃中](https://twitter.com/sebastienlorber/status/1747633798374625525)
+- 🐦 [Remix 即將支援預渲染 (SSG)](https://twitter.com/brophdawg11/status/1747402216925704684)
+- 👀 [React Postgres Components](https://react-postgres-components.vercel.app/)：在 Postgres RPC 中使用 V8 渲染 React SSR？聽起來瘋狂，但可行！
+- 📜 [2024 年 React 函式庫推薦](https://www.robinwieruch.de/react-libraries/)：Robin Wieruch 照例更新了推薦的 React 函式庫清單，是發掘生態系工具的好途徑。
+- 📜 [對 React 有些惱火](https://blog.cassidoo.co/post/annoyed-at-react/)：Cassidy 分享對 React 現狀的合理看法，引起社群共鳴，特別是 🐦 [Tanner Linsley 帶著日益增加的怨恨使用 React](https://twitter.com/tannerlinsley/status/1746970043836158330)。
+- 📜 [React，你要去向何方？](https://dev.to/matfrana/react-where-are-you-going-5284)：Matteo 基於 Cassidy 的觀點，闡述對 React 所有權和複雜性增加的挫折感。他主張建立財務可持續的社群驅動框架。值得注意的是，為 React-Bricks 添加 RSC 支援反而降低了開發體驗（多人確認此點，🐦 [推文](https://twitter.com/sebastienlorber/status/1747643069460021405)）。
+- 📜 [串流與 React Server Components](https://minimalistweb.dev/p/streams-and-react-server-components)：即使撇開 RSC，這篇由 Waku 貢獻者撰寫的文章也是對 Streams API 的深度解析。
+- 📜 [無 FOUC 的伺服器端渲染本地時間](https://blog.6nok.org/server-side-rendering-local-dates-without-fouc/)：在用戶時區渲染時間常導致 React 水合不匹配。本文建議在 React 水合前內嵌腳本修改 SSR 渲染的時間以避免不匹配。
+- 📜 [如何在 Next.js 中設置客戶端-伺服器轉發](https://ericbureltech.hashnode.dev/how-to-setup-client-server-relaying-in-nextjs)：解釋如何在伺服器渲染動態值，再讓 SWR 在客戶端接管該值。
+- 📜 [認識 Panda CSS - 零運行時的 CSS-in-JS 新函式庫](https://www.telerik.com/blogs/say-hello-panda-css-new-css-js-library-zero-runtime)
+- 📜 [使用 React Hook Form 建立動態表單](https://claritydev.net/blog/build-dynamic-forms-react-hook-form)
+- 📦 [Remix 2.5 - SPA 模式](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v250)：透過 SPA 模式在無伺服器環境部署 Remix 應用（如 GitHub Pages），只生成單一 `index.html` 檔案。
+- 📦 [React-Aria-Components + Tailwind 入門套件 - 可自訂樣式的新元件集](https://react-spectrum.adobe.com/react-aria/getting-started.html#starter-kits)
+- 🎥 [Storybook 7 與 React 初學者指南 - 免費 Egghead 課程](https://egghead.io/courses/a-beginner-s-guide-to-storybook-7-with-react-56f61ecf)
+- 🔐 [@clerk/nextjs 嚴重安全漏洞 - 請升級至 4.29.3](https://clerk.com/changelog/2024-01-12)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![使用 Apryse 的 React PDF 函式庫處理文件](/emails/issues/170/apryse.jpg)](https://bit.ly/3He15PD)
+
+**[使用 Apryse 的 React PDF 函式庫處理文件](https://bit.ly/3He15PD)**
+
+透過 Apryse 的 React PDF 函式庫改造您的應用程式。無縫整合卓越的檢視器體驗，適用於網頁、行動裝置和桌面平台。支援 PDF、Microsoft Office、影片、圖像、HTML 等多種格式的檢視、編輯、編校和註解功能。
+
+立即[開始免費試用](https://apryse.com/form/contact-sales?utm_source=email%20newsletter&utm_medium=email&utm_campaign=cta%20button)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [Moropo - 直接在瀏覽器中建置並執行開源 React Native 測試](https://www.moropo.com?utm_source=newsletter&utm_medium=emails&utm_campaign=twir-20240117)
+- 👀 [Expo 50 發布直播宣布於 2024 年 1 月 31 日舉行](https://www.youtube.com/watch?v=cKFSVUo3AnI)
+- 👀 [atob() 和 btoa() 已加入 Hermes](https://github.com/facebook/hermes/commit/d2177c31b271e92d1725742605b53d7f6e8acf3e)
+- 👀 [ChatGPT React Native 夥伴](https://chat.openai.com/g/g-S9qpp72cb-react-native-buddy)
+- 📅 [App.js Conf 徵稿截止日期為 1 月 28 日](https://appjs.co/#CFP)
+- 📜 [使用 Maestro 解鎖新可能性：超越自動化測試](https://www.bam.tech/article/unlocking-new-possibilities-with-maestro-beyond-automated-testing): 介紹如何透過 Maestro 對 React Native 應用程式進行自動視覺測試。
+- 📦 [官方 Tamagui 設計系統 Figma 發布](https://www.figma.com/community/file/1326593766534421119/tamagui-v1-2-0): 在 Figma 中使用 Tamagui 元件建立設計。
+- 📦 [React Native 測試應用程式 3.0](https://github.com/microsoft/react-native-test-app/releases/tag/3.0.0): 微軟為函式庫作者提供的測試應用程式。主要為清理版本，放棄 Node 14、React Native 0.65 及更早版本，以及 Flipper。
+- 📦 [React Native visionOS 搭配新 CLI 命令](https://github.com/callstack/react-native-visionos): visionOS 即將推出，社群正全力讓 React Native 做好準備。
+- 📦 [vision-camera-resize-plugin - 用於快速緩衝區調整大小的影格處理器外掛](https://github.com/mrousavy/vision-camera-resize-plugin)
+- 📦 [Expo Orbit 1.0.2](https://expo.dev/orbit)
+- 🎥 [Simon Grimm - 比 React Native Stylesheet 更好 - Unistyles](https://www.youtube.com/watch?v=OT5hQbvGRW8)
+- 🎙️ [Rocket Ship 25 - EAS、Expo Prebuild 與 SDK 50 專訪 Kadi Kraman](https://podcast.galaxies.dev/episodes/025-eas-expo-prebuild-sdk-50-with-kadi-kraman)
+- 🎙️ [React Native Show 33 - 大規模使用 React Native 專訪 Rafael Mendiola](https://www.callstack.com/podcasts/react-native-at-scale-with-rafael-mendiola)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📜 [Rspack 加入模組聯邦功能](https://www.rspack.dev/blog/module-federation-added-to-rspack.html)
+- 📜 [基於 Rust 的 JavaScript Linter：速度快，但目前不支援型別檢查](https://www.joshuakgoldberg.com/blog/rust-based-javascript-linters-fast-but-no-typed-linting-right-now/)
+- 📜 [npm 回顧：2023 年成長、安全與趣聞總覽](https://socket.dev/blog/2023-npm-retrospective)
+- 📜 [htmx 只是另一個 JavaScript 框架嗎？](https://htmx.org/essays/is-htmx-another-javascript-framework/)
+- 📜 [設計更佳目標尺寸 (CSS 實作)](https://ishadeed.com/article/target-size/)
+- 📜 [Node.js 安全性進度報告](https://openjsf.org/blog/nodejs-security-progress-report-january24?utm_content=278704719&utm_medium=social&utm_source=twitter&hss_channel=tw-91985735)
+- 📦 [Node.js 21.6 - 權限模型改進](https://nodejs.org/en/blog/release/v21.6.0)
+- 📦 [gql.tada - 理解 GraphQL 的 TypeScript](https://github.com/0no-co/gql.tada)
+- 📦 [Lightning CSS 1.23](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.23.0)
+- 📦 [Prettier 3.2 - 支援 JSONC、Angular ICU 表達式](https://prettier.io/blog/2024/01/12/3.2.0)
+- 📦 [fsx - 現代化 JavaScript 檔案系統 API](https://humanwhocodes.com/blog/2024/01/fsx-modern-filesystem-api-javascript/)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![迷因圖](/emails/issues/170/meme.jpg)](https://twitter.com/tlakomy/status/1745394119889801454?s=20)
+
+下次見！👋

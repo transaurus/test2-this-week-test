@@ -1,0 +1,150 @@
+---
+slug: /237
+title: "This Week In React #237: RSC, TanStack, Storybook, Lingo Compiler, LiveStore, Base UI | Legacy Arch, Hermes N-API, 120fps, ReactRaptor, DevTools | TC39, Import Maps, Vite, Vitest, Babel, PHP"
+authors: [slorber]
+date: 06-04-2025
+---
+
+大家好！
+
+我原以為能準時發布本週的內容，結果發現 Dan Abramov 這週竟寫了四篇 RSC 技術文章 😂。此外還有許多重要發布，包括 Storybook、LiveStore、Base UI，而 Lingo Compiler 更是令人振奮的創新。社群仍在消化上週的 [Remix 覺醒宣言](https://remix.run/blog/wake-up-remix)，相關影片和播客持續討論此議題。
+
+上週 App.js 大會聚集了 React Native 開發者，React Native 團隊在會中宣布了凍結舊架構的計畫。
+
+最近一次 TC39 會議也成果豐碩，有三項提案晉級 stage 4。Vite 生態圈也有多項重要公告。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![在 IDE 中免費進行 AI 程式碼審查 - VSCode、Cursor、Windsurf](/emails/issues/237/coderabbit.jpg)](https://coderabbit.link/LszC1pB)
+
+**[在 IDE 中免費進行 AI 程式碼審查 - VSCode、Cursor、Windsurf](https://coderabbit.link/LszC1pB)**
+
+[CodeRabbit](https://coderabbit.link/6ZXULSK) 是專為加速程式碼審查與提升品質打造的 AI 平台。無縫整合 Git 工作流與現有工具鏈，提供基於程式庫的審查並支援所有程式語言。
+
+現在他們更推出直接在 VS Code、Cursor 和 Windsurf 中進行 AI 程式碼審查的功能，讓您和團隊能在流暢編碼狀態下同步完成審查。
+
+更棒的是：IDE 內的程式碼審查完全免費！沒錯，您可免費獲得逐行審查建議與一鍵修復功能。
+
+立即[安裝擴充功能](https://coderabbit.link/LszC1pB)，開始為您的程式碼進行品質把關！
+
+---
+
+## ⚛️ React {#react}
+
+[![Storybook 9](/emails/issues/237/storybook.jpg)](https://storybook.js.org/blog/storybook-9/)
+
+**[Storybook 9](https://storybook.js.org/blog/storybook-9/)**
+
+Storybook 正發展為終極元件測試工具，整合 Vitest 與 Playwright，涵蓋：
+
+- 互動測試：模擬用戶行為驗證功能
+- 無障礙測試：檢測、診斷並修復 WCAG 違規
+- 視覺測試：檢查像素級外觀錯誤
+- 覆蓋率報告：直觀掌握程式碼測試範圍
+- 測試元件：點擊即可運行完整測試套件
+
+此版本還包含：
+
+- 體積縮減 48%：精簡安裝包，文檔與測試套件可選
+- 元件腳本生成：自動化建立測試案例
+- 標籤分類系統：按標籤篩選與分組元件
+- 全局變數：在元件層級設定上下文（主題、視窗尺寸、語系）
+- 框架支援：Svelte、Next.js、React Native 等重大更新！
+
+---
+
+- 💸 [Product for Engineers - What nobody tells developers about documentation](https://go.posthog.com/twir-jun4)
+- 📖 [TanStack docs \- Migrate from Next.js](https://tanstack.com/start/latest/docs/framework/react/migrate-from-next-js)
+- 🔐 [Next.js CVE-2025-48068 \- Low-severity vulnerability in the dev server, fixed in v15.2.2](https://vercel.com/changelog/cve-2025-48068)
+- 🗓️ [React Advanced London](https://reactadvanced.com/?utm_source=Newsletter&utm_medium=ThisWeekinReact) -  🇬🇧 London - 28 Nov & 1 Dec. "It's one of my absolute favourite conferences here." *— Lenz Weber-Tronic, Apollo GraphQL*. 10% off with code "TWIR".
+- 📜 [Progressive JSON](https://overreacted.io/progressive-json/): Dan uses various analogies to illustrate the difference between different data streaming strategies. The depth-first strategy \- used by JPEG, JSON and HTML \- streams the data in order and either delay the parsing or creates an arbitrary cutoff point. The breadth-first strategy streams data out-of-order, replacing nested data with placeholders that can be filled later. React Server Components use the breadth-first strategy. Suspense allows to intentionally reveal the UI, decoupled from data reception. A quite interesting post that also exists in [video format](https://www.youtube.com/watch?v=MaMQLNBZz64).
+- 📜 [One Roundtrip Per Navigation](https://overreacted.io/one-roundtrip-per-navigation/): Dan gives a comprehensive overview of the tradeoffs of the main React data fetching patterns. Using Server Components is quite similar to composing many Server Loaders into a single one, giving you the performance and co-location benefits of Relay while using vanilla JS code.
+- 📜 [RSC for LISP Developers](https://overreacted.io/rsc-for-lisp-developers/): The `’use client’` directive is similar to LISP quoting, marking a piece of code as data to be evaluated later.
+- 📜 [Why Does RSC Integrate with a Bundler?](https://overreacted.io/why-does-rsc-integrate-with-a-bundler/): Server Components need a way to serialize component modules from the server to the client. It’s technically possible to do so without a bundler, but it’s inefficient.
+- 📜 [Search Params Are State](https://tanstack.com/blog/search-params-are-state): Tanner gives good reason for TanStack Router to associate a search params schema with route definitions. This helps improve type-safety, optimizes re-renders, and prevents schema fragmentation.
+- 📜 [The Power in Pragmatism](https://tanstack.com/blog/power-in-pragmatism): Libraries from the TanStack ecosystem aren’t tied to any rendering framework, but focus on the core ideas.TanStack Start is a flexible framework that adapts to your needs instead of anticipating them.
+- 📜 [useSyncExternalStore: Demystified for Practical React Development](https://www.epicreact.dev/use-sync-external-store-demystified-for-practical-react-development-w5ac0): A good overview of one of my favorite hooks, including common mistakes.
+- 📜 [Directive prologues and JavaScript dark matter](https://macwright.com/2025/04/29/directive-prologues-and-javascript-dark-matter): Gives interesting context on various ways to control how JS is interpreted: JSX pragmas, directives, and magic comments.
+- 💸 [Join 1,000+ Developers – Learn full-stack web development in The Road to Next, the course for React devs ready to level up.](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_2)
+- 📦 [Lingo Compiler](https://lingo.dev/en/compiler): A free open-source compiler to automatically translate any React app at build time without touching the source code. It processes the React code AST and translates it automatically with LLMs, and even supports hot module replacement. A great innovation with first-class integrations for Next.js, React Router, Remix, and Vite apps. The [demo on X](https://x.com/MaxPrilutskiy/status/1929946504216932746) is impressive.
+- 📦 [LiveStore Beta](https://livestore.dev/): The creator of Prisma introduced a new client-centric state management solution with first-class support for React and Expo. Based on SQLite, event sourcing, and reactivity, it can also sync clients through various providers. The landing page is quite cool to check and explains how it all works.
+- 📦 [Base UI 1.0 Beta](https://github.com/mui/base-ui/releases/tag/v1.0.0-beta.0): The upcoming Radix UI contender is now in beta. This release includes new Menubar, NavigationMenu, and ContextMenu components.
+- 📦 [Ink 6.0 \- React renderer for CLIs \- React 19 support](https://github.com/vadimdemedes/ink/releases/tag/v6.0.0)
+- 📦 [TanStack Query 4.39 \- Backport some v5 APIs to v4](https://github.com/TanStack/query/releases/tag/v4.39.0)
+- 📦 [Lexical 0.32 \- Extensible text editor framework](https://github.com/facebook/lexical/releases/tag/v0.32.0)
+- 🎥 [Theo \- Remix is ditching React (and I think that's a good thing)](https://www.youtube.com/watch?v=y_64170hz0o)
+- 🎥 [Alem Tuzlak \- Remix.run woke up, did it sleep well?](https://www.youtube.com/watch?v=Y5t0ILcuxVc)
+- 🎥 [Ryan Carniato \- The 3 Ways JavaScript Frameworks Render the DOM](https://www.youtube.com/watch?v=0C-y59betmY)
+- 🎥 [React Miami 2025 Platlist](https://www.youtube.com/playlist?list=PL4mWVugy3a2il28mbeNmyjJDoHOvw4JTK)
+- 🎙️ [This Month in React \- Dan explains RSC. Remix v3? React core team WIP?](https://creators.spotify.com/pod/profile/reactiflux/episodes/TMiR-2025-05-Dan-explains-RSC--Remix-v3--React-core-team-WIP-e33nc5a)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![數分鐘內建構完整獎勵流程 — 使用 Dynamo](/emails/issues/237/dynamo.png)](hhttps://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)
+
+**[數分鐘內建構完整獎勵流程 — 使用 Dynamo](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)**
+
+從零開始建立忠誠度邏輯是件痛苦的事——基礎設施設置、獎勵追蹤、事件觸發、分級規則⋯⋯這些加總起來相當繁瑣。
+
+**Dynamo** 是專為開發者打造的忠誠度引擎：單一 API、完全控制、零門檻限制。透過實際 SDK (React + React Native)、清晰文件與即時沙盒環境，幾分鐘內即可測試您的獎勵流程——無需通話、無需信用卡，只需程式碼。
+
+→ [立即取得沙盒存取權限。](https://whitelabel-loyalty.com/products/dynamo/?utm_source=email&utm_medium=newsletter&utm_campaign=react)
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![凍結傳統架構](/emails/issues/237/rn-frozen.jpg)](https://github.com/reactwg/react-native-new-architecture/discussions/290)
+
+**[凍結傳統架構](https://github.com/reactwg/react-native-new-architecture/discussions/290)**
+
+React Native 團隊正式宣布凍結~~舊架構~~傳統架構的計劃，以便全力投入新架構的開發。團隊將透過安全性更新與重大錯誤修復維持傳統架構可用性，但不計劃合併新功能。最終將在未來某個時間點移除傳統架構，因其持續維護需付出成本。
+
+---
+
+- 💸 [加入 React Universe 紐約聚會，學習 Brownfield 技巧、RNEF、OpenTelemetry for RN 等內容。6月24日星期二 | 美東時間下午6點至9點（混合模式）。](https://www.callstack.com/events/react-universe-meetup-new-york-june-2025?utm_campaign=Brownfield&utm_source=TWIR&utm_medium=mail&utm_content=react_universe_mmetup_new_york)
+- 👀 [Hermes PR - 將 Node-API 加入 Hermes](https://github.com/facebook/hermes/pull/1377)：近期討論顯示 Hermes 團隊積極接受這項 Microsoft PR，並計劃利用此整合支援標準函式庫 API（如 `Intl`、`Temporal`）。
+- 👀 [React Native PR - 在 iOS 上支援 Animated 120fps](https://github.com/facebook/react-native/pull/51775)
+- 📜 [ReactRaptor：找出哪些 Android 應用程式是使用 Expo 建置的](https://expo.dev/blog/which-android-apps-are-built-with-expo)：這款實用工具能掃描手機並顯示 RN/Expo 應用清單。實測發現許多未預期使用 RN 的本地法國應用，對尋找 RN 工作或接案客戶極有幫助。
+- 💸 [Expo AI Chatbot - 最快建立 React Native AI 聊天機器人應用。完整程式碼庫含串流、語音代理、圖片生成等功能](https://www.expoaichatbot.com?atp=twir)
+- 📦 [Reanimated 3.18 - 支援 RN 0.80](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.18.0)
+- 📦 [React Native Better DevTools - macOS 除錯工具，支援 React Query、MMKV、AsyncStorage、安全儲存、環境變數等多平台偵錯](https://github.com/LovesWorking/rn-better-dev-tools)
+- 📦 [zustand-expo-devtools](https://github.com/csark0812/zustand-expo-devtools)
+- 🎥 [App.js Conf 2025 – 第一天與第二天直播](https://www.youtube.com/watch?v=K2JTTKpptGs&list=PLSk21zn8fFZBD3Kxg8Rw_n4LPIuA6TGHd)
+- 🎥 [React Universe 聚會，2025年4月](https://www.youtube.com/watch?v=FqSLVdOrclI&list=PLZ3MwD-soTTHQjW7z1BEUmHC7aKdUnA7J)
+- 🎥 [Simon Grimm - 使用 Expo Router 實作 React Native 標籤頁導覽](https://www.youtube.com/watch?v=CN4x8srCMl0)
+- 🎙️ [Rocket Ship 71 - Reanimated 4 Beta、LiveStore、DevTools & Expo Router 課程](https://share.transistor.fm/s/512c4c06)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📣 [TC39 推進 9 項提案包含 `Array.fromAsync`、`Error.isError` 與顯式資源管理至 Stage 4](https://socket.dev/blog/tc39-advances-9-proposals): 很高興看到 `using` 關鍵字納入規範，並已被 Vitest 採用，而且新的[隨機命名空間與函式](https://github.com/tc39/proposal-random-functions)也相當令人興奮！
+- 📜 [韌性 Import Maps](https://shopify.engineering/resilient-import-maps): Shopify 對 HTML 規範做出了重大貢獻，使瀏覽器能夠宣告多個 import map。我認為這並非巧合，Remix v3 很可能會利用此特性。
+- 📜 [無縫融合 PHP 與 Node.js](https://blog.platformatic.dev/seamlessly-blend-php-with-nodejs)
+- 📦 [Rolldown-Vite](https://voidzero.dev/posts/announcing-rolldown-vite): Rolldown 驅動的 Vite 版本已達到與父專案功能相當。現提供技術預覽版，可作為直接替換方案。早期採用者回報構建速度提升高達 16 倍。
+- 📦 [Vitest 3.2 - 註解 API、自訂瀏覽器定位器、`using`、測試信號、更佳覆蓋率結果](https://vitest.dev/blog/vitest-3-2.html)
+- 📦 [Vite 7.0 Beta - 棄用 Node 18、僅支援 ESM、瀏覽器目標設為 `baseline-widely-available`](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md#700-beta0-2025-06-02)
+- 📦 [Babel 8 Beta - 棄用 Node 18、僅支援 ESM、清理技術債務](https://babeljs.io/blog/2025/05/30/babel-8-beta)
+
+---
+
+## 🤭 趣聞 {#fun}
+
+[![alt](/emails/issues/237/meme.jpg)](https://x.com/AlemTuzlak/status/1927806693007597883)
+
+[![alt](/emails/issues/237/meme2.jpg)](https://x.com/sebastienlorber/status/1929880640670814510)
+
+下次見！ 👋

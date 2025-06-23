@@ -1,0 +1,540 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/216/index.mdx",
+  "source_file_content_hash": "d6c34e836ebb8069ae4b04045cd8c07a5c0172873e330213c11b5bd99768ccb8",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /216\ntitle: \"This Week In React #216: Next.js, ViewTransition, RSC, Compiler, React Router, Recoil, Bippy, Docusaurus, A11y, Static Hermes, Nitro, Radon, SQLite, Edge-to-Edge, Node, TypeScript, pnpm, htmx...\"\nauthors: [matthieugicquel, cyrilbo]\ndate: 01-08-2025\n---",
+      "source_content_hash": "2e09241db8ce721272e478777b59603b0149f38d98114a3016fe7c5eb0b8f83d",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu from Theodo Apps here 👋, standing in for Seb to bring you the latest news from React and React Native!",
+      "source_content_hash": "14de49c7eb993dc53c935185eedc431b2f00bf1dbab56ff42ddb0a2b9d516651",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這裡是來自 Theodo Apps 的 Cyril 和 Matthieu 👋，我們代替 Seb 為大家帶來 React 和 React Native 的最新消息！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "The previous edition was last Friday, so this one will be a bit shorter than usual. We’re resuming the usual pace of one newsletter every week after the holidays.",
+      "source_content_hash": "dc78d07acf7672cbc8d558cd22acf600b5912be54425fa5fe10159851bdba0d3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "上一期是上週五發布的，因此本期內容會比平時稍短一些。假期過後，我們將恢復每週發布一次通訊的常規節奏。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The [2024 edition of JS rising stars](https://risingstars.js.org/2024/en) is out, you can start by having a look at which libraries performed well on this flawed but still useful metric of GitHub starts. Spoiler: `shadcn/ui` gained the most stars (again). Sébastien commented the [Tooling section](https://risingstars.js.org/2024/en#section-build).",
+      "source_content_hash": "4c7b3b40c697aafa729b6d4bd09b7c6ae9b5bbfe8e8c1058aac37a3d7671914b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[2024 年 JS 新星榜](https://risingstars.js.org/2024/en)已經發布，你可以先看看哪些函式庫在這個雖有缺陷但仍具參考價值的 GitHub 星標指標中表現出色。劇透：`shadcn/ui` 再次獲得最多星標。Sébastien 評論了[工具類別](https://risingstars.js.org/2024/en#section-build)。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Make sure to check our partner 🗓️ [Paris TypeScript La Conf'](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 Paris - 28 February - Full speaker line up just dropped! Join Mateusz Burzyński, Elise Patrikainen and David Rousset! Get 20% off tickets with code \"TWIR\"!",
+      "source_content_hash": "a0ba22fa08e8548cc0494ccd86582a41172739f2291cb73e83f66e3a2601d47b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "別忘了查看我們的合作夥伴 🗓️ [巴黎 TypeScript 大會](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 巴黎 - 2 月 28 日 - 完整講者陣容剛剛公布！加入 Mateusz Burzyński、Elise Patrikainen 和 David Rousset！使用代碼 \"TWIR\" 可享門票 8 折優惠！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_45c63027"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_92f4ea84"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_5dfba1c3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![PropelAuth: Make Authentication Your Advantage](/emails/issues/216/PropelAuth.jpg)](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)",
+      "source_content_hash": "461a8acd76e713e0452417e531c30fd0c2c7d8d20fe804adc4e78e7788e797b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![PropelAuth：讓身份驗證成為您的優勢](/emails/issues/216/PropelAuth.jpg)](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[PropelAuth: Make Authentication Your Advantage](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)**",
+      "source_content_hash": "f97473254e83b3832577c2edb430568de02dda31c0101a31c8173abb2d8414b2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[PropelAuth：讓身份驗證成為您的優勢](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "If your authentication isn't **helping you grow**, it's **holding you back**.",
+      "source_content_hash": "13283f8ffc10fea8fca2f5222c5608db8bdb71c19c338937dc97a18d06bf6b31",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "如果您的身份驗證系統無法**幫助業務成長**，那它就是在**拖後腿**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "With [PropelAuth](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024), you get everything you need to launch and scale your B2B product:",
+      "source_content_hash": "374933ea16a0be2682d15ce5664c5ff5ceede02983dd2ab2c9438e9078277964",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "透過 [PropelAuth](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)，您將獲得啟動和擴展 B2B 產品所需的一切："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7a2e981c",
+      "source_content": "- **Easy to understand** [documentation](https://docs.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024) and **friendly, fast support**.\n- **UIs that cover all your use cases** - signup, login, MFA, organization management and more.\n- **User impersonation** so you can provide top-notch support to your users.\n- **Enterprise SAML/SSO** and **advanced security features** so you can be upmarket-ready.\n- **User insights** to help you strategize and expand.",
+      "source_content_hash": "0cdc67833ec53abab0d7d813932463e99bd3b2e9ccc57cfecf6c1234842868d0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- **清晰易懂**的[文檔](https://docs.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)與**友好快速的支援服務**\n- **覆蓋所有使用場景的 UI** - 註冊、登入、多因素驗證、組織管理等\n- **用戶模擬功能**讓您能為用戶提供頂級支援服務\n- **企業級 SAML/SSO** 和**進階安全功能**助您做好進軍高端市場準備\n- **用戶行為洞察**幫助制定戰略與擴展計劃"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[Get started today](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)",
+      "source_content_hash": "1d4ab75bfee3ef7c05123cf768f2c98cab80b0ba9911838af3c2e36310177b3c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[立即開始使用](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d4e0d4e1",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8bddee80",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "[![Composable Caching with Next.js](/emails/issues/216/nextjscache.jpg)](https://nextjs.org/blog/composable-caching)",
+      "source_content_hash": "1e0f6b0473c6e9cbf1819ce91ae65441c7b4c73c03ee5d18e3963e6ea27ff12d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![使用 Next.js 進行可組合快取](/emails/issues/216/nextjscache.jpg)](https://nextjs.org/blog/composable-caching)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "**[Composable Caching with Next.js](https://nextjs.org/blog/composable-caching)**",
+      "source_content_hash": "75719b47ea81da706fdde61c81d773ffd7b53b9512993a2308e90b1b57bd22bb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[使用 Next.js 進行可組合快取](https://nextjs.org/blog/composable-caching)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "Explains what Next.js is trying to accomplish, and why `”use cache”` is a compiler directive and not a function (to be able to analyze closures and determine the right cache key).",
+      "source_content_hash": "30036f32b72807701c7ae3d4d46d2194fa8667fd972981ddaaea34553a452f98",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "解釋 Next.js 的設計目標，以及為何 `”use cache”` 是編譯器指令而非函數（以便分析閉包並確定正確的快取鍵）。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "49d8fe2a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "[![React Core PR - Add `<ViewTransition>` Component](/emails/issues/216/viewTransitions.jpg)](https://github.com/facebook/react/pull/31975)",
+      "source_content_hash": "66600aff7d7e15c8c92684ce1257c128075d7e997ae06e0ebf001948e3f70034",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React 核心 PR - 新增 `<ViewTransition>` 元件](/emails/issues/216/viewTransitions.jpg)](https://github.com/facebook/react/pull/31975)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "**[React Core PR - Add `<ViewTransition>` Component](https://github.com/facebook/react/pull/31975)**",
+      "source_content_hash": "1ce8d91d7b83a238d80e8056af025333dab5308b72fc84d9f19b6e4a40b9cc4b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[React 核心 PR - 新增 `<ViewTransition>` 元件](https://github.com/facebook/react/pull/31975)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "React is adding support for View transitions with a `<ViewTransition />` component that integrates with all the async features like Suspense and `startTransition`.",
+      "source_content_hash": "a233602ad846db47fa4e07c169b72dfa6075cb3da91b6ae44c2329bc92d0780d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "React 正透過 `<ViewTransition />` 元件添加視圖轉換支援，該元件能與所有非同步功能（如 Suspense 和 `startTransition`）整合。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "818747ba",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "158e1f5d",
+      "source_content": "- 💸 [daily.dev: Your personal dev news feed. Free!](https://daily.dev/w/this-week-in-react)\n- 🐦 [Recoil (state manager by meta) has been archived](https://x.com/dai_shi/status/1875910305802514649)\n- 📜 [RSC and Server Action Bundle Practice](https://github.com/orgs/web-infra-dev/discussions/23): An Rspack maintainer shared a comprehensive deep dive on how bundlers implement React Server Components in practice, notably webpack and Turbopack.\n- 📜 [Automated Accessibility Testing at Slack](https://slack.engineering/automated-accessibility-testing-at-slack/): They tried to do it with testing-library but ended up using Playwright.\n- 📜 [Thoughts on State Management Libraries in the React Compiler Era](https://blog.axlight.com/posts/thoughts-on-state-management-libraries-in-the-react-compiler-era/): The compiler makes React Context much more attractive, are they still useful?\n- 📜 [All kinds of state management in React](https://www.typeonce.dev/article/all-kinds-of-state-management-in-react): url state, server state, client state…\n- 📜 [React Router 7 Tutorial](https://www.robinwieruch.de/react-router/): A 3-part series covering the introduction, descendent routes and search params.\n- 📜 [How React's Render, Effects and Refs work under the hood](https://tigerabrodi.blog/how-reacts-render-effects-and-refs-work-under-the-hood)\n- 📜 [Redux Saga Is Hard Until You Look Under The Hood](https://janhesters.com/blog/redux-saga-is-hard-until-you-look-under-the-hood)\n- 📦 [Bippy \\- A toolkit to hack into react internals](https://www.bippy.dev/): It’s what [react-scan](https://github.com/aidenybai/react-scan) uses under the hood to access the Fiber tree.\n- 📦 [Docusaurus 3.7](https://docusaurus.io/blog/releases/3.7) adds support for React 19 and a new svgr plugin.\n- 📦 [React Admin 5.4 (and 5.3)](https://marmelab.com/blog/2025/01/08/react-admin-january-2025-update.html)\n- 🎥 [Cosden \\- The Biggest Mistake Intermediate React Developers Make](https://www.youtube.com/watch?v=jqcbIgQBn34)\n- 🎥 [Alem Tuzlak \\- The Benefits of React Router V7 Nobody Told You About](https://www.youtube.com/watch?v=EGuYKL8puRI)\n- 🎥 [Theo \\- Inertia 2.0: It's like Next but better (and you can use React\\!)](https://www.youtube.com/watch?v=OpXLWJd2iO0)\n- 🎙️ [Syntax.fm - 2025 Web Development Predictions](https://syntax.fm/show/866/2025-web-development-predictions)",
+      "source_content_hash": "0cda0062cb948ea53691e172c6d70b1cded6cf715b5e80cb585975c46ad40ae0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [daily.dev: 您的個人開發新聞來源。免費！](https://daily.dev/w/this-week-in-react)\n- 🐦 [Recoil（Meta 的狀態管理庫）已封存](https://x.com/dai_shi/status/1875910305802514649)\n- 📜 [RSC 與 Server Action 的打包實踐](https://github.com/orgs/web-infra-dev/discussions/23)：一位 Rspack 維護者分享了打包工具如何實踐 React Server Components 的深度解析，重點涵蓋 webpack 和 Turbopack。\n- 📜 [Slack 的自動化無障礙測試](https://slack.engineering/automated-accessibility-testing-at-slack/)：嘗試使用 testing-library 後最終選擇 Playwright。\n- 📜 [React 編譯器時代的狀態管理庫思考](https://blog.axlight.com/posts/thoughts-on-state-management-libraries-in-the-react-compiler-era/)：編譯器讓 React Context 更具吸引力，它們還有用嗎？\n- 📜 [React 中的各種狀態管理](https://www.typeonce.dev/article/all-kinds-of-state-management-in-react)：URL 狀態、伺服器狀態、客戶端狀態...\n- 📜 [React Router 7 教學](https://www.robinwieruch.de/react-router/)：涵蓋入門、子路由和搜尋參數的三部曲。\n- 📜 [React 的渲染、Effect 和 Ref 底層運作原理](https://tigerabrodi.blog/how-reacts-render-effects-and-refs-work-under-the-hood)\n- 📜 [深入理解 Redux Saga 的底層機制](https://janhesters.com/blog/redux-saga-is-hard-until-you-look-under-the-hood)\n- 📦 [Bippy - 用於窺探 React 內部機制的工具包](https://www.bippy.dev/)：[react-scan](https://github.com/aidenybai/react-scan) 底層即使用此工具存取 Fiber 樹。\n- 📦 [Docusaurus 3.7](https://docusaurus.io/blog/releases/3.7) 新增 React 19 支援與 svgr 外掛。\n- 📦 [React Admin 5.4（及 5.3）](https://marmelab.com/blog/2025/01/08/react-admin-january-2025-update.html)\n- 🎥 [Cosden - 中階 React 開發者最常犯的錯誤](https://www.youtube.com/watch?v=jqcbIgQBn34)\n- 🎥 [Alem Tuzlak - React Router V7 的隱藏優勢](https://www.youtube.com/watch?v=EGuYKL8puRI)\n- 🎥 [Theo - Inertia 2.0：比 Next 更優的選擇（支援 React！）](https://www.youtube.com/watch?v=OpXLWJd2iO0)\n- 🎙️ [Syntax.fm - 2025 年網頁開發預測](https://syntax.fm/show/866/2025-web-development-predictions)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2128cb26",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_2128cb26"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ff0f46f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0a103a02",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "[![Rethink your React apps' UX with Reactile](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)",
+      "source_content_hash": "804609ec6328a8526330cfc5adad935be6f942c9f6bea83ca6b8e73fae6136fe",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![使用 Reactile 重新思考您的 React 應用程式 UX](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "**[Rethink your React apps' UX with Reactile](https://www.reactile.net/?utm_source=ThisweekinReact)**",
+      "source_content_hash": "f7b9f2aa5aa41fe9981609c34e5443470e14f2d217842e63a917f26b83c5fe9c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[使用 Reactile 重新思考您的 React 應用程式 UX](https://www.reactile.net/?utm_source=ThisweekinReact)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "Reactile is an UI/UX turnkey framework which features an out-of-the-box, intuitive tiling display with workspaces. It encourages parallel workloads for large web solutions within a single browser tab. Implement your own view containers, widgets and logic using React and let Reactile handle the display for you.",
+      "source_content_hash": "df73b3ca217de2b962e5f9e6cd04001a923739eb32f5ef2c9f7e34d980f99a23",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Reactile 是開箱即用的 UI/UX 框架，提供直覺的視窗平鋪佈局與工作區，鼓勵在單一瀏覽器分頁內進行大型網頁解決方案的並行工作負載。您可使用 React 實作自訂視窗容器、元件和邏輯，並由 Reactile 處理顯示層。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "On top of that, Reactile also offers:",
+      "source_content_hash": "c71c565a82c8c75ce60dc4fa8883e82871fe706100891d309b282c994e5f5106",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "此外，Reactile 還提供："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0dbe2f3",
+      "source_content": "- A promise-based persistence mechanism which permits a uniform workflow across time and on multiple devices.\n- The possibility to use nested tabs for your tiles.\n- A simplified global search mechanism.\n- CSS @container based responsiveness.\n- And much more.",
+      "source_content_hash": "42dde46b8aa1c52356856bf6d8e4d69ce853e6976dee7b06d748d400f975600d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 基於 Promise 的持久化機制，確保跨裝置與時間的工作流程一致性。\n- 支援在平鋪視窗中使用巢狀分頁。\n- 簡化的全域搜尋機制。\n- 基於 CSS @container 的回應式設計。\n- 以及更多功能。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "Version 2 coming out soon. Get started with your unique 30-day free trial. Learn more about it on reactile.net.",
+      "source_content_hash": "67c06d71c49f49d579b37262a90ca57cbc84ba8a53365d4b68cfd595d40324e4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "第二版即將發布。立即開始您的 30 天免費試用，詳情請見 reactile.net。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "[Reactile - The new React UI management system](https://www.reactile.net/price?utm_source=ThisweekinReact)",
+      "source_content_hash": "ab4c3876551f7d8cd91e51fc877e8f8c6ce9cc36641b0f39ded9e98c4305f5b9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[Reactile - 全新的 React UI 管理系統](https://www.reactile.net/price?utm_source=ThisweekinReact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9ae42a9",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42a5832e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "664ad8b1",
+      "source_content": "- 💸 [PostHog - How to set up React Native session replay](https://dub.link/twir-jan8)\n- 🐦 [Nitro Views will be released along with React Native 0.78](https://x.com/mrousavy/status/1876559810784833930)\n- 🐦 [Network debugging tools will land in Radon IDE](https://x.com/kzzzf/status/1875211071231025353)\n- 👀 [React Native PR - Static Hermes for React Native](https://github.com/facebook/react-native/pull/48531): The integration of the new Hermes implementation has started! The initial benchmarks shows a great 30%+ perf improvement, but it's not even using typed code or JIT yet, which should give even more significant numbers.\n- 📖 [You can highlight live re-renders in React Native DevTools](https://reactnative.dev/docs/react-native-devtools#react-components)\n- 📜 [Modern SQLite for React Native apps - DrizzleORM with expo-sqlite setup, type-safe queries, live queries, migrations, Drizzle Studio Expo Dev Tool Plugin.](https://expo.dev/blog/modern-sqlite-for-react-native-apps)\n- 📦 [React Native 0.77.0-rc.6](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.6) is the golden RC and a stable release is scheduled for next week.\n- 📦 [React Native Edge to Edge 1.2](https://github.com/zoontek/react-native-edge-to-edge/releases/tag/1.2.0) adds support for light theme variants on android.\n- 🎥 [React Universe On Air 45 - Evan Bacon on Universal React Native Apps, DOM & React Server Components](https://www.youtube.com/watch?v=rA7E3rGKSZw)",
+      "source_content_hash": "d057e98c03f4ada5927f29708dabd68004f26cb5ec66575c81bb56c532faf25e",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [PostHog - 如何設定 React Native 工作階段重播](https://dub.link/twir-jan8)\n- 🐦 [Nitro Views 將隨 React Native 0.78 一同發布](https://x.com/mrousavy/status/1876559810784833930)\n- 🐦 [網路除錯工具將登陸 Radon IDE](https://x.com/kzzzf/status/1875211071231025353)\n- 👀 [React Native PR - 適用於 React Native 的靜態 Hermes](https://github.com/facebook/react-native/pull/48531)：新 Hermes 實作的整合已啟動！初步效能測試顯示有超過 30% 的效能提升，且尚未使用類型化程式碼或 JIT，預計將帶來更顯著的提升。\n- 📖 [你可以在 React Native DevTools 中即時高亮重新渲染](https://reactnative.dev/docs/react-native-devtools#react-components)\n- 📜 [適用於 React Native 應用程式的現代 SQLite - DrizzleORM 搭配 expo-sqlite 設定、類型安全查詢、即時查詢、遷移與 Drizzle Studio Expo 開發工具外掛](https://expo.dev/blog/modern-sqlite-for-react-native-apps)\n- 📦 [React Native 0.77.0-rc.6](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.6) 為最終候選版本，穩定版預計於下週發布。\n- 📦 [React Native Edge to Edge 1.2](https://github.com/zoontek/react-native-edge-to-edge/releases/tag/1.2.0) 新增 Android 淺色主題變體支援。\n- 🎥 [React Universe On Air 第 45 集 - Evan Bacon 談通用 React Native 應用程式、DOM 與 React Server Components](https://www.youtube.com/watch?v=rA7E3rGKSZw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ad15270",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7fa1e8d",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9673e622",
+      "source_content": "- 📜 [JavaScript Frameworks - Heading into 2025](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2025-hkb)\n- 📜 [The future of htmx](https://htmx.org/essays/future/): (almost) no new features\n- 📜 [Relatively New Things You Should Know about HTML Heading Into 2025](https://frontendmasters.com/blog/bone-up-html-2025/)\n- 📜 [Testing Accessibility with Screen Readers](https://www.epicweb.dev/testing-accessibility-with-screen-readers)\n- 📜 [Balancing Text In CSS](https://ishadeed.com/article/balancing-text-css/)\n- 📜 [Using Forced Reflows, the Event Loop, and the Repaint Cycle to Slide Open a Box](https://macarthur.me/posts/box/)\n- 📜 [Node’s new built-in support for TypeScript](https://2ality.com/2025/01/nodejs-strip-type.html)\n- 📦 [Node 23.6](https://nodejs.org/en/blog/release/v23.6.0) with TS types stripping, and [Node 22.13 (LTS)](https://nodejs.org/en/blog/release/v22.13.0) with stable security model.\n- 📦 [pnpm 10.0 - Increased security, `onlyBuiltDependencies`](https://github.com/pnpm/pnpm/releases/tag/v10.0.0)\n- 📦 [Prisma 6.2 - omit, SQLite json/enum fields](https://github.com/prisma/prisma/releases/tag/6.2.0)",
+      "source_content_hash": "d788f24e8f31e281a2a64ad7be596f82789ce8e34709943d70e5c83275fc3115",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📜 [JavaScript 框架 - 邁向 2025](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2025-hkb)\n- 📜 [htmx 的未來](https://htmx.org/essays/future/)：（幾乎）沒有新功能\n- 📜 [邁向 2025 你該了解的 HTML 新特性](https://frontendmasters.com/blog/bone-up-html-2025/)\n- 📜 [使用螢幕閱讀器測試無障礙功能](https://www.epicweb.dev/testing-accessibility-with-screen-readers)\n- 📜 [CSS 中的文字平衡](https://ishadeed.com/article/balancing-text-css/)\n- 📜 [運用強制回流、事件循環與重繪循環實現盒子滑動開啟](https://macarthur.me/posts/box/)\n- 📜 [Node 對 TypeScript 的新內建支援](https://2ality.com/2025/01/nodejs-strip-type.html)\n- 📦 [Node 23.6](https://nodejs.org/en/blog/release/v23.6.0) 支援 TS 類型剝離，以及具備穩定安全模型的 [Node 22.13 (LTS)](https://nodejs.org/en/blog/release/v22.13.0)。\n- 📦 [pnpm 10.0 - 增強安全性，`onlyBuiltDependencies`](https://github.com/pnpm/pnpm/releases/tag/v10.0.0)\n- 📦 [Prisma 6.2 - 新增 omit 功能、SQLite json/enum 欄位支援](https://github.com/prisma/prisma/releases/tag/6.2.0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f539b80c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c83259bb",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣味 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "14bc6b75",
+      "source_content": "[![alt](/emails/issues/216/meme.jpg)](https://x.com/jordwalke/status/1875336115009573268)",
+      "source_content_hash": "c806989f1afac9ee72875afe4fe0ed9aad779bf0cf9cc396d174ada5c8ddcce2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/216/meme.jpg)](https://x.com/jordwalke/status/1875336115009573268)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e478ec2c",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下次見！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/216/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.140587+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "d6c34e836ebb8069ae4b04045cd8c07a5c0172873e330213c11b5bd99768ccb8"
+  }
+}

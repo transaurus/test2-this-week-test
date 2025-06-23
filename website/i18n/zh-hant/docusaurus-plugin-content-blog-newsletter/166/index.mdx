@@ -1,0 +1,136 @@
+---
+slug: /166
+title: "This Week In React #166: Server Components, Waku, React-Forget, React-Native, Expo, Million, Remotion, Next.js, Storybook, Remix, AuthKit, Expo Router, Reactotron, Unistyles, Skia, SEO, CSS, Oxlint..."
+authors: [slorber]
+date: 12-12-2023
+---
+
+大家好！
+
+本週的新聞相當令人興奮！
+
+我們迎來了一些優秀的 React 版本發布和文章。很高興看到 React-Forget 在 Instagram 上逐步推出，而 Remotion 也透過 GitHub Unwrapped 的發布展現了其完整潛力。
+
+React-Native 正處於火熱發展階段，v0.73 穩定版發布、Expo SDK 50 和 Expo Router v3 進入測試階段，還有其他出色的版本發布。最讓我興奮的是 Expo 正逐步揭露其支援 Universal React Server Components 的計劃。
+
+本週的內容對我來說很特別：這是我首次不是獨自撰寫內容。[Benedikt](https://twitter.com/bndkt) 幾乎寫完了整個 React-Native 專欄。我自 2020 年後就沒在生產環境用過 React-Native 😅，很高興能有人運用[這些尖端函式庫](https://github.com/bndkt/sharemystack)來協助提供相關洞見。
+
+別忘了填寫 [State of JavaScript](https://stateofjs.com/en-US) 和 [State of React-Native](https://stateofreactnative.com/) 問卷調查。若能在結尾處提到我就更棒了！[Theo T3 示範給你看](https://youtube.com/clip/UgkxDdNASo6xNS710ODcjMx0WW4HtTxIYbrA?si=G0rAnDKOQwHqh_ED) 😄
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![MightyMeld 推出視覺化開發工具加速 React 開發](/emails/issues/166/mightymeldthisweekinreact.jpg)](https://www.mightymeld.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=1&utm_content=top)
+
+**[MightyMeld 推出視覺化開發工具加速 React 開發](https://www.mightymeld.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=1&utm_content=top)**
+
+一款新型 React 開發工具已開放測試版。在運行建置時即時查看 JSX 與樣式效果，快速跳轉至常用編輯器，透過拖放和生成式 AI 更新應用程式。操作過程中，MightyMeld 會生成可直接合併至 PR 的簡潔程式碼。[免費使用](https://www.mightymeld.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=1&utm_content=body)。
+
+---
+
+## ⚛️ React {#react}
+
+[![Waku](/emails/issues/166/waku.jpg)](https://waku.gg/blog/introducing-waku)
+
+[**Waku - 強化 React Server Component 應用的極簡框架**](https://waku.gg/blog/introducing-waku)
+
+我們先前已介紹過，但 v0.18 重構版本現已推出，並附帶簡介文章。Waku 是極簡 React 框架，讓我們能探索核心 RSC 功能，不受傳統 SSG/SSR 策略限制。技術上它是基於 Vite 的打包工具，輸出純 JS 並支援部署至邊緣運行環境。現由 Vercel 贊助。
+
+---
+
+- 💸 [Developer Nation Survey - For each completed response, Developer Nation will donate to one of the charities of respondents’ choosing! Start now!](https://developereconomics.net/?member_id=thisweekinreact&utm_medium=nl_ad2)
+- 🍿 [Remotion - GitHub Unwrapped 2023](https://githubunwrapped.com/): this year Remotion partnered with GitHub to produce the GitHub Unwrapped video ([here is mine](https://twitter.com/sebastienlorber/status/1734622460547342693)). A great showcase for the type of videos that can be produced using React.
+- 🐦 [React hydration error diff demo](https://twitter.com/samijaber_/status/1734332721634099282): revival of interest for this much needed feature ([new React PR](https://github.com/facebook/react/pull/27808)).
+- 🐦 [Tanner Linsley about React concurrent model vs reactive model](https://twitter.com/tannerlinsley/status/1732474127712481371): on the difficulty to get the benefits of both models at once. Tanner finally migrated the upcoming TanStack Router to a reactive model ([visual demo](https://x.com/aryan__deora/status/1733164876170764409)).
+- 🐦 [Next.js moving away from extending `fetch()`, adding new APIs like `noStore()`](https://twitter.com/leeerob/status/1733154383410684148)
+- 📖 [Next.js - Updated Server Actions docs - Includes how to use them outside forms, security recommendations, and best practices](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations)
+- 📖 [Next.js React Foundations updated with App Router and Server Components](https://nextjs.org/learn/react-foundations)
+- 📜 [A Chain Reaction](https://overreacted.io/a-chain-reaction/): Dan Abramov is back with great storytelling lesson through the implementation of a recursive function that renders JSX to platform elements.
+- 📜 [Next.js 14: Layouts vs Templates](https://www.builder.io/blog/nextjs-14-layouts-templates): templates are remounted on navigation and reset their state.
+- 📜 [Storybook for React Server Components](https://storybook.js.org/blog/storybook-react-server-components/): Storybook 8 is now in alpha. In includes experimental Next.js RSC support. In practice RSCs will run client-side and you have to mock networks and Node.js APIs.
+- 📜 [The anatomy of shadcn/ui](https://manupa.dev/blog/anatomy-of-shadcn-ui): gives a great overview of the popular Radix + Tailwind l̶i̶b̶r̶a̶r̶y̶, and how it assembles various packages to provide a good DX.
+- 📜 [How to set up self-healing URLs in Next.js for better SEO](https://mikebifulco.com/posts/self-healing-urls-nextjs-seo): shows how to create Next.js urls that are both human-readable and include a stable id. You can change the article title/url without breaking old links.
+- 📜 [Remix - Submit a form without overwriting existing parameters](https://www.jacobparis.com/content/existing-params): suggests to use a `<ExistingSearchParams>` to append existing params to the form.
+- 📜 [Polymorphism in React - 2 patterns you must know](https://www.bekk.christmas/post/2023/01/polymorphism-in-react)
+- 📜 [Lexical state updates](https://dio.la/article/lexical-state-updates)
+- 📦 [React DevTools 5.0 - New React-Forget badge](https://github.com/facebook/react/pull/27759): new feature permits to see Meta's rollout of React-Forget in production on Instagram ([ref](https://twitter.com/sebastienlorber/status/1734607171030303186)).
+- 📦 [Million.js 3.0 - Overhauled version, faster drop-in replacement](https://million.dev/blog/million-3)
+- 📦 [AuthKit - The world's best login box powered by WorkOS and Radix](https://www.authkit.com/)
+- 📦 [react-hook-form 7.49 - react-server bundle, reactive errors prop...](https://github.com/react-hook-form/react-hook-form/releases/tag/v7.49.0)
+- 📦 [Next-Admin 3.0 - App router support](https://github.com/premieroctet/next-admin/releases/tag/%40premieroctet%2Fnext-admin%403.0.0)
+- 📦 [Epic Stack - Client Hints - Eliminate flashes of incorrect content](https://github.com/epicweb-dev/client-hints)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![用於建構企業級 B2B 應用的開源 React 框架](/emails/issues/166/about.jpg)](https://s.refine.dev/github-repo)
+
+**[開源 React 框架，用於建構企業級 B2B 應用程式](https://s.refine.dev/github-repo)**
+
+Refine 能精簡化生產就緒的 B2B 應用程式建構流程，例如內部工具和儀表板。
+
+專為解決大型組織的特定痛點而設計，將安全性列為最高優先，並透過其鉤子（hooks）與組件減少重複性任務。
+
+為關鍵專案層面提供業界標準解決方案，包含**身份驗證（authentication）**、**存取控制（access control）**、**路由（routing）**、**網路（networking）**及**狀態管理（state management）**。
+
+🌱 [參觀使用 Refine 建置的完整 CRM 應用程式範本](https://s.refine.dev/crm-app)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+![React Native 0.73、Expo SDK 50 測試版、Expo Router v3 測試版](/emails/issues/166/rnheader.jpg)
+
+- 📊 [React-Native 狀態調查 - 提醒填寫問卷！](https://survey.stateofreactnative.com/)
+- 🚧 [RFC - 明確定義的事件循環處理模型](https://github.com/react-native-community/discussions-and-proposals/pull/744)：提議讓 React Native 事件循環更接近網頁規範。
+- 🐦 [React Native 多視窗應用支援概念驗證](https://x.com/o_kwasniewski/status/1734198386612388263)
+- 🐦 [React Native Reanimated 中的 interpolate() - 視覺化理解外插法](https://x.com/kacperkapusciak/status/1732794213371097491)
+- 📖 [Expo 推出 Canary 版本](https://docs.expo.dev/versions/latest/#canary-releases)
+- 📜 [Expo EAS - 保持快取接近 — 速度更快！](https://expo.dev/changelog/2023/12-07-cocoapods-cache#how-to-speed-up-cocoapods)：Expo 透過在建置虛擬機上直接快取熱門 pods 來縮短安裝時間。
+- 📜 [將 Firebase Analytics 整合至 Expo Router](https://tinybytelabs.com/blog/integrate-firebase-analytics-to-expo-router)：與 React-Navigation 不同，Expo-Router 採用網址優先模式，需監聽路徑名稱變化。
+- 📜 [使用 React Native 建立 macOS 選單列應用程式](https://www.oskarkwasniewski.dev/blog/create-react-native-macos-menubar-app)
+- 📜 [Epic Games 對 Google - 審判結果，全體開發者的勝利](https://www.epicgames.com/site/en-US/news/epic-v-google-trial-verdict-a-win-for-all-developers)：可能改變應用商店內購支付模式的規則及其 30% 抽成制度。
+- 📦 [React Native 0.73](https://reactnative.dev/blog/2023/12/06/0.73-debugging-improvements-stable-symlinks)：推出取代 Flipper 的新偵錯工具、Metro 穩定支援符號連結（對單體倉儲至關重要），以及 Android 新版 Kotlin 範本（支援 Android 14）。
+- 📦 [Expo SDK 50 beta](https://expo.dev/changelog/2023/12-12-sdk-50-beta)：升級至 React-Native 0.73，新增 Expo 開發工具插件 API、完全重寫 `expo-sqlite`、強化 `expo-camera`、新增判斷 JS 套件與原生建置相容性的函式庫 (`@expo/fingerprint`)、`expo-updates` 掛鉤 API，並支援 EAS 更新/滾動發布等。
+- 📦 [Expo Router v3 beta](https://blog.expo.dev/expo-router-v3-beta-is-now-available-eab52baf1e3e)：新增 API 路由、網頁套件分割等眾多功能。通用 React 伺服器元件即將登陸 Expo！
+- 📦 [Reactotron 3.0](https://shift.infinite.red/announcing-reactotron-3-0-934b5a221bda)：新增日誌自動追蹤功能、強化 Android 裝置偵錯能力，並加快應用啟動速度。
+- 📦 [React Native Skia - 3D 變換](https://github.com/Shopify/react-native-skia/pull/2033)：William Candillon 發布 🐦 [示範](https://x.com/wcandillon/status/1733972374930837776)
+- 📦 [React-Native-Unistyles 2.0](https://reactnativeunistyles.vercel.app/)
+- 📦 [react-native-permissions 4.0 - 支援 iOS 17 與 Android 14](https://github.com/zoontek/react-native-permissions/releases/tag/4.0.0)
+- 🎙️ [Galaxies - Rocket Ship](https://podcast.galaxies.dev/)：近期聚焦 React-Native 的播客節目，值得探索
+
+---
+
+## 🔀 其他 {#other}
+
+- 📜 [Baseline 2023 - 所有全新跨瀏覽器支援的 API - 顯示於 caniuse](https://web.dev/blog/baseline2023)
+- 📜 [CSS 年度回顧 - 2023 是 CSS 重大突破的一年！](https://developer.chrome.com/blog/css-wrapped-2023)
+- 📜 [Safari 17.2 的 WebKit 功能 - 獨家手風琴效果、CSS 嵌套、數學運算、動畫...](https://webkit.org/blog/14787/webkit-features-in-safari-17-2/)
+- 📜 [互動到下次繪製 (INP) 指標是否真與使用者行為相關？](https://www.speedcurve.com/blog/INP-user-experience-correlation/)
+- 📜 [TypeScript 5.3 未公開功能 - as const satisfies](https://www.totaltypescript.com/the-typescript-5-3-feature-they-didn-t-tell-you-about)
+- 📜 [三元運算的美學實踐 - Prettier 格式化新提案](https://pedrocattori.dev/blog/ternaries-could-be-beautiful)
+- 📜 [提升 Node.js 載入器效能](https://sentry.engineering/blog/improving-nodejs-loader-performance)
+- 📦 [Seroval 1.0 - JavaScript 值序列化工具](https://github.com/lxsmnsyc/seroval)
+- 📦 [Oxlint 正式發布](https://oxc-project.github.io/blog/2023-12-12-announcing-oxlint.html)
+
+---
+
+## 🤭 趣味專區 {#fun}
+
+[![替代文字](/emails/issues/166/meme.jpg)](https://twitter.com/sebastienlorber/status/1733126141915906550)
+
+下次見！ 👋

@@ -1,0 +1,164 @@
+---
+slug: /158
+title: "This Week In React #158: Astro, Server Components, VisionCamera, Owner Tree, Props Drilling, Next.js, Remix, Chakra, TypeScript, Skia, Biome, CSS, Node.js..."
+authors: [slorber]
+date: 09-06-2023
+---
+
+大家好！
+
+本期涵蓋兩週的新聞，包含兩大重要版本發布：Astro 3.0 和 VisionCamera 3.0。同時也有許多精彩文章，因此我做了些篩選！
+
+Bun 1.0 將於今晚發布。我很好奇他們規劃了哪些功能。之前曾將其用於單元測試取代 Jest，速度確實非常快。
+
+React-Native EU 大會今天開幕。我注意到[🐦 幾場極具啟發性的演講](https://twitter.com/sebastienlorber/status/1696837186677530813)，特別是關於 Static Hermes 的內容。
+
+想造訪義大利的朋友，可參加 10 月 27 日在維羅納舉辦的 [reactjsday](https://2023.reactjsday.it/)。大會提供[門票 -10% 優惠](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR)，並贈送讀者 2 張線上/遠程票券，前兩位回覆此郵件索票者即可獲得。
+
+我常忘記在此提及，但我會「公開構建」。您可查看我最新的[每月 Indie Hackers 報告](https://www.indiehackers.com/product/french-react-newsletter)及[🐦 Twitter 詳情](https://twitter.com/sebastienlorber/status/1699065823959421109)。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)
+
+**[FrontendMasters – 完整的 React.js 學習路徑，邁向資深 React 開發者](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**
+
+從基礎到進階主題（效能、測試、程式碼品質）全方位學習 React.js。從《React 完整入門》實戰應用開始，接續《中階 React》整合生態系熱門工具，再進階學習效能優化、TypeScript 及全端框架 Next.js！
+
+---
+
+## ⚛️ React {#react}
+
+[![Astro 3.0](/emails/issues/158/astro3.jpg)](https://astro.build/blog/astro-3/)
+
+[**Astro 3.0**](https://astro.build/blog/astro-3/)
+
+此版本創新運用 View Transition API，實現頁面間流暢動畫導航並保留元件狀態，大幅降低多數場景對 SPA 的需求。
+
+其他重大改進：
+
+- 圖片優化功能穩定
+- 渲染效能提升：Astro 元件渲染速度加快 30-75%
+- 無伺服器 SSR 強化：新增主機平台整合方式
+- JSX HMR 增強：支援 React 和 Preact 的 Fast Refresh
+- 建置輸出優化：生成更簡潔高效的 HTML
+
+---
+
+[![Making Sense of React Server Components](/emails/issues/158/rsc.jpg)](https://www.joshwcomeau.com/react/server-components/)
+
+[**理解 React Server Components**](https://www.joshwcomeau.com/react/server-components/)
+
+Josh Comeau 帶著一篇關於 React Server Components 的精彩介紹回來了，內容節錄自他即將於下週推出的[課程](https://www.joyofreact.com/)。文中大量動態圖解讓這個新的 React 典範變得淺顯易懂。
+
+---
+
+- 💸 [Zero To Shipped - Master Fast-Paced Fullstack Development and **Finally** ship that product](https://www.zerotoshipped.com/)
+- 🐦 [Remix v2 pre-release](https://twitter.com/remix_run/status/1696525340640936190): if you have already enabled [future flags v2](https://remix.run/blog/future-flags), you should be able to upgrade easily and remove these flags.
+- 🐦 [Dan Abramov joins Bluesky](https://twitter.com/dan_abramov/status/1695566446007386214): Dan has left Meta and joined this Twitter competitor based on a cross-platform Expo app. I think this is great news, we may have gained a great evangelist [to promote cross-platform and Expo](https://twitter.com/dan_abramov/status/1699476986727399933).
+- 🐦 [WIP testing docs for Next.js App Router](https://twitter.com/leeerob/status/1698758756924825723)
+- 🧑‍🎓 [Next.js App Router - Forms and Mutations docs](https://nextjs.org/docs/app/building-your-application/data-fetching/forms-and-mutations): new doc page explaining the use of Server Actions and the React `useFormStatus` and `useOptimistic` hooks.
+- 💬 [Next.js Tim Neutkens' Deep Dive - Caching and Revalidating](https://github.com/vercel/next.js/discussions/54075)
+- 📜 [Parents & Owners in React: Data Flow](https://julesblom.com/writing/parents-owners-data-flow): original interactive and visual article, explaining the problem of props drilling and how to avoid it with slotted components. Explains the concepts of parent tree and owner tree. The props drilling problem becomes clearly visible in the diagrams.
+- 📜 [Challenging Established Norms: Making Component Fetching the Exception](https://jjenzz.com/making-component-fetching-the-exception/): an interesting thought that encourages you to run your queries at route level to avoid waterfalls, and use composition to avoid props drilling.
+- 📜 [Rust Server Components](https://anto.pt/articles/rust-server-components): proposes to partially reproduce RSC, MDX and Suspense using Rust, HTMX and a few other libs. "the Rust equivalent of T3 Stack". Nice to read, even though I don't do Rust. Not convinced that the end result solves all the problems RSCs do.
+- 📜 [Chakra, Panda and Ark - What's the plan?](https://www.adebayosegun.com/blog/chakra-panda-ark-whats-the-plan): Segun answers a number of questions about his libraries. Chakra v3 arrives in Q4, but will still use Emotion. The addition of "use client" makes it easier to use in RSCs. Adoption of the Radix `asChild` pattern.
+- 📜 [How to Pass a Component as a Prop in React](https://www.totaltypescript.com/pass-component-as-prop-react): Matt shares some TypeScript + React typing tips. The type to implement "as" prop is quite scary 😬.
+- 📜 [Handling type-safe toast notifications with zod in Remix applications](https://alemtuzlak.hashnode.dev/handling-toasts-in-remix): explains how to use the Remix flash session to give feedback after an action.
+- 📜 [Optimizing Next.js cold starts for Vercel](https://holocron.so/blog/optimizing-next.js-cold-starts-for-vercel)
+- 📜 [Strongly Typing React Props with TypeScript](https://www.totaltypescript.com/react-props-typescript)
+- 📜 [You Might Not Need A useEffectAsync Hook](https://krassnig.dev/blog/you-might-not-need-a-use-effect-async-hook.html)
+- 📜 [Web Developers, CSS-in-JS is Ruining Your Product](https://cord.com/blog/migrating-from-css-in-js-to-vanilla-extract)
+- 📜 [Build your own headless UI components](https://www.jacobparis.com/content/react-headless-submenus)
+- 📜 [Building a toast component](https://emilkowal.ski/ui/building-a-toast-component)
+- 📦 [next-flat-routes](https://github.com/ifyio/next-flat-routes)
+- 📦 [Puck - Self-hosted drag and drop editor for React](https://github.com/measuredco/puck)
+- 📦 [react-prod-sourcemaps](https://github.com/markerikson/react-prod-sourcemaps)
+- 📦 [Reshaped 2.2 - Now available on NPM](https://reshaped.so/content/blog/2.2)
+- 👥 [reactjsday](https://2023.reactjsday.it/) (Verona 🇮🇹, Octobre 27, 2023) is offering us [-10% on conference tickets](https://ti.to/grusp/reactjsday-2023/discount/media_TWIR) with code "media_TWIR"
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![具備完整功能的非雲端 Google Forms 替代方案](/emails/issues/155/surveyjs.jpg)](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)
+
+**[具備完整功能的非雲端 Google Forms 替代方案](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)**
+
+若您希望建立一個完全整合至 IT 基礎架構的強大表單管理系統，同時能完全掌控資料流動，且不願耗費數月時間與數千美元成本來部署系統，SurveyJS 正是您的理想選擇！
+
+SurveyJS 是由四個開源 JavaScript 函式庫組成的產品套件，讓您能透過拖放式表單建構器創建與編輯多個動態 JSON 表單，在 React 應用程式中呈現表單，並將敏感問卷資料儲存在內部基礎架構中。您還能在瀏覽器中將自訂問卷與表單轉為可編輯的 PDF 檔案，並透過互動式圖表與表格視覺化問卷結果。[立即了解更多](https://surveyjs.io/?utm_source=thisweekinreact&utm_medium=email)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![VisionCamera 3.0](/emails/issues/158/visioncamera3.jpg)](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0)
+
+[**VisionCamera 3.0**](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0)
+
+VisionCamera 的新版本已正式發布。重點更新：
+
+- 全面重寫 Android Camera2
+- 自訂 GPU OpenGL 視訊管線
+- 新增相機功能
+- 全新幀處理引擎 (react-native-worklets-core)
+- 新增幀處理插件 API
+
+Marc 最終決定[移除 Skia 整合功能](https://github.com/mrousavy/react-native-vision-camera/pull/1740)，以保持 VisionCamera 的程式碼體積與複雜度在合理範圍。
+
+在[**使用 VisionCamera V3、TFLite 和 Skia 進行姿態偵測**](https://mrousavy.com/blog/VisionCamera-Pose-Detection-TFLite)一文中，他詳述了此類整合所能實現的功能，成果令人驚豔。
+
+[![使用 VisionCamera V3、TFLite 和 Skia 進行姿態偵測](/emails/issues/158/frame-processing-skia.jpg)](https://mrousavy.com/blog/VisionCamera-Pose-Detection-TFLite)
+
+---
+
+- 📜 [Things to look forward to in React Native](https://buttondown.email/whatever_jamie/archive/things-to-look-forward-to-in-react-native/)：對 React-Native 未來幾年的發展方向提供了很好的概述，包括 Web Conformance、Static Hermes、Node-API、React Server Components...
+- 📜 [React Native 效能測量與監控工具](https://semaphoreci.com/blog/react-native-performance-measuring-monitoring-tools)
+- 🧵 [React Native Gesture Handler 所有手勢解析與真實範例](https://twitter.com/kacperkapusciak/status/1698719844089160189)
+- 👀 [Expo - 透過 EAS Insights 了解用戶並提升應用程式成長](https://expo.dev/changelog/2023/08-22-insights)
+- 📦 [expo-ahap - Apple 觸覺與音效模式](https://github.com/EvanBacon/expo-ahap)
+- 📦 [react-native-z-view](https://github.com/intergalacticspacehighway/react-native-z-view)
+- 📦 [Universal Medusa - 使用 Expo, Solito, Next.js, Nativewind, Medusa 的電商入門套件](https://github.com/bidah/universal-medusa/)
+- 🔗 [Awesome Universal React - 跨平台框架、函式庫、設計系統、應用與資源](https://github.com/axeldelafosse/awesome-universal-react)
+- 🎥 [在 React Native 中實現實驗性模糊漸變效果](https://www.youtube.com/watch?v=oboF_H1MApo)
+- 🎥 [使用 React Native Skia 製作 iPhone 桌布](https://www.youtube.com/watch?v=Apqd749v34I)
+- 👥 [React Native EU 2023](https://www.react-native.eu/)（波蘭弗羅茨瓦夫，9月7-8日）提供[-15%會議門票優惠](https://ti.to/react-native-eu/2023/discount/thisweekinreact15)，優惠碼 "thisweekinreact15"
+
+---
+
+## 🔀 其他 {#other}
+
+- 📊 [2023 CSS 現狀調查結果](https://2023.stateofcss.com/)
+- 📜 [我的 Node.js 有點 Rusty](https://gal.hagever.com/posts/my-node-js-is-a-bit-rusty)
+- 📜 [宣布 Biome - Rome（已停止維護）的官方分支](https://biomejs.dev/blog/annoucing-biome)
+- 📜 [視圖轉場會破壞漸進式渲染](https://ericportis.com/posts/2023/view-transitions-break-incremental-rendering/)
+- 📜 [善用 Web Components 的優勢](https://nolanlawson.com/2023/08/23/use-web-components-for-what-theyre-good-at/)
+- 📜 [使用 @property 實現類型安全的 CSS 設計系統](https://nerdy.dev/cant-break-this-design-system)
+- 👀 [TypeScript 5.3 迭代計劃](https://github.com/microsoft/TypeScript/issues/55486)
+- 📦 [TypeScript 5.2 發布](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/)
+- 📦 [Node 20.6 - 內建 .env 檔案支援](https://nodejs.org/en/blog/release/v20.6.0)
+- 📦 [Firefox 117 - CSS Nesting 全面可用](https://www.mozilla.org/en-US/firefox/117.0/releasenotes/)
+- 📦 [Espresso Build - 實驗性次世代套件註冊、套件管理與工具鏈](https://espresso.build/)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/158/meme.jpg)](https://twitter.com/sebastienlorber/status/1687456078198394882)
+
+下次見！👋

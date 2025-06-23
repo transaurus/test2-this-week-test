@@ -1,0 +1,206 @@
+---
+slug: /125
+title: "This Week In React #125: tRPC, T3, Remix, Zustand, Server Components, Drag & Drop, Forms, Gatsby, Remotion, React-Native, Skia..."
+authors: [slorber]
+date: 11-22-2022
+---
+
+大家好！
+
+本週是**[黑色星期五](/black-friday)**。我為 React 開發者整理了一個最佳優惠專頁。已經找到部分優惠，但有些尚未公佈，請週五再回來查看 ;)
+
+[![黑色星期五 2022 橫幅](/img/BLACK_FRIDAY_2022_v2.png)](/black-friday)
+
+終於有機會讓 tRPC 成為焦點——伴隨著官方發布和一篇與 GraphQL 對比的精彩文章！
+
+我們還有許多優質的 Remix 相關內容。
+
+我很欣賞 React Native 的發展方向！
+
+別忘了填寫[State Of JS](https://survey.devographics.com/survey/state-of-js/2022)問卷！很高興 Docusaurus 今年入選。歡迎推薦本電子報作為資源 😏 運氣好的話明年就能上榜 🙌
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![FlyCode 讓 React 應用無需編碼即可編輯，基於 Git](/emails/issues/124/flycode.jpg)](https://bit.ly/3UPwAoJ)
+
+**[FlyCode 讓 React 應用無需編碼即可編輯，基於 Git](https://bit.ly/3UPwAoJ)**
+
+[FlyCode](https://bit.ly/3wWSi00) (YC S22) 讓 React 網頁應用在數分鐘內變得可編輯，使產品和 UX 團隊能更快迭代與發布產品，無需等待(或佔用)開發者時間。
+
+FlyCode 讀取你的常規 React 程式碼，找出文字、圖片、設計代幣和分析事件，讓非技術人員協作編輯後直接發送 Pull Request (無需 GitHub 權限！)
+
+- 節省開發時間
+- 無需程式碼整合，直接讀取原始碼！
+- 基於 GitHub，機器人自動掃描程式碼並建立 PR
+- 使用自有技術堆疊和元件
+- 保留程式碼庫所有權
+
+由此開始：[flycode.com/developers](https://www.flycode.com/developers)
+
+---
+
+## ⚛️ React {#react}
+
+[![tRPC 10](/emails/issues/125/trpc10.jpg)](https://trpc.io/blog/announcing-trpc-10)
+
+**[tRPC 10](https://trpc.io/blog/announcing-trpc-10)**
+
+tRPC 的重大重構顯著提升開發者體驗(DX)和 IDE 支援。這個實現類型安全後端調用的函式庫日益受到歡迎，得益於整合套件(Next.js、React-Query...)，能無縫融入 React 生態系。我特別喜歡其標語「快速行動，不破壞任何」😄
+
+為理解核心理念，推薦閱讀[為何我們棄用 GraphQL 改用 tRPC](https://echobind.com/post/why-we-ditched-graphql-for-trpc)。Alex 解釋了他們在 React 環境的[Bison](https://github.com/echobind/bisonapp)入門專案中替換 GraphQL 的原因。tRPC 大幅減少樣板程式碼、TypeScript 程式碼生成和 JS 套件體積，同時提升 DX、IDE 支援並簡化快取管理。處理過度獲取(over-fetching)的方式不同：應積極創建新程序。tRPC 特別適合全端 TypeScript Node.js 應用與同地協作的前後端程式碼(如 Next.js)。GraphQL 仍是建立公開 API 的優選方案，尤其適用於非 JavaScript 使用者且需程式碼生成的場景(OpenAPI 也是此類需求的好選擇)。
+
+藉此機會我也要介紹 [T3-App](https://create.t3.gg/)，這是一個基於 tRPC、Prisma、Tailwind 的 Next.js 端到端類型安全堆疊。它極大地推動了 tRPC 今年的普及，現在已擁有官方文件網站。其 [tRPC 文件](https://create.t3.gg/en/usage/trpc) 清楚說明了相較於傳統 Next.js Route API 的優勢。另可參考 [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)：一個採用 Turborepo 的單體倉庫，包含 Next.js + Expo，均使用 tRPC。
+
+---
+
+[![使用 Zustand](/emails/issues/125/zustand.jpg)](https://tkdodo.eu/blog/working-with-zustand)
+
+**[使用 Zustand](https://tkdodo.eu/blog/working-with-zustand)**
+
+Dominik 回顧了狀態管理的演進歷程，解釋為何青睞 Zustand——這個符合 React 哲學的極簡無魔法解決方案。他提供了最佳實踐技巧，例如暴露自訂鉤子、使用原子選擇器，或將動作分組為不可變物件。這些務實建議我完全認同！
+
+---
+
+[![Remix 雙重回應](/emails/issues/125/remix-dual.png)](https://blog.jim-nielsen.com/2022/remix-alternate-timeline-of-web-dev/)
+
+**[Remix 與網頁開發的替代時間線](https://blog.jim-nielsen.com/2022/remix-alternate-timeline-of-web-dev/)**
+
+Jim 闡述 Remix 如何透過回溯思考，重新設計前端應用模型。在 Remix 中，漸進增強功能無需像其他框架般分寫客戶端/伺服器雙重邏輯，因為單一路由即可從相同程式碼返回 JSON 與 HTML。
+
+---
+
+[![馴服巨龍：無障礙拖放](/emails/issues/125/dnd.jpg)](https://react-spectrum.adobe.com/blog/drag-and-drop.html)
+
+**[馴服巨龍：無障礙拖放](https://react-spectrum.adobe.com/blog/drag-and-drop.html)**
+
+Devon（Adobe）宣布發布 React-Aria 與 React-Spectrum 的無障礙拖放鉤子。他詳解鍵盤/螢幕閱讀器支援機制：使用者可選取元素，透過 Tab 尋找潛在目標，並優化行動體驗。豐富的示範再次展現 React-Aria API 背後的深厚工程，這是首個嘗試解決此複雜問題的方案。
+
+---
+
+- 📖 [Beta 文件更新 - createRef, PureComponents, useDebugValue](https://twitter.com/dan_abramov/status/1593007695703207936)：Dan Abramov 的文件編寫工作已接近尾聲，新文件可能很快就會正式發布。
+- 📜 [在 Next.js 13 伺服器元件中獲取和快取 Supabase 資料](https://supabase.com/blog/fetching-and-caching-supabase-data-in-next-js-server-components)：展示如何輕鬆使用 React 伺服器元件在雲端/無伺服器資料庫上進行請求，並提供一些 Next.js 快取技巧以減少回應時間。
+- 📜 [使用 React Hook Form 條件式渲染欄位](https://echobind.com/post/conditionally-render-fields-using-react-hook-form)：如何使用 watch 和 register/unregister 函數管理條件式欄位
+- 📜 [Remix 的離線開發和測試](https://github.com/pcattori/blog/blob/main/posts/offline-dev-and-testing-for-remix/index.md)：Pedro 解釋為何喜歡在開發/測試中使用 Mock Service Worker，並說明整合到 Remix 的方法。
+- 📜 [從 Webpack 遷移至 Remix](https://remix.run/blog/migrate-from-webpack)：團隊正在開發 Remix 的 Webpack 編譯器以促進漸進式遷移。
+- 📜 [使用 Valhalla 的 Remix 網站](https://www.gatsbyjs.com/blog/what-is-gatsbys-valhalla-content-hub/)：Paul 介紹 Valhalla（Gatsby Cloud 的新資料層），並說明如何與 Remix 搭配使用。Valhalla 提供公共 GraphQL API，示範透過 Urql 在 Remix loader 調用此 API。目前 Valhalla 仍處早期階段，但發展值得關注。
+- 📜 [Gatsby - 使用 Slice API 進行國際化 (i18n)](https://www.gatsbyjs.com/blog/using-the-slice-api-for-internationalization-i18n/)
+- 📜 [useReducer 還是 XState？](https://swizec.com/blog/reader-question-usereducer-or-xstate/)
+- 🎥 [React Brussels 播放清單](https://www.youtube.com/watch?v=uZnXwuhYZBc&list=PL53Z0yyYnpWjIoe0wNozVbuRXOnVcETPw)：我的比利時朋友已發布會議影片。我特別喜歡[主題演講](https://www.youtube.com/watch?v=uZnXwuhYZBc&list=PL53Z0yyYnpWjIoe0wNozVbuRXOnVcETPw&index=2)，Tejas 解釋 React 元框架如何運用 Suspense 資料獲取或過渡等 React 18 最新功能。
+- 🎥 [React Router 已死？](https://www.youtube.com/watch?v=LVzG3nncE4M)：重點介紹全新 [TanStack Router](https://tanstack.com/router/v1) 的強大類型安全性和開發者體驗 (DX) 特性。
+- 🎥 [在 Next.js 中使用字體](https://www.youtube.com/watch?v=L8_98i_bMMA)
+- 📦 [Remotion 3.3](https://twitter.com/remotion_dev/status/1593156143249260544)：無需安裝 ffmpeg，新增多種套件（字體、路徑、噪聲、動態模糊），並有顯著的開發者體驗改進。
+- 📦 [Openblocks - 開源的 Retool 替代方案](https://github.com/openblocks-dev/openblocks)
+- 📦 [Jotai 1.10](https://twitter.com/jotaijs/status/1593647952672608257)
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 贊助 {#sponsor2}
+
+[![The React Native Show - 一個播客系列](/emails/issues/125/the-rn-show.jpg)](https://www.callstack.com/podcast-react-native-show?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)
+
+**[The React Native Show - 一個播客系列](https://www.callstack.com/podcast-react-native-show?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)**
+
+既然您在這裡，想必喜歡隨時掌握最棒的 React 動態！🔥 若想深入探索 React 和 React Native，請收聽 **The React Native Show** 的最新單集：
+
+- React Native 中的 [模組聯合](https://www.callstack.com/podcasts/module-federation?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)，由 Webpack 維護者 Zack Jackson 主講
+- [React Native 新架構](https://www.callstack.com/podcasts/react-native-new-architecture-ep-17?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)，與 Meta 的 Nicola Corti 對談
+- [微軟的 React Native 實踐](https://www.callstack.com/podcasts/react-native-at-microsoft-ep-16?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)，微軟 Lorenzo Sciandra 經驗分享
+
+**[The React Native Show](https://www.callstack.com/podcast-react-native-show?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)** 是由 Callstack 製作的播客系列，每集深度探討不同主題。主持人與該領域的國際專家進行深入對談。
+
+---
+
+## 📱 React-Native {#react-native}
+
+**[\[官方回應\] 2022：如何改進 React Native？](https://github.com/react-native-community/discussions-and-proposals/discussions/546)**
+
+React-Native 團隊正式回應了關於[如何改進 React Native](https://github.com/react-native-community/discussions-and-proposals/discussions/528)的討論，揭露了路線圖的諸多細節。對 React-Native 的投資似乎正在加速，其中特別值得關注的重點包括：
+
+- Metro 待補強功能：swc、pnpm、符號連結、ESM 支援 "exports"...
+- 強化 Yoga 與 CSS 支援：flex 間距、陰影效果...
+- 跨平台統一 API，React-Native-Web 現歸 Meta 所有
+- 開發體驗改進：除錯、堆疊追蹤、原始碼映射、LogBox...
+
+---
+
+- 🎨 [React-Native-Skia + VisionCamera Frame Processor 示範](https://twitter.com/mrousavy/status/1592943223751999488)：令人驚豔的演示，能在 VisionCamera 影格上使用 React-Native-Skia。例如可即時套用濾鏡/著色器，無需編寫原生程式碼。
+- 📦 [React-Native-Skia 0.1.159](https://twitter.com/wcandillon/status/1593591452491194370)：函式庫進入測試版，現於 UI 執行緒渲染，大幅提升效能
+- 📦 [burnt - react native 原生通知與警示元件](https://twitter.com/FernandoTheRojo/status/1593632122069291008)：Fernando Rojo 在毫無 Swift 基礎下，一天內基於 Swift 打造首個原生 React-Native 函式庫，展現 [Expo Modules API](https://twitter.com/tsapeta/status/1593705970781356035) 的易用性！
+- 📦 [React-Native-Testing-Library v11.5](https://twitter.com/mdj_dev/status/1593250914965794817)
+- 📜 [React Native Storybook 的自動參數功能](https://dev.to/dannyhw/automatic-args-in-react-native-storybook-140a)
+- 🎥 [使用 Skia 實現路徑漸變](https://www.youtube.com/watch?v=7SCzL-XnfUU)
+- 🎥 [React-Native Re-Animated 2 滾動式選單](https://www.youtube.com/watch?v=sOKMytwWeKE)
+- 📖 [Expo 文件更新 - 通用應用程式教學](https://twitter.com/amanhimself/status/1593669242892988417)
+- 📊 [新版 Reanimated Shared Value 實作](https://twitter.com/kzzzf/status/1594095497123434497)：透過減少 JSI 呼叫提升效能
+- 📊 [React-Native Yoga 佈局引擎 vs iOS 替代方案](https://twitter.com/Baconbrix/status/1593561645858623488)：React-Native 佈局引擎相當高效！
+- 🐦 [Hirbod -「佈局動畫重寫已合併」](https://twitter.com/nightstomp/status/1593207173496320000)
+- 🐦 [Jamon Holmgren -「現階段幾乎沒有理由不使用 Expo」](https://twitter.com/jamonholmgren/status/1593319397573394432)
+
+---
+
+## 🧑‍💻 職缺 {#jobs}
+
+🧑‍💼 [**Causal 產品工程師，遠端/倫敦/紐約，$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)
+
+Causal 是 A 輪新創（Coatue/Accel 投資），打造整合式數字處理與資料視覺化工具。徵求能解決複雜 UX/效能挑戰的資深 React 工程師。
+
+🧑‍💼 [**Callstack - 資深 React Native 開發者 - 全遠端，B2B 月薪淨額 PLN 21-32k**](https://www.callstack.com/senior-react-native-developer)
+
+想開發全球最熱門應用嗎？渴望共同打造 React Native 技術？加入 React & React Native 領導團隊 Callstack。詳見官網，期待您的申請 - 展現您的實力！
+
+🧑‍💼 [**G2i - 100% 遠端 React Native 職缺**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+徵求多位 React Native 開發者！年薪約 16 萬美元加 10% 獎金。需具 RN 實際開發經驗且位於美國。私訊 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解詳情，別忘了註明來自 This Week in React。
+
+💡 [如何發布贊助資訊？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/): great article by Josh Comeau, not to be read if you are hungry 😄
+- [Browsers, JSON, and FormData](https://blog.jim-nielsen.com/2022/browsers-json-formdata/): interesting ideas about progressive enhancement, which encourages creating APIS based on FormData rather than JSON. This speaks to me, and by the way my newsletter signup forms also work without JavaScript 🤗 The article is not React related but is written by Jim who works on Remix.
+- [Cloudflare Developer Week 2022 announcements](https://blog.cloudflare.com/icymi-developer-week-2022-announcements/): a lot of announcements. I especially like the possibility to make Puppeteer screenshots from a Worker edge: this can be useful for Remotion, or generate social previews in an efficient way, and compete with the new [Vercel's og image service](https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation).
+- [Top-level promise handling in Node.js ES modules](https://www.stefanjudis.com/today-i-learned/top-level-promise-handling-in-node-js/): I discover this behavior of Node.js not hyper intuitive and the exit 13 code.
+- [State Of JavaScript 2022 Survey](https://survey.devographics.com/survey/state-of-js/2022): glad to see [Docusaurus making an entry](https://twitter.com/sebastienlorber/status/1594748405280116738) this year! I hope my newsletter will be in the resources next year, feel free to send it as a suggestion 😏
+- [The 2022 State of JavaScript Survey Is Now Open. Here's What's New](https://dev.to/sachagreif/take-the-2022-state-of-javascript-survey-5ap6)
+- [Prettier 2.8: improve --cache CLI option and TypeScript 4.9 satisfies operator!](https://prettier.io/blog/2022/11/23/2.8.0.html): good timing to adopt TS 4.9 (already supported in Babel)
+- [Web technology optimism hour](https://macwright.com/2022/11/18/optimism-updates.html)
+- [Movies app in 7 frameworks - which is fastest and why?](https://www.builder.io/blog/movies-app-in-7-frameworks-which-is-fastest-and-why)
+- [HTML Elements Visualized](https://julesblom.com/writing/html-elements)
+- [Complete rewrite of ESLint](https://twitter.com/slicknet/status/1594870586605391872)
+- [MPA View Transitions - First demo - Chrome canary](https://twitter.com/addyosmani/status/1592907811968626688)
+- [Mock Service Worker - Fetch API Support Beta](https://github.com/mswjs/msw/discussions/1464)
+- [What’s so great about functional programming anyway?](https://jrsinclair.com/articles/2022/whats-so-great-about-functional-programming-anyway/)
+- [Angular 15](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8)
+- [Nuxt 3.0](https://nuxt.com/v3)
+- [Playwright 1.28](https://github.com/microsoft/playwright/releases/tag/v1.28.0)
+- [Firefox 107](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/107)
+- [Safari Technology Preview 158](https://webkit.org/blog/13584/release-notes-for-safari-technology-preview-158/)
+- [Assembly interpreter inside of TypeScript's type system](https://judehunter.dev/blog/assembly-interpreter-in-typescripts-type-system)
+- [On Migrating from Cypress to Playwright](https://mtlynch.io/notes/cypress-vs-playwright/)
+- [Node.js 18 available in AWS Lambda](https://aws.amazon.com/fr/blogs/compute/node-js-18-x-runtime-now-available-in-aws-lambda/)
+- [Build a More Secure Web using npm with Deno](https://deno.com/blog/a-more-secure-npm)
+- [From Bootstrapped to Venture-Backed: Nx Raises $8.6M](https://blog.nrwl.io/from-bootstrapped-to-venture-backed-nx-raises-8-6m-2ae2228eff76)
+- [Why you should never use px to set font-size in CSS](https://joshcollinsworth.com/blog/never-use-px-for-font-size)
+- [The Windows Subsystem for Linux is now generally available](https://devblogs.microsoft.com/commandline/the-windows-subsystem-for-linux-in-the-microsoft-store-is-now-generally-available-on-windows-10-and-11/)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![人生苦短，務必花時間在網路上和陌生人爭論 JS 框架](/emails/issues/125/meme.png)](https://twitter.com/fireship_dev/status/1587587531154989056)

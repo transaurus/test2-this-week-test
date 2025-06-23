@@ -1,0 +1,143 @@
+---
+slug: /226
+title: "This Week In React #226: Parcel, TanStack, Astro, React-Scan, React-Router | Worklets, Enterprise Framework, Perf, Expo UI, FlatList, BackgroundTask | Node.js, Oxc Minifier, Oxlint, Valibot"
+authors: [matthieugicquel, cyrilbo]
+date: 03-19-2025
+---
+
+大家好！
+
+這裡是Theodo Apps的Cyril和Matthieu 👋，為您帶來React和React Native的重大更新！
+
+Parcel現在支援React Server Components，使其成為更適合現代應用的打包工具。Callstack正在為企業團隊開發新的React Native框架，承諾提供更佳的建置快取功能。React Native Worklets為React Native帶來真正的多線程能力，終於使其與動畫解耦。而React 19的遷移正加速進行中，各團隊紛紛分享適應變更的見解。
+
+令人興奮的時刻即將到來——讓我們深入探索吧！ 🚀
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助 {#sponsor1}
+
+[![產品工程師的第一份電子報](/emails/issues/226/dub.jpg)](https://dub.link/twir-mar19)
+
+**[產品工程師的第一份電子報](https://dub.link/twir-mar19)**
+
+[Product for Engineers](https://dub.link/twir-mar19)是PostHog的電子報，致力於幫助工程師發揮產品思維能力。
+
+擁有超過5萬名訂閱者，它彌合了產品與工程間的鴻溝，助您打造用戶喜愛的產品。
+
+內容涵蓋為何截止日期有害、會扼殺新創的非顯性行為，以及他們艱辛學到的教訓。最棒的是，它完全免費。
+
+[**免費訂閱。**](https://dub.link/twir-mar19)
+
+---
+
+## ⚛️ React {#react}
+
+[![Parcel v2.14.0](/emails/issues/226/parcel.jpg)](https://parceljs.org/blog/v2-14-0/)
+
+[**Parcel v2.14.0**](https://parceljs.org/blog/v2-14-0/)
+
+Parcel是個獨特的存在：它是個非常穩健且功能完備的打包工具。儘管沒有任何主流React框架採用或支援它，但這不妨礙其持續演進，v2.14.0新增了幾項重要功能：
+
+- Server Components with client, server, and static rendering
+- Integrated MDX support (using the rust lib `mdx-rs`)
+- A `create-parcel` CLI that can be a replacement for `create-react-app`
+- A new React error overlay
+
+如果您正在「打造自有框架」或有特殊需求，這些特性讓Parcel更具吸引力。
+
+---
+
+- 💸 [Convex 推出了 MCP 伺服器](https://convex.link/thisweekmcp)
+- 🐦 [串流支援即將加入 React Query](https://bsky.app/profile/tkdodo.eu/post/3lkiuj7362k2a)
+- 🗓 [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 巴黎 - 5月13日。探索完整陣容：Shruti Kapoor、Quentin de Quelen、Sebastien Chopin！使用代碼 "TWIR” 享 10% 折扣
+- 🗓 [Future Frontend](https://futurefrontend.com/?utm_source=thisweekinreact) \- 🇫🇮 埃斯波 - 5月26-28日。網頁開發/設計與人工智慧單軌交匯。立即使用代碼 "TWIR” 以 10% 折扣預訂席位
+- 📣 [TanStack 與 Netlify 合作](https://tanstack.com/blog/netlify-partnership)
+- 📜 [即時模式](https://www.openstatus.dev/blog/live-mode-infinite-query)：透過 TanStack 的 Infinite Queries 在 React 中實現即時數據更新
+- 📜 [我們如何將 MUI X 遷移至 React 19](https://mui.com/blog/react-19-update/)：需保持與 React 18 的兼容性，儘管 React 19 存在部分破壞性變更（涉及 refs 與 StrictMode）
+- 📜 [使用 Vite 和 React 建構靜態網站](https://blog.carlosn.com.br/post/writing-static-websites-with-vite-and-react/)：作者闡述其開發的實驗性套件 `vite-ssg-react` 的運作原理與未來規劃
+- 📜 [給 React 開發者的 SSR 深度解析](https://www.developerway.com/posts/ssr-deep-dive-for-react-developers)：框架可能已處理 SSR，但您將學會自行實作並理解其運作機制
+- 📜 [常見 React 函式庫架構](https://www.felgus.dev/blog/common-react-lib-architecture#react-19)
+- 📜 [為何 React 意外成為 LLM 工作流程的最佳模型](https://www.gensx.com/blog/why-react-is-the-best-backend-workflow-engine)
+- 💸 [VS Code 擴充功能：在 VS Code 中獲取 React 元件使用洞察](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)
+- 📦 [Astro 5.5 - 類型安全會話、強化 Mermaid 圖表整合](https://astro.build/blog/astro-550/)
+- 📦 [React Scan 0.3 - 檢視渲染元件的父元件](https://github.com/aidenybai/react-scan/releases/tag/v0.3.0)
+- 📦 [TanStack Form 1.1 - 表單重置工具](https://github.com/TanStack/form/releases/tag/v1.1.0)
+- 📦 [React Router 7.4](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v740)
+- 🎥 [Theo - Tanner 修復表單問題](https://www.youtube.com/watch?v=aezimBnSJqY)
+- 🎥 [Epic Web Dev - 升級 React Router](https://www.epicweb.dev/tips/upgrading-react-router)
+- 🎥 [Web Dev Simplified - Next.js 終於修復快取問題](https://www.youtube.com/watch?v=nHnw3pusFXw)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助 {#sponsor2}
+
+[![測試已死 - Meticulous 在此](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=mar19th)
+
+**[測試已死 - Meticulous 在此](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=mar19th)**
+
+Meticulous 以 **零** 開發者工作量創建並維護一套全面的端對端使用者介面測試。
+
+Dropbox、Bilt Rewards、Lattice 及數百家工程組織依賴 Meticulous 進行前端測試。
+
+這段來自 Traba 技術長的引言最能總結這個產品：「Meticulous 從根本上改變了我們在網頁應用中處理前端測試的方式，完全消除了編寫任何前端測試的需求。該軟體讓我們確信每次變更都會經過完整的回歸測試，使我們能夠更快地交付，且程式碼中的錯誤顯著減少。」
+
+這篇由我們技術長撰寫的[文章](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact&utm_campaign=jan15th)（他曾在 Palantir 領導大型工程團隊）闡述了為什麼詳盡測試能讓工程速度翻倍的背景脈絡。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Native Worklets RFC](/emails/issues/226/worklets.jpg)](https://github.com/software-mansion/react-native-reanimated/discussions/7264)
+
+[**React Native Worklets RFC**](https://github.com/software-mansion/react-native-reanimated/discussions/7264)
+
+React Native Worklets 是從 Reanimated 分離出的新函式庫，能在 React Native 實現真正的多執行緒。它讓 JavaScript 程式碼可在多個執行環境中運行，並透過新的記憶體模型引入 `Serializables`、`Shareables` 和 `Synchronizables` 來處理跨執行環境的資料傳遞。
+
+藉由將多執行緒與動畫解耦，Reanimated 變得更輕量，這對追求較小套件大小的網頁應用特別有益。同時，開發者現能將多執行緒用於非 UI 任務，如非同步儲存、資料庫操作、即時音訊處理或 AI 驅動的運算，而無需依賴動畫函式庫。
+
+---
+
+- 💸 [PostHog - 如何設定 React Native 遠端設定 (使用 Expo Router)](https://dub.link/twir-mar19-rn)
+- 🐦 [在原生應用中使用 React Native：策略與障礙](https://x.com/_atlj/status/1901990291306873047)
+- 🐦 [React Native Bottom Tabs 與其他原生 UI 元素無縫整合](https://x.com/o_kwasniewski/status/1884537940736393426)
+- 🐦 [expo/ui 將隨 Expo SDK 53 推出](https://x.com/aleqsio/status/1902034184920584538): 將包含完全原生的輸入元件、iOS 表單區塊、上下文選單和 iOS 預覽功能。
+- 🐦 [Expo Router 中的 React Server Functions](https://x.com/Baconbrix/status/1900547469374574966)
+- 📊 [RevenueCat 2025 訂閱應用狀態報告](https://www.revenuecat.com/state-of-subscription-apps-2025/): 跨平台訂閱應用程式（特別是 React Native 應用）在用戶留存和變現方面表現優於原生應用。表現最佳的應用通過優化引導流程、提前展示付費牆以及利用混合變現策略而脫穎而出。
+- 📖 [2025 React Native 最佳化終極指南](https://www.callstack.com/ebook/the-ultimate-guide-to-react-native-optimization): Callstack 發布了升級版指南。
+- 📖 [Expo 文件 - 使用推播通知](https://docs.expo.dev/guides/using-push-notifications-services/): 關於在 Expo 應用中實現推播通知可用服務的最新提醒。
+- 📜 [我們正在構建新的 React Native 框架](https://www.callstack.com/blog/were-building-a-new-react-native-framework): Callstack 的 Michał 揭露了針對大型行動團隊的 React Native 框架功能，強調快速原生建置快取，目前尚未開源。
+- 📜 [FlatList 最佳化：新增或刪除項目時避免重新渲染](https://brainsandbeards.com/blog/2025-dont-rerender-new-flatlist-items/)
+- 📦 [Expo BackgroundTask Beta 版](https://docs.expo.dev/versions/latest/sdk/background-task/)
+- 📦 [Create React Native Library 0.48：新增 Nitro 模組範本](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.48.0)
+- 📦 [Galeria 1.1 - 修復新架構問題，支援 edge-to-edge](https://github.com/nandorojo/galeria/releases/tag/v1.1.0)
+- 🎙️ [RNR 325 \- 與 Jay Meistrich 的傳奇列表訪談](https://infinite.red/react-native-radio/rnr-325-legend-list-with-jay-meistrich)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [Node.js TSC - Corepack 是否應繼續保留在 Node.js 發行版中？](https://github.com/nodejs/TSC/pull/1697)：Corepack 將從 v25 起停止隨 Node.js 分發。
+- 📜 [Node.js 於 Discord 推出官方社群空間](https://nodejs.org/en/blog/announcements/official-discord-launch-announcement)
+- 📜 [ESLint 已支援 CSS 與 Baseline 功能](https://web.dev/blog/eslint-baseline-integration?hl=en)
+- 📦 [Oxc Minifier Alpha 版](https://oxc.rs/blog/2025-03-13-minifier-alpha)：全新壓縮工具效能已超越 esbuild，與 Rolldown 搭配使用，後者目標成為 Vite 的下一代預設打包工具。
+- 📦 [Oxlint Beta 版](https://oxc.rs/blog/2025-03-15-oxlint-beta)：內建超過 500 條 lint 規則，效能大幅提升，中小型專案可完全取代 ESLint。ESLint 外掛與自訂規則支援將於下個主要版本推出。
+- 📦 [Valibot 1.0 - 僅 1kB 的 Zod 替代方案](https://valibot.dev/blog/valibot-v1-the-1-kb-schema-library/)
+- 📦 [Node.js 23.10 - 新增 `--experimental-config-file` 參數](https://nodejs.org/en/blog/release/v23.10.0)
+- 📦 [Node.js 20.19 - 啟用 require(esm) 功能](https://nodejs.org/en/blog/release/v20.19.0)
+
+---
+
+## 🤭 趣聞 {#fun}
+
+[![用 Rust 重寫 TS](/emails/issues/226/ts-go.jpg)](https://x.com/IroncladDev/status/1899870309152342367)
+
+下次見！👋

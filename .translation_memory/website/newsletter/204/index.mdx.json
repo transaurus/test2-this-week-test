@@ -1,0 +1,551 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/204/index.mdx",
+  "source_file_content_hash": "575a8c663bc3d1c6929c9287986bf9796c173fa86e393e9e07de1d52d8d06e05",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /204\ntitle: \"This Week In React #204: React at Meta, React Compiler, React Router, Next.js, StyleX, Mitosis, One, Hermes, BottomTabs, Zeego, Storybook, Nitro, TC39, Vite, Deno, Bun, Brisa, Lucia...\"\nauthors: [slorber]\ndate: 10-09-2024\n---",
+      "source_content_hash": "8be07022faedf14a7f5799550c33195c2a353b5ea70464a3df5f15da8e4009ef",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "It's been another exciting week with great React cross-platform announcements at the Meta Connect event giving positive feedback on the usage of React Compiler, StyleX, React Strict DOM, and Hermes. I'm also excited for the React Compiler to add official support for React 18 and React 17 (experimental).",
+      "source_content_hash": "543e9e7378bc9f4beadf6341b3b0d0bb4ffb878d75f08ecf3f02eb558b0442c9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週 Meta Connect 活動公布了多項激動人心的 React 跨平台進展，對 React Compiler、StyleX、React Strict DOM 和 Hermes 的使用給予了積極回饋。我也相當期待 React Compiler 將正式支援 React 18 和 React 17（實驗性功能）。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "On the React Native side, we also had great releases and announcements, notably a new cross-platform framework from the Tamagui team, Zeego 2, native bottom tabs, and RN Storybook 8.",
+      "source_content_hash": "fbac35992a9c90914da433de8ecc76669eebf0809218ab6c917832d7e8920018",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "在 React Native 方面，我們也有重要的發布與消息，特別是 Tamagui 團隊推出的新跨平台框架、Zeego 2、原生底部標籤欄，以及 RN Storybook 8。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "In the frontend world, Deno 2.0 just came out, and we also have a very exciting TC39 meeting happening right now.",
+      "source_content_hash": "bf9a84bb144bf3ac02bbb3cb3fb74d81f2668957f1da43d9f832abbb242fe400",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "前端領域中，Deno 2.0 剛發布，同時 TC39 會議也正在進行重要討論。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Happy reading!",
+      "source_content_hash": "4f9796a3c12e3b438429c47c7257842e41ae450e31b40de80b98fa11a8700be3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "祝您閱讀愉快！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_45c63027"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**💡 [在 Twitter 上查看本通訊](https://slo.im/thread) - 視覺化格式 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0adfe0aa",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_0adfe0aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1941846d",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_1941846d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5403c6e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[![Securing Node.js Express APIs with Clerk and React](/emails/issues/204/clerk.jpg)](https://go.clerk.com/WER1UiL)",
+      "source_content_hash": "916936c50d7cb14a4a97aee4b651fe151d87250a2bb4e7b9f0fa34877bc4b743",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![使用 Clerk 和 React 保護 Node.js Express API](/emails/issues/204/clerk.jpg)](https://go.clerk.com/WER1UiL)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "**[Securing Node.js Express APIs with Clerk and React](https://go.clerk.com/WER1UiL)**",
+      "source_content_hash": "1e8ab26ca09a15ab4d8aa857973f95f4aa0d085e7d6d1beba0080eb067ecf453",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[使用 Clerk 和 React 保護 Node.js Express API](https://go.clerk.com/WER1UiL)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Learn how to use Clerk with Express to authenticate API requests.",
+      "source_content_hash": "a61b8476bd22a956c0e18c09323d0207b2bebaf0055133f1b1fd53c22086d57e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "了解如何使用 Clerk 搭配 Express 驗證 API 請求。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "Utilize the `ClerkExpressWithAuth()` and `ClerkExpressRequireAuth()` middleware to secure any endpoint and integrate authentication without the complexity of building it from scratch.",
+      "source_content_hash": "4a07fd6e2950843354063f80be1c9328c5d55fb694adf4f1ad83661abb2edb77",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "運用 `ClerkExpressWithAuth()` 和 `ClerkExpressRequireAuth()` 中介軟體保護任何端點，無需從頭建置即可整合驗證功能。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5ef5fda3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[![React at Meta Connect 2024](/emails/issues/204/meta.jpg)](https://engineering.fb.com/2024/10/02/android/react-at-meta-connect-2024/)",
+      "source_content_hash": "8368e03200d0778289a791800c75d73337d2b527559a8f6728e6ea08e4fab0f4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React 於 Meta Connect 2024](/emails/issues/204/meta.jpg)](https://engineering.fb.com/2024/10/02/android/react-at-meta-connect-2024/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[**React at Meta Connect 2024**](https://engineering.fb.com/2024/10/02/android/react-at-meta-connect-2024/)",
+      "source_content_hash": "62d999e88dbf7a38ccfea4c4759b5c1472cc97201274394edde921638d29cc29",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**React 於 Meta Connect 2024**](https://engineering.fb.com/2024/10/02/android/react-at-meta-connect-2024/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "At a recent event, Meta announced:",
+      "source_content_hash": "7a31d52399cf2decee36e487cf5cfe1692bef668e8e17be6908570b4720779fc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Meta 在近期活動中宣布："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40251870",
+      "source_content": "- New Instagram and Facebook mixed-reality apps for the Meta Quest headset. These apps use React Native and run on Static Hermes. The team was able to reuse existing Facebook web code and infrastructure thanks to technologies such as StyleX and React Strict DOM.\n- A new Meta Horizon RN app that performs on par with their main native Facebook app. They mention the render-as-you-fetch pattern as the most impactful performance improvement they implemented.\n- Meta Horizon Store for web/mobile/HorizonOS built using the bleeding-edge React Compiler, StyleX, React Strict DOM\n- Meta Spatial Editor built on top of React Native Windows/macOS enables them to integrate natively their custom 3D rendering engine. The C++/Qt team was initially skeptical but ended up loving Fast Refresh.",
+      "source_content_hash": "2d464b7b65bf321f33beffa3090cf7266d223b7de037fa4ed91c1c55b7db9e4d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 為 Meta Quest 頭戴裝置推出的 Instagram 和 Facebook 混合實境應用。這些應用使用 React Native 並運行於 Static Hermes。團隊藉助 StyleX 和 React Strict DOM 等技術，成功復用現有 Facebook 網頁程式碼與基礎架構。\n- 全新的 Meta Horizon RN 應用，其效能可媲美原生 Facebook 主應用。團隊提及「隨取隨渲」模式是他們實現的最關鍵效能優化。\n- 採用尖端 React Compiler、StyleX 和 React Strict DOM 技術建置的 Meta Horizon Store（支援網頁/行動裝置/HorizonOS）。\n- 基於 React Native Windows/macOS 的 Meta Spatial Editor，可整合其專屬 3D 渲染引擎。C++/Qt 團隊最初持懷疑態度，但最終愛上了 Fast Refresh 功能。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "Many great innovative projects are being dogfooded at Meta on real production apps, improving the framework and ecosystem for all of us along the way, for all platforms. With all this, we can confidently claim that Meta will continue to bet on React as an excellent cross-platform solution for the years to come.",
+      "source_content_hash": "c941a9780969cd3d98fccf37e6766783fefac11fd77af01f772ffb0bead41ddb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "眾多創新專案正在 Meta 的實際生產應用中進行實戰測試，同時也為所有平台的使用者持續優化框架與生態系。基於這些進展，我們可以確信 Meta 在未來數年將持續押注 React 作為卓越的跨平台解決方案。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "See also the 🎥 [commented video from Theo](https://www.youtube.com/watch?v=GjBfD9PHff4).",
+      "source_content_hash": "3f834401047e2d8c696d0f700930e4aa9facb7c12509a6438ac6f956ad5be39d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "另請參閱 🎥 [Theo 的評論影片](https://www.youtube.com/watch?v=GjBfD9PHff4)。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "069f729e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3df4f066",
+      "source_content": "- 💸 [Omlet – A new tool for measuring React component usage across your repos. Try for free with unlimited scans and improve your code quality.](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-oct-2024)\n- 👀 [React Router v7 Prerelease](https://reactrouter.com/dev/guides/start/installation): The first prerelease (7.0.0-pre.0) is available on npm and you can already read the docs. The new version comes with a Vite plugin that enables React Router to be a full-stack framework (aka Remix). It also supports SSG, has a better config-based routing system, improves type-safety. RSC support will come later once React 19 and Vite Environment API are ready.\n- 👀 [React Compiler Docs - Usage with React v18 and v17](http://react-compiler-runtime) : A new official `react-compiler-runtime` package (experimental) has been published by the React team to support older versions of React. The babel config now accepts a new `target: '17' | '18' | '19'` option.\n- 👀 [Next.js Guide - Fixing breaking changes after v15.0.0-canary.171](https://github.com/vercel/next.js/issues/70899): For those living on the bleeding edge, the Next.js team explains how migrate the Dynamic APIs that now return promises.\n- 🗓️ [reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact) - 🇮🇹 Verona - 25 October - Last call for tickets! Don’t forget “TWIR” 10% discount code!\n- 🗓️ [React-Africa](https://react-africa.com/?utm_source=thisweekinreact) - 🇲🇦 Casablanca - 29 November - Get a 10% discount with code “TWIR”. And come listen from the best! Tejas Kumar et Jemima Abu will be here!\n- 📜 [Serverless servers and the challenge of new React architecture](https://bobaekang.com/blog/serverless-servers-and-the-challenge-of-new-react-architecture/): Vercel recently launched a new “Serverless Servers” feature (wait, what? 😅) that enables a Serverless Function instance to behave more like a traditional Node.js server accepting concurrent requests while idling. React RSCs will be more cost-effective: you won't be charged for the time spent awaiting promises.\n- 📜 [Handling Form Validation Errors and Resets with useActionState](https://aurorascharff.no/posts/handling-form-validation-errors-and-resets-with-useactionstate/): Teaches you how to handle React 19 resetting the fields of uncontrolled forms on submit.\n- 📜 [How Do Server Actions Work in NextJS?](https://codelynx.dev/posts/how-work-server-actions): Explains what happens under the hood when you call a Next.js Server Action, including simplified Next.js source code snippets.\n- 📜 [Using Mitosis to build a Design System](https://www.voorhoede.nl/en/blog/write-components-once-run-everywhere-with-mitosis-a-beautiful-dream-or-reality/): Mitigated feedback on this tool that permits creating cross-framework components from a shared JSX dialect.\n- 📜 [Increasing Vite's potential with the Environment API](https://green.sapphi.red/blog/increasing-vites-potential-with-the-environment-api): A modern React RSC app needs to bundle the code in multiple ways, one for each environment (client, SSR, RSC). A Vite contributor explains how Vite 6 helps you do so efficiently, and presents other use cases.\n- 📜 [Code based routing in Next.js](https://www.nico.fyi/blog/next-js-code-config-based-routing): Possible to achieve thanks to a catch-all route segment.\n- 📜 [Why Gumroad Didn't Choose htmx](https://htmx.org/essays/why-gumroad-didnt-choose-htmx/): Explain why they chose Next.js for their new product.\n- 📜 [React on the server is not PHP](https://www.artmann.co/articles/react-on-the-server-is-not-php)\n- 📦 [StyleX 0.8 - LightningCSS post-processing, theming and linting improvements](https://stylexjs.com/blog/v0.8.0)\n- 📦 [JSX Email 2.0 - config file, plugins, email compat, CSS inlining, new components](https://jsx.email/docs/v2/migration)\n- 📦 [Framer motion 11.11 - `animate()` can now animate any object such as Object3D from Three.js](https://www.framer.com/motion/animate-function/##objects)\n- 📦 [React-To-Print 3.0 - API modernization, React 19, smaller, Shadow DOM support, improved error handling](https://github.com/MatthewHerbst/react-to-print/blob/master/CHANGELOG.md#300-september-28th-2024)\n- 📦 [Assistant-UI - React Components for AI Chat](https://github.com/Yonom/assistant-ui)\n- 🎥 [Lee Robinson - Self-Hosting Next.js](https://www.youtube.com/watch?v=sIVL4JMqRfc): Including how to configure Next.js features like image optimization, caching, ISR, streaming, middleware …\n- 🎥 [Sam Selikoff - How to share a React Component with the URL](https://www.youtube.com/watch?v=fYqMPvPvVAc)\n- 🎥 [Jack Herrington - 5 Hidden React Server Function TRAPS Beginners Fall Into](https://www.youtube.com/watch?v=_wnamPRhgkA)",
+      "source_content_hash": "91caf96ffa27b93fbb67a501ac7ff495ebdcf58d44a752b97dafdd4a0ca4ea64",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_3df4f066"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3e8b4b41",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_3e8b4b41"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c46c3e3d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2e771fd0",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "[![Join the Open Source Pledge](/emails/issues/204/sentry.jpg)](https://osspledge.com/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=oss-fy25q3-pledge&utm_content=newsletter-dontbea-join)",
+      "source_content_hash": "15e9c22e6a4f0e9e6817c0b934a4784c7532fcb6614153398c33788e83fbe40a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![加入開源承諾](/emails/issues/204/sentry.jpg)](https://osspledge.com/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=oss-fy25q3-pledge&utm_content=newsletter-dontbea-join)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "**[Join the Open Source Pledge](https://osspledge.com/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=oss-fy25q3-pledge&utm_content=newsletter-dontbea-join)**",
+      "source_content_hash": "bfe9b6e8553704d0a9867492f249d14b6ee0bc6b8ff5b646a87a6ff34112a294",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[加入開源承諾](https://osspledge.com/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=oss-fy25q3-pledge&utm_content=newsletter-dontbea-join)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "Year after year, companies feast at the Open Source table, but few pay the maintainers—creating burnout-related security incidents. Through the Pledge, forward-thinking companies are working together to change the status quo. It’s time we paid our share. Will you join us?",
+      "source_content_hash": "eb0d116f1b6ca38f576a27833d783fc78ae9c531a4d07230e09ac9693826e80e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "年復一年，企業在開源盛宴中享用成果，卻鮮少回饋維護者——這導致了與過勞相關的安全事件。透過這項承諾，具有前瞻性的企業正攜手改變現狀。是時候付出我們應盡的責任了。您願意加入我們嗎？"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4f2104fa",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f8edb6d2",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "[![One - New cross-platform React framework](/emails/issues/204/one.jpg)](https://onestack.dev/)",
+      "source_content_hash": "c1e9eac30c63023aa11d8065c365feb81a4c9aedc6d9538306b758a9a040fc3a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![One - 全新的跨平台 React 框架](/emails/issues/204/one.jpg)](https://onestack.dev/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "[**One - New cross-platform React framework**](https://onestack.dev/)",
+      "source_content_hash": "7bae0585cf3efec4a959262e3aaf02d5547f6dd300f3ff9eef6a823e85e826c5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**One - 全新的跨平台 React 框架**](https://onestack.dev/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "Nate, the creator of Tamagui, released a new universal framework that supports web and mobile. It’s built on top of Vite instead of Metro, has universal typed file-based routing, Remix-like loaders, and various render modes (SSG/SSR/SPA). It also helps you build local-first apps with an opt-in integration with the granular Zero sync engine.",
+      "source_content_hash": "35a3441e26ea86811cba7936d2fc6a9ca043c1997d06471b6ece1f2908204cee",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Tamagui 的創建者 Nate 發布了一個支援網頁和行動裝置的全新通用框架。它建基於 Vite 而非 Metro，具備通用的類型化檔案路由、類似 Remix 的載入器，以及多種渲染模式（SSG/SSR/SPA）。它還透過可選的 Zero 同步引擎細粒度整合，幫助您建構本地優先的應用程式。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "05765487",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7a3b7c62",
+      "source_content": "- 💸 [Apryse React Native PDF Library - Easily add PDF viewing and editing to your cross-platform apps.](https://docs.apryse.com/documentation/ios/react-native/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=1009)\n- 👀 [Static Hermes for React Native – Experimental Builds](https://github.com/software-mansion-labs/hermes): Software Mansion is collaborating with the Hermes team on a fork to bring Static Hermes to RN apps, that you can try today, starting with iOS. Initial benchmarks show a 16% faster startup on a production app.\n- 👀 [React Native Docs PR - Discourage using controlled inputs in React Native because they are broken](https://github.com/facebook/react-native-website/pull/4247): Dan Abramov is unhappy about a core primitive of React Native not working as expected and suggests advising against using controlled inputs. Apparently, it used to work better but recent iOS features broke it (autocorrect and predictive text). The New Architecture allows synchronous native calls and might permit fixing it.\n- 📖 [React Native Testing Library Cookbook](https://callstack.github.io/react-native-testing-library/cookbook/index)\n- 📜 [Journeying from React to React Native: Differences & Similarities](https://dev.to/amazonappdev/journeying-from-react-to-react-native-21ep)\n- 📦 [React Native Storybook 8](https://storybook.js.org/blog/react-native-storybook-8/): An important milestone for Storybook React Native which finally caught up with Storybook core and plans to keep it in sync thanks to shared infrastructure. This new major includes many new features, including a new mobile UI, widescreen layout, simpler Metro config, hot reloading, stable RNW support, and more.\n- 📦 [React-Native-Bottom-Tabs - Bottom Tabs that use native platform primitives](https://github.com/okwasniewski/react-native-bottom-tabs): An early version of the lib we mentioned last week, meant to be used with React-Navigation and replace its non-native JS-based implementation. Also works with Expo Router.\n- 📦 [Zeego 2.0 - Cross-platform menus for React Native](https://github.com/nandorojo/zeego/releases/tag/v2.0.0): Improves web support, drops the RNW dependency in favor of a thin RadixUI layer wrapper.\n- 📦 [setup-ci - CLI to spin your CI/CD for react-native](https://github.com/software-mansion/setup-ci): New Software Mansion CLI project to help you quickly create RN GitHub Actions.\n- 📦 [Nitro Modules 0.11 - Add Old Architecture support](https://github.com/mrousavy/nitro/releases/tag/v0.11.0)\n- 📦 [React Native 0.76.0-rc.4](https://github.com/facebook/react-native/releases/tag/v0.76.0-rc.4)\n- 🎥 [Simon Grimm - Build AI Powered Mobile Apps FASTER with Expo API Routes & Cursor](https://www.youtube.com/watch?v=9FzkE1qVBiA)\n- 🎥 [Reactiive - Animated Blur Cards with React Native (Skia)](https://www.youtube.com/watch?v=SveA2QjmEzM)\n- 🎙️ [RNR 310 - Nitro with Marc Rousavy](https://www.reactnativeradio.com/episodes/rnr-310-nitro-with-marc-rousavy)\n- 🎙️ [Rocket Ship 51 - React Native Brownfield Integration with Mariusz Stanisz](https://share.transistor.fm/s/e737607c)",
+      "source_content_hash": "85285a3857d6f6da70f428da0eccbd5adce983f3644bd5d109b265b434c31540",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [Apryse React Native PDF Library - 輕鬆為跨平台應用程式添加 PDF 檢視和編輯功能。](https://docs.apryse.com/documentation/ios/react-native/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=1009)\n- 👀 [Static Hermes for React Native – 實驗性版本](https://github.com/software-mansion-labs/hermes)：Software Mansion 正與 Hermes 團隊合作開發分支版本，讓您可在 RN 應用程式中試用 Static Hermes（從 iOS 開始）。初步基準測試顯示生產環境應用啟動速度提升 16%。\n- 👀 [React Native 文件 PR - 建議避免使用受控輸入元件，因其存在缺陷](https://github.com/facebook/react-native-website/pull/4247)：Dan Abramov 對 React Native 核心功能未達預期運作表示不滿，建議避免使用受控輸入元件。此問題源於近期 iOS 功能（自動校正和預測文本）破壞原有運作機制。新架構允許同步原生調用，可能解決此問題。\n- 📖 [React Native 測試函式庫指南](https://callstack.github.io/react-native-testing-library/cookbook/index)\n- 📜 [從 React 到 React Native 的旅程：差異與相似之處](https://dev.to/amazonappdev/journeying-from-react-to-react-native-21ep)\n- 📦 [React Native Storybook 8](https://storybook.js.org/blog/react-native-storybook-8/)：Storybook React Native 的重要里程碑，終於與 Storybook 核心功能同步，並透過共享基礎設施保持更新。此重大版本包含多項新功能：全新行動 UI、寬螢幕佈局、簡化 Metro 配置、熱重載、穩定 RNW 支援等。\n- 📦 [React-Native-Bottom-Tabs - 使用原生平台元件的底部標籤列](https://github.com/okwasniewski/react-native-bottom-tabs)：上週提及函式庫的早期版本，可搭配 React-Navigation 使用，取代其非原生的 JS 實現方案，同時相容 Expo Router。\n- 📦 [Zeego 2.0 - React Native 跨平台選單](https://github.com/nandorojo/zeego/releases/tag/v2.0.0)：強化 Web 支援，移除 RNW 依賴，改採輕量 RadixUI 封裝層。\n- 📦 [setup-ci - 快速建立 react-native CI/CD 的 CLI 工具](https://github.com/software-mansion/setup-ci)：Software Mansion 新 CLI 專案，協助快速建立 RN GitHub Actions。\n- 📦 [Nitro Modules 0.11 - 新增舊架構支援](https://github.com/mrousavy/nitro/releases/tag/v0.11.0)\n- 📦 [React Native 0.76.0-rc.4](https://github.com/facebook/react-native/releases/tag/v0.76.0-rc.4)\n- 🎥 [Simon Grimm - 使用 Expo API Routes & Cursor 快速打造 AI 驅動行動應用](https://www.youtube.com/watch?v=9FzkE1qVBiA)\n- 🎥 [Reactiive - 使用 React Native (Skia) 實現動態模糊卡片](https://www.youtube.com/watch?v=SveA2QjmEzM)\n- 🎙️ [RNR 310 - 與 Marc Rousavy 探討 Nitro](https://www.reactnativeradio.com/episodes/rnr-310-nitro-with-marc-rousavy)\n- 🎙️ [Rocket Ship 51 - 與 Mariusz Stanisz 探討 React Native 棕地整合](https://share.transistor.fm/s/e737607c)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf53fc07",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "47516512",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "683a33d9",
+      "source_content": "- 👀 [TC39 - Agenda for the 104th meeting](https://github.com/tc39/agendas/blob/main/2024/10.md): The meeting is still in progress, but many proposals progressed to stage 4 and will be standardized in ES2025, we’ll share the final list next week\\!\n- 👀 [Lucia Auth - Future plans: deprecate the library, transform to a learning resource](https://github.com/lucia-auth/lucia/discussions/1707)\n- 📜 [Building a Single-Page App with htmx](https://jakelazaroff.com/words/building-a-single-page-app-with-htmx/)\n- 📜 [Do not use secrets in environment variables and here's how to do it better](https://www.nodejs-security.com/blog/do-not-use-secrets-in-environment-variables-and-here-is-how-to-do-it-better/)\n- 📦 [Deno 2.0 - Backwards-compatible, forward-thinking](https://deno.com/blog/v2.0)\n- 📦 [Brisa - Full-stack Framework with Server Components, Server Actions, JSX, Web Components, JSX](https://brisa.build/blog/introducing-brisa): An interesting new framework inspired by React and Next.js and leveraging Declarative Shadow DOM for SSR.\n- 📦 [Bun 1.1.30 - CSS Parsing & bundling, bun publish, CJS output](https://bun.sh/blog/bun-v1.1.30)\n- 📦 [Better-Auth - The most comprehensive authentication library for TypeScript](https://github.com/better-auth/better-auth)",
+      "source_content_hash": "952ddf29ff3ec4d4b359e4fbf68fa751c7ec0b0a26fd0d6f69fb0c86d403bc62",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 👀 [TC39 - 第 104 次會議議程](https://github.com/tc39/agendas/blob/main/2024/10.md)：會議仍在進行中，但已有許多提案推進至第 4 階段，並將在 ES2025 中標準化，我們將於下週分享最終清單！\n- 👀 [Lucia Auth - 未來計劃：棄用函式庫，轉型為學習資源](https://github.com/lucia-auth/lucia/discussions/1707)\n- 📜 [使用 htmx 建立單頁應用程式](https://jakelazaroff.com/words/building-a-single-page-app-with-htmx/)\n- 📜 [請勿在環境變數中使用密鑰，以及更好的做法](https://www.nodejs-security.com/blog/do-not-use-secrets-in-environment-variables-and-here-is-how-to-do-it-better/)\n- 📦 [Deno 2.0 - 向後兼容，前瞻思維](https://deno.com/blog/v2.0)\n- 📦 [Brisa - 具備伺服器元件、伺服器動作、JSX、Web 元件的全端框架](https://brisa.build/blog/introducing-brisa)：一個受 React 和 Next.js 啟發的有趣新框架，並利用宣告式 Shadow DOM 實現 SSR。\n- 📦 [Bun 1.1.30 - CSS 解析與打包、bun publish、CJS 輸出](https://bun.sh/blog/bun-v1.1.30)\n- 📦 [Better-Auth - 最全面的 TypeScript 身份驗證函式庫](https://github.com/better-auth/better-auth)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "efbc76b7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6868a9f",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 有趣 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "[![alt](/emails/issues/204/meme.jpg)](https://x.com/jacobmparis/status/1841450326744010914)",
+      "source_content_hash": "d6e61f40bca2905bbdc6e5902a9c8870df23d3835f3abca55ea79aadc47875b3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/204/meme.jpg)](https://x.com/jacobmparis/status/1841450326744010914)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8664ed0b",
+      "source_content": "[![alt](/emails/issues/204/meme2.jpg)](https://x.com/sebastienlorber/status/1842131680833741094)",
+      "source_content_hash": "3dae93f1c876b99eba3d8131b3aa86812f9769a7a18b2b8615eb798af7dfa6db",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/204/meme2.jpg)](https://x.com/sebastienlorber/status/1842131680833741094)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9e90a9b3",
+      "source_content": "[![alt](/emails/issues/204/meme3.jpg)](https://x.com/saltyAom/status/1842543015472386440)",
+      "source_content_hash": "fec4cf1eded03eda60a0fcc8ad1f23057b55ab21a0fe2e26b31970e3bd8b3b00",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/204/meme3.jpg)](https://x.com/saltyAom/status/1842543015472386440)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "681ef526",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "再見！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/204/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.128027+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "575a8c663bc3d1c6929c9287986bf9796c173fa86e393e9e07de1d52d8d06e05"
+  }
+}

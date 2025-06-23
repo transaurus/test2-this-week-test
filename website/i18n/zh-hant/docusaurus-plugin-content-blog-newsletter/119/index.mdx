@@ -1,0 +1,134 @@
+---
+slug: /119
+title: "This Week In React #119: React OG Images, Tremor, Storybook, Decoupling, Rendering, Data-Fetching, Remix, Qwik, TypeScript, Playwright..."
+authors: [slorber]
+date: 10-11-2022
+---
+
+大家好！
+
+本週有許多優質且多元的 React 文章。React-Native 方面則較為平靜。
+
+[ViteConf](https://viteconf.org/) 才剛開始，下週可能會有發布一些公告 ;)
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看這份電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Storyblok](/emails/issues/116/storyblok.png)](https://www.storyblok.com/?utm_source=thisweekinreact&utm_medium=display&utm_campaign=AWA_SPON_TWIREACT_TRA&utm_content=thisweekinreact_en)
+
+您已經試過 [Storyblok](https://www.storyblok.com/?utm_source=thisweekinreact&utm_medium=display&utm_campaign=AWA_SPON_TWIREACT_TRA&utm_content=thisweekinreact_en) 了嗎？它是一個專為開發者和行銷人員設計的，具有視覺編輯器的無頭 CMS！
+
+使用 Storyblok React SDK 快速建置可重複使用的元件並獲取內容，以建立您的 React、Next.js、Remix 甚至 React-Native 應用程式、網站或電子商務平台。
+
+查看 [Technology Hub](https://www.storyblok.com/technologies?utm_source=thisweekinreact&utm_medium=display&utm_campaign=AWA_SPON_TWIREACT_TRA&utm_content=thisweekinreact_en)，親自體驗吧！
+
+---
+
+## ⚛️ React {#react}
+
+**[Vercel OG 圖片生成：在 Edge 上快速生成動態社群卡片圖片](https://vercel.com/blog/introducing-vercel-og-image-generation-fast-dynamic-social-card-images)**
+
+Vercel 提出了一種在 Vercel Edge Functions 中生成動態社群卡片的非常高效的解決方案。實用性：可以在無需額外配置的情況下使用 JSX、React 元件（無狀態）和 Tailwind。我推薦 [這篇推文串](https://twitter.com/shuding_/status/1579607964549513217)，解釋了整個運作方式，非常有趣！他們甚至使用了 React-Native 的佈局引擎 Yoga 🤭
+
+**[React 中渲染的未來](https://prateeksurana.me/blog/future-of-rendering-in-react/)**
+
+這篇圖文並茂的文章介紹了 React 18 及更高版本的渲染模式。您將找到關於 SSR 串流如何運作、Suspense、React lazy、以及使用 Server Components 實現功能標誌的資訊...
+
+**[克服 React 專案中的常見問題](https://dinosaurs-with-jetpacks.com/posts/react-problems)**
+
+鼓勵將我們的 JavaScript 應用程式與框架（React 或其他）解耦。提倡回歸更簡單的方式。一些可能會引起爭議的觀點。
+
+**[Storybook 中的 Material UI](https://storybook.js.org/blog/material-ui-in-storybook/)**
+
+本教程有一個特別有趣的章節，解釋了如何透過重複使用底層 UI 函式庫的 TypeScript 類型來自動建立 Storybook 控制項。在轉發 props 時非常有用。甚至支援像 `Pick` 和 `Omit` 這樣的輔助類型。
+
+- 👤 Sathya Gunasekaran（前 V8 成員）[加入 React 核心團隊](https://twitter.com/_gsathya/status/1578816177371250688)，很可能將[參與 React-Forget 編譯器開發](https://twitter.com/Huxpro/status/1578865666010263552)
+- 👥 [Next.js Conf 2022 講者陣容](https://twitter.com/vercel/status/1578401243243741185)
+- 📖 Beta 文件：[React.Children](https://twitter.com/dan_abramov/status/1578457525628047360) + [useId](https://twitter.com/dan_abramov/status/1577283961763467265) + [createElement](https://twitter.com/dan_abramov/status/1577463721193897985) + [useImperativeHandle](https://twitter.com/dan_abramov/status/1577717226269966336)
+- 📖 [Next.js 在 Vercel 上的文件改進](https://twitter.com/leeerob/status/1577788730349436928)
+- 🌶 [React 和 Next.js 已死 — 終於有新事物（永久）取代它們](https://javascript.plainenglish.io/react-and-next-js-is-dead-something-new-is-finally-replacing-it-for-good-c792c48806f6)：解析 Qwik 框架如何提供優於 React 的模型。標題聳動但內容極具價值
+- 📜 [打造自訂 React 渲染器 - 第 1 部分](https://www.markcodes.dev/posts/build-react-custom-renderer-part-1)：新系列教學，目前易於理解但尚未支援更新功能
+- 📜 [Remix, React 與狀態管理](https://blog.jim-nielsen.com/2022/remix-react-and-state/)：提供端到端的 React 狀態心智模型
+- 📜 [如何編寫自己的狀態管理庫](https://judehunter.dev/blog/how-to-write-your-own-state-management-library)：解析狀態庫運作原理與選擇器系統實作
+- 📜 [React 資料獲取的效能考量](https://www.developerway.com/posts/how-to-fetch-data-in-react)：探討資料獲取複雜性與瀑布流/瀏覽器請求限制對 UX 的影響
+- 📜 [用 React + TypeScript + xState 避免不可能的 UI 狀態](https://whereisthemouse.com/avoid-impossible-ui-states-with-react-typescript-and-xstate)：判別聯合類型防呆設計與狀態轉換控制
+- 📜 [我對開發新 JavaScript 框架的改觀](https://whitep4nth3r.com/blog/write-a-new-javascript-framework/)：僅 4 框架同時支援 SSG+SSR（Eleventy/Next.js/Gatsby/Redwood）
+- 📜 [Sandpack 程式碼演示實戰指南](https://www.ctnicholas.dev/articles/how-to-use-sandpack-for-code-demos)：[更新最新功能](https://twitter.com/ctnicholasdev/status/1577683748878884864)，React 官方文件採用的即時程式碼沙盒
+- 📦 [Tremor 1.0](https://www.tremor.so/)：儀表板分析專用的 React UI 元件庫
+- 🐦 [W3C Trusted Types + React + XSS 防護](https://twitter.com/sebastienlorber/status/1579485631260286977)：新 HTML 提案可能原生防範 XSS，最終取代 `dangerouslySetInnerHTML`
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 贊助 {#sponsor2}
+
+[**React Brussels - 實體 & 線上 React 會議 - 2022 年 10 月 14 日**](https://www.react.brussels/)
+
+React Brussels 首度以**混合形式**重返歐洲核心！議程涵蓋**尖端技術與技能**（Playwright、WebVR、useEffect、資料獲取、Remix…），匯集 React 領域**頂尖專家**：
+
+- Tejas Kumar：開發者關係總監 - **Xata**
+- Kathleen McMahon：資深設計系統工程師 - **Northwestern Mutual**
+- David Khourshid：創辦人 - **Stately**
+- Shaundai Person：資深軟體工程師 - **Netflix**
+- Debbie O'Brien：資深專案經理 - **Microsoft**
+
+會後派對、競賽活動、職缺機會、比利時啤酒🍺、限量周邊、城市導覽... 所有精彩內容都將持續延續到會議結束之後！
+
+實體門票已**售罄**！不過您仍可參與線上盛會！立即獲取您的[**30歐元線上票🎟**](https://ti.to/bejs/react-brussels-2022/discount/online_lastweek) 😜
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 🎥 [《React-Native能否實現》第五季預告](https://www.youtube.com/watch?v=GArbi97dV08)
+- 🚧 [Expo Router 0.0.26](https://twitter.com/Baconbrix/status/1578805793733763072)：[useHref / 複製連結](https://twitter.com/Baconbrix/status/1578176991441784833) + [啟動畫面協調機制](https://twitter.com/Baconbrix/status/1577690073906257921)
+- 📖 [React-Native文件全面雙語化 - Java + Kotlin](https://twitter.com/reactnative/status/1578332414145105921)
+- 🎨 [Reanimated - useAnimatedKeyboard()示範](https://twitter.com/swmansion/status/1579471824831725571)
+- 📦 [react-native-test-app 2.0](https://twitter.com/lord_sherlock/status/1578312268663906304)：支援Expo配置插件
+- 📦 [react-native-quick-sqlite 5.0](https://twitter.com/ospfranco/status/1578145916510273536)：Promise API
+
+---
+
+## 🧑‍💻 職缺 {#jobs}
+
+🧑‍💼 [**Causal產品工程師，遠端/倫敦/紐約，$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)
+
+Causal是A輪新創（由Coatue/Accel投資），致力打造整合式數字處理與數據視覺化工具。我們正在尋找能解決複雜UX/效能挑戰的資深React工程師。
+
+🧑‍💼 [**G2i - 100%遠端React Native職缺**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我們提供多個專注React Native的開發職缺！薪資約16萬美元加10%獎金。應徵者需具備RN實際開發經驗且位於美國境內。私訊[@gabe_g2i](https://twitter.com/gabe_g2i)了解更多，別忘了提及「This Week in React」。
+
+💡 [如何發布職缺？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [Playwright Locators API 受到 Testing Library 啟發](https://twitter.com/diegohaz/status/1578567655493193728)
+- [Deno - 網路的未來在邊緣](https://deno.com/blog/the-future-of-web-is-on-the-edge)
+- [打造驚艷應用的新模式](https://web.dev/new-patterns-for-amazing-apps/)
+- [優化長時間任務](https://web.dev/optimize-long-tasks/)
+- [優化 Interaction to Next Paint (INP)](https://speaking.jeremy.codes/GptKXg/optimizing-interaction-to-next-paint-inp)
+- [Cloudflare Pages 因 Early Hints 變得更快](https://blog.cloudflare.com/early-hints-on-cloudflare-pages/)
+- [Codesandbox - 統一的 CodeSandbox 體驗](https://codesandbox.io/post/a-unified-codesandbox-experience)
+- [Safari 技術預覽版 155](https://webkit.org/blog/13338/release-notes-for-safari-technology-preview-155/)
+- [Axios 1.0](https://github.com/axios/axios/releases/tag/v1.0.0)
+
+---
+
+## 🤭 趣聞 {#fun}
+
+[![Kent C. Dodds 的 Twitter 編輯迷因 - Rick Rolled](/emails/issues/119/meme.png)](https://twitter.com/kentcdodds/status/1578334293863956480/history)

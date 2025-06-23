@@ -1,0 +1,152 @@
+---
+slug: /196
+title: "This Week In React #196: Forms, Jotai, DI, Electron, Docusaurus, Signals, Plunk, React-Server, Switchboard, React-Call, RN WebGPU, Nitro Modules, use dom, macOS, Screens, Autolinking, Cocoapods, Corepack, Node.js, TypeScript..."
+authors: [matthieugicquel, cyrilbo]
+date: 08-14-2024
+---
+
+大家好！
+
+本週我們歡迎 **2 位新貢獻者**加入，協助 **確保全年通訊不間斷**，即使 Seb 休假時也能持續運作。
+
+我們是 **來自 [Theodo Apps (前身 BAM)](https://apps.theodo.com/en?utm_source=thisweekinreact) 的 Cyril 和 Matthieu** 👋，將為您帶來 React 和 React Native 領域的最新動態。
+
+本週對 React 來說相對平靜，主要圍繞 React 19 中 Suspense 爭議的持續討論。
+
+**但 React Native 才是真正熱鬧的舞台！**\
+從 Expo 展示整合 React DOM 元件的方法，到令人興奮的 React Native WebGPU 發布，話題源源不絕。我們還將深入探討顛覆性的原生模組開發新方法。React Native 0.75 即將登場，下週我們將詳細報導！
+
+我們的合作會議 **[reactjsday](https://2024.reactjsday.it/?utm_source=thisweekinreact)**（🇮🇹 維羅納 - 10月25日）迎來十週年，升級為雙軌議程（16場演講）。輸入代碼 "TWIR" 可享 9 折優惠！已公布重量級講者陣容：Matheus Albuquerque、Aurora Scharff、Dani Coll 等！
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上瀏覽本通訊](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![用 StackBlitz 最大化設計系統效益](/emails/issues/196/StackBlitz.jpg)](https://stackblitz.com/design-systems?utm_source=twir&utm_medium=primary)
+
+**[用 StackBlitz 最大化設計系統效益](https://stackblitz.com/design-systems?utm_source=twir&utm_medium=primary)**
+
+您的設計系統能提升網頁開發效率與一致性，但我們深知建置與維護過程充滿挑戰。[**StackBlitz**](https://stackblitz.com/) **讓設計系統更易於 _推廣_、_維護_ 和 _進化_**。透過 StackBlitz 您可以：
+
+- 📈 **提高採用率**：提供團隊一鍵式即時環境試用內部函式庫
+- 💻 **提升開發者體驗**：在文件中嵌入即時代碼範例
+- 🐛 **改善錯誤回報**：即時過濾真實問題，從此無需為簡單錯誤重現繁瑙本地環境
+- 🤝 **簡化跨部門協作**：促進工程、設計等部門無縫合作
+
+**準備好革新設計系統工作流程？** [立即開始](https://stackblitz.com/design-systems)！
+
+---
+
+## ⚛️ React {#react}
+
+- 💸 [Chromatic – Visual testing for Storybook, Playwright, and Cypress. Catch UI bugs that functional tests miss. Lightning-fast & zero flake.](https://www.chromatic.com/features/visual-test?utm_source=thisweekinreact&utm_medium=quick_link&utm_campaign=q3_2024)
+- 👀 [React 19 - Disabling prerendering siblings of suspended components breaking common pattern](https://github.com/facebook/react/issues/29898): The React team is working on reversing this change that was planned to be included in React 19 but would have degraded the performance of lots of SPAs. No ETA yet, it may take some time to get a stable React 19 release
+- 🐦 [Matt Pocock has a suggestion for a new approach to library typings](https://x.com/mattpocockuk/status/1821124980043636841): React could for instance expose `useState` types with TypeScript namespaces
+- 🐦 [Matt](https://x.com/mattpocockuk/status/1821926395380986219) [Pocock](https://x.com/mattpocockuk/status/1821124980043636841)['s tip to add auto-completion to your component props](https://x.com/mattpocockuk/status/1821926395380986219): Using `string & {}`
+- 📜 [A deep dive on forms with modern React](https://www.epicreact.dev/react-forms): Kent explains how to use the new hooks `​​useFormStatus`, `useActionState` and `useOptimistic`
+- 📜 [How Jotai was born](https://blog.axlight.com/posts/how-jotai-was-born/): Daishi Kato recaps his multiple iterations on state management libraries before creating Jotai
+- 📜 [Why using dependency injection in your app can lead to cleaner and easier to maintain code](https://codedrivendevelopment.com/posts/dependency-injection-in-react): A valuable article that encourages thoughtful consideration of DI in frontend development, especially for those working on more complex React projects
+- 📜 [Building an App with Next.js and Electron with Server Components Support](https://www.saybackend.com/blog/03-electron-nextjs-ssr): Explains how to hijack Next.js to run an RSC server in an Electron app
+- 📜 [Optimizing SPA load times with async chunks preloading](https://mmazzarolo.com/blog/2024-08-13-async-chunk-preloading-on-load/)
+- 📜 [What is a Component Library and Should You Build Your Own?](https://component-odyssey.com/articles/10-what-is-a-library-should-you-build-your-own)
+- 📦 [Docusaurus 3.5 - Authors pages and many new blogging features](https://docusaurus.io/blog/releases/3.5)
+- 📦 [Impact-React in RC - Signals for React, by CodeSandbox](https://impact-react.dev)
+- 📦 [Plunk - New OSS email platform, with react-email and jsx-email integrations](https://www.useplunk.com/)
+- 📦 [react-switchboard - Quickly create custom DevTools for your apps](https://github.com/coryhouse/react-switchboard)
+- 📦 [react-call - Imperatively display React Components and await their result](https://github.com/desko27/react-call): An interesting idea to simplify implementing confirmation dialogs, toasters…
+- 📦 [@lazarv/react-server - An alternative framework with Server Components](https://react-server.dev/)
+- 🎙️ [Syntax.fm - We React to State of React Survey](https://syntax.fm/show/805/we-react-to-state-of-react-survey)
+- 🎙️ [Syntax.fm - CSS Components: Tailwind, Panda, Scoped, Modules, Classes, Variables, CSS-in-JS and Sprinkles!](https://syntax.fm/show/807/css-components-tailwind-panda-scoped-modules-classes-variables-css-in-js-and-sprinkles)
+- 🎥 [Sam Selikoff - Avoid premature abstraction with Unstyled Components](https://www.youtube.com/watch?v=9iJK-Vl6PhE)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![Statsig：發佈、測量、重複](/emails/issues/196/statsig.jpg)](https://statsig.com/?utm_campaign=this-week-in-react&utm_source=sponsorships&utm_medium=email&utm_content=website)
+
+**[Statsig：發佈、測量、重複](https://statsig.com/?utm_campaign=this-week-in-react&utm_source=sponsorships&utm_medium=email&utm_content=website)**
+
+OpenAI、Notion 和 Brex 使用的功能管理、A/B 測試和產品分析工具。透過測量所有發佈內容來打造更優質的產品 🚀
+
+安裝 Statsig 一次即可獲得：
+
+🧪 **A/B 測試：** 具備進階統計的自動化實驗。僅發佈有效的功能
+
+🚩 **功能開關：** 無限免費開關，一鍵將任何開關轉為 A/B 測試
+
+🥇 **產品分析：** 追蹤成長並衡量功能影響。透過功能開關或 A/B 測試組進行分析
+
+🎥 **工作階段重播：** 重播使用者互動以理解體驗與摩擦點
+
+🌐 **網站分析：** 透過 JS 程式碼片段獲取關鍵網站指標與儀表板
+
+免費享有高達 200 萬次事件與 10,000 次工作階段錄影——**[完全免費](https://statsig.com/?utm_campaign=this-week-in-react&utm_source=sponsorships&utm_medium=email&utm_content=website)**！
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Native WebGPU](/emails/issues/196/rn-webgpu.jpg)](https://www.youtube.com/watch?v=i-DGY98cTjk)
+
+**🎥 [React Native WebGPU](https://www.youtube.com/watch?v=i-DGY98cTjk)**
+
+React Native WebGPU 已正式推出，提供統一 API 來運用 GPU 實現進階圖形與計算功能！透過重用 Web API 標準，我們能輕鬆整合現有 WebGPU 程式碼範例與函式庫（如 ThreeJS）至 React Native。
+除了圖形處理，React Native WebGPU 還能用於矩陣運算等任務，使其在裝置端機器學習演算法中極具潛力。該專案採用 Nitro Modules 建構，實現 TypeScript 與 C++ 的無縫互通。目前處於技術預覽階段，預示著令人振奮的發展前景！
+
+---
+
+**React Native 模組的未來**
+
+React Native 開發者的激動時刻！Marc Rousavy 正透過 NitroModules 革新原生程式碼開發方式 📦 [在速度測試中大幅超越現有方案](https://github.com/mrousavy/NitroBenchmarks)。他在 VisionCamera 中發現了 JSI 的某些限制。該專案在 C++ 端已趨穩定，並應用於多個專案如 🐦 [react-native-unistyles](https://x.com/jpudysz/status/1822541758137303233) 和 react-native-webgpu，Swift 與 Kotlin 綁定仍在開發中。
+
+👀 [與此同時，一項推動 Swift 用於 TurboModules 的新提案已提出](https://github.com/okwasniewski/discussions-and-proposals/blob/22edd2c7853aaf2ee654b57f4521e43d668103fb/proposals/0000-swift-turbo-modules.md)。這些變更將透過棄用 Objective-C 和 C++ 來簡化原生模組開發。隨著這些更新，建置原生模組將大幅提升效率！
+
+---
+
+- 💸 [Galaxies.dev - 成為專業 React Native 開發者，在週二漲價前省下 65 美元！](https://galaxies.dev/subscription?utm_campaign=announcement&utm_medium=price-updates&utm_source=thisweekinreact.com)
+- 👀 [React Native 0.76 可能將最低 iOS 版本要求提升至 15.1](https://github.com/react-native-community/discussions-and-proposals/discussions/812)
+- 👀 [「use dom」- Expo 正在開發無縫整合 React Web 元件至 React Native 應用的方案](https://docs.expo.dev/guides/dom-components/)：全新實驗性功能允許導入 React DOM 元件，透過 props 和 callback 與之溝通！元件以 webview 渲染而非原生視圖，因此可能最適用於遷移或次要功能
+- 👀 [React Native Screens 4.0 測試版](https://github.com/software-mansion/react-native-screens/releases/tag/4.0.0-beta.0)：支援 iOS 自定義高度調整 & Android 表單彈窗
+- 👀 [即將在 React Native 0.75 & Expo SDK 51 推出的自動連結效能優化](https://github.com/react-native-community/discussions-and-proposals/discussions/814)
+- 📖 [Expo 文件更新 - 使用 Jest 進行單元測試](https://docs.expo.dev/develop/unit-testing/)：現已說明如何設定 jest-expo 和 React Native Testing Library
+- 🗓️ [React Universe 大會](https://www.reactuniverseconf.com/?utm_source=thisweekinreact) - 🇵🇱 弗羅茨瓦夫 - 9月5-6日。使用代碼 "TWIR" 享 9 折優惠。講者陣容：Dan Abramov、Evan Bacon、Kent C. Dodds、Delba Oliveira...
+- 📜 [Cocoapods 正式進入維護模式](https://blog.cocoapods.org/CocoaPods-Support-Plans/)：React Native 未來需進行遷移
+- 📦 [react-native-macos 支援 RN 0.74 版本已發布](https://github.com/microsoft/react-native-macos/releases/tag/v0.74.1)
+- 🎥 [Reactiiive - 使用 Reanimated 建構動態故事列表 UI（React Native）](https://www.youtube.com/watch?v=NNRym_f8JsA)
+- 🎥 [Simon Grimm - 使用 Expo Router 實作 React Native Firebase 身份驗證](https://www.youtube.com/watch?v=BsOik6ycGqk)
+- 🎙️ [RNR 第 303 集 - Chain React 2024 現場紀實](https://www.reactnativeradio.com/episodes/rnr-303-stories-from-chain-react-2024)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [Node.js - 新增支援 TypeScript 枚舉與命名空間轉譯](https://github.com/nodejs/node/pull/54283)
+- 📜 [Node.js 邁向移除 Corepack](https://socket.dev/blog/node-js-takes-steps-towards-removing-corepack?utm_medium=feed)
+- 📜 [CSS 進入動畫效果現已成為基準功能（Firefox 129 已實裝）](https://web.dev/blog/baseline-entry-animations?hl=en)
+- 📜 [JavaScript 記憶體洩漏的常見成因](https://www.trevorlasn.com/blog/common-causes-of-memory-leaks-in-javascript/)
+- 📜 [優化 TypeScript 型別檢查效能的實踐方法](https://www.edgedb.com/blog/an-approach-to-optimizing-typescript-type-checking-performance#how-do-we-quantify-the-type-checker-s-workload)
+- 📜 [探索原生 JavaScript 裝飾器的可能性](https://frontendmasters.com/blog/exploring-the-possibilities-of-native-javascript-decorators/?ref=cms.macarthur.me)
+- 📜 [動態化 Figma SVG 導出檔案](https://courses.nan.fyi/blog/svg/animating-figma-exports)
+- 📦 [Cheerio 1.0 - 歷經 7 年測試版後終迎穩定版](https://cheerio.js.org/blog/cheerio-1.0)
+- 🔗 [e18e - JavaScript 生態系效能優化倡議](https://e18e.dev/)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![替代文字](/emails/issues/196/meme.jpg)](https://x.com/DavidKPiano/status/1822633099433316504)
+
+再見！👋

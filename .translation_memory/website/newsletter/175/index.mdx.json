@@ -1,0 +1,562 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/175/index.mdx",
+  "source_file_content_hash": "b963632d7ca6af51de269ab319b9feef99cd2221870db531eb626f2167deed11",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /175\ntitle: \"This Week In React #175: RSC, useSyncExternalStore, Vinxi, Server Actions, Next.js, Remix, margins, WakuLand, R3F-uikit, React-Forget, RN releases, Bridgeless, Expo Fingerprint, Flash Calendar, Zeego, RN Reusables...\"\nauthors: [slorber, bndkt]\ndate: 02-28-2024\n---",
+      "source_content_hash": "d8eb91eb34ad70d7f79d839e5c1618672df7e111e97b0b8b9bdb83c880c1283c",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week has been rather quiet in terms of releases, but we have many great articles to read!",
+      "source_content_hash": "44c344a9b0d0585a6a54c5b429f41d4083fec5397f87651443ebbad23a7e85d3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週在版本發布方面相對平靜，但我們有許多精彩文章值得閱讀！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Sorry for last week, the email was so long that despite removing links, it got truncated by Gmail 😅.",
+      "source_content_hash": "73613ce74dbffb5a3cbccbd6abf55a96dd867f5004b76a32e8869142613a63a7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "抱歉上週的郵件太長，即使移除了連結，仍被 Gmail 截斷了 😅。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e883b2cc",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_e883b2cc"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**💡 [在 Twitter 上查看這份通訊](https://slo.im/thread) - 視覺化格式 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f7f1cb2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_92f4ea84"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_5dfba1c3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![CMS with Inline Visual editing for Next.js with App routing](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com/?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)",
+      "source_content_hash": "ae2d24c9689437c8e7eeb30280ecf02a8ac53ac5f877663d1aa45b7c562be58f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![具備應用路由的 Next.js 內聯視覺編輯 CMS](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com/?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[CMS with Inline Visual editing for Next.js with App routing](https://reactbricks.com/?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)**",
+      "source_content_hash": "3345bebb79e6b9b8111c23e5fb6c16811fe75674e09ea7aa0ee0f4653d0e6644",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[具備應用路由的 Next.js 內聯視覺編輯 CMS](https://reactbricks.com/?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[**Set up a project in just 1 minute**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email) with the CLI and define your own Visual blocks as React components to convey your pixel-perfect corporate brand, using any CSS framework. Try the new Next.js starter with Server Components!",
+      "source_content_hash": "cc5c0c823b0fd3020b85db992f4e8e853c4af71d0fcb9560cf73e376741dba3e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**只需 1 分鐘即可設定專案**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)，使用 CLI 將您自己的視覺區塊定義為 React 元件，傳達像素級完美的企業品牌，並支援任何 CSS 框架。試試支援伺服器元件的新 Next.js 入門專案！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "Content editors can easily use content blocks to compose pages visually, just like using a word processor, without compromising the design.",
+      "source_content_hash": "2196b2018dd6110923b08e8dd49ddec09e13ae162737f1b1293aac75d02f7875",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "內容編輯者能直觀地組合內容區塊建構頁面，如同使用文書處理器般簡便，同時保持設計完整性。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "React Bricks is enterprise-ready with Digital Assets Management, Advanced SEO, Real-time Collaboration, Scheduled Publishing, Multilanguage, integration with external APIs, Approval Workflow, Multiple environments, Change history and more.",
+      "source_content_hash": "78fcbfbe299641c281ab0817f8a42e398c7d51f61f85842694fa016dcdf517fc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "React Bricks 具備企業級功能：數位資產管理、進階 SEO、即時協作、排程發布、多語言支援、外部 API 整合、審核工作流程、多環境部署、變更歷史記錄等。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "Trusted by corporate clients such as The Weather Channel, Deel.com, La Banque Postale, leading eCommerce sites and over 9,000 users worldwide.  \n[**Get started today!**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)",
+      "source_content_hash": "cb717f302e1734f1e5ee5bab63a52ca954c8412a5c278661b92253da45f1a255",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "獲 The Weather Channel、Deel.com、La Banque Postale 等企業客戶及全球 9,000 多名用戶信賴。  \n[**立即開始使用！**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bd7c9323",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06c0f776",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa1e7006",
+      "source_content": "[![Instant Search Params with React Server Components](/emails/issues/175/next-search.jpg)](https://buildui.com/posts/instant-search-params-with-react-server-components)",
+      "source_content_hash": "c93b41cfa93882d937017f6e6689ca515e50d4f54dfab47c1778385b741cae26",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![使用 React 伺服器元件的即時搜尋參數](/emails/issues/175/next-search.jpg)](https://buildui.com/posts/instant-search-params-with-react-server-components)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "**[Instant Search Params with React Server Components](https://buildui.com/posts/instant-search-params-with-react-server-components)**",
+      "source_content_hash": "29ea40cdb4193f48c4f742307d4c97c4679db7bbc9c05fdb22d3051e8ed26ae3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[使用 React 伺服器元件的即時搜尋參數](https://buildui.com/posts/instant-search-params-with-react-server-components)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "An awesome interactive article showing that it’s surprisingly hard to persist UI state to the query string in a React Server Component world and yet give immediate user feedback. Updating the URL triggers a server round-trip. The new `useOptimistic` hook solves this problem nicely. This also shows a nice use-case for CSS `:has()`, to avoid hoisting the `startTransition` pending state.",
+      "source_content_hash": "ade0346e679db7c326a548f099b8cba7c0833144e84f293c99daf52ddbc1c125",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "一篇精彩的互動式文章，揭露在 React 伺服器元件環境中，將 UI 狀態同步至查詢字串並提供即時回饋的挑戰性。更新 URL 會觸發伺服器往返，而新鉤子 `useOptimistic` 優雅解決此問題，同時展示 CSS `:has()` 避免提升 `startTransition` 待處理狀態的應用場景。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "12647a35",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "[![Building a React Metaframework with Vinxi](/emails/issues/175/vinxi.jpg)](https://www.brenelz.com/posts/building-a-react-metaframework-with-vinxi/)",
+      "source_content_hash": "2e249131bf87ff0383b999ab92fb175dc7bd6880ac4ed2f8f05f192a3213aab9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![使用 Vinxi 建構 React 元框架](/emails/issues/175/vinxi.jpg)](https://www.brenelz.com/posts/building-a-react-metaframework-with-vinxi/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "**[Building a React Metaframework with Vinxi](https://www.brenelz.com/posts/building-a-react-metaframework-with-vinxi/)**",
+      "source_content_hash": "cecd69a4baf2a99ab92f338ea965bc2f87b51552f0548506d8899d3aa3eeb5cd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[使用 Vinxi 建構 React 元框架](https://www.brenelz.com/posts/building-a-react-metaframework-with-vinxi/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "TIL about [Vinxi](https://vinxi.vercel.app/), a toolbox built on top of Vite and Nitro enabling you to easily create your own meta-framework, with support, SSR, routing conventions, server functions and everything. Solid Start uses it behind the hood, but it’s a framework-agnostic SDK. Apparently, [TanStack Start will use it too](https://twitter.com/sebastienlorber/status/1762809340719780080)! This article explains how to use it with React.",
+      "source_content_hash": "0cf4d6bacd51ea1ed88631ced48889e8dd708c7aa0ed6bd196e53f03ee60add2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "今日認識 [Vinxi](https://vinxi.vercel.app/)——基於 Vite 與 Nitro 的工具箱，可輕鬆創建支援 SSR、路由規範、伺服器函數的元框架。Solid Start 底層採用此框架無關 SDK，而 [TanStack Start 也將整合](https://twitter.com/sebastienlorber/status/1762809340719780080)！本文詳解如何搭配 React 使用。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "069f729e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3df4f066",
+      "source_content": "- 💸 [Explore how to build a feature-rich PDF Viewer in React with Apryse's rendering engine. Customize UI, scroll, zoom, and search with annotations.](https://apryse.com/blog/build-custom-react-pdf-viewer?utm_source=thisweekinreact2&utm_medium=email&utm_campaign=newsletter2)\n- 📜 [Avoiding Hydration Mismatches with useSyncExternalStore](https://tkdodo.eu/blog/avoiding-hydration-mismatches-with-use-sync-external-store): Another great article from Dominik explaining how `useSyncExternalStore` and its 2 client/server snapshot callbacks can help prevent hydration mismatches. It can be a better alternative to useEffect for many use-cases, including rendering localized dates, or creating a client-only wrapper component.\n- 📜 [Exploring Next.js Forms with Server Actions](https://www.robinwieruch.de/next-forms/): A very comprehensive step-by-step tutorial on using the new React/Next.js form primitives without any abstractions, and all the little mistakes you might make along the way.\n- 📜 [No Outer margin](https://kyleshevlin.com/no-outer-margin/): Gives good reasons to not apply margins inside your component root, but instead let the parent component handle the layout. Margins are the first thing that come to mind, but there are also other CSS rules that break component encapsulation. I recovered a great deleted article for you on that matter: [Layout-isolated components](https://web.archive.org/web/20201024040746/https://visly.app/blog/layout-isolated-components).\n- 📜 [Vjeux - 12 Years at Meta](https://blog.vjeux.com/2024/project/12-years-at-meta.html): If you are a new React developer, you may not have heard of Christopher Chedeau, but he’s one of the most impactful member of our community. A few things he created or significantly contributed to: React, React Native, Yoga, CSS-in-JS, Prettier, Excalidraw, Docusaurus, GraphQL…\n- 📜 [Learning Four Key Primitives In Solid](https://www.brenelz.com/posts/learning-four-key-primitives-in-solid/): Don’t be mislead by the title, it’s a great article for React devs, comparing Solid vs React, Next.js and Remix on 4 interesting topics. TIL that Next.js RSC components would waterfall by default unless you use a preloading function.\n- 📜 [Handle both JSON and FormData in Remix](https://www.jacobparis.com/content/conform-json-formdata): Jacob explains the tradeoffs of using form inputs vs creating a FormData or JSON payload manually on an event handler. Shows how to create an Remix abstraction using Zod and Conform that can conveniently accept both JSON and FormData paylods.\n- 📜 [Introducing Waku Land](https://interbolt.org/blog/waku-land/): A live deployment of every Waku examples.\n- 📜 [Where to host your Remix app in 2024](https://www.jacobparis.com/content/where-to-host-remix?ref=twitter): Updated on 25 Feb.\n- 📜 [HTMX vs React - A Complete Comparison](https://semaphoreci.com/blog/htmx-react): The article suggests to use React for rich web experiences, and use HTMX for pages with simpler interactivity.\n- 📜 [Next.js vs. Remix - A Developer's Dilemma](https://blog.saeloun.com/2024/02/21/next.js-vs-remix/)\n- 📜 [Compiler Theory and Reactivity](https://www.recompiled.dev/blog/ssa/): Sathya works on React Forget and explains a compiler theory pass they use called Static Single Assignment form. I have to admit I’m a bit lost here 😅. His previous post on [Alias analysis](https://www.recompiled.dev/blog/alias-analysis/) is easier to understand.\n- 📜 [How to Style Active Links in Next.js App Router](https://spacejelly.dev/posts/how-to-style-active-links-in-next-js-app-router)\n- 📜 [Add Dynamic Sitemap to Next.js Website Using Pages or App Directory](https://claritydev.net/blog/nextjs-dynamic-sitemap-pages-app-directory)\n- 📦 [@react-three/uikit - Build performant 3D user interfaces using react-three/fiber and yoga](https://github.com/pmndrs/uikit): New Poimandres collective package preview with an impressive 🐦 [demo](https://twitter.com/0xca0a/status/1762069894932160943)\n- 🎥 [Ryan Toronto - Asset loading in React 19](https://www.youtube.com/watch?v=dxWLp-8mXes): Explains a quite unknown but exciting upcoming React feature that lets you load assets (here CSS) of the next page before completing the navigation transition.\n- 🎥 [Jack Herrington - React Hook Form & React 19 Form Actions, The Right Way](https://www.youtube.com/watch?v=VLk45JBe8L8)\n- 🎥 [Fireship - They made React great again? (React Labs)](https://www.youtube.com/watch?v=4k6Xgjqkad4)\n- 🎥 [Fireship - This UI component library is mind-blowing (Aceternity Components)](https://www.youtube.com/watch?v=RPa3_AD1_Vs)\n- 🎙️ [PodRocket -StyleX with Naman Goel](https://podrocket.logrocket.com/stylex-naman-goel)",
+      "source_content_hash": "893fcbaf7df43c3ac238fcbf0847af748244e600ef5b7d3da0bbc0f6ec4e2b56",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_3df4f066"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "41b1e179",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_41b1e179"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "08832b14",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1c598ecd",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "[![The most comprehensive User Management Platform](/emails/issues/172/clerk.jpg)](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-28-24)",
+      "source_content_hash": "7296bf0212ca2f764419044dbb03b66c1eeb7fb20f2386c71f9dd32ad1ef33de",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![最全面的用戶管理平台](/emails/issues/172/clerk.jpg)](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-28-24)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "**[The most comprehensive User Management Platform](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-28-24)**",
+      "source_content_hash": "af531f9a443a05316274711a1609f6fa04459802fd70573832a485e2c4d683f5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[最全面的用戶管理平台](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-28-24)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "Clerk streamlines React app authentication and user management, ensuring a quick setup for the modern web.",
+      "source_content_hash": "467d54e64cbfb20aa14aa7545cb1525abe931918fe596a77b8b75071bdfa6b2b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Clerk 簡化了 React 應用的身份驗證和用戶管理，確保為現代網絡提供快速設置。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "Experience the benefits of Clerk:",
+      "source_content_hash": "dcf49d2847b97c510de0b52d9ec196ec5016a73ef98b73f5b64c97e52a2cb5be",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "體驗 Clerk 的優勢："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e0019b35",
+      "source_content": "- 💅 Pre-built UI components for sign-in, sign-up, user profiles, and organizations. Customize with any CSS library and deploy on your domain\n- 📦 SDKs for React, React Native, Next.js, Redwood, Remix, and other frameworks\n- ⚡ Integrations with Firebase, Supabase, Convex, and other BaaS providers\n- 🎁 User management, social login, magic links, MFA, and more out of the box",
+      "source_content_hash": "14117c44a9fb44b78957042154f77e52763a07c450b68394fe87253b21484298",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💅 預建的 UI 組件用於登入、註冊、用戶檔案和組織。可用任何 CSS 庫自定義並部署在您的網域\n- 📦 支援 React、React Native、Next.js、Redwood、Remix 等框架的 SDK\n- ⚡ 與 Firebase、Supabase、Convex 等 BaaS 供應商的整合\n- 🎁 開箱即用的用戶管理、社交登入、魔法連結、多因素驗證等功能"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "Dive into Clerk's [quickstarts and tutorials](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-28-24) to kickstart your project🚀",
+      "source_content_hash": "bf0204f29835a6c04a7ee224ed700b8f6b294f6c30bfc6ce518ea10a6b4ff111",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "深入 Clerk 的[快速入門指南和教學](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-28-24)，立即啟動您的專案 🚀"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4c30a6aa",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "54bafb10",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "This section is now co-authored with [Benedikt](https://twitter.com/bndkt). Feel free to send us your comments by email or on [Twitter](https://twitter.com/bndkt)!",
+      "source_content_hash": "03c93ddbf8c7962f08a28785d1027e43728cac6191b8183c1e16ffcc9503435b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本專欄現由 [Benedikt](https://twitter.com/bndkt) 共同撰寫。歡迎透過電子郵件或 [Twitter](https://twitter.com/bndkt) 向我們提供意見！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "This past week, we all enjoyed a brief respite from major headline React Native news (or did I miss something, in this case [@me](https://twitter.com/bndkt)). Perhaps that's a welcome change, especially after the whirlwind of events like Expo 50, visionOS, the State of React Native, react-strict-dom, and more. However, this doesn't mean the React Native world has come to a halt. There’s been a lot of little announcements that give us a glimpse in the near future of React Native. The first release candidates for [RN 0.74](https://github.com/facebook/react-native/blob/ee2bc59dfe4579cad3b7f0b5de667a89fcac8710/CHANGELOG.md#0740-rc0) were released. They contain a lot of improvements as well as some deprecations and breaking changes, but from the first glance nothing major that makes me worried about upgrading effort. Most notably, bridgeless mode becomes the new default with 0.74 (but only when New Arch is enabled). Bridgeless mode is the third pillar of the New Arch, after the already introduced TurboModules and new renderer (Fabric). Speaking of New Arch and defaults, a [PR](https://github.com/facebook/react-native/pull/43135) was merged that’ll make the New Arch the default beginning with RN 0.75 (it will still be possible to opt out though). Also, the RFC with the [React Native Frameworks](https://github.com/react-native-community/discussions-and-proposals/blob/main/proposals/0759-react-native-frameworks.md) definition has been merged, laying out the responsibilities of RN vs frameworks on top of RN.",
+      "source_content_hash": "83760f3c466b3f0d7235409c1d7ada909ca8b44197b5eca632efb475dd24e107",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "過去一週，我們暫時避開了重大的 React Native 頭條新聞（或是我漏掉了什麼？歡迎 [@我](https://twitter.com/bndkt)）。在經歷了 Expo 50、visionOS、React Native 現狀報告、react-strict-dom 等風暴後，這或許是個受歡迎的轉變。然而，這並不意味著 React Native 世界停滯不前。許多小公告揭示了 React Native 的近期未來：[RN 0.74](https://github.com/facebook/react-native/blob/ee2bc59dfe4579cad3b7f0b5de667a89fcac8710/CHANGELOG.md#0740-rc0) 的首批候選版本已發布，包含大量改進以及一些棄用和破壞性變更，但初步看來沒有需要擔心重大升級成本的部分。最值得注意的是，bridgeless 模式在 0.74 版成為新預設（僅當啟用新架構時）。Bridgeless 模式是新架構的第三大支柱，緊接已推出的 TurboModules 和新的渲染器（Fabric）。談到新架構和預設值，一個[PR](https://github.com/facebook/react-native/pull/43135) 已合併，將從 RN 0.75 開始使新架構成為預設（仍可選擇退出）。此外，定義 [React Native 框架](https://github.com/react-native-community/discussions-and-proposals/blob/main/proposals/0759-react-native-frameworks.md) 的 RFC 也已合併，明確劃分 RN 與基於 RN 的框架的職責。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c5a1374",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0465fca",
+      "source_content": "- 💸 [React Universe Conf - join the conference at the lowest price now. There’s a limited batch of blind bird tickets available.](https://www.reactuniverseconf.com/)\n- 📜 [How to integrate Native iOS code into a React Native project for iOS](https://www.themorrow.digital/blog/how-to-integrate-native-modules-in-react-native-ios-apps): Good introduction to bridging headers, @objc, and other fun stuff you need to know before diving into native code for iOS.\n- 📜 [react-strict-dom, why it's so great?](https://szymonrybczak.dev/blog/react-strict-dom) If you want to know how `<html.div>` ends up as a native component in iOS, read this short summary of react-strict-dom.\n- 📜 [Expo Push Notifications Migrating to FCM V1](https://expo.dev/blog/expo-push-notifications-migrating-to-fcm-v1): In June, FCM Legacy will join the long list of discontinued Google services, so it’s really time to migrate!\n- 📜 [@expo/fingerprint 🤝 GitHub Actions](https://expo.dev/blog/expo-fingerprint-github-actions): In my opinion, Fingerprint is the most underhyped feature of Expo SDK 50. This post shows the killer use case: Kicking off a new native build as soon as Fingerprint determines it is required.\n- 📜 [Universal Apps: A Single, Unified Codebase Powering Mobile, Desktop, Web, and TV?](https://www.reactnativetv.com/blog/universal-apps-powering-seven-platforms) Kind of the holy grail, and a topic I’m really excited about in 2024: One app, all the platforms. This article has some interesting thoughts about it.\n- 📜 [How to build an offline-first app using Expo & Legend State](https://expo.dev/blog/offline-first-apps-with-expo-and-legend-state)\n- 📦 [React Native 0.74-rc.1](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.1)\n- 📦 [React Native v0.73.5](https://github.com/facebook/react-native/releases/tag/v0.73.5)\n- 📦 [react-native-visionos 0.73.6](https://github.com/callstack/react-native-visionos/releases/tag/v0.73.6-visionos): Multi window support and [new docs](https://callstack.github.io/react-native-visionos-docs/)!\n- 📦 [Zeego 1.8 + 1.9 - Universal cross-platform menus - Horizontal groups and group labels](https://github.com/nandorojo/zeego/releases)\n- 📦 [react-native-image-editor 4.0 - base64 output, format prop, returns metadata](https://github.com/callstack/react-native-image-editor/releases/tag/4.0.0)\n- 📦 [React Native Flash Calendar - Fast and flexible calendar using Shopify FlashList](https://github.com/MarceloPrado/flash-calendar)\n- 📦 [react-native-reusables](https://github.com/mrzachnugent/react-native-reusables): I love shadcn/ui (UI library) for web, this brings it to RN!\n- 🎥 [Fireship - Expo in 100 Seconds](https://www.youtube.com/watch?v=vFW_TxKLyrE)\n- 🎥 [Theo Brown - React's Next Big Change? (react strict dom)](https://www.youtube.com/watch?v=hz5gbCXJ-vA)\n- 🎥 [Expo - How to build TV apps with Expo SDK 50](https://www.youtube.com/watch?v=PUMBWeLVuiw)\n- 🎙️ [Rocket Ship 031 - React Native Gestures & Microinteractions with Kacper Kapuściak](https://share.transistor.fm/s/64cd1071)\n- 🎙️ [RNR 289 - Real Life React Native: David Leuliette Talks Retail Shake Scanner](https://www.reactnativeradio.com/episodes/rnr-289-real-life-react-native-david-leuliette-talks-retail-shake-scanner)",
+      "source_content_hash": "13bb3b53ef90b6294a645a8469029df93816e15df979ed05139780d7d1fd58ab",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [React Universe Conf - join the conference at the lowest price now. There’s a limited batch of blind bird tickets available.](https://www.reactuniverseconf.com/)\n- 📜 [How to integrate Native iOS code into a React Native project for iOS](https://www.themorrow.digital/blog/how-to-integrate-native-modules-in-react-native-ios-apps): 關於 bridging headers、@objc 以及深入 iOS 原生程式碼前需知的其他有趣內容的良好介紹。\n- 📜 [react-strict-dom, why it's so great?](https://szymonrybczak.dev/blog/react-strict-dom) 若您想了解 `<html.div>` 如何成為 iOS 中的原生元件，請閱讀此篇 react-strict-dom 的簡短摘要。\n- 📜 [Expo Push Notifications Migrating to FCM V1](https://expo.dev/blog/expo-push-notifications-migrating-to-fcm-v1): 六月時，FCM Legacy 將加入 Google 已停用服務的長長清單，因此現在真的是遷移的時候了！\n- 📜 [@expo/fingerprint 🤝 GitHub Actions](https://expo.dev/blog/expo-fingerprint-github-actions): 在我看來，Fingerprint 是 Expo SDK 50 中最被低估的功能。這篇文章展示了其殺手級應用：一旦 Fingerprint 判定需要，立即啟動新的原生建置。\n- 📜 [Universal Apps: A Single, Unified Codebase Powering Mobile, Desktop, Web, and TV?](https://www.reactnativetv.com/blog/universal-apps-powering-seven-platforms) 某種聖杯，也是我在 2024 年非常興奮的主題：一個應用程式，所有平台。這篇文章對此提出了一些有趣的觀點。\n- 📜 [How to build an offline-first app using Expo & Legend State](https://expo.dev/blog/offline-first-apps-with-expo-and-legend-state)\n- 📦 [React Native 0.74-rc.1](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.1)\n- 📦 [React Native v0.73.5](https://github.com/facebook/react-native/releases/tag/v0.73.5)\n- 📦 [react-native-visionos 0.73.6](https://github.com/callstack/react-native-visionos/releases/tag/v0.73.6-visionos): 多視窗支援及[新文件](https://callstack.github.io/react-native-visionos-docs/)！\n- 📦 [Zeego 1.8 + 1.9 - Universal cross-platform menus - Horizontal groups and group labels](https://github.com/nandorojo/zeego/releases)\n- 📦 [react-native-image-editor 4.0 - base64 output, format prop, returns metadata](https://github.com/callstack/react-native-image-editor/releases/tag/4.0.0)\n- 📦 [React Native Flash Calendar - Fast and flexible calendar using Shopify FlashList](https://github.com/MarceloPrado/flash-calendar)\n- 📦 [react-native-reusables](https://github.com/mrzachnugent/react-native-reusables): 我熱愛 web 上的 shadcn/ui（UI 函式庫），而這個將其帶到 RN！\n- 🎥 [Fireship - Expo in 100 Seconds](https://www.youtube.com/watch?v=vFW_TxKLyrE)\n- 🎥 [Theo Brown - React's Next Big Change? (react strict dom)](https://www.youtube.com/watch?v=hz5gbCXJ-vA)\n- 🎥 [Expo - How to build TV apps with Expo SDK 50](https://www.youtube.com/watch?v=PUMBWeLVuiw)\n- 🎙️ [Rocket Ship 031 - React Native Gestures & Microinteractions with Kacper Kapuściak](https://share.transistor.fm/s/64cd1071)\n- 🎙️ [RNR 289 - Real Life React Native: David Leuliette Talks Retail Shake Scanner](https://www.reactnativeradio.com/episodes/rnr-289-real-life-react-native-david-leuliette-talks-retail-shake-scanner)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf542fb4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d53c8ed4",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ecba4df2",
+      "source_content": "- 📣 [Apple killing PWAs in EU - Immediate Action Needed](https://open-web-advocacy.org/apple-attempts-killing-webapps/)\n- 👀 [TypeScript PR - Infer type predicates from function bodies using control flow analysis](https://github.com/microsoft/TypeScript/pull/57465)\n- 👀 [Rsbuild v1.0 Release Plan - Rspack v1 and Rsbuild v1 before July 2024](https://github.com/web-infra-dev/rsbuild/discussions/1678)\n- 📜 [CSS :has() Interactive Guide](https://ishadeed.com/article/css-has-guide/)\n- 📜 [JSDoc as an alternative TypeScript syntax](https://alexharri.com/blog/jsdoc-as-an-alternative-typescript-syntax)\n- 📜 [Node.js 2023 Year in An Article](https://blog.rafaelgss.dev/nodejs-2023-year-in-review)\n- 📦 [Babel 7.24 - Decorator updates and JSON modules imports](https://babeljs.io/blog/2024/02/28/7.24.0)\n- 📦 [TypeScript 5.4 RC - NoInfet utility type, type narrowing improvements in closureq](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4-rc/)\n- 📦 [LightningCSS 1.42 - light-dark(), system colors, custom property deduplication](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.24.0)\n- 📦 [Chrome 122 - Perf DevTools, Storage Buckets, Async Clipboard](https://developer.chrome.com/blog/new-in-chrome-122/)\n- 📦 [PGlite - Postgres in WASM](https://github.com/electric-sql/pglite)\n- 📦 [snap - snapshot testing companion for node:test](https://github.com/mcollina/snap)",
+      "source_content_hash": "1b7e3b1b1cf8e8d5b7285691bca8588602f68fb420dee4fe501d50d8f9862d4d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📣 [Apple 在歐盟扼殺 PWA - 需要立即行動](https://open-web-advocacy.org/apple-attempts-killing-webapps/)\n- 👀 [TypeScript PR - 透過控制流程分析從函數主體推斷類型謂詞](https://github.com/microsoft/TypeScript/pull/57465)\n- 👀 [Rsbuild v1.0 發布計劃 - Rspack v1 和 Rsbuild v1 將於 2024 年 7 月前推出](https://github.com/web-infra-dev/rsbuild/discussions/1678)\n- 📜 [CSS :has() 互動式指南](https://ishadeed.com/article/css-has-guide/)\n- 📜 [JSDoc 作為 TypeScript 語法的替代方案](https://alexharri.com/blog/jsdoc-as-an-alternative-typescript-syntax)\n- 📜 [Node.js 2023 年度回顧：一篇文章](https://blog.rafaelgss.dev/nodejs-2023-year-in-review)\n- 📦 [Babel 7.24 - 裝飾器更新與 JSON 模組導入](https://babeljs.io/blog/2024/02/28/7.24.0)\n- 📦 [TypeScript 5.4 RC - NoInfet 實用類型、閉包中的類型縮小改進](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4-rc/)\n- 📦 [LightningCSS 1.42 - light-dark()、系統色彩、自訂屬性去重複化](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.24.0)\n- 📦 [Chrome 122 - 效能開發者工具、儲存桶、非同步剪貼簿](https://developer.chrome.com/blog/new-in-chrome-122/)\n- 📦 [PGlite - WASM 中的 Postgres](https://github.com/electric-sql/pglite)\n- 📦 [snap - node:test 的快照測試伴侶](https://github.com/mcollina/snap)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0bed0da6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ab1b234",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 有趣 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42d9ca67",
+      "source_content": "[![alt](/emails/issues/175/meme.jpg)](https://twitter.com/sebastienlorber/status/1760963583603581163)",
+      "source_content_hash": "313106d3bed840c4dcc43c7675d93a6a40661db7aa4dc4d317818695708771cb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/175/meme.jpg)](https://twitter.com/sebastienlorber/status/1760963583603581163)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下次見！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/175/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.102004+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "b963632d7ca6af51de269ab319b9feef99cd2221870db531eb626f2167deed11"
+  }
+}

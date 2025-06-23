@@ -1,0 +1,176 @@
+---
+slug: /210
+title: "This Week In React #210: React 19 pre-warming, Next.js, IDE, TanStack, React Scan, MistCSS, PayloadCMS, Expo Workflows, Universal RSC, use dom, Yoga JSI, Skia, Turbo Haptics, TV, FastIO, SwiftUI, Angular 19..."
+authors: [matthieugicquel, cyrilbo]
+date: 11-20-2024
+---
+
+大家好！
+
+我們是來自 Theodo Apps（前身為 BAM）的 Cyril 和 Matthieu 👋，本週代替 Seb 為您帶來 React 和 React Native 的最新消息！
+
+本週 React 界傳來重大消息！在初次發布延期六個月後，React 19 終於重回 RC 階段。隨著 pre-warming 機制的引入，Suspense 的懸念終於逐漸明朗。
+
+Expo 正在其發布派對中掀起波瀾，熱潮持續高漲！🚀
+
+新宣布的 **Expo Workflows** 承諾將通過預封裝任務、智能機器選擇和無縫自動化，徹底改變 React Native 應用的 CI/CD 流程 — 簡化整個發布流程。
+
+與此同時，Expo Router 中的**通用 React Server Components** 已進入測試階段，標誌著邁向**服務器優先的 React Native 開發**的重要里程碑。
+
+派對還沒結束！🎉 敬請期待下期內容，我們將深入探討 Expo 持續慶祝活動中的更多公告。
+
+另請關注我們的合作會議 [React Paris 2025](https://react.paris/?utm_source=Newsletter&utm_medium=thisweekinreact)（🇫🇷 巴黎 - 2025年3月20-21日）。用 2025 年首批開發者會議之一開啟新年！講者包括 Dominik 'TkDodo' Dorfmeister、Kent C. Dodds 和 Aurora Scharff。CFP 現已開放，使用代碼 "TWIR" 可享門票 8 折優惠！
+
+若您能分享本通訊或在此支持我們，我們將萬分感激：
+
+- [X / Twitter](https://slo.im/last/x)
+- [Bluesky](https://slo.im/last/b)
+- [LinkedIn](https://slo.im/last/l)
+
+讓我們開始吧！🚀
+
+<!-- truncate -->
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Handsontable：適用於 React 應用的高級數據表格](/emails/issues/206/handsontable.jpg)](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirnov20)
+
+**[Handsontable：適用於 React 應用的高級數據表格](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirnov20)**
+
+Handsontable 是[功能豐富的數據表格](https://handsontable.com/demo?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirnov20)，專為需要強大、可自訂且具無障礙功能的 React 開發者設計，用於管理複雜數據。
+
+- 獨特的**類試算表介面**，具排序、篩選和 CRUD 操作功能
+- 進階操作如條件格式化和 **400 多個內建公式**，類似 Excel
+- **可自訂編輯器和渲染器**，允許在表格單元格內使用下拉選單、選單或自訂組件以滿足特定需求
+- **性能優化**，確保流暢響應的交互體驗
+- **符合 WCAG 2.1 無障礙標準**，為殘障用戶提供更佳支援
+
+Handsontable 適用於各種場景，從企業級應用到簡單網站，提供全球企業信賴的性能與靈活性。
+
+[立即開始使用！](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirnov20)
+
+---
+
+## ⚛️ React {#react}
+
+[![React 19 RC1](/emails/issues/210/react19.jpg)](https://github.com/facebook/react/issues/29898#issuecomment-2477449973)
+
+[**React 19 RC1 - 兄弟元件預熱機制**](https://github.com/facebook/react/issues/29898#issuecomment-2477449973)
+
+我們先前報導過 React 19 初始版本因 Suspense 變更導致中止發布的問題——該變更會在使用 Suspense 但未在事件處理器中啟動資料獲取的應用中引發瀑布流問題。  
+React 團隊持續努力重新引入 Suspense 兄弟元件預渲染機制，同時確保不會對早期啟動資料獲取的應用造成效能衰退。他們的解決方案現已就緒，稱為[預熱機制 (pre-warming)](https://react.dev/blog/2024/04/25/react-19-upgrade-guide#improvements-to-suspense)。最先提出此問題的 React Query 維護者 Dominik [已確認對此修復方案感到滿意](https://bsky.app/profile/tkdodo.eu/post/3layw6wk5bs2b)。  
+如同往常，新功能已提前在 Next.JS（採用 React Canary）中提供，包含伺服器元件與 Actions、新 `use` 鉤子、表單處理改進（`useFormStatus` 與 `useOptimistic`），以及一個微小但期待已久的變更：不再需要 `forwardRef`！
+
+---
+
+- 💸 [Omlet – Scan your repo and measure how and where React components are used](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-nov-2024)
+- 👀 [Next.js segment cache initial implementation](https://github.com/vercel/next.js/pull/72875): A rewrite of App Router's client caching implementation, designed with PPR and "use cache" in mind. Not production-ready at all, but in the future Next will cache by route segment instead of by full URL.
+- 👀 [React Query may soon have a unified staleTime per query](https://github.com/TanStack/query/pull/8313) instead of one per “observer” (e.g. each `useQuery`). This will be less flexible but certainly easier to reason about.
+- 👀 [React IDE](https://youtu.be/C8Mg-NSyqWg?t=14452): Mofei (React Compiler team) unveils at React Summit the plan to work on a VSCode extension powered by the compiler. Don't get too excited, because we don't know much about it yet!
+- 👀 [TanStack Start is officially in beta](https://bsky.app/profile/tannerlinsley.com/post/3lbdl4zp2ns2n)
+- 📖 [The Road to Next](https://www.road-to-next.com/): Robin Wieruch launched his paid Next.js 15 course with early access discounts.
+- 🗓️ [React Day Berlin](https://reactday.berlin/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇩🇪 Berlin - 13 & 16 December - Hurry and grab your ticket to the conference as prices are about to go up! And don’t forget your discount with code “TWIR”.
+- 📜 [Essential Typescript for React](https://www.jacobparis.com/content/react-ts): A concise article on the most valuable tips to be productive.
+- 📜 [Be careful with useSyncExternalStore](https://www.nico.fyi/blog/be-careful-with-usesyncexternalstore): implementation of a `useLocalStorage` hook using `useSyncExternalStore` and `superjson`.
+- 📜 [5 differences between React server components and server-side rendering](https://www.tymzap.com/blog/5-differences-between-react-server-components-and-server-side-rendering): At this point you already know that they are not at all the same. This recaps the concrete differences between the two.
+- 📜 [Design System: from scratch or from the shelf?](https://www.voorhoede.nl/en/blog/design-system-from-scratch-from-the-shelf/)
+- 📜 [What are React Portals?](https://techhub.iodigital.com/articles/what-are-react-portals)
+- 📜 [Creating your own React design system analytics tool with react-scanner](https://alexocallaghan.com/creating-your-own-react-design-system-analytics-tool)
+- 📜 [Quick Guide to Building a PWA with Next.js](https://playfulprogramming.com/posts/pwa-nextjs-guide)
+- 📜 [Vercel - Skew Protection is now enabled by default for new projects](https://vercel.com/changelog/skew-protection-is-now-enabled-by-default-for-new-projects)
+- 📜 [React Anti-Pattern: Stop Passing Setters Down the Components Tree](https://matanbobi.dev/posts/stop-passing-setter-functions-to-components)
+- 📦 [react-scan](https://github.com/aidenybai/react-scan): The MillionJS team released a new tool to find performance issues (re-renders) in React apps.
+- 📦 [PayloadCMS 3.0 \- Seamless integration with Next.js app router](https://github.com/payloadcms/payload/releases/tag/v3.0.0): The CMS can now run seamlessly within your existing Next.js app, exposing a `withPayload()` plugin.
+- 📦 [MistCSS 1.0](https://github.com/typicode/mistcss): Instead of generating full React components from CSS, the library now bets on generating types to enhance intrinsic React JSX elements. Interesting idea!
+- 🎥 [Jack Herrington - “use cache” NextJS’s latest take on data caching](https://www.youtube.com/watch?v=ZDRGEewXkrs)
+- 🎥 [Theo - How To Avoid Big Serverless Bills](https://www.youtube.com/watch?v=jsuNjCAngnQ): Various tips for Vercel or Next.js users.
+- 🎥 [React Summit US - Live Stream](https://www.youtube.com/watch?v=C8Mg-NSyqWg)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助 {#sponsor2}
+
+[![在您的 React 應用中釋放文件超能力！](/emails/issues/209/nutrient.jpg)](https://www.nutrient.io/sdk/web)
+
+**[在您的 React 應用中釋放文件超能力！](https://www.nutrient.io/sdk/web)**
+
+React 愛好者請注意：PSPDFKit 現已更名為 **Nutrient**！👋 我們雖有新名稱，但 Web SDK 仍是您所信賴的頂級解決方案，用於檢視、註解和編輯 PDF 及其他文件類型。
+
+- 🏎️ 透過免費試用和完整文件快速上手
+- ⏱️ 利用精緻內建 UI 和我們的新設計系統 **Baseline-UI** 節省開發時間
+- 🛠️ 運用豐富的處理與自訂 API
+- 🆘 透過我們的支援與解決方案工程團隊獲取領域專家協助
+
+我們提供**全平台支援**，從行動裝置到後端無一遺漏。
+
+想挑戰難題並**影響數百個應用程式**？查看我們的職缺如[資深前端開發工程師](https://www.nutrient.io/company/careers/web-frontend)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Expo 工作流程](/emails/issues/210/workflows.jpg)](https://expo.dev/blog/expo-workflows-automate-your-release-process)
+
+[**Expo 工作流程**](https://expo.dev/blog/expo-workflows-automate-your-release-process)
+Expo 宣布「工作流程」，這是針對 React Native 和 Expo 應用的全新 CI/CD 工具，透過預封裝任務（如使用 Maestro 的端對端測試）、自動化流程和智能機器選擇來簡化並加速應用發布。雖然它不能完全替代 GitHub Actions 等通用 CI/CD 解決方案，但提供了值得探索的創新改進。
+
+🎉 [Expo 發布派對](https://expo.dev/launch-party)仍在進行中，請勿錯過他們的公告！
+
+- 📣 [Expo - 推出 EAS 更新的頻道暫停功能：您可以在網頁上或透過 eas cli 暫停您的頻道](https://expo.dev/changelog/2024/11-14-channel-pausing)
+- 📜 [Expo Router 中的通用 React 伺服器元件（測試版）](https://expo.dev/blog/universal-react-server-components-developer-preview)：Expo Router 首次引入了通用 React 伺服器元件，可在原生和 Web 應用中實現伺服器端渲染。雖然由於生產版本導出不可用而尚未準備好投入生產，且主要針對函式庫作者，但這是一個令人興奮的進展，因為它能夠直接從伺服器端存取資源，如密鑰、資料庫和檔案系統，從而簡化開發並透過消除客戶端-伺服器往返來提高效能。
+- 📜 [Expo DOM 元件的魔力](https://expo.dev/blog/the-magic-of-expo-dom-components)：Expo DOM 元件讓將 Web 功能整合到 React Native 應用程式中變得更容易，它結合了 WebView 的速度和漸進式原生遷移。雖然受到 WebView 效能和與某些 Expo 功能的相容性限制，但未來的更新旨在增強原生整合並優化效能。
+
+---
+
+- 💸 [notJust Hack - React Native 開發者最頂級的線上黑客松。今年十二月 - 開發、發佈、競賽、贏取獎品！](https://bit.ly/4fDgOXX)
+- 📖 [掌握大螢幕：React Native 電視開發指南](https://www.callstack.com/ebook/mastering-the-big-screen-react-native-for-tv-guidebook)
+- 🐦 [Oskar 實作了 react-native-bottom-tabs 的 Jetpack Compose 自適應導航 POC](https://x.com/o_kwasniewski/status/1858620684706214095)
+- 🐦 [Mike 展示透過 React Native FastIO 實現 1.2GB 檔案網路傳輸](https://x.com/grabbou/status/1858920818744389947)
+- 🐦 [Jay 正在開發代號 Legend List 的新型列表元件，速度可能超越 FlashList](https://x.com/jmeistrich/status/1855663310386958840)
+- 🐦 [React Native 透過 Expo SDK 52 未公開的新模組功能實作 SwiftUI MeshGradient 元件](https://bsky.app/profile/tsapeta.dev/post/3lbf2kw75t22y)
+- 📜 [如何將 React Native 整合至現有應用程式](https://www.callstack.com/blog/how-to-integrate-react-native-with-an-existing-app)
+- 📦 [React Native 0.76.2](https://github.com/facebook/react-native/releases/tag/v0.76.2)
+- 📦 [React Native Executorch 0.1 - 透過 ExecuTorch 在裝置端運行 AI 模型](https://blog.swmansion.com/introducing-react-native-executorch-2bdb87592884)
+- 📦 [React Native SVG 15.9 - 新增 FeDropShadow 與 FeComposite 濾鏡](https://github.com/software-mansion/react-native-svg/releases/tag/v15.9.0)
+- 📦 [React Native Gesture Handler 2.21 - 網頁端雙指平移手勢、新增 `ReanimatedDrawerLayout` 元件](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.21.0)
+- 📦 [React Native Screens 4.1 & 4.2 - 修復舊架構 iOS 模態動畫問題、支援 iOS 透明大標題](https://github.com/software-mansion/react-native-screens/releases/tag/4.2.0)
+- 📦 [React Native Video 6.8 - 網頁支援與 HLS 影片快取](https://github.com/TheWidlarzGroup/react-native-video/releases/tag/v6.8.0)
+- 📦 [React Native Skia 1.5.4 - 實驗性 Graphite (Vulkan/Metal) 後端（透過建置標記啟用）](https://github.com/Shopify/react-native-skia/releases/tag/v1.5.4)
+- 📦 [React Native Turbo Haptics - 高效、相容 worklet 的觸覺回饋](https://github.com/christianbaroni/react-native-turbo-haptics)
+- 📦 [React Native Yoga JSI 0.1](https://github.com/Swami-Laxmikant/react-native-yoga-jsi)：此實驗性函式庫讓您能在 JS 端存取 Yoga API，可搭配 React Native Skia 等函式庫在畫面上排版元素。
+- 🎙️ [Rocket Ship 54 - 與 Kim Chouard 探討 React Native 音樂遊戲（Skia, NativeWind, Expo AV）](https://share.transistor.fm/s/34b8c9fc)
+- 🎥 [Simon Grimm - Expo SDK 52：DOM、RSC、路由、新架構與套件](https://www.youtube.com/watch?v=OROMGU3jq6E)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [Deno - 支援導入 wasm 模組](https://github.com/denoland/deno/issues/2552)
+- 👀 [ES TC39 提案 `import.sync()` 進入 stage 0](https://github.com/guybedford/proposal-import-sync)
+- 📜 [使用 Deno Compile 建立自包含可執行程式](https://deno.com/blog/deno-compile-executable-programs)
+- 📜 [在 Chrome DevTools 效能面板中直接標註追蹤記錄](https://developer.chrome.com/blog/devtools-annotations?hl=en)
+- 📜 [JavaScript 應用中的 dependencies 與 devDependencies](https://angelika.me/2024/11/11/dependencies-vs-dev-dependencies-javascript-apps/)
+- 📦 [Angular 19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84)
+- 📦 [Bun v1.1.35](https://bun.sh/blog/bun-v1.1.35)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![React 19 即將到來](/emails/issues/210/meme2.jpg)](https://bsky.app/profile/sebastienlorber.com/post/3lay3dhefgc2o)
+
+[![內嵌函式破壞記憶化](/emails/issues/210/meme1.jpg)](https://x.com/shuding_/status/1844678879748723059)
+
+[![Angular 做得漂亮](/emails/issues/210/meme3.jpg)](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3lbfdts6p6c27)
+
+再會！👋

@@ -1,0 +1,150 @@
+---
+slug: /178
+title: "This Week In React #178: Remix and Vite, Type-safe Children, Astro DB, React Compiler, Firebolt, Vitest, Composition, Remix Nitro, RSC in React Native, TenTap, Expo Atlas, TypeScript, Elysia..."
+authors: [slorber, bndkt]
+date: 03-20-2024
+---
+
+大家好！
+
+本週對我來說是特別且重要的一週。我暫停了通訊的發送，但這次不是空窗期（像之前那樣），而是由 [Benedikt](https://twitter.com/bndkt) 為大家撰寫整期通訊。現在交棒給 Benedikt！
+
+---
+
+過去一週新發布的消息不多，也許大家都在為即將到來的會議季儲備重磅消息。Astro 公布了更多關於其新資料庫的細節，同時發布了開發者入口網站，初期作為主題市集但未來將涵蓋整合功能。Remix 現已轉為 Vite 優先開發，Vercel 則發布了新的 AI 聊天機器人模板。在 React 區塊大量關於 React Server Components 的消息後，本週我們在 React Native 區塊也看到相關動態。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本通訊](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Headless CMS with Inline Visual editing for Next.js](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)
+
+**[支援行內視覺編輯的 Next.js Headless CMS](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)**
+
+[**1 分鐘內完成專案設定**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)，透過 CLI 定義自訂視覺區塊作為 React 元件，使用任何 CSS 框架實現像素級完美企業品牌。試用新版支援 Server Components 的 Next.js starter！
+
+內容編輯者能直觀組合頁面視覺區塊，如同使用文書處理器般簡便，同時完整保留設計規範。
+
+React Bricks 具企業級功能：數位資產管理、進階 SEO、即時協作、排程發布、多語言支援、外部 API 整合、審核流程、多環境部署、變更歷程記錄等。
+
+獲 The Weather Channel、Deel.com、La Banque Postale 等企業客戶及全球超過 9,000 名用戶信賴。
+[**立即開始使用！**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)
+
+---
+
+## ⚛️ React {#react}
+
+[![Remix Vite-first](/emails/issues/178/remix_heart_vite.jpg)](https://twitter.com/markdalgleish/status/1770224011831890036)
+
+🐦 [**Remix 現已轉為 Vite 優先**](https://twitter.com/markdalgleish/status/1770224011831890036)
+
+經過短暫過渡期（Remix 將 Vite 整合標記為實驗性功能）後，現已正式標記為穩定版並立即成為新預設值。個人非常樂見此快速轉變，認為 Remix 結合 Vite 是強力組合。採用 Vite 作為 Remix 的開發環境與編譯器，讓 Remix 團隊能縮減維護範圍，專注於核心框架能力，實為良策！新建的 Remix 專案現在僅需透過引用 Remix 插件的 Vite 設定檔，我認為這是極佳的簡化實例！
+
+- 💸 [Document Generation with Apryse - Transforming Templates into Tailored Documents with React](https://apryse.com/blog/docx-generation-from-templates-react?utm_source=email&utm_medium=newsletter&utm_campaign=thisweekinreact4)
+- 📜 [Astro DB: A Deep Dive](https://astro.build/blog/astro-db-deep-dive/): Astro partnered with Turso to integrate libSQL. Also interesting to read why they thought about and ultimately didn’t choose Cloudflare’s D1.
+- 📜 [The Astro Developer Portal](https://astro.build/blog/dev-portal/): An official theme marketplace for Astro.
+- 📜 [How Next.js breaks React Fundamentals](https://ondrejvelisek.github.io/how-nextjs-breaks-react-fundamentals/): I don’t agree with the title and the conclusion, but it’s still an interesting exploration of the limitations of RSC (most of them not specific to Next.js).
+- 📜 [Type system of the React compiler](https://www.recompiled.dev/blog/type-system/): This is quite deep and theoretical, but if you want to learn more about the relation of compilers and type inference, it might be interesting to you.
+- 📜 [Two Types of Composition](https://kyleshevlin.com/two-types-of-composition/): I think sometimes it’s good to revisit the fundamentals of what we’re doing as developers every day. Composition is one of React’s basic principles, and this article looks at the basics of nesting composition and merging composition.
+- 📜 [Migrate Next.js app away from "Vercel + PlanetScale" to "Fly.io"](https://www.crispyscript.com/articles/13)
+- 📜 [Astro Studio - first impression](https://maciekpalmowski.dev/blog/astro-studio-first-impression/)
+- 📜 [You Are Leaking Your Next.js Application Features](https://www.rexforde.com/blog/conditional-render-problem)
+- 📜 [Embracing the Future and Moving Back Again: From Server Actions to tRPC](https://documenso.com/blog/removing-server-actions)
+- 📜 [You Can't Make Children "Type Safe" in React & TypeScript](https://www.totaltypescript.com/type-safe-children-in-react-and-typescript)
+- 📜 [How to test React custom hooks and components with Vitest](https://www.thisdot.co/blog/how-to-test-react-custom-hooks-and-components-with-vitest)
+- 📜 [OpenTelemetry in Practice: Instrumenting JavaScript Apps for Tracing](https://marmelab.com/blog/2024/03/14/opentelemetry-in-practice-instrumenting-javascript-apps-for-tracing.html)
+- 🗓 [React Connection - 22 April](https://reactconnection.io/) + [React-Native Connection - 23 April](https://reactnativeconnection.io/) - 🇫🇷 Paris - 2 days of web/mobile conferences. Get a -20% discount with code "TWIR".
+- 📦 [Firebolt](https://firebolt.dev/): A new simple React framework that reminds a bit of Remix. See also the [introductory blog post](https://firebolt.dev/blog/introducing-firebolt). RSC support is in progress.
+- 📦 [remix-nitro - An example on how to run Remix with Nitro with HMR using Vite's 5.1 experimental runtime API](https://github.com/alessandrojcm/remix-nitro)
+- 📦 [remix-hono v0.0.16 - now on Hono v4](https://github.com/sergiodxa/remix-hono/releases/tag/v0.0.16)
+- 📦 [Next.js AI Chatbot 2.0 - Now on AI SDK 3.0](https://vercel.com/changelog/next-js-ai-chatbot-2-0)
+- 🎥 [Daniel Kanem - Understanding the Steps of Migrating Your Remix App to Vite.js](https://www.youtube.com/watch?v=CTgQhNFqn5E)
+- 🎥 [Brooks Lybrand - Deploying Remix to GitHub Pages](https://www.youtube.com/watch?v=EO_-KwSslWQ)
+- 🎥 [Theo Browne - Million Lint](https://youtu.be/fcY9TthQnI4?si=bROdHJmIumw24AlO)
+- 🎥 [UI Engineering - Goodbye, forwardRef](https://www.youtube.com/watch?v=m4QbeS9BTNU)
+- 🎥 [Jack Herrington - Pigment-CSS: Material-UI Fixed on NextJS and React 19](https://www.youtube.com/watch?v=fyja_ldjxwA)
+- 🎙️ [Rocket Ship 34 - React Architecture Tips with Charlotte Isambert](https://share.transistor.fm/s/48a4b223)
+- 🎙️ [PodRocket - Partial pre-rendering in Next.js with Delba de Oliveira and Wyatt Johnson](https://podrocket.logrocket.com/partial-pre-rendering-next-js-delba-oliveira-wyatt-johnson)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![FormBuilder SDK for React](/emails/issues/171/tripetto.jpg)](https://tripetto.com/sdk/this-week-in-react/?utm_source=thisweekinreact&utm_medium=sponsor&utm_campaign=sdk)
+
+**[React 的 FormBuilder SDK](https://tripetto.com/sdk/this-week-in-react/?utm_source=thisweekinreact&utm_medium=sponsor&utm_campaign=sdk)**
+
+適用於 React 專案的完整表單解決方案，被財富 500 強企業採用。提供易用的開源元件，可在 React 應用中建置和運行強大的表單。具備詳盡文件、快速部署（數分鐘內完成）及高度可定制性。
+
+- 表單建構器：創建強大表單；
+- 執行器：部署表單並收集資料；
+- 靈活的表單佈局（對話式、聊天式等）與樣式；
+- 可擴展自訂問題類型；
+- 完整文件、範例和演示；
+- 無外部依賴的自託管方案；
+- 免費開始、測試與完善。
+
+TWIR 獨家優惠：[立即獲取 FormBuilder SDK 授權 25% 折扣](https://tripetto.com/sdk/this-week-in-react/?utm_source=thisweekinreact&utm_medium=sponsor&utm_campaign=sdk)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Native 的伺服器元件](/emails/issues/178/rn_rsc.jpg)](https://github.com/mui/material-ui/tree/master/packages/pigment-css-react)
+
+🐦 [**React Native 上 React Server Components 的示範**](https://twitter.com/SzymonRybczak/status/1769747995862384756)
+
+會議季即將來臨，公告逐漸減少，因為大家都在為大型舞台保留最佳內容。在即將到來的會議中，我最期待深入了解的主題之一是 React Native 上的 React Server Components。Callstack 的 Szymon Rybczak 現已發布了在 RN 中運行 RSC 的有趣示範。我對此非常好奇，也很高興 Szymon 宣布將很快發布詳細的技術文章和程式碼。
+
+- 💸 [React Universe Conf - 提交演講提案的最後幾天：CFP 將於 3 月 22 日截止。不想在 RUC 發表演講？立即搶購早鳥票！](https://www.reactuniverseconf.com/?utm_campaign=React_Universe_Conf&utm_source=email&utm_content=This_Week_in_React)
+- 📖 [Expo 文件：從 CodePush 遷移](https://docs.expo.dev/eas-update/codepush/)：Visual Studio App Center 預計將於 2025 年 3 月 31 日停止服務。CodePush 用戶應開始考慮替代方案。
+- 📜 [什麼是 Expo Router？](https://www.themorrow.digital/blog/what-is-the-expo-router)
+- 📜 [React 導航與狀態機 - 完善應用流程](https://www.bam.tech/article/react-navigation-state-machine-perfecting-app-flows)：探索如何在 React Navigation 中實現複雜流程的有趣研究，使用狀態機或自訂導航器。
+- 📜 [Expo 部落格 - 設定下一個 Expo 專案的 12 個技巧](https://expo.dev/blog/12-tips-for-setting-up-your-next-expo-project)：部分技巧相當明顯（如使用 TS），但開發/生產環境的應用變體或自動建置版本控制等建議仍是寶貴提醒。
+- 📜 [緊急情況下的 OTA（空中傳送）部署](https://www.callstack.com/blog/ship-over-the-air-when-in-an-emergency)
+- 📦 [TenTap - 適用於 React Native 的類型化、可自訂且可擴充的富文本編輯器](https://github.com/10play/10tap-editor)
+- 📦 [React Native 0.74.0-rc.4](https://github.com/facebook/react-native/releases/tag/v0.74.0-rc.4)
+- 📦 [expo-atlas - 用於檢查 Metro bundle 統計資料的實驗性函式庫](https://github.com/byCedric/expo-atlas)
+- 📦 [適用於除錯 React Native MMKV 的新 Expo 開發工具外掛](https://www.npmjs.com/package/@dev-plugins/react-native-mmkv)
+- 📦 [首個 Expo SDK 51 canary 版本現已推出](https://www.npmjs.com/package/expo/v/51.0.0-canary-20240318-dd8f245)
+- 🎙️ [RNR 291 - RNR 講解：開發者選單](https://reactnativeradio.com/episodes/rnr-291-rnr-explains-the-dev-menu)
+- 🎥 [適用於通用 React 應用程式的最佳技術堆疊](https://www.youtube.com/watch?v=2yvjgwTZOUY)
+- 🎥 [使用 Expo Modules 建立原生函式庫](https://www.youtube.com/watch?v=UczTzTBYRhA)
+- 🎥 [如何為 Expo 專案建立應用圖示和啟動畫面](https://www.youtube.com/watch?v=QSNkU7v0MPc)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [TypeScript 5.5 PR 已合併 - 透過控制流程分析從函數主體推斷類型謂詞](https://github.com/microsoft/TypeScript/pull/57465)
+- 📜 [透過 Vitest 和 workerd 改進 Cloudflare Workers 測試](https://blog.cloudflare.com/workers-vitest-integration/)
+- 📜 [使用 TypeScript 建構 Node 應用程式](https://www.totaltypescript.com/typescript-and-node)
+- 📜 [類型謂詞推斷：無人預期的 TS 5.5 功能](https://www.totaltypescript.com/type-predicate-inference)
+- 📜 [隱藏擴充功能請求及更多 Network 面板改進](https://developer.chrome.com/blog/network-panel-improvements?hl=en)
+- 📜 [在 Node.js 中 require(esm)](https://joyeecheung.github.io/blog/2024/03/18/require-esm-in-node-js/)
+- 📜 [比較 ECMAScript 模組與 CommonJS](https://wanago.io/2024/03/18/ecmascript-modules-esm-commonjs/)
+- 📜 [Node.js Worker Threads 初學者指南](https://betterstack.com/community/guides/scaling-nodejs/nodejs-workers-explained/)
+- 📦 [Elysia 1.0 - Bun 網頁框架](https://elysiajs.com/blog/elysia-10)
+- 📦 [Bun 1.0.31](https://bun.sh/blog/bun-v1.0.31)
+- 📦 [AnalogJS 1.0 - Angular 元框架](https://dev.to/analogjs/announcing-analogjs-10-19an)
+- 📦 [Rsbuild 0.5 - Lightning CSS](https://rsbuild.dev/community/releases/v0-5)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![掉幀](/emails/issues/178/meme.jpg)](https://twitter.com/ryanflorence/status/1769842701904822774)
+
+下次見！👋

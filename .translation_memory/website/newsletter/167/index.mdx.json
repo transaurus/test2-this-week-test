@@ -1,0 +1,581 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/167/index.mdx",
+  "source_file_content_hash": "dff75ad3f159a8c5989f1210e35ab1a0f2ade13418549a5254683575e9133aca",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /167\ntitle: \"This Week In React #167: Aria Components, Hydration, Remix, Server Components, useSyncExternalStore, cache, perf, Glow, Unistyles, Expo, :has(), Tailwind, date-fns...\"\nauthors: [slorber, bndkt]\ndate: 12-19-2023\n---",
+      "source_content_hash": "0c30e8f1863b28c54f4f4edbaa9948165d34e8c2c85ef08a7504a7d42a8e30b4",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Once again this week, we have a good mix of articles and releases.",
+      "source_content_hash": "c08450b170956a4100d070c47cd7f34447db1c28bd13f516d71d358618bfae82",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週我們再次為您精選了多篇文章與技術發布。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Firefox 121 is out, making [CSS `:has()`](https://twitter.com/stefanjudis/status/1737366970566053927) officially cross-browser supported 🥲",
+      "source_content_hash": "b50fab417ace743f0cf57335c0464365a20b296d8dd3fa1474d4c0dbc13d447a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Firefox 121 正式發布，這使得 [CSS `:has()`](https://twitter.com/stefanjudis/status/1737366970566053927) 成為跨瀏覽器全面支援的功能 🥲"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "That's the last issue of the year. The newsletter should be back on January 3.",
+      "source_content_hash": "6467f3e850be37c770370b5055947ea86e861ee897a463661ba4ddd51bf6234b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這是本年度的最後一期通訊。我們將於 1 月 3 日恢復更新。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Happy New Year and Merry Christmas everyone, and thank you for reading me throughout the year ❤️️",
+      "source_content_hash": "1e48275b1e033867062b67a58f5f69d0f763149d34e7bc7929815f7b702d59d4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "祝大家新年快樂、聖誕愉快，並衷心感謝您這一整年的閱讀陪伴 ❤️️"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_45c63027"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**💡 [在 Twitter 上查看本期通訊](https://slo.im/thread) - 視覺化格式 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0adfe0aa",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_0adfe0aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1941846d",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_1941846d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5403c6e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d06306f7",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[![FrontendMasters – Complete React.js Learning Path to Senior React Developer](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)",
+      "source_content_hash": "6694a448896b203e9ea63a53fa2c39970f7ea644592e59443cbcdfb354aaa7da",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![FrontendMasters – 從初階到資深的完整 React.js 學習路徑](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "**[FrontendMasters – Complete React.js Learning Path to Senior React Developer](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**",
+      "source_content_hash": "096b3d9bc3d7b486e46be5772b2705462e0dc3d5e9d9acc07c30f6f2d93e6ace",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[FrontendMasters – 從初階到資深 React 開發者的完整學習路徑](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Learn React.js from the ground up to advanced topics like performance, testing, and code quality. Start by building a real-world app in the Complete Introduction to React. Continue with Intermediate React, integrating the most popular tools from the ecosystem. Then learn performance, TypeScript, and even Next.js, the fullstack React framework!",
+      "source_content_hash": "e17c755b1aba7ee0aa6d9a6d04fb708ada63619379555fc2d4d852b7115f5723",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "從基礎開始學習 React.js，逐步進階至效能優化、測試與程式碼品質等主題。先透過《React 完整入門》建構真實應用，接著在《中階 React》課程整合生態系熱門工具，最後深入效能調校、TypeScript 乃至全端框架 Next.js！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "91afe33f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "782c902a",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[![**React Aria Components 1.0**](/emails/issues/167/reactaria.jpg)](https://react-spectrum.adobe.com/releases/2023-12-20.html)",
+      "source_content_hash": "ff7885203428fe353faa0281151315b1b45c4a07a79d5846d201a269704abe11",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![**React Aria Components 1.0**](/emails/issues/167/reactaria.jpg)](https://react-spectrum.adobe.com/releases/2023-12-20.html)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[**React Aria Components 1.0**](https://react-spectrum.adobe.com/releases/2023-12-20.html)",
+      "source_content_hash": "61ccb53fd6079a69fb11d69c699508f30fee9ca5e76d40566fb84e1334b3f2e6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**React Aria Components 1.0**](https://react-spectrum.adobe.com/releases/2023-12-20.html)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "Devon just 🐦 [announced](https://twitter.com/devongovett/status/1737516074663362843) the stable release of React Aria Components 1.0. Over 40 components with built-in behavior, adaptive interactions, top-tier accessibility, and internationalization out of the box, ready for your styles.",
+      "source_content_hash": "e2448dabef726e62672dc20733d16cf32a69e0178f76fdee9484211426a4ccd0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Devon 剛在 🐦 [宣布](https://twitter.com/devongovett/status/1737516074663362843) React Aria Components 1.0 穩定版發布。超過 40 個元件具備內建行為、自適應互動、頂級無障礙支援與開箱即用的國際化功能，隨時可套用您的設計風格。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "406f2538",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "[![**React Hydration Overlay**](/emails/issues/167/hydration.jpg)](https://www.builder.io/blog/announcing-react-hydration-overlay)",
+      "source_content_hash": "2c626a6af2573b5953d86d823cb2987bdff2576a4249cb1c21914e5489468dff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![**React Hydration Overlay**](/emails/issues/167/hydration.jpg)](https://www.builder.io/blog/announcing-react-hydration-overlay)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "[**React Hydration Overlay - Easily Squash Hydration Errors**](https://www.builder.io/blog/announcing-react-hydration-overlay)",
+      "source_content_hash": "fc0b6792bb3261d204d51cbfc12371dcbfda5f2614a19d01e44e846d586f88ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**React Hydration Overlay - 輕鬆修復水合錯誤**](https://www.builder.io/blog/announcing-react-hydration-overlay)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "A brand-new project that permits to add a handy error overlay to help debugging hydration errors. For now, this can be added to Next.js sites thanks to a Webpack plugin, but this is a much-needed feature that we all hope to see land in React core.",
+      "source_content_hash": "dcaa6b675ec62dccbaaafc1f38c5db3fcc0b375fc2fbfc8b4b32940b024fa7a7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "全新推出的專案能添加便捷的錯誤疊加層，協助除錯水合錯誤(hydration errors)。目前可透過 Webpack 插件整合至 Next.js 站台，這項迫切需求的功能有望未來納入 React 核心。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "716da8e8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e3321a43",
+      "source_content": "- 💸 [Take the Developer Nation Survey - A virtual goody bag packed with free data, promo codes for event tickets, courses, tools & platforms is waiting at the end of the survey!](https://developereconomics.net/?member_id=thisweekinreact&utm_medium=nl_ad3)\n- 👀 [Remix PR - unstable_serverBundles - split your route tree](https://github.com/remix-run/remix/pull/8332)\n- 📖 [React Docs Update](https://github.com/reactwg/server-components/discussions/7): an overview of all the new official docs pages that were recently published on React.dev, including `use`, `cache`, `form` and many other experimental/canary APIs. There's even a \"Coming Soon\" section referencing docs for new [static resource preloading APIs](https://github.com/reactjs/react.dev/pull/6459).\n- 📖 [Updated Next.js testing docs - using App Router and TypeScript](https://nextjs.org/docs/app/building-your-application/testing)\n- 📜 [Concurrent React, External Stores, and Tearing](https://interbolt.org/blog/react-ui-tearing/): An advanced article explaining how React can end up displaying an inconsistent UI (tearing). `useSyncExternalStore` helps to render a consistent UI, but it can also de-optimize your React transitions. See also the [Tearable Dots interactive demo](https://tearabledots.com/).\n- 📜 [Explaining React's cache Function](https://unicorn-utterances.com/posts/explaining-reacts-cache-function): interactive article presenting the experimental React API, and how it differs from `useMemo`. It permits cross-component caching and can be used to preload data.\n- 📜 [How to Get Rid of “Window is Not Defined” and Hydration Mismatch Errors in Next.js](https://medium.com/@eric.burel/how-to-get-rid-of-window-is-not-defined-and-hydration-mismatch-errors-in-next-js-567cc51b4a17): Shares 5 tips to avoid React hydration problems.\n- 📜 [React Tricks: Fast, Fit and Fun](https://molefrog.com/notes/react-tricks): React perf lessons learned from building Wouter, a React router.\n- 📜 [Netlify’s Disingenuous Survey-based Attack on Next.js (and Eleventy, too)](https://www.zachleat.com/web/netlify-and-nextjs/): Eleventy creator's criticism of how Netlify presented their State of Web Dev survey results.\n- 📜 [Upcoming React and React-Native Conferences for 2024](https://thoughtbot.com/blog/upcoming-react-and-react-native-conferences-for-2024)\n- 📜 [What is Reactivity?](https://unicorn-utterances.com/posts/what-is-reactivity)\n- 📜 [What are React Server Actions?](https://unicorn-utterances.com/posts/what-are-react-server-actions)\n- 📜 [What is React Suspense and Async Rendering?](https://unicorn-utterances.com/posts/what-is-react-suspense-and-async-rendering)\n- 📜 [The Complete Guide To React Suspense](https://www.debugbear.com/blog/guide-to-react-suspense)\n- 📜 [Migrating from Jest to Vitest for your React Application](https://dev.to/opensauced/migrating-from-jest-to-vitest-for-your-react-application-1b75)\n- 📜 [Access the Search Params of a Request in Remix](https://sergiodxa.com/tutorials/access-the-search-params-of-a-request-in-remix)\n- 📦 [Remix 2.4.0 with client data](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v240): The first Remix release to land their Client Data RFC, which allows querying data APIs directly from the client (skipping the server).\n- 📦 [React-Glow - Mouse-tracing glow effect](https://github.com/codaworks/react-glow)\n- 📦 [next-export-i18n 3.0 - App Router support](https://github.com/martinkr/next-export-i18n)\n- 🎥 [Ben Holmes - React server components from scratch](https://www.youtube.com/watch?v=MaebEqhZR84): a great video showing how to implement a full RSC setup from scratch, including streaming, bundling, component routing, handling SSR, resolving client references...",
+      "source_content_hash": "536e06a4626bf3740af667be40ad1291f57e9ac530975f8d51362fc3fe4aee59",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [參與 Developer Nation 調查問卷 - 調查結束後，您將獲得一個裝滿免費資料、活動門票促銷代碼、課程、工具和平台的虛擬禮品包！](https://developereconomics.net/?member_id=thisweekinreact&utm_medium=nl_ad3)\n- 👀 [Remix PR - unstable_serverBundles - 拆分你的路由樹](https://github.com/remix-run/remix/pull/8332)\n- 📖 [React 文件更新](https://github.com/reactwg/server-components/discussions/7)：概述所有近期在 React.dev 發布的新官方文件頁面，包括 `use`、`cache`、`form` 等實驗性/Canary API。甚至還有「即將推出」章節參考新的[靜態資源預加載 API](https://github.com/reactjs/react.dev/pull/6459)文件。\n- 📖 [更新 Next.js 測試文件 - 使用 App Router 和 TypeScript](https://nextjs.org/docs/app/building-your-application/testing)\n- 📜 [並行 React、外部儲存與畫面撕裂](https://interbolt.org/blog/react-ui-tearing/)：進階文章解釋 React 如何可能顯示不一致的 UI（畫面撕裂）。`useSyncExternalStore` 有助於渲染一致的 UI，但也可能使 React 轉換效果去優化。另見[可撕裂點互動演示](https://tearabledots.com/)。\n- 📜 [解說 React 的 cache 函數](https://unicorn-utterances.com/posts/explaining-reacts-cache-function)：互動式文章介紹實驗性 React API 及其與 `useMemo` 的差異。它允許跨組件快取，並可用於預加載資料。\n- 📜 [如何在 Next.js 消除「Window is Not Defined」與 Hydration 不匹配錯誤](https://medium.com/@eric.burel/how-to-get-rid-of-window-is-not-defined-and-hydration-mismatch-errors-in-next-js-567cc51b4a17)：分享 5 個避免 React hydration 問題的技巧。\n- 📜 [React 技巧：快速、合適且有趣](https://molefrog.com/notes/react-tricks)：從建構 Wouter（React 路由器）中學到的 React 效能經驗。\n- 📜 [Netlify 對 Next.js（及 Eleventy）不真誠的調查式攻擊](https://www.zachleat.com/web/netlify-and-nextjs/)：Eleventy 創建者批評 Netlify 呈現其「Web 開發狀態」調查結果的方式。\n- 📜 [2024 年 React 與 React-Native 會議預告](https://thoughtbot.com/blog/upcoming-react-and-react-native-conferences-for-2024)\n- 📜 [什麼是響應式？](https://unicorn-utterances.com/posts/what-is-reactivity)\n- 📜 [什麼是 React 伺服器操作？](https://unicorn-utterances.com/posts/what-are-react-server-actions)\n- 📜 [什麼是 React Suspense 與非同步渲染？](https://unicorn-utterances.com/posts/what-is-react-suspense-and-async-rendering)\n- 📜 [React Suspense 完全指南](https://www.debugbear.com/blog/guide-to-react-suspense)\n- 📜 [將 React 應用從 Jest 遷移至 Vitest](https://dev.to/opensauced/migrating-from-jest-to-vitest-for-your-react-application-1b75)\n- 📜 [在 Remix 中存取請求的搜尋參數](https://sergiodxa.com/tutorials/access-the-search-params-of-a-request-in-remix)\n- 📦 [Remix 2.4.0 支援客戶端資料](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v240)：首個實現 Client Data RFC 的 Remix 版本，允許直接從客戶端查詢資料 API（跳過伺服器）。\n- 📦 [React-Glow - 滑鼠追蹤發光效果](https://github.com/codaworks/react-glow)\n- 📦 [next-export-i18n 3.0 - 支援 App Router](https://github.com/martinkr/next-export-i18n)\n- 🎥 [Ben Holmes - 從零開始實作 React 伺服器元件](https://www.youtube.com/watch?v=MaebEqhZR84)：精彩影片展示如何從頭實現完整 RSC 設定，包含串流、打包、元件路由、處理 SSR、解析客戶端參考..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5f852894",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_5f852894"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aac83236",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "66819c78",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "[![notJust Dev](/emails/issues/167/notjustdev.jpg)](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)",
+      "source_content_hash": "48a5b37c5ddfc72f82f38455002478f1b0163c90e85649d0e1b4df4b8f5284e9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![notJust Dev](/emails/issues/167/notjustdev.jpg)](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "**[Are you a React Native developer or on your way to becoming one?](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)**",
+      "source_content_hash": "39d3c86c5702e58b14280d919ffb85ddf1fed23444f62d0362dc2c5bb5e84467",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[您是 React Native 開發者或正在成為其中一員嗎？](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "Good news! You’ve found your endless source of skills!",
+      "source_content_hash": "59b9badf808d2e35bfeb89f6fee3ba688fb8f15b44df81a5d1be5a1d2508e7bf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "好消息！您已找到了源源不絕的技能寶庫！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "🎄 [**Here**](https://www.youtube.com/watch?v=bIQII7gTXDE&list=PLY3ncAV1dSVA9ltOEMgzT8ZTZiccpOUkX) is #**DEVember -** a month-long Marathon of React Native Tutorials",
+      "source_content_hash": "4501e0afcf19f9b31c23c0ad688915a1623924de1f263c3d39679a6913597a3d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🎄 [**點此**](https://www.youtube.com/watch?v=bIQII7gTXDE&list=PLY3ncAV1dSVA9ltOEMgzT8ZTZiccpOUkX) 查看 #**DEVember** - 為期一個月的 React Native 教學馬拉松"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "🚀 [**Here**](https://academy.notjust.dev/?utm_source=newsletter&utm_medium=Course&utm_campaign=thisweekinreact#section-1687709246499) is our **Full Stack Mobile Developer** course with more than 550 real success stories from graduates.",
+      "source_content_hash": "92aa9515ef448b0d283fe0ad0bc71c3793887174f930001fe84e78e3f6d93d18",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🚀 [**點此**](https://academy.notjust.dev/?utm_source=newsletter&utm_medium=Course&utm_campaign=thisweekinreact#section-1687709246499) 探索我們的 **全端行動開發者課程**，已有超過 550 位畢業生成功轉職"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "💌 [**Here**](https://assets.notjust.dev/profile?utm_source=newsletter&utm_medium=OurNewsletter&utm_campaign=thisweekinreact) is our **Newsletter** with the TOP selection of news and life hacks about the world of React Native development.",
+      "source_content_hash": "bf43bfa609cf622f1be4d06a90ab9ac8c4e2aebbbda1b3742faf8f99763d1bf0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "💌 [**點此**](https://assets.notjust.dev/profile?utm_source=newsletter&utm_medium=OurNewsletter&utm_campaign=thisweekinreact) 訂閱我們的 **技術週報**，獲取 React Native 開發領域精選新聞與實用技巧"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "All our content is **Project-Based-Learning** - which means that you will be learning the **skills** and adding **projects** to your portfolio at the same time!",
+      "source_content_hash": "390dce7d040bfe5e0d4e15038d40db471fec6082b183a321aadfcc2edf6c1366",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "所有內容皆採用 **專案導向學習法** - 代表您在學習 **技能** 的同時，也能為作品集增添 **實戰專案**！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "_PS: Subscribe to our_ [**_YouTube channel_**](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)_. Today we are building a_ **_ChatGPT Wrapper_** \\_with Expo Router V3 & API Routes!",
+      "source_content_hash": "eb2c730f86ca7ea3bb5603a378429a35a1e2597f90f7168c5e0e1e83f8b68d67",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "_附註：立即訂閱我們的_ [**_YouTube 頻道_**](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)_. 今日我們將使用 Expo Router V3 和 API Routes 打造_ **_ChatGPT 封裝應用_**！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fc25fa9c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "94145a94",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "[![Unistyles 2.0](/emails/issues/167/unistyles20.jpg)](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)",
+      "source_content_hash": "6126efbe2ff5ad61c49347ee4494cb1d52c7e76ef42662ba85f0c4e23f40882e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Unistyles 2.0](/emails/issues/167/unistyles20.jpg)](https://www.youtube.com/@notjustdev/live?sub_confirmation=1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "[**Welcome to Unistyles 2.0!**](https://www.reactnativecrossroads.com/posts/unistyles-2-preview)",
+      "source_content_hash": "dada624ef519a2370ff63184ee69ae45e616ce417b8bed07d75fb73e3830f6c4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**歡迎使用 Unistyles 2.0！**](https://www.reactnativecrossroads.com/posts/unistyles-2-preview)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "Unistyles is a cross-platform styling library. It is built as a superset of StyleSheet (if you use React Native, you’re probably familiar with StyleSheet.create …) similar to how TypeScript is a superset of JavaScript. First released just three months ago, it has since gained over 500 stars on GitHub and is now approaching its second major version with enhanced TypeScript types, no dependence on React Context anymore, and fresh C++ bindings to boost performance. A very interesting new feature is the addition of plugin support, which could enable some interesting new use cases.",
+      "source_content_hash": "56873c80304fa92a1bd2857a4586504714e5446e067fe06241714086b3282f38",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Unistyles 是一款跨平台樣式庫，作為 StyleSheet 的超集構建（若您使用 React Native，可能熟悉 StyleSheet.create...），類似 TypeScript 之於 JavaScript 的關係。該庫於三個月前首次發布，已在 GitHub 獲得超過 500 顆星，現正邁向第二個主要版本：強化 TypeScript 型別、不再依賴 React Context，並採用全新 C++ 綁定以提升效能。最引人注目的新功能是插件支援，有望開啟創新應用場景。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c5a1374",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0465fca",
+      "source_content": "- 💸 [AnimateReactNative - Premium and Custom React Native animations](https://www.animatereactnative.com/?utm_source=thisweekinreact.com)\n- 🐦 [Evan Bacon - \"Expo Router v3 now has full support for popular web libraries like Radix, Tailwind, Shadcn UI, etc.](https://twitter.com/Baconbrix/status/1735011941431595149)\n- 📖 [Expo Guide on How to use the New Architecture](https://docs.expo.dev/guides/new-architecture/): All `expo-*` packages except expo-updates support the new architecture. Support for `expo-updates` is planned for Expo SDK 51.\n- 📜 [Expo 2023 - The year in review](https://expo.dev/changelog/2023/12-20-2023-year-in-review): An overview of everything Expo launched this year, including Expo Orbit, Expo Router, EAS improvements, 3 SDKs, Expo Modules API and much more.\n- 📜 [Xcode 15.1 image is now available on EAS Build](https://expo.dev/changelog/2023/12-19-eas-build-xcode-15.1-image): Xcode 15.1 primarily fixes bugs.\n- 📜 [Optimizing Performance in React-Native: Tips and Techniques](https://thoughtbot.com/blog/optimizing-performance-in-react-native-tips-and-techniques): Tutorial on how to apply memoization, use virtualized lists, optimize images, debounce, optimize bundle size and network requests\n- 📜 [Building AR face masks in React Native](https://blog.logrocket.com/building-ar-face-masks-react-native/): How to load and apply 3D face masks using DeepAR\n- 📜 [Introducing docs.infinite.red — A New Home for Infinite Red’s Documentation - Ignite, Reactotron, RN MLKit, Gluegun](https://shift.infinite.red/introducing-docs-infinite-red-a-new-home-for-infinite-reds-documentation-6f4b25f7a1a4)\n- 📜 [Universal Medusa: The why, when and how of universal e-commerce apps with Medusa.js, Expo and Next.js](https://bidah.hashnode.dev/universal-medusa-the-why-when-and-how-of-universal-e-commerce-apps-with-medusajs-expo-and-nextjs)\n- 📦 [React Native 0.73.1 is out](https://github.com/facebook/react-native/releases/tag/v0.73.1): Adds `enableNetworkInspector` to enable Network panel and CDP handlers in inspector proxy, bumps CLI to 12.3.0\n- 📦 [React Native Windows 0.73.1 is out](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.73.1): Brings React Native 0.73 to Windows\n- 📦 [Repack 3.7 - 0.73 compat](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%403.7.0)\n- 🎥 [Ignite 9 video overview by Jamon Holmgren](https://youtu.be/QmkMsUYrTlk?si=p9rvLM-EMggZNcft)\n- 🎙️ [Rocket Ship #021 - The React Native IDE with Krzysztof Magiera](https://podcast.galaxies.dev/episodes/021-the-react-native-ide-with-krzysztof-magiera)\n- 🎙️ [React Native Radio 283 - From side-project to acquisition!](https://reactnativeradio.com/episodes/rnr-283-from-side-hustle-to-top-charts-with-simon-reggiani)",
+      "source_content_hash": "9fe99c6bf3f8815f3e469a395eb1ea8a022c80bed08d70affac5bc7769479b14",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {
+        "zh-hant": {
+          "translation": "- 💸 [AnimateReactNative - 高級和自訂的 React Native 動畫](https://www.animatereactnative.com/?utm_source=thisweekinreact.com)\n- 🐦 [Evan Bacon - \"Expo Router v3 現在完全支援熱門網頁函式庫如 Radix、Tailwind、Shadcn UI 等](https://twitter.com/Baconbrix/status/1735011941431595149)\n- 📖 [Expo 新架構使用指南](https://docs.expo.dev/guides/new-architecture/): 除 expo-updates 外，所有 `expo-*` 套件均支援新架構。expo-updates 的支援計劃於 Expo SDK 51 推出。\n- 📜 [Expo 2023 年度回顧](https://expo.dev/changelog/2023/12-20-2023-year-in-review): 概述 Expo 今年發布的所有內容，包括 Expo Orbit、Expo Router、EAS 改進、3 個 SDK、Expo Modules API 等。\n- 📜 [Xcode 15.1 映像現已在 EAS Build 上提供](https://expo.dev/changelog/2023/12-19-eas-build-xcode-15.1-image): Xcode 15.1 主要修復錯誤。\n- 📜 [最佳化 React-Native 效能：技巧與技術](https://thoughtbot.com/blog/optimizing-performance-in-react-native-tips-and-techniques): 教學如何應用記憶化、使用虛擬化列表、最佳化圖片、防抖、最佳化套件大小和網路請求\n- 📜 [在 React Native 中建置 AR 臉部面具](https://blog.logrocket.com/building-ar-face-masks-react-native/): 如何使用 DeepAR 載入並套用 3D 臉部面具\n- 📜 [介紹 docs.infinite.red — Infinite Red 文件的新家 - Ignite、Reactotron、RN MLKit、Gluegun](https://shift.infinite.red/introducing-docs-infinite-red-a-new-home-for-infinite-reds-documentation-6f4b25f7a1a4)\n- 📜 [Universal Medusa：使用 Medusa.js、Expo 和 Next.js 開發通用電商應用的原因、時機與方法](https://bidah.hashnode.dev/universal-medusa-the-why-when-and-how-of-universal-e-commerce-apps-with-medusajs-expo-and-nextjs)\n- 📦 [React Native 0.73.1 發布](https://github.com/facebook/react-native/releases/tag/v0.73.1): 新增 `enableNetworkInspector` 以在 inspector proxy 中啟用 Network 面板和 CDP 處理程序，CLI 升級至 12.3.0\n- 📦 [React Native Windows 0.73.1 發布](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.73.1): 將 React Native 0.73 引入 Windows 平台\n- 📦 [Repack 3.7 - 0.73 相容版本](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%403.7.0)\n- 🎥 [Jamon Holmgren 的 Ignite 9 影片概覽](https://youtu.be/QmkMsUYrTlk?si=p9rvLM-EMggZNcft)\n- 🎙️ [火箭船 #021 - 與 Krzysztof Magiera 談 React Native IDE](https://podcast.galaxies.dev/episodes/021-the-react-native-ide-with-krzysztof-magiera)\n- 🎙️ [React Native Radio 第 283 集 - 從業餘專案到收購！](https://reactnativeradio.com/episodes/rnr-283-from-side-hustle-to-top-charts-with-simon-reggiani)",
+          "reason": "The number of special elements (links, code, variables) differs. Source has 18, translation has 17.",
+          "timestamp": "2025-06-23T14:12:39.444495+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "566c958b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c35e5786",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d8460b5b",
+      "source_content": "- 📖 [tsdocs.dev - browse type documentation for npm packages](https://tsdocs.dev/)\n- 📜 [New to the web platform in December](https://web.dev/blog/web-platform-12-2023)\n- 📜 [The await event horizon in JavaScript](https://frontside.com/blog/2023-12-11-await-event-horizon/)\n- 📦 [Node.js v21.5.0 - parse JSON efficiently, adding a `--trace-promises` flag](https://nodejs.org/en/blog/release/v21.5.0)\n- 📦 [Tailwind CSS v3.4: Dynamic viewport units, `:has()` support, balanced headlines, subgrid, and more](https://tailwindcss.com/blog/tailwindcss-v3-4)\n- 📦 [SvelteKit 2.0 - Vite 5, shallow routing, prepating for Svelte 5](https://svelte.dev/blog/sveltekit-2)\n- 📦 [date-fns 3.0 - TypeScript rewrite, ESM and other date features](https://blog.date-fns.org/v3-is-out/)\n- 📦 [TSDiagram - Create diagrams and plan your code with TypeScript](https://github.com/3rd/tsdiagram)",
+      "source_content_hash": "0dc633b8b062be06283771ef8121d6fd7686d6b6f2135d832f7dfcb5756d9748",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {
+        "zh-hant": {
+          "translation": "- 📖 [tsdocs.dev - 瀏覽 npm 套件的類型文件](https://tsdocs.dev/)\n- 📜 [十二月網頁平台的新功能](https://web.dev/blog/web-platform-12-2023)\n- 📜 [JavaScript 中的 await 事件視界](https://frontside.com/blog/2023-12-11-await-event-horizon/)\n- 📦 [Node.js v21.5.0 - 高效解析 JSON，新增 `--trace-promises` 標誌](https://nodejs.org/en/blog/release/v21.5.0)\n- 📦 [Tailwind CSS v3.4：動態視口單位、`:has()` 支援、平衡標題、子網格及其他功能](https://tailwindcss.com/blog/tailwindcss-v3.4)\n- 📦 [SvelteKit 2.0 - Vite 5、淺層路由、為 Svelte 5 做準備](https://svelte.dev/blog/sveltekit-2)\n- 📦 [date-fns 3.0 - TypeScript 重寫、ESM 及其他日期功能](https://blog.date-fns.org/v3-is-out/)\n- 📦 [TSDiagram - 使用 TypeScript 建立圖表和規劃程式碼](https://github.com/3rd/tsdiagram)",
+          "reason": "URL for a 'link' was changed from 'https://tailwindcss.com/blog/tailwindcss-v3-4' to 'https://tailwindcss.com/blog/tailwindcss-v3.4'.",
+          "timestamp": "2025-06-23T14:12:39.444541+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "9c2ab4c8",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣味 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9c2a503",
+      "source_content": "[![alt](/emails/issues/167/meme.jpg)](https://twitter.com/sebastienlorber/status/1737380479383277636)",
+      "source_content_hash": "8f9b569d88a50e73869f7148ee18d4c6d0bf91aede9f81a93a7ac10722c07be3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/167/meme.jpg)](https://twitter.com/sebastienlorber/status/1737380479383277636)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下次見！ 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/167/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:39.444575+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "dff75ad3f159a8c5989f1210e35ab1a0f2ade13418549a5254683575e9133aca"
+  }
+}

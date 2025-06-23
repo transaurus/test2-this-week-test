@@ -1,0 +1,160 @@
+---
+slug: /214
+title: "This Week In React #214: Base UI, Custom Elements, Next.js, React Router, TanStack, i18n, OG, Apollo, Android XR, iOS targets, Nitro, RNTL, Volume Manager, Drag Select, brownfield, Zod, Node, SourceMaps, Bun, State Of JS..."
+authors: [slorber]
+date: 12-18-2024
+---
+
+大家好！
+
+本週，我對一個前景看好的新型無頭元件函式庫感到興奮，同時發現了多篇與 React 開發者相關的 Web Components 精彩文章。
+
+在行動端方面，Google 推出了 Android XR，而 React Native 支援也即將到來！
+
+🎄 我們將暫停發送聖誕假期，這是最後一期時事通訊，直到 1 月 8 日。\
+🧑‍🎄 你們已經給了我一份大禮，根據最新發布的 [State of JS 2024 調查結果](https://2024.stateofjs.com/en-US/resources/)，我們現在是第四受歡迎的 JS 時事通訊。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![一次一份時事通訊，成為更好的工程師。](/emails/issues/183/posthog.jpg)](https://dub.link/twir-dec18)
+
+**[一次一份時事通訊，成為更好的工程師。](https://dub.link/twir-dec18)**
+
+[Product for Engineers](https://dub.link/twir-dec18) 是 PostHog 的時事通訊，致力於幫助工程師提升產品技能。
+
+擁有超過 3 萬訂閱者，它是連接產品與工程的橋樑，協助您打造用戶喜愛的產品。
+
+內容涵蓋如何選擇合適技術、會扼殺新創的非顯見行為，以及他們親身經歷的 A/B 測試錯誤教訓。完全免費且永遠免費。
+
+[**免費訂閱。**](https://dub.link/twir-dec18)
+
+---
+
+## ⚛️ React {#react}
+
+[![Base UI 1.0 alpha](/emails/issues/214/base-ui.jpg)](https://base-ui.com/)
+
+[**Base UI 1.0 alpha**](https://base-ui.com/)
+
+我通常不熱衷 UI 函式庫。但當 Radix、MUI 和 Floating UI 的創造者齊聚一堂，精心打造 25 個無樣式、可訪問、可組合的基礎元件，並注重細節時，我認為值得關注！Radix 目前極受歡迎（尤其歸功於 shadcn/ui），但近期[維護活躍度降低](https://github.com/radix-ui/primitives/graphs/contributors)，新無頭函式庫的挑戰者總是令人期待！
+
+---
+
+**React 19 與自訂元素**
+
+我發現幾篇相關有趣文章：
+
+- 📜 [React 19 與 Web Component 範例](https://frontendmasters.com/blog/react-19-and-web-component-examples/)：Chris Coyier 透過建立 Lit 元素並用 JSX 渲染來測試 React 19 的自訂元素支援。可無縫傳遞物件作為 props，但事件處理器可能需要調度自訂事件。
+- 📜 [React 19 全面支援自訂元素](https://aleks-elkin.github.io/posts/2024-12-06-react-19/)：比較 React 18 與 React 19 的支援改進。
+- 📜 [甜蜜的 Suspense](https://plainvanillaweb.com/blog/articles/2024-09-09-sweet-suspense/)：有趣實驗，用自訂元素重建 React lazy/Suspense/ErrorBoundary。
+- 📜 [同構 Web Components](https://jakelazaroff.com/words/isomorphic-web-components/)：雖未使用 React，但提供了 Web components 伺服器端渲染支援的實用概述。
+
+---
+
+- 💸 [React Bricks – the Visual CMS for React got more accessible with lower entry price and flexible pay-as-you-go options. Start for free!](https://www.reactbricks.com/?utm_source=twir&utm_campaign=ql24)
+- 🐦 [Lee Robinson explains why transitioning between pages when running Next.js locally take time](https://x.com/leeerob/status/1869095675201192335)
+- 👀 [Next.js PR \- `unstable_rootParams()`](https://github.com/vercel/next.js/pull/72837): A new convenient experimental API to return path params from all path segments up to the root layout. Looks particularly useful for accessing a i18n `[locale]` param.
+- 👀 [Next.js PR \- `experimental.newDevOverlay`](https://github.com/vercel/next.js/pull/73977): A new dev overlay is coming and the feature flag already exists.
+- 👀 [Rsbuild PR \- plugin-react-router](https://github.com/web-infra-dev/rsbuild/pull/4186): React Router framework features (Remix) are now implemented as a Vite plugin, but it seems other bundlers could also turn React Router into a framework 😲
+- 🎄 [GitHub Unwrapped 2024](https://githubunwrapped.com/): The Remotion-based project has just been update for 2024.
+- 📜 [How to validate your React i18next application](https://lingual.dev/blog/how-to-validate-your-react-i18next-application/): Present a workflow based on react-i18next to prevent missing, unused, and invalid translation keys. There’s another post for react-intl users.
+- 📜 [Rails \+ Stimulus \+ React \- The definitive way to integrate](https://blog.codeminer42.com/rails-stimulus-react/): Using Stimulus data attributes to mount a React autocomplete component on a Rails page.
+- 📜 [Build-time Open Graph Images in Remix](https://kettanaito.com/blog/build-time-og-images-in-remix): Explains limits of Satori, and introduces a new remix-og-image Vite plugin that spawns a Chromium instance.
+- 📜 [5 tips to effectively optimize INP in React](https://calendar.perfplanet.com/2024/5-tips-to-effectively-optimize-inp-in-react/): Reduce DOM size, split components, use Suspense, avoid hydration errors, pay attention to useEffect that can be synchronous.
+- 📜 [You might not need a React Form Library](https://www.robinwieruch.de/react-form-validation/): Shows how to validate forms server-side and client-side without a library.
+- 📜 [Introducing TanStack Start](https://frontendmasters.com/blog/introducing-tanstack-start/)
+- 📜 [React Tech Stack for 2025](https://www.robinwieruch.de/react-tech-stack/)
+- 📜 [Sharing Types and Code Between the Server and Client](https://echobind.com/post/sharing-types-and-code-between-the-server-and-client)
+- 📜 [Storybook tags \- Organize your components and stories to match the way you work](https://storybook.js.org/blog/storybook-tags/)
+- 📜 [The Mental Model of Server Components](https://saewitz.com/the-mental-model-of-server-components)
+- 📜 [How to Dockerize a React App](https://www.docker.com/blog/how-to-dockerize-react-app/)
+- 📦 [Inertia 2.0 \- Redefining Frontend Development for Laravel](https://blog.laravel.com/announcing-inertia-20-redefining-frontend-development-for-laravel): New major version of this tool that seamlessly integrates React into PHP backends. New features: async requests, deferred props, prefetching, polling.
+- 📦 [Apollo Client 3.12 \- GraphQL fragment data masking](https://www.apollographql.com/blog/more-resilient-code-with-data-masking-in-apollo-client-3-12): Similar to Relay, Apollo Client improves in colocation, encapsulation, and performance. A component will only receive the fields it needs, and nothing more.
+- 📦 [Virtua 0.39 \- Zero-config, fast and small virtual list \- React 19 support](https://github.com/inokawa/virtua)
+- 📦 [Material UI EoY update - MUI v5/6 are compatible with React 19](https://mui.com/blog/material-ui-2024-updates/)
+- 📦 [Roadmap UI \- Composable components for building interactive roadmaps \- Gantt, Kanban, Calendar, List, Table](https://www.roadmap-ui.com/)
+- 🎥 [Justin Poli \- What happens when you break the rules of React?](https://www.youtube.com/watch?v=NsFD-1HkJNU): Mobx-State-Tree maintainer explains plan to make the reactive library compatible with the React Compiler.
+- 🎥 [Wawa Sensei \- My Journey Coding a VR/AR Rhythm Game with Three.js & React Three Fiber](https://www.youtube.com/watch?v=jBh4ftHqC5U)
+- 🎥 [Theo \- Astro stole my favorite parts of Next (and I'm hyped)](https://www.youtube.com/watch?v=3xqa0SsRbdM)
+- 🎥 [Shruti Kapoor \- React 19: The Features You Actually Want](https://www.youtube.com/watch?v=Hek-Ux9jha8)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![透過 Stream 的 React SDK 輕鬆實現互動式聊天。](/emails/issues/214/stream.jpg)](https://getstream.io/chat/react-chat/tutorial/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)
+
+**[透過 Stream 的 React SDK 輕鬆實現互動式聊天。](https://getstream.io/chat/react-chat/tutorial/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)**
+
+**🔧 由開發者打造，為開發者而生：**
+
+- 完全可自訂的 UI 元件與掛鉤。
+- 完整的文件與快速入門模板，加速整合流程。
+
+**⚡ 極致效能表現：**
+
+- 低於 50 毫秒的訊息傳遞速度。
+- 可靠基礎架構，可擴展至數百萬用戶規模。
+
+**✨ 開箱即用功能：**
+
+- 輸入狀態指示器、互動反應與討論串。
+- 豐富媒體支援，包含檔案與圖片分享。
+
+🚀 快速建置，無縫擴展。[立即開始使用 Stream](https://getstream.io/try-for-free/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [示範 - 90+ 個由 Reactiive 使用 Reanimated、Gesture Handler 和 Skia 打造的 React Native 動畫](https://reactiive.io/demos?utm_source=thisweekinreact)
+- 📊 [2024 年 React Native 狀態調查 - 問卷開放中，請回答！](https://survey.stateofreactnative.com/)
+- 🐦 [Evan Bacon 的 `npx create-target demo`](https://x.com/Baconbrix/status/1868672438898455023)：全新 CLI 工具，可建立與 Expo 應用共存並透過共享儲存通訊的 iOS 目標元件（小工具、分享擴充功能）。
+- 🧵 [Infinite Red - 2024 年熱門 React Native 貼文](https://x.com/infinite_red/status/1869104889777020951)
+- 📣 [Android XR SDK 開發者預覽版](https://developers.googleblog.com/en/introducing-android-xr-sdk-developer-preview/)：Google 宣布全新 Android 擴增實境頭戴裝置平台。如您對 Oskar 的期待，React Native 支援即將到來（[示範](https://x.com/o_kwasniewski/status/1868645896239690009)）
+- 📣 [Expo - 即將到來的 Apple 推播通知服務憑證變更](https://expo.dev/blog/upcoming-apple-push-notification-service-certificate-change)：Expo 推播服務使用者無需執行任何操作。
+- 📜 [將 React Native 整合至 Signal 開源應用程式](https://blog.swmansion.com/add-react-native-to-the-signal-open-source-app-part-2-android-803c1b726582)：兩部分系列（iOS + Android）展示如何將 brownfield RN 整合至現有應用程式。
+- 📜 [如何在 Brownfield 應用程式中升級 React Native](https://www.callstack.com/blog/how-to-upgrade-react-native-in-a-brownfield-application)
+- 📜 [我們如何透過 Expo 在 Marathon 應用中促進社群分享](https://expo.dev/blog/how-we-promote-social-sharing-on-marathon-with-expo)
+- 📜 [在 Expo Router 中建構無縫導航：標籤頁、模態框和堆疊](https://medium.com/@coby09/building-seamless-navigation-in-expo-router-tabs-modals-and-stacks-2df1a5522321)
+- 📦 [React Native Image Playground](https://github.com/Ucekay/react-native-image-playground)：整合全新 iOS 18.2+ Apple Intelligence Image Playground 至您的應用程式，生成 AI 圖像。
+- 📦 [Nitro 0.19 - Swift 錯誤處理、雙向 Promise、類型擦除](https://github.com/mrousavy/nitro/releases/tag/v0.19.0)
+- 📦 [Nitro Palette 1.0 - 從圖像快速提取調色盤](https://github.com/Ucekay/nitro-palette/releases/tag/v1.0.0)
+- 📦 [React Native Volume Manager 2.0 - 新架構、0.76+、iOS 15+、Expo 52+](https://github.com/hirbod/react-native-volume-manager/releases/tag/v2.0.1)
+- 📦 [Drag Select 0.1 - 建立平移手勢自動選取清單項目的工具](https://github.com/osamaqarem/drag-select)
+- 📦 [React Native Testing Library 13.0 RC - 預設啟用並行渲染、自動擴展 Jest 匹配器](https://github.com/callstack/react-native-testing-library/releases/tag/v13.0.0-rc.0)
+- 🎥 [Dan 的實驗室 - 使用線性代數與 React-Native Skia 的基礎 3D 圖形](https://www.youtube.com/watch?v=uZBGcbKFhXE)
+- 🎥 [Expo - 通用全端 Expo Stripe 支付整合](https://www.youtube.com/watch?v=J0tyxUV_omY)
+- 🎙️ [火箭船 56 - Bluesky 的 React Native 應用與 AT 協定 ft. Samuel Newman](https://share.transistor.fm/s/2134db4c)
+- 🎙️ [React Universe On Air - React Native FastIO：Nitro 驅動效能提升](https://www.youtube.com/watch?v=u4PBBLujv7I)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📣 [Ecma 426 - Source map format specification](https://ecma-international.org/publications-and-standards/standards/ecma-426/)：信不信由你，這項標準之前還未被正式確立。
+- 📊 [State of JavaScript 2024](https://2024.stateofjs.com/en-US)
+- 📊 [State of Node.js Performance 2024](https://nodesource.com/blog/State-of-Nodejs-Performance-2024)
+- 📦 [Zod 3.24 - First version to implement the standard-schema specification](https://github.com/colinhacks/zod/releases/tag/v3.24.0)
+- 📦 [Node 23.4 - unflag `node:sqlite` module,`--trace-env`, `assert.partialDeepStrictEqual`](https://nodejs.org/en/blog/release/v23.4.0)
+- 📜 [Bun's new text-based lockfile](https://bun.sh/blog/bun-lock-text-lockfile)
+
+---
+
+## 🤭 趣聞 {#fun}
+
+[![迷因圖片](/emails/issues/214/meme.jpg)](https://x.com/jordwalke/status/1868092255879540957)
+
+[![迷因圖片](/emails/issues/214/meme2.jpg)](https://x.com/wesbos/status/1869032343526322378)
+
+下次見！👋

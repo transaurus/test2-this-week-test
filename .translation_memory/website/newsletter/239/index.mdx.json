@@ -1,0 +1,489 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/239/index.mdx",
+  "source_file_content_hash": "2684e592112b70cea2634d0f08c8e6466cd2347228c7b6b1bb65a28115b16bc0",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /239\ntitle: \"This Week In React #239: ViewTransition, Suspense, TanStack, Zero, use-mcp, Compiler, Intl-T | 0.80, Stable APIs, iOS prebuilds, shadcn, Expo, InstantDB, Granite | TypeBuddy, Hono, H3, Playwright, cosmos.gl\"\nauthors: [piaskowyk, tomekzaw]\ndate: 06-18-2025\n---",
+      "source_content_hash": "d16fb858b860de74325495afa5f431c506f12d93b4447a02160d2d596bf6201a",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone! **Krzysztof and Tomasz from [Software Mansion](https://swmansion.com/?utm_source=thisweekinreact)** here 👋",
+      "source_content_hash": "5c76f8b08c594f2ff644b677410fc91c227250a975415049c968dc7d58e7dc14",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！**來自 [Software Mansion](https://swmansion.com/?utm_source=thisweekinreact) 的 Krzysztof 和 Tomasz** 在此 👋"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "It's been a fairly calm week for the React ecosystem, but not for the React Native world. Meta has made an exciting announcement about the release of React Native 0.80, where they've decided to officially freeze the Old Architecture. Make sure you're ready to adapt your app to the New Architecture, as it seems like it could be the last moment to do so.",
+      "source_content_hash": "006d7bd3976de55cf53a794e017bfbf5f84e4d323adb465864176ddb99a4dc82",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週對 React 生態系統來說相當平靜，但 React Native 領域則不然。Meta 發布了一項令人振奮的公告：在 React Native 0.80 版本中，他們決定正式凍結舊架構。請確保您的應用程式已準備好遷移至新架構，因為這似乎是最後的適應時機。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b7b09f68",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_b7b09f68"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "17011a71",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_17011a71"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cc3676fa",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_cc3676fa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f7f1cb2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bc633244",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "[![Free AI Code Reviews in IDE - VSCode, Cursor, Windsurf](/emails/issues/239/coderabbit.jpg)](https://coderabbit.link/tUMe5xC)",
+      "source_content_hash": "12bbca88e6708ff4b5605bc48a0edece4e961353a62588e2898e05ef5dff920a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![IDE 免費 AI 程式碼審查 - VSCode、Cursor、Windsurf](/emails/issues/239/coderabbit.jpg)](https://coderabbit.link/tUMe5xC)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "**[Free AI Code Reviews in IDE - VSCode, Cursor, Windsurf](https://coderabbit.link/tUMe5xC)**",
+      "source_content_hash": "6571d3d27136d584acb27d2e62d0da118823750807147f36238ba54b976dbd4b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[IDE 免費 AI 程式碼審查 - VSCode、Cursor、Windsurf](https://coderabbit.link/tUMe5xC)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[CodeRabbit](https://coderabbit.link/6ZXULSK) is the AI code review platform purpose built to speed up code reviews and improve code quality. Integrating seamlessly into git workflows and existing toolchains, it delivers codebase-aware reviews and supports all programming languages.",
+      "source_content_hash": "b24b89e404fe676181eb7bf52fd9f6f9c4c50db24003412ec40dd5da2fa33528",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[CodeRabbit](https://coderabbit.link/6ZXULSK) 是專為加速程式碼審查和提升程式碼品質打造的 AI 平台，無縫整合 Git 工作流與現有工具鏈，提供程式碼庫感知的審查並支援所有程式語言。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "Now they are excited to deliver AI code reviews directly in VS Code, Cursor, and Windsurf–letting you and your team (vibe) code with confidence and review while keeping in flow.",
+      "source_content_hash": "ca5d7c39fd4be950e5c5724ae0e4631e553513b01254291ae9348610ed8e3a85",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "現在他們興奮地將 AI 程式碼審查直接帶入 VS Code、Cursor 和 Windsurf，讓您與團隊能在流暢狀態下(vibe)自信地編寫程式碼並進行審查。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "Even better: code reviews in the IDE are free! That’s right: line-by-line reviews and one-click fixes, all in your IDE at no cost to you.",
+      "source_content_hash": "3d58f489b3b8c97fb58dbe57b064ea8ef0565effa013a7f5eb5d9a1de3e75315",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "更棒的是：IDE 內的程式碼審查完全免費！沒錯：逐行審查與一鍵修復功能，皆在您的 IDE 中零成本使用。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "[Install the extension](https://coderabbit.link/LszC1pB) and start vibe checking your code today!",
+      "source_content_hash": "5a53b44e2e1ba5b878463e086552dc6b67e4df35af1874f48674d53d77dd901b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[立即安裝擴充功能](https://coderabbit.link/LszC1pB)，今天就開始 vibe 檢查您的程式碼吧！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f1a2a0d3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "109ace10",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "157151e9",
+      "source_content": "- 💸 [Product for Engineers - The hidden benefits of being an open-source startup](https://go.posthog.com/twir-jun18)\n- 📊 [The State of React and the Community in 2025](https://blog.isquaredsoftware.com/2025/06/react-community-2025/)\n- 📖 [React Compiler – The Mutability & Aliasing Model](https://github.com/facebook/react/blob/156b7a96f5669470182ad226306184576d6f150f/compiler/packages/babel-plugin-react-compiler/src/Inference/MUTABILITY_ALIASING_MODEL.md)\n- 🗓️ [React Summit US](https://reactsummit.us/?utm_source=Newsletter&utm_medium=ThisWeekinReact) - 🇺🇸 New York - 18 & 21 Nov. Final early bird opportunity! Join Addy Osmani (Google Chrome), Shaundai Person (Netflix), Shawn Swyx Wang & more!\n- 📜 [Bringing React's \\<ViewTransition\\> to vanilla JS](https://plainvanillaweb.com/blog/articles/2025-06-12-view-transitions/): A good explanation how view transitions are supposed to work and how you can implement them on your own.\n- 📜 [Composable streaming with Suspense](https://twofoldframework.com/blog/composable-streaming-with-suspense): React's Suspense composition allows you to easily implement features like lazy loading or out-of-order rendering without complex configurations and external dependencies.\n- 📜 [Real-Time Gesture Recognition in Videoconferencing](https://blog.swmansion.com/real-time-gesture-recognition-in-videoconferencing-4711855a1a53): browser-based video effects using MediaPipe, Fishjam and Smelter.\n- 📜 [Zero is Not Local-First. It's Better.](https://jjenzz.com/zero-is-not-local-first-its-better/): Zero library is a new sync engine that offers \"partial sync first\" rather than a full \"local-first\" approach, meaning it only syncs the data your application actively queries and uses, making it efficient for apps with large datasets. You don't need to take care of cache invalidation because the server is still the source of truth.\n- 📜 [TanStack Start: the Future of React Frameworks?](https://www.premieroctet.com/blog/en/tanstack-future-react-frameworks): Describes the advantages of the TanStack Start framework, which may potentially become a competitor to well-known frameworks like Remix or Next.js.\n- 📜 [Building the Twitter 1.0 Web Experience](https://largeapps.dev/case-studies/twitter/): A case study on how Twitter Lite PWA was optimized over time and the benefits it brought.\n- 💸 [The Road to Next - Master Full-Stack Web Development with Next.js 15 and React 19](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1.1)\n- 📦 [Relay 20.0 – ESLint plugin update](https://github.com/facebook/relay/releases/tag/v20.0.0)\n- 📦 [use-mcp - A lightweight React hook for connecting to Model Context Protocol servers](https://github.com/modelcontextprotocol/use-mcp)\n- 📦 [Intl-T – A Object-Typed Node-Based i18n Translation Library](https://github.com/nivandres/intl-t)\n- 📦 [React Final Form 7.0 – All modules modernized to TypeScript](https://erikras.com/blog/final-form-to-typescript)\n- 📦 [Meteor 3.3 – Faster Builds with SWC and Bundler Optimizations](https://dev.to/meteor/faster-builds-in-meteor-33-modern-build-stack-with-swc-and-bundler-optimizations-fm2) – 60% faster builds\n- 🎥 [Theo – Defending SQL in JSX](https://www.youtube.com/watch?v=PmXZvGtB7_U)\n- 🎥 [Shruti Kapoor – You’re Managing State Wrong in React](https://www.youtube.com/watch?v=c7FQP-tUn1U)\n- 🎥 [Future Frontend Conf – YouTube Playlist](http://youtube.com/watch?v=xadj32ExtWo&list=PLKGgD1M40S4hHnZtFi_kPgRRjMay_2KMp)",
+      "source_content_hash": "84a1f1e84f757acff2037daf5c8f6487c681a36d4b8cd7edcd903ac52db7a42c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [工程師產品 - 開源新創公司的隱藏優勢](https://go.posthog.com/twir-jun18)\n- 📊 [2025 年 React 與社群現狀](https://blog.isquaredsoftware.com/2025/06/react-community-2025/)\n- 📖 [React 編譯器 – 可變性與別名模型](https://github.com/facebook/react/blob/156b7a96f5669470182ad226306184576d6f150f/compiler/packages/babel-plugin-react-compiler/src/Inference/MUTABILITY_ALIASING_MODEL.md)\n- 🗓️ [React Summit 美國](https://reactsummit.us/?utm_source=Newsletter&utm_medium=ThisWeekinReact) - 🇺🇸 紐約 - 11月18日 & 21日。最後早鳥機會！加入 Addy Osmani (Google Chrome)、Shaundai Person (Netflix)、Shawn Swyx Wang 等講者！\n- 📜 [將 React 的 \\<ViewTransition\\> 帶入原生 JavaScript](https://plainvanillaweb.com/blog/articles/2025-06-12-view-transitions/)：詳細說明視圖轉場應如何運作以及如何自行實作。\n- 📜 [使用 Suspense 實現可組合串流](https://twofoldframework.com/blog/composable-streaming-with-suspense)：React 的 Suspense 組合讓您輕鬆實現懶加載或亂序渲染等功能，無需複雜配置和外部依賴。\n- 📜 [視訊會議中的即時手勢識別](https://blog.swmansion.com/real-time-gesture-recognition-in-videoconferencing-4711855a1a53)：使用 MediaPipe、Fishjam 和 Smelter 實現基於瀏覽器的視訊特效。\n- 📜 [Zero 並非本地優先，而是更好](https://jjenzz.com/zero-is-not-local-first-its-better/)：Zero 函式庫採用「部分同步優先」而非完整的「本地優先」方法，僅同步應用程式實際查詢使用的數據，適用於大型數據集應用。無需處理快取失效，因伺服器仍是真實來源。\n- 📜 [TanStack Start：React 框架的未來？](https://www.premieroctet.com/blog/en/tanstack-future-react-frameworks)：分析 TanStack Start 框架優勢，可能成為 Remix 或 Next.js 等知名框架的競爭者。\n- 📜 [打造 Twitter 1.0 網頁體驗](https://largeapps.dev/case-studies/twitter/)：Twitter Lite PWA 優化歷程及其效益的案例分析。\n- 💸 [Next 之路 - 使用 Next.js 15 和 React 19 掌握全端網頁開發](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1.1)\n- 📦 [Relay 20.0 – ESLint 插件更新](https://github.com/facebook/relay/releases/tag/v20.0.0)\n- 📦 [use-mcp - 輕量級 React hook，用於連接 Model Context Protocol 伺服器](https://github.com/modelcontextprotocol/use-mcp)\n- 📦 [Intl-T – 物件型態的 Node-Based i18n 翻譯函式庫](https://github.com/nivandres/intl-t)\n- 📦 [React Final Form 7.0 – 所有模組升級至 TypeScript](https://erikras.com/blog/final-form-to-typescript)\n- 📦 [Meteor 3.3 – 採用 SWC 和打包器優化加速建構](https://dev.to/meteor/faster-builds-in-meteor-33-modern-build-stack-with-swc-and-bundler-optimizations-fm2) – 建構速度提升 60%\n- 🎥 [Theo – 在 JSX 中捍衛 SQL](https://www.youtube.com/watch?v=PmXZvGtB7_U)\n- 🎥 [Shruti Kapoor – 你在 React 中管理狀態的方式錯了](https://www.youtube.com/watch?v=c7FQP-tUn1U)\n- 🎥 [Future Frontend Conf – YouTube 播放清單](http://youtube.com/watch?v=xadj32ExtWo&list=PLKGgD1M40S4hHnZtFi_kPgRRjMay_2KMp)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6214d3c2",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_6214d3c2"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b760ab3f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c431704b",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "[![Embrace Web RUM provides user-focused observability](/emails/issues/239/embrace.jpg)](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)",
+      "source_content_hash": "a3f3fd887d703345c563c3ec6c8c06ca78037e21b43e439ca9cfcf7e48a66fc6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Embrace Web RUM 提供以使用者為中心的可觀測性](/emails/issues/239/embrace.jpg)](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "**[Embrace Web RUM provides user-focused observability](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)**",
+      "source_content_hash": "53068c6c42c6129bb8c4c9b418c2e8da0d72cb53e88ea796f11ce896da4f1858",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[Embrace Web RUM 提供以使用者為中心的可觀測性](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "Want to understand where technical performance actually impacts user engagement? With Embrace Web RUM, you can connect telemetry to what users are actually experiencing, so you know what's broken, why it matters, and how to fix it.",
+      "source_content_hash": "dfbf41f790ba498c67071a5cb1ed13a4527dbc714f5f7e70485e3df7a2706c17",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "想要了解技術性能實際影響使用者參與度的環節嗎？透過 Embrace Web RUM，您可以將遙測數據與使用者的實際體驗連結起來，從而準確掌握故障點、問題重要性及修復方案。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f71ff2a",
+      "source_content": "Full session timelines. Core Web Vitals and JS exceptions in context. User journeys for custom flows with intelligent issue correlation. Built on OpenTelemetry for powerful integration with existing observability systems.",
+      "source_content_hash": "30680d8356109ce934215171f574a149e19229515e06a80a7f03c89623d595c3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "完整的工作階段時間軸。上下文中的 Core Web Vitals 與 JS 異常紀錄。自訂流程的使用者歷程搭配智能問題關聯功能。基於 OpenTelemetry 建構，可與現有可觀測性系統無縫整合。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "[Join the webinar to learn more.](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)",
+      "source_content_hash": "6a4d47dc34997533cbdcc87b24bcf8fcf1e13660acf4bd134b4fb40b057b545d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[參加網路研討會深入了解](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7afb38f4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b051b70c",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d0dd855b",
+      "source_content": "[![React Native 0.80 overview](/emails/issues/239/RN_banner.png)](https://reactnative.dev/blog/2025/06/12/react-native-0.80)",
+      "source_content_hash": "ebe01f671361366703aa0276c913375a2f71c8ee820b5a57d077593535dcdab6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React Native 0.80 概覽](/emails/issues/239/RN_banner.png)](https://reactnative.dev/blog/2025/06/12/react-native-0.80)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7736989b",
+      "source_content": "[**React Native 0.80**](https://reactnative.dev/blog/2025/06/12/react-native-0.80)",
+      "source_content_hash": "1d2d1ac5169d672287e1946a186c2980a3b4a914ee4fd6b424f699a8463a6a73",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**React Native 0.80**](https://reactnative.dev/blog/2025/06/12/react-native-0.80)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6270d577",
+      "source_content": "This milestone release announces the goal of [Moving Towards a Stable JavaScript API](https://reactnative.dev/blog/2025/06/12/moving-towards-a-stable-javascript-api), an ongoing effort to accurately define the JS and TypeScript APIs.",
+      "source_content_hash": "99987600b1eca06449019e3cd4a1d05c771f825a8f3adec7108cfbbf1eadb2e3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "此里程碑版本宣告了[邁向穩定 JavaScript API](https://reactnative.dev/blog/2025/06/12/moving-towards-a-stable-javascript-api)的目標，這項持續進行的計畫旨在精確定義 JS 與 TypeScript API。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "Here are the highlights:",
+      "source_content_hash": "c9069bed64ef5312255b10108b1f6a454d6639b97cee2f6b3432c30b5cf8c3b9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "重點摘要如下："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cc9271fb",
+      "source_content": "- React 19.1: Its new `captureOwnerStack()` API can improve the DX of error overlays.\n- JavaScript deep imports deprecation: You’ll have to import everything from the root `’react-native’` exports.\n- Strict TypeScript API (opt in): The Strict TypeScript API is an opt-in preview offering more accurate TypeScript types for the react-native package, generated directly from source code.\n- Legacy Architecture Freezing & Warnings: The React Native team will now focus on the New Architecture.\n- iOS Prebuilds for React Native: iOS builds are roughly 12% faster thanks to shipping prebuilds for Folly and GLog rather than building them from source. In a future release, the rest of React Native core will be shipped as a prebuild.",
+      "source_content_hash": "10ab0a003d93a8765111986a801a95e5ffa837ad99f9ba7604dba098efe778d9",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {
+        "zh-hant": {
+          "translation": "- React 19.1：其新增的 `captureOwnerStack()` API 可提升錯誤覆蓋層的開發體驗\n- JavaScript 深層導入棄用：所有內容需從根目錄 `'react-native'` 導出導入\n- 嚴格 TypeScript API（可選加入）：此預覽功能直接從原始碼生成更精確的 react-native 套件類型\n- 舊架構凍結與警告：團隊將專注投入新架構開發\n- iOS 預建置加速：透過預編譯 Folly 和 GLog 取代原始碼編譯，iOS 建置速度提升約 12%，未來版本將預建置更多核心模組",
+          "reason": "Content of a non-translatable 'inlineCode' element was changed. Source: '`’react-native’`', Translation: '`'react-native'`'.",
+          "timestamp": "2025-06-23T14:12:39.460509+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "9006437d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "023197ab",
+      "source_content": "- 💸 [WithFrame - Pre-Built React Native Templates](https://withfra.me)\n- 📣 [Expo support for React Native 0.80](https://expo.dev/changelog/react-native-80): You’ll have to use the Expo 54 canary until it becomes stable later this summer, bumping directly to RN 0.81.\n- 👀 [shadcn/ui CLI PR \\- Support scaffolding components for Expo apps using the CLI and registry system](https://github.com/shadcn-ui/ui/pull/7540)\n- 👀 [Bluesky mobile app PR – enable New Architecture](https://github.com/bluesky-social/social-app/pull/8295)\n- 💬 [Flutter \\- Support for iOS 26 “Liquid glass”](https://github.com/flutter/flutter/issues/170310): Interesting to know that Flutter will not add support for iOS 26 and Material 3 Expressive in core.\n- 🐦 [Bring every iOS 26 Liquid Glass feature from WWDC to React Native](https://x.com/saul_sharma/status/1934467342576009254)\n- 🐦 [Speed up iOS e2e test runs with Maestro](https://x.com/janicduplessis/status/1933589353714102511): Avoid generating recursive accessibility labels when not needed, will be shipped in 0.81.\n- 📜 [Best React Native Debugging Tools in 2025](https://blog.swmansion.com/best-react-native-debugging-tools-in-2025-a95dcac7a014): An overview of the current state of debugging tools in the React Native ecosystem.\n- 📜 [Simplifying auth flows in Expo Router with protected routes](https://expo.dev/blog/simplifying-auth-flows-with-protected-routes): How to use the new Expo Router's protected routes to control which screens users can see based on their authentication state – directly in your layout files.\n- 📜 [Expo \\+ InstantDB – What if useState was your backend?](https://expo.dev/blog/what-if-usestate-was-your-backend): The tutorial shows how, with InstantDB, you can simplify backend communication in your Expo app, providing a useState-like experience.\n- 📦 [Granite – Brownfield-friendly React Native framework for microservice apps](https://github.com/toss/granite)\n- 📦 [VisionCamera 4.7 - Android 16 KB page size support](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.7.0)\n- 📦 [Gesture Handler 2.26 \\- RN 0.80 support, relation props in Pressable](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.26.0).\n- 📦 [create-react-native-library 0.51 \\- 16 KB page size on Android](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.51.0).\n- 🎥 [Code with Beto – Liquid Glass Bottom Tabs](https://www.youtube.com/watch?v=L5f8Gy91Gv4)\n- 🎥 [Michał Pierzchała – Shrinking Android app size with R8](https://www.youtube.com/watch?v=Ud6TSlnEzCc)\n- 🎙️ [Rocket Ship 72 – The Frozen Arch, Killing my App & React Native World Domination](https://share.transistor.fm/s/43ce5c20)\n- 🎙️ [RNR 334 – React Native MacOS with Saad Najmi](https://infinite.red/react-native-radio/rnr-334-react-native-macos-with-saad-najmi)",
+      "source_content_hash": "ad214650f00f8f7d5a9a64d7bda5a17e11457663647fcc88e13e4c1e7ba05f84",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [WithFrame - 預建 React Native 模板](https://withfra.me)\n- 📣 [Expo 對 React Native 0.80 的支援](https://expo.dev/changelog/react-native-80)：您必須使用 Expo 54 canary 版本，直到今年夏天晚些時候穩定發布，屆時將直接升級至 RN 0.81。\n- 👀 [shadcn/ui CLI PR - 支援透過 CLI 和註冊系統為 Expo 應用搭建組件](https://github.com/shadcn-ui/ui/pull/7540)\n- 👀 [Bluesky 行動應用 PR – 啟用新架構](https://github.com/bluesky-social/social-app/pull/8295)\n- 💬 [Flutter - 對 iOS 26「液態玻璃」的支援](https://github.com/flutter/flutter/issues/170310)：值得注意的是，Flutter 將不會在核心中添加對 iOS 26 和 Material 3 Expressive 的支援。\n- 🐦 [將 WWDC 的每個 iOS 26 Liquid Glass 功能引入 React Native](https://x.com/saul_sharma/status/1934467342576009254)\n- 🐦 [使用 Maestro 加速 iOS e2e 測試執行](https://x.com/janicduplessis/status/1933589353714102511)：避免在不需要時生成遞歸輔助功能標籤，此功能將在 0.81 版本中推出。\n- 📜 [2025 年最佳 React Native 除錯工具](https://blog.swmansion.com/best-react-native-debugging-tools-in-2025-a95dcac7a014)：概述 React Native 生態系統中除錯工具的現狀。\n- 📜 [透過受保護路由簡化 Expo Router 中的驗證流程](https://expo.dev/blog/simplifying-auth-flows-with-protected-routes)：如何在佈局文件中直接使用 Expo Router 的新受保護路由，根據用戶驗證狀態控制可見畫面。\n- 📜 [Expo + InstantDB – 如果 useState 是您的後端會怎樣？](https://expo.dev/blog/what-if-usestate-was-your-backend)：本教學展示如何透過 InstantDB 在 Expo 應用中簡化後端通訊，提供類似 useState 的體驗。\n- 📦 [Granite – 適用於微服務應用的 Brownfield 友好型 React Native 框架](https://github.com/toss/granite)\n- 📦 [VisionCamera 4.7 - 支援 Android 16 KB 頁面大小](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.7.0)\n- 📦 [Gesture Handler 2.26 - 支援 RN 0.80，Pressable 中的關係屬性](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.26.0)。\n- 📦 [create-react-native-library 0.51 - Android 16 KB 頁面大小支援](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.51.0)。\n- 🎥 [Code with Beto – 液態玻璃底部標籤](https://www.youtube.com/watch?v=L5f8Gy91Gv4)\n- 🎥 [Michał Pierzchała – 使用 R8 縮小 Android 應用大小](https://www.youtube.com/watch?v=Ud6TSlnEzCc)\n- 🎙️ [Rocket Ship 72 – 冰凍架構、殺死我的應用與 React Native 世界統治](https://share.transistor.fm/s/43ce5c20)\n- 🎙️ [RNR 334 – 與 Saad Najmi 探索 React Native MacOS](https://infinite.red/react-native-radio/rnr-334-react-native-macos-with-saad-najmi)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42bfcc5d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8172a0a5",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2890f5b2",
+      "source_content": "- 💡 [TypeBuddy](https://github.com/typed-rocks/type-buddy) – write TypeScript types as functions ([playground](https://typed-rocks.github.io/type-buddy/))\n- 📜 [A new way to style gaps in CSS](https://developer.chrome.com/blog/gap-decorations?hl=en) – gap decorations available for developer trial in Chrome and Edge 139\n- 📜 [Safari at WWDC '25: The Ghost of Christmas Past](https://infrequently.org/2025/06/the-ghost-of-christmas-past/)\n- 📜 [Worker Threads in Node.js: A Complete Guide for Multithreading in JavaScript](https://nodesource.com/blog/worker-threads-nodejs-multithreading-in-javascript)\n- 📜 [Animating zooming using CSS: transform order is important](https://jakearchibald.com/2025/animating-zooming/)\n- 📜 [Using await at the top level in ES modules](https://allthingssmitty.com/2025/06/16/using-await-at-the-top-level-in-es-modules/) – real-world use cases, constraints and gotchas\n- 📜 [Dan Abramov – Suppressions of Suppressions](https://overreacted.io/suppressions-of-suppressions/) – some thoughts on linter suppressions and social contracts behind writing software\n- 📦 [H3 v2 beta \\- Fully rewritten on web standards, backward-compatible, faster](https://h3.dev/blog/v2-beta)\n- 📦 [Playwright v1.52 & v1.53 – Fix with AI, Describable Locators](https://dev.to/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9)\n- 📦 [Hono 4.8 - Route Helper, SSG, 3rd party middleware](https://github.com/honojs/hono/releases/tag/v4.8.0)\n- 📦 [cosmos.gl – High-Performance Graph Visualization Engine from the OpenJS Foundation](https://openjsf.org/blog/introducing-cosmos-gl)",
+      "source_content_hash": "f730d4849f89f2dfab4e121453955c637d730c59f200c79a61fae35b9a756d06",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💡 [TypeBuddy](https://github.com/typed-rocks/type-buddy) – 透過函式撰寫 TypeScript 型別 ([遊樂場](https://typed-rocks.github.io/type-buddy/))\n- 📜 [CSS 間隙樣式的新方法](https://developer.chrome.com/blog/gap-decorations?hl=en) – Chrome 和 Edge 139 開發者試用版提供間隙裝飾功能\n- 📜 [WWDC '25 的 Safari：聖誕節過去的幽靈](https://infrequently.org/2025/06/the-ghost-of-christmas-past/)\n- 📜 [Node.js 中的 Worker Threads：JavaScript 多執行緒完整指南](https://nodesource.com/blog/worker-threads-nodejs-multithreading-in-javascript)\n- 📜 [使用 CSS 實現縮放動畫：變換順序至關重要](https://jakearchibald.com/2025/animating-zooming/)\n- 📜 [在 ES 模組頂層使用 await](https://allthingssmitty.com/2025/06/16/using-await-at-the-top-level-in-es-modules/) – 實際用例、限制與注意事項\n- 📜 [Dan Abramov – 抑制的抑制](https://overreacted.io/suppressions-of-suppressions/) – 關於 linter 抑制和軟體開發社會契約的思考\n- 📦 [H3 v2 beta - 基於 Web 標準完全重寫，向後兼容且更快](https://h3.dev/blog/v2-beta)\n- 📦 [Playwright v1.52 & v1.53 – AI 修復、可描述定位器](https://dev.to/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9)\n- 📦 [Hono 4.8 - 路由助手、SSG、第三方中介軟體](https://github.com/honojs/hono/releases/tag/v4.8.0)\n- 📦 [cosmos.gl – OpenJS 基金會的高效能圖形視覺化引擎](https://openjsf.org/blog/introducing-cosmos-gl)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "566c958b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c35e5786",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣聞 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9c9e2b64",
+      "source_content": "[![alt](/emails/issues/239/meme2.jpg)](https://www.linkedin.com/feed/update/urn:li:activity:7339605943137009664)",
+      "source_content_hash": "d4007862edd67d7b0ee9383e3137d2bddcc90ee95052d295e47442c881a0cea7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/239/meme2.jpg)](https://www.linkedin.com/feed/update/urn:li:activity:7339605943137009664)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5c7d994c",
+      "source_content": "[![alt](/emails/issues/239/meme1.jpg)](https://x.com/mrousavy/status/1922994477712453742)",
+      "source_content_hash": "283283f5391761865133d3eaf18cdafe0bc4c1dbaae7ac224c6ba5fbbd16e3fb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/239/meme1.jpg)](https://x.com/mrousavy/status/1922994477712453742)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1ecf0882",
+      "source_content": "[![alt](/emails/issues/239/meme3.jpg)](https://nerdy.dev/fathers-day-2025)",
+      "source_content_hash": "9e121fa1ec4b96ae86a4a0bb2ccee305c4fe2f87890069d8383ffb3d15dab0d8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/239/meme3.jpg)](https://nerdy.dev/fathers-day-2025)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e77cf7c6",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下次見！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/239/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:39.460548+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "2684e592112b70cea2634d0f08c8e6466cd2347228c7b6b1bb65a28115b16bc0"
+  }
+}

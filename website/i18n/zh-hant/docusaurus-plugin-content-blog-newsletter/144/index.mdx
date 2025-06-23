@@ -1,0 +1,187 @@
+---
+slug: /144
+title: "This Week In React #144: Server Actions, Million.js, Rendering, Layout Animations, Qwik, Lingui, Remix, React-Router, React-Native macOS, Expo Modules, Ignite..."
+authors: [slorber]
+date: 05-02-2023
+---
+
+大家好！
+
+本週是 Vercel 的「發布週」，預計將宣布關於 React、Next.js 和其雲端服務的重大消息。我們已能搶先預覽 Next.js 即將推出的新功能！
+
+本週有許多精彩文章值得閱讀，其中包含幾篇互動式內容。我尤其喜歡深入瞭解 Million.js 及其「區塊虛擬 DOM」概念的相關內容。
+
+在 React Native 方面，macOS 平台已隨著 v0.71 版本發布跟上進度，而 Expo 讓使用本地原生模組變得前所未有地輕鬆。
+
+接下來幾週有許多 React 技術大會，預計將有重大公告！順帶一提，您可能會在會場看到本電子報的宣傳單！還請協助說服同事訂閱電子報。
+
+提到技術大會，[React Summit](https://reactsummit.com/?utm_source=email&utm_medium=thisweekinreact)（阿姆斯特丹 6/2-6）是全球規模最大的 React 會議。他們提供我們 5% 折扣（優惠碼 "ThisWeekInReact5"）。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Start UI](/emails/issues/144/start_ui.jpg)](https://web.start-ui.com?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[Start UI [web] - 精選網頁應用 UI 入門套件](https://web.start-ui.com?utm_source=newsletter&utm_term=this-week-in-react)**
+
+我們的免費開源網頁應用 UI 入門套件提供快速簡便的方式啟動新專案。內含最佳實踐與生產就緒工具，助您立即上手，省去初始設置階段的時間精力。
+
+內建功能包含：🔐 身份驗證、📱 響應式佈局、🧑‍💻 用戶管理、🇫🇷 國際化與右至左支援、🌚 深色模式、🎛️ 易開發的高階元件。可試用[範例應用](https://demo.start-ui.com)。
+
+開箱即用支援 TypeScript、NextJS、Chakra UI、TanStack Query、Storybook 等技術。
+
+[🚀 Start UI [web] on GitHub](https://web.start-ui.com)
+
+---
+
+## ⚛️ React {#react}
+
+[![Introducing storage on Vercel](/emails/issues/144/vercel.jpg)](https://vercel.com/blog/vercel-storage)
+
+**[Vercel 儲存服務正式推出](https://vercel.com/blog/vercel-storage)**
+
+Vercel 剛發布其優先考慮邊緣運算的儲存服務，特別適用於 React Server Components 和 Next.js：
+
+- Vercel KV：基於 Upstash 的鍵值儲存 Redis
+- Vercel Postgres：基於 Neon 的 PostgreSQL 資料庫
+- Vercel Blob：基於 Cloudflare R2 的檔案儲存
+
+正值 [Vercel Ship 週](https://vercel.com/ship)：未來幾天應有更多消息公布。選用圖片暗示明日將發布 Next.js 版本，推出新功能 **Next.js 伺服器操作**。這也揭示了提升 React 應用[漸進增強](https://twitter.com/sebastienlorber/status/1653701538336915456)能力的意圖，方式類似 Remix：此表單可在無 JavaScript 或水合作用情況下運作。
+
+注意：此範例不易受到 SQL 注入攻擊，因為它使用了範本字面值（template literals）。
+
+---
+
+[![Million.js - Virtual DOM: Back in Block](/emails/issues/144/million.jpg)](https://millionjs.org/blog/virtual-dom)
+
+**[Million.js - Virtual DOM：重返區塊](https://millionjs.org/blog/virtual-dom)**
+
+互動式文章介紹 Million.js 及其「區塊虛擬 DOM」概念。其差異比對方法與眾不同：採用非遞迴方式，基於靜態分析、編譯和髒檢查機制，類似 Svelte 的運作原理。
+
+Million.js 並非取代 React，而是與其整合以提升效能。建議僅在特定場景使用：當應用包含大量靜態內容且 UI 樹結構穩定時。
+
+---
+
+[![React 渲染的互動式指南](/emails/issues/144/rendering.jpg)](https://ui.dev/why-react-renders)
+
+**[React 渲染的互動式指南](https://ui.dev/why-react-renders)**
+
+互動式文章解析 React 何時會重新渲染元件。適合初學者的優質資源，詳細解說 setState(fn)、批次處理、memo、StrictMode 等核心機制。
+
+---
+
+- 🐦 [Dan Abramov - "如果我們認為 Qwik 模型更好，我們早就會直接實現它了"](https://twitter.com/dan_abramov/status/1651055386101796864)
+- 🐦 [CSS 作用域 - 即將推出的對 React 開發者有用的 CSS 功能](https://twitter.com/sebastienlorber/status/1653432768544534531)
+- 📜 [使用 React 和 Framer Motion 製作動畫工具提示](https://sinja.io/blog/animated-tooltip-with-react-framer-motion)：互動式文章，實作了一個漂亮的工具提示系統，使用了 Floating UI 和精美的 Frame Motion 佈局動畫。
+- 📜 [使用 vanilla-extract 建立類型安全的 Tailwind](https://www.highlight.io/blog/typesafe-tailwind)：Tailwind 是個不錯的解決方案，但仍有些缺陷。本文深入探討了 Vanilla-Extract / Sprinkles，這是一個很好的類型安全替代方案。
+- 📜 [URL 是最終的全域狀態管理工具](https://www.jacobparis.com/guides/url-as-state-management)：鼓勵使用查詢字串，並提供了一些 React 範例。
+- 📜 [使用 Server Timing 在您的 Remix 應用程式中找出並修復效能瓶頸](https://www.jacobparis.com/guides/remix-server-timing)
+- 📜 [使用 React Three Fiber 和 GSAP 建立 WebGL 輪播](https://tympanus.net/codrops/2023/04/27/building-a-webgl-carousel-with-react-three-fiber-and-gsap/)
+- 📜 [伺服器元件 vs. SSR](https://www.webscope.io/blog/server-components-vs-ssr)
+- 📜 [2023 年學習 React 的最佳 YouTube 頻道](https://www.code-insights.dev/posts/best-youtube-channels-to-learn-react-in-2023)
+- 📦 [Qwik v1.0](https://www.builder.io/blog/qwik-v1)：正式推出以可恢復性概念挑戰 React 的框架 v1 版本。React 可在 Qwik 應用程式中使用，這應有助於採用。
+- 📦 [Lingui 4.0](https://lingui.dev/blog/2023/04/26/announcing-lingui-4.0)：概述了 i18n 函式庫，並展示了新的 v4 功能。這個函式庫像是 React-Intl 的好替代品：ICU 語法、訊息提取、框架無關、支援 React...
+- 📦 [Remix 1.16](https://github.com/remix-run/remix/releases/tag/remix%401.16.0)：穩定了對 CSS 模組、CSS 導入、Vanilla Extract、PostCSS、Tailwind... 的支援。
+- 📦 [React-Router 6.11](https://twitter.com/remix_run/status/1652000618620555264)
+- 🎥 [45% 的人未能通過 Dan 的伺服器元件測驗](https://www.youtube.com/watch?v=AGAax7WzStc)
+- 🎥 [Reactathon 2023 第一天直播](https://www.youtube.com/watch?v=gJaN9CnFqrI)
+- 🎙️ [React 核心團隊談論 React Forget 和未來](https://twitter.com/PodRocketpod/status/1653429138387243010)
+- 👥 [React Summit](https://reactsummit.com/?utm_source=email&utm_medium=thisweekinreact) (阿姆斯特丹，6月2-6日) 為我們提供門票 -5% 折扣 (代碼 "ThisWeekInReact5")。
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![Nylas](/emails/issues/144/nylas.jpg)](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term)
+
+**[Nylas：為您構建的產品提供電子郵件、日曆和聯絡人功能](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term)**
+
+[Nylas 電子郵件和行事曆 API](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term) 讓開發者能夠建立通訊功能，只需一次整合即可連接全球所有主要服務供應商。
+
+Nylas 讓選擇使用案例和伺服器端 SDK 語言變得簡單。您將獲得一個[逐步教學，附帶**可立即使用的 React 前端**](https://www.nylas.com/blog/how-to-build-email-templates-with-react/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content=&utm_term=)以及可下載的程式碼庫（包含您的 API 憑證）。停止為多個供應商建立和維護單獨的整合，立即[開始推出電子郵件和行事曆功能](https://www.nylas.com/?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content&utm_term)，享受保證 99.99% 的正常運行時間且無維護停機時間。
+
+[免費開始使用 Nylas 進行開發！](https://dashboard.nylas.com/register?utm_source=TWIR&utm_medium=sponsoredemail&utm_campaign=FY23Q2-TWIR-2P-DSU&utm_content=&utm_term=)
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![介紹 React Native macOS 0.71](/emails/issues/144/rnmacos.jpg)](https://devblogs.microsoft.com/react-native/2023-04-27-announcing-macos-71/)
+
+**[介紹 React Native macOS 0.71](https://devblogs.microsoft.com/react-native/2023-04-27-announcing-macos-71/)**
+
+Microsoft 跳過了 v0.69 和 v0.70 版本，直接發布 v0.71。現在的目標是與其他平台保持同步：v0.72 的工作正在進行中。這種平台版本對齊看起來非常有用：根據回饋，在單一 monorepo 中混合不同 React-Native 版本並不容易。
+
+新發布的 v0.71 帶來了對 Fabric 的實驗性支援，以及最近在其他平台上發布的所有新功能：TypeScript、Flexbox...。Microsoft 和 Meta 合作，此平台在兩家公司內的使用似乎正在增長：例如，Meta 在 Messenger Desktop 上使用 React-Native macOS。
+
+---
+
+- 🧵 [File-based Expo Router 示範](https://twitter.com/Baconbrix/status/1652404780881289216)：Evan Bacon 提供完整的 Expo Router 示範，支援行動裝置和網頁。
+- 🐦 [`npx create-expo-module --local`](https://twitter.com/aleqsio/status/1651268836593655808)：強大的新 Expo 功能，可輕鬆建立本地原生模組，無需 monorepo。
+- 🐦 [`npx create-expo`](https://twitter.com/Baconbrix/status/1652372955450441729)：建立新 Expo 專案的指令。
+- 🐦 [Bluesky 應用 (iOS + Android + 網頁) 由 1 位開發者使用 Expo 建置](https://twitter.com/GergelyOrosz/status/1652679796818694146)：Gergely Orosz 的聲明在 Twitter 上引發熱議。
+- 📦 [Ignite v8.7.0](https://twitter.com/ir_ignite/status/1651064452781953024)：以 Maestro 取代 e2e Detox 測試。
+- 📦 [Tamagui 1.17 - selectionStyles](https://twitter.com/tamagui_js/status/1651432667412566016)
+- 📦 [react-native-iconify](https://github.com/oktaysenkan/react-native-iconify)
+- 📦 [react-native-dnd](https://github.com/mgcrea/react-native-dnd)
+- 📦 [react-native-use-list](https://github.com/dozsolti/react-native-use-list)
+- 🎥 [React Native 如何在 Facebook 誕生](https://www.youtube.com/watch?v=On9ghjix77c)：Christopher Chedeau 回顧 React-Native 的歷史，這個專案可說是他從可能夭折中拯救出來的。
+- 🎥 [使用 Skia 實現 React Native 轉場效果](https://www.youtube.com/watch?v=PzKWpwmmRqM)：William Candillon 展示如何基於著色器和手勢實現圖像轉場，可能需要調整現有的 glsl 著色器。
+- 🎥 [這是最糟糕的音量控制？React Native 與 Reanimated](https://www.youtube.com/watch?v=FqdcRBqVS78)
+- 🎙️ [RNR 265 - Chain React 回歸！！](https://reactnativeradio.com/episodes/rnr-265-chain-react-is-back)
+- 👥 [App.js](https://appjs.co/) (克拉科夫，5月10-12日) 提供我們[工作坊 -20% 優惠](https://ti.to/appjs/2023/discount/ThisWeekinReact20) (代碼 "ThisWeekinReact20")。
+- 👥 [Chain React](https://chainreactconf.com/) (波特蘭，5月18-19日) 提供我們門票 -10% 優惠 (代碼 "thisweekinreact")。
+- 👥 [React-Native-Connection](https://reactnativeconnection.io/) (巴黎，6月1日) 提供我們門票 -10% 優惠 (代碼 "REACTHEBDO")。
+
+---
+
+## 🧑‍💻 職缺 {#jobs}
+
+🧑‍💼 [**Passionfroot - 資深全端工程師 (Remix) - €160k+，柏林/遠端**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfroot 的使命是透過 YouTube、Podcast、社群媒體和電子報，賦能明日的獨立事業。加入我們，共同打造能讓全球創作者建立可擴展、可持續商業模式的工具。
+
+🧑‍💼 [**Callstack - 資深 React Native 開發者 - 全遠端，B2B 月薪淨額 PLN 21-32k**](https://www.callstack.com/senior-react-native-developer)
+
+您想開發全球最常用的應用程式嗎？您想共同創造 React Native 技術嗎？加入 Callstack 的 React & React Native 領導者團隊。詳情請參閱我們的網站。我們期待您的申請－展現您的實力！
+
+🧑‍💼 [**G2i - 100% 遠端 React Native 職缺**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我們有多個專注於 React Native 開發者的職缺開放！薪資約 16 萬美金，另加 10% 獎金。應徵者需具備 React Native 實際生產環境經驗，且須位於美國境內。請私訊 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解詳情，並務必提及 This Week in React。
+
+💡 [如何發布職缺？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [Deno 1.33](https://twitter.com/deno_land/status/1652030907396530188)
+- [Deno KV](https://deno.com/blog/kv)
+- [更傾向使用 TypeScript 類型而非介面](https://www.lloydatkinson.net/posts/2023/favour-typescript-types-over-interfaces/)
+- [避免阻塞事件循環的實用指南](https://www.bbss.dev/posts/eventloop/)
+- [TailwindCSS vs. UnoCSS](https://dev.to/mapleleaf/tailwindcss-vs-unocss-2a53)
+- [整合配置 ESLint、Prettier 與 TypeScript](https://blog.joshuakgoldberg.com/configuring-eslint-prettier-and-typescript-together/)
+- [JS 私有類別欄位的潛在危害](https://lea.verou.me/2023/04/private-fields-considered-harmful/)
+- [StackBlitz - WebContainers 現已支援 Safari、iOS 及 iPadOS](https://blog.stackblitz.com/posts/webcontainers-are-now-supported-on-safari/)
+- [為何我偏好使用 Map（及 WeakMap）處理 DOM 節點](https://www.macarthur.me/posts/maps-for-dom-nodes)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/144/meme.jpg)](https://twitter.com/sebastienlorber/status/1653385919460696068)
+
+下次見！👋

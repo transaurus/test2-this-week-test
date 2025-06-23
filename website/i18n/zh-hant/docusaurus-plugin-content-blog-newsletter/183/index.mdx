@@ -1,0 +1,160 @@
+---
+slug: /183
+title: "This Week In React #183: Vercel Edge, React Native 0.74 + IDE, refs, patching fetch(), Remix Single Fetch, RSCs, Signals, Redwood, Zustand Slices, XState, VisionCamera 4, NewArch, VisionOS..."
+authors: [slorber, bndkt]
+date: 04-24-2024
+---
+
+大家好！
+
+本週 React Native 成為焦點！但同時也有來自 Vercel 的有趣消息以及 React 核心團隊值得一看的 PR。
+
+本週早些時候，我參加了在巴黎舉行的 React/RN Connection 會議。很高興在那裡見到你們中的一些人！
+
+巴黎的派對尚未結束。多年後，盛大的 [**dotJS 會議**](https://www.dotjs.io/?utm_source=thisweekinreact) 將於 6 月 27 日重返巴黎。他們已經宣布了強大的講者陣容，包括 Mark Dalgleish、Malte Ubl、Charlie Gerard、James Q Quick、Ben Lesh 等。最後的普通票現正發售，使用我的代碼 "TWIR" 可享 9 折優惠。
+
+由於會議的緣故，我直到今天才有時間處理通訊。幸好我的共同作者 [Benedikt](https://twitter.com/bndkt) 接手並完成了本週大部分的工作！🙏
+
+下週，通訊將休息一次。我們將於 5 月 8 日回歸。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本通訊](https://slo.im/thread) - 視覺格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![一份幫助您提升產品技能的通訊](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)
+
+**[一份幫助您提升產品技能的通訊](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**
+
+[**工程師的產品指南**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) 是 PostHog 的通訊，致力於幫助工程師提升產品技能。學習該問使用者哪些問題、如何打造使用者喜愛的新功能，以及達成產品市場契合的路徑。
+
+[**免費訂閱**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) 以獲取關於打造優秀產品的精選建議、來自構建 PostHog 的經驗（和錯誤），以及對頂尖初創公司策略的深度解析。
+
+---
+
+## ⚛️ React {#react}
+
+[![Vercel 將所有邊緣渲染回退至 Node.js](/emails/issues/183/r183.jpg)](https://x.com/leeerob/status/1780705942734331983)
+
+🐦 [Vercel 將所有邊緣渲染回退至 Node.js](https://x.com/leeerob/status/1780705942734331983)
+
+Vercel 的產品副總裁 Lee Rob 在 X 上解釋說，Vercel 正在「將所有邊緣渲染回退至 Node.js」。如果您正在使用 Vercel（甚至可能沒有使用），您會知道 Vercel 長期以來一直在推動「邊緣」這一概念。一方面，邊緣意味著運算在使用者存取託管於 Vercel 的網站的地點附近執行。另一方面，這也意味著運算在「邊緣運行時」上執行，該運行時建基於 V8 而非 Node.js。雖然在終端使用者附近執行運算的概念聽起來很吸引人，但如果資料需要從中央位置載入（這往往是常態），其優勢便會迅速消失。同時，開發團隊常常難以將工作負載適應邊緣運行時有限的 API 子集。現在看來，Vercel 得出的結論是，整體而言，對開發者而言的挑戰超過了有限的好處，因此正在回歸至集中式的 Node.js 運行時。我欣賞他們在這方面的透明度！如果您想了解更多細節，Theo 製作了一個關於此的[影片](https://youtu.be/lAGE-k1Zfrg?si=5SP4hyoFkixTsh-y)。
+
+---
+
+- 💸 [Clerk's prebuilt UI components give you a beautiful, fully-functional user management experience in minutes. Start for free!](https://go.clerk.com/AlkHHq8)
+- 👀 [React Core PR - React 19 will not patch fetch() anymore!](https://github.com/facebook/react/pull/28896): the controversial `fetch()` patch to deduplicate requests in RSCs is now removed from React core. You might see it as a good thing, but keep in mind you will now need to deduplicate requests yourself manually with `React.cache`.
+- 👀 [React Core PR - Don't minify symbols in production builds](https://github.com/facebook/react/pull/28881): React 19 production builds will preserve variable/function names and should become easier to read/debug. You can still minify it yourself if you want to, but using HTTP gzip compression should be enough to compensate for the extra size.
+- 👀 [React Docs PR - Add documentation for ref cleanup function](https://github.com/reactjs/react.dev/pull/6770): React 19 ref functions can now return a cleanup function (🐦 [preview](https://twitter.com/sebastienlorber/status/1783108366459375675)). This should also help users using string refs (removed in v19) and classes to migrate thanks to automated codemods.
+- 👀 [Remix POC - Remix + Hono + Vite](https://github.com/yusukebe/hono-and-remix-on-vite)
+- 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 Amsterdam - 14-18 June - Get a 10% discount with code "TWIR". Awesome lineup including Evan Bacon, Kent C. Dodds, Theo, Tim Neutkens, Mark Erikson, Fred Schott and so many others!
+- 📜 [HTML attributes vs DOM properties](https://jakearchibald.com/2024/attributes-vs-properties/): A great deep dive into subtle DOM behaviors and design decisions, including how frameworks like React or Vue handle the difference. Also explains how React 19 will improve support for Web Components.
+- 📜 [Redwood - Building a new docs site with RSC](https://redwoodjs.com/blog/building-a-new-docs-site-with-rsc): Redwood is dogfooding Redwood by showing how to build a docs site with it, based on MDX and RSCs.
+- 📜 [Deploy a new Remix app to Cloudflare Pages:](https://www.jacobparis.com/content/remix-cloudflare-pages) A lot has recently changed (and improved!) about how Remix can be deployed to CF Pages. This is a good guide on the state of the art.
+- 📜 [Improving INP in React and Next.js](https://www.thisdot.co/blog/improving-inp-in-react-and-next-js): Interaction to Next Paint has recently replaced First Input Delay (FID) as a core web vital; this post details how to optimize it.
+- 📜 [Did Signals Just Land in React?](https://thenewstack.io/did-signals-just-land-in-react/): Spoiler Alert: No, they didn't. But there’s still a way to try signals in React.
+- 📜 [Vercel - Building an interactive 3D event badge with React Three Fiber](https://vercel.com/blog/building-an-interactive-3d-event-badge-with-react-three-fiber)
+- 📜 [Getting the Current URL in Next.js Server Components](https://www.propelauth.com/post/getting-url-in-next-server-components)
+- 📜 [How to manifest streamlined authentication: AWS Cognito in a React app](https://evilmartians.com/chronicles/how-to-manifest-streamlined-authentication-aws-cognito-in-a-react-app)
+- 📜 [Localized link tags for SEO in Remix](https://react-japan.dev/en/blog/localized-link-tags-for-seo-in-remix)
+- 📜 [How Solid Made Me A Better React Developer](https://www.brenelz.com/posts/how-solid-made-me-a-better-react-developer/)
+- 📜 [Boosting Performance with Next.js and React Server Components - A GeekyAnts Case Study](https://geekyants.com/blog/boosting-performance-with-nextjs-and-react-server-components-a-geekyantscom-case-study)
+- 📜 [How to Simplify Global State Management in React Using Jotai](https://thenewstack.io/how-to-simplify-global-state-management-in-react-using-jotai/)
+- 📦 [Remix 2.9 - Single Fetch (unstable)](https://github.com/remix-run/remix/blob/main/CHANGELOG.md)
+- 📦 [StyleX - 0.6.1 - Typed variables, fallback values, ESLint plugin](https://stylexjs.com/blog/v0.6.1)
+- 📦 [Hydrogen April 2024 release - Analytics preview, stable Vite support, SEO updates, full-page caching](https://hydrogen.shopify.dev/update/april-2024)
+- 📦 [Zustand-Slices - Assemble slices into a single store](https://github.com/zustandjs/zustand-slices)
+- 📦 [Spoiled - Realistic Spoiler component for React.js](https://github.com/molefrog/spoiled)
+- 🎙️ [Off The Main Thread Podcast: Putting React In The Browser](https://offthemainthread.tech/episode/putting-react-in-the-browser/)
+- 🎥 [Jack Herrington - JS Built-in Signals In React and Svelte today!](https://www.youtube.com/watch?v=HSVcZa5yTKE)
+- 🎥 [Ben Holmes - Vercel got it wrong](https://www.youtube.com/watch?v=_dtyYDwHAIc): Interesting take on the “edge” topic by Ben Holmes, detailing Cloudflare’s approach.
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![NLUX ― 簡化添加 AI 功能的新 React 函式庫](/emails/issues/183/nlux.jpg)](https://nlux.dev/?c-twr2-h)
+
+**[NLUX ― 簡化添加 AI 功能的新 React 函式庫](https://nlux.dev/?c-twr2-h)**
+
+[NLUX](https://nlux.dev?c-twr2-p1) 是一個[開源](https://github.com/nluxai/nlux)的 React 函式庫，可讓您輕鬆將像 ChatGPT 這樣強大的大型語言模型 (LLMs) 整合到您的網路應用程式或網站中。只需幾行程式碼，您就能加入對話式 AI 功能。
+
+主要功能 🌟 包括：
+
+- **幾分鐘內建構 AI 聊天介面** - 只需幾行程式碼，即可打造高品質的對話式 AI 介面。
+- **React 元件與 Hooks** - 用於 UI 的 `<AiChat />` 以及用於輕鬆整合的 `useChatAdapter` hook。
+- **靈活的適配器** - 適用於 `ChatGPT`、`LangChain` 和 `HuggingFace`，並提供 API 以**為任何後端創建您自己的適配器**。
+- **以最佳方式同步 UI 狀態與 AI 後端**。
+- **Markdown 串流** - 在 LLM 生成 Markdown 的同時進行渲染。
+- **零依賴** - 輕量級程式碼庫。
+
+更多資訊、範例和文件請參閱 [nlux.dev](https://nlux.dev?c-twr2-p1)
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Native 0.74 發布，React Native IDE 現已進入測試版](/emails/issues/183/rn183.jpg)](https://reactnative.dev/blog/2024/04/22/release-0.74)
+
+📦 [React Native 0.74 發布](https://reactnative.dev/blog/2024/04/22/release-0.74)
+
+本週發布了 React Native 0.74，這是社群的一個重要里程碑！最新版本讓「無橋接模式」成為使用新架構的新專案的預設設定（在接下來的 0.75 版本中，新架構也將成為預設）。兩者仍可在需要時關閉，但它們顯然代表了 React Native 的未來，尤其是在過去幾個月，大量函式庫已添加對這兩者的支援。但還有更多：RN 0.74 包含了 Yoga 3.0。破壞性變更和棄用非常少，但還是值得查看[發布說明](https://reactnative.dev/blog/2024/04/22/release-0.74)。
+
+📦 [React Native IDE 現已進入測試版](https://ide.swmansion.com/)
+
+本週另一個令人興奮的消息是 Software Mansion 團隊開發的 React Native IDE 已進入封閉測試階段。您現在可以報名以取得 IDE 的早期存取權限。他們現在也上線了登陸頁面，並且[文件](https://ide.swmansion.com/docs/getting-started)已公開提供給任何對此感興趣的人。
+
+---
+
+- 💸 [React Native 分析工具 — Omlet 是一個用於分析組件使用情況的新工具。查看趨勢以改進代碼並提升組件採用率。](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-rn-ql-apr-2024)
+- 🐦 [在即將推出的 React Native IDE 中，右鍵點擊檢查元件階層並跳轉至原始碼？](https://x.com/kzzzf/status/1781334337960493100)
+- 🐦 [又過一週，Evan Bacon 再度推出新作：預編譯 React Native](https://x.com/Baconbrix/status/1782454818851663918)
+- 🗓 [App.js 大會](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 克拉科夫 - 5月22-24日。使用代碼 "TWIR" 可享 [9折優惠](https://ti.to/appjs/2024/discount/TWIR)。
+- 📜 [在新 Expensify 應用中啟用新架構](https://blog.swmansion.com/sunrising-new-architecture-in-the-new-expensify-app-729d237a02f5)：看到複雜的開源應用適配新架構令人驚豔！絕佳的參考案例。
+- 📜 [React Native 的 Apple 隱私清單](https://dev.to/dannyhw/apple-privacy-manifest-for-react-native-29fk)：先前曾提過 Apple 隱私清單要求，終於有篇好文章完整總結此主題。
+- 📜 [Expo 部落格：使用 expo-quick-actions 防止用戶刪除你的應用](https://expo.dev/blog/expo-quick-actions)
+- 📜 [使用手寫 SVG 創建 React Native 曲線底部導覽列](https://kyleshevlin.com/react-native-curved-bottom-bar-with-handwritten-svg/)
+- 📜 [使用 React Native 探索 VisionOS 應用](https://geekyants.com/blog/exploring-visionos-apps-with-react-native)
+- 📜 [微軟將淘汰 App Center：React Native 開發者替代方案指南](https://shift.infinite.red/microsoft-is-retiring-app-center-heres-what-react-native-developers-should-use-instead-c2a8786f971e)
+- 📦 [React Native VisionCamera V4：透過 Skia 直接在相機畫面上繪製，修復大量 Android 錯誤](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.0.0)：附帶展示功能的精彩 [演示](https://github.com/mrousavy/FaceBlurApp)！
+- 📦 [react-native-svg 15.2.0 新增支援 RN 0.74 新架構](https://github.com/software-mansion/react-native-svg/releases/tag/v15.2.0)
+- 🎙️ [RNR 第294集 - 再見了，App Center！](https://reactnativeradio.com/episodes/rnr-294-rip-app-center-and-other-news)
+- 🎙 [火箭船第39集 - 獲獎信用卡應用 Yonder 專訪 Henry Moulton](https://podcast.galaxies.dev/episodes/039-award-winning-credit-card-app-yonder-with-henry-moulton)
+- 🎥 [React Native Show 播客：咖啡閒聊18 - React Native 0.74 發布幕後](https://www.youtube.com/watch?v=bLHubdUE2Ew)
+- 🎥 [Simon Grimm - 使用 Supabase Realtime 和 Skia 實現 React Native 多人連線](https://www.youtube.com/watch?v=rqbu-nGkOgw)
+- 🎥 [Oscar Franco - 給新手看的 React Native 無橋接模式](https://www.youtube.com/watch?v=K5HBIKAjZ4U)
+
+---
+
+## 🔀 其他 {#other}
+
+- 🐦 [Fetch API 內建支援逾時功能](https://x.com/goenning/status/1781290404211814903)
+- 📜 [訊號轉接器探討](https://www.pzuraq.com/blog/on-signal-relays)
+- 📜 [WebKit：協助我們打造 CSS Grid Level 3「瀑布流」佈局](https://webkit.org/blog/15269/help-us-invent-masonry-layouts-for-css-grid-level-3/)
+- 📜 [給 JavaScript 開發者的 TSConfig 入門指南](https://deno.com/blog/intro-to-tsconfig)
+- 📜 [Vercel - 前端開發者必須知道的延遲數據](https://vercel.com/blog/latency-numbers-every-web-developer-should-know)
+- 📖 [2024 年前端開發者/工程師手冊 - 現代網頁開發指南 - 免費電子書](https://frontendmasters.com/blog/front-end-developer-handbook-2024/)
+- 📦 [Chrome 125 beta - CSS 錨點定位、CSS 階梯函數...](https://developer.chrome.com/blog/chrome-125-beta?hl=en)
+- 📦 [ESLint v9.1](https://eslint.org/blog/2024/04/eslint-v9.1.0-released/)
+- 📦 [Electron 30.0](https://www.electronjs.org/blog/electron-30-0)
+
+---
+
+## 🤭 趣味專區 {#fun}
+
+[![Vercel 更新了他們的標誌](/emails/issues/183/meme.jpg)](https://twitter.com/RhysSullivan/status/1780822966349266957)
+
+[![Vercel 更新了他們的標誌](/emails/issues/183/meme2.jpg)](https://twitter.com/bentonnnnnn/status/1781186098800267421)
+
+下次見！👋

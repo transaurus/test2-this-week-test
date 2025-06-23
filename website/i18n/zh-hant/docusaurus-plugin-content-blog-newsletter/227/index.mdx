@@ -1,0 +1,162 @@
+---
+slug: /227
+title: "This Week In React #227: Next.js, tRPC, React Query, React Router, StyledComponents, MUI, Base UI, Next Intl | React Native birthday, Lynx, EAS, Atlas, Reanimated, Audio, BottomTabs | CSS, Rsdoctor, Linters, Node"
+authors: [slorber]
+date: 03-26-2025
+---
+
+大家好！
+
+本週，您可能沒錯過 Next.js 中介層的爭議事件，但這並非唯一值得關注的動態！
+
+我們還迎來了多項重要版本發布，包括 tRPC、React Query、Rsdoctor 等！
+
+此外，React Native 今天迎來了 10 週年！🥳
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助 {#sponsor1}
+
+[![Convex：專為 AI 編程設計的資料庫](/emails/issues/227/convex.jpg)](https://convex.link/thisweekai)
+
+**[Convex：專為 AI 編程設計的資料庫](https://convex.link/thisweekai)**
+
+在程式碼自動生成時代，您需要一個能放心透過 AI 平台生成的後端。Convex 憑藉其[頂尖性能表現](https://stack.convex.dev/introducing-fullstack-bench)在此領域遙遙領先。
+
+關鍵在於 Convex 採用 TypeScript 架構，讓您能用程式碼形式編寫[查詢函式](https://docs.convex.dev/functions/query-functions/)，並自動實現事務處理、快取與即時更新。
+
+這僅僅是起點。使用 Convex 您還能：
+
+- 輕鬆排程函式與設定定時任務
+- 快速建立檔案儲存系統
+- 編寫高效伺服器函式
+- 以及更多功能...
+
+[立即體驗快速入門指南](https://docs.convex.dev/quickstarts)
+
+---
+
+## ⚛️ React {#react}
+
+[![Next.js 中介層繞過漏洞事件報告](/emails/issues/227/middleware.png)](https://vercel.com/blog/postmortem-on-next-js-middleware-bypass)
+
+**[Next.js 中介層繞過漏洞事件報告](https://vercel.com/blog/postmortem-on-next-js-middleware-bypass)**
+
+A few days ago, Vercel announced a critical 9.1 vulnerability in Next.js middleware system. With a simple but malicious `x-middleware-subrequest` header, you can bypass the middleware, possibly exposing sensitive information. Patches are available for Next.js 12/13/14/15. Note that this vulnerability only affects self-hosted apps using `output: ‘standalone’` and `next start` are affected. Customers of major serverless cloud providers are either not affected (Vercel, Netlify), or protection can be turned on (Cloudflare).
+
+值得注意的是，儘管 Next.js 中介層本不應存在此漏洞，但它[並非管理使用者會話和路由保護的建議方案](https://nextjs.org/docs/pages/building-your-application/authentication#optimistic-checks-with-middleware-optional)，也不應作為 Next.js 應用中的唯一防線。中介層更適合執行輕量級樂觀檢查，在不觸及資料庫的情況下進行路由改寫/重新導向。
+
+此安全事件在生態系引發諸多爭議，在此恕不多作評論。Vercel 本可更妥善處理此事，並承諾未來改進。建議您參考多方資源形成獨立判斷（以下僅列舉部分）：
+
+- 📜 [Next.js and the corrupt middleware: the authorizing artifact](https://zhero-web-sec.github.io/research-and-things/nextjs-and-the-corrupt-middleware)：發現此漏洞的安全研究人員撰寫的原始文章。
+- 📜 [How to Think About Security in Next.js](https://nextjs.org/blog/security-nextjs-server-components-actions)：雖是舊文，但今日仍具參考價值。
+- 📜 [Authorization in Next.js](https://www.robinwieruch.de/next-authorization/)：Robin 闡述他在 Next.js 專案中處理授權的方式，盡可能靠近敏感資料。
+- 📜 [You should know this before choosing Next.js](https://eduardoboucas.com/posts/2025-03-25-you-should-know-this-before-choosing-nextjs/)：Netlify 首席工程師的觀點分析。
+- 🎥 [Theo \- Next.js security exploit](https://www.youtube.com/live/UbcrphhSAIs?si=QgihLKnhpyE3RxPO&t=8243)：針對此議題的 1 小時直播，同時解析 Vercel 的處理疏失。
+
+---
+
+- 💸 [Product for Engineers - Don't make these feature flag mistakes](https://dub.link/twir-mar26)
+- 👀 [Next.js PR \- `useLinkStatus()`](https://github.com/vercel/next.js/pull/77300): New hook to provide pending feedback during navigation transitions.
+- 👀 [Next.js PR \- Link `onNavigate` prop](https://github.com/vercel/next.js/pull/77209)
+- 📣 [Styled Components \- Thank you](https://opencollective.com/styled-components/updates/thank-you): The popular old-gen CSS-in-JS library is now in maintenance mode and not recommended for new projects.
+- 🗓 [React-Summit](https://reactsummit.com/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇳🇱 Amsterdam - 13 & 17 June. Creators of React Query (Tanner Linsley), Expo Router (Evan Bacon), Million.js (Aiden Bai) & more will share knowledge at React Summit! Use promo code TWIR for 10% off tickets.
+- 📜 [Experimenting with React View Transitions](https://frontendatscale.com/issues/43): Explains what View Transitions are and how React’s experimental `<ViewComponent>` API integrates this web feature. React starts view transitions automatically when using concurrent features, applies transition names automatically at the right time, and exposes convenient lifecycle props.
+- 📜 [Components Are Just Sparkling Hooks](https://www.bbss.dev/posts/sparkling-hooks/): Shows how a component can be transformed into a hook, how the 2 are related, and introduces the concept of hook-based headless components as a flexible primitive.
+- 📜 [Writing static websites with Vite and React](https://blog.carlosn.com.br/post/writing-static-websites-with-vite-and-react/): Carlos created a Vite plugin to implement a simple React-based static site generator, using React only as a server-side templating system.
+- 📜 [Next.js vs TanStack](https://www.kylegill.com/essays/next-vs-tanstack/): Kyle is done with Next.js complexity and thinks TanStack Start is the right abstraction.
+- 📜 [Passing TypeScript react components native HTML attributes](https://frontguys.fr/front-end/typescript-react-native-attributes/): Shows how to wrap a native input while keeping the ability to pass any native input prop.
+- 📜 [Storybook 9 sneak peek: Accessibility Addon refresh](https://storybook.js.org/blog/preview-the-new-accessibility-addon/)
+- 📜 [React Trends in 2025](https://www.robinwieruch.de/react-trends/)
+- 📜 [How does the use API work with Next 15 and React 19?](https://www.premieroctet.com/blog/en/how-does-the-use-api-work-with-next-15-and-react-19)
+- 💸 [Omlet for VS Code: Get React component usage insights in VS Code](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)
+- 📦 [tRPC 11.0](https://trpc.io/blog/announcing-trpc-v11): This release brings many new React-related features, including TanStack Query v5 support, the new more native React Query integration based on `queryOptions`, improved Next.js/RSC support, the ability to download/upload binaries, and more.
+- 📦 [React Query 5.69 \- `streamedQuery`](https://github.com/TanStack/query/releases/tag/v5.69.0): React Query can now handle `AsyncIterable` types and receive chunks of data. It will be `pending` only while waiting for the first chunk. This looks particularly useful for building AI/LLM chats.
+- 📦 [Rsbuild Plugin React Router](https://github.com/rspack-contrib/rsbuild-plugin-react-router/releases/tag/rsbuild-plugin-react-router%400.0.1): Now available on npm, you can use React Router in framework mode with another bundler than Vite. It works well with all the React Router CLI templates and the Epic Stack.
+- 📦 [Material UI 7.0 \- Improved ESM support, consitent slot pattern implementation, `enableCssLayer`](https://mui.com/blog/material-ui-v7-is-here/)
+- 📦 [Base UI 1.0.0-alpha.7](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.7): Another great release from the promising Radix UI challenger.
+- 📦 [Next Intl 4.0 \- Type-safe locales, ICU arguments, format and more](https://next-intl.dev/blog/next-intl-4-0)
+- 📦 [Merge Refs 2.0 \- Merges React refs into one](https://github.com/wojtekmaj/merge-refs)
+- 📦 [React-Admin 5.5 & 5.6 \- March 2025 Update](https://marmelab.com/blog/2025/03/24/react-admin-march-2025-update.html)
+- 📦 [Ionic 8.5 \- React 19 support](https://ionic.io/blog/announcing-ionic-8-5)
+- 🎥 [React Paris 2025 Playlist](https://www.youtube.com/watch?v=-W3_dxNDHVw&list=PL53Z0yyYnpWitP8Zv01TSEQmKLvuRh_Dj): I was at the conf last Friday, great talks already available online, and it was nice to meet some of you there 👋!
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![認識 @clerk/agent-toolkit](/emails/issues/227/clerk.jpg)](https://go.clerk.com/ovPb3z0)
+
+**[認識 @clerk/agent-toolkit](https://go.clerk.com/ovPb3z0)**
+
+Clerk 推出的實驗性套件，用於在 AI 代理工作流程中整合 Clerk。透過 Vercel AI SDK + LangChain 支援，管理使用者、組織等。立即試用：`npm install @clerk/agent-toolkit`
+
+---
+
+## 📱 React-Native {#react-native}
+
+![React Native 滿 10 歲](/emails/issues/227/rn-10.jpg)
+
+**React Native 滿 10 歲了！🎉🤯**
+
+難以置信，React Native 已於[整整 10 年前開源](https://engineering.fb.com/2015/03/26/android/react-native-bringing-modern-web-techniques-to-mobile/)，今天正慶祝其第一個十年！
+
+向所有促成此事的貢獻者致敬！讓我們藉此重溫[Christopher Chedeau（Vjeux，React Native 共同創建者）的播客訪談](https://youtu.be/_cBqGenDCks?si=nrfF4D_FGEJhQsH3&t=1504)，他詳述了 React Native 的誕生歷程，以及若無敢於冒險的遠見者，這個偉大專案可能早已夭折。
+
+同時向卓越的 React Native 社群致敬——緊密團結、持續推進、克服挑戰，共同建構原生宣告式 UI 的未來 🚀
+
+致下一個充滿希望的十年！🥂
+
+---
+
+- 💸 [Codemagic - React Native 開發者的絕佳 App Center 替代方案！建置速度提升 8 倍、CodePush、自動化分發。免費試用一個月！](https://codemagic.io/migration-from-app-center/?utm_source=newsletter&utm_medium=email&utm_campaign=app_center_this_week_react)
+- 👀 [2025 年誰在使用 Expo 開源軟體](https://bacon.expo.app/blog/expo-apps)：Evan 剛剛更新了他的清單，包含 2,262 個使用 Expo 或 React Navigation 的頂級應用程式。
+- 👀 [Plugin Pro](https://pluginpro.dev/)：即將推出的 CLI 預覽，它可以記錄您的原生平台變更，然後產生 Expo 設定外掛程式。這讓人想起 patch-package 的運作方式。
+- 👀 [Legend Photos - 開源照片檢視應用程式 - 使用 React Native macOS 建置](https://github.com/LegendApp/legend-photos)
+- 🐦 [Evan Bacon - 「如果您可以直接在行動應用程式中，隨時隨地建置行動應用程式呢？」](https://x.com/Baconbrix/status/1904548835143409948)：這個想法相當有趣。與其使用 AI 產生伺服器驅動的 UI，何不在本地端產生整個畫面？
+- 📣 [EAS Build & Workflows - 推出 M4 Pro - iOS 建置速度提升 1.85 倍](https://expo.dev/changelog/eas-build-workflows-m4-pro)
+- 📜 [Lynx 2025 年路線圖](https://lynxjs.org/blog/lynx-open-source-roadmap-2025.html)：這個 React Native 的競爭對手計劃開源對 Windows、macOS 和 OpenHarmony 的桌面支援。新的功能、UI 元素以及改進的工具即將到來。
+- 📜 [為什麼了解應用程式的套件內容對 React Native 效能至關重要](https://www.callstack.com/blog/knowing-your-apps-bundle-contents-native-performance)：解釋如何使用 Expo Atlas，以及一個技巧讓它在未使用 Expo 時也能運作！
+- 📜 [從 Firebase 動態連結遷移：實用指南](https://medium.com/@louis.lagrange/migrating-from-firebase-dynamic-links-a-practical-guide-9905bbb8f04d)
+- 📜 [2025 年的 React Native 模態視窗](https://addjam.com/blog/2025-03-24/react-native-modals-2025-comprehensive-guide/)
+- 📦 [Reanimated 4 beta.3 - CSS 轉場簡寫、邊到邊顯示、移除舊版架構程式碼，依賴於 react-native-worklets](https://github.com/software-mansion/react-native-reanimated/releases/tag/4.0.0-beta.3)
+- 📦 [Bottom Tabs 0.9 - 新增 `freezeOnBlur`，移除 `ignoresTopSafeArea`（現在是自動的）](https://github.com/callstackincubator/react-native-bottom-tabs/releases)
+- 📦 [Audio API 0.5 - RN 0.78、音高校正、記憶體內音訊解碼](https://github.com/software-mansion/react-native-audio-api/releases/tag/0.5.0)
+- 📦 [Tanstack Query DevTools Expo 外掛程式](https://github.com/LovesWorking/tanstack-query-dev-tools-expo-plugin)
+- 📦 [React Native Auto Skeleton - 根據您現有的 UI 佈局自動產生骨架](https://github.com/pioner92/react-native-auto-skeleton)
+- 📦 [Expo Passkey - 更好的身份驗證外掛程式，實現安全、無密碼的身份驗證](https://github.com/iosazee/expo-passkey)
+- 📦 [React Native Magic Scroll 0.1.25 - 在長表單上管理鍵盤和 ScrollView - 新架構、支援 Expo 52](https://github.com/AppAndFlow/react-native-magic-scroll/releases/tag/v0.1.25)
+- 🎙️ [Rocket Ship 63 - 與 Matt Palmer 一起使用 Replit 從點子到應用程式](https://podcast.galaxies.dev/episodes/063-from-idea-to-app-using-replit-with-matt-palmer)
+- 🎥 [Callstack 網路研討會 - 在現有應用程式中使用 React Native 以加快跨平台功能開發](https://www.youtube.com/watch?v=qlm1q0ZQ0ko)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [Node PR - v24.0 版本發布](https://github.com/nodejs/node/pull/57609)：新版 Node.js LTS 已進入 RC 階段，預計將於 4 月 22 日發布。它將 V8 引擎升級至 13.4 版本，這將解鎖新的 JavaScript 功能，例如 `Promise.try`、`Intl.DurationFormat` 和 `Atomics.pause`。
+- 📜 [@scope 能解決的一件事：降低對原始碼順序的擔憂](https://frontendmasters.com/blog/one-thing-scope-can-do-is-reduce-concerns-about-source-order/)：今日學到 `@scope` 為 CSS 級聯引入了「範圍鄰近性」的新概念！它已納入 Interop 2025，應該很快就會在所有的瀏覽器中實作。
+- 📜 [Chrome 135 - 使用 CSS 實現輪播](https://developer.chrome.com/blog/carousels-with-css)
+- 📜 [Chrome 135 - 現在可使用 CSS 自訂 \<select\> 元素](https://developer.chrome.com/blog/a-customizable-select)
+- 📜 [混合式 Linter：兩全其美的最佳方案](https://www.joshuakgoldberg.com/blog/hybrid-linters-the-best-of-both-worlds/)
+- 📦 [Rsdoctor 1.0 - 專為 webpack 和 Rspack 打造的建置分析工具](https://rsdoctor.dev/blog/release/release-note-1_0)：我在 Docusaurus 專案中使用的絕佳工具，用於找出建置時間瓶頸。
+- 📦 [Biome 2.0 beta - 支援插件、領域、多檔案分析等功能](https://biomejs.dev/blog/biome-v2-0-beta/)
+
+---
+
+## 🤭 趣聞 {#fun}
+
+本週我們有兩部影片，記得點擊觀看 😂
+
+[![alt](/emails/issues/227/meme.jpg)](https://x.com/sebastienlorber/status/1904152606181658966)
+
+[![alt](/emails/issues/227/meme2.jpg)](https://x.com/flexbox_/status/1903547233032712635)
+
+下次見！👋

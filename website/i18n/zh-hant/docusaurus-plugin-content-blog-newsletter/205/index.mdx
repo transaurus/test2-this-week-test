@@ -1,0 +1,159 @@
+---
+slug: /205
+title: "This Week In React #205: Next.js, useActionState, Headless, d&d, Web Components, RSCs, Next-Safe-Action, Remix, Zustand, NumberFlow, Atomic-CSS-DevTools, ESLint, BottomSheet, edge-to-edge, Ignite, Metro, ES2025, Node.js, TypeScript..."
+authors: [slorber]
+date: 10-16-2024
+---
+
+大家好！
+
+本週我們迎來 Next.js 主要候選版本在 Next.js Conf 前夕發布，以及多樣化的版本更新與精彩的互動式技術文章。
+
+React Native 生態同樣活躍，許多重要基礎套件紛紛更新。聽說 v0.76 穩定版即將發布！
+
+Node.js 23 已發布，另有 4 項新功能將在 ES2025 完成標準化！
+
+🙏 本週刊成長速度不如以往。若您能向朋友或同事推薦，我將不勝感激。您可以直接轉發這封郵件（或[線上版連結](https://thisweekinreact.com/newsletter/205)），由他們決定是否值得訂閱。感謝！
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本週刊](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![AG Charts: 全球頂尖的 React 圖表解決方案。](/emails/issues/205/agcharts.jpg)](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-2)
+
+**[AG Charts: 全球頂尖的 React 圖表解決方案。](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-2)**
+
+AG Charts 是 AG Grid 推出的 canvas 圖表庫。最初為 [AG Grids](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-2) 整合圖表功能而開發，現每月 npm 下載量已突破 **100 萬次**：
+
+- 🆓 **免費版**：永久免費使用**長條圖**、**折線圖**、**散點圖**、**區域圖**等多種圖表類型
+- 🚀 **高效能**：採用**批次繪製**技術與進階變更偵測，結合 **offscreen canvas API**，可輕鬆渲染數十萬筆資料點
+- 📊 **金融圖表**：僅需 3 行程式碼即可建立具備進階註解功能的互動式金融圖表
+- 🏢 **企業功能**：升級企業版解鎖動畫、右鍵選單、十字準線等高階功能。免費試用無需授權
+
+了解更多：[www.ag-grid.com/charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2024-email-2)
+
+---
+
+## ⚛️ React {#react}
+
+[![Next.js 15 RC 2](/emails/issues/205/nextjs.jpg)](https://nextjs.org/blog/next-15-rc2)
+
+[**Next.js 15 RC 2**](https://nextjs.org/blog/next-15-rc2)
+
+距首個候選版本數月後，Next.js Conf 前夕再推重大更新，包含：
+
+- `@next/codemod upgrade`：輕鬆升級至最新 Next.js 與 React 版本
+- 開發環境 Turbopack：效能提升與 Next.js 15 穩定性目標
+- 非同步請求 API（重大變更）：邁向簡化渲染與快取模型的重要步驟
+- 伺服器操作：透過不可預測端點與移除未使用操作強化安全性
+- 靜態路由指示器：開發期間顯示靜態路由的新視覺標示
+- `next/form`：透過客戶端導航強化 HTML 表單功能
+- `next.config.ts`：Next.js 設定檔支援 TypeScript
+- `instrumentation.js`（穩定版）：用於伺服器生命週期觀測的新 API
+- 開發與建置改進：縮短建置時間與加速 Fast Refresh
+- 自託管：強化 `Cache-Control` 標頭控制權
+- ESLint 9
+
+---
+
+- 💸 [Product for Engineers - The magic of small engineering teams](https://newsletter.posthog.com/p/the-magic-of-small-engineering-teams?utm_source=twir&utm_campaign=twir)
+- 👀 [React Core PR \- Re-land non-blocking prerendering](https://github.com/facebook/react/pull/31238): The prerendering of Suspense siblings (blocking the v19 release) has been reverted due to breakages and is now re-introduced.
+- 👀 [Next.js PR draft \- experimental Request Interceptors](https://github.com/vercel/next.js/pull/70961): This new feature could complement middleware and address some of its limitations with different tradeoffs.
+- 👀 [react-beautiful-dnd is now deprecated](https://github.com/atlassian/react-beautiful-dnd/issues/2672): Atlassian is now focusing on building “pragmatic drag and drop”.
+- 🗓️ [React Summit US](https://reactsummit.us/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇺🇸 New-York - 19 & 22 December - Hurry and grab your ticket to the conference as prices are about to go up ! And don’t forget your discount with code “TWIR”.
+- 📜 [The True Nature of useActionState](https://www.nikhilsnayak.dev/blogs/the-true-nature-of-use-action-state): An interactive article that points out the API design similarities between `useReducer` and `useActionState`. It refactors an in-memory todo app using `useReducer` to use persistent/async storage. React 19 makes it convenient to turn an existing reducer async and move it to the server.
+- 📜 [Headless, boneless, skinless & lifeless UI](https://nerdy.dev/headless-boneless-and-skinless-ui): Adam Argyle attempts to classify different React UI abstraction libraries more precisely than just “headless”.
+- 📜 [Drag to Select](https://www.joshuawootonn.com/react-drag-to-select): This awesome interactive article explains how to implement a complex item selection UX in React, including various edge cases to consider such as user scrolling while dragging.
+- 📜 [A Future for Web Components Without Shadow DOM](https://jjenzz.com/future-for-web-components-without-shadow-dom/): Jenna (RadixUI) shares interesting insight on Web Components from the perspective of a React design system dev. I thought Declarative Shadow DOM was required for SSR, but customized built-ins and custom attributes (proposal) might be better alternatives.
+- 📜 [The Big "Server Waterfall Problem" with RSCs](https://www.epicreact.dev/server-waterfall-problem-rscs): Kent explains it’s still possible to have waterfalls when using RSCs, but server-side waterfalls are less problematic than client-side waterfalls. The tension between query co-location and props drilling is not going away with RSCs.
+- 📜 [How to prevent re-render in React with Tailwind CSS](https://www.nico.fyi/blog/tailwind-css-group-modifier-to-prevent-react-rerender): Adding data attributes at the top of the DOM tree could help reduce statefulness in deeply nested components. An interesting technique, often used for theming, not only for Tailwind users.
+- 📜 [How to Use Next-Safe-Action for Your Server Actions](https://codelynx.dev/posts/next-safe-action-guide-en): Shows how to enhance Next.js Server Actions with Zod params validation, an access control middleware, normalized error management and React-Query integration.
+- 📦 [Zustand 5.0 \- No new feature, but twice smaller](https://github.com/pmndrs/zustand/releases/tag/v5.0.0)
+- 📦 [Number Flow \- A React component to transition, format, and localize numbers](https://github.com/barvian/number-flow)
+- 📦 [Atomic-CSS-DevTools](https://github.com/astahmer/atomic-css-devtools): This Chrome extension adds a dev tool panel for debugging atomic CSS rules as if they were not atomic. Works with Tailwind, StyleX, Panda…
+- 📦 [Remix 2.13 \- Stabilizes `lazyRouteDiscovery`, `data`, `singleFetch`, `flushSync`, `viewTransition`](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v2130)
+- 📦 [React Router 6.27 \- Stable `dataStrategy`, `patchRoutesOnNavigation`, `flushSync`, `viewTransition`](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v6270)
+- 📦 [ESLint-Plugin-React-Hooks 5.0 \- Support for ESLint 9](https://github.com/facebook/react/releases/tag/eslint-plugin-react-hooks%405.0.0)
+- 📦 [Astro 4.16 \- Concurrent Builds](https://github.com/withastro/astro/releases/tag/astro%404.16.0)
+- 📦 [Just-Styled \- Dead simple CSS-in-JS library for React 19+](https://github.com/yukukotani/just-styled)
+- 🎥 [Alem Tuzlak \- How React Router v7 became type-safe\!](https://www.youtube.com/watch?v=ferLCqcLcGU)
+- 🎥 [Sam Selikoff \- Building a Reusable Component that Animates on Scroll](https://www.youtube.com/watch?v=GIIuG5_kyow)
+- 🎙️ [Syntax 833 \- Next Gen Fullstack React with TanStack](https://syntax.fm/show/833/next-gen-fullstack-react-with-tanstack)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![WorkOS: Modern Identity Platform for B2B SaaS](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)
+
+**[WorkOS：面向 B2B SaaS 的現代身份平台](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)**
+
+使用 WorkOS，您只需幾行程式碼即可開始向企業銷售產品。
+
+🔐 WorkOS AuthKit 支援完整的用戶管理解決方案，包含 **SSO、SCIM、RBAC 和 FGA**。
+
+🏗️ API **靈活、易用且模組化**。選擇您需要的功能，幾分鐘內即可完成整合。
+
+🎨 設計與用戶體驗至關重要。從文檔品質到用戶入職流程，我們**為開發者消除所有不必要的複雜性**。
+
+✨ AuthKit **免費提供高達 100 萬月活躍用戶(MAU)**，包含機器人防護、MFA、RBAC 等功能。
+
+🤝 WorkOS 獲數百家領先新創公司信賴，如 **Perplexity**、**Vercel** 和 **Webflow**。
+
+[立即開始使用 WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024) 🚀
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [Expo 入門套件 - 功能完整的入門套件，可更快地為 iOS、Android 和網頁發布行動應用程式](https://expostarter.com?utm_source=this-week-in-react&utm_medium=newsletter&utm_campaign=this-week-in-react)
+- 🐦 [Expo DOM Components 在 macOS 上的示範](https://x.com/Baconbrix/status/1845612129342165217)：這可能為 Electron/Tauri 桌面應用程式（WebView）提供一種逐步遷移到原生的方法。
+- 👀 [React Native PR - 修復 iOS 受控元件中的游標問題（NewArch）](https://github.com/facebook/react-native/pull/46970)：Dan 上週報告的主要文字輸入問題已在新架構中修復。
+- 👀 [React Native 文件 - 純 C++ Turbo 原生模組](https://reactnative.dev/docs/next/the-new-architecture/pure-cxx-modules)
+- 🗓️ [RNLConf](https://www.reactnativelondon.co.uk/?utm_source=thisweekinreact) - 🇬🇧 倫敦 - 11 月 14 日至 15 日 - 使用代碼「TWIR」可享 10% 折扣。Alex Hunt、Charlotte Isambert、Cedric Van Putten 和 Charlie Cheever 將進行演講！
+- 📜 [介紹 OMH 雲端儲存模組](https://www.callstack.com/blog/introducing-the-omh-cloud-storage-module)
+- 📜 [使用 Clerk、Convex 和 Expo 建立每日健身追蹤器](https://expo.dev/blog/build-a-daily-workout-tracker-with-clerk-convex-and-expo)
+- 📜 [在 React Native 的 WebView 中管理通知](https://www.premieroctet.com/blog/en/notification-webview)
+- 📦 [react-native-edge-to-edge - 讓 Android 應用程式內容在系統欄下方流動](https://github.com/zoontek/react-native-edge-to-edge)：由 Expo 支援的重要基礎架構函式庫，對 Android 15+ 特別有用。
+- 📦 [Bottom Sheet 5.0 - RNGH v2、網頁支援、動態調整大小、FlashList 整合](https://gorhom.dev/react-native-bottom-sheet/blog/bottom-sheet-v5),
+- 📦 [Metro 0.81 - 計劃用於 RN 0.76，`fileSystemLookup`、`onClose`](https://github.com/facebook/metro/releases/tag/v0.81.0)
+- 📦 [Ignite 10.0 - Infinite Red 的經過實戰考驗的 React Native 入門專案](https://shift.infinite.red/what-is-ignite-x-9ecde0b34d75)：此新版本附帶 Expo 預建、深色模式、Expo Router、MKKV、i18next、RNTL 等。
+- 📦 [react-native-bootsplash 6.2 - Kotlin 重寫，更好地處理半透明欄](https://github.com/zoontek/react-native-bootsplash/releases/tag/6.2.0)
+- 📦 [react-native-permissions 5.0 - iOS 18 有限聯絡權限、權限升級、放棄舊版本](https://github.com/zoontek/react-native-permissions/releases/tag/5.0.0)
+- 📦 [react-native-fast-confetti - 基於 Skia Atlas](https://github.com/AlirezaHadjar/react-native-fast-confetti)
+- 🎥 [Expo - 通用應用程式教學系列 - 如何建立你的第一個 React Native 應用程式](https://www.youtube.com/playlist?list=PLsXDmrmFV_AT6I9knFlpzP61_appiRTNP)
+- 🎥 [Catalin Miron - 自訂動畫標籤頁](https://www.youtube.com/watch?v=zBBMimH6lTc)
+- 🎥 [Simon Grimm - 這是 Expo 的競爭對手嗎？(One)](https://www.youtube.com/watch?v=GY2pCVn0Bm8)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [TC39 - 第104次會議更新](https://dev.to/hemanth/updates-from-the-104th-tc39-meeting-14cp)：14項提案取得進展，其中4項已達第4階段，準備納入ES2025！
+- 👀 [Companion Windows](https://github.com/explainers-by-googlers/companion-windows)：Google提出的說明文件，針對一項可能成為MPA缺失環節的網頁功能，讓多頁面應用能在導航時保留動態小部件的狀態
+- 📜 [Express v5介紹：Node.js框架的新時代](https://expressjs.com/2024/10/15/v5-release)：v5.0已於數週前發布，現有官方部落格文章詳列重大變更，並解釋為何v5尚未標記為`latest`
+- 📦 [Node.js 23.0 - 預設啟用require(ESM)](https://nodejs.org/en/blog/release/v23.0.0)
+- 📦 [TypeScript 5.7 Beta - 新增檢查、es2024函式庫/目標、相對路徑重寫、效能優化](https://devblogs.microsoft.com/typescript/announcing-typescript-5-7-beta/)
+- 📦 [srvx - 基於網頁平台標準的通用伺服器API，支援Deno、Bun與Node.js](https://github.com/unjs/srvx)
+
+---
+
+## 🤭 趣聞 {#fun}
+
+[![alt](/emails/issues/205/meme.jpg)](https://x.com/sebastienlorber/status/1846445741188743509)
+
+[![alt](/emails/issues/205/meme2.jpg)](https://x.com/_tjzel/status/1839275827759816882)
+
+下次見！👋

@@ -1,0 +1,146 @@
+---
+slug: /206
+title: "This Week In React #206: Next.js, Compiler, DevTools, State Of React, nuqs, Chakra UI, Remix, shadcn/ui, Turbopack, Microfrontends, Fumadocs, NewArch, react-native-mmkv, whip-whep, Svelte, Hono..."
+authors: [matthieugicquel, cyrilbo]
+date: 10-23-2024
+---
+
+大家好！
+
+這裡是來自 [Theodo Apps（前身為 BAM）](https://apps.theodo.com/en?utm_source=thisweekinreact) 的 Cyril 和 Matthieu 👋，我們代替 Seb 為您帶來 React 和 React Native 領域的最新動態。
+
+本週 React 世界迎來重大更新！Next.js 15 正式發布，帶來快取機制和性能的關鍵變革，同時 React Compiler 也進入測試階段——令人期待的新功能即將到來。
+
+我們還精選了多篇深度好文，從使用 React Cache 優化狀態管理，到深入剖析 React Native 新架構的技術細節。
+
+說到 React Native，v0.76 版本即將發布！這將是重大里程碑——首個預設啟用「新架構」的版本，歷經多年打磨的成果值得慶賀！🥳️
+
+[2024 年 React 生態調查](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react) 現已開放填寫，期待您的參與。
+
+現在就開始探索吧！
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上瀏覽本期電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Handsontable：專為 React 打造的進階數據表格](/emails/issues/206/handsontable.jpg)](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)
+
+**[Handsontable：專為 React 打造的進階數據表格](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)**
+
+Handsontable 是 [功能豐富的數據表格解決方案](https://handsontable.com/demo?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)，專為需要強大、可自訂且符合無障礙標準的 React 開發者設計，能高效管理複雜數據。
+
+- 獨特的 **試算表式介面**，支援排序、篩選與 CRUD 操作
+- 進階功能如條件格式與 **內建 400+ 公式**（媲美 Excel）
+- **可自訂編輯器與渲染器**，支援下拉選單、選單或自訂元件嵌入儲存格
+- **效能優化** 確保流暢響應
+- **符合 WCAG 2.1 無障礙標準**，提升特殊需求使用者體驗
+
+Handsontable 適用多元場景，從企業級應用到簡易網站，提供全球企業信賴的高效能與靈活性。
+
+[立即開始使用！](https://handsontable.com/docs/react-data-grid/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=twirsep11)
+
+---
+
+## ⚛️ React {#react}
+
+[![Next.js 15](/emails/issues/206/nextjs-15.png)](https://nextjs.org/blog/next-15)
+
+[**Next.js 15**](https://nextjs.org/blog/next-15)
+
+適逢 Next.js 大會，Next.js 15 正式發布。自 RC2 以來無重大變更，僅進行穩定性修復。本次 v15 重點：
+
+- 快取行為反轉：多數功能（如 `fetch` 請求）預設不再快取
+- App Router 採用 React 19 RC，Pages Router 維持 React 18
+- 開發環境推薦使用 Turbopack（仍支援 Webpack）
+- 含破壞性變更（如現有 API 改為非同步），可透過 `@next/codemod upgrade` 輔助升級
+
+此外還包含大量開發體驗、安全性與效能改進。
+
+---
+
+- 💸 [Omlet – Scan your repos and measure how and where components are used](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-oct-2024)
+- 📊 [State of React 2024 - Survey is open](https://survey.devographics.com/en-US/survey/state-of-react/2024?source=this_week_in_react): Please don't forget to fill this year's survey. Seb has contributed to its design. We would appreciate if you answer that you read This Week In React at the end 😇.
+- 📜 [Server Side State management in NextJS: a deep dive into React Cache](https://www.yoseph.tech/posts/nextjs/server-side-state-management-in-nextjs-a-deep-dive-into-react-cache): using `cache`, `unstable_cache`, and `patched fetch`, explaining how these tools can optimize state handling, reduce prop drilling, and simplify server-side code.
+- 📜 [Framer Sites Now Become Interactive 50% Faster](https://www.framer.com/blog/sites-interactive-faster/): Faster hydration with granular Suspense.
+- 📜 [Remix Todo App](https://www.udohjeremiah.com/blog/remix-todo-app-part-1-building-the-app-layout-and-structure): A detailed guide in 6 parts.
+- 📜 [How Vercel adopted microfrontends](https://vercel.com/blog/how-vercel-adopted-microfrontends)
+- 📜 [Perfectly Fitting Text to Container in React](https://sentry.engineering/blog/perfectly-fitting-text-to-container-in-react)
+- 📜 [Creating a Keyboard Shortcut Hook in React](https://www.taniarascia.com/keyboard-shortcut-hook-react/)
+- 📦 [React Compiler beta](https://react.dev/blog/2024/10/21/react-compiler-beta-release): It’s already in use in tens of thousands of components at Meta, they now want community feedback. This release adds official support for React 17 and 18. You can already add the ESLint plugin to prepare your codebase. Library authors are advised to pre-compile their libs.
+- 📦 [React DevTools 6.0.1 - React Server Components support](https://github.com/facebook/react/blob/main/packages/react-devtools/CHANGELOG.md#601): The React team fixed a few v6 bugs and then finally published this new version to the stores so that we can all easily install it.
+- 📦 [Turbopack Dev stable](https://nextjs.org/blog/turbopack-for-development-stable): A slow dev server has been a usual pain point when working with Next.js. Vercel has been working on a rust-based webpack replacement for 2 years, and it’s finally safe to use on all projects that don’t rely on unusual webpack plugins.
+- 📦 [nuqs 2.0 - Type-safe search params state manager](https://nuqs.47ng.com/blog/nuqs-2): Initially a Next.js query-string library, it is now opening up to other React frameworks with support for Remix, React Router... and also the brand new Next.js 15.
+- 📦 [Chakra UI 3.0](https://www.chakra-ui.com/blog/00-announcing-v3): A full rewrite, with more components, semantic tokens and better performance.
+- 📦 [react-render-stream-testing-library](https://github.com/testing-library/react-render-stream-testing-library): To make detailed, render-per-render assertions when testing components and hooks. In many cases it amounts to testing implementation details but it will be very useful for library authors or in perf-sensitive scenarios.
+- 📦 [shadcn/ui - Sidebar component](https://ui.shadcn.com/docs/components/sidebar)
+- 📦 [next-intl 3.22 - Incrementally moving forward](https://next-intl-docs.vercel.app/blog/next-intl-3-22)
+- 📦 [Fumadocs 14 - Docs framework that works on Next.js 15 App Router](https://fumadocs.vercel.app/blog/v14)
+- 🎥 [Theo - Next.js is hiding something...](https://www.youtube.com/watch?v=g4g2YUtjh9g): Early sneak peek of upcoming features not even mentioned in the Next.js 15 release post, including the `'use cache'` directive, `cacheTag()` and `cacheLife` APIs.
+- 🎥 [Tanner Linsley - An Early Glimpse of TanStack Start](https://www.youtube.com/watch?v=AuHqwQsf64o)
+- 🎥 [Jack Herrington - What I Discovered When I Compared React and NextJS for Astro 5's Server Islands](https://www.youtube.com/watch?v=rCkhCG7n8sA)
+- 🔗 [NextMaster - Highly performant replica of McMaster-Carr using Next.js](https://github.com/ethanniser/NextMaster): McMaster-Carr (US supply company) website has been trending on Twitter as being very fast. This repo is a modern Next.js 15 port, even faster.
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![工作坊：在 Next.js 中實作整潔架構](/emails/issues/206/sentry.jpg)](https://sentry.io/resources/clean-architecture-nextjs/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=debuggability-fy25q3-cleanarchworkshop&utm_content=newsletter-lazar-rsvp)
+
+**[工作坊：在 Next.js 中實作整潔架構](https://sentry.io/resources/clean-architecture-nextjs/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=debuggability-fy25q3-cleanarchworkshop&utm_content=newsletter-lazar-rsvp)**
+
+Lazar Nikolov 和 Sarah Guthals 將主持免費工作坊，探討[在 Next.js 中實作整潔架構](https://sentry.io/resources/clean-architecture-nextjs/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=debuggability-fy25q3-cleanarchworkshop&utm_content=newsletter-lazar-rsvp)。內容將深入解析整潔架構的本質、解決的問題，以及如何透過 Sentry 在 Next.js 應用程式中實作。
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [Stay up-to-date with React Native & Expo News with notJust Newsletter](https://www.notjust.dev/newsletter?utm_source=twir&utm_medium=email&utm_campaign=newsletter)
+- 👀 [React Native PR - Support for CSS `display: contents`](https://github.com/facebook/react-native/pull/46584): Define views that have zero impact on the layout but to which you can still attach event handlers. One possible usage is in `GestureDetector` from `react-native-gesture-handler`, which relies on direct native views to handle touch gestures without affecting layout, to fix issues like automatic collapsing of views in components.
+- 📖 [React Native Docs - New 0.76 DevTools](https://reactnative.dev/docs/next/react-native-devtools)
+- 📜 [React Native’s New Architecture, The Tricky Parts](https://blog.swmansion.com/react-natives-new-architecture-the-tricky-parts-1-2-bb0c16950f2d): View flattening, View recycling, libraries support.
+- 📜 [PostHog - How we built mobile replay (and why it took so long)](https://posthog.com/blog/mobile-session-replay): Their React Native SDK 3.2 now has support for session replay (beta).
+- 📜 [Hacking Expo SQLite into React Native MacOS](https://coolsoftware.dev/blog/hacking-expo-sqlite-into-react-native-macos/)
+- 📜 [How to bring your React Native apps to life using sensors](https://expo.dev/blog/how-to-bring-your-react-native-apps-to-life-using-sensors)
+- 📜 [How Kraken fixed performance issues via incremental adoption of the React Native New Architecture](https://blog.kraken.com/product/engineering/how-kraken-fixed-performance-issues-via-incremental-adoption-of-the-react-native-new-architecture)
+- 📦 [react-native-mmkv 3.1 - GC-safe autotrim, readOnly mode](https://github.com/mrousavy/react-native-mmkv/releases/tag/v3.1.0)
+- 📦 [react-native-whip-whep - WebRTC PeerConnection](https://blog.swmansion.com/introducing-react-native-whip-whep-ac9e5588d4da?source=rss----e003bf129483---4)
+- 📦 [expo-in-app-updates - Native in-app updates for Android and iOS](https://github.com/SohelIslamImran/expo-in-app-updates)
+- 📦 [expo-import-cost - VSCode extension displaying dependency import cost](https://github.com/SohelIslamImran/expo-import-cost)
+- 🎥 [Catalin Miron - TikTok incoming messages animation](https://www.youtube.com/watch?v=dFUaYZ_AXcc)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📜 [Web 框架 Hono 的故事](https://blog.cloudflare.com/the-story-of-web-framework-hono-from-the-creator-of-hono/)："與從客戶端 React 起步的 Next.js 框架不同，Hono 正嘗試從伺服器端出發成為全端框架"
+- 📜 [JavaScript 是否很快需要編譯器？- TC39 JSSugar 提案](https://bleepbloop.studio/posts/new-tc39-proposal-does-javascript-require-a-compiler-soon)
+- 📜 [為何我對用「更快」語言重寫 JavaScript 工具持懷疑態度](https://nolanlawson.com/2024/10/20/why-im-skeptical-of-rewriting-javascript-tools-in-faster-languages/)
+- 📜 [視圖轉換的錯開效果](https://frontendmasters.com/blog/view-transitions-staggering/)
+- 📜 [Brisa 框架 - 伺服器動作已修復](https://brisa.build/blog/server-actions-have-been-fixed)
+- 📦 [Turborepo v2.2 - 實驗性 GraphQL 儲存庫查詢、快取安全警告、自動 GitHub 動作比較](https://turbo.build/blog/turbo-2-2-0)
+- 📦 [is-my-node-vulnerable - 檢查 Node.js 安裝是否受已知安全漏洞影響的套件](https://github.com/RafaelGSS/is-my-node-vulnerable)
+- 📦 [Svelte v5](https://svelte.dev/blog/svelte-5-release-candidate)
+
+---
+
+## 🤭 有趣 {#fun}
+
+[![頭肩膀膝腳趾 HTML](/emails/issues/206/meme2.jpg)](https://x.com/mrousavy/status/1846497922675810533)
+
+無恥轉貼 Next.js 15 發布 😄
+
+[![非同步函數傳染](/emails/issues/206/meme.jpg)](https://x.com/sebastienlorber/status/1848743816162869640)
+
+再見！👋

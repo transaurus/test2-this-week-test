@@ -1,0 +1,650 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/218/index.mdx",
+  "source_file_content_hash": "fa0b1ce9b531b1ca34ec0dc608a6b37c3fb42389b97e68c9f6af6dacdee27f09",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /218\ntitle: \"This Week In React #218: React-Scan, Server Functions, Portals, Forms, Storybook, React Aria, Unpic, React Native 0.77, Reanimated, Expo, EAS, Legend-List, Shadowlist, Document Picker, BottomTabs, Swift, Bun, Rspack, Vitest, Biome, ESLint...\"\nauthors: [slorber]\ndate: 01-22-2025\n---",
+      "source_content_hash": "5fc8faf0f064d87d6f436a8e36c56d486820edfc04a7574e75e41e3fc2b08618",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This is a crazy week, we have a lot of major releases coming from everywhere, in all the sections of this newsletter, that it's impossible to cover them all as they deserve.",
+      "source_content_hash": "a8a3ef715d6d430ec768fd975454cf23a3bc5cfd362ac922d11cba052c97984b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這真是瘋狂的一週，各個領域都湧現大量重要版本更新，涵蓋了本通訊的所有版塊，多到我們無法完整涵蓋所有值得報導的內容。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "I'm particularly excited about the React Native ecosystem improving CSS compatibility with v0.77 and Reanimated v4. This is awesome news for cross-platform development compatibility.",
+      "source_content_hash": "afcfaa19e3c4ac756955b3c4152b485433284f3644cbd9088f069aed250d2c64",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我特別興奮的是 React Native 生態系統透過 v0.77 和 Reanimated v4 改善了 CSS 相容性，這對跨平台開發相容性來說是極好的消息。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The frontend ecosystem is on fire too 🔥 with awesome releases such as Bun 1.2, Rspack 1.2, Vitest 3.0.",
+      "source_content_hash": "8c4da1c6ec73da84ed5584e511b50ad08b92610e8260197424bc0fbaa9cfa3b2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "前端生態圈也同樣熱火朝天 🔥，出現了許多令人驚豔的版本，像是 Bun 1.2、Rspack 1.2、Vitest 3.0。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "And, Tailwind v4 is expected to drop anytime soon too ! (just after I hit send of course 😅)",
+      "source_content_hash": "870213fd487ad264adad126b66d3f3363a36ea8df0078e342b4cc51962415b69",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "而且 Tailwind v4 預計隨時會發布！（當然，就在我按下發送鍵之後 😅）"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "45c63027",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_45c63027"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_92f4ea84"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_5dfba1c3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![PropelAuth: Make Authentication Your Advantage](/emails/issues/218/propelauth.jpg)](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)",
+      "source_content_hash": "e04afc94b7c3434d5f1cf2cc407267e7f390f762840102722014fd70a71379e3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![PropelAuth：讓身份驗證成為您的優勢](/emails/issues/218/propelauth.jpg)](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[PropelAuth: Make Authentication Your Advantage](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)**",
+      "source_content_hash": "89a7ce8a5a69d5494e902bf27d19b5d6bf139ac8cb8665e1243e0eb94f5a773f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[PropelAuth：讓身份驗證成為您的優勢](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "If your authentication isn't **helping you grow**, it's **holding you back**.",
+      "source_content_hash": "13283f8ffc10fea8fca2f5222c5608db8bdb71c19c338937dc97a18d06bf6b31",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "如果您的身份驗證沒有**幫助您成長**，那麼它就是在**拖您的後腿**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "With [PropelAuth](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024), you get everything you need to launch and scale your B2B product:",
+      "source_content_hash": "1d3cf6cf50b6bcd7ec16c21956127e1873b36195e3eb152e4eb06c8ef53cbb71",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "透過 [PropelAuth](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)，您將獲得啟動和擴展 B2B 產品所需的一切："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7a2e981c",
+      "source_content": "- **Easy to understand** [documentation](https://docs.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024) and **friendly, fast support**.\n- **UIs that cover all your use cases** - signup, login, MFA, organization management and more.\n- **User impersonation** so you can provide top-notch support to your users.\n- **Enterprise SAML/SSO** and **advanced security features** so you can be upmarket-ready.\n- **User insights** to help you strategize and expand.",
+      "source_content_hash": "bf09d017c3e8407b3ac1c3c6f45cd6c5115cacec93ccecf3a2131ee733e55d0a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- **易於理解**的[文件](https://docs.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)與**快速友好的支援**\n- **涵蓋所有使用情境的 UI** - 註冊、登入、多因素驗證、組織管理等\n- **用戶模擬功能**讓您能為用戶提供頂級支援\n- **企業級 SAML/SSO** 與**進階安全功能**助您做好進軍高端市場的準備\n- **用戶洞察分析**協助制定策略與擴展計畫"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "[Get started today](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)",
+      "source_content_hash": "0e8b908afeaa1d14a3063a239b1b00c408ab56fede474810d019b1e16d557aa7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[立即開始使用](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan222024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d4e0d4e1",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8bddee80",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "[![React Scan 0.1](/emails/issues/218/react-scan.jpg)](https://github.com/aidenybai/react-scan)",
+      "source_content_hash": "ca11a8ce1e809b9d85c37ecdd9c6771a6c84100227c2ccf863f0d19d7eb0f249",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React Scan 0.1](/emails/issues/218/react-scan.jpg)](https://github.com/aidenybai/react-scan)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "[**React Scan 0.1**](https://github.com/aidenybai/react-scan)",
+      "source_content_hash": "9b015b8cc1e37d3bf2fa300f2b6b3d2052ea0561ecfc0984a3609894960c0013",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**React Scan 0.1**](https://github.com/aidenybai/react-scan)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "This is the first official release of React Scan, a new React performance tool that has been trending on social platforms lately with many great demos from its creator Aiden Bai. It’s easy to install and helps you find unwanted React re-renders with a great DX, a bit like “why-did-you-update” on steroids. Related podcast: 🎙️ [JavaScript Jabber \\- Optimizing React with React Scan](https://www.youtube.com/watch?v=pyV1wMcOtN0).",
+      "source_content_hash": "2f5d28cc5902fd1f97a66fbbddc2544f0995ba4502223cbd9fcba55b86f0a06a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這是 React Scan 的首次正式發布，這款新 React 效能工具近期在社交平台上引發熱議，其創建者 Aiden Bai 展示了許多精彩範例。它易於安裝，能幫助您找出不必要的 React 重新渲染，提供卓越的開發者體驗，就像是強化版的 \"why-did-you-update\"。相關播客：🎙️ [JavaScript Jabber - 用 React Scan 優化 React](https://www.youtube.com/watch?v=pyV1wMcOtN0)。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "49d8fe2a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9b797309",
+      "source_content": "- 💸 [What is middleware in Next.js? And how Clerk uses it for authentication](https://clerk.com/blog/what-is-middleware-in-nextjs?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=nextjs-middleware&utm_content=01-22-24)\n- 🐦 [Parcel \\+ React Server Components integration preview](https://x.com/devongovett/status/1881730597011571050)\n- 💬 [Storybook RFCs](https://github.com/storybookjs/storybook/discussions/categories/rfc): Several were created to reduce story creation boilerplate and improve autocompletion, type safety, and simplify syntax for writing tests.\n- 📖 [shadcn/ui \\- Block](https://ui.shadcn.com/docs/blocks): shadcn has a community-driven “reusable blocks” library and this page explains how to publish your custom blocks to the registry.\n- 📜 [Why Server Functions Matter In A Server Component World](https://www.brenelz.com/posts/why-server-functions-matter-in-a-server-component-world/): Interesting reflection on using Server Functions in a framework that doesn’t support (yet) RSCs, illustrated with TanStack Start. Using RSCs, you make a tradeoff between bundle size and payload size. See also part 2 [Server Function Benefits](https://www.brenelz.com/posts/server-function-benefits/) which explains how Server Functions can offer similar benefits to RSCs.\n- 📜 [Do JavaScript frameworks still need portals?](https://fullystacked.net/portal/): This greatly explains why modern HTML elements like `<dialog>` can solve similar cases as React portals. Even when usage is deeply nested, those dialogs are not affected by their parents. Note: you can also stack dialogs on top of each other without using `z-index`, similar to portals.\n- 📜 [Next.js on EAS Hosting](https://x.com/JI/status/1879740964492980598): Expo founder shows how to host a Next.js 15 static site on EAS from the CLI, then with an automated CI. See also Theo [deploying Universal RSCs on EAS](https://www.youtube.com/watch?v=weYe4ffxWQk), and Jack Herrington [deploying a Vite React SPA app to EAS](https://www.youtube.com/watch?v=YU0ENx1xgJk). Web devs should pay attention to EAS, it’s not just for mobile anymore.\n- 📜 [Progressive Forms with React 19](https://rdrn.me/react-forms/): A comprehensive post showing all the steps to provide a great form UX supporting optimistic UI and progressive enhancement.\n- 📜 [Formity: The Ultimate Tool For Multi-Step Forms In React](https://www.formity.app/blog/articles/formity-ultimate-tool-multi-step-forms-react): An interactive post presenting a new form library focusing on the complexities of dynamic multi-step forms that adapt to user inputs. You don’t need to abandon your favorite single-step form library, it integrates with it.\n- 📜 [The XSS dangers in interpolating styled-components](https://andrei-calazans.com/posts/styled-components-xss-danger/): You might need to sanitize your React styling props to avoid this XSS attack vector.\n- 📜 [Implementing Streaming SSR with React Relay and Vite](https://aqora.io/blog/AEJsb2dBcnRpY2xlAZRgyH4wdeKfFHS0yil0Fw/implementing-streaming-ssr-with-react-relay-and-vite): Interesting React setup to study, although not supporting SSR streaming.\n- 📦 [React Aria \\- January 15, 2025 Release \\- Overlay CSS transitions, Autocomplete (alpha), Test utils package (alpha), and more](https://react-spectrum.adobe.com/releases/2025-01-15.html)\n- 📦 [Storybook 8.5 \\- React 19 support, React Native Web Vite framework, A11y tests, code coverage](https://storybook.js.org/blog/storybook-8-5/)\n- 📦 [Unpic 1.0](https://unpic.pics/blog/unpic-1/): A framework-agnostic toolkit to display images that natively understand many CDNs, with first-class integrations for React and Next.js.\n- 📦 [React Three Handles](https://pmndrs.github.io/xr/docs/handles/introduction): A new convenient package to build React XR interactions.\n- 📦 [HeroUI](https://www.heroui.com/blog/introducing-heroui): New identity for NextUI library, since it’s not limited to Next.js usage.\n- 📦 [Justd \\- Accessible React UI Components](https://getjustd.com/): Similar shadcn/ui, but using React Aria instead of Radix.\n- 📦 [React Admin 5.5 \\- React 19, MUI 6, React Router 7, various new features](https://github.com/marmelab/react-admin/releases/tag/v5.5.0)\n- 📦 [React Testing Library 16.2 \\- Support for React 19 APIs `onRecoverableError` and `onCaughtError`](https://github.com/testing-library/react-testing-library/releases/tag/v16.2.0)\n- 📦 [Puck 0.18 \\- Visual editor for React](https://github.com/measuredco/puck/releases/tag/v0.18.0)\n- 🎥 [Hamed Bahram \\- Optimizing your NextJs app with after()](https://www.youtube.com/watch?v=0h402Lkg4xs)\n- 🎥 [Ankita \\- The Next.js Masterclass with Lee Rob](https://www.youtube.com/watch?v=M8bf7HJNLBo)",
+      "source_content_hash": "5c62eb5f4510ced7d35e41c21229a1b7c17ae9770357803b5a67df90428840f8",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_9b797309"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5f852894",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_5f852894"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aac83236",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "66819c78",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "[![Tests are dead - Meticulous is here](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=jan22nd)",
+      "source_content_hash": "b525c6f1380cbe426d6d43b0e8be2cf101c7df540466dc554bdb568092464218",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![測試已死 - Meticulous 在此](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=jan22nd)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "**[Tests are dead - Meticulous is here](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=jan22nd)**",
+      "source_content_hash": "3709f8ab94fbfeed953c03f72ceaeefee72bc9663ea9ceedf4d4f79c19843fed",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[測試已死 - Meticulous 在此](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=jan22nd)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "Meticulous creates and maintains an exhaustive suite of e2e ui tests with **zero** developer effort.",
+      "source_content_hash": "0ecb39db111eb1375a61d1cef29da6ab4b417c2dea7f9c87927ef68686364ce6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Meticulous 以**零開發者投入**創建並維護全面的端到端 UI 測試套件。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "This quote from the CTO of Traba sums the product up best: \"Meticulous has fundamentally changed the way we approach frontend testing in our web applications, fully eliminating the need to write any frontend tests. The software gives us confidence that every change will be completely regression tested, allowing us to ship more quickly with significantly fewer bugs in our code. The platform is easy to use and reduces the barrier to entry for backend-focused devs to contribute to our frontend codebase.\"",
+      "source_content_hash": "6acb7ce95334c968f65d98d8aa681c516c73056b1a7a22c54b80fab6df929cf6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Traba 技術總監的這段話完美總結了這款產品：「Meticulous 從根本上改變了我們在網頁應用中處理前端測試的方式，完全消除了編寫任何前端測試的需求。該軟體讓我們確信每次變更都會經過完整的回歸測試，使我們能更快交付產品，同時大幅減少程式碼中的錯誤。平台易於使用，降低了後端開發者參與前端程式碼庫的門檻。」"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "Meticulous is used by companies like Lattice, Bilt Rewards, Power and many others.",
+      "source_content_hash": "c16da34b4d73e2dd42a62da57689cb6e6e595583d38e749cd48371c34f1c049c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Meticulous 已被 Lattice、Bilt Rewards、Power 等多家公司採用。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "This [post](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact&utm_campaign=jan15th) from our CTO sets out the context of why exhaustive testing can double engineering velocity.",
+      "source_content_hash": "6bcbaec82fb297b425e9fafb65fa38ac2af84650057b9747234848a1f985f1a6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們技術總監的這篇[文章](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact&utm_campaign=jan15th)闡述了詳盡測試如何使工程效率倍增的背景脈絡。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7a7cb1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e06c002e",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "[![React Native 0.77](/emails/issues/218/react-native-0.77.jpg)](https://reactnative.dev/blog/2025/01/21/version-0.77)",
+      "source_content_hash": "05b6b625a5dfc0278377b0f67e6c8d0e3efb29ec9a3b14277b3a0b743d0a86a9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React Native 0.77](/emails/issues/218/react-native-0.77.jpg)](https://reactnative.dev/blog/2025/01/21/version-0.77)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d79a4831",
+      "source_content": "[**React Native 0.77**](https://reactnative.dev/blog/2025/01/21/version-0.77)",
+      "source_content_hash": "2ab4fcb4731a5324f5fed36921f0af0ac9d5bd4288588682a134fc7bf25daba0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**React Native 0.77**](https://reactnative.dev/blog/2025/01/21/version-0.77)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2838eb68",
+      "source_content": "As planned, the next React Native version just dropped. It notably ships with:",
+      "source_content_hash": "a2965f81ebae191670489a2f028af8b47f5982b29fc1a4c56448e1130a12c3b8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "正如規劃，新版 React Native 正式發布。主要更新包括："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f6db2c30",
+      "source_content": "- CSS support improvement: `display: contents`, `boxSizing`, `mixBlendMode`, and `outline`\n- Support for Android 15 edge-to-edge and 16KB memory page size (perf improvement)\n- iOS init template with Swift AppDelegate",
+      "source_content_hash": "76d218b26f966415fd3d605d0e225842dcbbf72ce33d8c70731391b86ae4819a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- CSS 支援強化：`display: contents`、`boxSizing`、`mixBlendMode` 及 `outline`\n- 支援 Android 15 邊到邊顯示及 16KB 記憶體分頁大小（效能優化）\n- iOS 初始化模板採用 Swift AppDelegate"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "Good news for Expo users: [SDK 52 already supports v0.77](https://expo.dev/changelog/2025/01-21-react-native-0.77), alongside many infrastructure packages (Screens, RNGH, Reanimated). For React 19 support, we’ll have to wait v0.78, but I could come sooner than you expect!",
+      "source_content_hash": "4dc3220990bbd4f809469654ff68a0594c7cc383c10cc8047aa412ca58caef5e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Expo 用戶的好消息：[SDK 52 已支援 v0.77](https://expo.dev/changelog/2025/01-21-react-native-0.77)，同時兼容多項基礎套件（Screens、RNGH、Reanimated）。React 19 支援需等待 v0.78，但可能比預期更早到來！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42bfcc5d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "[![Reanimated 4.0 beta](/emails/issues/218/reanimated4.jpg)](https://blog.swmansion.com/reanimated-4-is-new-but-also-very-familiar-b926dd59aa40)",
+      "source_content_hash": "f19d771b1ccefb242807f296836ab71a303cf2b14dd67642687742b4eacf0b38",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Reanimated 4.0 beta](/emails/issues/218/reanimated4.jpg)](https://blog.swmansion.com/reanimated-4-is-new-but-also-very-familiar-b926dd59aa40)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "[**Reanimated 4.0 beta**](https://blog.swmansion.com/reanimated-4-is-new-but-also-very-familiar-b926dd59aa40)",
+      "source_content_hash": "be8c15ddff119b880d6328f5f103c47d46e0fe5e6d35a4b0db23547c30a76440",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**Reanimated 4.0 beta**](https://blog.swmansion.com/reanimated-4-is-new-but-also-very-familiar-b926dd59aa40)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "Reanimated 4 is in beta, and it’s a huge one\\! 🔥 The animation core has been revamped. You can now just animate things, with regular CSS, on the native thread, thanks to newly added support for:",
+      "source_content_hash": "2072707cedebc5190828c5d4ad0f1ab543a93c586a7e920620aa1819dff5d2b2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Reanimated 4 進入測試階段，這是重大更新！🔥 動畫核心全面重構。現在您可直接使用常規 CSS 在原生線程實現動畫，歸功於新增支援："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bcc700e8",
+      "source_content": "- CSS property transitions\n- CSS keyframe animations",
+      "source_content_hash": "c8a51be15b520b7f5644db2390528f5cf7db2987c322f1d11590614d8a7e4ac4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- CSS 屬性轉換（property transitions）\n- CSS 關鍵幀動畫（keyframe animations）"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f38d1cb0",
+      "source_content": "This is particularly exciting for React Native micro-interactions with greatly reduced boilerplate, and the ability to ship cross-platform animations. The existing worklet APIs remains retrocompatible and relevant for more advanced needs. However, the New Architecture is now a requirement.",
+      "source_content_hash": "1da03f776a2d8740f7392f002562de5ce61dd274f29418bb0d29807515220c5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這項特性大幅簡化 React Native 微互動的樣板程式碼，並實現跨平台動畫交付。現有 worklet API 保持向後兼容，仍適用於進階需求，但新架構（New Architecture）現為必要條件。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5f82a1e9",
+      "source_content": "See also [Reactiive migrates a Reanimated v2 animation to v4](https://reactiive.io/articles/css-animations-react-native) which greatly simplifies things. And we are not even talking about migrating old Reanimated v1 code 🙈.",
+      "source_content_hash": "71c58579b355cad220509257719903a361bb6db80c4532f521fadae9d5d8f46e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "參閱 [Reactiive 將 Reanimated v2 動畫遷移至 v4](https://reactiive.io/articles/css-animations-react-native) 案例，遷移過程大幅簡化。更別提遷移舊版 Reanimated v1 程式碼的挑戰了 🙈。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6fc234cf",
+      "source_content": "Side note: have you seen the [upcoming React `<ViewTransition>` component](https://motion.dev/blog/reacts-experimental-view-transition-api) being actively worked on? It’s not in React-DOM, and there’s probably an exciting reason for that 👀.",
+      "source_content_hash": "70dbb6be37a7aa0c41ef4d0856909b7611e9b122c989c76a5ee005f275667517",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "補充說明：您是否注意到正在積極開發的[實驗性 React `<ViewTransition>` 元件](https://motion.dev/blog/reacts-experimental-view-transition-api)？它未包含在 React-DOM 中，背後可能有令人期待的緣由 👀。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cd2fd2f2",
+      "source_content": "- 💸 [Codemagic - a great App Center alternative for React Native devs! 8x faster builds, CodePush, automated distribution. 1-month free trial!](https://codemagic.io/migration-from-app-center/?utm_source=newsletter&utm_medium=email&utm_campaign=app_center_this_week_react)\n- 🐦 [Expo 53 modules will support SwiftUI and Jetpack Compose](https://x.com/Baconbrix/status/1879900047397314813)\n- 💬 [React Native proposals \\- Improving iOS keyboard avoidance using keyboardLayoutGuide](https://github.com/react-native-community/discussions-and-proposals/discussions/867)\n- 📣 [EAS is now SOC 2 Type 2-compliant](https://expo.dev/blog/eas-soc2-type2)\n- 📜 [How I migrated my bare React Native app to Expo](https://expo.dev/blog/how-i-migrated-my-bare-react-native-app-to-expo)\n- 📜 [Solving Swift Modular Header Issues in React Native for Good](https://www.callstack.com/blog/solving-swift-modular-header-issues-in-react-native-for-good)\n- 📜 [React Native RCTRootViewFactory (Brownfield apps)](https://ospfranco.com/react-native-rctrootviewfactory/)\n- 📦 [React Native Document Picker & Viewer 10.0](https://react-native-documents.github.io/)\n- 📦 [Bottom Tabs 0.8 \\- Android Page Transitions, Material You support](https://github.com/callstackincubator/react-native-bottom-tabs/releases/tag/react-native-bottom-tabs%400.8.0)\n- 📦 [Legend List 1.0 beta \\- Claims better perf than FlashList](https://legendapp.com/open-source/list/intro/introduction/)\n- 📦 [Shadowlist alpha \\- New high-performance list for React Native](https://github.com/azimgd/shadowlist)\n- 📦 [Screens 4.6 beta](https://github.com/software-mansion/react-native-screens/releases/tag/4.6.0-beta.0)\n- 📦 [Repack 5.0 rc.7 \\- NativeWind support](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%405.0.0-rc.7)\n- 🎥 [Catalin Miron \\- React Native Schedule animation](https://www.youtube.com/watch?v=F3KJNgINMIQ)\n- 🎥 [Simon Grimm \\- Top React Native Essentials \\- Tech Stack for 2025](https://www.youtube.com/watch?v=I_J7N0n5YPs)",
+      "source_content_hash": "0b90e46c52dace2fe05abbeee14919b6aef3fe7b52c36b6a1869052f2d3aae2d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [Codemagic - React Native 開發者的絕佳 App Center 替代方案！建置速度快 8 倍，支援 CodePush、自動化分發。提供 1 個月免費試用！](https://codemagic.io/migration-from-app-center/?utm_source=newsletter&utm_medium=email&utm_campaign=app_center_this_week_react)\n- 🐦 [Expo 53 模組將支援 SwiftUI 和 Jetpack Compose](https://x.com/Baconbrix/status/1879900047397314813)\n- 💬 [React Native 提案 - 使用 keyboardLayoutGuide 改善 iOS 鍵盤避讓](https://github.com/react-native-community/discussions-and-proposals/discussions/867)\n- 📣 [EAS 現已通過 SOC 2 Type 2 合規認證](https://expo.dev/blog/eas-soc2-type2)\n- 📜 [我如何將 bare React Native 應用遷移至 Expo](https://expo.dev/blog/how-i-migrated-my-bare-react-native-app-to-expo)\n- 📜 [徹底解決 React Native 中的 Swift 模組標頭問題](https://www.callstack.com/blog/solving-swift-modular-header-issues-in-react-native-for-good)\n- 📜 [React Native RCTRootViewFactory (Brownfield 應用)](https://ospfranco.com/react-native-rctrootviewfactory/)\n- 📦 [React Native 文件選擇器與檢視器 10.0](https://react-native-documents.github.io/)\n- 📦 [Bottom Tabs 0.8 - Android 頁面轉場、Material You 支援](https://github.com/callstackincubator/react-native-bottom-tabs/releases/tag/react-native-bottom-tabs%400.8.0)\n- 📦 [Legend List 1.0 beta - 宣稱效能優於 FlashList](https://legendapp.com/open-source/list/intro/introduction/)\n- 📦 [Shadowlist alpha - 專為 React Native 打造的全新高效能清單元件](https://github.com/azimgd/shadowlist)\n- 📦 [Screens 4.6 beta](https://github.com/software-mansion/react-native-screens/releases/tag/4.6.0-beta.0)\n- 📦 [Repack 5.0 rc.7 - 支援 NativeWind](https://github.com/callstack/repack/releases/tag/%40callstack%2Frepack%405.0.0-rc.7)\n- 🎥 [Catalin Miron - React Native 排程動畫](https://www.youtube.com/watch?v=F3KJNgINMIQ)\n- 🎥 [Simon Grimm - React Native 必備精選 - 2025 技術堆疊](https://www.youtube.com/watch?v=I_J7N0n5YPs)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "af4523c9",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "35353302",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f4e38e16",
+      "source_content": "- 👀 [Biome 2.0 and 2025 Roadmap \\- Plugins, Domains (rules for frameworks like React), HTML and template literal snippets support](https://biomejs.dev/blog/roadmap-2025/)\n- 📜 [Preserve state during DOM mutations with moveBefore()](https://developer.chrome.com/blog/movebefore-api): Exciting feature comes with Chrome 133 on February 4th, useful for React siblings reconciliation.\n- 📜 [TypeScript enums: use cases and alternatives](https://2ality.com/2025/01/typescript-enum-patterns.html)\n- 📜 [So, you want to push a web platform feature?](https://blog.yoav.ws/posts/so_you_want_to_push_a_web_platform_feature/)\n- 📦 [Bun 1.2 \\- Node.js compat, built-in S3 & SQL clients, text-based lockfile, HTML imports, and way more](https://bun.sh/blog/bun-v1.2)\n- 📦 [Rspack 1.2 \\- Persistent cache, Yarn PnP, performance improvements](https://rspack.dev/blog/announcing-1-2)\n- 📦 [Vitest 3.0 \\- New reporter, inline workspace, multi-browser, filtering by location, public API](https://vitest.dev/blog/vitest-3)\n- 📦 [ESLint 9.18 \\- Stable TypeScript config file support](https://eslint.org/blog/2025/01/eslint-v9.18.0-released/)\n- 📦 [ArkType 2.0 \\- Modern TypeScript validation lib](https://arktype.io/docs/blog/2.0)\n- 📦 [Shiki 2.0 \\- Syntax highlighter, boring release, deprecation warnings](https://shiki.style/blog/v2)",
+      "source_content_hash": "a0acbaedade1064d48c90baa10f29d542c0664319699da35a6c5b2e259dcf68b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 👀 [Biome 2.0 與 2025 路線圖 - 外掛程式、領域（適用於如 React 等框架的規則）、HTML 與範本字面片段支援](https://biomejs.dev/blog/roadmap-2025/)\n- 📜 [透過 moveBefore() 在 DOM 變動期間保留狀態](https://developer.chrome.com/blog/movebefore-api)：這項令人興奮的功能隨 Chrome 133 於 2 月 4 日推出，對 React 兄弟節點的和解非常有用。\n- 📜 [TypeScript 枚舉：使用案例與替代方案](https://2ality.com/2025/01/typescript-enum-patterns.html)\n- 📜 [所以，你想推動網頁平台功能？](https://blog.yoav.ws/posts/so_you_want_to_push_a_web_platform_feature/)\n- 📦 [Bun 1.2 - Node.js 相容性、內建 S3 和 SQL 客戶端、文字鎖定文件、HTML 導入等更多功能](https://bun.sh/blog/bun-v1.2)\n- 📦 [Rspack 1.2 - 持久快取、Yarn PnP、效能改進](https://rspack.dev/blog/announcing-1-2)\n- 📦 [Vitest 3.0 - 全新報告器、內聯工作區、多瀏覽器支援、位置過濾、公開 API](https://vitest.dev/blog/vitest-3)\n- 📦 [ESLint 9.18 - 穩定的 TypeScript 設定檔支援](https://eslint.org/blog/2025/01/eslint-v9.18.0-released/)\n- 📦 [ArkType 2.0 - 現代化 TypeScript 驗證函式庫](https://arktype.io/docs/blog/2.0)\n- 📦 [Shiki 2.0 - 語法高亮工具，無重大更新版本，棄用警告](https://shiki.style/blog/v2)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "57180eb4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f6a06609",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣聞 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b40e7a2",
+      "source_content": "[![alt](/emails/issues/218/meme.jpg)](https://x.com/aidenybai/status/1881397529369034997)",
+      "source_content_hash": "0c31475a33fcbc4571ebac26eff1282d6165882ce7db089cd24f40a09d2423f4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/218/meme.jpg)](https://x.com/aidenybai/status/1881397529369034997)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39f476dc",
+      "source_content": "[![alt](/emails/issues/218/meme2.jpg)](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3lgbup6t2es2b)",
+      "source_content_hash": "394976ae8c092f6e4101ff25ee92112e17c1258d579626bcb4c16a8f5af62893",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/218/meme2.jpg)](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3lgbup6t2es2b)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "827eb9a3",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下次見！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/218/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.130717+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "fa0b1ce9b531b1ca34ec0dc608a6b37c3fb42389b97e68c9f6af6dacdee27f09"
+  }
+}

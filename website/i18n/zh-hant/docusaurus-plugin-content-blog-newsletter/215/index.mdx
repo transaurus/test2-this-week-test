@@ -1,0 +1,172 @@
+---
+slug: /215
+title: "This Week In React #215: Dropdown, i18n, Next.js, Remix, Astro, shadcn, StyleX, Fancy Components, Expo, Static Hermes, Skia, ExecuTorch, Kotlin, Node, Shortest, Rolldown, Rspack, pnpm..."
+authors: [slorber]
+date: 01-02-2025
+---
+
+大家好！
+
+我們原本計劃在1月8日回歸。\
+但我提前了一點，祝大家新年快樂！🎉\
+由於年底節慶，如你所料，React相關消息本週相當平靜。
+
+我也藉此機會分享這份電子報的回顧，再次感謝各位閱讀電子報並讓這一切成為可能。
+
+2024年電子報從可持續發展的專案轉變為損益平衡的業務。這讓我能投入更多資源改進內容。以下是2023至2024的具體數據：
+
+- 📈 **訂閱者**: 31k ➡️ 46k - 今年大幅增加15,000名訂閱者，雖未達預期的指數成長，仍相當亮眼！
+- 👥 **撰稿人**: 1 ➡️ 4 - 我不再是這份精選電子報的唯一作者：Benedikt、Matthieu和Cyril在我無法執筆時提供了支援。
+- 📨 **期數**: 38 ➡️ 47 - 新撰稿人的加入讓我們幾乎每週都能發送電子報！
+- 💰 **收入**: 47k€ ➡️ 99k€ ARR - 銷售表現良好，成功爭取到多數目標合作企業的贊助。
+- 💸 **支出**: 15k€ ➡️ 36k€ - 今年因邀請客座撰稿人(14k€)大幅增加支出，其餘為廣告(12k€)、SaaS服務(7k€)及虛擬助理(3k€)。
+
+總體而言，2024是成果豐碩的一年，未來前景可期。雖未達成50k訂閱者的高目標，但已相去不遠。夏季過後成長趨緩，原因尚不明確。我仍達成了重要里程碑：電子報訂閱數超越Twitter追蹤者，降低對社群平台的依賴。
+
+2025年，我期望電子報不僅是精選郵件清單。計劃邀請客座撰稿人，付費請他們撰寫熱衷主題的系列文章。若你認為自己適合，請回信打聲招呼！👋
+
+若你願意協助實現這些計劃，請將電子報分享給可能感興趣的朋友、同事，或轉發至社群平台。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助 {#sponsor1}
+
+[![Become a better engineer one newsletter at a time.](/emails/issues/183/posthog.jpg)](https://dub.link/twir-dec18)
+
+**[透過電子報逐步成為更出色的工程師](https://dub.link/twir-dec18)**
+
+[Product for Engineers](https://dub.link/twir-dec18) 是PostHog專為幫助工程師提升產品技能的電子報。
+
+擁有超過30,000名訂閱者，是銜接產品與工程領域的權威來源，助你打造用戶喜愛的產品。
+
+內容涵蓋技術選型要訣、可能摧毀新創的非顯性行為，以及親身經歷的A/B測試教訓。完全免費且永遠保持免費。
+
+[**免費訂閱**](https://dub.link/twir-dec18)
+
+---
+
+## ⚛️ React {#react}
+
+[![Building a dropdown](/emails/issues/215/dropdown.jpg)](https://reshaped.so/blog/building-a-dropdown)
+
+**[打造下拉選單](https://reshaped.so/blog/building-a-dropdown)**
+
+一篇精彩的互動式文章，展示了從零開始實現靈活的 React 下拉選單元件抽象層有多麼複雜，涵蓋觸發器、定位、焦點陷阱、鍵盤導航、無障礙設計以及許多其他需要考慮的細微之處。
+
+---
+
+[![透過自動化搭建 React 國際化基礎架構](/emails/issues/215/i18n.jpg)](https://lingual.dev/blog/automating-your-react-internationalization/)
+
+**[透過自動化搭建 React 國際化基礎架構](https://lingual.dev/blog/automating-your-react-internationalization/)**
+
+本文展示如何透過 ts-morph AST 轉換技術，自動將應用程式中所有硬編碼字串替換為 react-i18next 或 react-intl 的翻譯 API。
+
+---
+
+- 💸 [React Native Zero to Hero - Everything you need to ship your first app](https://galaxies.dev/missions/zero-to-hero?utm_source=thisweekinreact)
+- 👀 [React PR \- “Forgive” IDE extension](https://github.com/facebook/react/pull/31918): The React Compiler team recently [hinted at React Summit](https://www.youtube.com/watch?v=C8Mg-NSyqWg&t=14452s) their intent to create a “React IDE” powered by the compiler, not limited to just linting but also providing educational tooltips and more. Well, there's nothing very interesting to see yet, but work has begun on scaffolding a Language Server Protocol and VSCode extension.
+- 🗓️ [Paris TypeScript La Conf'](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 Paris - 28 February - Full speaker line up just dropped! Join Mateusz Burzyński, Elise Patrikainen and David Rousset! Get 20% off tickets with code "TWIR"!
+- 📜 [You don't need Next.js](https://www.comfydeploy.com/blog/you-dont-need-nextjs): They migrated dashboards from Next.js 15 to just React with TanStack Router and Rspack with satisfying results.
+- 📜 [Building the Black Friday-Cyber Monday live dashboard](https://vercel.com/blog/building-the-black-friday-cyber-monday-live-dashboard): Vercel presents the technical architecture behind their Next.js-based Black Friday dashboard
+- 📜 [Replacing Legacy throw in React 19 with Suspense and use](https://peterkellner.net/2024/12/31/replacing-legacy-throw-in-react-19-with-suspense-and-use/): There’s a new `use()` hook, but throwing promises still works.
+- 📜 [Remix Security Checklist](https://blog.arcjet.com/remix-security-checklist/)
+- 📜 [Building a simple form in React \- before and after React 19](https://reactpractice.dev/articles/building-a-simple-form-in-react-before-and-after-react-19/)
+- 📦 [Astro 5.1 \- Experimental sessions, remote image caching, getActionPath](https://astro.build/blog/astro-510/)
+- 📦 [StyleX 0.10 - PostCSS plugin, better debugging, ESLint/Perf/CLI improvements](https://stylexjs.com/blog/v0.10.0): The new PostCSS plugin should make StyleX easier to adopt in various contexts.
+- 📦 [Fancy Components \- Collection of funky, unconventional components](https://www.fancycomponents.dev/)
+- 📦 [next-intl 4.0 beta](https://next-intl.dev/blog/next-intl-4-0): type-safety for ICU params is really cool\! Also lays the ground for the latest Next.js innovations like PPR, dynamicIO, and rootParams.
+- 📦 [React Router 7.1 \- Support for Vite 6](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v710)
+- 📦 [shadcn/ui CLI \- Experimental monorepo support](https://ui.shadcn.com/docs/monorepo)
+- 📦 [React Toastify 11.0 \- Easy customization](https://github.com/fkhadra/react-toastify/releases/tag/v11.0.0)
+- 📦 [TanStack Store 0.7 \- Derived/Effect classes](https://tanstack.com/store/latest/docs/quick-start#derived)
+- 🎥 [Theo \- This magic hack makes Next.js possible](https://www.youtube.com/watch?v=VMDydLUCLtE): A great video explaining how Next.js implements PPR and Dynamic IO features using only JS features.
+- 🎥 [Theo \- I might have a new favorite state manager (XState Store)](https://www.youtube.com/watch?v=Pmieyp75SrA)
+- 🎥 [Lee Robinson \- Forms with React 19 and Next.js](https://www.youtube.com/watch?v=KhO4VjaYSXU)
+- 🎥 [Ankita \- Stop\! These Next.js Mistakes are Killing Your App](https://www.youtube.com/watch?v=6ZR5drEQzp4)
+- 🎙️ [This Month in React \- React 19 is here, 2024 is over](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2024-12-React-19-is-here--2024-is-over-e2sv4o6)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![React-admin：專為 B2B 應用打造的開源框架](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)
+
+**[React-admin：專為 B2B 應用打造的開源框架](https://marmelab.com/react-admin/)**
+
+👩🏻‍💻 **開發者為開發者打造**：React-admin 是免費的低代碼函式庫，能加速內部工具、管理系統或 B2B 應用的開發。與無代碼工具不同，您使用真實代碼，確保永遠不受框架限制。
+
+🔌 **靈活整合**：支援任何 API 格式（REST 或 GraphQL）及多種身份驗證後端（包括 Auth0、Cognito、Google Auth、Active Directory 和 Keycloak）。您完全掌控伺服器，單點登入 (SSO) 功能無需額外費用。完整主題化設計讓您能依企業品牌色彩自訂。
+
+🚀 **實證成功**：超過 25,000 家企業使用 React-admin 建構單頁應用程式。在您的下個專案中，採用 react-admin 可節省數週開發時間。[立即試用 react-admin](https://marmelab.com/react-admin/)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Expo - 2024 年度回顧](/emails/issues/215/expo.jpg)](https://expo.dev/blog/2024-year-in-review)
+
+**[Expo - 2024 年度回顧](https://expo.dev/blog/2024-year-in-review)**
+
+為開啟美好的 2025 年，讓我們回顧 Expo 去年帶來的所有重要成果：
+
+- Expo SDKs v50, v51, v52
+- 預設支援 New Arch
+- Expo Router v3, v4
+- DOM 元件
+- 指紋辨識
+- Atlas & DevTools
+- expo.new
+- 工作流程
+- 環境變數、安全活動與稽核日誌
+
+---
+
+- 💸 [示範 \- 由 Reactiive 製作，使用 Reanimated、Gesture Handler 和 Skia 打造的 90+ React Native 動畫](https://reactiive.io/demos?utm_source=thisweekinreact)
+- 👀 [RN Skia PR \- macOS 支援](https://github.com/Shopify/react-native-skia/pull/2836)
+- 📊 [React Native 現況](https://stateofreactnative.com/)：填寫年度社群調查的最後一週！
+- 📜 [Static Hermes 更新，2024年12月](https://x.com/tmikov/status/1869945330638442651)：Static Hermes 預計於 2025 年推出，初期為選用，之後預設啟用。它能夠編譯並執行有型別和無型別的程式碼。基準測試顯示，它在無型別程式碼上已經明顯更快，特別是在 JIT 模式下，當 Hermes 能推斷型別時。雖然沒有提供有型別程式碼的基準測試，但我們可以預期它會快得多！改進的 ES 合規性也將允許移除繁重的 Babel 插件。TLDR：在 2025 年，你可以預期構建和執行時效能都會有顯著提升。
+- 📜 [如何在 React Native 0.76+ 上創建美麗的發光組件](https://www.devas.life/how-to-create-beautiful-glowing-components-on-react-native-0-76/)：box-shadow 支援和新架構開啟了新的創意可能性。
+- 📜 [從原生到跨平台開發：解讀 Kotlin 和 Compose](https://www.callstack.com/blog/from-native-to-multiplatform-development-unpacking-kotlin-and-compose)：從 React Native 開發者的角度解釋 Android Kotlin 生態系統。
+- 📜 [React Native 的時機就是現在](https://galaxies.dev/article/time-for-react-native)
+- 📜 [為什麼 Expo 是新舊 React Native 應用的絕佳選擇](https://expo.dev/blog/why-expo-is-a-great-fit-for-new-and-existing-react-native-apps)
+- 📜 [使用 Moti 在 React Native 中實現骨架動畫](https://reactiive.io/articles/skeleton-loader)
+- 📦 [RN ExecuTorch 0.2 \- 支援電腦視覺模型](https://github.com/software-mansion/react-native-executorch/releases/tag/v0.2.0)
+- 📦 [RN Volume Manager 2.0 \- 新架構支援](https://github.com/hirbod/react-native-volume-manager/releases/tag/v2.0.1)
+- 📦 [RN Skia 1.8 \- React Native Web 上的新協調器](https://github.com/Shopify/react-native-skia/releases/tag/v1.8.0)
+- 📦 [RN 0.77 RC.5](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.5)
+- 📦 [RN Windows 0.77 preview.1](https://github.com/microsoft/react-native-windows/releases/tag/react-native-windows_v0.77.0-preview.1)
+- 📦 [RN Screens 4.4 \- 重要修復](https://github.com/software-mansion/react-native-screens/releases/tag/4.4.0)
+- 🎥 [Dan 的實驗室 \- 三角學與 React-Native Skia \- 我的看法](https://www.youtube.com/watch?v=r5P7Z3O8Jog)
+- 🎙️ [React Universe On Air \- Evan Bacon 談通用 React Native 應用、DOM 與 React Server Component](https://www.youtube.com/watch?v=rA7E3rGKSZw)
+- 🎙️ [RNR \- React Native 回顧 2024](https://www.reactnativeradio.com/episodes/rnr-317-react-native-rewind-2024)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📜 [Node.js 現在預設支援 TypeScript](https://www.totaltypescript.com/typescript-is-coming-to-node-23)：即將發布的 Node.js v23.6（及後續 v22.x）版本將能直接執行 `.ts` 檔案！🔥
+- 📜 [與長任務分手](https://calendar.perfplanet.com/2024/breaking-up-with-long-tasks-or-how-i-learned-to-group-loops-and-wield-the-yield/)
+- 📦 [Shortest - 由人工智慧驅動的自然語言端到端測試框架](https://github.com/anti-work/shortest)
+- 📦 [Rolldown 1.0 beta](https://github.com/rolldown/rolldown/releases/tag/v1.0.0-beta.1)：預計 2025 年初將發布基於 Rolldown 的 Vite 正式版本。
+- 📦 [Skip - 反應式框架](https://skiplabs.io/)：Christopher Chedeau 稱其為「後端的 React」。👀
+- 📦 [Rspack 1.2 alpha - 實驗性持久緩存與效能改進](https://github.com/web-infra-dev/rspack/releases/tag/v1.2.0-alpha.0)
+- 📦 [pnpm 10.0 RC - 增強安全性，可執行安裝腳本的白名單套件](https://github.com/pnpm/pnpm/releases/tag/v10.0.0-rc.2)
+- 📦 [Languine - 透過人工智慧驅動的 CLI 翻譯您的應用程式](https://languine.ai/)
+
+---
+
+## 🤭 有趣 {#fun}
+
+[![alt](/emails/issues/215/meme.jpg)](https://bsky.app/profile/brandonroberts.dev/post/3ld74oultjc2g)
+
+[![alt](/emails/issues/215/meme2.jpg)](https://x.com/flydotio/status/1873840239166226548)
+
+再會！👋

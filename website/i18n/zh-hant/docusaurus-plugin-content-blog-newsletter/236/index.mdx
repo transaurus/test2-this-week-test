@@ -1,0 +1,133 @@
+---
+slug: /236
+title: "This Week In React #236: Remix, TanStack, RSC, RedwoodSDK, Storybook, Docusaurus | ExecuTorch, Screens, FlashList, Reanimated, Expo, EAS, Radon | TypeScript, Temporal, Angular, JSPM, ESLint, tsdown"
+authors: [cyrilbo, matthieugicquel]
+date: 05-28-2025
+---
+
+大家好！
+
+這裡是來自 [Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact) 的 Cyril 和 Matthieu 👋。
+
+本週，Remix 團隊宣布了一些重大消息。微軟也讓嘗試 TypeScript Go 重寫變得更加容易。
+
+在 React Native 領域，有幾個雖小但有趣的版本發布，App.js 配置大會明天開始。Seb 將在下週詳細說明。
+
+讓我們深入探討吧！
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![AG Charts：全球最佳的 React 圖表庫。](/emails/issues/236/adgrid.jpg)](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)
+
+**[AG Charts：全球最佳的 React 圖表庫。](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)**
+
+AG Charts 是 AG Grid 推出的基於 canvas 的圖表庫。最初用於驅動 [AG Grids](https://www.ag-grid.com/react-table?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1) 的整合圖表功能，現在每月 npm 下載量已超過 **100 萬次**：
+
+- 🆓 **免費：** 永久免費使用多種圖表類型，包括**長條圖**、**折線圖**、**散點圖**、**區域圖**等。
+- 🚀 **快速：** 運用**批次繪製**技術、先進的變更檢測以及**離屏 canvas API**，無需額外設定即可輕鬆渲染數十萬個數據點。
+- 📊 **金融圖表：** 僅需 3 行程式碼即可建置互動式金融圖表，具備進階註解功能。
+- 🏢 **企業功能：** 升級至企業版可解鎖進階功能，如動畫、右鍵選單、十字準線等。免費試用，無需授權碼。
+
+了解更多：[www.ag-grid.com/charts](https://www.ag-grid.com/charts?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=2025-email-1)
+
+---
+
+## ⚛️ React {#react}
+
+[![Remix 覺醒](/emails/issues/236/remix.jpg)](https://remix.run/blog/wake-up-remix)
+
+**[Remix 覺醒 - v3 版本規劃](https://remix.run/blog/wake-up-remix)**
+
+本週您可能聽聞關於 [Remix 將棄用 React](https://x.com/AdamRackis/status/1925646909345058818) 的傳言。Ryan 和 Michael 剛發布官方文章闡述 Remix 的未來。
+
+簡言之，React Router 仍將獲得完整維護且安全可靠。同時，Remix v3 將成為基於 Preact 分支的新框架，以實現全技術棧掌控。
+
+Remix v3 的目標是「重新構想 Web 框架的可能性」。文章闡述了新框架將遵循的核心原則（為大型語言模型優化、基於 Web API 構建、組合式架構等）。
+
+---
+
+- 💸 [工程師產品 - 這就是你無法交付的原因](https://go.posthog.com/twir-may28)
+- 📜 [TanStack Router 之美](https://tkdodo.eu/blog/the-beauty-of-tan-stack-router)：Dominik 探討 TanStack Router 的區別性功能：基於 StrictOrFrom 原則的類型安全路由、搜尋參數狀態管理、檔案式路由設計，以及 Suspense 支援。
+- 📜 [組合伺服器與客戶端元件：現代 React 的超能力](https://www.epicreact.dev/composing-server-and-client-components-the-modern-reacts-superpower-08yn9)：伺服器元件與早期 script 標籤和全域變數的開發方式形成鮮明對比。
+- 📜 [為何 React 錯誤邊界不僅是元件的 try/catch](https://www.epicreact.dev/why-react-error-boundaries-arent-just-try-catch-for-components-i6e2l)：它們是僅捕獲渲染錯誤的宣告式元件。本文分享實用技巧，例如使用 `react-error-boundary` 套件或如何添加重試按鈕。
+- 📜 [Next.js 伺服器動作是對外公開的 API 端點](https://growl.dev/blog/nextjs-server-actions/)：伺服器動作可透過 Curl 命令呼叫，且動作 ID 容易洩漏，應採取與傳統公開 API 端點相同的安全防護措施。
+- 📜 [你的 React 元框架為何感覺破碎？原因在此](https://rwsdk.com/blog/your-react-meta-framework-feels-broken)：RedwoodSDK 致力消除 Next.js 和 Remix 中無用的抽象層、慣例和其他魔法機制。
+- 📜 [在 RedwoodSDK 中使用 React 伺服器元件與客戶端元件開發](https://rwsdk.com/blog/react-rsc-redwoodsdk)
+- 📜 [給 React 開發者的 SolidJS 指南](https://marmelab.com/blog/2025/05/28/solidjs-for-react-developper.html)
+- 📜 [實作長按刪除元件](https://emilkowal.ski/ui/building-a-hold-to-delete-component)
+- 📜 [透過建置 SSR React 專案理解水合錯誤](https://www.propelauth.com/post/understanding-hydration-errors)
+- 📜 [為何在 React 專案中組合優於繼承](https://thetshaped.dev/p/why-composition-beats-inheritance-react-projects-extensible-components)
+- 💸 [Next 之路 - 使用 Next.js 15 和 React 19 精通全端開發](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1.1)
+- 📦 [Docusaurus 3.8](https://docusaurus.io/blog/releases/3.8)：持續優化建置速度，新增 CSS 層疊層級支援，兩者均屬「未來標誌」實驗功能。
+- 📦 [Storybook 9.0](https://github.com/storybookjs/storybook/releases/tag/v9.0.0)：歷經多個測試版後正式發布，尚無官方公告。
+- 📦 [TanStack Query v5.77](https://github.com/TanStack/query/releases/tag/v5.77.0)：新增 `maxChunks` 參數控制串流查詢的快取保留量。
+- 🎥 [Youssef Benlemlih - TanStack 正逐步接管 React 生態](https://www.youtube.com/watch?v=u10Zlg_Un8I)
+- 🎥 [Alem Tuzlak - 解析 react-router 的水合問題根源](https://www.epicweb.dev/tips/understanding-the-cause-of-hydration-issues-in-react-router~si4z9)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助 {#sponsor2}
+
+[![Clerk 帳務系統入門指南](/emails/issues/236/clerk.jpg)](https://go.clerk.com/KfnV7Rj)
+
+**[Clerk 帳務系統入門指南](https://go.clerk.com/KfnV7Rj)**
+
+學習如何使用 Clerk 打造完整帳務體驗——無需自訂 UI、Webhooks 或 Stripe 會話管理。
+
+- 使用 `<PricingTable />` 元件建立定價頁面
+- 與 Stripe 連接 — 無需手動 API 呼叫，無需手動同步
+- 在 Clerk 儀表板內統一管理方案和權益
+- 使用 `has()` 輔助函式根據客戶的方案、功能和權限控制存取
+- 在單一位置管理使用者和訂閱資料
+
+Enable Billing, drop in `<PricingTable/>` on your `/pricing` page and [start monetizing your application](https://go.clerk.com/LphCouG).
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [EAS Workflows 是 React Native CI/CD 的標準。減少思考 CI 的時間，增加建置功能的時間。](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)
+- 📣 [Expo - 增量 EAS 託管變更](https://expo.dev/changelog/incremental-eas-hosting-changes)
+- 📜 [Expo \- 每位開發者都應該了解的環境變數使用知識](https://expo.dev/blog/what-are-environment-variables)
+- 📜 [Expo - 如何將您的 Bolt 應用程式上架 App Store (無需編寫程式碼)](https://expo.dev/blog/how-to-get-your-ai-app-to-the-app-store)
+- 📦 [RN ExecuTorch 0.4.0 - 更多大型語言模型、工具呼叫、文字嵌入、多語言語音轉文字和 OCR，以及影像分割](https://blog.swmansion.com/react-native-executorch-release-v0-4-0-262d4013ac10)
+- 📦 [RN Screens 4.11 \- react-native-edge-to-edge 整合、`pageSheet` 呈現方式](https://github.com/software-mansion/react-native-screens/releases/tag/4.11.0)
+- 📦 [Radon IDE 1.7 \- 大量錯誤修復](https://github.com/software-mansion/radon-ide/releases/tag/v1.7.0)
+- 📦 [FlashList 2.0 RC1](https://github.com/Shopify/flash-list/releases/tag/v2.0.0-rc.1): 自上次 alpha 版本以來無重大變更，現為發佈候選版且已被視為可投入生產環境。
+- 📦 [Reanimated 4.0.0-beta.4 \- 支援 RN 0.78、0.79 和 0.80，CSS 動畫修復，穩定性改進](https://github.com/software-mansion/react-native-reanimated/releases/tag/4.0.0-beta.4)
+- 🎥 [Expo - The Golden Workflows 播放清單](https://www.youtube.com/watch?v=u8MAJ0F18s0&list=PLsXDmrmFV_AQ1fp78TTKP51N_R-EW98oT)
+- 🎙️ [RNR 333 \- 與 Cedric van Putten 探索 Expo Atlas](https://infinite.red/react-native-radio/rnr-333-expo-atlas-with-cedric-van-putten)
+- 🎙️ [Rocket Ship 070 \- React Native 版本地獄、使用 Expo 的 React 伺服器元件與發票應用程式更新](https://share.transistor.fm/s/b04dbb2b)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📜 [TypeScript 原生預覽版](https://devblogs.microsoft.com/typescript/announcing-typescript-native-previews/)：Microsoft 幾個月前宣布了 TypeScript 的 Go 語言重寫版本。現在這個重寫版的每夜構建將會發布，並可透過 CLI 或 VS Code 擴充功能使用。已加入 JSX 支援，而且速度仍然是 JS 版本的約 10 倍。
+- 📜 [請勿在請求上斷言](https://www.epicweb.dev/do-not-assert-on-requests)：msw 的創建者解釋了在測試中，他推薦替代檢查發送請求的正文/標頭的方法
+- 📜 [ESLint v9 回顧 - 回顧成功之處與不足之處](https://eslint.org/blog/2025/05/eslint-v9.0.0-retrospective/)
+- 📜 [從 tsup 轉換到 tsdown](https://alan.norbauer.com/articles/tsdown-bundler/)
+- 📜 [JavaScript 簡史](https://deno.com/blog/history-of-javascript)
+- 📦 [Firefox 139 - Temporal、`hidden=until-found`、`dialog.requestClose()`](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/139)：首個支援 stage 3 Temporal API 的瀏覽器！
+- 📦 [JSPM 4.0 - 基於標準的導入映射套件管理](https://jspm.org/jspm-4.0-release)：相當創新的專案，可在無建置步驟下交付前端應用
+- 📦 [Angular 20.0 - 響應式系統、資源 API、SSR、無區域(Zoneless)、Vitest 等](https://medium.com/@mgechev/b5c9c06cf301)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![Benjamin Lee 推文：希望 @tan_stack 能避開 RSC 的影響](/emails/issues/236/meme.jpg)](https://x.com/Benjamin_D_Lee/status/1926071667345822140)
+
+[![meme2](/emails/issues/236/meme2.jpg)](hhttps://x.com/alxfazio/status/1926731799226462646)
+
+下次見！👋

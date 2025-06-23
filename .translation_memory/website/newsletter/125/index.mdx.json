@@ -1,0 +1,804 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/125/index.mdx",
+  "source_file_content_hash": "d5ed9687af714b45cee4878ec6c59df8c7be188976ffd55c20efd0a47b4c61de",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /125\ntitle: \"This Week In React #125: tRPC, T3, Remix, Zustand, Server Components, Drag & Drop, Forms, Gatsby, Remotion, React-Native, Skia...\"\nauthors: [slorber]\ndate: 11-22-2022\n---",
+      "source_content_hash": "24d7397a6bb6899b7402707ab11d8dd8e8e6638bbe00b0faea892394a087e860",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week is **[Black Friday](/black-friday)**. I created a page with the best deals for a React dev. I already found some of them, but some are not announced yet, so come back on Friday ;)",
+      "source_content_hash": "6c42a11e44cbd7a48ad940e431b853ddc28cecb9f8d5f6e7fdae15865e7a9497",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週是**[黑色星期五](/black-friday)**。我為 React 開發者整理了一個最佳優惠專頁。已經找到部分優惠，但有些尚未公佈，請週五再回來查看 ;)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "[![Black Friday 2022 Banner](/img/BLACK_FRIDAY_2022_v2.png)](/black-friday)",
+      "source_content_hash": "5660d28161ab1ad15ba79b65a0c716e90c9730c11cfa47b8dd7777e22eaa7fe2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![黑色星期五 2022 橫幅](/img/BLACK_FRIDAY_2022_v2.png)](/black-friday)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "I finally have the opportunity to put tRPC in the spotlight, with official releases and a great article comparing it to GraphQL!",
+      "source_content_hash": "5dc3b926dce89d7a4105dfb8ea9a911c23f8a1019b015eb130b2980fadd1663b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "終於有機會讓 tRPC 成為焦點——伴隨著官方發布和一篇與 GraphQL 對比的精彩文章！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "We also have some great Remix-related content in general.",
+      "source_content_hash": "8d8278b79316122720c9b5529abe93237348db3701098abd9799143706345228",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們還有許多優質的 Remix 相關內容。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "I like the direction React-Native takes!",
+      "source_content_hash": "4036a575000429e2357413cb5625eb15025dbdc71c247778d3b44f41d502c8de",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我很欣賞 React Native 的發展方向！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "Don't forget to fill out the [State Of JS](https://survey.devographics.com/survey/state-of-js/2022) survey! Glad Docusaurus made it this year. Feel free to suggest the newsletter for the resources 😏 with some luck it will be featured next year 🙌",
+      "source_content_hash": "dbe55afb8b537873f278919010f0502e771e25283cafabe56c637f497f7b021d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "別忘了填寫[State Of JS](https://survey.devographics.com/survey/state-of-js/2022)問卷！很高興 Docusaurus 今年入選。歡迎推薦本電子報作為資源 😏 運氣好的話明年就能上榜 🙌"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ea978e4d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_ea978e4d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**💡 [在 Twitter 上查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cd6b8019",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_cd6b8019"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "599822a5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_599822a5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2b88bb9d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1b3d8cb",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "[![FlyCode Makes React Apps Editable without coding, Git based](/emails/issues/124/flycode.jpg)](https://bit.ly/3UPwAoJ)",
+      "source_content_hash": "b1c253f9a00e87fb27290d2b708379ae2c003b9fb3c37dbf215926813efd1bc8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![FlyCode 讓 React 應用無需編碼即可編輯，基於 Git](/emails/issues/124/flycode.jpg)](https://bit.ly/3UPwAoJ)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "**[FlyCode Makes React Apps Editable without coding, Git based](https://bit.ly/3UPwAoJ)**",
+      "source_content_hash": "be0008c644c3577cba86de728a53d8c02539af2b4374d8c985b4b4d7109cc468",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[FlyCode 讓 React 應用無需編碼即可編輯，基於 Git](https://bit.ly/3UPwAoJ)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[FlyCode](https://bit.ly/3wWSi00) (YC S22) makes React web apps editable in minutes so Product and UX teams can iterate and release products faster, so they don't have to wait on (or consume) developer time.",
+      "source_content_hash": "bbc101671f92785b8d72decafab66d491ddfe3120e508b897b8aef31b9c6c08a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[FlyCode](https://bit.ly/3wWSi00) (YC S22) 讓 React 網頁應用在數分鐘內變得可編輯，使產品和 UX 團隊能更快迭代與發布產品，無需等待(或佔用)開發者時間。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "FlyCode reads your regular React code and finds Texts, Images, Design tokens and Analytics event, then it let's non-coders collaborate and edit them and send back a pull request (they don't need access to GitHub!)",
+      "source_content_hash": "b0ca824c79705290430c561efbfcf98429b8f4bc63a90163188455e0ba905119",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "FlyCode 讀取你的常規 React 程式碼，找出文字、圖片、設計代幣和分析事件，讓非技術人員協作編輯後直接發送 Pull Request (無需 GitHub 權限！)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa83231c",
+      "source_content": "- Saves development time\n- No code integration, it just reads your code!\n- GitHub based, a bot is scanning the code and creates pull requests\n- Use your own stack and components\n- Retain codebase ownership",
+      "source_content_hash": "fe5e529f28e78a77dd49b66d51cb6a3cc58eda9e9bf4d7ba60d1ce6bb0387e15",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 節省開發時間\n- 無需程式碼整合，直接讀取原始碼！\n- 基於 GitHub，機器人自動掃描程式碼並建立 PR\n- 使用自有技術堆疊和元件\n- 保留程式碼庫所有權"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "You can get started here: [flycode.com/developers](https://www.flycode.com/developers)",
+      "source_content_hash": "170cfd801b0555f2b7855462fb99c62035d2b35b7721da4451de25d7460726a7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "由此開始：[flycode.com/developers](https://www.flycode.com/developers)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e0a17c0d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "60410af6",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "[![tRPC 10](/emails/issues/125/trpc10.jpg)](https://trpc.io/blog/announcing-trpc-10)",
+      "source_content_hash": "8e13ff304b9d487426561260d1b87361c20499ae6e8bb72cd93a41922793cad9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![tRPC 10](/emails/issues/125/trpc10.jpg)](https://trpc.io/blog/announcing-trpc-10)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "**[tRPC 10](https://trpc.io/blog/announcing-trpc-10)**",
+      "source_content_hash": "d74985cfd5f8252c5f0094095cddc2f9eb2a23f65b84add9c0cf794e37816a43",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[tRPC 10](https://trpc.io/blog/announcing-trpc-10)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "Nice refactor of tRPC which greatly improves DX and IDE support. This library that facilitates typesafe backend calls is gaining more and more followers. It can be easily used in the React ecosystem thanks to the integration packages (Next.js, React-Query...). I love the tagline \"Move Fast and Break Nothing\" 😄",
+      "source_content_hash": "b151d2825a103dc254ff441a0089bad5fc420f5a3e1c18f5bd036c8283540c29",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "tRPC 的重大重構顯著提升開發者體驗(DX)和 IDE 支援。這個實現類型安全後端調用的函式庫日益受到歡迎，得益於整合套件(Next.js、React-Query...)，能無縫融入 React 生態系。我特別喜歡其標語「快速行動，不破壞任何」😄"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ea4c715",
+      "source_content": "To understand the idea, I recommend reading [Why we ditched GraphQL for tRPC](https://echobind.com/post/why-we-ditched-graphql-for-trpc). Alex explains why they replaced GraphQL with tRPC in their [Bison](https://github.com/echobind/bisonapp) starter, in a React context. tRPC requires much less boilerplate, TypeScript codegen and JS bundle, while improving DX, IDE support and simplifying cache management. The way to handle over-fetching is different: you should not hesitate to create a new procedure. tRPC is ideal for a full-stack Node.js app in TypeScript with co-located backend/frontend code (Next.js for example). GraphQL remains a good solution to create a public API exposed to partners who do not necessarily use JavaScript and yet want to benefit from codegen (OpenAPI is also a good solution for this).",
+      "source_content_hash": "3c82af21fcaf0cd1cda462efafdbe9808eeaa644cf80060144e6e7b50bb6a274",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "為理解核心理念，推薦閱讀[為何我們棄用 GraphQL 改用 tRPC](https://echobind.com/post/why-we-ditched-graphql-for-trpc)。Alex 解釋了他們在 React 環境的[Bison](https://github.com/echobind/bisonapp)入門專案中替換 GraphQL 的原因。tRPC 大幅減少樣板程式碼、TypeScript 程式碼生成和 JS 套件體積，同時提升 DX、IDE 支援並簡化快取管理。處理過度獲取(over-fetching)的方式不同：應積極創建新程序。tRPC 特別適合全端 TypeScript Node.js 應用與同地協作的前後端程式碼(如 Next.js)。GraphQL 仍是建立公開 API 的優選方案，尤其適用於非 JavaScript 使用者且需程式碼生成的場景(OpenAPI 也是此類需求的好選擇)。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "I take this opportunity to also mention [T3-App](https://create.t3.gg/), an end-to-end typesafe stack for Next.js based on tRPC, Prisma, Tailwind... It greatly helped tRPC grow in popularity this year, and now has an official docs site. Its [tRPC tdocs](https://create.t3.gg/en/usage/trpc) explain well the advantages compared to a classic Next.js Route API. See also [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo): a Turborepo monorepo with Next.js + Expo, both using tRPC.",
+      "source_content_hash": "3d6d7763a999ae83e13735a0df53e8dcdf92aac4e2c5c2f7d736e712feca02e4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "藉此機會我也要介紹 [T3-App](https://create.t3.gg/)，這是一個基於 tRPC、Prisma、Tailwind 的 Next.js 端到端類型安全堆疊。它極大地推動了 tRPC 今年的普及，現在已擁有官方文件網站。其 [tRPC 文件](https://create.t3.gg/en/usage/trpc) 清楚說明了相較於傳統 Next.js Route API 的優勢。另可參考 [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)：一個採用 Turborepo 的單體倉庫，包含 Next.js + Expo，均使用 tRPC。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e874d9e7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "[![Working with Zustand](/emails/issues/125/zustand.jpg)](https://tkdodo.eu/blog/working-with-zustand)",
+      "source_content_hash": "7e92f46f8483ac6646557131a0305b737e3317b5a0c64e07c5d02f30f0af480f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![使用 Zustand](/emails/issues/125/zustand.jpg)](https://tkdodo.eu/blog/working-with-zustand)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f71ff2a",
+      "source_content": "**[Working with Zustand](https://tkdodo.eu/blog/working-with-zustand)**",
+      "source_content_hash": "0d47d6a96472d3020e1837bec159b2d3a7c10d2020ea49cec7863a81ad1ae3fc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[使用 Zustand](https://tkdodo.eu/blog/working-with-zustand)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "Dominik reminds us where we come from in terms of state management. He explains why he likes Zustand, a minimalist and magic-free solution in the React philosophy. He gives some tips on how to best use it, like exposing custom hooks, using atomic selectors, or grouping actions in an immutable object. Good pragmatic tips I can definitively agree with!",
+      "source_content_hash": "54bf3e8b3b37a2c002a02043d20577fe2dd1b3504d37d169a329e37326f7a436",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Dominik 回顧了狀態管理的演進歷程，解釋為何青睞 Zustand——這個符合 React 哲學的極簡無魔法解決方案。他提供了最佳實踐技巧，例如暴露自訂鉤子、使用原子選擇器，或將動作分組為不可變物件。這些務實建議我完全認同！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7afb38f4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "[![Remix dual reponses](/emails/issues/125/remix-dual.png)](https://blog.jim-nielsen.com/2022/remix-alternate-timeline-of-web-dev/)",
+      "source_content_hash": "cc6940af4ac85e438d4cc904c0daee1fb8b58a16f7a25dd87f14e2c42544fae2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Remix 雙重回應](/emails/issues/125/remix-dual.png)](https://blog.jim-nielsen.com/2022/remix-alternate-timeline-of-web-dev/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d0dd855b",
+      "source_content": "**[Remix and the Alternate Timeline of Web Development](https://blog.jim-nielsen.com/2022/remix-alternate-timeline-of-web-dev/)**",
+      "source_content_hash": "c66026ce2fca09baac873aa2474bbd4bebbbf0fe7180e932c9c801240f77ca8d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[Remix 與網頁開發的替代時間線](https://blog.jim-nielsen.com/2022/remix-alternate-timeline-of-web-dev/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7736989b",
+      "source_content": "Jim explains that Remix has taken a few steps back to rethink our entire frontend app model. With Remix, progressive enhancement support does not require writing our app in 2 different ways (client + server) like with other frameworks, as Remix routes can return both JSON and HTML from the same code.",
+      "source_content_hash": "d76db16e9dc0576b5339ea24c76468429e03399273740e1f40cc0aa8d7c064af",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Jim 闡述 Remix 如何透過回溯思考，重新設計前端應用模型。在 Remix 中，漸進增強功能無需像其他框架般分寫客戶端/伺服器雙重邏輯，因為單一路由即可從相同程式碼返回 JSON 與 HTML。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "678c3938",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "[![Taming the dragon: Accessible drag and drop](/emails/issues/125/dnd.jpg)](https://react-spectrum.adobe.com/blog/drag-and-drop.html)",
+      "source_content_hash": "e091f58fb01db9fb8b32495707b711a915be7e10a0b2a795655108b5310bc6fa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![馴服巨龍：無障礙拖放](/emails/issues/125/dnd.jpg)](https://react-spectrum.adobe.com/blog/drag-and-drop.html)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "**[Taming the dragon: Accessible drag and drop](https://react-spectrum.adobe.com/blog/drag-and-drop.html)**",
+      "source_content_hash": "fd9ab8673cb80a7cf9231b60787ed0fb0a6c956226ec3aa5ff9a116e6668dad1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[馴服巨龍：無障礙拖放](https://react-spectrum.adobe.com/blog/drag-and-drop.html)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "Devon (Adobe) just announced the release of accessible drag & drop hooks for React-Aria and React-Spectrum. He explains how the keyboard and screen reader support works to allow users to select an element, and find potential targets with Tab, or the mobile experience. All this with many demos. It feels once again that there is a lot of work behind this React-Aria API, which is the first to try to solve this complex problem.",
+      "source_content_hash": "049e6b77d39a23786052745572a4b9dfc399dc2737a9c097aac8f96201a9af39",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Devon（Adobe）宣布發布 React-Aria 與 React-Spectrum 的無障礙拖放鉤子。他詳解鍵盤/螢幕閱讀器支援機制：使用者可選取元素，透過 Tab 尋找潛在目標，並優化行動體驗。豐富的示範再次展現 React-Aria API 背後的深厚工程，這是首個嘗試解決此複雜問題的方案。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "233bb60e",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2fc7ec55",
+      "source_content": "- 📖 [Beta docs update - createRef, PureComponents, useDebugValue](https://twitter.com/dan_abramov/status/1593007695703207936): Dan Abramov is close to the end of his documentation work, and the new doc will probably be officially released soon.\n- 📜 [Fetching and caching Supabase data in Next.js 13 Server Components](https://supabase.com/blog/fetching-and-caching-supabase-data-in-next-js-server-components): shows how easily React Server Components can be used to make requests on a cloud/serverless DB, and also gives some good Next.js caching tips to reduce response times.\n- 📜 [Conditionally Render Fields Using React Hook Form](https://echobind.com/post/conditionally-render-fields-using-react-hook-form): how to use the watch and register/unregister functions to manage a conditional field\n- 📜 [Offline dev and testing for Remix](https://github.com/pcattori/blog/blob/main/posts/offline-dev-and-testing-for-remix/index.md): Pedro explains why he likes Mock Service Worker in dev/test and explains the way to integrate it with Remix.\n- 📜 [Migrate from Webpack to Remix](https://remix.run/blog/migrate-from-webpack): the team is working on a Webpack compiler for Remix to facilitate incremental migration.\n- 📜 [Remix site with Valhalla](https://www.gatsbyjs.com/blog/what-is-gatsbys-valhalla-content-hub/): Paul introduce Valhalla, the new Gatsby Cloud data layer, and then explains how it can be used with Remix. Valhalla exposes a public GraphQL API. The demo calls this API from a Remix loader via Urql. It looks like it's still the early days of Valhalla, but really curious to see how all this unfold.\n- 📜 [Gatsby - Using the Slice API for Internationalization (i18n)](https://www.gatsbyjs.com/blog/using-the-slice-api-for-internationalization-i18n/)\n- 📜 [useReducer or XState?](https://swizec.com/blog/reader-question-usereducer-or-xstate/)\n- 🎥 [React Brussels Playlist](https://www.youtube.com/watch?v=uZnXwuhYZBc&list=PL53Z0yyYnpWjIoe0wNozVbuRXOnVcETPw): my Belgian friends have published the videos of the conference. I liked the [keynote](https://www.youtube.com/watch?v=uZnXwuhYZBc&list=PL53Z0yyYnpWjIoe0wNozVbuRXOnVcETPw&index=2) where Tejas explains how React meta-frameworks use the latest React 18 features like Suspense for data fetching or transitions.\n- 🎥 [RIP React Router?](https://www.youtube.com/watch?v=LVzG3nncE4M): highlights the great typesafe and DX properties of the brand new [TanStack Router](https://tanstack.com/router/v1)\n- 🎥 [Using Fonts in Next.js](https://www.youtube.com/watch?v=L8_98i_bMMA)\n- 📦 [Remotion 3.3](https://twitter.com/remotion_dev/status/1593156143249260544): no more need to install ffmpeg, various new packages (font, paths, noise, motion blur), and nice DX improvements.\n- 📦 [Openblocks - The Open Source Retool Alternative](https://github.com/openblocks-dev/openblocks)\n- 📦 [Jotai 1.10](https://twitter.com/jotaijs/status/1593647952672608257)",
+      "source_content_hash": "45d38fa630718ccb9a4da92c54c6e0ff55318c51d9b9746ae25049482b648e7b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📖 [Beta 文件更新 - createRef, PureComponents, useDebugValue](https://twitter.com/dan_abramov/status/1593007695703207936)：Dan Abramov 的文件編寫工作已接近尾聲，新文件可能很快就會正式發布。\n- 📜 [在 Next.js 13 伺服器元件中獲取和快取 Supabase 資料](https://supabase.com/blog/fetching-and-caching-supabase-data-in-next-js-server-components)：展示如何輕鬆使用 React 伺服器元件在雲端/無伺服器資料庫上進行請求，並提供一些 Next.js 快取技巧以減少回應時間。\n- 📜 [使用 React Hook Form 條件式渲染欄位](https://echobind.com/post/conditionally-render-fields-using-react-hook-form)：如何使用 watch 和 register/unregister 函數管理條件式欄位\n- 📜 [Remix 的離線開發和測試](https://github.com/pcattori/blog/blob/main/posts/offline-dev-and-testing-for-remix/index.md)：Pedro 解釋為何喜歡在開發/測試中使用 Mock Service Worker，並說明整合到 Remix 的方法。\n- 📜 [從 Webpack 遷移至 Remix](https://remix.run/blog/migrate-from-webpack)：團隊正在開發 Remix 的 Webpack 編譯器以促進漸進式遷移。\n- 📜 [使用 Valhalla 的 Remix 網站](https://www.gatsbyjs.com/blog/what-is-gatsbys-valhalla-content-hub/)：Paul 介紹 Valhalla（Gatsby Cloud 的新資料層），並說明如何與 Remix 搭配使用。Valhalla 提供公共 GraphQL API，示範透過 Urql 在 Remix loader 調用此 API。目前 Valhalla 仍處早期階段，但發展值得關注。\n- 📜 [Gatsby - 使用 Slice API 進行國際化 (i18n)](https://www.gatsbyjs.com/blog/using-the-slice-api-for-internationalization-i18n/)\n- 📜 [useReducer 還是 XState？](https://swizec.com/blog/reader-question-usereducer-or-xstate/)\n- 🎥 [React Brussels 播放清單](https://www.youtube.com/watch?v=uZnXwuhYZBc&list=PL53Z0yyYnpWjIoe0wNozVbuRXOnVcETPw)：我的比利時朋友已發布會議影片。我特別喜歡[主題演講](https://www.youtube.com/watch?v=uZnXwuhYZBc&list=PL53Z0yyYnpWjIoe0wNozVbuRXOnVcETPw&index=2)，Tejas 解釋 React 元框架如何運用 Suspense 資料獲取或過渡等 React 18 最新功能。\n- 🎥 [React Router 已死？](https://www.youtube.com/watch?v=LVzG3nncE4M)：重點介紹全新 [TanStack Router](https://tanstack.com/router/v1) 的強大類型安全性和開發者體驗 (DX) 特性。\n- 🎥 [在 Next.js 中使用字體](https://www.youtube.com/watch?v=L8_98i_bMMA)\n- 📦 [Remotion 3.3](https://twitter.com/remotion_dev/status/1593156143249260544)：無需安裝 ffmpeg，新增多種套件（字體、路徑、噪聲、動態模糊），並有顯著的開發者體驗改進。\n- 📦 [Openblocks - 開源的 Retool 替代方案](https://github.com/openblocks-dev/openblocks)\n- 📦 [Jotai 1.10](https://twitter.com/jotaijs/status/1593647952672608257)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "488abec8",
+      "source_content": "<SubscribeFormEmbed />",
+      "source_content_hash": "2b5c5e42f4352c90b9647a9da7a0fb7ece8b8dc27440e42cdf85cbb6e1901b85",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_488abec8"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "04837130",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d1f76d04",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "[![The React Native Show - a podcast series](/emails/issues/125/the-rn-show.jpg)](https://www.callstack.com/podcast-react-native-show?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)",
+      "source_content_hash": "345fe96f2d4e62bfd507f5d966d48976b7870da50be476253a908274cbe9d319",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![The React Native Show - 一個播客系列](/emails/issues/125/the-rn-show.jpg)](https://www.callstack.com/podcast-react-native-show?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "**[The React Native Show - a podcast series](https://www.callstack.com/podcast-react-native-show?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)**",
+      "source_content_hash": "20d1b5018e96f938eeaac62e98c2e3518b7f57fcf3fe4f933c56dca8052c1f16",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[The React Native Show - 一個播客系列](https://www.callstack.com/podcast-react-native-show?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "Since you are here, you surely like to stay up to date with the greatest React news ! 🔥 If you want to delve into React and React Native, play the latest episodes of **The React Native Show**:",
+      "source_content_hash": "49bb1d1b37b57208b8f37662613f69e2719de47cd149e5d2540cac556027afcf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "既然您在這裡，想必喜歡隨時掌握最棒的 React 動態！🔥 若想深入探索 React 和 React Native，請收聽 **The React Native Show** 的最新單集："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ddd26d5",
+      "source_content": "- [Module Federation](https://www.callstack.com/podcasts/module-federation?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React) in React Native, with Zack Jackson, maintainer of Webpack\n- [React Native New Architecture](https://www.callstack.com/podcasts/react-native-new-architecture-ep-17?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React), with Nicola Corti from Meta\n- [React Native at Microsoft](https://www.callstack.com/podcasts/react-native-at-microsoft-ep-16?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React), with Lorenzo Sciandra from Microsoft",
+      "source_content_hash": "fb09f8415f644a9387de3b2b0dfdb0a3fc62b38e8882b5ef41c4b0e97a2c6379",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- React Native 中的 [模組聯合](https://www.callstack.com/podcasts/module-federation?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)，由 Webpack 維護者 Zack Jackson 主講\n- [React Native 新架構](https://www.callstack.com/podcasts/react-native-new-architecture-ep-17?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)，與 Meta 的 Nicola Corti 對談\n- [微軟的 React Native 實踐](https://www.callstack.com/podcasts/react-native-at-microsoft-ep-16?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)，微軟 Lorenzo Sciandra 經驗分享"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a6c928a1",
+      "source_content": "**[The React Native Show](https://www.callstack.com/podcast-react-native-show?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)** is a podcast series hosted by Callstack. Each episode explores a different topic in detail. The host dives deep into every discussion with his guests - world experts in the field.",
+      "source_content_hash": "9f7f83807c4a1a6efa3913279819114cec3604cef330b40c0016857891734a45",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[The React Native Show](https://www.callstack.com/podcast-react-native-show?utm_campaign=Podcast&utm_source=email&utm_content=This_Week_in_React)** 是由 Callstack 製作的播客系列，每集深度探討不同主題。主持人與該領域的國際專家進行深入對談。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "43fd0c1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23b96cc0",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8fcdd6d4",
+      "source_content": "**[\\[Reply\\] 2022: How can we improve React Native?](https://github.com/react-native-community/discussions-and-proposals/discussions/546)**",
+      "source_content_hash": "d0044974561a80f63c5ce3d822fdd5cfd6e15be60bfea88110fb04d6fcbc3b57",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[\\[官方回應\\] 2022：如何改進 React Native？](https://github.com/react-native-community/discussions-and-proposals/discussions/546)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "The React-Native team has officially responded to the discussion on [how to improve React-Native](https://github.com/react-native-community/discussions-and-proposals/discussions/528). We learn many details about the roadmap. The investment on React-Native seems to be accelerating. The points I'm particularly interested in are:",
+      "source_content_hash": "b2394d6acf5524df1be5489c8f6cb7b5257d0e4d3e82716c5a2dc14a999eea17",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "React-Native 團隊正式回應了關於[如何改進 React Native](https://github.com/react-native-community/discussions-and-proposals/discussions/528)的討論，揭露了路線圖的諸多細節。對 React-Native 的投資似乎正在加速，其中特別值得關注的重點包括："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d8460b5b",
+      "source_content": "- Metro should catch up: swc, pnpm, symlinks, ESM support \"exports\"...\n- Yoga and CSS support will be improved: flex gap, boxShadow...\n- Cross-platform, unified APIs, React-Native-Web now under Meta ownership\n- DX improvements: debugging, stacktraces, sourcemaps, LogBox...",
+      "source_content_hash": "0926a6cdc443105acef2f3e1b0fedf3a97124351abca541a7dc72b1c4e908419",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- Metro 待補強功能：swc、pnpm、符號連結、ESM 支援 \"exports\"...\n- 強化 Yoga 與 CSS 支援：flex 間距、陰影效果...\n- 跨平台統一 API，React-Native-Web 現歸 Meta 所有\n- 開發體驗改進：除錯、堆疊追蹤、原始碼映射、LogBox..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b99d2cf6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "292df6cb",
+      "source_content": "- 🎨 [React-Native-Skia + VisionCamera Frame Processor demo](https://twitter.com/mrousavy/status/1592943223751999488): impressive demo that allows to use React-Native-Skia on VisionCamera frames. Allows for example to apply filters/shaders in real time without writing native code.\n- 📦 [React-Native-Skia 0.1.159](https://twitter.com/wcandillon/status/1593591452491194370): the library goes into beta, now rendering on the UI thread, greatly improving performances\n- 📦 [burnt – native toasts & alerts for react native](https://twitter.com/FernandoTheRojo/status/1593632122069291008): Fernando Rojo created his 1st native React-Native library based on Swift in less than a day, without any prior knowledge of Swift. This shows how easy [Expo Modules API](https://twitter.com/tsapeta/status/1593705970781356035) makes things!\n- 📦 [React-Native-Testing-Library v11.5](https://twitter.com/mdj_dev/status/1593250914965794817)\n- 📜 [Automatic args in React Native Storybook](https://dev.to/dannyhw/automatic-args-in-react-native-storybook-140a)\n- 🎥 [Path Gradients with Skia](https://www.youtube.com/watch?v=7SCzL-XnfUU)\n- 🎥 [Rolling Menu in React-Native Re-Animated 2](https://www.youtube.com/watch?v=sOKMytwWeKE)\n- 📖 [Expo Docs update - Universal apps tutorial](https://twitter.com/amanhimself/status/1593669242892988417)\n- 📊 [New Reanimated Shared Value implementation](https://twitter.com/kzzzf/status/1594095497123434497): improved performance through JSI call reduction\n- 📊 [React-Native Yoga Layout VS iOS alternatives](https://twitter.com/Baconbrix/status/1593561645858623488): the React-Native layout engine is quite fast!\n- 🐦 [Hirbod - \"the Layout Animation rewrite has been merged\"](https://twitter.com/nightstomp/status/1593207173496320000)\n- 🐦 [Jamon Holmgren - \"at this point there's very little reason _not_ to use Expo\"](https://twitter.com/jamonholmgren/status/1593319397573394432)",
+      "source_content_hash": "fd5a8273c1d8939c9e2f209f9f41645f35816c7bd18e66d2af8937328f022080",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 🎨 [React-Native-Skia + VisionCamera Frame Processor 示範](https://twitter.com/mrousavy/status/1592943223751999488)：令人驚豔的演示，能在 VisionCamera 影格上使用 React-Native-Skia。例如可即時套用濾鏡/著色器，無需編寫原生程式碼。\n- 📦 [React-Native-Skia 0.1.159](https://twitter.com/wcandillon/status/1593591452491194370)：函式庫進入測試版，現於 UI 執行緒渲染，大幅提升效能\n- 📦 [burnt - react native 原生通知與警示元件](https://twitter.com/FernandoTheRojo/status/1593632122069291008)：Fernando Rojo 在毫無 Swift 基礎下，一天內基於 Swift 打造首個原生 React-Native 函式庫，展現 [Expo Modules API](https://twitter.com/tsapeta/status/1593705970781356035) 的易用性！\n- 📦 [React-Native-Testing-Library v11.5](https://twitter.com/mdj_dev/status/1593250914965794817)\n- 📜 [React Native Storybook 的自動參數功能](https://dev.to/dannyhw/automatic-args-in-react-native-storybook-140a)\n- 🎥 [使用 Skia 實現路徑漸變](https://www.youtube.com/watch?v=7SCzL-XnfUU)\n- 🎥 [React-Native Re-Animated 2 滾動式選單](https://www.youtube.com/watch?v=sOKMytwWeKE)\n- 📖 [Expo 文件更新 - 通用應用程式教學](https://twitter.com/amanhimself/status/1593669242892988417)\n- 📊 [新版 Reanimated Shared Value 實作](https://twitter.com/kzzzf/status/1594095497123434497)：透過減少 JSI 呼叫提升效能\n- 📊 [React-Native Yoga 佈局引擎 vs iOS 替代方案](https://twitter.com/Baconbrix/status/1593561645858623488)：React-Native 佈局引擎相當高效！\n- 🐦 [Hirbod -「佈局動畫重寫已合併」](https://twitter.com/nightstomp/status/1593207173496320000)\n- 🐦 [Jamon Holmgren -「現階段幾乎沒有理由不使用 Expo」](https://twitter.com/jamonholmgren/status/1593319397573394432)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d4b679d6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "55dc794c",
+      "source_content": "## 🧑‍💻 Jobs {#jobs}",
+      "source_content_hash": "64cde6166f05bd39337c21ca10f52b6613641f23e0c97e204de33d6857fa16ed",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🧑‍💻 職缺 {#jobs}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "63565425",
+      "source_content": "🧑‍💼 [**Product Engineer at Causal, Remote/London/NY, $150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)",
+      "source_content_hash": "382f1c3a48ba67f7413a1d09e0e17ee63d0ecea0499e9a0f1bf0a58963fdf7ee",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🧑‍💼 [**Causal 產品工程師，遠端/倫敦/紐約，$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1496ef51",
+      "source_content": "Causal is a Series A Startup (backed by Coatue/Accel) building an all-in-one tool for working with numbers and visualizing data. We're looking for strong React engineers who can solve difficult UX/performance challenges.",
+      "source_content_hash": "20bfaa3d377f2ddf3a9abbf4f1ce455c376710731cb5f7e58785d6741fc6377f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Causal 是 A 輪新創（Coatue/Accel 投資），打造整合式數字處理與資料視覺化工具。徵求能解決複雜 UX/效能挑戰的資深 React 工程師。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dce16ab4",
+      "source_content": "🧑‍💼 [**Callstack - Senior React Native Developer - Fully Remote, PLN 21-32k net on B2B, monthly**](https://www.callstack.com/senior-react-native-developer)",
+      "source_content_hash": "6a76e4cede7e5d7fef90376d244177e3a889ea3b88ed1a9d60d116bb33a52f5b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🧑‍💼 [**Callstack - 資深 React Native 開發者 - 全遠端，B2B 月薪淨額 PLN 21-32k**](https://www.callstack.com/senior-react-native-developer)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6f08f877",
+      "source_content": "Do you want to work on the world's most used apps? Would you like to co-create the React Native technology? Join the Callstack team of React & React Native leaders. Check our website for more details. We are looking forward to seeing your application - show us what you've got!",
+      "source_content_hash": "d26d300a25c86c54931180669d1a8cce73f71a546a8457896fc0c835fb78d2d0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "想開發全球最熱門應用嗎？渴望共同打造 React Native 技術？加入 React & React Native 領導團隊 Callstack。詳見官網，期待您的申請 - 展現您的實力！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2dbfc5f7",
+      "source_content": "🧑‍💼 [**G2i - 100% Remote React Native Jobs**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)",
+      "source_content_hash": "e58066ec4b83436bc9fb13f283a90aab7f999b61dfcc6deef20c2b4798312235",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🧑‍💼 [**G2i - 100% 遠端 React Native 職缺**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b40e7a2",
+      "source_content": "We have several roles open for developers focused on React Native! Pay is ~160k plus 10% bonus. You must have production experience with RN and be based in the US. DM [@gabe_g2i](https://twitter.com/gabe_g2i) to learn more and don't forget to mention This Week in React.",
+      "source_content_hash": "22ce426f04d70bd21e8d4bf0d0e1e9b5a9243065cbb0f19a56a631f1b481d5f3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "徵求多位 React Native 開發者！年薪約 16 萬美元加 10% 獎金。需具 RN 實際開發經驗且位於美國。私訊 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解詳情，別忘了註明來自 This Week in React。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39f476dc",
+      "source_content": "💡 [How to publish an offer?](https://thisweekinreact.com/sponsor)",
+      "source_content_hash": "d58176524c2d7675bf008e7b635d056628a0d092fb0152d6bbdfb97f4239d273",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "💡 [如何發布贊助資訊？](https://thisweekinreact.com/sponsor)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d619fa73",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ffd1ebe",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ff048fb8",
+      "source_content": "- [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/): great article by Josh Comeau, not to be read if you are hungry 😄\n- [Browsers, JSON, and FormData](https://blog.jim-nielsen.com/2022/browsers-json-formdata/): interesting ideas about progressive enhancement, which encourages creating APIS based on FormData rather than JSON. This speaks to me, and by the way my newsletter signup forms also work without JavaScript 🤗 The article is not React related but is written by Jim who works on Remix.\n- [Cloudflare Developer Week 2022 announcements](https://blog.cloudflare.com/icymi-developer-week-2022-announcements/): a lot of announcements. I especially like the possibility to make Puppeteer screenshots from a Worker edge: this can be useful for Remotion, or generate social previews in an efficient way, and compete with the new [Vercel's og image service](https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation).\n- [Top-level promise handling in Node.js ES modules](https://www.stefanjudis.com/today-i-learned/top-level-promise-handling-in-node-js/): I discover this behavior of Node.js not hyper intuitive and the exit 13 code.\n- [State Of JavaScript 2022 Survey](https://survey.devographics.com/survey/state-of-js/2022): glad to see [Docusaurus making an entry](https://twitter.com/sebastienlorber/status/1594748405280116738) this year! I hope my newsletter will be in the resources next year, feel free to send it as a suggestion 😏\n- [The 2022 State of JavaScript Survey Is Now Open. Here's What's New](https://dev.to/sachagreif/take-the-2022-state-of-javascript-survey-5ap6)\n- [Prettier 2.8: improve --cache CLI option and TypeScript 4.9 satisfies operator!](https://prettier.io/blog/2022/11/23/2.8.0.html): good timing to adopt TS 4.9 (already supported in Babel)\n- [Web technology optimism hour](https://macwright.com/2022/11/18/optimism-updates.html)\n- [Movies app in 7 frameworks - which is fastest and why?](https://www.builder.io/blog/movies-app-in-7-frameworks-which-is-fastest-and-why)\n- [HTML Elements Visualized](https://julesblom.com/writing/html-elements)\n- [Complete rewrite of ESLint](https://twitter.com/slicknet/status/1594870586605391872)\n- [MPA View Transitions - First demo - Chrome canary](https://twitter.com/addyosmani/status/1592907811968626688)\n- [Mock Service Worker - Fetch API Support Beta](https://github.com/mswjs/msw/discussions/1464)\n- [What’s so great about functional programming anyway?](https://jrsinclair.com/articles/2022/whats-so-great-about-functional-programming-anyway/)\n- [Angular 15](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8)\n- [Nuxt 3.0](https://nuxt.com/v3)\n- [Playwright 1.28](https://github.com/microsoft/playwright/releases/tag/v1.28.0)\n- [Firefox 107](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/107)\n- [Safari Technology Preview 158](https://webkit.org/blog/13584/release-notes-for-safari-technology-preview-158/)\n- [Assembly interpreter inside of TypeScript's type system](https://judehunter.dev/blog/assembly-interpreter-in-typescripts-type-system)\n- [On Migrating from Cypress to Playwright](https://mtlynch.io/notes/cypress-vs-playwright/)\n- [Node.js 18 available in AWS Lambda](https://aws.amazon.com/fr/blogs/compute/node-js-18-x-runtime-now-available-in-aws-lambda/)\n- [Build a More Secure Web using npm with Deno](https://deno.com/blog/a-more-secure-npm)\n- [From Bootstrapped to Venture-Backed: Nx Raises $8.6M](https://blog.nrwl.io/from-bootstrapped-to-venture-backed-nx-raises-8-6m-2ae2228eff76)\n- [Why you should never use px to set font-size in CSS](https://joshcollinsworth.com/blog/never-use-px-for-font-size)\n- [The Windows Subsystem for Linux is now generally available](https://devblogs.microsoft.com/commandline/the-windows-subsystem-for-linux-in-the-microsoft-store-is-now-generally-available-on-windows-10-and-11/)",
+      "source_content_hash": "c569bbd18885229b0376f4df6699100077004bddbf46ecc87ecb3c47a51533ea",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_ff048fb8"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2663a629",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e29294bd",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣味 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ebfad7e4",
+      "source_content": "[![Life is short - Make sure to spend it arguing about JS frameworks with strangers on the internet](/emails/issues/125/meme.png)](https://twitter.com/fireship_dev/status/1587587531154989056)",
+      "source_content_hash": "fc0e84398f10eefa1ec51138b96839d5e8ce7fce2e260e492c20deab657e0b4a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![人生苦短，務必花時間在網路上和陌生人爭論 JS 框架](/emails/issues/125/meme.png)](https://twitter.com/fireship_dev/status/1587587531154989056)"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/125/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.055510+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "d5ed9687af714b45cee4878ec6c59df8c7be188976ffd55c20efd0a47b4c61de"
+  }
+}

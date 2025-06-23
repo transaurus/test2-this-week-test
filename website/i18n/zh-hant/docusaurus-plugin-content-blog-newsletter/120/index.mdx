@@ -1,0 +1,171 @@
+---
+slug: /120
+title: "This Week In React #120: use RFC, Sandpack, Progressive enhancement, Streaming, Storybook, React-Native, Codeflow, Fontaine, Unplugin, Node.js 19, TypeRunner..."
+authors: [slorber]
+date: 10-18-2022
+---
+
+大家好！
+
+本週電子報延遲發布：新的 React RFC 讓我花費大量時間閱讀 😄 Kent C. Dodds 的文章篇幅也相當長但值得一讀。兩週內有兩篇重點介紹 Sandpack 的文章，這絕對值得關注！
+
+React Native 核心方面的進展也很順利，出現了新的公開討論。我們甚至認為，在遷移到新架構並穩定公共 API 後，可能會發布 1.0 版本？這在實務上影響不大，但有些人顯然非常重視主要版本的發布。
+
+前端生態系統也有不少有趣的新發展。我特別關注 Codeflow、Fontaine 和 Unplugin，這些可能直接與 Docusaurus 相關。
+
+說到 Docusaurus，我受邀在 [Changelog JS Party 播客節目](https://changelog.com/jsparty/247)中討論它。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本期電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Sizzy - 專為開發者設計的瀏覽器](/emails/issues/120/sizzy.jpg)](https://sizzy.co/?utm_campaign=newsletter&utm_source=thisweekinreact)
+
+為什麼其他行業的專業人士都有專用工具，但網頁開發者仍在使用祖母在亞馬遜購物時用的瀏覽器？
+
+如果你在 Sizzy 以外的任何瀏覽器中打開 localhost:3000，就是在浪費寶貴的時間。
+
+**使用 Sizzy 前：** 網頁開發令人焦慮、響應式設計困難、開著過多分頁和應用程式。
+
+**使用 Sizzy 後：** 所有工具集中一處、響應式設計輕而易舉、無需切換上下文。
+
+你可以[點此下載](https://sizzy.co/?utm_campaign=newsletter&utm_source=thisweekinreact)，免費試用 14 天！
+
+---
+
+## ⚛️ React {#react}
+
+**[React RFC: 對 Promise 和 async/await 的原生支援](https://github.com/reactjs/rfcs/pull/229)**
+
+React 團隊決定回歸 `async/await` 模型以簡化 Server Components 的使用。問題在於：在 Client Components 上支援 `async/await` 相當困難。因此他們提議在客戶端引入 `use(promise)` API。與其他 hook 不同，`use` 可被條件式呼叫。後續也可用於其他「可用資源」如 React context（實際上你已經可以[條件式使用 `useContext`！](https://twitter.com/acdlite/status/1581401077915975680)）。採用不同 API 也可視為一種優勢：能區分 Server Components 與 Client Components。
+
+此 RFC 引發了有趣的辯論。我們好奇資料獲取函式庫的整合會如何呈現。生成器(generators)似乎適用此場景，但實務上難以使用。我們期待引入快取 API 的新 RFC。
+
+**[網路的下一次轉型](https://www.epicweb.dev/the-webs-next-transition)**
+
+肯特·C·多茲（Kent C. Dodds）針對三大網頁架構提出了精闢回顧，內容詳實且圖文並茂。他特別強調當前趨勢的最新架構：漸進增強式單頁應用程式（Progressively Enhanced Single-Page-Application）。Remix 正是此架構的實踐，透過精心設計的抽象層鼓勵開發者模擬瀏覽器原生行為。個人不完全認同伺服器絕對必要性的觀點——[Docusaurus](https://github.com/facebook/docusaurus) 作為 PESPA 的實現方案，在無 JavaScript 環境下同樣運作流暢。
+
+**[用 Sandpack 打造世界級程式碼遊樂場](https://www.joshwcomeau.com/react/next-level-playground/)**
+
+喬許·科莫（Josh Comeau）高度評價他用來創建互動式程式碼遊樂場的 [Sandpack](https://github.com/codesandbox/sandpack) 工具包，稱其操作直覺且具備高度靈活性！
+
+- 📜 [串流技術：值得採用嗎？](https://www.builder.io/blog/streaming-is-it-worth-it)：Qwik、Solid 和 Marko 的作者們解析串流技術的優勢及實施難點。在 React 環境中，需確保函式庫（如 Helmet、CSS-in-JS、Redux...）的兼容性，串流才能有效運作。
+- 📜 [Storybook - 原生級 Vite 支援](https://storybook.js.org/blog/first-class-vite-support-in-storybook/)：7.0 版即將進入測試階段：免配置支援 Vite、預捆綁機制、不再依賴 Webpack，新增 Vue 2、Lit 和 Svelte 等框架支援...
+- 📜 [從 React 遷移至 htmx](https://htmx.org/essays/a-real-world-react-to-htmx-port/)：Python 後端環境成功遷移至 [htmx](https://htmx.org/) 的實戰回顧（含文章+影片）。作者指出在 JavaScript 全端開發環境中結論可能不同。執行 POC 的 JS 開發者完成後竟遭解僱 😅。
+- 📜 [內容優先於元件](https://www.simeongriggs.dev/components-considered-harmful-for-content)：從設計師、開發者與內容編輯（CMS）三維度探討 React 元件設計的創新觀點。
+- 📜 [React 元件的語義化 HTML 技巧](https://queen.raae.codes/emails/2022-10-10-semantic-react/)：透過 props 傳遞目標 DOM 元素類型，實現符合 HTML 語義規範的元件設計。
+- 📜 [在 Next.js（或任何 SSR 框架）中使用 Web 元件](https://css-tricks.com/using-web-components-with-next-or-any-ssr-framework/)
+- 📜 [深入解析 React 虛擬 DOM 實作原理](https://indepth.dev/posts/1501/exploring-how-virtual-dom-is-implemented-in-react)
+- 📜 [Remix 實現 React 元件延遲載入](https://sergiodxa.com/articles/lazy-load-react-components-in-remix)
+- 🐦 [React 技巧：isFocused 幾乎不應作為 prop](https://twitter.com/DavidKPiano/status/1580179833052876800)
+- 🚧 [Preact 串流 SSR 原型實作](https://twitter.com/marvinhagemeist/status/1581762567328104448)
+- 🧑‍🎓 [運用 Spline + React 打造具遊戲操控的 3D 網站](https://designcode.io/spline2) ([影片教學](https://www.youtube.com/watch?v=uYp_ipIasYE))
+- 🎨 [Satori + React-Three-Fiber 技術演示](https://twitter.com/0xca0a/status/1581751380339232768)
+- 🎨 [Satori + SVG 程式碼語法突顯演示](https://twitter.com/shuding_/status/1581358324569645056)
+- 🎙️ [Docusaurus 2 的重大革新意義](https://changelog.com/jsparty/247)
+- 🎥 [為 useEffect 辯護](https://www.youtube.com/watch?v=Zw4lJqBphvA)
+- 🎥 [極速優化 React Context](https://www.youtube.com/watch?v=ZKlXqrcBx88)
+- 📦 [Planby - 基於 React.js 的排程與時間軸元件](https://planby.netlify.app/)
+- 📦 [Gatsby v5 beta 釋出](https://twitter.com/GatsbyJS/status/1580288285229735936)
+- 📦 [Astro 1.5 更新](https://twitter.com/astrodotbuild/status/1580611193429168129)
+- 📦 [SWR 2.0 RC 發布](https://github.com/vercel/swr/releases/tag/2.0.0-rc.0)
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![Chain React - 美國 React Native 年度大會 - 2023年5月17-19日 波特蘭俄勒岡州](/emails/issues/120/chainreact.jpg)](https://cr.infinite.red/?utm_source=react_hebdo)
+
+**[Chain React - 美國 React Native 年度大會 - 2023年5月17-19日 波特蘭俄勒岡州](https://cr.infinite.red/?utm_source=react_hebdo)**
+
+Chain React 將於 2023 年 5 月回歸舉辦第四屆年度頂級 React Native 會議，匯聚頂尖人才、企業與合作夥伴，不容錯過。
+
+- **工作坊 | 2023 年 5 月 17 日** - 提供三場適合不同技能層級的精彩工作坊！這些獨家活動將於 5 月 17 日在官方講者酒店舉行，您可在此學習、交流並直接向專家請益。
+
+- **會議 | 2023 年 5 月 18-19 日** - 主活動場次！企業在此發布重大消息、開發者分享秘訣，並建立終身友誼。主會議從未進行直播。
+
+---
+
+## 📱 React-Native {#react-native}
+
+**[2022：如何改進 React Native？](https://github.com/react-native-community/discussions-and-proposals/discussions/528)**
+
+React-Native 團隊希望收集關於改進 React-Native 的意見。提及的重點包括：CSS 支援（Yoga、間距 gap、網格 grid、陰影 shadows...）、跨平台支援、版本升級、除錯、鍵盤處理、Metro 符號連結...
+
+- 💬 [重構 React Native 的公開 API](https://github.com/react-native-community/discussions-and-proposals/discussions/523)
+- 📜 [使用 Yarn Workspaces 設定 React Native Monorepo](https://www.callstack.com/blog/setting-up-react-native-monorepo-with-yarn-workspaces)
+- 📜 [如何在 Re.Pack 3 中使用模組聯邦](https://www.callstack.com/blog/module-federation-with-re-pack-3)
+- 🚧 [Expo Router 0.0.27](https://twitter.com/Baconbrix/status/1579912795323215872) + [版面 API 變更 RFC](https://twitter.com/Baconbrix/status/1582057133939384321)
+- 🚧 [React-Native Bottom Sheet v5 將支援網頁](https://twitter.com/gorhom/status/1581334529121218561)
+- 🚧 [React-Native Flex 間距支援即將到來？](https://twitter.com/Baconbrix/status/1580587087174062080)
+- 📖 [Expo 文件改進](https://twitter.com/amanhimself/status/1580615698321399811)：「現在 Android 上可在 EAS Build 運行 E2E 測試」
+- 📦 [Metro 0.73.0](https://github.com/facebook/metro/releases/tag/v0.73.0)
+- 📦 [React-Native 0.70.3](https://twitter.com/Kelset/status/1580210635266084864)
+- 🎥 [在 React-Native Re-Animated 2 實現翻轉卡片動畫](https://www.youtube.com/watch?v=nVsvcu93488)
+- 🎙️ [React-Native-Radio 第 248 集 - 介紹 Ignite v8: Maverick！](https://reactnativeradio.com/episodes/rnr-248-introducing-ignite-v8-maverick)
+
+---
+
+## 🧑‍💻 職缺 {#jobs}
+
+🧑‍💼 [**Causal 產品工程師，遠端/倫敦/紐約，$150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)
+
+Causal 是 A 輪新創公司（獲 Coatue/Accel 投資），致力打造整合式數字處理與資料視覺化工具。我們尋找能解決複雜 UX/效能挑戰的優秀 React 工程師。
+
+🧑‍💼 [**G2i - 100% 遠端 React Native 職缺**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我們提供多個專注於 React Native 開發的職位！薪資約為 16 萬美元外加 10% 獎金。應徵者需具備 RN 實際生產環境經驗且位於美國境內。私訊 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解更多詳情，別忘了提及 This Week in React。
+
+💡 [如何發布贊助機會？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+**[StackBlitz Codeflow](https://stackblitz.com/codeflow)**
+
+StackBlitz 的 [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/) 技術透過 WebAssembly 在瀏覽器中運行 Node.js。您可以直接在瀏覽器中運行 VS Code、Next.js 或 Docusaurus，而非透過遠端 Docker 容器。Codeflow 整合了 GitHub 服務層，讓開源專案能安全地在本地環境開啟、審查或編輯 pull request：這項功能極具實用價值。
+
+他們也推出了 Web Publisher，這是針對 Markdown 檔案的簡化編輯視窗（編輯器、預覽、儲存按鈕）。對於在 Git 上協作文檔的使用者（包含技術門檻較低者）非常便利。內容會顯示真實預覽效果，而非 GitHub Markdown 預覽的降級體驗。這正是 [Docusaurus 使用者的重要需求](https://twitter.com/ericsimons40/status/1580371754974781440)。
+
+**[Fontaine - 基於字型指標的自動回退字型處理](https://github.com/unjs/fontaine)**
+
+可避免載入自訂字型時發生版面位移問題。透過將回退字型調整至與目標字型相同尺寸，實現平滑過渡效果且不影響文字容器尺寸。絕佳的解決方案！
+
+- [Node.js 19](https://twitter.com/nodejs/status/1582401871179747329)
+- [Node 18.11](https://nodejs.org/en/blog/release/v18.11.0/)：新增了 `--watch` 模式以及[其他很酷的功能](https://twitter.com/matteocollina/status/1580911016506163202)
+- [Unplugin - 適用於 Vite、Rollup、Webpack 等多種打包工具的統一插件系統](https://github.com/unjs/unplugin)：可建立跨所有打包工具的通用插件！
+- [CSS - 協助挑選嵌套語法 - 調查結果](https://developer.chrome.com/blog/help-css-nesting-results/)
+- [我的 tsc 移植專案狀態更新](https://kdy1.dev/posts/2022/10/tsc-port-status) + [Speedy TypeScript 類型檢查器公開儲存庫](https://twitter.com/kdy1dev/status/1582174891230760960)
+- [TypeRunner - 高效能的 TypeScript 編譯器](https://github.com/marcj/TypeRunner)
+- [Lerna 重生 — v6 有什麼新功能？](https://blog.nrwl.io/lerna-reborn-whats-new-in-v6-10aec6e9091c)
+- [Nx 15 有什麼新功能？](https://blog.nrwl.io/whats-new-in-nx-15-7e14e1ff282d)
+- [JetBrains Fleet - 公開預覽](https://blog.jetbrains.com/fleet/2022/10/introducing-the-fleet-public-preview/)
+- [Import maps 即將在所有瀏覽器中可用](https://twitter.com/sebastienlorber/status/1582024272788480000)
+- [Bun 在 ViteConf 的演講](https://twitter.com/jarredsumner/status/1581427214691708929)
+- [rRPC-chrome - 適用於 Web 擴充功能的 tRPC 轉接器](https://github.com/jlalmes/trpc-chrome)
+- [什麼是 pnpm？它真的那麼快且節省空間嗎？](https://dev.to/stackblitz/what-is-pnpm-and-is-it-really-so-fast-and-space-efficient-29la)
+- [Intl Explorer - 實驗 ECMAScript 國際化 API 的工具](https://www.intl-explorer.com/)
+- [2022 年為何選擇 Babylon.js 而非 Three.js](https://www.spotvirtual.com/blog/why-we-use-babylonjs-instead-of-threejs-in-2022)
+- [Vite 的誕生 - ViteConf 2022 簡報](https://docs.google.com/presentation/d/1O09rAOu_wRLHVjukVbBeSlRkLeX-dcYZfsdjPiU4kGQ/edit#slide=id.p)
+- [Rollup v3](https://github.com/rollup/rollup/releases/tag/v3.0.0)
+- [Jest 29.2](https://github.com/facebook/jest/releases/tag/v29.2.0)
+- [Obsidian 1.0](https://obsidian.md/1.0)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![迷因 - 當 ESLint 規則只是警告而非錯誤時 - 哦不 - 反正（沒人在乎）](/emails/issues/120/meme.png)](https://twitter.com/markdalgleish/status/1580827326799310848)

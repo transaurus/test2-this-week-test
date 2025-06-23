@@ -1,0 +1,152 @@
+---
+slug: /217
+title: "This Week In React #217: View Transitions, RSC, Next.js, SWR, Nextra, React Router, Rails, Compiler, EAS Hosting, Shopify, Skia, OTP, Gesture Handler, Radon, React-Query, TC55, Bun, CSS..."
+authors: [slorber]
+date: 01-15-2025
+---
+
+大家好！
+
+本週我們持續注意到圍繞即將推出的 `<ViewTransition>` 元件的活躍動態。
+
+Expo 終於推出其跨平台通用托管解決方案，Shopify 也分享了關於使用 React Native 的有趣見解。
+
+別錯過我們的合作夥伴會議 [React Paris 2025](https://react.paris/?utm_source=thisweekinreact) - 🇫🇷 巴黎 - 3月20-21日（主議程）／3月19日（工作坊） - 完整講者陣容已公布！Jemima Abu、Antoine Chalifour 和 David Khourshid 確認加入。使用代碼 "TWIR” 可享門票 8 折優惠。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![如果卡頓就是故障 🐢](/emails/issues/217/sentry.jpg)](https://sentry.io/lp/new-apm/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=perf-fy26q1-evergreen&utm_content=newsletter-primary-slowbug-seehow)
+
+**[如果卡頓就是故障 🐢](https://sentry.io/lp/new-apm/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=perf-fy26q1-evergreen&utm_content=newsletter-primary-slowbug-seehow)**
+
+效能低下就是另一種程式錯誤 🐛，而 Sentry 能協助您快速找出問題根源，即使是不明顯的缺陷。
+
+- 大幅縮減低效 API 調用時間
+- 優化高成本、頻繁調用或整體緩慢的資料庫操作
+- 在數分鐘內定位流量暴增源頭
+
+無論是錯誤還是效能下降，Sentry 都能幫助您快速修復問題，確保應用流暢運行。因為如果卡頓，就是故障。[親自體驗](https://sentry.io/lp/new-apm/?utm_source=thisweekinreact&utm_medium=paid-community&utm_campaign=perf-fy26q1-evergreen&utm_content=newsletter-primary-slowbug-seehow)。
+
+---
+
+## ⚛️ React {#react}
+
+[![揭秘：React 實驗性動畫 API](/emails/issues/217/viewtransition.jpg)](https://motion.dev/blog/reacts-experimental-view-transition-api)
+
+**[揭秘：React 實驗性動畫 API](https://motion.dev/blog/reacts-experimental-view-transition-api)**
+
+Motion 創建者解析使用視窗轉場(View Transitions)的動畫取捨，以及為何 React 需通過新的 `<ViewTransition>` 元件將其直接整合至協調器。這篇互動式文章展示了即將推出的 React 功能早期樣貌，包含當前實作細節，並解釋其與 Motion 佈局動畫的部分重疊性。
+
+請注意這項令人振奮的新 API 仍在積極開發中，可能變動，且持續有新 PR 合併，例如：
+
+- 👀 [React Core PR - 僅支援 View Transitions v2](https://github.com/facebook/react/pull/31996)：新元件將利用 v2 規範 API（如 `view-transition-class`），需 Safari 18.2+，Firefox 尚不支援。
+- 👀 [React Core PR - 基於事件類型的視窗轉場類別名稱](https://github.com/facebook/react/pull/32050)
+- 👀 [Next.js PR - `experimental.viewTransition` 標記](https://github.com/vercel/next.js/pull/74659)：可在 Next.js 15.2 canary 4 試用此功能。
+
+---
+
+- 💸 [工程師的產品 - 產品管理已崩壞。工程師可以修復它](https://dub.link/twir-jan15)
+- 👀 [React 網站 PR - 升級至 Next.js 15、React 19，啟用 React 編譯器](https://github.com/reactjs/react.dev/pull/6996)
+- 👀 [React Router 里程碑](https://github.com/remix-run/react-router/milestones)：現已公開未來版本預定發布內容。v7.2 將包含初始 RSC 支援（從 loaders/actions）、伺服器操作、中介軟體。
+- 👀 [Wakelet 採用編譯器](https://github.com/reactwg/react-compiler/discussions/52)：正面回饋，改善 LCP 和 INP 指標。雖未神奇解決所有效能問題，但近乎「免費午餐」體驗。
+- 📖 [Next.js 文件 - 使用 Next.js 的單頁應用程式](https://nextjs.org/docs/app/building-your-application/upgrading/single-page-applications)：此新頁面特別說明最新發布的 [SWR 2.3](https://github.com/vercel/swr/releases/tag/v2.3.0) 現允許在 `<SWRConfig fallback>` 傳遞 promise，使您能無縫將資料獲取從客戶端移至伺服器。
+- 📜 [理解 React 伺服器元件](https://tonyalicea.dev/blog/understanding-react-server-components/)：全面且呈現良好的 RSC 概觀。
+- 📜 [每位前端開發者都該知道的無障礙核心知識](https://martijnhols.nl/blog/accessibility-essentials-every-front-end-developer-should-know)：含 React 範例的無障礙技巧。
+- 📜 [React 程式碼臃腫？試試元件鉤子](https://www.tymzap.com/blog/bloated-react-code-try-component-hooks)：透過提取元件鉤子降低認知負荷，讓元件專注渲染。
+- 📜 [在 React 中實現 FormData 與輸入名稱的型別安全](https://www.typeonce.dev/article/make-form-data-and-input-names-type-safe-in-react)：使用手動 TS，再採用 Effect.Schema 與 FP。
+- 📜 [在 Remix/React Router 中或許不該使用 navigate(-1)](https://programmingarehard.com/2025/01/13/maybe-dont-navigate-1.html/)：或如何向後導航卻確保不離開當前應用。
+- 📜 [2025 年該在 React 中使用 MobX-State-Tree 嗎？](https://coolsoftware.dev/blog/mobx-state-tree-react-2025/)
+- 📜 [精通 React Query](https://tigerabrodi.blog/become-expert-in-react-query)
+- 📦 [Next.js 伺服器元件測試](https://github.com/kettanaito/nextjs-rsc-testing)：使用 MSW 和 Playwright 測試 Next.js RSC 的範例儲存庫。
+- 📦 [Nextra 4.0](https://the-guild.dev/blog/nextra-4)：基於 Next.js 的文件框架升級至 App Router 等多項功能。
+- 📦 [Base UI 1.0.0-alpha.5](https://base-ui.com/react/overview/releases)
+- 📦 [Superglue 1.0 - React + Rails](https://thoughtbot.com/blog/superglue-1-0-react-rails-a-new-era-of-thoughtfulness)
+- 🎥 [Theo - HTML 抵達瀏覽器的所有途徑](https://www.youtube.com/watch?v=Cifkb-ZVps4)
+- 🎥 [Simeon Griggs - 從 React 文件到生產環境的 useOptimistic](https://www.youtube.com/watch?v=_0bwnnlUZRU)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![測試已死 - Meticulous 在此](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=jan15th)
+
+**[測試已死 - Meticulous 在此](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=jan15th)**
+
+Meticulous 以**零**開發人員工作量建立並維護一套完整的端對端使用者介面測試。
+
+Traba 技術長的一句話完美總結了這個產品：「Meticulous 從根本上改變了我們在網頁應用中處理前端測試的方式，完全消除了編寫任何前端測試的需求。該軟體讓我們確信每次變更都會經過完整的回歸測試，使我們能夠更快交付產品，同時程式碼中的錯誤顯著減少。這個平台易於使用，降低了後端開發人員參與前端程式碼庫的門檻。」
+
+Meticulous 已被 Lattice、Bilt Rewards、Power 等眾多公司採用。
+
+我們技術長的這篇[文章](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact&utm_campaign=jan15th)闡述了為什麼詳盡測試能讓工程速度倍增的背景脈絡。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![EAS 託管預覽](/emails/issues/217/easdeploy.jpg)](https://expo.dev/blog/expo-announces-eas-hosting-service)
+
+**[EAS 託管預覽](https://expo.dev/blog/expo-announces-eas-hosting-service)**
+
+Expo 揭曉了眾人期待的首個通用應用託管平台，實現了將網頁開發體驗帶入跨平台領域的願景。它能無縫部署 Expo 的伺服器相關功能，特別是 Expo for Web、API Routes 和通用 React 伺服器元件。該平台考量了行動應用的細微差異，例如後端/應用版本的同步。您可使用 CLI 或 CI（EAS Workflows），底層基於 Cloudflare Workers 並提供免費方案。
+
+---
+
+[![Shopify 五年 React Native 實踐](/emails/issues/217/shopify.jpg)](https://shopifyengineering.myshopify.com/blogs/engineering/five-years-of-react-native-at-shopify)
+
+**[Shopify 五年 React Native 實踐](https://shopifyengineering.myshopify.com/blogs/engineering/five-years-of-react-native-at-shopify)**
+
+Shopify 成功將全部 6 個應用遷移至 React Native，並提供了一份細緻的反饋，精準總結了實踐中的權衡取捨。優勢包括：跨平台支援、效能表現、熱重載、知識可移植性...但仍需原生開發知識，且部分環節如除錯體驗和升級便利性有待改進。
+
+---
+
+- 💸 [WithFrame - 加速應用程式開發的 React Native 模板](https://withfra.me)
+- 👀 [Expo Router RSC 電影示範](https://github.com/EvanBacon/expo-rsc-movies)
+- 📜 [使用 React Native Skia 的動畫載入器](https://reactiive.io/articles/animated-loader-skia)
+- 📦 [React Native 0.78 RC.0](https://github.com/facebook/react-native/releases/tag/v0.78.0-rc.0): 這個即將發布的版本升級至 React 19！請注意，由於一個錯誤，v0.77 穩定版本的發布已推遲至下週。
+- 📦 [React Native 0.76.6](https://github.com/facebook/react-native/releases/tag/v0.76.6)
+- 📦 [React Query 5.63 - 允許 useQuery 和 useQueries 從查詢快取中取消訂閱](https://github.com/TanStack/query/releases/tag/v5.63.0): 特別適用於取消訂閱隱藏的 RN 堆疊畫面（包括查詢），比 react-freeze 更強大且更細緻。
+- 📦 [Input OTP Native - 一次性密碼輸入元件，無預設樣式且完全可自訂](https://github.com/yjose/input-otp-native)
+- 📦 [Edge-to-Edge 1.3 - 透明按鈕導覽列](https://github.com/zoontek/react-native-edge-to-edge/releases/tag/1.3.0)
+- 📦 [Skia 1.9 & 1.10 - tvOS 支援、新協調器、影像取樣選項](https://github.com/Shopify/react-native-skia/releases)
+- 📦 [Radon 1.2 - RN 0.77、Redux 和 React Query 工具、本機 EAS 建置](https://github.com/software-mansion/radon-ide/releases/tag/v1.2.0)
+- 📦 [Screens 4.5 - 支援 RN 0.77](https://github.com/software-mansion/react-native-screens/releases/tag/4.5.0)
+- 📦 [Gesture Handler 2.22 - 支援 RN 0.77、文字元件](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.22.0)
+- 📦 [Reanimated 3.16.7 - 支援 RN 0.77](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.16.7)
+- 🎥 [Simon Grimm - Universal React Native 的缺失環節](https://www.youtube.com/watch?v=UpPj5xZiiFo)
+- 🎙️ [React Universe On Air 46 - Shopify 遷移至 React Native 的經驗教訓（與 Mustafa Ali）](https://www.youtube.com/watch?v=WFoO-GDvrY8)
+- 🎙️ [Rocket Ship 58 - React Native 遊戲與動畫（與 Ben Awad）](https://share.transistor.fm/s/249233ec)
+- 🎙️ [RNR 318 - 在 Software Mansion 維護開源函式庫](https://www.reactnativeradio.com/episodes/rnr-318-maintaining-open-source-libraries-at-software-mansion)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📣 [WinterTC (TC55) - Web 互操作伺服器運行時技術委員會](https://www.w3.org/blog/2025/collaborating-across-w3c-and-ecma-for-web-interoperable-server-runtimes-through-wintertc/)：取代 WinterCG，負責制定與 Web API 一致的伺服器運行時最小通用 API 規格。
+- 📜 [建置系統與打包工具](https://github.com/orgs/web-infra-dev/discussions/24)：Rspack 維護者探討建置工具與打包工具如何實現增量模式。
+- 📜 [Node.js 類型剝離完全指南](https://satanacchio.hashnode.dev/everything-you-need-to-know-about-nodejs-type-stripping)：由 Node.js PR 作者解釋的權衡取捨，包含不支援 `.tsx` 檔案的原因。
+- 📜 [CSS text-box-trim - 回收上下空間實現視覺平衡](https://developer.chrome.com/blog/css-text-box-trim)
+- 📜 [可自訂 select API 更新](https://una.im/select-updates/)
+- 📜 [ECMAScript 功能：import 屬性](https://2ality.com/2025/01/import-attributes.html)
+- 📦 [Lightning CSS 1.29 - 支援視圖轉換等級 2](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.29.0)
+- 📦 [Bun 1.1.43 - 支援 S3、HTML 打包、V8 快照等功能](https://bun.sh/blog/bun-v1.1.43)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/217/meme.jpg)](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3lfmnhwx6e222)
+
+[![alt](/emails/issues/217/meme2.jpg)](https://x.com/mrousavy/status/1878383018324222000)
+
+再見！👋

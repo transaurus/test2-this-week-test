@@ -1,0 +1,632 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/213/index.mdx",
+  "source_file_content_hash": "3fc02eadd5c2423b510f8c9e3619e833a6d3c953d61eb858d5d6c7bfc3124d73",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /213\ntitle: \"This Week In React #213: React 19, Next.js, React Compiler, React Router, Restyle, Lingui, State of RN, Uniffi, Shared Objects, Fast IO, Sheet Transitions, Radon, TC39, OpenAuth, TypeScript, Dioxus...\"\nauthors: [matthieugicquel, cyrilbo]\ndate: 12-11-2024\n---",
+      "source_content_hash": "10b74abfaaf04881650a23fcac94d00e4ccb08d1fab186a755d9f22fed31450a",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu from Theodo Apps (formerly BAM) here 👋, standing in for Seb to bring you the latest news from React and React Native!",
+      "source_content_hash": "901ef01f4febad144d110c81fde2dd4f9fb92ec46128d978cbf84e6e873d80ab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們是來自 Theodo Apps（前身為 BAM）的 Cyril 和 Matthieu 👋，在此代替 Seb 為大家帶來 React 和 React Native 的最新消息！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "React 19 is officially stable. The number of articles and releases we mention below that are linked to its new features show how big a release this is 🙂",
+      "source_content_hash": "b33c2cefd91284c82b60ca1c9c375bbd4cb4d2acf82c184899e6dfb8a721ffe3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "React 19 已正式穩定。下方提及的相關文章和版本發布數量，充分展現了這次重大更新規模 🙂"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The State of React Native 2024 survey is live. Don’t miss your chance to shape the future of React Native!",
+      "source_content_hash": "40bc439446742eb06854a53de76df6987f46468a95b5b4a4bdf97aec9568eef5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "React Native 2024 現狀調查已開放，請把握機會共同塑造 React Native 的未來！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "There’s also exciting progress in using Rust for frontend apps with tools like Uniffi for React Native and Dioxus, paving the way for more powerful, cross-platform experiences.",
+      "source_content_hash": "957fac0aa5691f85ac93c4095cf482ef03bac8c1ce322b5eeef21c1a82e43697",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "前端應用在 Rust 整合方面取得令人振奮的進展，如 React Native 的 Uniffi 和 Dioxus 等工具，正為更強大的跨平台體驗鋪路。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Let’s dive in! 🚀",
+      "source_content_hash": "1fbeba4e5289d643c36ba9cbf89b2aebfd3ab89dc424e24f4961d2c6b9b21807",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "讓我們深入探討吧！🚀"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6da205d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_c6da205d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_fcd52337"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_42e34e45"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![WorkOS: Modern Identity Platform for B2B SaaS](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)",
+      "source_content_hash": "c0b1dbfab13a26d659b0b75357c29722c8bdc420a1e6cfdd86452d6f561cceca",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![WorkOS：專為 B2B SaaS 打造的現代身份平台](/emails/issues/195/workOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[WorkOS: Modern Identity Platform for B2B SaaS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)**",
+      "source_content_hash": "3f130e2628699d1e59ad03c35bd21e1732a8cc78ad365977ba7edf53fc0713fb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[WorkOS：專為 B2B SaaS 打造的現代身份平台](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "With WorkOS you can start selling to enterprises with just a few lines of code.",
+      "source_content_hash": "b304c6229bc7a16552aa18a5b6e5130f61eb1fe96748924778ed6da206a57780",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "透過 WorkOS，僅需幾行程式碼即可開始向企業客戶銷售。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "🔐 WorkOS AuthKit supports a complete user management solution along with **SSO, SCIM, RBAC, & FGA**.",
+      "source_content_hash": "2379622040661909f895a88f29073acbb94f62dcbbad8ffd9521371bf30cbc99",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🔐 WorkOS AuthKit 提供完整用戶管理方案，支援 **SSO、SCIM、RBAC 及 FGA**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "🏗️ The APIs are **flexible, easy-to-use, and modular**. Pick and choose what you need and integrate in minutes.",
+      "source_content_hash": "40cbba585ed73eb8b160406f2c3c40e74d45e7c861b8fe1a05b5a6778845df26",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🏗️ API 設計**靈活易用且模組化**，可依需求選用功能並快速整合。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "🎨 Design and user experience are everything. From the quality of our documentation to how your users onboard, we **remove all the unnecessary complexity for developers**.",
+      "source_content_hash": "432e79b81813c3834300519fb5d4ec352a5ed97c6c8ad169b94d11678ed3bb6f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🎨 從文件品質到用戶入職流程，我們**為開發者消除所有不必要的複雜性**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "✨ AuthKit is **free up to 1 million MAUs** and includes bot protection, MFA, RBAC, & more.",
+      "source_content_hash": "ba974887969955cc73a166e08b43b2300570d3b71181a7e52e6749f6e26e8e9b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "✨ AuthKit **免費提供高達 100 萬月活躍用戶(MAU)**，包含機器人防護、MFA、RBAC 等功能。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "🤝 WorkOS is trusted by hundreds of leading startups like **Perplexity**, **Vercel**, & **Webflow**.",
+      "source_content_hash": "43e2ceada1d518743097693e7bee36fd8f5f6a9f9a03dd28878d31ae3a97fba6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🤝 WorkOS 獲數百家領先新創信任，如 **Perplexity**、**Vercel** 和 **Webflow**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[Get started with WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024) 🚀",
+      "source_content_hash": "d1c947878317848cac555e3d63e885342e52b428d517df73860b3f7983643d36",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[立即開始使用 WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q32024) 🚀"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "406f2538",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6d28a77c",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7ef78f9",
+      "source_content": "[![React 19](/emails/issues/213/react.jpg)](https://react.dev/blog/2024/12/05/react-19)",
+      "source_content_hash": "d49cf83a81b2eb8f9e82d0c360ddd81345ac7ef57a23fe9da286bc886c3ae18b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React 19](/emails/issues/213/react.jpg)](https://react.dev/blog/2024/12/05/react-19)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b36c6338",
+      "source_content": "**[React 19](https://react.dev/blog/2024/12/05/react-19)**",
+      "source_content_hash": "2838d4adf5e4c3eb235a231186a32cf6e8ce2f1f8038fd02d0e17343924b8db7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[React 19](https://react.dev/blog/2024/12/05/react-19)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9aaa519",
+      "source_content": "React 19 RCs' has been one of the main characters of this newsletter for the past year, so there’s not much more to say apart that it's officially stable, apart 2 new features: the pre-warming feature that delayed the release, and new React-DOM static APIs. Here's a good reminder of other features we already covered;",
+      "source_content_hash": "f15c8123714444a42f36b2694ce12eb4a311bd189b89b91dc1975c0531cf49e9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "過去一年 React 19 RC 版始終是本通訊焦點，如今正式穩定版除新增兩項功能（延遲發布的預熱機制和 React-DOM 靜態 API）外，其餘已涵蓋功能包括："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e3321a43",
+      "source_content": "- Actions / Server Actions / `useActionState()`\n- `<form>` \\+ progressive enhancement compatible hooks\n- `<Context>` instead of `<Context.Provider>`\n- The `use()` hook\n- Custom Elements\n- Ref as standard props and ref callbacks cleanup functions\n- Meta tags handling\n- Resource preloading\n- Better errors and hydration diff reporting",
+      "source_content_hash": "0a61d58e4fd1e445d372a6a54d8ca26d5e496b44296a9946156a2c4a3ff54eb0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- Actions / Server Actions / `useActionState()`\n- `<form>` + 漸進增強相容的鉤子\n- 使用 `<Context>` 取代 `<Context.Provider>`\n- `use()` 鉤子\n- 自訂元素\n- Ref 作為標準屬性及 ref 回調清理函式\n- 元標籤處理\n- 資源預載\n- 更完善的錯誤與水合差異報告"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "Related videos covering the release:",
+      "source_content_hash": "ddc69c694f8674982050a8612ad2e0aecd3d3f9d1aa676b0e8194744aba412eb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "相關發布解析影片："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "af7d8a35",
+      "source_content": "- 🎥 [Theo - React 19 is finally out!](https://www.youtube.com/watch?v=6aQgiJHReCI)\n- 🎥 [Ankita - Master React 19 Changes in 5 Minutes!](https://www.youtube.com/watch?v=ZcuOV60_z6s)\n- 🎥 [Brandon Roberts - React 19: What every Angular Developer Needs to Know!](https://www.youtube.com/watch?v=0aHHGdxAmF4)",
+      "source_content_hash": "0dc6b2aa7324bf0b6e765f98be6fad86f778ca392df1b8983e0cedeeba640695",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 🎥 [Theo - React 19 終於推出了！](https://www.youtube.com/watch?v=6aQgiJHReCI)\n- 🎥 [Ankita - 5分鐘掌握React 19變更！](https://www.youtube.com/watch?v=ZcuOV60_z6s)\n- 🎥 [Brandon Roberts - React 19：每位Angular開發者需要知道的事！](https://www.youtube.com/watch?v=0aHHGdxAmF4)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7afb38f4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4fe53981",
+      "source_content": "- 💸 [React Bricks – the Visual CMS for React got more accessible with lower entry price and flexible pay-as-you-go options. Start for free!](https://www.reactbricks.com/?utm_source=twir&utm_campaign=ql24)\n- 📖 [A new React Router tutorial](https://reactrouter.com/tutorials/address-book): It goes over most of the features you’ll need in \\~30 minutes\n- 📜 [How React Compiler Performs on Real Code](https://www.developerway.com/posts/how-react-compiler-performs-on-real-code): Enabling the compiler on a real app led to same performance on initial load, and improved performance on interactions. But the compiler is not always able to fully optimize your existing code.\n- 📜 [Ref Callbacks, React 19 and the Compiler](https://tkdodo.eu/blog/ref-callbacks-react-19-and-the-compiler): TkDodo looks into ref callbacks, which now have cleanup functions. When should they replace `useEffect` ?\n- 📜 [Building Scalable Micro-Frontends with Next.js Multi Zones](https://techhub.iodigital.com/articles/building-scalable-micro-frontends-with-next-js-multi-zones): Being able to deploy independently is a major advantage for big teams, and it turns out it’s not that complicated with Next.js\n- 📜 [Root Element API in waku](https://waku.gg/blog/root-element-api): Customize `<html>`, `<body>` and `<head>` in a `\\_root.tsx` file\n- 📜 [Multi-framework docs with Astro Starlight](https://blog.arcjet.com/multi-framework-docs-with-astro-starlight/)\n- 📜 [SSR is not expensive](https://t3.gg/blog/post/ssr-is-not-expensive)\n- 📜 [Reflections on managing state](https://www.frontendundefined.com/posts/monthly/react-state-management-reflections/)\n- 📦 [Next.js 15.1](https://nextjs.org/blog/next-15-1): React 19 stable, improved error debugging, `after` (to run code after the response is sent, eg for analytics) is stable, and new experimental `forbidden` and `unauthorized` APIs that work like `notFound`\n- 📦 [Restyle 3.0](https://www.restyle.dev/): A very lightweight CSS-in-JS lib for React which uses the new React 19 metadata APIs\n- 📦 [Lingui 5.0](https://lingui.dev/blog/2024/11/28/announcing-lingui-5.0): Support for RSC and a new `useLingui` macro among other improvements.\n- 📦 [react-render-stream-testing-library 2.0](https://github.com/testing-library/react-render-stream-testing-library/releases/tag/v2.0.0): No major new features, some breaking changes were necessary to be compatible with React 19",
+      "source_content_hash": "971feeb2c4b22f4c5f08f14b874597040aa85dbeb6941ff6201e2a5788896630",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {
+        "zh-hant": {
+          "translation": "- 💸 [React Bricks – 可視化的React CMS現在更易取得，降低入門價格並提供彈性隨用隨付方案。免費開始！](https://www.reactbricks.com/?utm_source=twir&utm_campaign=ql24)\n- 📖 [全新React Router教學](https://reactrouter.com/tutorials/address-book): 約30分鐘涵蓋您所需的大部分功能\n- 📜 [React編譯器在真實程式碼中的表現](https://www.developerway.com/posts/how-react-compiler-performs-on-real-code): 在實際應用啟用編譯器後，初始載入效能持平，但互動效能提升。編譯器並非總能完全優化現有程式碼\n- 📜 [Ref回呼函式、React 19與編譯器](https://tkdodo.eu/blog/ref-callbacks-react-19-and-the-compiler): TkDodo探討具備清理函式的新ref回呼，何時應取代`useEffect`？\n- 📜 [使用Next.js多重區域建構可擴展微前端](https://techhub.iodigital.com/articles/building-scalable-micro-frontends-with-next-js-multi-zones): 獨立部署能力對大型團隊是關鍵優勢，Next.js實現並不複雜\n- 📜 [waku中的根元素API](https://waku.gg/blog/root-element-api): 透過`_root.tsx`檔案自訂`<html>`、`<body>`和`<head>`\n- 📜 [使用Astro Starlight建立多框架文件](https://blog.arcjet.com/multi-framework-docs-with-astro-starlight/)\n- 📜 [SSR並不昂貴](https://t3.gg/blog/post/ssr-is-not-expensive)\n- 📜 [狀態管理的反思](https://www.frontendundefined.com/posts/monthly/react-state-management-reflections/)\n- 📦 [Next.js 15.1](https://nextjs.org/blog/next-15-1): React 19穩定版，改進錯誤除錯，`after`（響應發送後執行程式碼，如分析）趨於穩定，新增實驗性`forbidden`與`unauthorized` API（運作類似`notFound`）\n- 📦 [Restyle 3.0](https://www.restyle.dev/): 輕量級React CSS-in-JS庫，採用React 19新元資料API\n- 📦 [Lingui 5.0](https://lingui.dev/blog/2024/11/28/announcing-lingui-5.0): 支援RSC及新增`useLingui`巨集等改進\n- 📦 [react-render-stream-testing-library 2.0](https://github.com/testing-library/react-render-stream-testing-library/releases/tag/v2.0.0): 無重大新功能，為兼容React 19進行必要破壞性變更",
+          "reason": "Content of a non-translatable 'inlineCode' element was changed. Source: '`<html>`', Translation: '`_root.tsx`'.",
+          "timestamp": "2025-06-23T14:12:39.458316+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "c625a102",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_c625a102"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9006437d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f6b04a59",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "[![From solo to collaborative: React + Stream Video!](/emails/issues/213/stream.jpg)](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)",
+      "source_content_hash": "5874c248ffeda7fb244fe5383cd75e45dec8aa99e7d39e8d2737d37f04f28518",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![從單人協作到多人協作：React + Stream Video！](/emails/issues/213/stream.jpg)](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "**[From solo to collaborative: React + Stream Video!](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)**",
+      "source_content_hash": "0a42b931644fd647740af011e5340426c68a9dc168652af89c82a37531e04a70",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[從單人協作到多人協作：React + Stream Video！](https://getstream.io/video/sdk/react/tutorial/video-calling/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "Stream's Video React SDK empowers developers to integrate video calls, conferencing, and livestreaming with ease.",
+      "source_content_hash": "2b2eb42e38e38cc5f46bfb49c78f7709dc60f568ed5d4cc059c592ce4bb47f27",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Stream的Video React SDK讓開發者輕鬆整合視訊通話、會議與直播功能"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "✔️ **By Developers for Developers:** Fully customizable UI components and hooks, comprehensive documentation, and quickstart templates.",
+      "source_content_hash": "38b48481e9abf38182050d93767a941f8dcc0abe4fc1aafa32e0d97d5474d8cb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "✔️ **由開發者為開發者打造：** 完全可自訂的UI元件與掛鉤，完整文件與快速入門範本"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "✔️ **Blazing-Fast Performance:** Sub-200ms latency and WebRTC-powered scalability.",
+      "source_content_hash": "0a050b871279e027cebdf122a632c06c94b9771bdae6477866b7909e0daaad5a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "✔️ **閃電般效能：** 低於 200ms 的延遲及 WebRTC 驅動的擴展能力。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c1eaf30b",
+      "source_content": "✔️ **Out-of-the-Box Features:** Group calls, screen sharing, and adaptive bitrate, codecs, etc.",
+      "source_content_hash": "90e30a30c436d900e50dd19159bcf94a8ffe8e51e65cd25e0025f024661c47ee",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "✔️ **開箱即用功能：** 群組通話、螢幕共享、自適應位元率、編解碼器等。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f0984c2a",
+      "source_content": "Build Fast. Scale Effortlessly. [Get Started With Stream](https://getstream.io/try-for-free/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact).",
+      "source_content_hash": "d73a0bffeccc58f9dc0781ea6f60344925c91b02adb8e3865bafaa2b39b37d8e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "快速建構，無縫擴展。[立即開始使用 Stream](https://getstream.io/try-for-free/?utm_source=newsletter&utm_medium=referral&utm_content=&utm_campaign=thisweekinreact)。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bc8bc928",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "722e4930",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "[![State of React Native 2024](/emails/issues/213/state_of_rn.jpg)](https://stateofreactnative.com/)",
+      "source_content_hash": "c5617dd564cd36d78a65d55697f54848d68ae5f867a9d712f98b3896ebf692a3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![2024 年 React Native 現狀調查](/emails/issues/213/state_of_rn.jpg)](https://stateofreactnative.com/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "**[State of React Native 2024](https://stateofreactnative.com/)**",
+      "source_content_hash": "0cca293623300cf56a870b51a3e0e596ffa26021dba78dc0c2e75c32e7a06930",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[2024 年 React Native 現狀調查](https://stateofreactnative.com/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44aaa880",
+      "source_content": "The State of React Native 2024 survey is live\\! 📊 This is your chance to influence the future of React Native by sharing insights on trends, tools, and challenges. Your feedback helps guide the Expo and Meta teams in shaping improvements each year, benefiting the entire community.",
+      "source_content_hash": "aec1eabaf85b469945e88a8b9e755d0f938ef7574924ba60dd7b4b08c0d8dfe1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "2024 年 React Native 現狀調查正式啟動！📊 現在是您影響 React Native 未來的關鍵時刻，分享您對趨勢、工具和挑戰的見解。您的回饋將引導 Expo 和 Meta 團隊每年進行改進，造福整個社群。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "513f3dff",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "10e4f9ca",
+      "source_content": "- 💸 [React Native Mastery - Now open for enrollment!](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)\n- 🐦 [RN Unistyles v3 supports scoped theme](https://x.com/jpudysz/status/1865460854717632737): A missing feature since the removal of `UnistylesTheme` in v2.\n- 📜 [The real-world impact of Shared Objects in Expo Modules](https://expo.dev/blog/the-real-world-impact-of-shared-objects): Shared Objects in Expo Modules enable seamless integration between native and JavaScript, improving API design and cross-package compatibility.\n- 📜 [Introducing Uniffi for React Native: Rust-Powered Turbo Modules](https://hacks.mozilla.org/2024/12/introducing-uniffi-for-react-native-rust-powered-turbo-modules/): Uniffi for React Native integrates Rust with Turbo Modules, unlocking the entire Rust crates ecosystem for React Native apps.\n- 📜 [Automated EAS Updates in a bare React Native app with Multiple Flavors & Schemes](https://shift.infinite.red/automated-eas-updates-in-a-bare-react-native-app-with-multiple-flavors-schemes-dcdf17963079): An article perfectly timed for projects that don’t use Expo or EAS but rely on CodePush, and are in need of an OTA update solution before CodePush is officially sunset.\n- 📜 [Developing a React Native TV App](https://www.callstack.com/blog/developing-a-react-native-tv-app)\n- 📦 [React Native Sheet Transitions - Beautiful universal sheet transitions](https://github.com/saulamsal/react-native-sheet-transitions): Looks impressive, but still in active development.\n- 📦 [@lingui/metro-transformer](https://lingui.dev/blog/2024/11/20/metro-transformer): Eliminates the need to precompile `.po` translation files by handling compilation during Metro bundling.\n- 📦 [React Native Fast IO pre-release](https://github.com/callstackincubator/react-native-fast-io): High-performance I/O solution for React Native, implementing standard W3C APIs like WebSocket, Fetch, FileSystem, Blob, and Streams, powered by Nitro.\n- 📦 [React Native Bottom Tabs v0.7.2 - macOS support, support for sidebars](https://github.com/okwasniewski/react-native-bottom-tabs/releases/tag/react-native-bottom-tabs%400.7.2)\n- 📦 [React Native Video Player v0.15](https://github.com/TheWidlarzGroup/react-native-video-player/releases/tag/v0.15.0)\n- 🎥 [A live demo of Radon IDE: the VS Code extension for streamlining development](https://www.youtube.com/watch?v=UeYmRKWhwFI)\n- 🎙️ [RNR 316 - Debugging the Debugger with Cedric van Putten and Alex Hunt](https://reactnativeradio.com/episodes/rnr-316-debugging-the-debugger-with-cedric-van-putten-and-alex-hunt)",
+      "source_content_hash": "d001f9180ccea5f48198baa242618bbd5339d601060daa455d0a8f7148aad9ba",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [React Native 大師班 - 現已開放報名！](https://notjust.dev/react-native-mastery?utm_source=twir&utm_medium=email)\n- 🐦 [RN Unistyles v3 支援作用域主題](https://x.com/jpudysz/status/1865460854717632737)：彌補 v2 移除 `UnistylesTheme` 後缺失的功能。\n- 📜 [Expo 模組中共享物件的實際影響](https://expo.dev/blog/the-real-world-impact-of-shared-objects)：共享物件實現原生與 JavaScript 的無縫整合，優化 API 設計並提升跨套件相容性。\n- 📜 [React Native 引入 Uniffi：Rust 驅動的 Turbo 模組](https://hacks.mozilla.org/2024/12/introducing-uniffi-for-react-native-rust-powered-turbo-modules/)：透過 Uniffi 整合 Rust 與 Turbo 模組，為 React Native 應用開啟完整的 Rust 生態系。\n- 📜 [在裸 React Native 應用中實現多風味方案的 EAS 自動化更新](https://shift.infinite.red/automated-eas-updates-in-a-bare-react-native-app-with-multiple-flavors-schemes-dcdf17963079)：專為未使用 Expo/EAS 但依賴 CodePush 的專案撰寫，在 CodePush 正式終止前提供 OTA 更新解決方案。\n- 📜 [開發 React Native 電視應用](https://www.callstack.com/blog/developing-a-react-native-tv-app)\n- 📦 [React Native Sheet Transitions - 精美的通用表單轉場效果](https://github.com/saulamsal/react-native-sheet-transitions)：效果驚艷，目前仍處於積極開發階段。\n- 📦 [@lingui/metro-transformer](https://lingui.dev/blog/2024/11/20/metro-transformer)：在 Metro 打包過程中處理編譯，無需預編譯 `.po` 翻譯文件。\n- 📦 [React Native Fast IO 預發布版](https://github.com/callstackincubator/react-native-fast-io)：高效能 I/O 解決方案，實現 WebSocket、Fetch、FileSystem、Blob 和 Streams 等 W3C 標準 API，由 Nitro 驅動。\n- 📦 [React Native Bottom Tabs v0.7.2 - 支援 macOS 及側邊欄](https://github.com/okwasniewski/react-native-bottom-tabs/releases/tag/react-native-bottom-tabs%400.7.2)\n- 📦 [React Native Video Player v0.15](https://github.com/TheWidlarzGroup/react-native-video-player/releases/tag/v0.15.0)\n- 🎥 [Radon IDE 實機演示：簡化開發流程的 VS Code 擴充功能](https://www.youtube.com/watch?v=UeYmRKWhwFI)\n- 🎙️ [RNR 316 - 與 Cedric van Putten 和 Alex Hunt 調試調試器](https://reactnativeradio.com/episodes/rnr-316-debugging-the-debugger-with-cedric-van-putten-and-alex-hunt)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f1a2be1a",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13292277",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "292df6cb",
+      "source_content": "- 📜 [TC39 105th meeting](https://dev.to/hemanth/updates-from-the-105th-tc39-meeting-3gkh): several ES proposals progressed this week including Intl.DurationFormat, Immutable ArrayBuffer, Import Sync and more.\n- 📜 [Airtable - Scaling TypeScript to thousands of projects](https://medium.com/airtable-eng/a-leap-in-the-evolution-of-airtables-codebase-scaling-typescript-to-thousands-of-projects-734326c3a553)\n- 📜 [Node.js Delivers First LTS with require(esm) Enabled, Enhances Security and Release Automation](https://socket.dev/blog/node-js-delivers-first-lts-with-require-esm-enabled)\n- 📜 [Solving N² Complexity with JavaScript Maps](https://davidbonan.io/blog/solving-n2-complexity-with-javascript-maps)\n- 📜 [CSS Wrapped 2024](https://chrome.dev/css-wrapped-2024/)\n- 📜 [How to improve your page load time with browser caching | DebugBear](https://www.debugbear.com/blog/browser-caching)\n- 📜 [Exploring Node.js Readable Streams](https://pavel-romanov.com/exploring-the-core-concepts-of-nodejs-readable-streams)\n- 📦 [OpenAuth - Universal, standards-based auth provider](https://openauth.js.org/)\n- 📦 [Dioxus 0.6 - Rust fullstack cross-platform app framework](https://dioxuslabs.com/blog/release-060): Looks like it's taking a lot of inspiration from React, and this large release adds many things such as Server Functions, SSG/ISG, Streaming HTML and much more.",
+      "source_content_hash": "231f17ad2b3b1cd4b3a2c1ecf3caf4348b90310db46005cf2145781384a73911",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📜 [TC39 第105次會議](https://dev.to/hemanth/updates-from-the-105th-tc39-meeting-3gkh)：本週多項 ES 提案取得進展，包括 Intl.DurationFormat、Immutable ArrayBuffer、Import Sync 等。\n- 📜 [Airtable - 將 TypeScript 擴展至數千個專案](https://medium.com/airtable-eng/a-leap-in-the-evolution-of-airtables-codebase-scaling-typescript-to-thousands-of-projects-734326c3a553)\n- 📜 [Node.js 推出首個支援 require(esm) 的 LTS 版本，強化安全與發布自動化](https://socket.dev/blog/node-js-delivers-first-lts-with-require-esm-enabled)\n- 📜 [使用 JavaScript Maps 解決 N² 複雜度問題](https://davidbonan.io/blog/solving-n2-complexity-with-javascript-maps)\n- 📜 [CSS Wrapped 2024](https://chrome.dev/css-wrapped-2024/)\n- 📜 [透過瀏覽器快取提升頁面載入速度 | DebugBear](https://www.debugbear.com/blog/browser-caching)\n- 📜 [探索 Node.js 可讀流的核心概念](https://pavel-romanov.com/exploring-the-core-concepts-of-nodejs-readable-streams)\n- 📦 [OpenAuth - 通用標準化驗證提供者](https://openauth.js.org/)\n- 📦 [Dioxus 0.6 - Rust 全端跨平台應用框架](https://dioxuslabs.com/blog/release-060)：靈感大量取自 React，此重大版本新增 Server Functions、SSG/ISG、Streaming HTML 等多項功能。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0bed0da6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ab1b234",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣事 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42d9ca67",
+      "source_content": "[![React 19 PeerDependencies](/emails/issues/213/react_19_meme.jpg)](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3laz2eyx77k2l)",
+      "source_content_hash": "84c84b658877be9a951b78bbbb0d23acd609c8df2eb923ddf4a015ef494fd7d6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React 19 同儕相依性](/emails/issues/213/react_19_meme.jpg)](https://bsky.app/profile/did:plc:hxmev3uady7j4litwnr5fzbg/post/3laz2eyx77k2l)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "[![JavaScript Math.sin](/emails/issues/213/math_sin.jpg)](https://x.com/davesnx/status/1863991593432391711)",
+      "source_content_hash": "0875c3383ba34faec2fb3734fb1e4c53292563e6cee2bf4865613bd3d8c30989",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![JavaScript Math.sin](/emails/issues/213/math_sin.jpg)](https://x.com/davesnx/status/1863991593432391711)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "再會！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/213/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:39.458350+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "3fc02eadd5c2423b510f8c9e3619e833a6d3c953d61eb858d5d6c7bfc3124d73"
+  }
+}

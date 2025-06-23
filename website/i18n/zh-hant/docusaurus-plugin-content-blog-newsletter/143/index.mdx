@@ -1,0 +1,188 @@
+---
+slug: /143
+title: "This Week In React #143: RSC Quiz, useFormStatus, Next.js Website, Panda CSS, useLayoutEffect, Million.js, Immer, Super Apps, React-Three-Fiber, Vite..."
+authors: [slorber]
+date: 04-25-2023
+---
+
+大家好！
+
+本週有許多精彩的 React 文章，同時也發布了一些優秀的更新。我很喜歡對新版 Next.js 網站動畫的解析，以及新發現的 Panda CSS 函式庫。
+
+隨著伺服器元件的發展，我們感覺 React 正逐漸轉變為一個框架。一個新的實驗性 hook `useFormStatus` 即將登場 👀。
+
+Callstack 為我們提供了一個關於 React-Native 超級應用的優質資源。
+
+Meta 最近出現了大規模的裁員潮 😓。
+
+提醒大家，本通訊設有 **[Discord 聊天室](https://thisweekinreact.com/chat)**。原先僅限法語使用者，現在我已重新整頓以歡迎各位加入，請來和我們聊聊吧！
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本通訊](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![React-admin](/emails/issues/141/react_admin.png)](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[React-admin - 專為 B2B 應用打造的開源框架](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+您正在使用 React 建置管理後台嗎？如果是，我們有個好消息！使用專為 B2B 應用打造的開源框架 React-admin，可為您節省數天的開發時間！🤩
+
+React-admin 不僅能節省寶貴時間，還能讓您成為更出色的開發者！這並非空談，已有超過 20,000 名開發者日常使用並驗證其效能。若想了解長期使用者的經驗，請參閱非營利組織 [Caritas 的使用心得](https://marmelab.com/blog/2022/07/07/react-admin-caritas.html)。
+
+加入我們蓬勃發展的社群及 [Discord](https://discord.com/invite/jR3D6SdQ) 伺服器，即可掌握最新 React-admin 動態，並獲得資深開發者網絡的支援。
+
+還在等什麼？立即免費使用 😉 React-admin，將您的開發能力提升至新高度！🚀
+
+---
+
+## ⚛️ React {#react}
+
+[![打造 Next.js 官網](/emails/issues/143/nextjs.jpg)](https://rauno.me/craft/nextjs)
+
+**[打造 Next.js 官網](https://rauno.me/craft/nextjs)**
+
+您可能已注意到[新版 Nextjs.org 首頁](https://nextjs.org/)？Rauno 任職於 Vercel，他解構了這個頁面的 UI 精妙之處。個人非常喜歡他們的漸層追蹤技術！有趣的 React 實作與出色的成果。
+
+---
+
+[![Panda CSS – 零運行時開銷的 CSS-in-JS](/emails/issues/143/panda.jpg)](https://infinum.com/blog/panda-css-css-in-js-without-runtime-overhead/)
+
+**[Panda CSS – 零運行時開銷的 CSS-in-JS](https://infinum.com/blog/panda-css-css-in-js-without-runtime-overhead/)**
+
+Panda CSS 是正在開發中的新型零運行時 CSS-in-JS 函式庫，專為 [Chakra UI 的未來](https://www.adebayosegun.com/blog/the-future-of-chakra-ui)而設計。雖然 Panda 文件尚未發布，但本文提供了在 Next.js 環境中的首次實用概述。
+
+---
+
+- 👥 New wave of layoffs at Meta that also affects open-source tech profiles of our community, including [Mengdi Chen](https://twitter.com/mengdi_en/status/1648718077796786177) (React DevTools), [Robert Balicky](https://twitter.com/StatisticsFTW/status/1648820621252653056) (Relay), [Matt Carroll](https://twitter.com/mattcarrollcode/status/1648770402272018432) (DevRel React, looking for a new job) and [Sean Keegan](https://twitter.com/DevRelSean/status/1649466893806215172) (DevRel React, looking for a new job). Feel free to reach out to those who are looking for a new opportunity.
+- 👀 [React PR - experimental_useFormStatus](https://twitter.com/sebastienlorber/status/1651135782990561280): a new hook `useFormState()` could arrive in React, whose signature is [inspired by Remix](https://twitter.com/sebmarkbage/status/1651191679943049216) `useNavigation()`.
+- 👀 [React.dev translation update](https://twitter.com/dan_abramov/status/1649575563055493120): the translation repositories of the new doc are up to date. It is possible to start translating the new document.
+- 🧵 [Dan Abramov's RSC Quiz](https://twitter.com/dan_abramov/status/1648923232937058304): a very interesting thread that could help you to have a better intuition on how Server Components work.
+- 🧵 [Dan Abramov on the origins / inspirations of React Server Components (PHP/Hack/XHP)](https://twitter.com/dan_abramov/status/1648830869304426500)
+- 🧵 [useLayoutEffect + queueMicrotask](https://twitter.com/sebastienlorber/status/1650829494209466373): my tip got more interest than I thought 😄
+- 🐦 [Dan Abramov on using Preact Signals](https://twitter.com/dan_abramov/status/1650892432119148546): this patches React, which can not guarantee its proper functioning if you decide to use it.
+- 📜 [Why You Don't Need Signals in React](https://blog.axlight.com/posts/why-you-dont-need-signals-in-react/): Daishi explained that signals are characterized by 2 elements: responsiveness, and diffing bypassing. He proposes to use Jotai for reactivity, and not to try to bypass diffing.
+- 📜 [Creative ways of using useReducer](https://www.code-insights.dev/posts/creative-ways-of-using-usereducer): highlights 4 original ways to use `useReducer`: toggle, increment, state formatting and state merge.
+- 📜 [Where to host your Remix app in 2023](https://www.jacobparis.com/guides/where-to-host-remix): good analysis with a comparative matrix to choose your host.
+- 📜 [Securing your Next.js 13 application](https://www.yagiz.co/securing-your-nextjs-13-application): shows how to secure its Next.js app with headers, and proposes a detailed implementation for CSRF.
+- 📜 [Can Rust Beat Javascript in 2023?](https://joshuamo876.bearblog.dev/can-rust-beat-javascript-in-2023/): Web frameworks based on Rust and WebAssembly have progressed well in benchmarks. This also shows that they have a fairly similar model to React.
+- 📜 [Say no to "flickering" UI: useLayoutEffect, painting and browsers story](https://www.developerway.com/posts/no-more-flickering-ui): implements a responsive navigation menu, and explains how a synchronous `useLayoutEffect` can fix a visual glitch of the 1st rendering. For SSR, it's not that simple!
+- 📜 [Display a view counter on your blog with React Server Components](https://scastiel.dev/view-counter-react-server-components): replace SWR with RSC to display a view counter. Adding a Suspense around the counter allows not to block the rendering.
+- 📜 [How we built the Storybook Day 3D animation](https://varun.ca/storybook-day/): explanations on how to create a 3D scene with React-Three-Fiber.
+- 📜 [Storybook Community Showcase 5](https://storybook.js.org/blog/community-showcase-5/)
+- 📜 [The Evolution of React Rendering Architectures & Web Performance](https://www.iamtk.co/the-evolution-of-react-rendering-architectures-and-web-performance)
+- 📜 [Integrating React Flow and the Web Audio API](https://reactflow.dev/blog/react-flow-and-the-web-audio-api/)
+- 📦 [Vite 4.3](https://vitejs.dev/blog/announcing-vite4-3.html): big performance improvements on a benchmark with 1000 React components.
+- 📦 [Redux Toolkit v2.0.0 alpha.5](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.0.0-alpha.5): new `combineSlices` API to lazy-load reducers.
+- 📦 [T3 Env](https://env.t3.gg/): new solution to parse environment variables with Zod, with Next.js integration.
+- 📦 [React-Three-Offscreen](https://github.com/pmndrs/react-three-offscreen): allows React-Three-Fiber 3D rendering in a web worker via an OffscreenCanvas, to avoid blocking the main thread.
+- 📦 [Million.js 2.3.0](https://twitter.com/aidenybai/status/1650406345517199361): Next.js support and optimizer Forgetti integration. A new package [Hundred.js](https://twitter.com/aidenybai/status/1651072640650727424) to understand how the block-based virtual DOM works.
+- 📦 [Immer 10.0](https://github.com/immerjs/immer/releases/tag/v10.0.0): faster, smaller.
+- 📦 [Lingui 4.0](https://github.com/lingui/js-lingui/releases/tag/v4.0.0)
+- 📦 [Micro Frontends Next Generation - A React Server Components Playground](https://github.com/unstubbable/mfng)
+- 📦 [Simple RSC, Deno Edition](https://github.com/itsMapleLeaf/simple-rsc-deno)
+- 🎥 [Next.js Image Component Just Got Way Better](https://www.youtube.com/watch?v=Ow3VsOJcvpM): show the advantages of using Cloudinary in a Next.js app. I take the opportunity to thank James for the [newsletter shoutout](https://www.youtube.com/clip/UgkxZ3ySVUr0oCmNn_VQcBJGOFPdSG2V_h3h) 🤗.
+- 🎥 [React and TypeScript Stopped Fighting?](https://www.youtube.com/watch?v=sr8bwLXDm3U)
+- 🎥 [How To Fix NextJS 13's N+1 Problem](https://www.youtube.com/watch?v=FfHsIio4aCU)
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![Tina.io 是專為 Markdown 網站打造的無頭 CMS](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[Tina.io 是專為 Markdown 網站打造的無頭 CMS](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+- 為 Markdown 檔案提供編輯介面
+- 支援 MDX 元件的可視化編輯
+- 支援靜態生成（SSG）與伺服器端渲染（SSR）
+- 可選即時預覽編輯模式
+- 採用可重複使用的區塊建構
+
+試用入門範本
+
+- [Docusaurus 整合](https://github.com/tinacms/tinasaurus) (GitHub)
+- [Next.js + Tailwind 即時預覽版](https://github.com/tinacms/tina-cloud-starter) (GitHub)
+
+或執行 `npx create-tina-app@latest` 後訪問 `localhost:3000/admin`
+
+觀看 [4 分鐘演示影片](https://www.youtube.com/watch?v=zRkeKSZjlyw)
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![超級應用程式開發](/emails/issues/143/superapp.jpg)](https://www.callstack.com/super-app-development)
+
+**[超級應用程式開發](https://www.callstack.com/super-app-development)**
+
+Callstack 發布了關於超級應用程式的優質資源，這類應用能在單一移動介面中整合多個迷你程式。文中詳述了商業組織效益與技術解決方案，並強調其首選方案：Re.Pack 與模組聯邦。另提供範例資源庫 [Super App Showcase](https://github.com/callstack/super-app-showcase) 供研究參考。
+
+超級應用在亞洲盛行（如微信、MoMo），現正快速擴展。據觀察推測，[PlayStation 5 介面可能是 React-Native 超級應用](https://twitter.com/syke/status/1619413099861413889)，有待證實！
+
+---
+
+- 👤 [Mark Lawlor (NativeWind) 加入 Expo](https://twitter.com/mark__lawlor/status/1648834143659384832)：對社群來說是個好消息，又多了一位開發者投入 web/跨平台支援工作。
+- 👀 [Bluesky - 通用 Expo 應用](https://twitter.com/Baconbrix/status/1650608419135700993)：Twitter 及其新競爭對手 Bluesky [都採用 React-Native-Web](https://twitter.com/sebastienlorber/status/1650488087430963204)。
+- 💬 [RFC：在 React Native 應用中支援 Expo Config Plugins](https://twitter.com/TMisiukiewicz/status/1649050245106659330)：提議將 Expo Config Plugins 直接整合進 React-Native 核心，基於多項開發體驗考量（包括簡化升級流程）。該提案[遭 Brent Vatne 及社群質疑](https://github.com/react-native-community/discussions-and-proposals/pull/637#issuecomment-1518083817)，因為在現有 React-Native 專案中加入 Config Plugin / Prebuild 支援並不困難。
+- 📜 [使用 AI 撰寫 React 元件測試](https://www.callstack.com/blog/using-ai-to-write-tests-for-react-components)
+- 📦 [React-Native 0.71.7](https://github.com/facebook/react-native/releases/tag/v0.71.7)
+- 📦 [SkiaAnimationShowcase](https://github.com/friyiajr/SkiaAnimationShowcase)
+- 🎙️ [Syntax FM - Supper Club × Nate Weinert 與 Tamagui](https://syntax.fm/show/601/supper-club-nate-weinert-and-tamagui)
+- 🎙️ [RNR 264 - 使用 Detox 進行 RN 測試 (Josh Justice 與 Jason Grosz)](https://reactnativeradio.com/episodes/rnr-264-a-detox-case-study-with-josh-justice-and-jason-grosz)
+- 👥 [App.js](https://appjs.co/) (克拉科夫，5月10-12日) 提供我們[工作坊 -20% 優惠](https://ti.to/appjs/2023/discount/ThisWeekinReact20) (優惠碼 "ThisWeekinReact20")。
+- 👥 [Chain React](https://chainreactconf.com/) (波特蘭，5月18-19日) 提供我們門票 -10% 優惠 (優惠碼 "thisweekinreact")。
+- 👥 [React-Native-Connection](https://reactnativeconnection.io/) (巴黎，6月1日) 提供我們門票 -10% 優惠 (優惠碼 "REACTHEBDO")。
+
+---
+
+## 🧑‍💻 職缺 {#jobs}
+
+🧑‍💼 [**Passionfroot - 資深全端工程師 (Remix) - €160k+，柏林/遠端**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfroot 的使命是透過 YouTube、Podcast、社群媒體和電子報賦能明日獨立事業。加入我們，共同打造能讓全球創作者建立可擴展、可持續商業模式的工具。
+
+🧑‍💼 [**Callstack - 資深 React Native 開發者 - 全遠端，B2B 月薪 PLN 21-32k 淨額**](https://www.callstack.com/senior-react-native-developer)
+
+您想開發全球最多人使用的應用嗎？您想共同創造 React Native 技術嗎？加入 Callstack 的 React & React Native 領導團隊。詳情請查看官網。我們期待看到您的申請——展現您的實力吧！
+
+🧑‍💼 [**G2i - 100% 遠端 React Native 職缺**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我們有多個專注於 React Native 的開發職缺！薪資約 160k 美元外加 10% 獎金。需具備 RN 實際開發經驗且位於美國境內。私訊 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解詳情，別忘了提及 This Week in React。
+
+💡 [如何發布贊助機會？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [我們如何用 Prisma 將無伺服器冷啟動速度提升 9 倍](https://www.prisma.io/blog/prisma-and-serverless-73hbgKnZ6t)
+- [Oracle 就違反 JavaScript 商標發出法律通知](https://twitter.com/sebastienlorber/status/1650502618760839170)
+- [Partykit - 建構即時協作應用程式的套件](https://github.com/partykit/partykit)
+- [ECMAScript 2023 的新功能](https://pawelgrzybek.com/whats-new-in-ecmascript-2023/)
+- [Rich Harris 談框架、網路與邊緣運算](https://www.youtube.com/watch?v=uXCipjbcQfM)
+- [介紹 npm 套件來源驗證](https://github.blog/2023-04-19-introducing-npm-package-provenance/)
+- [「const」的騙局](https://www.joshwcomeau.com/javascript/the-const-deception/)
+- [挑選合適工具操作 JavaScript 事件循環](https://www.macarthur.me/posts/navigating-the-event-loop)
+- [主畫面 Web 應用程式的標記功能](https://webkit.org/blog/14112/badging-for-home-screen-web-apps/)
+- [Lightning CSS 1.20](https://twitter.com/devongovett/status/1648818638479142914)
+- [Rspack 0.1.9](https://twitter.com/rspack_dev/status/1650802734248108032)
+
+---
+
+## 🤭 趣聞 {#fun}
+
+[![迷因圖](/emails/issues/143/meme.jpg)](https://twitter.com/jacobmparis/status/1649762401263452160)
+
+再見！ 👋

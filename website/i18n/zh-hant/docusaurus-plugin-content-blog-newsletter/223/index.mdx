@@ -1,0 +1,153 @@
+---
+slug: /223
+title: "This Week In React #223: TanStack, React Router, React-Scan, Bun, Next.js, INP, Storybook | State of RN, Nitro Views, Reanimated, Gesture Handler, Screens, AWS-LC, QuickPush, Metro | TC39, CSS, TypeScript, Observables..."
+authors: [slorber]
+date: 02-26-2025
+---
+
+大家好！
+
+本週內容包含：
+
+- **React**：內容多元且社群文章豐富，但無重大公告。
+- **React Native**：2024 調查結果出爐，基礎庫現已支援 RN 0.78，並發布 Nitro Views！
+- **其他**：多項 TC39 提案持續推進——我最愛的是 `import defer` 和 `RegExp.escape()`。
+
+嘗試採用新格式，歡迎回饋這種分段落開場是否合您口味。
+
+看看我們的合作夥伴 [StrapiConf](https://conf.strapi.io/?utm_source=thisweekinreact) - 🇫🇷 巴黎 - 5月13日。Strapi 是 React 生態系中熱門的無頭 CMS，和我一樣源自法國 🥐！輸入代碼 "TWIR" 享 10% 折扣。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![React-admin：開源 B2B 應用框架](/emails/issues/223/marmelab.jpg)](https://marmelab.com/react-admin/?ref=TWIR)
+
+**[React-admin：開源 B2B 應用框架](https://marmelab.com/react-admin/?ref=TWIR)**
+
+[React-admin](https://marmelab.com/react-admin/?ref=TWIR) 是建構 B2B 應用的首選框架——說實話，誰會夢想再寫一個 CRUD 介面？以下是數千開發者推崇的原因：
+
+- 🔌 **後端無關性**：連接任何 API——承諾問題不限於感情關係。
+- 🧩 **200+ 預建元件**：比專案待辦事項還多的現成組件。
+- 🛠 **完整自訂性**：不喜歡就改，我們不會玻璃心（*擦淚*）。
+- 💻 **卓越開發體驗**：讓你像程式搖滾巨星，只是少了粉絲（橡皮鴨除外）。
+
+歷經 7 年生產驗證與百萬日活用戶，react-admin 是可靠之選。何不[親自試用](https://github.com/marmelab/react-admin?ref=TWIR)？
+
+---
+
+## ⚛️ React {#react}
+
+- 💸 [AI coding benchmarks for backends](https://convex.link/thisweekbench)
+- 👀 [React Explorer \- Turns your React site into an interactive visualization](https://www.react-explorer.com/)
+- 📖 [Deno docs \- Build an app with TanStack and Deno](https://docs.deno.com/examples/tanstack_tutorial/)
+- 🗓 [React-Summit](https://reactsummit.com/?utm_source=Newsletter&utm_medium=thisweekinreact) - 🇳🇱 Amsterdam - 13 & 17 June. CFP is closing soon on March 2! Last chance to submit your talks for a top-tier tech audience.
+- 📜 [How Preply improved INP on a Next.js application (without React Server Components and App Router)](https://medium.com/preply-engineering/how-preply-improved-inp-on-a-next-js-application-without-react-server-components-and-app-router-491713149875): A deep dive into this Core Web Vital metrics and various things Preply tried to improve it, using a data-driven approach.
+- 📜 [Avoiding Server Component Waterfall Fetching with React 19 cache()](https://aurorascharff.no/posts/avoiding-server-component-waterfall-fetching-with-react-19-cache/): You can use `React.cache()` to deduplicate requests and preload data as soon as possible to avoid request waterfalls. This works but creates an implicit coupling. I’d prefer a more explicit model, hoisting all requests and passing promises down as props.
+- 📜 [Armin's TanStack Router Notes](https://gist.github.com/mitsuhiko/555b45f020a8d7e389516b51f6d03534): Documents challenges encountered while trying to determine whether Sentry could adopt TanStack Router.
+- 📜 [There’s no such thing as an isomorphic layout effect](https://smoores.dev/post/no_such_thing_isomorphic_layout_effect/): A possible interpretation of the story behind the `useIsomorphicLayoutEffect` pattern.
+- 📜 [Debouncing in React Router v7](https://programmingarehard.com/2025/02/24/debouncing-in-react-router-v7.html/): Interesting technique relying on `clientLoader`
+- 📜 [How to Download a file from a React Router route](https://sergiodxa.com/tutorials/download-a-file-from-a-react-router-route): With/without dynamic params, with/without JS.
+- 📜 [Shadcn Registry: A Better Way to Manage Your UI Components](https://ouassim.tech/notes/shadcn-registry-a-better-way-to-manage-your-ui-components/)
+- 📜 [Throwing vs. Returning Redirects in React Router](https://sergiodxa.com/articles/throwing-vs-returning-redirects-in-react-router)
+- 📜 [Functional programming in React](https://www.56kode.com/posts/level-up-react-functional-programming-in-react/)
+- 📜 [React Performance: Common Problems & Their Solutions](https://blog.sentry.io/react-js-performance-guide/)
+- 📜 [Making Next.js Apps Faster: A Practical Performance Guide Beyond Next.js](https://tigerabrodi.blog/making-nextjs-apps-faster-a-practical-performance-guide-beyond-nextjs)
+- 📜 [Progressive forms with server actions](https://waku.gg/blog/progressive-forms)
+- 📦 [Create TanStack Router App 0.4 \- Add-ons, SolidJS support, MCP support](https://github.com/TanStack/create-tsrouter-app/releases/tag/v0.4.0)
+- 📦 [React Scan 0.2 \- Slowdown notifications, explanations and pre-generated prompts to fix them](https://github.com/aidenybai/react-scan/releases/tag/v0.2.0)
+- 📦 [React Scan Chrome Extension](https://github.com/jantimon/chrome-react-scan-inspector)
+- 📦 [Storybook 8.6 \- Storybook Test improvements](https://github.com/storybookjs/storybook/releases/tag/v8.6.0)
+- 📦 [React Admin 5.6 \- Black & white theme](https://github.com/marmelab/react-admin/releases/tag/v5.6.0)
+- 📦 [Bun 1.2.3 - Built-in React support with hot-reloading, React init template](https://bun.sh/blog/bun-v1.2.3)
+- 🔨 [Laravel Starter Kits](https://laravel.com/starter-kits): Include a new official React 19 \+ Inertia 2 starter kit.
+- 🔨 [Remix Epic Stack update \- Passkeys, Helmets, and more\!](https://github.com/epicweb-dev/epic-stack/discussions/937)
+- 🎥 [Jack Herrington \- Fix Your Slow React App With React-Scan](https://www.youtube.com/watch?v=3EnathFYgz8)
+- 🎥 [Syntax \- Should You Use Signals with React?](https://www.youtube.com/watch?v=Diy4XRSFTiA)
+- 🎥 [Cosden \- Combining React Query With Server Components (Next.js)](https://www.youtube.com/watch?v=XcUpTPbY4Wg)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![測試已死 - Meticulous 登場](/emails/issues/217/meticulous.jpg)](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=feb26th)
+
+**[測試已死 - Meticulous 登場](https://www.meticulous.ai?utm_source=thisweekinreact&utm_campaign=feb26th)**
+
+Meticulous 以**零**開發成本建立並維護完整的 e2e UI 測試套件。
+
+Dropbox、Bilt Rewards、Lattice 及數百家工程組織仰賴 Meticulous 進行前端測試。
+
+Traba 技術長的精闢總結：「Meticulous 徹底改變我們處理前端測試的方式，完全免除手寫測試的需求。該軟體確保每次變更都經過完整回歸測試，讓我們能更快交付、大幅減少程式錯誤。」
+
+[本文](https://www.meticulous.ai/blog/lessons-from-a-decade?utm_source=thisweekinreact&utm_campaign=jan15th)由曾任 Palantir 大型工程團隊主管的技術長撰寫，闡述完整測試如何倍增工程速度。
+
+---
+
+## 📱 React Native {#react-native}
+
+[![2024 年 React Native 狀態調查結果](/emails/issues/223/state-of-rn.jpg)](https://results.stateofreactnative.com/)
+
+**[2024 年 React Native 狀態調查結果](https://results.stateofreactnative.com/)**
+
+調查結果已經出爐，我感到非常自豪的是，在所有的 React Native 資源中，這份通訊獲得了最高的正面評價分數。謝謝大家！❤️
+
+我無法總結整個調查，但以下是我發現的一些重點：
+
+- 61% 的 RN 開發者來自 React（網頁）
+- iOS 和 Android 仍然是最常見的 RN 目標平台，但網頁也佔有 22% 的市場份額
+- 獲得最多正面評價的函式庫有：Reanimated、TanStack Query、Zustand、React Navigation、Expo Router、Skia。
+- 在樣式方面沒有明顯的贏家。開發者喜歡內建的 API，例如 StyleSheet 和內聯樣式。
+
+---
+
+- 💸 [PostHog - How we built mobile replay (and why it took so long)](https://dub.link/twir-feb26)
+- 📜 [How to build Custom Tabs with Expo Router UI](https://expo.dev/blog/how-to-build-custom-tabs-with-expo-router-ui)
+- 🗓️ [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 克拉科夫 - 5月28日至30日。別錯過搶購門票的機會，並使用代碼 "TWIR" 享受獨家15%折扣。
+- 📦 [Nitro 0.23 - Nitro Views](https://github.com/mrousavy/nitro/releases/tag/v0.23.0): 一種全新且高效的方式，可將原生 Swift / Kotlin 視圖整合到 React Native 應用程式中。需要 0.78+ 版本和 New Arch。
+- 📦 [Reanimated 3.17 - Edge-to-Edge, LAB color space, animate `boxShadow`](https://github.com/software-mansion/react-native-reanimated/releases/tag/3.17.0): 對 RN 0.78 的支援將在即將發布的 3.17.1 版本中提供。
+- 📦 [React Native Boost - A powerful Babel plugin that automatically optimizes React Native apps](https://github.com/kuatsu/react-native-boost): 應用安全的 AST 微優化來提升效能，例如使用更快的原生 Text/View 元件來取代 RN JS 包裝器。
+- 📦 [AWS-LibCrypto](https://github.com/OP-Engineering/op-aws-lc): 連結到 Rust AWS 函式庫的 RN 綁定，並獲得美國政府的 FIPS 認證。
+- 📦 [Screens 4.8 - Android 16 KB page size](https://github.com/software-mansion/react-native-screens/releases/tag/4.8.0)
+- 📦 [Screens 4.9 - RN 0.78](https://github.com/software-mansion/react-native-screens/releases/tag/4.9.0)
+- 📦 [Gesture Handler 2.24 - RN 0.78, Android 16 KB page size support](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.24.0)
+- 📦 [QuickPush - A lightweight macOS menu bar utility for quickly testing Expo push notifications](https://github.com/betomoedano/quick-push)
+- 📦 [Metro 0.81.2 - Package exports to clearly define public API surface, perf, experimental flags](https://github.com/facebook/metro/releases/tag/v0.81.2)
+- 🔨 [VSCode Extension for React Native Directory](https://marketplace.visualstudio.com/items?itemName=react-native-directory.vscode-react-native-directory): 直接從你的 IDE 中尋找並安裝合適的 RND 套件。
+- 🎥 [Simon Grimm - Your own iOS Widget in 12 Minutes](https://www.youtube.com/watch?v=00VwmqqXDik)
+- 🎙️ [RNR 322 - Building React Native Libraries With Builder Bob](https://infinite.red/react-native-radio/rnr-322-building-react-native-libraries-with-builder-bob-6g-7gnty)
+- 🎙️ [Rocket Ship 61 - Shipping Successful AI Apps with Your Average Tech Bro](https://share.transistor.fm/s/fde1972f)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [Chromium - 準備在 Chrome 135 推出 Observables API](https://groups.google.com/a/chromium.org/g/blink-dev/c/stxSgTgMHog)
+- 🎮 [Anchoreum - 學習 CSS Anchor Positioning 的遊戲](https://anchoreum.com/)：沒想到 Anchor Positioning 如此強大。它已列入 Interop 2025，預計今年在所有瀏覽器實裝，現在正是學習良機！
+- 📜 [TC39 推進 3 項提案至第 4 階段：RegExp 跳脫、Float16Array 與可重新宣告的全域 eval 變數](https://socket.dev/blog/tc39-advances-3-proposals-to-stage-4-regexp-escaping-float16array-and-redeclarable-global-eval)
+- 📜 [極端伺服器端渲染](https://www.scd31.com/posts/extreme-server-side-rendering)：保持連線存活時，伺服器能持續串流更新至客戶端。作者實作了完全不用 JS、依賴此技術的 Flappy Bird 遊戲。
+- 📜 [測試 Web 身份驗證 (WebAuthn)](https://www.heal.dev/docs/blog/testing-webauthn)：新發現：可在 Playwright 中運用 Chrome DevTools 功能。
+- 📜 [加速 JavaScript 生態系 - Rust 與 JavaScript 外掛](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-11/)
+- 📜 [百萬個小祕密 - 解構「Whimsical Animations」登陸頁面](https://www.joshwcomeau.com/blog/whimsical-animations/)
+- 📜 [用弱參照顛覆控制](https://jlongster.com/subverting-control-weak-refs)
+- 🎥 [TypeScript 類型能運行 DOOM](https://www.youtube.com/watch?v=0mCsluv5FXA)：簡直 🤯。
+
+---
+
+## 🤭 有趣 {#fun}
+
+[![alt](/emails/issues/223/meme.jpg)](https://bsky.app/profile/sebastienlorber.com/post/3lijm77wxdk2b)
+
+[![alt](/emails/issues/223/meme2.jpg)](https://x.com/schlimmson/status/1892257891870265830)
+
+[![alt](/emails/issues/223/meme3.jpg)](https://x.com/cramforce/status/1894781544851783754)
+
+下次見！👋

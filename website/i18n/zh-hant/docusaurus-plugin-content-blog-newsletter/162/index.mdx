@@ -1,0 +1,150 @@
+---
+slug: /162
+title: "This Week In React #162: Lit-React, Remix, Next.js, Fresh, next-safe-actions, Starlight, RN 0.73 RC, RCTText, canvaskit-js, vxrn, Rolldown, Vite, Japa, Prisma..."
+authors: [slorber]
+date: 10-11-2023
+---
+
+大家好！
+
+本週，我一直在關注 Lit 3.0 的發布，看看在 React 中使用 Web Components 是否變得更容易。
+
+在 React-Native 方面，0.73 版本已進入發布候選階段，帶來多項開發體驗改進。關於 Text 和 View 元件的性能優化也有有趣進展。Canvaskit-js 讓 Skia 在網頁端僅需 20kb 即可運行！
+
+上週 ViteConf 有些重要發布，特別是 Rollup 的 Rust 移植版本，以及 Vite 在 Remix 和 React-Native 中的應用。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![highlight.io](/emails/issues/162/highlight.jpg)](https://www.highlight.io/)
+
+**[highlight.io - 開源全端監控平台](https://www.highlight.io/)**
+
+[**highlight.io**](http://highlight.io) 是真正的開源應用監控解決方案。支援工作階段重播、錯誤監控和日誌平台，是專案開發的理想選擇。
+
+無需再猜測錯誤原因。使用 highlight 即可清晰掌握瀏覽器與伺服器端應用狀態。
+
+可輕鬆整合至常用框架：[React.js](https://www.highlight.io/docs/getting-started/client-sdk/reactjs)、[Next.js](https://www.highlight.io/docs/getting-started/fullstack-frameworks/next-js)、[Remix](https://www.highlight.io/docs/getting-started/fullstack-frameworks/remix) 及其他任何框架！
+
+---
+
+## ⚛️ React {#react}
+
+[![Lit React v1.0](/emails/issues/162/lit.jpg)](https://www.npmjs.com/package/@lit/react)
+
+[**Lit React v1.0**](https://www.npmjs.com/package/@lit/react)
+
+Google 的 Web Components 框架 [Lit 剛發布 v3.0](https://lit.dev/blog/2023-10-10-lit-3.0/)。除框架改進（裝飾器、模板編譯器、Preact Signals）外，重點是 `@lit/react` 整合套件已脫離實驗階段，現穩定發布 v1.0。
+
+此整合方案透過建立封裝器，將 React 屬性映射到自訂元素的屬性，管理事件處理程序並簡化 TypeScript 類型定義，簡化 Web Components 在 React（或 Preact）應用中的使用。它彌補了 React 18 與 Web Components 整合的不足：屬性會被映射到特性（attributes）而非屬性（properties）。詳見 [React 框架文件](https://lit.dev/docs/frameworks/react/)。
+
+但現代 React 開發者能輕鬆使用嗎？Lit 提供實驗性套件 [@lit-labs/ssr](https://www.npmjs.com/package/@lit-labs/ssr)、[@lit-labs/ssr-react](https://www.npmjs.com/package/@lit-labs/ssr-react) 和 [@lit-labs/nextjs](https://www.npmjs.com/package/@lit-labs/nextjs)，但支援有限且無法與 Next.js App Router 協作。[宣告式 Shadow DOM](https://developer.chrome.com/articles/declarative-shadow-dom/) 可實現 SSR，但 Firefox 尚未實裝（已有 polyfill）。簡言之，在 CRA 應用中 Lit 運作良好，但若需 SSR 和 SEO 支援則仍有風險。
+
+---
+
+- 💸 [Create collaborative applications like Figma and Miro in a few lines of code with Ably's in-app collaboration SDK](https://hubs.la/Q023nqgg0)
+- 👀 [Remix PR - Add experimental Vite support](https://github.com/remix-run/remix/pull/7590)
+- 👀 [Remix PR - Add startViewTransition support](https://github.com/remix-run/react-router/pull/10916)
+- 👀 [Next.js PR - Document Server Actions `.bind` method](https://github.com/vercel/next.js/pull/56164): the [Next.js doc](https://nextjs.org/docs/app/api-reference/functions/server-actions#binding-arguments) now recommends using `myAction.bind(null, myArg)` to pass additional arguments to a Server Action. The returned function will then also be a Server Action.
+- 📜 [UI Composition - AKA taking a step back to take a step forward](https://kyleshevlin.com/ui-composition): article presenting an example of a Card component that has too much responsibility. Suggests splitting it and using composition to make it more maintainable.
+- 📜 [Server-side pagination with Remix](https://www.jacobparis.com/content/remix-pagination): I found this implementation very interesting, with no `onClick` listener or JS to manipulate the query string. It relies solely on the native behaviour of forms and is therefore compatible with progressive enhancement. My reservation: impossible to open a page in a new tab 😅.
+- 📜 [Access the Loader Data in Remix](https://sergiodxa.com/tutorials/access-loaders-data-in-remix): presents different ways of using `useLoaderData` or `useRouteLoaderData` and their tradeoffs, depending on where they are used.
+- 📜 [Why I love Remix, And why you should too](https://alemtuzlak.hashnode.dev/why-i-love-remix)
+- 📜 [Making React Apps Memory Efficient - Million.js Beyond Speed](https://dev.to/ricardonunezio/millionjs-beyond-speed-making-react-apps-memory-efficient-2amn)
+- 📜 [Test your React Libraries Locally with Yalc](https://www.propelauth.com/post/test-your-react-libraries-with-yalc)
+- 📜 [Why we still use React HOCs](https://www.propelauth.com/post/why-we-have-both-react-hooks-and-hocs)
+- 📜 [Progressively Enhanced WebGL Lens Refraction](https://tympanus.net/codrops/2023/10/10/progressively-enhanced-webgl-lens-refraction/)
+- 📦 [Fresh v1.5 - Partials, client side navigation and more](https://deno.com/blog/fresh-1.5): the Preact framework implements client-side navigation based on "Partials", which permits to preserve some state during navigation. View Transitions support is on the way.
+- 📦 [next-safe-action v4 - Typesafe Server Actions in your Next.js 13 app](https://next-safe-action.dev/): input validation with Zod. Note: a similar project [Zact](https://github.com/pingdotgg/zact) is deprecated in favour of `next-safe-action`.
+- 📦 [Astro Starlight v0.11](https://github.com/withastro/starlight/releases/tag/%40astrojs%2Fstarlight%400.11.0): adds support for [component overrides](https://starlight.astro.build/guides/overriding-components/) to customize docs.
+- 📦 [React-Query 5.0.0 RC.10](https://github.com/TanStack/query/releases/tag/v5.0.0-rc.10): the latest RCs bring significant improvements to [🐦 devtools](https://twitter.com/TkDodo/status/1711297673934848388) and [🐦 TypeScript](https://twitter.com/TkDodo/status/1711635656642855297).
+- 🔗 [ServerComponents.dev](https://servercomponents.dev/): a fun interactive resource to find out more about Server Components.
+- 🎥 [What's new in Remotion – September 2023](https://www.youtube.com/watch?v=Ol-571DOPDY)
+- 📅 [React Jam - October 19-29th - React devs create and play games in 10 days](https://reactjam.com/)
+- 👥 [React Advanced](https://reactadvanced.com/?utm_source=email&utm_medium=thisweekinreact) (London 🇬🇧, Octobre 20-23) is offering us [\-10% - code "REACT10"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![Drop-in Authentication & User Management for React](/emails/issues/162/clerk1.jpg)](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)
+
+**[React 的即插即用身份驗證與用戶管理](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)**
+
+Clerk 是為 React 應用添加身份驗證和用戶管理最簡單的方式。它專為現代網絡打造，旨在讓您在幾分鐘內即可啟動運行。
+
+使用 Clerk 您將獲得：
+
+- 💅 預先建置的登入、註冊、用戶檔案與組織的 UI 組件
+- 📦 適用於 React、React Native、Next.js、Redwood、Remix 等框架的 SDK
+- ⚡ 與 Firebase、Supabase、Convex 等 BaaS 提供商的整合
+- 🎁 開箱即用的用戶管理、社交登入、魔法鏈接、多因素驗證等功能
+
+立即透過 Clerk 的[快速入門指南與教學](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=08_08_2023)開始使用 🚀
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Using RCTView & RCTText in React Native for Performance Gains](/emails/issues/162/rnperf.jpg)](https://blog.theodo.com/2023/10/native-views-rn-performance/)
+
+[**透過 RCTView 與 RCTText 提升 React Native 效能**](https://blog.theodo.com/2023/10/native-views-rn-performance/)
+
+近期 React-Native 開發者於 [Twitter](https://twitter.com/FernandoTheRojo/status/1707762822015267219) 熱烈討論 `Text` 和 `View` 元件的效能問題，這些 JS 包裝層相比原生 `RCTText` 和 `RCTView` 元素會產生額外開銷。William Candillon 早在 2021 年已 🎥 [解析此問題](https://www.youtube.com/watch?v=1D78Tc46Xqo&t=1156s)，提出優化文字渲染的可能性。只要不需要 `onPress` 監聽器等特定功能即可實施優化。本文提供基準測試，量測使用原生元件替代常規元件的影響，結果顯示約有 15% 的效能提升，具體成效依平台與架構而異。
+
+隨著此技巧普及，React-Native 開發者積極尋求應用方案。可關注新建立的 [react-native-fast-text](https://github.com/peterpme/react-native-fast-text)，或實驗性 Babel 插件 [react-native-optimizer](https://github.com/marklawlor/react-native-optimizer) 的概念驗證，該插件將自動實施此項優化。
+
+---
+
+- 💸 [Blitz - 為 iOS、Android 和 Web 更快地建構 React Native 應用程式！](https://www.blitz-rn.com/)
+- 🐦 [Expo 文件更新 - Bun、本地開發、iOS 功能...](https://twitter.com/amanhimself/status/1710254359274037263)
+- 📜 [如何使用 Flashlight 測量 React Native 效能](https://www.bam.tech/article/measuring-react-native-performance-with-flashlight)：展示使用 Flashlight 在 Android 上比較 FlatList 和 Flashlist 滾動效能的範例。您可使用 ADB 或 Maestro 指令模擬滾動操作。
+- 📜 [React TV 應用的遙控器操作：透過 react-tv-space-navigation 1.0 實現宣告式方法！](https://www.bam.tech/article/handling-remote-controls-in-tv-apps-the-react-way-with-react-tv-space-navigation-1-0)：詳述建立跨平台空間導航解決方案 [react-tv-space-navigation](https://github.com/bamlab/react-tv-space-navigation) 的過程，適用於基於 Web 與原生的 React TV 應用。
+- 📦 [React-Native v0.73 RC.2](https://github.com/facebook/react-native/releases/tag/v0.73.0-rc.2)：v0.73 已發布候選版本。請參閱 [🎥 React-Native-EU 主題演講](https://www.youtube.com/watch?v=-rCRgbsJumk) 了解重點更新，包含一鍵除錯流程與穩定符號連結支援！
+- 📦 [vxrn - Vite 的魔法與 React Native 相遇](https://vxrn.dev/)：新實驗性專案嘗試使用 Vite 進行跨平台 React-Native 開發，與 Expo 採用 Metro 的策略相異。
+- 📦 [Vision-Camera 3.3 - 二維碼/條碼掃描器](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.3.0)
+- 📦 [Vision-Camera-Barcode-Scanner](https://github.com/mgcrea/vision-camera-barcode-scanner)
+- 📦 [Create-Expo-Stack CLI v2](https://expostack.dev/)
+- 🎥 [重返 Web](https://www.youtube.com/watch?v=3p3NI1yIgcM)：William Candillon 展示 Skia `canvaskit-js` 實驗性 polyfill，僅用 20kb (原需 3mb) 即可在 Web 執行 React-Native-Skia！Flutter 演示已流暢運行，可搭配 Create-React-App 獨立使用無需 React-Native-Web。
+- 🎥 [最佳 React Native 儲存方案是什麼？](https://www.youtube.com/watch?v=wVNPmxntwKQ)
+- 🎙️ [React-Native-Radio 第 277 集 - Expo 發布派對](https://reactnativeradio.com/episodes/rnr-277-expo-launch-party)
+- 🎙 [The React Native Show 播客第 28 集 - 透過 Expo 提升開發者體驗](https://www.youtube.com/watch?v=4PPDAvgfLHk)
+
+---
+
+## 🔀 其他 {#other}
+
+- 🐦 [尤雨溪 -「我們正在開發 Rolldown，一個 Rollup 的 Rust 移植版本」](https://twitter.com/youyuxi/status/1709943106215530867)
+- 📜 [加速 JavaScript 生態系統 - Barrel 文件的災難](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-7/)
+- 📜 [水合作用（Hydration），懶加載的破壞者](https://www.builder.io/blog/hydration-sabotages-lazy-loading)
+- 📜 [使用 CSS @scope 規則限制選擇器的範圍](https://developer.chrome.com/articles/at-scope/)
+- 📜 [強靜態類型，我願意為之奮鬥到底...](https://www.svix.com/blog/strong-typing-hill-to-die-on/)
+- 📜 [Photoshop 現在登陸網頁版！](https://medium.com/@addyosmani/photoshop-is-now-on-the-web-38d70954365a)
+- 📜 [編寫你自己的 Zod](https://zackoverflow.dev/writing/write-your-own-zod)
+- 📜 [這種技術讓 Valibot 的打包體積比 Zod 小 10 倍！](https://www.builder.io/blog/valibot-bundle-size)
+- 📜 [CRDTs 互動式入門](https://jakelazaroff.com/words/an-interactive-intro-to-crdts/)
+- 📜 [ESLint 扁平配置推出計劃 - v9 預設啟用](https://eslint.org/blog/2023/10/flat-config-rollout-plans/)
+- 📦 [Japa v3 - Node.js 測試框架](https://japa.dev/)
+- 📦 [Prisma v5.4 - Serverless 資料庫驅動程式預覽](https://github.com/prisma/prisma/releases/tag/5.4.0)
+- 🎥 [ViteConf 2023 重播](https://viteconf.org/23/replay)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/162/meme.jpg)](https://twitter.com/Hacksore/status/1710826658863702314)
+
+再見！👋

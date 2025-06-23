@@ -1,0 +1,746 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/186/index.mdx",
+  "source_file_content_hash": "838ea136f4360b668f5bfd60e66c9364e513fc717010ec035ab150b09a8dc7df",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /186\ntitle: \"This Week In React #186: React Conf, Compiler, Universal RSC, React-Router, Google Maps, Million Lint, Pigment, Restyle, Storybook, SSRF, Inline Styles, New Arch, Expo, Bootsplash, Skia, RN-Video...\"\nauthors: [slorber, bndkt]\ndate: 05-22-2024\n---",
+      "source_content_hash": "c8286651636cf18a34e2fb95e45c0b1cbc26e34fd2017a5bcb1607a84323e86e",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "各位好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This has been a busy week for us 😄. That React conf didn't disappoint! We weren't there, but [our flyer was](https://x.com/sebastienlorber/status/1790771155734839313) 😇. We not only had great conf announcements (notably the compiler!), but we had great community articles that I had to postpone a few of them to next week.",
+      "source_content_hash": "81c12a22c2e82b77b9404d438a9bcf0cfb30ac0469322a6c69fe368dde86e7ed",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這週我們可忙壞了😄！React Conf 果然沒讓人失望！我們人沒到現場，但[我們的傳單可是到了](https://x.com/sebastienlorber/status/1790771155734839313)😇。不僅有重磅會議公告（尤其是編譯器！），還有許多優秀社群文章，有些我還得延到下周才能介紹。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Although it's unlikely to calm down because 2 major confs start tomorrow:",
+      "source_content_hash": "bac5247cbe3a726ef2450f25d65bac8e0a69186e0e9d72be0fc178a4a842fdf8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "不過接下來恐怕更忙，因為明天就有兩大會議登場："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9e760345",
+      "source_content": "- Vercel Ship, during which [Next.js 15 should be announced](https://x.com/feedthejim/status/1792969159321723244) with a less aggressive caching strategy, Turborepo in dev, Compiler support and more.\n- App.js Conf, also with great React Native announcements expected.",
+      "source_content_hash": "ff6a7efc467417e65a03d1ffcbe1cf5749f263fc3294e9d1994214b1bb793743",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- Vercel Ship：預計將[發布 Next.js 15](https://x.com/feedthejim/status/1792969159321723244)，包含較溫和的快取策略、開發環境整合 Turborepo、編譯器支援等功能\n- App.js Conf：預計也會有重磅 React Native 公告"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42ad8e83",
+      "source_content": "Have a good read and see you next week!",
+      "source_content_hash": "8cac5f87a044a567ba343bff691308aa8256be32e869d3f53a427d4dc1285423",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "祝閱讀愉快，我們下周見！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29ee8c7a",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_29ee8c7a"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f5f6d2ce",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**💡 [在 Twitter 查看本刊](https://slo.im/thread) - 圖文版 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "18e2d98b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "11262b0b",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_11262b0b"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "358a309f",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_358a309f"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8b52fbba",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "48847fd4",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4daf5cdd",
+      "source_content": "[![React-admin: The Open-Source Framework for B2B apps](/emails/issues/182/marmelab.jpg)](https://marmelab.com/react-admin/)",
+      "source_content_hash": "d16193353a1a998994c20483fe9c9b09560873df2a7ad109b54876e11ef26387",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React-admin：開源 B2B 應用框架](/emails/issues/182/marmelab.jpg)](https://marmelab.com/react-admin/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bdc231b1",
+      "source_content": "**[React-admin: The Open-Source Framework for B2B apps](https://marmelab.com/react-admin/)**",
+      "source_content_hash": "134eba9a0d54cccd0c26001e8ef40db0ca57b4aed3b5964db5fa48be482c2b51",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[React-admin：開源 B2B 應用框架](https://marmelab.com/react-admin/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "97ae4a01",
+      "source_content": "Speed up the development of your single-page applications with the acclaimed frontend framework🚀. Built with TanStack Query, react-hook-form, react-router & material UI, React-admin lets you create rich user experiences on top of REST or GraphQL APIs.",
+      "source_content_hash": "0fad1b7f882f2fb2d238e29fc04b2081c5dc295523a699eb8b4e867a3baabaf0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "透過這款備受讚譽的前端框架🚀，加速開發單頁應用！基於 TanStack Query、react-hook-form、react-router 和 Material UI 打造，React-admin 讓你在 REST 或 GraphQL API 上建構豐富的使用者體驗。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c3a738de",
+      "source_content": "Beyond CRUD pages, React-admin has many advanced functionalities to meet your needs. Its complete toolkit offers a calendar **📅**, customizable Kanban board, content versioning **🔄**, nested forms & more. Add real-time updates 🎥, tree **🌲** structures and detailed audit logs via headless hooks and themeable components.",
+      "source_content_hash": "4f33975f66ca3fbe3a3eab73b6a504aae62b2d3fc7b91be1db0d4f2c010ca050",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "除了 CRUD 頁面，React-admin 更提供進階功能滿足需求：完整工具組包含行事曆 **📅**、可自訂看板、內容版本控制 **🔄**、嵌套表單等。透過無頭鉤子(hooks)和可主題化元件，還能加入即時更新 🎥、樹狀 **🌲** 結構與詳細稽核日誌。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cfe6286",
+      "source_content": "Ready to take your development to the next level? Make React-admin your go-to framework & join over half a million daily users. [Try it now](https://marmelab.com/react-admin/)!",
+      "source_content_hash": "40a58ffeb74a4ad60114c2511f1acc23ba3b9252f7ab966c11a57063636172a6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "準備好升級開發體驗了嗎？讓 React-admin 成為你的首選框架，加入每日超過 50 萬用戶的行列！[立即試用](https://marmelab.com/react-admin/)！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "76a8033c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "35a77014",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "[![React Conf 2024 Recap](/emails/issues/186/recap.jpg)](https://react.dev/blog/2024/05/22/react-conf-2024-recap)",
+      "source_content_hash": "2352526d102e41050747f47770ed9851c8111f1486050c979314111cfa335e59",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React Conf 2024 重點回顧](/emails/issues/186/recap.jpg)](https://react.dev/blog/2024/05/22/react-conf-2024-recap)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "**[React Conf 2024 Recap](https://react.dev/blog/2024/05/22/react-conf-2024-recap)**",
+      "source_content_hash": "bd95dc6da9d7b3da245aad7a4d16d99b788d929a7785628b2eb8b7e80058a7e9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[React Conf 2024 重點回顧](https://react.dev/blog/2024/05/22/react-conf-2024-recap)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "The React team published a recap blog post of React Conf, just in time for today’s newsletter 🤗. It presents all the talks and the main announcements. I haven't seen all of them yet, but my highlights so far are:",
+      "source_content_hash": "b1ead997bd5f58138d4b50dcc8a3a655ea8204c3901a0c700c8ac4476b1fadac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "React 團隊發布了 React Conf 回顧文，正好趕上本周出刊🤗。文中介紹了所有演講與主要公告。我還沒全部看完，但目前個人亮點有："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "310e47b7",
+      "source_content": "- React 19 is in RC, and a stable release is expected in the next few weeks\n- The React Compiler is out and looks really powerful\n- Universal React Server Components are coming to Expo and the demo is really impressive\n- Remix and React Router are merging. Remix v3 will finally be React Router v7.\n- The Real-time React Server Components demo makes RSCs stateful and opens new possibilities that remind me of Phoenix LiveView\n- React now coordinates HTML tags, which is hugely underrated",
+      "source_content_hash": "584aa996c94bd660134b86b624232e545e70024bf5cd97821b53ce32a51d9693",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- React 19 已進入 RC 階段，穩定版預計數週內發布\n- React 編譯器正式推出且威力強大\n- 通用 React 伺服器元件(Universal RSC)將登陸 Expo，展示效果驚豔\n- Remix 與 React Router 正在合併，Remix v3 實質就是 React Router v7\n- 即時 React 伺服器元件演示讓 RSC 具狀態能力，開創類似 Phoenix LiveView 的新可能\n- React 現可協調 HTML 標籤，此功能重要性被嚴重低估"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "Again these are just my personal favorites. We already covered most React 19 features in the newsletter, and the [React 19 beta blog post](https://react.dev/blog/2024/04/25/react-19) remains the reference for discovering all the new features coming in the next major version.",
+      "source_content_hash": "5aba5d83a29f6d9f55814e442f38201edb5207256dfa4bff6f48816493de909b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "再次強調，這些只是我的個人偏好。我們已在本刊涵蓋多數 React 19 功能，而 [React 19 測試版公告文](https://react.dev/blog/2024/04/25/react-19)仍是了解下個主要版本所有新功能的權威參考。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "818747ba",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79ad944d",
+      "source_content": "[![React Compiler](/emails/issues/186/compiler.jpg)](https://react.dev/learn/react-compiler)",
+      "source_content_hash": "0f49eb37dd0baf28cf8bc487ee71382a08a25255377e3689507f1302269038b2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React 編譯器](/emails/issues/186/compiler.jpg)](https://react.dev/learn/react-compiler)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "**[The React Compiler is out](https://react.dev/learn/react-compiler)**",
+      "source_content_hash": "75f9f4243aaef6531624f107a7abff00c5ba6babbb19a445710f8a007cbeb95d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[React 編譯器正式推出](https://react.dev/learn/react-compiler)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "The compiler probably deserves its own section right. TLDR: the compiler optimizes your existing code automatically and gives you fine-grained reactivity using regular JS values. Try the [React Compiler Playground](https://playground.react.dev/#N4Igzg9grgTgxgUxALhAgHgBwjALgAgBMEAzAQygBsCSoA7OXASwjvwFkBPAQU0wAoAlPmAAdNvhgJcsNgB5CTAG4A+ABIJKlCPgDqOSoTkB6RaoDc4gL7iQVoA) to see how it works, and understand how it optimizes your code.",
+      "source_content_hash": "1665bf6e7b77bd79b7735eb9ed7f142466150f0d59916137e4e2de5c16de0f39",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "編譯器確實值得獨立專區說明。簡而言之：它能自動優化現有程式碼，並透過常規 JS 值實現細粒度響應式。試試 [React Compiler Playground](https://playground.react.dev/#N4Igzg9grgTgxgUxALhAgHgBwjALgAgBMEAzAQygBsCSoA7OXASwjvwFkBPAQU0wAoAlPmAAdNvhgJcsNgB5CTAG4A+ABIJKlCPgDqOSoTkB6RaoDc4gL7iQVoA)，了解其運作原理與程式碼優化方式。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f71ff2a",
+      "source_content": "It has been successfully rolled out on Instagram web with great results (2.5x faster interactions). It statically analyses your code, one file at a time, and memoizes what can safely be optimized, with even greater granularity than you could do by hand. If you follow the Rules of React, you shouldn’t need to rewrite any code. The ESLint plugin tells you about problematic code that the compiler detects. It does not play well with proxy-based solutions like MobX. Configuration options and opt-in/out directives enable you to try the compiler gradually on your codebase.",
+      "source_content_hash": "c23f23ec22ada6cd52ae5623b1f57a19d73801159919fbb3fd76e40b0d60a099",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "已在 Instagram 網頁版成功部署，成效顯著（互動速度提升 2.5 倍）。它逐文件靜態分析程式碼，以比手動操作更精細的粒度安全優化可記憶部分。若遵循 React 規則則無需改寫程式碼。ESLint 插件會標示編譯器偵測到的問題程式碼。不建議搭配代理方案如 MobX 使用。透過設定選項與啟用/停用指令，可逐步在程式庫中試用編譯器。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "The compiler is initially written in TypeScript and ships with Babel bindings, but don’t be disappointed because its logic is decoupled. Support for SWC should come next, and we’ll probably have a port in Rust a bit later (they already made a POC for that to ensure it’s feasible).",
+      "source_content_hash": "8d9abe18026b06b36f2bef1a345ce659739fe507d1ee6a87f52e243794e44726",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "編譯器初始版本以 TypeScript 開發並附帶 Babel 綁定，但其邏輯層已解耦故無需擔憂。下一步將支援 SWC，後續可能推出 Rust 移植版（可行性驗證已完成）。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "883231d4",
+      "source_content": "It is worth mentioning that the React team always had in mind to have a compiler for React (see [Andrew Clark’s thread](https://x.com/acdlite/status/1792710362745405911)). And this is only the beginning, they now have the infrastructure to build even more powerful things. I’m pretty sure sooner or later we won’t need anymore a dependency array, and that the compiler will be able to optimize fine-grained context consumption ([relevant tweet](https://x.com/TkDodo/status/1741193371283026422)).",
+      "source_content_hash": "c9b7d58e9f70c5f8db7bcb281d69e385c83540a494d15beae8369670a43d4cc5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "需強調 React 團隊始終規劃編譯器方案（參見 [Andrew Clark 貼文](https://x.com/acdlite/status/1792710362745405911)）。此為開端，現有基礎設施將支持更強大功能。我們遲早能擺脫依賴陣列，編譯器將優化細粒度上下文消耗（參見[相關推文](https://x.com/TkDodo/status/1741193371283026422)）。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "🔗 **Related resources worth checking:**",
+      "source_content_hash": "1890a3b93653fe2ecb480838c3807b2ac180e2bbf6b217cd6983dce34a3bd933",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🔗 **推薦延伸閱讀：**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6384b3d4",
+      "source_content": "- 📜 [React Compiler With React 18](https://jherr2020.medium.com/react-compiler-with-react-18-1e39f60ae71a): The compiler is not a React 19 feature. Jack shows a POC of using it under React 18 by providing a very simple compiler runtime hook. Lauren from the React Compiler team just confirmed it’s ok to do so and provided an [official polyfill](https://github.com/reactwg/react-compiler/discussions/6) that you can use temporarily, although it’s recommended to upgrade to React 19.\n- 🎥 [Jack Herrington - React Compiler: In-Depth Beyond React Conf 2024](https://www.youtube.com/watch?v=PYHBHK37xlE)\n- 🎥 [Theo - React Just Changed Forever](https://www.youtube.com/watch?v=DhfeXfF_W4w)\n- 🧵 [Theo - Clearing up some React Compiler misunderstandings](https://x.com/t3dotgg/status/1791177359896555600)",
+      "source_content_hash": "ac4ee1c2e1272fb56e68033850465b7f3cbaa7c94bd1b9f4661c9f365cb64c2a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📜 [React Compiler With React 18](https://jherr2020.medium.com/react-compiler-with-react-18-1e39f60ae71a)：編譯器非 React 19 專屬功能。Jack 展示透過簡單編譯器運行時鉤子在 React 18 下的實作驗證。React Compiler 團隊的 Lauren 確認此方式可行，並提供[官方 polyfill](https://github.com/reactwg/react-compiler/discussions/6) 暫用（仍建議升級至 React 19）。\n- 🎥 [Jack Herrington - React Compiler: In-Depth Beyond React Conf 2024](https://www.youtube.com/watch?v=PYHBHK37xlE)\n- 🎥 [Theo - React Just Changed Forever](https://www.youtube.com/watch?v=DhfeXfF_W4w)\n- 🧵 [Theo - Clearing up some React Compiler misunderstandings](https://x.com/t3dotgg/status/1791177359896555600)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ff0f46f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "[![Merging Remix and React Router](/emails/issues/186/remix.jpg)](https://remix.run/blog/merging-remix-and-react-router)",
+      "source_content_hash": "fe9e5f4a06c1e0f87948d7206f77d04891b5a6ec562c94ef9c7e78890b50c443",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![合併 Remix 與 React Router](/emails/issues/186/remix.jpg)](https://remix.run/blog/merging-remix-and-react-router)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "**[Merging Remix and React Router](https://remix.run/blog/merging-remix-and-react-router)**",
+      "source_content_hash": "2158f9884840c46a030df1421eea9bf311624e491417bd2de6c9c1c605bbe363",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[合併 Remix 與 React Router](https://remix.run/blog/merging-remix-and-react-router)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "This is another big announcement from React Conf. Remix and React Router have converged so much (thanks to the Vite plugin and SPA mode) that it doesn’t really make sense anymore to keep both. Technically, instead of shipping Remix v3, they plan to add an optional Vite plugin to React Router v7, which will remain retro-compatible, and also bring new features (RSC, server-actions, static pre-rendering…). See also the follow-up post [Incremental Path to React 19: React Conf Follow-Up](https://remix.run/blog/incremental-path-to-react-19).",
+      "source_content_hash": "2319bd7355568f5e528d93a15be314235e8bf6b66acef1d50ef96384a3433372",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "此為 React Conf 另一重大公告。Remix 與 React Router 因 Vite 插件和 SPA 模式高度趨同，已無需分開發行。技術上將以 React Router v7 取代 Remix v3，保留回溯相容性並新增功能（RSC、伺服器動作、靜態預渲染等）。另參閱後續文章[增量升級至 React 19：React Conf 跟進](https://remix.run/blog/incremental-path-to-react-19)。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c9716ede",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d0b8a6db",
+      "source_content": "- 💸 [Conversational AI and context-aware LLM chat with React](https://nlux.dev/?utm_source=twir-m24-2)\n- 📜 [React 19 lets you write impossible components](https://www.mux.com/blog/react-19-server-components-and-actions): A great article from Mux that adopted RSCs early, explaining that we only scratched the surface of the new patterns RSCs enable. The changelog pagination example is cool and shows that even libraries like React Query might become less useful.\n- 📜 [Introducing Pigment CSS: the next generation of CSS-in-JS](https://mui.com/blog/introducing-pigment-css/): the MUI team explains the motivations to create their own in-house CSS-in-JS solution, built on top of the WyW-in-JS toolkit, that should power MUI v6 later this year. It is compatible with RSCs. The adoption for MUI/Emotion/StyledComponent users should be easy.\n- 📜 [Digging for SSRF in NextJS apps](https://www.assetnote.io/resources/research/digging-for-ssrf-in-nextjs-apps): Security researchers explain blind Server Side Request Forgery vulnerabilities they found in Next.js related to the Image component and Server Actions implementations. Those vulnerabilities have been patched since Next.js 14.1.1 already (January 2024).\n- 📜 [Prefer Multiple Compositions](https://kyleshevlin.com/prefer-multiple-compositions/): If your component has a finite set of cases to handle, it will be more maintainable to have clear separate if/else branches for each cases rather than spreading conditionals everywhere in JSX.\n- 📜 [Prefer Noun-Adjective Naming](https://kyleshevlin.com/prefer-noun-adjective-naming/): I also prefer to name a component “ButtonPrimary” instead of “PrimaryButton”. Related things remain grouped alphabetically, and are easier to lookup in the IDE.\n- 📜 [Inline Styles on Steroids](https://weser.io/blog/inline-styles-on-steroids): With projects such as CSS Hooks, and the web platform planning to add support for inline style nesting, it’s only a matter of time until inline styles make a huge comeback. The author of Fela recreates the DX of a good CSS-in-JS library on top of CSS Hooks thanks to 2 new projects he’s working on.\n- 📜 [Quantifying the Impact of Styled Components on Server Response Times](https://blog.levineandrew.com/quantifying-the-impact-of-styled-components-on-server-response-times): Uses SpeedScope (more powerful than Chrome DevTools) to analyze a CPU trace and concludes that style injection takes 47% of SSR time.\n- 📜 [Storybook - Portable stories for Playwright Component Tests](https://storybook.js.org/blog/portable-stories-for-playwright-ct/): Although Storybook provides a play() function using a Playwright test runner, you might still want to use Playwright Component testing directly, and reuse your existing stories there.\n- 📜 [Deploying Remix to Cloudflare with SST](https://ruanmartinelli.com/blog/remix-sst-cloudflare): Using SST to deploy your app to a major cloud can be a nice alternative to DX platforms like Vercel/Netlify. TIL that it’s so simple to use, and it also supports deploying to Cloudflare.\n- 📦 [Restyle](https://reactstyle.vercel.app/): New CSS-in-JS library compatible with RSC that’s leveraging the brand-new style hoisting and deduplication feature of React 19. Those new React primitives were also designed with CSS-in-JS libs in mind, and it’s great to see the community already leveraging them. It’s also interesting for distributing CSS as part of a React library npm package.\n- 📦 [React Google Maps 1.0](https://mapsplatform.google.com/resources/blog/google-maps-platform-graduates-react-integration-library-to-1-0/): The official Google Maps library for React is now stable, maintained by the OpenJS Foundation.\n- 📦 [Million Lint 1.0-rc](https://million.dev/blog/lint-rc): IDE extension that automatically finds and fixes performance issues for you. Unlike the React compiler, it is based on runtime analysis and can detect additional performance problems that the compiler can’t. Both can be used in tandem.\n- 📦 [Zustand 5.0-beta - Upgrade guide available - drop deprecated features, upgrades React/TS](https://github.com/pmndrs/zustand/blob/v5/docs/guides/migrating-to-v5.mdx)\n- 📦 [Storybook 8.1 - tag filtering, typesafe mocking, beforeEach, portable stories API](https://github.com/storybookjs/storybook/releases/tag/v8.1.0)\n- 📦 [Storybook-Rsbuild - Storybook builder powered by Rsbuild](https://github.com/rspack-contrib/storybook-rsbuild)",
+      "source_content_hash": "c5168124dae66bc6e8e75e03e9ee0d26dd7cec0758b02c4198803e5777862d10",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_d0b8a6db"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "32dbde37",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_32dbde37"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0c6c4220",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ab39e8a7",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "[![Next.js auth tutorial with RSCs and Server Actions](/emails/issues/186/AuthKitNextjs.jpg)](https://www.youtube.com/watch?v=aoRG1q_kVo8)",
+      "source_content_hash": "b9a1f8c4dfc955504c7ed99ca88f7c639f76ed9f8904ff3f92bffef69194197a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Next.js 使用 RSC 和 Server Actions 的身份驗證教學](/emails/issues/186/AuthKitNextjs.jpg)](https://www.youtube.com/watch?v=aoRG1q_kVo8)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44aaa880",
+      "source_content": "**[Next.js auth tutorial with RSCs and Server Actions](https://www.youtube.com/watch?v=aoRG1q_kVo8)**",
+      "source_content_hash": "8516cfb9e4239ea47ad4a8cfd74efe8c3803e2c5d60a34f27b2165a3efe63c74",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[Next.js 使用 RSC 和 Server Actions 的身份驗證教學](https://www.youtube.com/watch?v=aoRG1q_kVo8)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "396efb28",
+      "source_content": "The latest tutorial with WorkOS and Sam Selikoff shows how you can easily add AuthKit's hosted login box to a Next.js app:",
+      "source_content_hash": "19515a91b38ffb6e00d075291b03db7e9bd8c665e03aab2171ef25b829f43cb2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "由 WorkOS 和 Sam Selikoff 帶來的最新教學，展示了如何輕鬆地將 AuthKit 託管的登入框加入 Next.js 應用程式："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "558df877",
+      "source_content": "📚 Get started using the Authkit \\<> Next.js [integration library](https://github.com/workos/authkit-nextjs)  \n🤖 Set up environment variables, configure the callback route and middleware, and implement signIn and signOut functionalities  \n⚙️ Protect routes in the Next.js app from unauthenticated users with the getUser function",
+      "source_content_hash": "3c7d82114f0d247d9c0e3ef2756564028a6b160d593551b305099af56f8c970f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {
+        "zh-hant": {
+          "translation": "📚 使用 AuthKit <> Next.js [整合函式庫](https://github.com/workos/authkit-nextjs) 開始  \n🤖 設定環境變數、配置回調路由和中間件，並實作登入和登出功能  \n⚙️ 使用 getUser 函式保護 Next.js 應用程式中的路由，防止未經授權的使用者存取",
+          "reason": "Parsing failed: Expected a closing tag for `<>` (1:15-1:17) before the end of `paragraph`",
+          "timestamp": "2025-06-23T14:12:39.453348+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "5f82a1e9",
+      "source_content": "AuthKit can be used with WorkOS User Management, which supports MFA, identity linking, email verification, user impersonation, and more.",
+      "source_content_hash": "0adfa6ff75ed44a0b04ee10f909a70d2e97a0fe9a0ab9cb1a29a8db4277f2e58",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "AuthKit 可與 WorkOS 使用者管理功能一起使用，該功能支援多因素驗證（MFA）、身份連結、電子郵件驗證、使用者模擬等。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6fc234cf",
+      "source_content": "Best of all, it's **free up to 1,000,000 MAUs 🚀**",
+      "source_content_hash": "f9dfa9abad3d07a70293d049c6a21e6658744e0b86e49b56486b9566e398bc22",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "最棒的是，它**免費提供高達 1,000,000 的月活躍使用者（MAU）🚀**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "47cd8dd6",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "692c6053",
+      "source_content": "This section is authored by [Benedikt](https://twitter.com/bndkt).",
+      "source_content_hash": "0aff28d995823a706b5e2556e3ef90d67c8595d7a00290f1a597b94b15e10b1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本節由 [Benedikt](https://twitter.com/bndkt) 撰寫。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "383fbdd2",
+      "source_content": "![](/emails/issues/186/ursc.jpg)",
+      "source_content_hash": "9d4239272bd3ecc66c00227599c9a60c03202c48c251fdb820a997d28242afe2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "![](/emails/issues/186/ursc.jpg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "14bc6b75",
+      "source_content": "React Conf is officially behind us, and I hope you had a chance to look at the recordings of the awesome presentations on YouTube. My biggest meta-takeaway was just how much RN content there was in the conference! As RN is very much developed out in the open and in collaboration with the whole community, there were no surprising “big announcements,” but it was a very good summary of the current state of RN and an outlook on the road ahead. The most impressive and inspiring part for me was Evan Bacon’s vision for Universal React Server Components, which he presented using an absolute killer demo that I’m urging you to [watch for yourself](https://www.youtube.com/watch?v=T8TZQ6k4SLE&t=20765s). I’ve put my main takeaways into some bullet points for you:",
+      "source_content_hash": "1673dd4c82722f1568de7b1e3b1754c597ccdd79687773b38902777a6b604917",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "React Conf 已正式結束，希望您有機會觀看 YouTube 上那些精彩的演講錄影。我最大的後設收穫是會議中竟然有如此多的 React Native 內容！由於 React Native 的開發非常公開且與整個社群合作，因此沒有令人驚訝的「重大發布」，但它很好地總結了 React Native 的現狀以及未來的發展方向。對我來說最令人印象深刻且鼓舞人心的部分是 Evan Bacon 對通用 React 伺服器元件（Universal React Server Components）的願景，他使用了一個絕對震撼的演示來展示，我強烈建議您[親自觀看](https://www.youtube.com/watch?v=T8TZQ6k4SLE&t=20765s)。我已將我的主要收穫整理成以下幾點："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "292df6cb",
+      "source_content": "- RN is thriving: Over 2M weekly downloads of RN now, 30 shipped versions of RN in 2024 so far\n- The new Architecture is now in Beta\n- Expo is now officially recommended for all new apps\n- New reactnative.dev landing page launched\n- React Conf app is open source\n- Expo’s vision for Universal RSC",
+      "source_content_hash": "321c146bb2910ad9cc5c9dbb135872d96982c15f9d021c2ea9e3f8d6318507a7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- React Native 蓬勃發展：目前每週下載量超過 200 萬次，2024 年至今已發布 30 個版本\n- 新架構現已進入 Beta 階段\n- Expo 現已被官方推薦用於所有新應用程式\n- 新的 reactnative.dev 登陸頁面已發布\n- React Conf 應用程式已開源\n- Expo 對通用 RSC 的願景"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "294e85af",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "739843fe",
+      "source_content": "- 💸 [PowerSync - Supabase \\<> SQLite sync layer: follow our step-by-step video integration guide.](https://docs.powersync.com/integration-guides/supabase-+-powersync?utm_source=newsletter&utm_medium=sponsorship&utm_campaign=this-week-in-react)\n- 👀 [New React Native landing page](https://reactnative.dev/)\n- 🐦 [New resources to get started with React Native and Expo](https://x.com/jonsamp/status/1791164393893609705): New landing page, new \"Getting Started\" docs, new Expo dev environment setup docs\n- 🐦 [Interesting discussion on Apple's stance on server-driven UI in iOS apps](https://x.com/sregg/status/1791784335999160783): Will Universal RSC be a challenge in Apple’s App Store approval process?\n- 🐦 [Potential ways to decrease Android bundle size](https://x.com/mironcatalin/status/1792485000559935571): Two settings can significantly decrease bundle size, but - as always - this comes with trade-offs.\n- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - Portland, OR - July 17-19. The U.S. React Native Conference is back with engaging talks and hands-on workshops! Get 15% off your ticket with code “TWIR”\n- 📜 [Debunk ideas on cross-platform framework](https://www.bam.tech/article/debunk-ideas-on-cross-platform-framework): Performance, Security, Accessibility, Stability, App Store acceptance, Native Features - all of these are sometimes mistakenly doubted when it comes to cross-platform apps.\n- 📜 [Breaking down react-native-video 6.0.0 stable release - enhancements and comparisons](https://www.thewidlarzgroup.com/blog/breaking-down-react-native-video-6-0-0-stable-release-enhancements-and-comparisons)\n- 📜 [Creating Custom Fonts with React-Native-Skia](https://gitstashapply.medium.com/creating-custom-fonts-with-react-native-skia-4851d8b14ddd)\n- 📦 [Bootsplash v6 beta - Expo plugin, simpler setup](https://github.com/zoontek/react-native-bootsplash/pull/578): The React Conf app used it for splash screen!\n- 📦 [React Conf app open-sourced](https://github.com/expo/react-conf-app): Already uses React Compiler ([Tweet](https://x.com/kadikraman/status/1791155001882275989))\n- 🎙️ [RNR 297 - Jumping over the React Native v0.74 Bridge](https://reactnativeradio.com/episodes/rnr-297-jumping-over-the-react-native-v074-bridge)\n- 🎥 [Supercharging your React Native app for Windows](https://www.youtube.com/watch?v=4sbAvwukSWM): React Native session at MS Build 2024",
+      "source_content_hash": "4e46b77a866af26af23f95aee752f6464ad9151e8a63ee7440e62f86a3f8cb06",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {
+        "zh-hant": {
+          "translation": "- 💸 [PowerSync - Supabase <> SQLite 同步層：跟著我們的逐步影片整合指南操作。](https://docs.powersync.com/integration-guides/supabase-+-powersync?utm_source=newsletter&utm_medium=sponsorship&utm_campaign=this-week-in-react)\n- 👀 [全新 React Native 首頁](https://reactnative.dev/)\n- 🐦 [React Native 與 Expo 入門新資源](https://x.com/jonsamp/status/1791164393893609705)：新首頁、新版「Getting Started」文件、新版 Expo 開發環境設定文件\n- 🐦 [Apple 對 iOS 應用中伺服器驅動 UI 立場的討論](https://x.com/sregg/status/1791784335999160783)：Universal RSC 會成為 Apple App Store 審核流程的挑戰嗎？\n- 🐦 [減少 Android 套件大小的潛在方法](https://x.com/mironcatalin/status/1792485000559935571)：兩項設定可顯著縮減套件大小，但需權衡取捨\n- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - 奧勒岡州波特蘭 - 7 月 17-19 日。美國 React Native 大會回歸，含深度演講與實作工作坊！輸入代碼「TWIR」享 15% 門票折扣\n- 📜 [破除跨平台框架的迷思](https://www.bam.tech/article/debunk-ideas-on-cross-platform-framework)：效能、安全性、無障礙性、穩定性、App Store 接受度與原生功能常被誤解\n- 📜 [react-native-video 6.0.0 穩定版解析：功能增強與比較](https://www.thewidlarzgroup.com/blog/breaking-down-react-native-video-6-0-0-stable-release-enhancements-and-comparisons)\n- 📜 [使用 React-Native-Skia 建立自訂字型](https://gitstashapply.medium.com/creating-custom-fonts-with-react-native-skia-4851d8b14ddd)\n- 📦 [Bootsplash v6 beta - Expo 插件，簡化設定流程](https://github.com/zoontek/react-native-bootsplash/pull/578)：React Conf 應用程式採用此啟動畫面方案！\n- 📦 [React Conf 應用程式開源](https://github.com/expo/react-conf-app)：已採用 React Compiler（[推文](https://x.com/kadikraman/status/1791155001882275989)）\n- 🎙️ [RNR 297 - 跨越 React Native v0.74 橋接層](https://reactnativeradio.com/episodes/rnr-297-jumping-over-the-react-native-v074-bridge)\n- 🎥 [強化 React Native 應用程式的 Windows 效能](https://www.youtube.com/watch?v=4sbAvwukSWM)：微軟 Build 2024 的 React Native 議程",
+          "reason": "Parsing failed: Expected a closing tag for `<>` (1:28-1:30) before the end of `link`",
+          "timestamp": "2025-06-23T14:12:39.453400+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "57180eb4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f6a06609",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5df815de",
+      "source_content": "- 📜 [What's new in the web - 12 newly available Baseline features](https://web.dev/blog/new-in-the-web-io2024)\n- 📜 [What's new in JavaScript Frameworks (May 2024)](https://developer.chrome.com/blog/frameworks-may-2024)\n- 📜 [Portable Server Rendered Web Components with Enhance SSR](https://begin.com/blog/posts/2024-05-03-portable-ssr-components)\n- 📜 [ECMAScript 2023 feature: Symbols as WeakMap keys](https://2ality.com/2024/05/proposal-symbols-as-weakmap-keys.html)\n- 📦 [SolidStart 1.0 - The Shape of Frameworks to Come](https://www.solidjs.com/blog/solid-start-the-shape-frameworks-to-come)\n- 📦 [Graphql-query - 8.7x faster GraphQL query parser written in Rust](https://stellate.co/blog/graphql-query-parsing-8x-faster-with-rust)\n- 📦 [Node 22.2](https://nodejs.org/en/blog/release/v22.2.0)",
+      "source_content_hash": "9d230f7b60009f1f21543ad0841adac32d00dacd18ddf87c2ff715238aab5225",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📜 [網頁新動態 - 12 項新 Baseline 功能](https://web.dev/blog/new-in-the-web-io2024)\n- 📜 [JavaScript 框架新趨勢（2024 年 5 月）](https://developer.chrome.com/blog/frameworks-may-2024)\n- 📜 [透過 Enhance SSR 實現可移植的伺服器渲染 Web Components](https://begin.com/blog/posts/2024-05-03-portable-ssr-components)\n- 📜 [ECMAScript 2023 功能：Symbols 作為 WeakMap 鍵值](https://2ality.com/2024/05/proposal-symbols-as-weakmap-keys.html)\n- 📦 [SolidStart 1.0 - 未來框架雛形](https://www.solidjs.com/blog/solid-start-the-shape-frameworks-to-come)\n- 📦 [Graphql-query - 基於 Rust 的 8.7 倍速 GraphQL 查詢解析器](https://stellate.co/blog/graphql-query-parsing-8x-faster-with-rust)\n- 📦 [Node 22.2](https://nodejs.org/en/blog/release/v22.2.0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f28724b0",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "67edbbc4",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣聞 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "61a78cbe",
+      "source_content": "[![alt](/emails/issues/186/meme.jpg)](https://x.com/rauchg/status/1791163745307328650)",
+      "source_content_hash": "492baec24ebb86d9f12c6ecd37b441e18606f320d697b264dd4efc25c2c928f6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/186/meme.jpg)](https://x.com/rauchg/status/1791163745307328650)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39c48ff7",
+      "source_content": "[![alt](/emails/issues/186/meme2.jpg)](https://x.com/sebastienlorber/status/1790796662153117863)",
+      "source_content_hash": "c1fe5074de58b6a8fef342cad1dadc1732744b593627d0a0d62c567381bcc945",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![替代文字](/emails/issues/186/meme2.jpg)](https://x.com/sebastienlorber/status/1790796662153117863)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e29bd639",
+      "source_content": "(Ok that React Compiler one is not technically accurate, but still fun 😇 sorry Compiler team)",
+      "source_content_hash": "9afdf71bbc2640c28da5b9ddb6a85e8bc7bae085c9d3578ea1e3e9af3ce412cb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "（好吧，React Compiler 那個迷因在技術上並不準確，但還是很有趣 😇 對不起 Compiler 團隊）"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e5821418",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "再見！ 👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/186/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:39.453438+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "838ea136f4360b668f5bfd60e66c9364e513fc717010ec035ab150b09a8dc7df"
+  }
+}

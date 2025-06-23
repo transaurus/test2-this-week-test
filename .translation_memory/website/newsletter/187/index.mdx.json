@@ -1,0 +1,566 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/187/index.mdx",
+  "source_file_content_hash": "5911980549fde06255bb55ec55361ccafb1244dc80620d98d403dd2f30d5cda8",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /187\ntitle: \"This Week In React #187: Next.js, Expo, Popover, rethrow, SWR, React-Query, Astro, PPR, tRPC, zsa, Memory leaks, INP, RN IDE, Skia, WebGPU, RNSC, Atlas, Re.Pack, Prisma, SwiftUI, Flutter, Angular...\"\nauthors: [slorber, bndkt]\ndate: 05-29-2024\n---",
+      "source_content_hash": "789d8d085b77fce2ffc0b645a4902d59da27faec3fbed765d24fa419adef325e",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Last week we got great announcements from Vercel Ship and App.js conferences.",
+      "source_content_hash": "5fa710e2cf99382463b137e8eec757d5d6b2b3dd37e5555b0990b0480f23af1d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "上週我們從 Vercel Ship 和 App.js 會議獲得了重大消息。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "I also found the community blog posts very interesting this week! There's a lot of good content to read here. The one about memory leak is quite scary 😅.",
+      "source_content_hash": "b9688d495c0733eb5bb23b9a416bd677224015853f7cbd7f1856133efd38a200",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週的社群部落格文章也相當精彩！這裡有許多優質內容值得閱讀，關於記憶體洩漏的那篇尤其令人心驚 😅。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "I have been wondering lately: is it still useful to write a [Twitter thread](https://slo.im/thread)? I've [asked the question on Twitter](https://x.com/sebastienlorber/status/1795377678918554072) and feel like nobody reads it anymore, apart a few people. I'm considering stopping. What do you think? 🤔",
+      "source_content_hash": "074630988e54c749905d742e0dfa1dab6580851c09513c6116bb60a4bf693abd",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我最近一直在思考：撰寫 [Twitter 討論串](https://slo.im/thread)還有價值嗎？我[在 Twitter 上提問](https://x.com/sebastienlorber/status/1795377678918554072)後，感覺幾乎沒人閱讀了，只有少數人會看。我考慮停止發布了。你怎麼看？🤔"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**💡 [在 Twitter 查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_fcd52337"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_42e34e45"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![React-admin: The Open-Source Framework for B2B apps](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)",
+      "source_content_hash": "d5cec28489d305898e6708c3f03590161bc0590d1998cb09d20d6166251ff225",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React-admin：開源 B2B 應用框架](/emails/issues/187/reactadmin.jpg)](https://marmelab.com/react-admin/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[React-admin: The Open-Source Framework for B2B apps](https://marmelab.com/react-admin/)**",
+      "source_content_hash": "134eba9a0d54cccd0c26001e8ef40db0ca57b4aed3b5964db5fa48be482c2b51",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[React-admin：開源 B2B 應用框架](https://marmelab.com/react-admin/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "👩🏻‍💻 **For developers, by developers**: React-admin is a free, low-code library that accelerates the development of internal tools, admins or B2B apps. Unlike no-code tools, you use code, ensuring you’re never limited by the framework.",
+      "source_content_hash": "a05239d03a07c1b3679f8a524c98dbae83cfd7b6b2992c012c54b70eb59597ff",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "👩🏻‍💻 **開發者為開發者打造**：React-admin 是免費的輕量程式碼庫，能加速內部工具、管理系統或 B2B 應用的開發。與無代碼工具不同，您使用程式碼開發，確保不受框架限制。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "🔌 **Flexible Integration**: React-admin supports any API format (REST or GraphQL) and various authentication backends, including Auth0, Cognito, Google Auth, Active Directory, and Keycloak. You control the server, so there are no extra costs for Single Sign-On (SSO) capabilities. It's fully themeable, allowing you to customize it with your company's colors.",
+      "source_content_hash": "af55e13175397b9c5d7969ae2b68e9180995c471a08725ae289c8d87edff16bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🔌 **靈活整合**：React-admin 支援任何 API 格式（REST 或 GraphQL）及多種認證後端，包含 Auth0、Cognito、Google Auth、Active Directory 和 Keycloak。您完全掌控伺服器，因此單一登入（SSO）功能無需額外費用。完全可主題化，可依企業品牌色彩自訂。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "🚀 **Proven Success**: Over 25,000 companies have built single-page applications with React-admin. For your next project, save weeks of development time by using react-admin. [Try react-admin now](https://marmelab.com/react-admin/).",
+      "source_content_hash": "bd9723d9e7ea85f27f3318cb9a48d22c9577c717e8bbb3c4a9d1d8f0a995f1bc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🚀 **實證成功**：超過 25,000 間企業使用 React-admin 建構單頁應用。在您的下個專案中，使用 react-admin 可節省數週開發時間。[立即試用 react-admin](https://marmelab.com/react-admin/)。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5ef5fda3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "[![Next.js 15 RC](/emails/issues/187/nextjs.jpg)](https://nextjs.org/blog/next-15-rc)",
+      "source_content_hash": "39aaf035b2c56a663b442e1daca6174c3b823b2648699701657fe1d585368496",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Next.js 15 RC](/emails/issues/187/nextjs.jpg)](https://nextjs.org/blog/next-15-rc)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "**[Next.js 15 RC](https://nextjs.org/blog/next-15-rc)**",
+      "source_content_hash": "1426a4ea7b68cbf2dc2a4305d998902a6dcadf7336e1dc0f364c99cc64dd7c6b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[Next.js 15 RC](https://nextjs.org/blog/next-15-rc)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "A new major version of Next.js dropped in RC at Vercel Ship last week. The highlights of this version are:",
+      "source_content_hash": "c4497c189d87e5bb67702c4cfda158bfe8591b753ad6e63159c3204a95d59f15",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Next.js 新主要版本已於上週 Vercel Ship 發布 RC 版。本版重點包括："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40251870",
+      "source_content": "- React 19 RC support\n- React Compiler support (experimental) through the Babel plugin (this might increase build time)\n- Hydration error improvements, displaying the diff mismatch\n- Less aggressive caching, now opt-in: `fetch` and Route Handlers are no longer cached by default\n- Incrementally adopt Partial Prerendering with a new `experimental_ppr` route config option\n- New `create-next-app` design, prompting for Turbo usage in dev, and ability to create projects\n- next/after (experimental), a new API useful to defer analytics tasks and keep responses fast\n- Optimizing bundling of external packages (`serverExternalPackages`) now stable",
+      "source_content_hash": "6fa0a33708e36c7b1f17c26d436728f268b78b5ed1505fb2f263297f1fc5476d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- React 19 RC 支援\n- React Compiler 支援（實驗性），透過 Babel 插件實現（可能增加建置時間）\n- 水合錯誤改進，顯示差異不匹配\n- 較不積極的快取機制，現改為選用：預設不再快取 `fetch` 和路由處理程序\n- 增量採用部分預渲染（Partial Prerendering），新增 `experimental_ppr` 路由配置選項\n- 新版 `create-next-app` 設計，開發環境提示使用 Turbo，並支援建立專案\n- next/after（實驗性），用於延遲分析任務以保持響應速度的新 API\n- 外部套件打包優化（`serverExternalPackages`）現已穩定"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "Other interesting things were announced at Vercel Ship. Additional resources to look at:",
+      "source_content_hash": "ec3eecf0303199f0ce8a0d01c1d8bdbe956401dd7237ab09ae574619cd70d3a6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Vercel Ship 還宣布了其他重要消息。延伸參考資源："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3df4f066",
+      "source_content": "- 📜 [Vercel Ship 2024 recap](https://vercel.com/blog/vercel-ship-2024)\n- 📜 [Introducing deeper integrations for feature flags in Vercel](https://vercel.com/blog/feature-flags)\n- 📜 [Introducing the Vercel Web Application Firewall](https://vercel.com/blog/introducing-the-vercel-waf)\n- 🎥 [Jack Herrington - NextJS 15: React 19, Less Caching, Turbopack, Better Hydration Errors and more from Vercel Ship!](https://www.youtube.com/watch?v=N2LzvfM2R5M)",
+      "source_content_hash": "2b2b1ecc113fcfdfbe866335b30fbf129d323a41191f3b7c5f08dd975cc0eff5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📜 [Vercel Ship 2024 重點回顧](https://vercel.com/blog/vercel-ship-2024)\n- 📜 [Vercel 功能旗標深度整合介紹](https://vercel.com/blog/feature-flags)\n- 📜 [Vercel Web 應用防火牆正式推出](https://vercel.com/blog/introducing-the-vercel-waf)\n- 🎥 [Jack Herrington - NextJS 15：React 19、快取減少、Turbopack、更佳水合錯誤與 Vercel Ship 更多內容！](https://www.youtube.com/watch?v=N2LzvfM2R5M)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e874d9e7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "645e08e3",
+      "source_content": "- 💸 [Build AI apps with React and JavaScript — Frontend and UI for any LLM](https://docs.nlkit.com/nlux/?utm_source=twir-my24-3)\n- 👀 [React Core PR - Throw if React and React DOM versions don't match](https://github.com/facebook/react/pull/29236): React 19 will be stricter and require that the renderer version (DOM or RN) uses the exact same version as the core React package.\n- 👀 [React DOM PR - Add support for Popover API](https://github.com/facebook/react/pull/27981): This new API is now available in all major browsers, and React just merged support for it.\n- 👀 [Next.js PR - `unstable_rethrow`](https://github.com/vercel/next.js/pull/65831): Upcoming Next.js API to avoid catching internal errors thrown by Next.js (such as redirect/notFound errors).\n- 🐦 [Latest SWR beta can seamlessly move data fetching between client-side and server-side](https://x.com/shuding_/status/1794461568505352693). And [React-Query](https://x.com/TkDodo/status/1794801851671695533) + [Apollo Client](https://x.com/phry/status/1795777518944784450) also implemented similar features.\n- 🗓 [React Rally](https://reactrally.com/?utm_source=thisweekinreact) - 🇺🇸 Utah - 12-13, August - Get a 10% discount with code \"TWIR\". There’s an advanced React [workshop](https://reactrally.com/workshop) with Cory House.\n- 📜 [Sneaky React Memory Leaks: How useCallback and closures can bite you](https://schiener.io/2024-03-03/react-closures): A great article simplifying a real production app memory leak to explain it. This surprised me, I couldn’t guess such React code would leak memory, and pretty sure my apps contain memory leaks now 😅. Good news though: the app wouldn't leak memory when using the new React Compiler.\n- 📜 [Automatic Query Invalidation after Mutations](https://tkdodo.eu/blog/automatic-query-invalidation-after-mutations): React Query is un-opinionated about how you invalidate cached resources and instead lets you implement a custom strategy on top of flexible primitives. For example, you can invalidate queries by tags.\n- 📜 [Migrating from Radix to React Aria: Improving Accessibility and UX](https://argos-ci.com/blog/react-aria-migration): After having used alternatives such as Reakit or Radix, Greg gives good reasons for adopting React Aria. The migration feedback is positive, but some challenges were encountered. React Aria is quite “strict” at ensuring your components remain accessible.\n- 📜 [On Laravel, Full-Stack JavaScript, and Productive Frameworks](https://www.jplhomer.org/posts/on-laravel-full-stack-javascript-and-productive-frameworks/): Josh created 2 React meta-frameworks (including Shopify Hydrogen) and also uses Laravel extensively. He shares an interesting perspective on the pros/cons of the Laravel vs React ecosystem.\n- 📜 [A virtual DOM in 200 lines of JavaScript](https://lazamar.github.io/virtual-dom/): This greatly explains how a virtual DOM (like the one from React) works under the hood, by creating a small library that can run a TodoMVC app.\n- 📜 [Design System Retrospective](https://kyleshevlin.com/design-system-retrospective/): Interesting perspective on the successfulness of implementing a Chakra-like design system (tokens as props). The average dev struggled to understand how to compose primitives. Tailwind might be a better fit for them.\n- 📜 [Combining React Server Components with react-query for Easy Data Management](https://frontendmasters.com/blog/combining-react-server-components-with-react-query-for-easy-data-management/): A good read explaining limits RSCs. Server Actions run serially, and you need to wait for RSCs to re-render which might be slow without proper caching. Using React-Query with prefetching might slightly increase bundle size and produce more roundtrips, but overall that could give a faster UX.\n- 📜 [Using Server Actions with tRPC](https://trpc.io/blog/trpc-actions): Server Actions are similar to tRPC but come barebone. tRPC maintainer explains things that tRPC enables on top, such as auth, input validation, observability, rate-limiting, and other possible middleware. Note there are alternatives to consider such as next-server-action and zsa.\n- 📜 [Optimizing INP for a React App & Performance Learnings](https://www.iamtk.co/optimizing-inp-for-a-react-app-and-performance-learnings): A long feedback on optimizing responsiveness on a React 18 prod app. Various takeaways include deferring work and analytics, or being careful of useless re-renders.\n- 📜 [Partial Prerendering without a framework](https://developers.netlify.com/guides/partial-prerendering-without-a-framework/): Demo from Netlify CEO shows how to implement “vanilla PPR” (without Next.js which has this as an experimental feature).\n- 📜 [Behind the ‘as’ prop: polymorphism done well](https://www.kripod.dev/blog/behind-the-as-prop-polymorphism-done-well/): Also explains how to type it properly.\n- 📜 [Redwood - Using Middleware: RSS and Sitemap](https://redwoodjs.com/blog/using-middleware-rss-and-sitemap)\n- 📜 [Structured logging for Next.js - Using the Pino logging library](https://blog.arcjet.com/structured-logging-in-json-for-next-js/)\n- 📜 [Facebook just updated its relationship status with web components](https://www.mux.com/blog/facebook-just-updated-it-s-relationship-status-with-web-components)\n- 📜 [Authentication with WorkOS in Next.js: A Comprehensive Guide](https://www.nirtamir.com/articles/authentication-with-workos-in-next-js-a-comprehensive-guide)\n- 📜 [The Next.js \\<Image> Component](https://www.premieroctet.com/blog/en/next-image-component)\n- 📜 [How To Dockerize A React App](https://scientyficworld.org/how-to-dockerize-a-react-app/)\n- 📦 [Astro 4.9 - React 19 support for Astro Actions](https://astro.build/blog/astro-490/): Adds new withState/getActionState APIs to integrate Astro with React 19 useActionState, including progressive enhancement.\n- 📦 [Storybook 8.1 - typesafe mocking, Unit testing React Server Components](https://storybook.js.org/blog/storybook-8-1/)\n- 📦 [NextUI 2.4](https://nextui.org/blog/v2.4.0)\n- 📦 [Ark UI 3.0](https://ark-ui.com/react/docs/overview/changelog#300---2024-05-24)\n- 📦 [React-Query 5.39 - Supports React 19](https://github.com/TanStack/query/releases/tag/v5.39.0)\n- 📦 [Redwood 7.6 - React Compiler experimental flag](https://github.com/redwoodjs/redwood/releases/tag/v7.6.0)\n- 📦 [zsa 0.1 - Typesafe Server Actions for Next.js](http://next.js)\n- 📦 [React-Executor - Asynchronous task execution and state management for React](https://github.com/smikhalevski/react-executor)\n- 🎥 [UI Engineering - Portals Can Share State Between Windows](https://www.youtube.com/watch?v=jZx33FPMXzc): It's a pretty cool idea to use React portals to integrate seamlessly between windows and might also be useful for the upcoming browser Picture-in-Picture API.\n- 🎥 [Theo - I Was Wrong About React Router.](https://www.youtube.com/watch?v=m86HssTKExU)\n- 🎥 [James Quick - Astro Launches Actions Similar like Next.js](https://www.youtube.com/watch?v=8mIUIhp2YGQ)",
+      "source_content_hash": "8a5b1402a1d5bebe434d5a0319884b449f1c1860489f667bb094912fc9990706",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_645e08e3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "de88dabe",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_de88dabe"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9ae42a9",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42a5832e",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "[![Next.js auth tutorial with RSCs and Server Actions](/emails/issues/186/AuthKitNextjs.jpg)](https://www.youtube.com/watch?v=aoRG1q_kVo8)",
+      "source_content_hash": "b9a1f8c4dfc955504c7ed99ca88f7c639f76ed9f8904ff3f92bffef69194197a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![使用 RSC 和伺服器動作的 Next.js 身份驗證教學](/emails/issues/186/AuthKitNextjs.jpg)](https://www.youtube.com/watch?v=aoRG1q_kVo8)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7bc8bb24",
+      "source_content": "**[Next.js auth tutorial with RSCs and Server Actions](https://www.youtube.com/watch?v=aoRG1q_kVo8)**",
+      "source_content_hash": "8516cfb9e4239ea47ad4a8cfd74efe8c3803e2c5d60a34f27b2165a3efe63c74",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[使用 RSC 和伺服器動作的 Next.js 身份驗證教學](https://www.youtube.com/watch?v=aoRG1q_kVo8)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6693c38c",
+      "source_content": "The latest tutorial with WorkOS and Sam Selikoff shows how you can easily add AuthKit's hosted login box to a Next.js app:",
+      "source_content_hash": "19515a91b38ffb6e00d075291b03db7e9bd8c665e03aab2171ef25b829f43cb2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "WorkOS 與 Sam Selikoff 的最新教學示範如何輕鬆將 AuthKit 託管登入框整合至 Next.js 應用："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "📚 Get started using the Authkit \\<> Next.js [integration library](https://github.com/workos/authkit-nextjs)  \n🤖 Set up environment variables, configure the callback route and middleware, and implement signIn and signOut functionalities  \n⚙️ Protect routes in the Next.js app from unauthenticated users with the getUser function",
+      "source_content_hash": "fbad362fbd4c436e82c1e94edad9aab726db69fd16fee1a76a614a6dce23a277",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {},
+      "invalid_translations": {
+        "zh-hant": {
+          "translation": "📚 透過 AuthKit <> Next.js [整合函式庫](https://github.com/workos/authkit-nextjs) 開始使用  \n🤖 設定環境變數、配置回呼路由與中介層，並實作登入與登出功能  \n⚙️ 使用 getUser 函式保護 Next.js 應用路由免受未驗證使用者存取",
+          "reason": "Parsing failed: Expected a closing tag for `<>` (1:15-1:17) before the end of `paragraph`",
+          "timestamp": "2025-06-23T14:12:39.450535+00:00"
+        }
+      }
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "AuthKit can be used with WorkOS User Management, which supports MFA, identity linking, email verification, user impersonation, and more.",
+      "source_content_hash": "0adfa6ff75ed44a0b04ee10f909a70d2e97a0fe9a0ab9cb1a29a8db4277f2e58",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "AuthKit 可搭配 WorkOS 使用者管理系統使用，支援多因素驗證 (MFA)、身份連結、郵件驗證、使用者模擬等功能。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8610918",
+      "source_content": "Best of all, it's **free up to 1,000,000 MAUs 🚀**",
+      "source_content_hash": "f9dfa9abad3d07a70293d049c6a21e6658744e0b86e49b56486b9566e398bc22",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "最棒的是，**每月活躍使用者 (MAU) 100 萬以下完全免費 🚀**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "862bb4be",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ed644f52",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b9331170",
+      "source_content": "This section is authored by [Benedikt](https://twitter.com/bndkt).",
+      "source_content_hash": "0aff28d995823a706b5e2556e3ef90d67c8595d7a00290f1a597b94b15e10b1f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本節由 [Benedikt](https://twitter.com/bndkt) 撰寫。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8fcdd6d4",
+      "source_content": "![screenshot of 4 App.js slides](/emails/issues/187/rn.jpg)",
+      "source_content_hash": "f63b5e3cc2594f222edb4c4acb170548c93458553a84e7dcf49b199530e95c95",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "![4 張 App.js 簡報的螢幕截圖](/emails/issues/187/rn.jpg)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "53aa2b95",
+      "source_content": "The dry season of everyone saving their announcements for upcoming conferences is over, with last week’s App.js Conf dropping another bucket of amazing content and exciting announcements on us! Expo announced the aptly named Atlas, which acts as a map to explore the wilderness of Bundler land. If you ever wanted to understand how code goes in and comes out of your app, this is the tool for it. It’s especially useful to reduce bundle size, but also just to get a better understanding of how your app works. In the ORM space, Drizzle launched their Studio as an Expo dev tools plugin and Prisma announced that they’ll be adding React Native support. The React Native IDE is now in open beta and you can download it in the VS Code extension marketplace and finally, William Candillon announced video support coming to RN Skia, as well as WebGPU in React Native! Of course, we remain super excited by Universal React Server Components that we already mentioned last week. Make sure to catch up and watch the [App.js Conf Live stream](http://app.js).",
+      "source_content_hash": "671e0e48522500e135071ca1cd2c8faa155332976dfab5d3e9128c67eab39a40",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "開發者為會議保留重大公告的乾旱期已結束！上週 App.js Conf 帶來大量精彩內容與振奮消息：Expo 推出命名貼切的 Atlas，作為探索打包工具領域的導航圖。若您曾想理解程式碼如何進出應用程式，此工具正為此而生。它不僅能有效縮減套件大小，更能深化對應用運作的理解。ORM 領域中，Drizzle 發布 Expo 開發工具外掛的 Studio，Prisma 則宣布將新增 React Native 支援。React Native IDE 現已開放測試版，可於 VS Code 擴充市集下載。最後，William Candillon 宣布 RN Skia 即將支援影片處理及 WebGPU！當然，我們對上週提及的通用 React 伺服器元件仍深感振奮。別錯過 [App.js Conf 直播](http://app.js) 精彩內容。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf542fb4",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6409152f",
+      "source_content": "- 💸 [WithFrame - Pre-Built React Native Components](https://withfra.me/components?utm_source=thisweekinreact&utm_medium=email&utm_campaign=quick-link--1)\n- 🐦 [Re.Pack V5 will be based on Rspack instead of Webpack](https://x.com/_jbroma/status/1793286546008981933): This brings significant performance improvements (Cold start 15s → 2.5s, build 10s → 2s, HMR 450ms → 100ms).\n- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - 🇺🇸 Portland, OR - July 17-19. The U.S. React Native Conference is back with engaging talks and hands-on workshops! Get 15% off your ticket with code “TWIR”\n- 📜 [Introducing Expo Atlas](https://expo.dev/blog/introducing-expo-atlas): The Expo team used this internally to work on a faster Metro resolver, improve their Babel config, as well as for their work on RSC. Now you can use it to better understand and optimize your app as well!\n- 📜 [RNW 0.74 Launches: A Gallery Glow-up and Fabric Foundations! React Native](https://devblogs.microsoft.com/react-native/2024-05-24-improved-gallery-fabric-0-74/): Something new I learned from this announcement is the React Native Gallery app, basically a kitchen sink demo app for RN on Windows.\n- 📜 [Bringing Prisma ORM to React Native and Expo](https://www.prisma.io/blog/bringing-prisma-orm-to-react-native-and-expo): Prisma, including reactive queries, is now available in RN (in beta). And it seems they’re also working on a local-first sync solution.\n- 📜 [Using React-Admin With React Native](https://marmelab.com/blog/2024/05/22/using-react-admin-with-react-native.html): React-Admin is a framework for quickly building CRUD apps. This article shows how to leverage its headless architecture to use it with RN.\n- 📜 [Fluttering in the sky](https://www.celest.dev/blog/fluttering-in-the-sky): Not React Native but worth mentioning that a company is working on the equivalent of React Native Server Components for Flutter.\n- 📦 [React Native IDE is now in open beta](https://ide.swmansion.com/): Simply download as a VS Code extension from the VS Code marketplace.\n- 📦 [SwiftUI-React-Native 6.0](https://github.com/andrew-levy/swiftui-react-native): Use SwiftUI features directly from React Native.\n- 📦 [React Native Skia 1.3.0](https://github.com/Shopify/react-native-skia/releases/tag/v1.3.0): Skia can now render videos.\n- 📦 [Drizzle Studio is now available for Expo SQLite via dev tools plugin](https://github.com/drizzle-team/drizzle-studio-expo/tree/main): This is super handy! No more finding the Simulator’s file system folder on your Mac to open the sqlite-file in a separate GUI for debugging purposes.\n- 🎥 [Simon Grimm - 10 Takeaways for React Native Devs from the App.js conference](https://www.youtube.com/watch?v=mhos9givltA)",
+      "source_content_hash": "bab1c4650f8f72fbc098fc5423744cf687ca91ca70599273457a47dccc9ff5e0",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [WithFrame - 預建 React Native 元件](https://withfra.me/components?utm_source=thisweekinreact&utm_medium=email&utm_campaign=quick-link--1)\n- 🐦 [Re.Pack V5 將基於 Rspack 取代 Webpack](https://x.com/_jbroma/status/1793286546008981933)：帶來顯著效能提升（冷啟動 15 秒 → 2.5 秒，建置 10 秒 → 2 秒，HMR 450 毫秒 → 100 毫秒）。\n- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - 🇺🇸 波特蘭，俄勒岡州 - 7 月 17-19 日。美國 React Native 大會回歸，帶來精彩演講與實作工作坊！輸入代碼「TWIR」享門票 15% 折扣\n- 📜 [介紹 Expo Atlas](https://expo.dev/blog/introducing-expo-atlas)：Expo 團隊內部用於開發更快的 Metro 解析器、改進 Babel 配置及 RSC 研究的工具，現開放用於應用程式優化與理解！\n- 📜 [RNW 0.74 發布：Gallery 介面升級與 Fabric 基礎架構！React Native](https://devblogs.microsoft.com/react-native/2024-05-24-improved-gallery-fabric-0-74/)：從本次公告首次認識 React Native Gallery 應用程式，這是 Windows 平台的 RN 功能展示應用\n- 📜 [將 Prisma ORM 引入 React Native 與 Expo](https://www.prisma.io/blog/bringing-prisma-orm-to-react-native-and-expo)：Prisma 現於 RN 提供（測試版），包含響應式查詢功能，並正在開發本地優先同步方案\n- 📜 [在 React Native 中使用 React-Admin](https://marmelab.com/blog/2024/05/22/using-react-admin-with-react-native.html)：展示如何透過其無頭架構在 RN 中快速建構 CRUD 應用\n- 📜 [Fluttering in the sky](https://www.celest.dev/blog/fluttering-in-the-sky)：非 React Native 但值得關注：有公司正開發 Flutter 版的 React Native Server Components 等效方案\n- 📦 [React Native IDE 開放測試版](https://ide.swmansion.com/)：可直接從 VS Code 市集安裝擴充\n- 📦 [SwiftUI-React-Native 6.0](https://github.com/andrew-levy/swiftui-react-native)：在 React Native 中直接使用 SwiftUI 功能\n- 📦 [React Native Skia 1.3.0](https://github.com/Shopify/react-native-skia/releases/tag/v1.3.0)：新增影片渲染功能\n- 📦 [Drizzle Studio 現可透過開發工具插件用於 Expo SQLite](https://github.com/drizzle-team/drizzle-studio-expo/tree/main)：無需在 Mac 上尋找模擬器檔案位置即可直接調試 SQLite\n- 🎥 [Simon Grimm - App.js 大會給 React Native 開發者的 10 項重點](https://www.youtube.com/watch?v=mhos9givltA)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f97c407b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3cd8185f",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a627a446",
+      "source_content": "- 📜 [What We Learned From the First State of HTML Survey](https://frontendmasters.com/blog/state-of-html-2023-results-2/)\n- 📜 [\"Web components\" considered harmful](https://www.mayank.co/blog/web-components-considered-harmful/)\n- 📦 [Angular 18.0 - Zoneless, Material 3, deferrable views…](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe)\n- 📦 [TypeScript-ESLint v8 beta - ESLint 9 support](https://typescript-eslint.io/blog/announcing-typescript-eslint-v8-beta/)\n- 📦 [fnm 1.36 - fast Node.js version manager](https://github.com/Schniz/fnm/releases/tag/v1.36.0)\n- 📦 [rsbuild 0.7](https://rsbuild.dev/community/releases/v0-7)",
+      "source_content_hash": "87e4dfbd45674300d7c1f4fd42ffce0474b0a09bc51bbc38474168e1b78e543b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📜 [首屆 State of HTML 調查的啟示](https://frontendmasters.com/blog/state-of-html-2023-results-2/)\n- 📜 [「Web components」被視為有害的探討](https://www.mayank.co/blog/web-components-considered-harmful/)\n- 📦 [Angular 18.0 - 無區域機制、Material 3、可延遲視圖...](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe)\n- 📦 [TypeScript-ESLint v8 beta - 支援 ESLint 9](https://typescript-eslint.io/blog/announcing-typescript-eslint-v8-beta/)\n- 📦 [fnm 1.36 - 快速 Node.js 版本管理工具](https://github.com/Schniz/fnm/releases/tag/v1.36.0)\n- 📦 [rsbuild 0.7](https://rsbuild.dev/community/releases/v0-7)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b6796530",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ee213c98",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣味 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "008183b0",
+      "source_content": "[![alt](/emails/issues/187/meme.jpg)](https://x.com/jamonholmgren/status/1791255201774719178)",
+      "source_content_hash": "86596d55ada1c48803ef7a47660bfa55b3209678eb460e1ef1ccc59148a1df31",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![替代文字](/emails/issues/187/meme.jpg)](https://x.com/jamonholmgren/status/1791255201774719178)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0ddaa835",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下次見！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/187/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:39.450570+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "5911980549fde06255bb55ec55361ccafb1244dc80620d98d403dd2f30d5cda8"
+  }
+}

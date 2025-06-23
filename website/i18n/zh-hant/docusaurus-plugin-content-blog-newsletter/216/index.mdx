@@ -1,0 +1,140 @@
+---
+slug: /216
+title: "This Week In React #216: Next.js, ViewTransition, RSC, Compiler, React Router, Recoil, Bippy, Docusaurus, A11y, Static Hermes, Nitro, Radon, SQLite, Edge-to-Edge, Node, TypeScript, pnpm, htmx..."
+authors: [matthieugicquel, cyrilbo]
+date: 01-08-2025
+---
+
+大家好！
+
+這裡是來自 Theodo Apps 的 Cyril 和 Matthieu 👋，我們代替 Seb 為大家帶來 React 和 React Native 的最新消息！
+
+上一期是上週五發布的，因此本期內容會比平時稍短一些。假期過後，我們將恢復每週發布一次通訊的常規節奏。
+
+[2024 年 JS 新星榜](https://risingstars.js.org/2024/en)已經發布，你可以先看看哪些函式庫在這個雖有缺陷但仍具參考價值的 GitHub 星標指標中表現出色。劇透：`shadcn/ui` 再次獲得最多星標。Sébastien 評論了[工具類別](https://risingstars.js.org/2024/en#section-build)。
+
+別忘了查看我們的合作夥伴 🗓️ [巴黎 TypeScript 大會](https://la-conf.typescript.paris/?utm_source=thisweekinreact) - 🇫🇷 巴黎 - 2 月 28 日 - 完整講者陣容剛剛公布！加入 Mateusz Burzyński、Elise Patrikainen 和 David Rousset！使用代碼 "TWIR" 可享門票 8 折優惠！
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![PropelAuth：讓身份驗證成為您的優勢](/emails/issues/216/PropelAuth.jpg)](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)
+
+**[PropelAuth：讓身份驗證成為您的優勢](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)**
+
+如果您的身份驗證系統無法**幫助業務成長**，那它就是在**拖後腿**。
+
+透過 [PropelAuth](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)，您將獲得啟動和擴展 B2B 產品所需的一切：
+
+- **清晰易懂**的[文檔](https://docs.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)與**友好快速的支援服務**
+- **覆蓋所有使用場景的 UI** - 註冊、登入、多因素驗證、組織管理等
+- **用戶模擬功能**讓您能為用戶提供頂級支援服務
+- **企業級 SAML/SSO** 和**進階安全功能**助您做好進軍高端市場準備
+- **用戶行為洞察**幫助制定戰略與擴展計劃
+
+[立即開始使用](https://www.propelauth.com/?utm_source=newsletter&utm_campaign=twinrjan82024)
+
+---
+
+## ⚛️ React {#react}
+
+[![使用 Next.js 進行可組合快取](/emails/issues/216/nextjscache.jpg)](https://nextjs.org/blog/composable-caching)
+
+**[使用 Next.js 進行可組合快取](https://nextjs.org/blog/composable-caching)**
+
+解釋 Next.js 的設計目標，以及為何 `”use cache”` 是編譯器指令而非函數（以便分析閉包並確定正確的快取鍵）。
+
+---
+
+[![React 核心 PR - 新增 `<ViewTransition>` 元件](/emails/issues/216/viewTransitions.jpg)](https://github.com/facebook/react/pull/31975)
+
+**[React 核心 PR - 新增 `<ViewTransition>` 元件](https://github.com/facebook/react/pull/31975)**
+
+React 正透過 `<ViewTransition />` 元件添加視圖轉換支援，該元件能與所有非同步功能（如 Suspense 和 `startTransition`）整合。
+
+---
+
+- 💸 [daily.dev: 您的個人開發新聞來源。免費！](https://daily.dev/w/this-week-in-react)
+- 🐦 [Recoil（Meta 的狀態管理庫）已封存](https://x.com/dai_shi/status/1875910305802514649)
+- 📜 [RSC 與 Server Action 的打包實踐](https://github.com/orgs/web-infra-dev/discussions/23)：一位 Rspack 維護者分享了打包工具如何實踐 React Server Components 的深度解析，重點涵蓋 webpack 和 Turbopack。
+- 📜 [Slack 的自動化無障礙測試](https://slack.engineering/automated-accessibility-testing-at-slack/)：嘗試使用 testing-library 後最終選擇 Playwright。
+- 📜 [React 編譯器時代的狀態管理庫思考](https://blog.axlight.com/posts/thoughts-on-state-management-libraries-in-the-react-compiler-era/)：編譯器讓 React Context 更具吸引力，它們還有用嗎？
+- 📜 [React 中的各種狀態管理](https://www.typeonce.dev/article/all-kinds-of-state-management-in-react)：URL 狀態、伺服器狀態、客戶端狀態...
+- 📜 [React Router 7 教學](https://www.robinwieruch.de/react-router/)：涵蓋入門、子路由和搜尋參數的三部曲。
+- 📜 [React 的渲染、Effect 和 Ref 底層運作原理](https://tigerabrodi.blog/how-reacts-render-effects-and-refs-work-under-the-hood)
+- 📜 [深入理解 Redux Saga 的底層機制](https://janhesters.com/blog/redux-saga-is-hard-until-you-look-under-the-hood)
+- 📦 [Bippy - 用於窺探 React 內部機制的工具包](https://www.bippy.dev/)：[react-scan](https://github.com/aidenybai/react-scan) 底層即使用此工具存取 Fiber 樹。
+- 📦 [Docusaurus 3.7](https://docusaurus.io/blog/releases/3.7) 新增 React 19 支援與 svgr 外掛。
+- 📦 [React Admin 5.4（及 5.3）](https://marmelab.com/blog/2025/01/08/react-admin-january-2025-update.html)
+- 🎥 [Cosden - 中階 React 開發者最常犯的錯誤](https://www.youtube.com/watch?v=jqcbIgQBn34)
+- 🎥 [Alem Tuzlak - React Router V7 的隱藏優勢](https://www.youtube.com/watch?v=EGuYKL8puRI)
+- 🎥 [Theo - Inertia 2.0：比 Next 更優的選擇（支援 React！）](https://www.youtube.com/watch?v=OpXLWJd2iO0)
+- 🎙️ [Syntax.fm - 2025 年網頁開發預測](https://syntax.fm/show/866/2025-web-development-predictions)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![使用 Reactile 重新思考您的 React 應用程式 UX](/emails/issues/216/reactile.jpg)](https://www.reactile.net/?utm_source=ThisweekinReact)
+
+**[使用 Reactile 重新思考您的 React 應用程式 UX](https://www.reactile.net/?utm_source=ThisweekinReact)**
+
+Reactile 是開箱即用的 UI/UX 框架，提供直覺的視窗平鋪佈局與工作區，鼓勵在單一瀏覽器分頁內進行大型網頁解決方案的並行工作負載。您可使用 React 實作自訂視窗容器、元件和邏輯，並由 Reactile 處理顯示層。
+
+此外，Reactile 還提供：
+
+- 基於 Promise 的持久化機制，確保跨裝置與時間的工作流程一致性。
+- 支援在平鋪視窗中使用巢狀分頁。
+- 簡化的全域搜尋機制。
+- 基於 CSS @container 的回應式設計。
+- 以及更多功能。
+
+第二版即將發布。立即開始您的 30 天免費試用，詳情請見 reactile.net。
+
+[Reactile - 全新的 React UI 管理系統](https://www.reactile.net/price?utm_source=ThisweekinReact)
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 💸 [PostHog - 如何設定 React Native 工作階段重播](https://dub.link/twir-jan8)
+- 🐦 [Nitro Views 將隨 React Native 0.78 一同發布](https://x.com/mrousavy/status/1876559810784833930)
+- 🐦 [網路除錯工具將登陸 Radon IDE](https://x.com/kzzzf/status/1875211071231025353)
+- 👀 [React Native PR - 適用於 React Native 的靜態 Hermes](https://github.com/facebook/react-native/pull/48531)：新 Hermes 實作的整合已啟動！初步效能測試顯示有超過 30% 的效能提升，且尚未使用類型化程式碼或 JIT，預計將帶來更顯著的提升。
+- 📖 [你可以在 React Native DevTools 中即時高亮重新渲染](https://reactnative.dev/docs/react-native-devtools#react-components)
+- 📜 [適用於 React Native 應用程式的現代 SQLite - DrizzleORM 搭配 expo-sqlite 設定、類型安全查詢、即時查詢、遷移與 Drizzle Studio Expo 開發工具外掛](https://expo.dev/blog/modern-sqlite-for-react-native-apps)
+- 📦 [React Native 0.77.0-rc.6](https://github.com/facebook/react-native/releases/tag/v0.77.0-rc.6) 為最終候選版本，穩定版預計於下週發布。
+- 📦 [React Native Edge to Edge 1.2](https://github.com/zoontek/react-native-edge-to-edge/releases/tag/1.2.0) 新增 Android 淺色主題變體支援。
+- 🎥 [React Universe On Air 第 45 集 - Evan Bacon 談通用 React Native 應用程式、DOM 與 React Server Components](https://www.youtube.com/watch?v=rA7E3rGKSZw)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📜 [JavaScript 框架 - 邁向 2025](https://dev.to/this-is-learning/javascript-frameworks-heading-into-2025-hkb)
+- 📜 [htmx 的未來](https://htmx.org/essays/future/)：（幾乎）沒有新功能
+- 📜 [邁向 2025 你該了解的 HTML 新特性](https://frontendmasters.com/blog/bone-up-html-2025/)
+- 📜 [使用螢幕閱讀器測試無障礙功能](https://www.epicweb.dev/testing-accessibility-with-screen-readers)
+- 📜 [CSS 中的文字平衡](https://ishadeed.com/article/balancing-text-css/)
+- 📜 [運用強制回流、事件循環與重繪循環實現盒子滑動開啟](https://macarthur.me/posts/box/)
+- 📜 [Node 對 TypeScript 的新內建支援](https://2ality.com/2025/01/nodejs-strip-type.html)
+- 📦 [Node 23.6](https://nodejs.org/en/blog/release/v23.6.0) 支援 TS 類型剝離，以及具備穩定安全模型的 [Node 22.13 (LTS)](https://nodejs.org/en/blog/release/v22.13.0)。
+- 📦 [pnpm 10.0 - 增強安全性，`onlyBuiltDependencies`](https://github.com/pnpm/pnpm/releases/tag/v10.0.0)
+- 📦 [Prisma 6.2 - 新增 omit 功能、SQLite json/enum 欄位支援](https://github.com/prisma/prisma/releases/tag/6.2.0)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/216/meme.jpg)](https://x.com/jordwalke/status/1875336115009573268)
+
+下次見！👋

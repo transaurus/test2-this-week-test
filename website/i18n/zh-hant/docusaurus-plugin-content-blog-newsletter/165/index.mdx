@@ -1,0 +1,141 @@
+---
+slug: /165
+title: "This Week In React #165: StyleX, CSS Hooks, PandaCSS, Tailwind, Redux, Astro, Next.js, Remix, Storybook, React-Native 0.73, State of React-Native, Skia text layouts, Expo EAS..."
+authors: [slorber]
+date: 12-06-2023
+---
+
+大家好！
+
+我覺得本週的 CSS 新聞特別有趣！StyleX、CSS Hooks、Panda、Tailwind、CSS4...
+
+React Native 現況調查已開放。全新的「bridgeless 模式」將在 0.73 版本中推出（就在發佈前 5 分鐘剛釋出，哈哈！）
+
+<!-- truncate -->
+
+**💡 [在 Twitter 查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![輕鬆實現應用內訂閱](/emails/issues/165/RevenueCat.jpg)](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)
+
+**[輕鬆實現應用內訂閱](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)**
+
+RevenueCat 提供您應用業務變現、分析和成長所需的一切。輕鬆控制客戶存取權限與授權、管理數據並實驗定價策略。了解為何超過 30,000 個應用程式信任 RevenueCat 來驅動其應用內購買基礎架構。
+
+---
+
+## ⚛️ React {#react}
+
+[![StyleX](/emails/issues/165/stylex.jpg)](https://github.com/facebook/stylex)
+
+[**StyleX**](https://github.com/facebook/stylex)
+
+Meta 的 CSS-in-JS 解決方案經過漫長等待終於開源，已在 Facebook、Instagram 和 WhatsApp 等主要應用中實際使用。它並非嚴格與 React 綁定，原子化 CSS 將在編譯時提取，並透過輕量級運行時拼接類別。TypeScript 支援經過精心設計，API 極簡主義，主要依賴兩個函數：`create` 和 `props`。我們將觀察這個新方案在已有 Tailwind、Panda 等競爭對手的生態系中如何定位。
+
+另請參閱：
+
+- 🎥 [Jack Herrington - StyleX：Meta 的大規模 CSS 解決方案](https://www.youtube.com/watch?v=6ZDiGtg1jN4)
+- 🎥 [Theo T3 - Facebook 嘗試 Tailwind 後，改為打造此方案](https://www.youtube.com/watch?v=PHV94q7BivI)
+
+---
+
+[![CSS Hooks](/emails/issues/165/csshooks.jpg)](https://css-hooks.com/)
+
+具備 React 綁定的 CSS 函式庫，透過行內樣式實現真正的回歸基礎。作者在[從 CSS 混亂到 CSS Hooks](https://nsaunders.dev/posts/css-madness-to-hooks) 中解釋如何運用變數 CSS 技巧支援媒體查詢、偽類選擇器等缺失功能。
+
+個人而言，我一直偏好行內樣式的開發體驗，但實務上功能過於受限且效能表現不穩定。此創新方案能否經得起實踐考驗尚待觀察。Mark Dalgleish (🐦 [推文](https://twitter.com/markdalgleish/status/1729399475494608923)) 對此感到興奮。值得注意的是，若行內樣式支援更完善，Adam Wathan 可能就不會創造 Tailwind (🐦 [推文](https://twitter.com/adamwathan/status/1732209400641724785))。
+
+---
+
+- 💸 [Developer Nation Survey - What's next for developers in 2024 and beyond? Take the survey and win prizes!](https://developereconomics.net/?member_id=thisweekinreact&utm_medium=nl_ad1)
+- 👀 [Remix RFC - Client Data (clientLoader, clientAction)](https://github.com/remix-run/remix/discussions/7634): new exports should soon be supported by Remix, making it easier for those who wish to migrate React-Router apps to Remix
+- 🐦 [Using TanStack React Query v5 + Router preview](https://twitter.com/tannerlinsley/status/1730621837212876829)
+- 📜 [How does xxx compare to Panda CSS](https://www.astahmer.dev/posts/how-does-xxx-compares-to-panda-css): good presentation of Panda CSS by its maintainer, who also outlines its current limitations. A modern CSS-in-JS solution based on static analysis and compatible with Server Components. There is a light JS runtime, but the atomic CSS remains extracted at build time.
+- 📜 [Tailwind has a scalability problem. How can we solve that?](https://byteofdev.com/posts/scale-tailwindcss/): suggests using `cva` (Class Variance Authority) to make Tailwind code more digestible in a React context.
+- 📜 [Guide to fast websites with Next.js: Tips for maximizing server speeds and minimizing client burden](https://vercel.com/blog/guide-to-fast-websites-with-next-js-tips-for-maximizing-server-speeds): guest post on an agency's Vercel blog explaining the Next.js techniques used to achieve very good performance.
+- 📜 [Fastest Way of Passing State to JavaScript, Re-visited](https://calendar.perfplanet.com/2023/fastest-way-passing-state-javascript-revisited/): SSR-based React/Redux apps need to send the store data to the client-side for hydration. Presents 3 techniques with their performance.
+- 📜 [Keep Your Loader Data Fresh in Remix](https://sergiodxa.com/tutorials/keep-your-loader-data-fresh-in-remix): shows how to call the `useRevalidator` hook when the connection is restored or the tab regains focus.
+- 📜 [Build your own StorybookGPT](https://storybook.js.org/blog/build-your-own-storybook-gpt/): explains how to use AI to generate your stories automatically.
+- 📜 [Introducing React components for the Maps JavaScript API](https://cloud.google.com/blog/products/maps-platform/introducing-react-components-for-the-maps-javascript-api/): Google is finally officially sponsoring the development of a React lib for Google Maps.
+- 📜 [Slack - Building Custom Animations in the Workflow Builder](https://slack.engineering/building-custom-animations-in-the-workflow-builder/): feedback from Slack on the implementation of drag-and-drop features with `react-beautiful-dnd `.
+- 📜 [How Relay Enables Optimal Data Fetching](https://relay.dev/blog/2023/10/24/how-relay-enables-optimal-data-fetching/)
+- 📜 [TanStack Router – modern React for the rest of us](https://swizec.com/blog/tanstack-router-modern-react-for-the-rest-of-us/)
+- 📜 [Handling HTML within React i18next translations](https://rafaelcamargo.com/blog/handling-html-within-react-i18next-translations/)
+- 📜 [A minimal dependency-free translation system for Next.js](https://www.thomasledoux.be/blog/minimal-dependency-free-translation-system-nextjs)
+- 📜 [An Introduction To Full Stack Composability](https://www.smashingmagazine.com/2023/11/introduction-full-stack-composability/)
+- 📦 [Redux Toolkit 2.0, Redux 5.0, React-Redux 9.0, Reselect 5.0, Redux-Thunk 3.0](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.0.0): big synchronised update of all Redux packages. Includes new features (`combineSlices`), improvements in size, performance, typing, and removal of deprecated features.
+- 📦 [Astro 4.0 - Dev Toolbar, i18n routing, Incremental Content Caching, View Transition APIs...](https://astro.build/blog/astro-4/)
+- 📦 [Storybook 7.6 - switch to SWC, faster, react-docgen upgrade, controls improvement, doctor CLI...](https://storybook.js.org/blog/storybook-7-6/)
+- 📦 [Remix Dev Tools 3.5 - Vite support](https://github.com/Code-Forge-Net/Remix-Dev-Tools/releases/tag/v3.5.0)
+- 📦 [Starlight 0.14 - Plugin API](https://github.com/withastro/starlight/releases/tag/%40astrojs%2Fstarlight%400.14.0)
+- 📦 [Jotai 2.6 - use `<Provider>` in React Server Components](https://github.com/pmndrs/jotai/releases/tag/v2.6.0)
+- 🎥 [React Server Components Panel Discussion - React Summit US 2023](https://www.youtube.com/watch?v=ujaTs-5LEWM)
+- 🎥 [Lee Robinson - Introduction to Next.js and React](https://www.youtube.com/@leerob)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![中斷點和 console.log 已成過去，時間旅行才是未來](/emails/issues/165/Breakpoints.jpg)](https://wallabyjs.com/?referrer=ThisWeekInReact1)
+
+**[中斷點和 console.log 已成過去，時間旅行才是未來](https://wallabyjs.com/?referrer=ThisWeekInReact1)**
+
+比使用中斷點和 console.log 快 15 倍的 JavaScript 除錯。
+
+[Wallaby.js](https://wallabyjs.com/?referrer=ThisWeekInReact1) 在您輸入時立即執行測試，並在程式碼旁邊即時顯示執行時的值、錯誤和程式碼覆蓋率。
+
+專為測試設計，Wallaby 功能包括[時間旅行除錯器](https://wallabyjs.com/docs/intro/time-travel-debugger.html?referrer=ThisWeekInReact1)、僅執行已開啟的測試檔案等功能。
+
+---
+
+## 📱 React-Native {#react-native}
+
+- 📦[React Native 0.73 - 除錯改進、穩定的符號連結支援等](https://reactnative.dev/blog/2023/12/06/0.73-debugging-improvements-stable-symlinks)：這剛發布，我將在下週詳細介紹 😄
+- 📊 [2023 年 React Native 狀態調查](https://survey.stateofreactnative.com/)：React-Native 調查已進入第二年，您的回答將影響優先級排序
+- 🐦 [透過  Actions 和 Expo 配置插件在 iOS Safari 實現「檢查元素」](https://twitter.com/Baconbrix/status/1731407884624310708)
+- 📖 [Expo Router 文件 - 從 Expo Webpack 遷移](https://docs.expo.dev/router/migrate/from-expo-webpack/)
+- 💬 [React-Native 0.73 - 無橋接模式介紹](https://github.com/reactwg/react-native-new-architecture/discussions/154)：透過新標誌完全停用舊架構橋接，互操作層簡化遷移過程
+- 💬 [React-Native 0.74 - 將提升 Android `minSdk` 至 v6 (API 23)](https://github.com/react-native-community/discussions-and-proposals/discussions/740)
+- 📜 [Shopify - React Native Skia 入門指南](https://shopify.engineering/getting-started-with-react-native-skia)：整合 Reanimated 與跨平台支援的完整介紹
+- 📜 [在 iOS 的 React Native 中更改根視圖背景顏色](https://www.oskarkwasniewski.dev/blog/react-native-change-native-background-color)
+- 📜 [Expo EAS - 透過自動 GitHub 建置加速工作流程](https://expo.dev/changelog/2023/11-29-automatic-github-builds)
+- 📜 [Expo EAS - 建置註解功能發布](https://expo.dev/changelog/2023/12-01-build-annotations)
+- 📦 [React-Native-Skia - 文字佈局/段落支援](https://shopify.github.io/react-native-skia/docs/text/paragraph/)
+- 📦 [React-Native-VisionOS](https://github.com/callstack/react-native-visionos)：npm 現可試用 (🐦 [演示](https://twitter.com/o_kwasniewski/status/1729453555201802495))
+- 🎙️ [React Native Radio 第 281 集 - 真實案例：Share My Stack 的 Benedikt Müller](https://reactnativeradio.com/episodes/rnr-281-real-life-react-native-benedikt-muller-of-share-my-stack)
+
+---
+
+## 🔀 其他 {#other}
+
+- 🧵 [尤雨溪談論「無打包方案無法擴展」的討論](https://twitter.com/youyuxi/status/1730537401217610234)
+- 📜 [第99屆TC39會議更新 - 陣列分組進入第4階段，Promise.withResolvers進入第4階段](https://dev.to/hemanth/updates-from-the-99th-tc39-meeting-15hn)
+- 📜 [Prettier CLI：效能深度探討](https://prettier.io/blog/2023/11/30/cli-deep-dive)
+- 📜 [Biome格式化工具贏得Prettier挑戰](https://biomejs.dev/blog/biome-wins-prettier-challenge/)
+- 📜 [透過實作現代JavaScript框架了解其運作原理](https://nolanlawson.com/2023/12/02/lets-learn-how-modern-javascript-frameworks-work-by-building-one/)
+- 📜 [Web Components消除JavaScript框架鎖定問題](https://jakelazaroff.com/words/web-components-eliminate-javascript-framework-lock-in/)
+- 📜 [使用Playwright fixtures追蹤前端JavaScript異常](https://www.checklyhq.com/blog/track-frontend-javascript-exceptions-with-playwright/)
+- 📦 [XState 5.0 - 萬物皆為Actor](https://stately.ai/blog/2023-12-01-xstate-v5)
+- 📦 [Fresh 1.6 - Tailwind CSS插件、簡化類型設定等](https://deno.com/blog/fresh-1.6)
+- 📦 [Vitest 1.0](https://github.com/vitest-dev/vitest/releases/tag/v1.0.0)
+- 📦 [Hono 3.11 - 錯誤邊界](https://github.com/honojs/hono/releases/tag/v3.11.0)
+- 🎥 [CSS4即將來臨](https://www.youtube.com/watch?v=j4mOm1qic7k)
+
+---
+
+## 🤭 趣聞 {#fun}
+
+[![alt](/emails/issues/165/meme.jpg)](https://twitter.com/bndkt/status/1729743347370139940)
+
+下次見！👋

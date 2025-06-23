@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "電子報",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "每週發佈的 This Week In React 精選電子報",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "期數",
+    "description": "The label for the left sidebar"
+  }
+}

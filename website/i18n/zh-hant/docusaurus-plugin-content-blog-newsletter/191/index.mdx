@@ -1,0 +1,157 @@
+---
+slug: /191
+title: "This Week In React #191: React-Router, Remix, React Query, Suspense, Compiler, Remotion, CodeHike, next-safe-action, Framer-Motion, React-Admin, StyleX, Mobx, FlashList, RN native bridging, Expo, TypeScript, State of JS, Node ..."
+authors: [slorber]
+date: 06-26-2024
+---
+
+大家好！
+
+本週看來我們終於進入夏季/假期季節，主要 React 公告的節奏正在放緩。我們也將進行短暫的夏季休息，跳過兩期內容，並於 7 月 17 日回歸。
+
+在 React 方面，我們持續提供與上週 Suspense 爭議相關的有趣內容。React Router 的新功能允許您對路由樹進行程式碼分割。
+
+在 React Native 方面，團隊正試圖發布 v0.75 RC 版本，雖然遇到一些阻礙，但應該很快就會推出。
+
+最令我振奮的消息是 TypeScript 5.5 穩定版發布：這是個重大更新，特別是在謂詞類型推斷方面！State of JS 調查結果也已出爐，歡迎探索 JavaScript 趨勢。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本通訊](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![The Category-Defining React Grid for Your Enterprise](/emails/issues/190/advertfinal.jpg)](https://1771technologies.com/graphitegrid)
+
+**[為企業打造的類別定義級 React 網格](https://1771technologies.com/graphitegrid)**
+
+資料網格是 Web 應用程式的複雜元件，但現有解決方案效率低下、維護成本高且效能不佳。[Graphite Grid](https://1771technologies.com/graphitegrid) 透過兩大核心功能改變格局：可重定向渲染與反應式信號狀態。
+
+**Graphite Grid** 將網格狀態與視圖邏輯分離，使單一統一狀態模型能支援各種渲染目標，無論採用宣告式或命令式。內建 **DOM 與 Canvas** 渲染器，為開發者提供靈活的高效能選項 🚀。
+
+Graphite Grid 採用宣告式且一致的設計，利用狀態信號確保與應用程式無縫整合。專為 **React** 打造，是唯一基於 React 狀態管理原語構建的 JavaScript 資料網格。[立即試用！](https://1771technologies.com/graphitegrid/demo)
+
+---
+
+## ⚛️ React {#react}
+
+[![React-Router 6.24 - 懶載入路由探索](/emails/issues/191/rr.jpg)](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v6240)
+
+**📦 [React-Router 6.24 - 懶載入路由探索](https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v6240)**
+
+此 React Router 版本新增 `unstable_patchRoutesOnMiss` 鉤子，當無法匹配現有路由時觸發。您可藉此載入額外路由，實現路由樹的程式碼分割，無需將所有路由集中於單一模組。對於擁有數千路由的大型應用，此功能可避免預載全部路由造成的延遲水合。
+
+Remix 本該暫停更新，但顯然尚未休息！📦 [Remix 2.10](https://remix.run/docs/en/main/start/changelog#v2100) 已發布，透過便捷的[「戰爭迷霧」](https://remix.run/docs/en/main/guides/fog-of-war)功能利用此 React Router 特性，僅需設置 `future.unstable_fogOfWar` 標記即可啟用。同時實現早期探索優化以避免瀑布效應。
+
+---
+
+- 💸 [Meilisearch — Build fast, typo-tolerant search with React](https://dub.sh/ueC2f57)
+- 👀 [React.dev PR - Add branding context menu](https://github.com/reactjs/react.dev/pull/6986): Right-click the website navbar logo to access the official svgs and brand colors of React.
+- 👀 [Next.js PR draft - `nextConfig.requiredEnv`](https://github.com/vercel/next.js/pull/67187)
+- 👀 [Next.js PR draft - type check for `env`](https://github.com/vercel/next.js/pull/67157s)
+- 🐦 [Joe Savona - "Some thoughts on the suspense changes from 19 RC"](https://x.com/en_JS/status/1803480672327311425): To avoid situations such as past week’s Suspense drama, the React team is working on changes to get feedback earlier (working groups, RFC, canary…).
+- 🐦 [Lee Robinsin - "Here's where we're headed with caching in Next.js"](https://x.com/leeerob/status/1803824227704877236): “Our goal is to make all async operations (like doing a `fetch`) opt into dynamic rendering”, “We believe Partial Prerendering will become the default”.
+- 🗓️ [React Rally](https://reactrally.com/?utm_source=thisweekinreact) - 🇺🇸Utah - 12-13, August - Get a 10% discount with code "TWIR". There’s a React Server Components [workshop](https://reactrally.com/workshop) with Kent C. Dodds
+- 📨 [ECMAScript News - Discover our partners' newsletter to keep up to date with ES, TC39, JS tooling, and runtimes](https://ecmascript.news/?utm_source=thisweekinreact)
+- 📜 [Component, colocation, composition: A note on the state of React](https://bobaekang.com/blog/component-colocation-composition/): The recent Suspense drama highlights the gap between React’s component-oriented vision and its current limitations.
+- 📜 [From markdown to video - Animated code walkthroughs with Code Hike and Remotion](https://v1.codehike.org/blog/remotion): If you have seen recent code animation videos of Matt Pocock or Delba, here’s a great article and demos to understand how it works.
+- 📜 [Understanding React Compiler](https://tonyalicea.dev/blog/understanding-react-compiler/): Explains how the React compiler work, starting from the basics (transpiler, AST, memoization), then analyzing the compiler output of a concrete example.
+- 📜 [Wait for pending: A (not great) alternative Suspense algorithm](https://dev.to/alexandereardon/wait-for-pending-a-not-great-alternative-suspense-algorithm-1gdl): Explores the possibility of a different algorithm for Suspense, with different tradeoffs.
+- 📜 [How to make draggable Framer Motion elements snap to breakpoints](https://sinja.io/blog/framer-motion-drag-snap-points): Interactive article implementation snap points on top of Framer Motion, including inertia/velocity support.
+- 📜 [Mobx Memoizes Components (You don't need React Compiler)](https://www.mikejohnson.dev/posts/2024/06/mobx-react-compiler): Takes an existing demo using the React compiler and turns it into an optimized Mobx app with minimal changes. MobX prevents re-renders by auto-tracking dependencies. Note this [Mobx issue](https://github.com/mobxjs/mobx/issues/3874) explains why Mobx (based on proxies) is not compatible with the compiler, and lib creator also confirms it’s already optimized.
+- 📜 [Web Workers, Comlink, Vite and TanStack Query](https://johnnyreilly.com/web-workers-comlink-vite-tanstack-query): React Query being an “async state manager”, it also works well to offload expensive work from the main thread.
+- 📜 [Storybook - Visual testing: The greatest trick in UI development](https://storybook.js.org/blog/visual-testing-is-the-greatest-trick-in-ui-development/): I agree that too many devs miss out on visual regression testing. It has a really great ROI, considering how easy it is to add to an existing Storybook. As this article shows, covering the same component with React Testing Library requires more work.
+- 📜 [Communication Between Client Components in Next.js](https://www.thisdot.co/blog/communication-between-client-components-in-next-js): With RSCs, new challenges emerged to make 2 client components communicate, and you might not be able to lift the state up unless the parent is also a client component. This article proposes 3 solutions: using a Provider, search params, and server state.
+- 📜 [How to Validate Form in Remix with clientAction](https://sergiodxa.com/tutorials/validate-form-in-remix-with-clientaction): Using the new Remix `clientAction` export can nicely complete the server `action` validation and progressively enhance your form with local errors.
+- 📜 [Type-safe TanStack Query with OpenAPI](https://ruanmartinelli.com/blog/tanstack-query-openapi): Shows how to create generic React Query hooks (`useGetQuery`, `usePostMutation`...) that are fully typed according to an OpenAPI specification.
+- 📜 [How To Use Google Sheets as a Database With React via Next.js](https://thenewstack.io/how-to-use-google-sheets-as-a-database-with-react-and-ssr/)
+- 📜 [Is it ok to pass setState as a prop in React?](https://tigerabrodi.blog/is-it-ok-to-pass-setstate-as-a-prop-in-react)
+- 📦 [StyleX 0.7 - CLI (experimental), Literal names for CSS variables](https://stylexjs.com/blog/v0.7.0): New CLI transforms an entire folder and can be an alternative to the bundler integration.
+- 📦 [Next-Safe-Action 7.0 - Type safe and validated Server Actions](https://github.com/TheEdoRan/next-safe-action/releases/tag/v7.0.0): See also the [v6 to v7 migration guide](https://next-safe-action.dev/docs/migrations/v6-to-v7).
+- 📦 [Astro 4.11 - 500 page improvements, `<Code>` component Shiki transformer](https://astro.build/blog/astro-4110/)
+- 📦 [React-Admin 5.0 - Improves on UI, DX, app init, Data Providers, forms…](https://marmelab.com/blog/2024/06/20/react-admin-v5.html)
+- 📦 [Shopify Hydrogen Update - Visual Editor, Optimistic Cart, Vite stable, RichText component, SEO meta export…](https://hydrogen.shopify.dev/update/summer-editions-24-announcing-the-hydrogen-visual-editor-and-a-ton-of-dx-improvements)
+- 📦 [stan-js - Minimalistic state management library](https://codemask-labs.github.io/stan-js/)
+- 🎥 [Jack Herrington - React 19's useOptimistic: everything you need to know](https://www.youtube.com/watch?v=QWVr7uDyBXE)
+- 🎥 [Theo - I Used To Hate Next.js…](https://www.youtube.com/watch?v=6q1eL7IcKzw)
+- 🎥 [Dave Gray - Nextjs Server Actions Just Got Better (using next-safe-action)](https://www.youtube.com/watch?v=ahB3DgUMs1A)
+- 🎥 [Ryan Carniato - Facing Frontend's Existential Crisis, React Summit 2024](https://www.youtube.com/watch?v=nzbV0YgSBuo)
+- 🎙️ [Syntax - What’s Next for NextJS with Tim Neutkens](https://www.youtube.com/watch?v=fXugpgknScY)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![WorkOS：適用於 B2B SaaS 的現代身份平台](/emails/issues/189/WorkOS.jpg)](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)
+
+**[WorkOS：適用於 B2B SaaS 的現代身份平台](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024)**
+
+使用 WorkOS，您只需幾行程式碼就能開始向企業銷售。
+
+🔐 WorkOS 支援完整的用戶管理解決方案，包括 **SSO、SCIM、RBAC 和 FGA**。
+
+🏗️ API **靈活、易用且模組化**。挑選您需要的功能，並在幾分鐘內完成整合。
+
+🎨 設計和使用者體驗就是一切。從我們文件的品質到使用者入職流程，我們**為開發者移除所有不必要的複雜性**。
+
+✨ 用戶管理**免費提供至一百萬月活躍用戶 (MAU)**，並包括機器人防護、模擬攻擊防護、多因素認證 (MFA) 等。
+
+🤝 WorkOS 獲得數百家領先新創公司的信任，例如 **Perplexity**、**Vercel** 和 **Webflow**。
+
+使用 [WorkOS](https://workos.com/?utm_source=thisweekinreact&utm_medium=newsletter&utm_campaign=q22024) 讓您的身份驗證堆疊面向未來 🚀
+
+---
+
+## 📱 React-Native {#react-native}
+
+本節由 [Benedikt](https://twitter.com/bndkt) 撰寫。
+
+- 💸 [WithFrame - 即用型 React Native 元件](https://withfra.me/?utm_source=thisweekinreact&utm_medium=email&utm_campaign=quick-link--4)
+- 🐦 [Marc Rousavy 談如何在 RN 中獲取相關日誌或崩潰資訊以在開源函式庫中創建問題](https://x.com/mrousavy/status/1805637303726973437)
+- 🗓️ [The Geek Conf](https://www.thegeekconf.com/?utm_source=thisweekinreact) - 🇩🇪 柏林 - 7月18日 & 25日 - 使用代碼"TWIR"可享9折優惠。Mo Khazali — Theodo UK 行動主管、Matteo Collina — Platformatic.dev 技術長、Siddharth Kshetrapal — GitHub 資深軟體工程師將發表演講！
+- 🗓 [Chain React Conf](https://chainreactconf.com/?utm_source=thisweekinreact) - 🇺🇸 奧勒岡州波特蘭 - 7月17-19日。美國 React Native 會議回歸，包含深度演講與實踐工作坊！使用代碼"TWIR"可享85折優惠
+- 👀 [還原「將新架構設為預設」](https://github.com/facebook/react-native/commit/37e8fa113ef6a8be7cd057b2bf6ffaa4ae6439d9)：看來預設啟用新架構可能延後，最終不會包含在 v0.75？
+- 👀 [Shopify FlashList PR - 新架構支援已合併（尚未發布）](https://github.com/Shopify/flash-list/pull/550)
+- 👀 [Fishjam Cloud - Software Mansion 新項目，為 React Native 帶來影片串流功能](https://cloud.fishjam.stream/)
+- 👀 [expo-router-native-intent-demo - 在 Expo Router 使用 +native-intent API 實現 iOS「複製到應用程式」功能](https://github.com/EvanBacon/expo-router-native-intent-demo)
+- 📜 [React Native 模組客戶端指南](https://ospfranco.com/client-guide-to-react-native-modules/)：Oscar 詳解原生模組暴露給 React Native 的不同方式及其優缺點，協助根據情境選擇最佳方案
+- 📜 [透過 JSI 橋接 React Native 與 Rust](https://ditto.live/blog/bridging-react-native-and-rust-via-jsi)：Ditto（Rust 編寫的資料同步引擎）分享如何透過 JSI 將核心邏輯橋接到 RN
+- 📜 [React Native 中的裝置端 AI/ML](https://blog.swmansion.com/on-device-ai-ml-in-react-native-137918d0331b)：令人驚嘆的技術，使用 RN 裝置端 AI 建置即時相機濾鏡
+- 📜 [從網頁到原生：使用 React Native 與 Expo](https://expo.dev/blog/from-web-to-native-with-react-native-and-expo)：記錄網頁開發者首次使用 RN/Expo 建置行動應用的歷程
+- 📜 [與 Google 同步，BAM 堅信 Kotlin 多平台開發](https://www.bam.tech/article/just-as-google-bam-believes-in-kotlin-multiplatform)：專注 RN 的 BAM 分析 CMP/KMP 在跨平台方案中的優勢與限制
+- 📜 [Expo - FCM v1 遷移截止日調整至7月20日](https://expo.dev/blog/fcm-v1-migration-deadline-changed-to-july-20th)
+- 🎥 [Simon Grimm - 使用 React Native 開發電視應用](https://www.youtube.com/watch?v=4S7Ftg58Yeg)
+- 🎥 [JavaScript Mastery - 2024 初學者免費 4.5 小時 React Native 課程](https://www.youtube.com/watch?v=ZBCUegTZF7M)
+
+---
+
+## 🔀 其他 {#other}
+
+- 📊 [JavaScript 2023 狀態調查 - 調查結果](https://2023.stateofjs.com/en-US)
+- 📜 [JavaScript 如何最終改善模組體驗](https://thenewstack.io/how-javascript-is-finally-improving-the-module-experience/)
+- 📜 [CSS 中的行內條件語句，現在可行嗎？](https://lea.verou.me/blog/2024/css-conditionals-now/)
+- 📜 [GitHub Copilot 擴充功能就是您所需的一切](https://code.visualstudio.com/blogs/2024/06/24/extensions-are-all-you-need)
+- 📜 [MDN - 新的 JavaScript Set 方法](https://developer.mozilla.org/en-US/blog/javascript-set-methods/)
+- 📦 [TypeScript 5.5 - 推斷的類型謂詞、索引存取的縮窄、JSDoc @import](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/)
+- 📦 [farm - 用 Rust 編寫的極快 Vite 相容網頁建置工具](https://github.com/farm-fe/farm)
+- 📦 [Node 20.15 - 測試計劃、–inspect-await](https://nodejs.org/en/blog/release/v20.15.0)
+- 📦 [node-swift - 用 Swift 建立 Node 模組](https://github.com/kabiroberai/node-swift)
+- 🎥 [Matt Pocock：TypeScript 5.5 太棒了](https://www.youtube.com/watch?v=sciBO_IaxTw)
+
+---
+
+## 🤭 趣聞 {#fun}
+
+[![alt](/emails/issues/191/meme.jpg)](https://x.com/ccccjjjjeeee/status/1804814043359621254)
+
+再見！👋

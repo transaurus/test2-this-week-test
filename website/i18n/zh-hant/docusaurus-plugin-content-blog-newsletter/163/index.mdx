@@ -1,0 +1,167 @@
+---
+slug: /163
+title: "This Week In React #163: React-Query, React-Forget, Rspress, Remix Vite, Next.js Barrels, Storybook, Memo, Transitions, Gluestack, VisionCamera, Unistyles, VisionOS, Expo debugging..."
+authors: [slorber]
+date: 10-17-2023
+---
+
+大家好！
+
+本週內容非常豐富！除了各種發布之外，還有許多優質的 React 文章。而且精彩持續不斷，即將迎來多場重量級 React 會議：React Advanced、Next.js Conf、reactjsday...
+
+提前分享一個好消息：我即將成為一個小女孩的父親了 🤗
+
+這是本通訊創刊以來首次長時間休刊，即日起將暫停數週。下一期預計於 11 月 29 日發布。
+
+今年目標達成 30,000 訂閱者的計劃保持不變。在我休假期間，歡迎繼續推薦新朋友加入 😜
+
+感謝支持，我們很快再見 👋
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本通訊](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Frontendmasters](/emails/issues/158/frontendmasters.jpg)](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)
+
+**[FrontendMasters - 從初階到資深的完整 React.js 學習路徑](https://frontendmasters.com/learn/react/?utm_source=newsletter&utm_medium=thisweekinreact&utm_campaign=reactpath)**
+
+從零開始學習 React.js，直至進階主題如效能優化、測試與程式碼品質。先透過《React 完整入門》建構真實應用，接著在《中階 React》課程整合生態系熱門工具，最後掌握效能優化、TypeScript 及全端框架 Next.js！
+
+---
+
+## ⚛️ React {#react}
+
+[![TanStack Query v5](/emails/issues/163/tanstack-query-v5.jpg)](https://tanstack.com/blog/announcing-tanstack-query-v5)
+
+[**TanStack Query v5**](https://tanstack.com/blog/announcing-tanstack-query-v5)
+
+經過多個預發布版本後，TanStack Query v5.0 穩定版正式推出，包含 React Query 套件。主要更新：
+
+- 統一且型別更完善的 API，消除多載設計
+- 穩定的 Suspense 支援，含串流與 React Server Components（實驗性）
+- 其他改進：無限查詢、持久化、開發者工具、樂觀更新、useMutationState...
+
+---
+
+[![Rspress v1.0 - 基於 Rspack 的快速靜態網站生成器](/emails/issues/163/rspress.jpg)](https://github.com/orgs/web-infra-dev/discussions/5)
+
+[**Rspress v1.0 - 基於 Rspack 的快速靜態網站生成器**](https://github.com/orgs/web-infra-dev/discussions/5)
+
+字節跳動團隊推出的靜態網站生成器首個穩定版。基於 Rust、React 與 MDX，成為 Docusaurus、Nextra、Vitepress、Starlight 等內容導向方案的強力競爭者。Rspress 效能出色，並提供豐富功能：i18n、版本控制、搜索等。激烈競爭激勵我為 Docusaurus 加入更多 Rust 元素 😄！
+
+---
+
+[![Remix - Vite 支援](/emails/issues/163/remix-vite.jpg)](https://remix.run/docs/en/dev/future/vite)
+
+[**Remix - Vite 支援（實驗階段）**](https://remix.run/docs/en/dev/future/vite)
+
+Remix 在這份[提案](https://github.com/remix-run/remix/discussions/7632)中解釋了成為 Vite 插件的決策。此舉能開放其編譯器並提升靈活性，讓使用者可自行添加 Vite 插件，並處理多種情境：MDX、GraphQL、Tailwind、路徑別名等。
+
+---
+
+[![Statically analysing React components for fun and profit](/emails/issues/163/react-forget.jpg)](https://www.youtube.com/watch?v=kjOacmVsLSE)
+
+🎥 [**靜態分析 React 元件：從樂趣到效益**](https://www.youtube.com/watch?v=kjOacmVsLSE)
+
+Sathya 正在開發期待已久的 React-Forget 編譯器，本次演講揭露了關鍵細節：
+
+- 基於 React 新模型（不再使用類別或 `this`）實現編譯可行性
+- 具備局部推理能力，可平行優化並逐步採用
+- 支援無類型 JavaScript，並理解 React 慣例（如 hooks 及 "use" 前綴）
+- 別名分析系統比 V8 引擎更完整
+
+Sathya 表示未來幾週將有更多 React-Forget 消息，包含 2 天後在 [React Advanced 的《理解慣用 React》演講](https://reactadvanced.com/schedule-offline)。簡言之，我們已迫不及待想了解更多！
+
+---
+
+- 💸 [透過 Ably 的應用內協作 SDK，只需幾行程式碼即可建立如 Figma 和 Miro 的協作應用](https://hubs.la/Q023nqgg0)
+- 📜 [Vercel - 我們如何優化 Next.js 中的套件導入](https://vercel.com/blog/how-we-optimized-package-imports-in-next-js)：說明新增的 `optimizePackageImports` 選項如何運作，此功能旨在優化「桶狀文件」(Barrel files) 的導入效能，這類 `index.js` 檔案會重新導出多個模組並引發效能問題。
+- 📜 [釋放 Storybook 的威力](https://formidable.com/blog/2023/unlocking-the-power-of-storybook/)：分享多項實用技巧的精彩文章，探討如何運用 Storybook 加速迭代。若您使用 Storybook，強烈建議嘗試視覺回歸測試。
+- 📜 [React useTransition：效能遊戲規則改變者還是...？](https://www.developerway.com/posts/use-transition)：透過互動範例展示 React 更新阻塞主執行緒的經典案例，說明如何正確使用過渡效果和並行渲染來改善使用者體驗。
+- 📜 [React memo 其實很棒](https://timtech.blog/posts/react-memo-is-good-actually/)：關於 React 記憶化應用的深入思考。其中一點我持不同意見：[🐦 優化應該被封裝](https://twitter.com/sebastienlorber/status/1709258823582564644)。
+- 📜 [致 Remix loader 的情書](https://laconicwit.com/a-love-letter-to-the-remix-loader/)：對 Remix loader 的讚頌，這項優雅動態的抽象層易於類型定義，同時也描述了需克服的挑戰。
+- 📜 [Next.js 中的程式化 SEO](https://practicalprogrammatic.com/blog/programmatic-seo-in-nextjs/)：基於資料集使用 RSC 生成 Next.js 頁面。
+- 📜 [類別化元件](https://flexible.dev/blog/single-line-components/)：透過複用 styled-components API 和 `@tw-classed/react` 簡化 Tailwind 應用。
+- 📜 [Next.js 的崛起：為何成為現代網站的首選全端框架](https://www.felixvemmer.com/blog/why-next-js/)：詳述選用 Next.js 的充分理由。
+- 📜 [將 Remix 嵌入 Directus](https://echobind.com/post/embedding-remix-in-directus)
+- 📜 [Storybook - 主題切換器外掛登場](https://storybook.js.org/blog/introducing-theme-switcher-addon/)
+- 📜 [MobX-State-Tree 效能基準測試](https://coolsoftware.dev/blog/benchmarking-mobx-state-tree/)
+- 📦 [Remix v2.1 - 實驗性視圖過渡效果支援](https://github.com/remix-run/remix/releases/tag/remix%402.1.0)
+- 📦 [Astro v3.3 - 全新實驗性 Picture 元件，shikiji 語法突顯](https://astro.build/blog/astro-330/)
+- 📦 [create-t3-app v7.22 - 新增 Next.js App Router 選項](https://github.com/t3-oss/create-t3-app/releases/tag/create-t3-app%407.22.0)
+- 📦 [Legend-State v2.0 - 效能、持久化、開發體驗全面提升](https://legendapp.com/open-source/legend-state-v2/)
+- 📦 [next-international v1.1 - 強化 App Router 支援](https://github.com/QuiiBz/next-international/releases/tag/1.1.0)
+- 👥 [Next.js 大會 - 10月26日 - 講者陣容公布](https://nextjs.org/conf/speakers)
+- 👥 [React Advanced](https://reactadvanced.com/?utm_source=email&utm_medium=thisweekinreact)（倫敦 🇬🇧，10月20-23日）提供 [\-10% 優惠 - 代碼 "REACT10"](https://ti.to/gitnation/react-advanced-london-2023/discount/REACT10)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![CoderPad：在共同工作前先共同編碼](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)
+
+**[CoderPad：在共同工作前先共同編碼](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)**
+
+招聘前端開發者很困難。😩 但已有 4,000+ 個工程團隊（包括 Netflix、Spotify 和 LinkedIn）找到了更好的方法！🤠 跳過演算法面試，**在完全可自訂的協作式 IDE 中進行前端面試**——您可以：
+
+- 拖放 React（以及 Angular 或 Vue）程式庫
+- 使用 npm install 添加套件
+- 讓候選人在面試中即時使用 ChatGPT
+- 在面試後觀看並分享程式碼回放
+
+使用 CoderPad 進行快速、公平且真實的程式設計面試，贏得候選人與面試官的信任。[立即免費註冊，自信招聘](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Gluestack](/emails/issues/163/gluestack.jpg)](https://gluestack.io/ui/v1)
+
+[**Gluestack-ui v1.0 - 適用於 React Native 和 Web 的通用無障礙 UI 元件，提供無樣式與主題化版本**](https://gluestack.io/ui/v1)
+
+這個全新的跨平台樣式解決方案和元件庫在 React-Native 中發布了穩定 v1.0 版本。首版已包含相當豐富的功能：VSCode 插件、Figma 套件、Expo 和 Next.js 支援、無樣式與主題化元件。我們需要仔細研究所有內容！我認為 Next.js 的 RSC 支援仍有限制，需使用 'use client' 指令。
+
+---
+
+- 💸 [Moropo - 以 10 倍速度建置和擴展開源 React Native 測試](https://www.moropo.com/for-react-native?utm_source=newsletter&utm_medium=emails&utm_campaign=twir-20231018)
+- 📜 [Expo - 三種網路除錯方法](https://blog.expo.dev/three-ways-to-use-network-debugging-75fa6118fac6)
+- 📦 [React-Native 0.72.6 - 修復 CocoaPods 安裝問題](https://github.com/facebook/react-native/releases/tag/v0.72.6)
+- 📦 [react-native-visionos](https://github.com/callstack/react-native-visionos)：Callstack 的 React-Native 分支，可在 VisionOS 上運行 React-Native，現已開源。
+- 📦 [react-native-unistyles v1.0](https://github.com/jpudysz/react-native-unistyles)：這個改善 React-Native StyleSheet 開發體驗的新跨平台樣式解決方案發布穩定版。
+- 📦 [VisionCamera v3.4 - 速度提升 7 倍](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.4.0)
+- 📦 [React-Native-Screens v3.26 - 新增 useAnimatedHeaderHeight](https://github.com/software-mansion/react-native-screens/releases/tag/3.26.0)
+- 📦 [react-native-vercel-ai - 跨平台 Vercel AI 介面](https://github.com/bidah/react-native-vercel-ai)
+- 📦 [radix-ui-react-native-icons](https://github.com/Eronred/radix-ui-react-native-icons)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [TC39-TG4 - 成立新工作組以標準化 Source Maps](https://www.ecma-international.org/news/ecma-tc39-ecmascript-initiates-a-new-task-group-to-standardize-source-maps//)
+- 📜 [你無法超越「無建構」的速度](https://world.hey.com/dhh/you-can-t-get-faster-than-no-build-7a44131c)
+- 📜 [為何 Fetch Promise 在錯誤回應時不會拒絕](https://kettanaito.com/blog/why-fetch-promise-doesnt-reject-on-error-responses)
+- 📜 [DefinitelyTyped 成為單體倉儲！](https://jakebailey.dev/posts/pnpm-dt-3/)
+- 📦 [Node.js v21 - 穩定 fetch/WebStreams、預設模組系統標誌、V8 11.8、v20 轉為 LTS...](https://openjsf.org/announcement/2023/10/17/node-js-21-available-now/)
+- 📦 [Parcel v2.10 - 大幅效能提升](https://github.com/parcel-bundler/parcel/releases/tag/v2.10.0)
+- 📦 [Oslo - 認證相關工具集](https://github.com/pilcrowOnPaper/oslo)
+- 📦 [async-cache-dedupe v2](https://github.com/mcollina/async-cache-dedupe)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/163/meme.jpg)](https://twitter.com/BHolmesDev/status/1713177728143241403)
+
+下次見！👋

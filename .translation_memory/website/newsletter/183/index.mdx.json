@@ -1,0 +1,573 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/183/index.mdx",
+  "source_file_content_hash": "3853394c5b98b878c7eb13b1aad7e50c5b454362987e51ee6c8e44a523ecdccf",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /183\ntitle: \"This Week In React #183: Vercel Edge, React Native 0.74 + IDE, refs, patching fetch(), Remix Single Fetch, RSCs, Signals, Redwood, Zustand Slices, XState, VisionCamera 4, NewArch, VisionOS...\"\nauthors: [slorber, bndkt]\ndate: 04-24-2024\n---",
+      "source_content_hash": "7f9c1b557b29a3c74439d3a4071be80ed44383e318aed1884a10d3623b6d34e5",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week React Native takes the spotlight! But there are also interesting news from Vercel and PRs to take a look at from the React core team.",
+      "source_content_hash": "fe0b35d937700132ca463b61cad8c99896e958b8edaba4d803a58e7a2553816b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週 React Native 成為焦點！但同時也有來自 Vercel 的有趣消息以及 React 核心團隊值得一看的 PR。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Earlier this week, I was at React/RN Connection conferences in Paris. It was great to meet some of you there!",
+      "source_content_hash": "4656e407717abde109030d7590315550816e0832b5959cc8b7c2acf52a48e4b1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週早些時候，我參加了在巴黎舉行的 React/RN Connection 會議。很高興在那裡見到你們中的一些人！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "The Parisian party is not over. After many years, the great [**dotJS conference**](https://www.dotjs.io/?utm_source=thisweekinreact) is back in Paris on June 27. They already announced great speakers, including Mark Dalgleish, Malte Ubl, Charlie Gerard, James Q Quick, Ben Lesh... Last regular tickets available, get a 10% discount with my code \"TWIR\".",
+      "source_content_hash": "b49039ae33f1065f6dd2f35d7e49ace4a9de14eec5327c30a70664b6633a010a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "巴黎的派對尚未結束。多年後，盛大的 [**dotJS 會議**](https://www.dotjs.io/?utm_source=thisweekinreact) 將於 6 月 27 日重返巴黎。他們已經宣布了強大的講者陣容，包括 Mark Dalgleish、Malte Ubl、Charlie Gerard、James Q Quick、Ben Lesh 等。最後的普通票現正發售，使用我的代碼 \"TWIR\" 可享 9 折優惠。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "Due to the conf, I only had today to work on the newsletter. Thankfully my co-author [Benedikt](https://twitter.com/bndkt) took over and did most of the work this week! 🙏",
+      "source_content_hash": "d5e5ff099a5eebf6ca51cf74fd7e56ea13ceeaaa7d5c84eddcd1465f15a3fa81",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "由於會議的緣故，我直到今天才有時間處理通訊。幸好我的共同作者 [Benedikt](https://twitter.com/bndkt) 接手並完成了本週大部分的工作！🙏"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "Next week, the newsletter takes a well-deserved break. We'll be back on May 8.",
+      "source_content_hash": "f6aee74c588b37a59cb93e4c3e324d27627678ef990afb98d9bc6f8338b43a4d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下週，通訊將休息一次。我們將於 5 月 8 日回歸。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c6da205d",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_c6da205d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2df4f75f",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**💡 [在 Twitter 上查看本通訊](https://slo.im/thread) - 視覺格式 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf4363fc",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_cf4363fc"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2a3434e4",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_2a3434e4"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2b28cb1b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b25f21be",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[![A newsletter helping build your product skills](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)",
+      "source_content_hash": "b4defffda4cb70d8fab3f0121a878488876529b49c2af70e74bab3338167a672",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![一份幫助您提升產品技能的通訊](/emails/issues/183/posthog.jpg)](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "**[A newsletter helping build your product skills](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**",
+      "source_content_hash": "40683f0d8688d5ee07c70054387a0de091102f03256989716283d2cb2727d676",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[一份幫助您提升產品技能的通訊](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "[**Product for Engineers**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) is PostHog’s newsletter dedicated to helping engineers improve their product skills. Learn what questions to ask users, how to build new features users love, and the path to product market fit.",
+      "source_content_hash": "dafb8650efe99337a8919642c13774a586336b2fb91f36b3b2fae7dec8e62387",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**工程師的產品指南**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) 是 PostHog 的通訊，致力於幫助工程師提升產品技能。學習該問使用者哪些問題、如何打造使用者喜愛的新功能，以及達成產品市場契合的路徑。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[**Subscribe for free**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) to get curated advice on building great products, lessons (and mistakes) from building PostHog, and deep dives into the strategies of top startups.",
+      "source_content_hash": "2df114b9fcd4e6f633a0926e9670819f408cf761beed46d1ded189643c97c963",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**免費訂閱**](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir) 以獲取關於打造優秀產品的精選建議、來自構建 PostHog 的經驗（和錯誤），以及對頂尖初創公司策略的深度解析。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "602e59c7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[![Vercel reverted all edge rendering back to Node.js](/emails/issues/183/r183.jpg)](https://x.com/leeerob/status/1780705942734331983)",
+      "source_content_hash": "0842acdadb583d18b5c85f5f7549910f5eae591d4656435ff3b4717e7b038829",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Vercel 將所有邊緣渲染回退至 Node.js](/emails/issues/183/r183.jpg)](https://x.com/leeerob/status/1780705942734331983)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "🐦 [Vercel reverted all edge rendering back to Node.js](https://x.com/leeerob/status/1780705942734331983)",
+      "source_content_hash": "b34b642ce77eb21665039a014cf91776648a2b00c0aa13476b3476fab75e9a61",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🐦 [Vercel 將所有邊緣渲染回退至 Node.js](https://x.com/leeerob/status/1780705942734331983)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "Vercel’s VP of Product, Lee Rob, explained on X that Vercel is “reverting all edge rendering back to Node.js.” If you’re using Vercel (and probably even if you don’t), you’ll know that Vercel has pushed “edge” as a concept for a long time. On the one hand, edge means that compute is run near to where a user accessing a site hosted on Vercel is located. On the other hand, it also means that this compute is run on an “edge runtime,” which is built on V8 and not on Node.js. While the concept of running compute near to the end users sound appealing, the advantages quickly disappear if data needs to be loaded from a central location (which very often is the case). At the same time, development teams are often struggling to adapt workload to the limited subset of APIs available on the edge runtime. Now it seams Vercel has come to the conclusion that overall, the challenges for developers outweigh the limited benefits, and is therefore reverting to centralized Node.js runtimes. I appreciate their transparency around this! If you want more details, Theo made a [video](https://youtu.be/lAGE-k1Zfrg?si=5SP4hyoFkixTsh-y) about it.",
+      "source_content_hash": "4763f7c930c06c67a372436da349618734be72e6735545d2a6babfb7a40b82ac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Vercel 的產品副總裁 Lee Rob 在 X 上解釋說，Vercel 正在「將所有邊緣渲染回退至 Node.js」。如果您正在使用 Vercel（甚至可能沒有使用），您會知道 Vercel 長期以來一直在推動「邊緣」這一概念。一方面，邊緣意味著運算在使用者存取託管於 Vercel 的網站的地點附近執行。另一方面，這也意味著運算在「邊緣運行時」上執行，該運行時建基於 V8 而非 Node.js。雖然在終端使用者附近執行運算的概念聽起來很吸引人，但如果資料需要從中央位置載入（這往往是常態），其優勢便會迅速消失。同時，開發團隊常常難以將工作負載適應邊緣運行時有限的 API 子集。現在看來，Vercel 得出的結論是，整體而言，對開發者而言的挑戰超過了有限的好處，因此正在回歸至集中式的 Node.js 運行時。我欣賞他們在這方面的透明度！如果您想了解更多細節，Theo 製作了一個關於此的[影片](https://youtu.be/lAGE-k1Zfrg?si=5SP4hyoFkixTsh-y)。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e0a17c0d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "157c9741",
+      "source_content": "- 💸 [Clerk's prebuilt UI components give you a beautiful, fully-functional user management experience in minutes. Start for free!](https://go.clerk.com/AlkHHq8)\n- 👀 [React Core PR - React 19 will not patch fetch() anymore!](https://github.com/facebook/react/pull/28896): the controversial `fetch()` patch to deduplicate requests in RSCs is now removed from React core. You might see it as a good thing, but keep in mind you will now need to deduplicate requests yourself manually with `React.cache`.\n- 👀 [React Core PR - Don't minify symbols in production builds](https://github.com/facebook/react/pull/28881): React 19 production builds will preserve variable/function names and should become easier to read/debug. You can still minify it yourself if you want to, but using HTTP gzip compression should be enough to compensate for the extra size.\n- 👀 [React Docs PR - Add documentation for ref cleanup function](https://github.com/reactjs/react.dev/pull/6770): React 19 ref functions can now return a cleanup function (🐦 [preview](https://twitter.com/sebastienlorber/status/1783108366459375675)). This should also help users using string refs (removed in v19) and classes to migrate thanks to automated codemods.\n- 👀 [Remix POC - Remix + Hono + Vite](https://github.com/yusukebe/hono-and-remix-on-vite)\n- 🗓 [React Summit](https://reactsummit.com/?utm_source=thisweekinreact) - 🇳🇱 Amsterdam - 14-18 June - Get a 10% discount with code \"TWIR\". Awesome lineup including Evan Bacon, Kent C. Dodds, Theo, Tim Neutkens, Mark Erikson, Fred Schott and so many others!\n- 📜 [HTML attributes vs DOM properties](https://jakearchibald.com/2024/attributes-vs-properties/): A great deep dive into subtle DOM behaviors and design decisions, including how frameworks like React or Vue handle the difference. Also explains how React 19 will improve support for Web Components.\n- 📜 [Redwood - Building a new docs site with RSC](https://redwoodjs.com/blog/building-a-new-docs-site-with-rsc): Redwood is dogfooding Redwood by showing how to build a docs site with it, based on MDX and RSCs.\n- 📜 [Deploy a new Remix app to Cloudflare Pages:](https://www.jacobparis.com/content/remix-cloudflare-pages) A lot has recently changed (and improved!) about how Remix can be deployed to CF Pages. This is a good guide on the state of the art.\n- 📜 [Improving INP in React and Next.js](https://www.thisdot.co/blog/improving-inp-in-react-and-next-js): Interaction to Next Paint has recently replaced First Input Delay (FID) as a core web vital; this post details how to optimize it.\n- 📜 [Did Signals Just Land in React?](https://thenewstack.io/did-signals-just-land-in-react/): Spoiler Alert: No, they didn't. But there’s still a way to try signals in React.\n- 📜 [Vercel - Building an interactive 3D event badge with React Three Fiber](https://vercel.com/blog/building-an-interactive-3d-event-badge-with-react-three-fiber)\n- 📜 [Getting the Current URL in Next.js Server Components](https://www.propelauth.com/post/getting-url-in-next-server-components)\n- 📜 [How to manifest streamlined authentication: AWS Cognito in a React app](https://evilmartians.com/chronicles/how-to-manifest-streamlined-authentication-aws-cognito-in-a-react-app)\n- 📜 [Localized link tags for SEO in Remix](https://react-japan.dev/en/blog/localized-link-tags-for-seo-in-remix)\n- 📜 [How Solid Made Me A Better React Developer](https://www.brenelz.com/posts/how-solid-made-me-a-better-react-developer/)\n- 📜 [Boosting Performance with Next.js and React Server Components - A GeekyAnts Case Study](https://geekyants.com/blog/boosting-performance-with-nextjs-and-react-server-components-a-geekyantscom-case-study)\n- 📜 [How to Simplify Global State Management in React Using Jotai](https://thenewstack.io/how-to-simplify-global-state-management-in-react-using-jotai/)\n- 📦 [Remix 2.9 - Single Fetch (unstable)](https://github.com/remix-run/remix/blob/main/CHANGELOG.md)\n- 📦 [StyleX - 0.6.1 - Typed variables, fallback values, ESLint plugin](https://stylexjs.com/blog/v0.6.1)\n- 📦 [Hydrogen April 2024 release - Analytics preview, stable Vite support, SEO updates, full-page caching](https://hydrogen.shopify.dev/update/april-2024)\n- 📦 [Zustand-Slices - Assemble slices into a single store](https://github.com/zustandjs/zustand-slices)\n- 📦 [Spoiled - Realistic Spoiler component for React.js](https://github.com/molefrog/spoiled)\n- 🎙️ [Off The Main Thread Podcast: Putting React In The Browser](https://offthemainthread.tech/episode/putting-react-in-the-browser/)\n- 🎥 [Jack Herrington - JS Built-in Signals In React and Svelte today!](https://www.youtube.com/watch?v=HSVcZa5yTKE)\n- 🎥 [Ben Holmes - Vercel got it wrong](https://www.youtube.com/watch?v=_dtyYDwHAIc): Interesting take on the “edge” topic by Ben Holmes, detailing Cloudflare’s approach.",
+      "source_content_hash": "962431130e7acfef78c4d95d0be47f49d9e84a26f397714fc001225dc3498454",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_157c9741"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2128cb26",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_2128cb26"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ff0f46f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0a103a02",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "[![NLUX ― New React Library To Simplify Adding AI Features](/emails/issues/183/nlux.jpg)](https://nlux.dev/?c-twr2-h)",
+      "source_content_hash": "29f42603a0228d7c8cf4b282a95877a521e9a1bafd1722b6317b32a7a0f746f1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![NLUX ― 簡化添加 AI 功能的新 React 函式庫](/emails/issues/183/nlux.jpg)](https://nlux.dev/?c-twr2-h)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "**[NLUX ― New React Library To Simplify Adding AI Features](https://nlux.dev/?c-twr2-h)**",
+      "source_content_hash": "12b2a0eaf8abe2e1215d8149c7dd2622201e74a44eced2d3612c5eb27fadf6d9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[NLUX ― 簡化添加 AI 功能的新 React 函式庫](https://nlux.dev/?c-twr2-h)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "[NLUX](https://nlux.dev?c-twr2-p1) is an [open-source](https://github.com/nluxai/nlux) React library that makes it super simple to integrate powerful large language models (LLMs) like ChatGPT into your web app or website. With just a few lines of code, you can add conversational AI capabilities.",
+      "source_content_hash": "bee626b6aa954838238ed905beff30885dbdc73c488b1912a32bb109f73bf622",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[NLUX](https://nlux.dev?c-twr2-p1) 是一個[開源](https://github.com/nluxai/nlux)的 React 函式庫，可讓您輕鬆將像 ChatGPT 這樣強大的大型語言模型 (LLMs) 整合到您的網路應用程式或網站中。只需幾行程式碼，您就能加入對話式 AI 功能。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "Key features 🌟 include:",
+      "source_content_hash": "7c9774ccfc6a7d876eedf218e2c40697e4a451c1178bdf57089358b2544054ad",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "主要功能 🌟 包括："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b0dbe2f3",
+      "source_content": "- **Build AI Chat Interfaces In Minutes** - High quality conversational AI interfaces with a few lines of code.\n- **React Components & Hooks** - `<AiChat />` for UI and `useChatAdapter` hook for easy integration.\n- **Flexible Adapters** - For `ChatGPT`, `LangChain` and `HuggingFace`, and an API to **Create Your Own Adapter** for any backend.\n- **Synchronise UI state with AI backends** in an optimal way.\n- **Markdown Streaming** - Render LLM markdown as it's being generated.\n- **Zero Dependencies** - Lightweight codebase.",
+      "source_content_hash": "690f43a97513126123ff925f2df5e8f35b601cb5541258ef71d4163bb14d4fc1",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- **幾分鐘內建構 AI 聊天介面** - 只需幾行程式碼，即可打造高品質的對話式 AI 介面。\n- **React 元件與 Hooks** - 用於 UI 的 `<AiChat />` 以及用於輕鬆整合的 `useChatAdapter` hook。\n- **靈活的適配器** - 適用於 `ChatGPT`、`LangChain` 和 `HuggingFace`，並提供 API 以**為任何後端創建您自己的適配器**。\n- **以最佳方式同步 UI 狀態與 AI 後端**。\n- **Markdown 串流** - 在 LLM 生成 Markdown 的同時進行渲染。\n- **零依賴** - 輕量級程式碼庫。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "More info, examples and documentation on [nlux.dev](https://nlux.dev?c-twr2-p1)",
+      "source_content_hash": "94aec7f0299d1143e78a8b8b846b942a3bf1a5cda7b402a8ebd227852e26612c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "更多資訊、範例和文件請參閱 [nlux.dev](https://nlux.dev?c-twr2-p1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dd8754e7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c7c92a79",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f0984c2a",
+      "source_content": "[![React Native 0.74 released, React Native IDE is now in beta](/emails/issues/183/rn183.jpg)](https://reactnative.dev/blog/2024/04/22/release-0.74)",
+      "source_content_hash": "261f5aba5df751c4048700a1e62220ca3c87fd5ded6b2cd5c74f8d7c47a6c7d7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React Native 0.74 發布，React Native IDE 現已進入測試版](/emails/issues/183/rn183.jpg)](https://reactnative.dev/blog/2024/04/22/release-0.74)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a81544fd",
+      "source_content": "📦 [React Native 0.74 released](https://reactnative.dev/blog/2024/04/22/release-0.74)",
+      "source_content_hash": "431a300b6125ecac2e39fb2f4444dcd01865a816617eba222c98752d3af85704",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "📦 [React Native 0.74 發布](https://reactnative.dev/blog/2024/04/22/release-0.74)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0801d969",
+      "source_content": "This week saw the release of React Native 0.74, a major milestone for the community! The latest version makes “bridgeless mode” the default for new projects using the New Architecture (with the next release, 0.75, the New Arch will become the default, too). Both can still be turned off if needed, but they clearly represent the future of React Native, and over the last months especially, A LOT of libraries have added support for both. But there’s more: RN 0.74 includes Yoga 3.0. There are very few breaking changes and deprecations, but it’s still worth checking them out in the [release notes](https://reactnative.dev/blog/2024/04/22/release-0.74).",
+      "source_content_hash": "07880d9425d34282f721f30a5ee70864e791f38ff3f9a2f195969dfef46e5609",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週發布了 React Native 0.74，這是社群的一個重要里程碑！最新版本讓「無橋接模式」成為使用新架構的新專案的預設設定（在接下來的 0.75 版本中，新架構也將成為預設）。兩者仍可在需要時關閉，但它們顯然代表了 React Native 的未來，尤其是在過去幾個月，大量函式庫已添加對這兩者的支援。但還有更多：RN 0.74 包含了 Yoga 3.0。破壞性變更和棄用非常少，但還是值得查看[發布說明](https://reactnative.dev/blog/2024/04/22/release-0.74)。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c19e221",
+      "source_content": "📦 [React Native IDE is now in beta](https://ide.swmansion.com/)",
+      "source_content_hash": "221839eae6a1aed1ee50c29557a7ff46cbfd9d95f35a8b197e914ec0bcc0d9a7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "📦 [React Native IDE 現已進入測試版](https://ide.swmansion.com/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d21af28f",
+      "source_content": "Another exciting news this week is the closed beta for React Native IDE, developed by the team at Software Mansion. You can now sign up to get early access to the IDE. They also have a landing page up now, and the [docs](https://ide.swmansion.com/docs/getting-started) are publicly available for anyone curious about it.",
+      "source_content_hash": "17e67b1619cf0b988b88f1e35e817335c1a30e3cec2d0c7931356ac555a5042c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週另一個令人興奮的消息是 Software Mansion 團隊開發的 React Native IDE 已進入封閉測試階段。您現在可以報名以取得 IDE 的早期存取權限。他們現在也上線了登陸頁面，並且[文件](https://ide.swmansion.com/docs/getting-started)已公開提供給任何對此感興趣的人。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "55ba2007",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2a1e835c",
+      "source_content": "- 💸 [React Native Analytics — Omlet is a New Tool to Analyze Component Usage. See Trends to Improve Code and Boost Component Adoption.](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-rn-ql-apr-2024)\n- 🐦 [Right-click to inspect with access to components hierarchy and jump-to-source in the coming React Native IDE?](https://x.com/kzzzf/status/1781334337960493100)\n- 🐦 [Another week, another wild push from Evan Bacon: Precompiled React Native](https://x.com/Baconbrix/status/1782454818851663918)\n- 🗓 [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 Kraków - 22-24 May. Get a [10% discount](https://ti.to/appjs/2024/discount/TWIR) with code \"TWIR\".\n- 📜 [Sunrising New Architecture in the New Expensify App](https://blog.swmansion.com/sunrising-new-architecture-in-the-new-expensify-app-729d237a02f5): Super cool to see a complex open-source app adapting the New Arch. A great example to look into!\n- 📜 [Apple privacy manifest for React Native](https://dev.to/dannyhw/apple-privacy-manifest-for-react-native-29fk): I’ve mentioned the Apple Privacy Manifest requirement before; finally, a good blog post summarizes the topic.\n- 📜 [Expo Blog: Save users from deleting your app with expo-quick-actions](https://expo.dev/blog/expo-quick-actions)\n- 📜 [Creating a React Native “Curved Bottom Bar” with Handwritten SVG](https://kyleshevlin.com/react-native-curved-bottom-bar-with-handwritten-svg/)\n- 📜 [Exploring VisionOS Apps with React Native](https://geekyants.com/blog/exploring-visionos-apps-with-react-native)\n- 📜 [Microsoft is retiring App Center: Here’s what React Native developers should use instead](https://shift.infinite.red/microsoft-is-retiring-app-center-heres-what-react-native-developers-should-use-instead-c2a8786f971e)\n- 📦 [React Native VisionCamera V4: Draw directly on camera frames with Skia, lots of Android bug fixes](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.0.0): There is a great [demo](https://github.com/mrousavy/FaceBlurApp) showcasing what kind of stuff this enables, too!\n- 📦 [react-native-svg 15.2.0 adds support for RN 0.74 on New Architecture](https://github.com/software-mansion/react-native-svg/releases/tag/v15.2.0)\n- 🎙️ [RNR 294 - Goodbye, App Center!](https://reactnativeradio.com/episodes/rnr-294-rip-app-center-and-other-news)\n- 🎙 [Rocket Ship 39 - Award Winning Credit Card App Yonder with Henry Moulton](https://podcast.galaxies.dev/episodes/039-award-winning-credit-card-app-yonder-with-henry-moulton)\n- 🎥 [The React Native Show Podcast: Coffee Talk 18 - Behind the Scenes of React Native 0.74 Release](https://www.youtube.com/watch?v=bLHubdUE2Ew)\n- 🎥 [Simon Grimm - React Native Multiplayer with Supabase Realtime and Skia](https://www.youtube.com/watch?v=rqbu-nGkOgw)\n- 🎥 [Oscar Franco - React Native Bridgeless Mode for Dummies](https://www.youtube.com/watch?v=K5HBIKAjZ4U)",
+      "source_content_hash": "fb3414d2e2612d1c66168cb04e46655bb822eac93967d4dc008ef368073833e5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [React Native 分析工具 — Omlet 是一個用於分析組件使用情況的新工具。查看趨勢以改進代碼並提升組件採用率。](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-rn-ql-apr-2024)\n- 🐦 [在即將推出的 React Native IDE 中，右鍵點擊檢查元件階層並跳轉至原始碼？](https://x.com/kzzzf/status/1781334337960493100)\n- 🐦 [又過一週，Evan Bacon 再度推出新作：預編譯 React Native](https://x.com/Baconbrix/status/1782454818851663918)\n- 🗓 [App.js 大會](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 克拉科夫 - 5月22-24日。使用代碼 \"TWIR\" 可享 [9折優惠](https://ti.to/appjs/2024/discount/TWIR)。\n- 📜 [在新 Expensify 應用中啟用新架構](https://blog.swmansion.com/sunrising-new-architecture-in-the-new-expensify-app-729d237a02f5)：看到複雜的開源應用適配新架構令人驚豔！絕佳的參考案例。\n- 📜 [React Native 的 Apple 隱私清單](https://dev.to/dannyhw/apple-privacy-manifest-for-react-native-29fk)：先前曾提過 Apple 隱私清單要求，終於有篇好文章完整總結此主題。\n- 📜 [Expo 部落格：使用 expo-quick-actions 防止用戶刪除你的應用](https://expo.dev/blog/expo-quick-actions)\n- 📜 [使用手寫 SVG 創建 React Native 曲線底部導覽列](https://kyleshevlin.com/react-native-curved-bottom-bar-with-handwritten-svg/)\n- 📜 [使用 React Native 探索 VisionOS 應用](https://geekyants.com/blog/exploring-visionos-apps-with-react-native)\n- 📜 [微軟將淘汰 App Center：React Native 開發者替代方案指南](https://shift.infinite.red/microsoft-is-retiring-app-center-heres-what-react-native-developers-should-use-instead-c2a8786f971e)\n- 📦 [React Native VisionCamera V4：透過 Skia 直接在相機畫面上繪製，修復大量 Android 錯誤](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.0.0)：附帶展示功能的精彩 [演示](https://github.com/mrousavy/FaceBlurApp)！\n- 📦 [react-native-svg 15.2.0 新增支援 RN 0.74 新架構](https://github.com/software-mansion/react-native-svg/releases/tag/v15.2.0)\n- 🎙️ [RNR 第294集 - 再見了，App Center！](https://reactnativeradio.com/episodes/rnr-294-rip-app-center-and-other-news)\n- 🎙 [火箭船第39集 - 獲獎信用卡應用 Yonder 專訪 Henry Moulton](https://podcast.galaxies.dev/episodes/039-award-winning-credit-card-app-yonder-with-henry-moulton)\n- 🎥 [React Native Show 播客：咖啡閒聊18 - React Native 0.74 發布幕後](https://www.youtube.com/watch?v=bLHubdUE2Ew)\n- 🎥 [Simon Grimm - 使用 Supabase Realtime 和 Skia 實現 React Native 多人連線](https://www.youtube.com/watch?v=rqbu-nGkOgw)\n- 🎥 [Oscar Franco - 給新手看的 React Native 無橋接模式](https://www.youtube.com/watch?v=K5HBIKAjZ4U)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b99d2cf6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dba1427",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb70e807",
+      "source_content": "- 🐦 [Fetch API has built-in timeout support](https://x.com/goenning/status/1781290404211814903)\n- 📜 [On Signal Relays](https://www.pzuraq.com/blog/on-signal-relays)\n- 📜 [WebKit: Help us invent CSS Grid Level 3, aka “Masonry” layout](https://webkit.org/blog/15269/help-us-invent-masonry-layouts-for-css-grid-level-3/)\n- 📜 [An intro to TSConfig for JavaScript Developers](https://deno.com/blog/intro-to-tsconfig)\n- 📜 [Vercel - Latency numbers every frontend developer should know](https://vercel.com/blog/latency-numbers-every-web-developer-should-know)\n- 📖 [The Front End Developer/Engineer Handbook 2024 — A Guide to Modern Web Development - Free eBook](https://frontendmasters.com/blog/front-end-developer-handbook-2024/)\n- 📦 [Chrome 125 beta - CSS Anchor Positioning, CSS stepped functions, …](https://developer.chrome.com/blog/chrome-125-beta?hl=en)\n- 📦 [ESLint v9.1](https://eslint.org/blog/2024/04/eslint-v9.1.0-released/)\n- 📦 [Electron 30.0](https://www.electronjs.org/blog/electron-30-0)",
+      "source_content_hash": "5e052d6b6e7f95a316fe5189695361982f4d25c4e37edeeba84dc770a65fa5c3",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 🐦 [Fetch API 內建支援逾時功能](https://x.com/goenning/status/1781290404211814903)\n- 📜 [訊號轉接器探討](https://www.pzuraq.com/blog/on-signal-relays)\n- 📜 [WebKit：協助我們打造 CSS Grid Level 3「瀑布流」佈局](https://webkit.org/blog/15269/help-us-invent-masonry-layouts-for-css-grid-level-3/)\n- 📜 [給 JavaScript 開發者的 TSConfig 入門指南](https://deno.com/blog/intro-to-tsconfig)\n- 📜 [Vercel - 前端開發者必須知道的延遲數據](https://vercel.com/blog/latency-numbers-every-web-developer-should-know)\n- 📖 [2024 年前端開發者/工程師手冊 - 現代網頁開發指南 - 免費電子書](https://frontendmasters.com/blog/front-end-developer-handbook-2024/)\n- 📦 [Chrome 125 beta - CSS 錨點定位、CSS 階梯函數...](https://developer.chrome.com/blog/chrome-125-beta?hl=en)\n- 📦 [ESLint v9.1](https://eslint.org/blog/2024/04/eslint-v9.1.0-released/)\n- 📦 [Electron 30.0](https://www.electronjs.org/blog/electron-30-0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74a488b8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b77e7669",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣味專區 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "[![Vercel updated their logo](/emails/issues/183/meme.jpg)](https://twitter.com/RhysSullivan/status/1780822966349266957)",
+      "source_content_hash": "9ecc0ce1b21cbc12a160a4924dcf92f185ba2c48fe7dcaefa700b846c62a2083",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Vercel 更新了他們的標誌](/emails/issues/183/meme.jpg)](https://twitter.com/RhysSullivan/status/1780822966349266957)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "44285072",
+      "source_content": "[![Vercel updated their logo](/emails/issues/183/meme2.jpg)](https://twitter.com/bentonnnnnn/status/1781186098800267421)",
+      "source_content_hash": "97d7e4725b6796aef4a7f676c051a6bd3d9cf3f0556d75a7e3c9840b7e1e0744",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Vercel 更新了他們的標誌](/emails/issues/183/meme2.jpg)](https://twitter.com/bentonnnnnn/status/1781186098800267421)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a8f09c71",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下次見！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/183/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.086176+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "3853394c5b98b878c7eb13b1aad7e50c5b454362987e51ee6c8e44a523ecdccf"
+  }
+}

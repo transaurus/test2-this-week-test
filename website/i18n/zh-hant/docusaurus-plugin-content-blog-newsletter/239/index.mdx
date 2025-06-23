@@ -1,0 +1,139 @@
+---
+slug: /239
+title: "This Week In React #239: ViewTransition, Suspense, TanStack, Zero, use-mcp, Compiler, Intl-T | 0.80, Stable APIs, iOS prebuilds, shadcn, Expo, InstantDB, Granite | TypeBuddy, Hono, H3, Playwright, cosmos.gl"
+authors: [piaskowyk, tomekzaw]
+date: 06-18-2025
+---
+
+大家好！**來自 [Software Mansion](https://swmansion.com/?utm_source=thisweekinreact) 的 Krzysztof 和 Tomasz** 在此 👋
+
+本週對 React 生態系統來說相當平靜，但 React Native 領域則不然。Meta 發布了一項令人振奮的公告：在 React Native 0.80 版本中，他們決定正式凍結舊架構。請確保您的應用程式已準備好遷移至新架構，因為這似乎是最後的適應時機。
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![IDE 免費 AI 程式碼審查 - VSCode、Cursor、Windsurf](/emails/issues/239/coderabbit.jpg)](https://coderabbit.link/tUMe5xC)
+
+**[IDE 免費 AI 程式碼審查 - VSCode、Cursor、Windsurf](https://coderabbit.link/tUMe5xC)**
+
+[CodeRabbit](https://coderabbit.link/6ZXULSK) 是專為加速程式碼審查和提升程式碼品質打造的 AI 平台，無縫整合 Git 工作流與現有工具鏈，提供程式碼庫感知的審查並支援所有程式語言。
+
+現在他們興奮地將 AI 程式碼審查直接帶入 VS Code、Cursor 和 Windsurf，讓您與團隊能在流暢狀態下(vibe)自信地編寫程式碼並進行審查。
+
+更棒的是：IDE 內的程式碼審查完全免費！沒錯：逐行審查與一鍵修復功能，皆在您的 IDE 中零成本使用。
+
+[立即安裝擴充功能](https://coderabbit.link/LszC1pB)，今天就開始 vibe 檢查您的程式碼吧！
+
+---
+
+## ⚛️ React {#react}
+
+- 💸 [工程師產品 - 開源新創公司的隱藏優勢](https://go.posthog.com/twir-jun18)
+- 📊 [2025 年 React 與社群現狀](https://blog.isquaredsoftware.com/2025/06/react-community-2025/)
+- 📖 [React 編譯器 – 可變性與別名模型](https://github.com/facebook/react/blob/156b7a96f5669470182ad226306184576d6f150f/compiler/packages/babel-plugin-react-compiler/src/Inference/MUTABILITY_ALIASING_MODEL.md)
+- 🗓️ [React Summit 美國](https://reactsummit.us/?utm_source=Newsletter&utm_medium=ThisWeekinReact) - 🇺🇸 紐約 - 11月18日 & 21日。最後早鳥機會！加入 Addy Osmani (Google Chrome)、Shaundai Person (Netflix)、Shawn Swyx Wang 等講者！
+- 📜 [將 React 的 \<ViewTransition\> 帶入原生 JavaScript](https://plainvanillaweb.com/blog/articles/2025-06-12-view-transitions/)：詳細說明視圖轉場應如何運作以及如何自行實作。
+- 📜 [使用 Suspense 實現可組合串流](https://twofoldframework.com/blog/composable-streaming-with-suspense)：React 的 Suspense 組合讓您輕鬆實現懶加載或亂序渲染等功能，無需複雜配置和外部依賴。
+- 📜 [視訊會議中的即時手勢識別](https://blog.swmansion.com/real-time-gesture-recognition-in-videoconferencing-4711855a1a53)：使用 MediaPipe、Fishjam 和 Smelter 實現基於瀏覽器的視訊特效。
+- 📜 [Zero 並非本地優先，而是更好](https://jjenzz.com/zero-is-not-local-first-its-better/)：Zero 函式庫採用「部分同步優先」而非完整的「本地優先」方法，僅同步應用程式實際查詢使用的數據，適用於大型數據集應用。無需處理快取失效，因伺服器仍是真實來源。
+- 📜 [TanStack Start：React 框架的未來？](https://www.premieroctet.com/blog/en/tanstack-future-react-frameworks)：分析 TanStack Start 框架優勢，可能成為 Remix 或 Next.js 等知名框架的競爭者。
+- 📜 [打造 Twitter 1.0 網頁體驗](https://largeapps.dev/case-studies/twitter/)：Twitter Lite PWA 優化歷程及其效益的案例分析。
+- 💸 [Next 之路 - 使用 Next.js 15 和 React 19 掌握全端網頁開發](https://www.road-to-next.com/?utm_source=newsletter&utm_medium=email&utm_campaign=this_week_in_react_1.1)
+- 📦 [Relay 20.0 – ESLint 插件更新](https://github.com/facebook/relay/releases/tag/v20.0.0)
+- 📦 [use-mcp - 輕量級 React hook，用於連接 Model Context Protocol 伺服器](https://github.com/modelcontextprotocol/use-mcp)
+- 📦 [Intl-T – 物件型態的 Node-Based i18n 翻譯函式庫](https://github.com/nivandres/intl-t)
+- 📦 [React Final Form 7.0 – 所有模組升級至 TypeScript](https://erikras.com/blog/final-form-to-typescript)
+- 📦 [Meteor 3.3 – 採用 SWC 和打包器優化加速建構](https://dev.to/meteor/faster-builds-in-meteor-33-modern-build-stack-with-swc-and-bundler-optimizations-fm2) – 建構速度提升 60%
+- 🎥 [Theo – 在 JSX 中捍衛 SQL](https://www.youtube.com/watch?v=PmXZvGtB7_U)
+- 🎥 [Shruti Kapoor – 你在 React 中管理狀態的方式錯了](https://www.youtube.com/watch?v=c7FQP-tUn1U)
+- 🎥 [Future Frontend Conf – YouTube 播放清單](http://youtube.com/watch?v=xadj32ExtWo&list=PLKGgD1M40S4hHnZtFi_kPgRRjMay_2KMp)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![Embrace Web RUM 提供以使用者為中心的可觀測性](/emails/issues/239/embrace.jpg)](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)
+
+**[Embrace Web RUM 提供以使用者為中心的可觀測性](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)**
+
+想要了解技術性能實際影響使用者參與度的環節嗎？透過 Embrace Web RUM，您可以將遙測數據與使用者的實際體驗連結起來，從而準確掌握故障點、問題重要性及修復方案。
+
+完整的工作階段時間軸。上下文中的 Core Web Vitals 與 JS 異常紀錄。自訂流程的使用者歷程搭配智能問題關聯功能。基於 OpenTelemetry 建構，可與現有可觀測性系統無縫整合。
+
+[參加網路研討會深入了解](https://get.embrace.io/web-rum-launch-webinar?utm_source=newsletter&utm_medium=paid&utm_campaign=twir-6-18-2025)
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![React Native 0.80 概覽](/emails/issues/239/RN_banner.png)](https://reactnative.dev/blog/2025/06/12/react-native-0.80)
+
+[**React Native 0.80**](https://reactnative.dev/blog/2025/06/12/react-native-0.80)
+
+此里程碑版本宣告了[邁向穩定 JavaScript API](https://reactnative.dev/blog/2025/06/12/moving-towards-a-stable-javascript-api)的目標，這項持續進行的計畫旨在精確定義 JS 與 TypeScript API。
+
+重點摘要如下：
+
+- React 19.1: Its new `captureOwnerStack()` API can improve the DX of error overlays.
+- JavaScript deep imports deprecation: You’ll have to import everything from the root `’react-native’` exports.
+- Strict TypeScript API (opt in): The Strict TypeScript API is an opt-in preview offering more accurate TypeScript types for the react-native package, generated directly from source code.
+- Legacy Architecture Freezing & Warnings: The React Native team will now focus on the New Architecture.
+- iOS Prebuilds for React Native: iOS builds are roughly 12% faster thanks to shipping prebuilds for Folly and GLog rather than building them from source. In a future release, the rest of React Native core will be shipped as a prebuild.
+
+---
+
+- 💸 [WithFrame - 預建 React Native 模板](https://withfra.me)
+- 📣 [Expo 對 React Native 0.80 的支援](https://expo.dev/changelog/react-native-80)：您必須使用 Expo 54 canary 版本，直到今年夏天晚些時候穩定發布，屆時將直接升級至 RN 0.81。
+- 👀 [shadcn/ui CLI PR - 支援透過 CLI 和註冊系統為 Expo 應用搭建組件](https://github.com/shadcn-ui/ui/pull/7540)
+- 👀 [Bluesky 行動應用 PR – 啟用新架構](https://github.com/bluesky-social/social-app/pull/8295)
+- 💬 [Flutter - 對 iOS 26「液態玻璃」的支援](https://github.com/flutter/flutter/issues/170310)：值得注意的是，Flutter 將不會在核心中添加對 iOS 26 和 Material 3 Expressive 的支援。
+- 🐦 [將 WWDC 的每個 iOS 26 Liquid Glass 功能引入 React Native](https://x.com/saul_sharma/status/1934467342576009254)
+- 🐦 [使用 Maestro 加速 iOS e2e 測試執行](https://x.com/janicduplessis/status/1933589353714102511)：避免在不需要時生成遞歸輔助功能標籤，此功能將在 0.81 版本中推出。
+- 📜 [2025 年最佳 React Native 除錯工具](https://blog.swmansion.com/best-react-native-debugging-tools-in-2025-a95dcac7a014)：概述 React Native 生態系統中除錯工具的現狀。
+- 📜 [透過受保護路由簡化 Expo Router 中的驗證流程](https://expo.dev/blog/simplifying-auth-flows-with-protected-routes)：如何在佈局文件中直接使用 Expo Router 的新受保護路由，根據用戶驗證狀態控制可見畫面。
+- 📜 [Expo + InstantDB – 如果 useState 是您的後端會怎樣？](https://expo.dev/blog/what-if-usestate-was-your-backend)：本教學展示如何透過 InstantDB 在 Expo 應用中簡化後端通訊，提供類似 useState 的體驗。
+- 📦 [Granite – 適用於微服務應用的 Brownfield 友好型 React Native 框架](https://github.com/toss/granite)
+- 📦 [VisionCamera 4.7 - 支援 Android 16 KB 頁面大小](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v4.7.0)
+- 📦 [Gesture Handler 2.26 - 支援 RN 0.80，Pressable 中的關係屬性](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.26.0)。
+- 📦 [create-react-native-library 0.51 - Android 16 KB 頁面大小支援](https://github.com/callstack/react-native-builder-bob/releases/tag/create-react-native-library%400.51.0)。
+- 🎥 [Code with Beto – 液態玻璃底部標籤](https://www.youtube.com/watch?v=L5f8Gy91Gv4)
+- 🎥 [Michał Pierzchała – 使用 R8 縮小 Android 應用大小](https://www.youtube.com/watch?v=Ud6TSlnEzCc)
+- 🎙️ [Rocket Ship 72 – 冰凍架構、殺死我的應用與 React Native 世界統治](https://share.transistor.fm/s/43ce5c20)
+- 🎙️ [RNR 334 – 與 Saad Najmi 探索 React Native MacOS](https://infinite.red/react-native-radio/rnr-334-react-native-macos-with-saad-najmi)
+
+---
+
+## 🔀 其他 {#other}
+
+- 💡 [TypeBuddy](https://github.com/typed-rocks/type-buddy) – 透過函式撰寫 TypeScript 型別 ([遊樂場](https://typed-rocks.github.io/type-buddy/))
+- 📜 [CSS 間隙樣式的新方法](https://developer.chrome.com/blog/gap-decorations?hl=en) – Chrome 和 Edge 139 開發者試用版提供間隙裝飾功能
+- 📜 [WWDC '25 的 Safari：聖誕節過去的幽靈](https://infrequently.org/2025/06/the-ghost-of-christmas-past/)
+- 📜 [Node.js 中的 Worker Threads：JavaScript 多執行緒完整指南](https://nodesource.com/blog/worker-threads-nodejs-multithreading-in-javascript)
+- 📜 [使用 CSS 實現縮放動畫：變換順序至關重要](https://jakearchibald.com/2025/animating-zooming/)
+- 📜 [在 ES 模組頂層使用 await](https://allthingssmitty.com/2025/06/16/using-await-at-the-top-level-in-es-modules/) – 實際用例、限制與注意事項
+- 📜 [Dan Abramov – 抑制的抑制](https://overreacted.io/suppressions-of-suppressions/) – 關於 linter 抑制和軟體開發社會契約的思考
+- 📦 [H3 v2 beta - 基於 Web 標準完全重寫，向後兼容且更快](https://h3.dev/blog/v2-beta)
+- 📦 [Playwright v1.52 & v1.53 – AI 修復、可描述定位器](https://dev.to/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9)
+- 📦 [Hono 4.8 - 路由助手、SSG、第三方中介軟體](https://github.com/honojs/hono/releases/tag/v4.8.0)
+- 📦 [cosmos.gl – OpenJS 基金會的高效能圖形視覺化引擎](https://openjsf.org/blog/introducing-cosmos-gl)
+
+---
+
+## 🤭 趣聞 {#fun}
+
+[![alt](/emails/issues/239/meme2.jpg)](https://www.linkedin.com/feed/update/urn:li:activity:7339605943137009664)
+
+[![alt](/emails/issues/239/meme1.jpg)](https://x.com/mrousavy/status/1922994477712453742)
+
+[![alt](/emails/issues/239/meme3.jpg)](https://nerdy.dev/fathers-day-2025)
+
+下次見！👋

@@ -1,0 +1,129 @@
+---
+slug: /157
+title: "This Week In React #157: Concurrent Mode, RSC DevTools Extension, Gatsby, Radix asChild, Suspense, hydration, useMemo, React-Redux, Fresh, TinyBase, Worklets, TFLite, local_modules, Bootsplash..."
+authors: [slorber]
+date: 08-22-2023
+---
+
+大家好！
+
+本週 React 生態圈相對平靜，但仍有幾篇不錯的文章值得一讀。
+
+在 React-Native 方面，Marc Rousavy 火力全開，發布了多個預示 VisionCamera v3 即將到來的套件。
+
+近期預計會有幾個重要版本發布，例如[🐦 Bun 1.0](https://twitter.com/jarredsumner/status/1693657906917585359)、[🐦 Astro 3.0](https://twitter.com/astrodotbuild/status/1693655809711108456)和[🐦 TanStack Router](https://twitter.com/tannerlinsley/status/1691936709498552654)。
+
+下週我將短暫休假，我們 9 月 6 日再見 👋
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Frontendmasters](/emails/issues/151/frontendmasters.png)](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)
+
+**[企業級 UI 開發（使用 React）：測試與程式碼品質](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)**
+
+正在管理或遷移大型應用程式和程式碼庫？本影片課程涵蓋高效擴展同時保持程式碼品質所需知識，包括單元測試、CI 流程、模擬測試、程式碼覆蓋率等內容。
+
+---
+
+## ⚛️ React {#react}
+
+[![React 並行模式的底層機制](/emails/issues/157/concurrentmode.jpg)](https://andreigatej.dev/blog/the-underlying-mechanisms-of-reacts-concurrent-mode/)
+
+[**React 並行模式的底層機制**](https://andreigatej.dev/blog/the-underlying-mechanisms-of-reacts-concurrent-mode/)
+
+這是一篇技術性強但極具教育意義的文章，深入研究 React 程式碼庫。詳細解釋了 `startTransition` 的運作原理及其與同步渲染模式的差異。我從中了解到 React 如何遞迴使用 `MessageChannel` API 來定期交還主執行緒控制權。
+
+---
+
+- 💸 [Zero To Shipped - 掌握快節奏全端開發並**最終**推出產品](https://www.zerotoshipped.com/)
+- 🐦 [Gatsby 死了嗎？](https://twitter.com/sebastienlorber/status/1694392101281190224)：並非正式宣告，但它的未來看起來不太樂觀。
+- 🎮 [React Jam - 2023 夏季獲獎者](https://reactjam.com/summer-2023-winners)：這個基於 React 的遊戲創作挑戰賽，我擔任評審之一，剛剛公佈了獲獎名單。
+- 📜 [在 React 中實作 Radix 的 asChild 模式](https://www.jacobparis.com/content/react-as-child)：解釋 Radix 推廣的 `asChild` 模式如何作為替代 `as` 屬性的方案，用於自訂底層元件。
+- 📜 [無障礙驅動開發](https://www.simplethread.com/a11y-driven-development/)：根據無障礙角色拆分和命名 React 元件的創新提案。
+- 📜 [三種架構中的 React Suspense](https://elanmed.dev/blog/suspense-in-different-architectures)：針對 CSR、SSR、RSC 三種架構展示四種 `<Suspense>` 使用案例。
+- 📜 [解決 Next.js 的 hydration 錯誤](https://chirag-gupta.hashnode.dev/how-to-solve-hydration-error-in-nextjs)：分析常見成因如用 `localStorage` 初始化狀態或無效 HTML 標記。
+- 📜 [在 Next.js App Router 和 Vercel 中使用 PostHog](https://vercel.com/guides/posthog-nextjs-vercel-feature-flags-analytics)
+- 📜 [useMemo 濫用](https://edvins.io/usememo-overdose)
+- 📦 [RSC 開發工具 - Chrome 擴充功能](https://chrome.google.com/webstore/detail/rsc-devtools/jcejahepddjnppkhomnidalpnnnemomn)：非官方工具現已上架，可分析 RSC 負載時間軸，詳見[文章](https://www.alvar.dev/blog/creating-devtools-for-react-server-components)。
+- 📦 [Fresh 1.4 – 更快的頁面載入、佈局與更多功能](https://deno.com/blog/fresh-1.4)
+- 📦 [TinyBase 4.1 - 新增 ui-react-dom 模組](https://tinybase.org/guides/releases/)
+- 📦 [NextUI 2.1 - Select、Listbox、ScrollShadow](https://nextui.org/blog/v2.1.0)
+- 📦 [React-Redux 9.0 alpha](https://github.com/reduxjs/react-redux/releases/tag/v9.0.0-alpha.0)
+- 🎥 [tRPC + NextJS App Router = 簡易類型安全 API](https://www.youtube.com/watch?v=qCLV0Iaq9zU)
+- 🎥 [Remotion Lambda 教學清單](https://www.youtube.com/playlist?list=PLRHdymbhXiIRgAeAUpMxe7l7BNliHfWUq)
+- 🎥 [React Query 是隱藏的強大狀態管理器](https://www.youtube.com/watch?v=0X3TlVklT-A)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助 {#sponsor2}
+
+[![Porkbun.com - 最佳域名註冊商](/emails/issues/150/porkbun.png)](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)
+
+**[Porkbun.com - 最佳域名註冊商](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)**
+
+Porkbun 為 React 和 React-Native 開發者提供數百種域名後綴，從 .dev、.app 到 .cloud、.xyz 和 .ai — 全部都是**最低價！** 在 Porkbun 註冊的每個域名都附帶**大量免費功能**，例如：
+
+- SSL 憑證
+- WHOIS 隱私保護
+- DNS 服務
+- URL 轉址
+- 網站與電子郵件主機試用
+
+體驗我們**AI 生成搜尋工具**，它正在徹底改變人們尋找網域名稱的方式。這一切由**全年無休的卓越技術支援**作為後盾，並在 Trustpilot 上獲得數千則真實五星評價。
+
+點擊連結立即[享受 1 美元網域註冊優惠](https://porkbun.com/?coupon=TWIREACT&utm_source=TWIREACT&utm_medium=Newsletter&utm_campaign=twirjune2023)，在 Porkbun.com 註冊您的網域！
+
+---
+
+## 📱 React 原生開發 {#react-native}
+
+- 💬 [React-Native RFC - Autolinking local modules](https://github.com/react-native-community/discussions-and-proposals/pull/702): proposes to make it easier to create local native modules, in a `local_modules` folder, using the `create-react-native-library` CLI.
+- 💬 [React-Native-Testing-Library RFC - Jest Native matchers migration](https://github.com/callstack/react-native-testing-library/issues/1468)
+- 🐦 [The top 100 Sports apps in the Apple App Store - React-Native 33/100](https://twitter.com/Baconbrix/status/1692215896029212847)
+- 👀 [Expo Preview - Static Font Optimization with Expo Router](https://twitter.com/Baconbrix/status/1692990529800167441)
+- 📜 [Simplify Your iOS Brownfield Integration with React Native Host](https://www.callstack.com/blog/simplify-your-ios-brownfield-integration-with-react-native-host)
+- 📦 [react-native-worklets-core](https://github.com/margelo/react-native-worklets-core): a standalone worklet runner, inspired by the one in Reanimated 2+, and designed to be used by various libraries such as VisionCamera, WishList and Skia.
+- 📦 [react-native-fast-tflite - High-performance TensorFlow Lite with GPU acceleration](https://github.com/mrousavy/react-native-fast-tflite)
+- 📦 [Realm JavaScript v12: complete rewrite without surprises](https://medium.com/realm/realm-javascript-v12-complete-rewrite-without-surprises-62eea2a2e8ae)
+- 📦 [react-native-bootsplash 5.0.0 - Dark mode, Brand image, Web support...](https://github.com/zoontek/react-native-bootsplash/releases/tag/5.0.0)
+- 📦 [clean-rn - Clean all React Native caches](https://github.com/mrousavy/clean-rn)
+- 🎥 [Instagram Stickers - “Can it be done in React Native?”](https://www.youtube.com/watch?v=5yM4NPcTwY4)
+- 🎥 [Flutter vs React Native and Reanimated with @Reactiive](https://www.youtube.com/watch?v=A19-UEUrg6A)
+- 🎙️ [React Native Radio 273 - Gluestack with Sanket Sahu](https://react-native-radio.simplecast.com/episodes/rnr-273-gluestack-with-sanket-sahu)
+- 👥 [React Native EU 2023](https://www.react-native.eu/) (Wrocław, September 7–8, 2023) is offering us [-15% on conference tickets](https://ti.to/react-native-eu/2023/discount/thisweekinreact15) with code "thisweekinreact15".
+
+---
+
+## 🔀 其他領域 {#other}
+
+- 👀 [即將推出的 Node 20.6 - 內建 .env 檔案支援](https://github.com/nodejs/node/pull/49185)
+- 🐦 [requestIdleCallback 即將登陸 Safari，並很快在所有瀏覽器中出現？](https://twitter.com/sebastienlorber/status/1694260312986227187)
+- 📜 [`Array<T>` vs `T[]`：哪個更好？](https://www.totaltypescript.com/array-types-in-typescript)
+- 📜 [Shadow DOM：預設不啟用](https://begin.com/blog/posts/2023-08-18-shadow-dom-not-by-default)
+- 📜 [Dropbox - 我們如何將 JavaScript 套件大小減少 33%](https://dropbox.tech/frontend/how-we-reduced-the-size-of-our-javascript-bundles-by-33-percent)
+- 📜 [四項新 CSS 功能，實現流暢的進入與退出動畫](https://developer.chrome.com/blog/entry-exit-animations/)
+- 📜 [理想的視口並不存在](https://viewports.fyi/)
+- 📜 [TypeScript 用於編譯器出奇地合適](https://matklad.github.io/2023/08/17/typescript-is-surprisingly-ok-for-compilers.html)
+- 📦 [Chrome 117 Beta](https://developer.chrome.com/blog/chrome-117-beta/)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/157/meme.jpg)](https://twitter.com/BHolmesDev/status/1693624114097909851)
+
+再見！👋

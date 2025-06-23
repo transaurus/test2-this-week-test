@@ -1,0 +1,131 @@
+---
+slug: /228
+title: "This Week In React #228: React 19.1, Next.js deployment, React-Email, Triplex, Tinybase, Rspack, i18n-check, React-Admin | 0.79 Golden RC, ExecuTorch, Unistyles, Xcode 16.3, macOS, Screens, Gesture Handler | TypeScript, TC39, WebKit, Intl.Collator, Vitest 3.1"
+authors: [matthieugicquel, cyrilbo]
+date: 04-02-2025
+---
+
+大家好！
+
+我們是來自 [Theodo Apps](https://apps.theodo.com/) 的 Cyril 和 Matthieu 👋，在 Seb 忙著享受 [React Native Connection](https://reactnativeconnection.io/) 大會期間，為您帶來本週的 React 和 React Native 最新動態！
+
+React 19.1 已正式發布，帶來更完善的錯誤處理以及 Parcel 對伺服器元件的深度整合。與此同時，Tailwind CSS 4.1 即將登場，社群對 CSS-in-JS 的熱議持續升溫。在 React Native 方面，0.79 正式候選版已釋出，ExecuTorch v0.4.0 也將於近期推出，帶來令人期待的 AI 新功能。
+
+讓我們立即深入探討！🚀
+
+<!-- truncate -->
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Bit: 慶祝模組化十週年](/emails/issues/228/bit.jpg)](https://bit.cloud/?utm_source=ThisWeekInReact&utm_id=551)
+
+**[Bit: 慶祝模組化十週年](https://bit.cloud/?utm_source=ThisWeekInReact&utm_id=551)**
+
+十年來，我們在分散式系統的複雜性中摸索前行，面對整合難題與擴展挑戰。為了實現規模化高效開發，我們取得了突破性進展：[**Harmony**](https://bit.dev/blog/meet-harmony-a-practical-solution-for-composability/)。
+
+探索我們開創模組化架構的十年歷程，了解 Harmony 如何最終實現我們長久以來追求的單體簡易性與分散式效能，將開發流程從掙扎轉變為指數級進步。
+
+[**閱讀完整故事**](https://bit.dev/blog/telling-the-bit-story-celebrating-10-years-of-composability/?utm_source=ThisWeekInReact&utm_id=9&utm_medium=newsletter)
+
+---
+
+## ⚛️ React {#react}
+
+[![React 19.1](/emails/issues/228/react_19_1.jpg)](https://github.com/facebook/react/releases/tag/v19.1.0)
+
+**[React 19.1](https://github.com/facebook/react/releases/tag/v19.1.0)**
+
+本週發布的 React 19.1 最值得關注的變更包括：
+
+- 新增 [`captureOwnerStack()`](https://react.dev/reference/react/captureOwnerStack) API，供框架開發者用於在開發環境提供更完善的錯誤資訊。其處理 `children` 和 DOM 節點的方式有別於現有的元件堆疊追蹤機制
+- Parcel 的伺服器元件支援已整合至 React 端，需搭配 Parcel 2.14 的新功能使用
+- 實驗性功能 `unstable_prerender()`，用於在伺服器端預渲染 React 伺服器元件
+
+此版本還包含大量次要變更與修復，多數涉及伺服器元件或 `Suspense` 邊界處理
+
+---
+
+- 💸 [Strapi - 開源無頭內容管理系統，現提供慷慨的 PaaS 託管服務，完全託管同時靈活且可自訂。](https://strapi.link/twir)
+- 📜 [CSS-in-JS 還流行嗎？](https://fullystacked.net/css-in-js-still-a-thing/) 它現在已不那麼流行（至少在不使用編譯器避免效能損失的情況下），但仍被廣泛使用。
+- 📜 [Next.js 部署挑戰：平台為何需要更好的開源協作](https://www.netlify.com/blog/how-we-run-nextjs/)：Netlify 解釋為何在 Vercel 之外部署 Next.js 如此複雜（缺乏轉接器支援、文件缺失、能見度不足……）以及他們希望改變的方向。
+- 📜 [在 React 中使用 Dash.js 實現自適應影片串流](https://www.smashingmagazine.com/2025/03/adaptive-video-streaming-dashjs-react/)：你可能不會每天建置這類功能，但多虧 DASH 標準，自適應串流其實並不複雜。
+- 📜 [i18n-check：端對端 React i18n 測試](https://lingual.dev/blog/i18n-check-end-to-end-react-i18n-testing/)
+- 📜 [在 Vercel 上託管 Next.js 時的成本控制](https://www.thisdot.co/blog/keeping-costs-in-check-when-hosting-next-js-on-vercel)
+- 📜 [React 架構權衡：SPA、SSR 或 RSC](https://reacttraining.com/blog/react-architecture-spa-ssr-rsc)
+- 📜 [理解 SPA 及其缺點](https://reacttraining.com/blog/problems-you-face-with-spas)
+- 💸 [VS Code 擴充功能：在 VS Code 中獲取 React 元件使用洞察](https://omlet.dev/?utm_campaign=partner_this-week-in-react_newsletter-quick-link-mar-2025)
+- 📦 [React Email 4.0](https://resend.com/blog/react-email-4)：新增實用工具（linter、垃圾郵件評分、相容性檢查器）及部分元件。
+- 📦 [Triplex beta](https://triplex.dev/blog/triplex-for-vscode)：用於可視化開發 React 應用的 VS Code 擴充功能，最初為 React Three Fiber 打造，現支援任何 React 元件。
+- 📦 [Rspack 1.3](https://rspack.dev/blog/announcing-1-3)：可用於建置 React Router v7 應用。
+- 📦 [Tinybase 6.0](https://github.com/tinyplex/tinybase/releases/tag/v6.0.0)：相容於 React 19。
+- 📦 [vike-server 1.0](https://vike.dev/blog/vike-server)：簡化在任何環境運行和部署 vite 建置應用的伺服器端，並處理開發中的 HMR。
+- 📦 [React-Admin 5.7](https://github.com/marmelab/react-admin/releases/tag/v5.7.0)
+- 🎙️ [Front-End Fire：Next.js 安全漏洞、Remix 放棄 RSC 及 Rsdoctor 1.0](https://front-end-fire.com/episodes/87/)
+- 🎙️ [本月 React 2025-03：Next 出現認證漏洞，TypeScript 正移植至 Golang](https://creators.spotify.com/pod/show/reactiflux/episodes/TMiR-2025-03-Next-had-an-auth-vulnerability--TypeScript-is-porting-to-Golang-e30tvf5/a-abs3i7h)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![幾分鐘交付儀表板 — 無需衝刺週期](/emails/issues/228/semaphor.jpg)](https://semaphor.cloud)
+
+**[幾分鐘交付儀表板 — 無需衝刺週期](https://semaphor.cloud)**
+
+Semaphor 是基於 React 的 SDK，可在客戶端產品中部署全互動式儀表板。
+
+Semaphor 協助將分析與產品代碼解耦，讓您能快速迭代並獨立交付新洞察 — 無需重新部署應用。
+
+TalentsConnect 產品長總結得最到位：
+
+「Semaphor 徹底改變了我們產品與數據團隊的工作流程。他們現在能直接在應用程式中與客戶共同快速原型設計並測試新用例，顯著縮短了回饋週期。此外，Semaphor 的樣式選項非常出色，能與我們產品設計無縫整合。」
+
+---
+
+## 📱 React-Native {#react-native}
+
+本週 React Native 社群相當平靜——可能因眾人目光皆聚焦於巴黎正在舉行的 React Native Connection 會議。期待下週我們能有豐富的精彩主題深入探討 🤗
+
+- 💸 [Radon IDE – 適用於 React Native 和 Expo 開發的全方位工具。現已支援網路檢測器和輪廓渲染功能！](https://ide.swmansion.com/?utm_source=thisweekinreact.com)
+- 🐦 [使用 Expo SplashScreen 和 RN Masked View 打造的流暢動畫啟動畫面。](https://x.com/S0LARIN/status/1905829104600875025)
+- 🐦 [React Native ExecuTorch 0.4 將於五月底發布](https://x.com/swmansion/status/1907086132828934414)：支援通用 LLM 運行器、額外大型語言模型、嵌入模型、多語言 Whisper、OCR 和圖像分割...
+- 👀 [React Native 0.79 黃金候選版](https://github.com/facebook/react-native/releases/tag/v0.79.0-rc.4)：預計下週發布穩定版本。
+- 👀 [Lynx 正探索原生插件開發解決方案](https://github.com/lynx-family/lynx/discussions/1#discussioncomment-12660488)
+- 🗓️ [App.js Conf](https://appjs.co/?utm_source=thisweekinreact) - 🇵🇱 克拉科夫 - 5月28-30日。我們興奮地宣布 App.js Conf 2025 的首批講者：Charlie Cheever、Enzo Manuel Mangano 和 Delphine Bugner！立即使用代碼 "TWIR" 享 15% 折扣購票。
+- 📜 [適用 Xcode 16.3 的 SDK 52 修補程式](https://expo.dev/changelog/xcode-16-3-patches)：若升級至 Xcode 16.3 時遇到建置問題，需安裝最新 SDK 52 修補程式與 RN0.77，或降級至 Xcode 16.2 🫠
+- 📜 [React Native：十年歷程](https://shift.infinite.red/react-native-10-years-db9eb36c5af6)：Infinite Red 歡慶里程碑。
+- 📦 [React Native Screens 4.10](https://github.com/software-mansion/react-native-screens/releases/tag/4.10.0)：iOS 最低支援版本升至 v15.1，實驗性支援 formsheet 的滾動視圖標頭，修復多項 Android 錯誤。
+- 📦 [Unistyles 3.0 RC.1](https://github.com/jpudysz/react-native-unistyles/releases/tag/v3.0.0-rc.1)：於 React Native Connection 大會宣布進入候選版。此版本透過 C++ 操作 React Native 的「Shadow Tree」，實現無需 JS 端重新渲染的動態樣式（主題變化、信號、螢幕尺寸/方向等依賴項變更時），類似 CSS 響應式設計的斷點機制。
+- 📦 [React Native MacOS 0.78](https://github.com/microsoft/react-native-macos/releases/tag/v0.78.0)：追趕主版本進度，現已支援 Skia 和 WebGPU。
+- 📦 [React Native Builder Bob 0.39 - 升級至 ESLint v9](https://github.com/callstack/react-native-builder-bob/releases/tag/react-native-builder-bob%400.39.0)
+- 📦 [React Native Gesture Handler 2.25](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.25.0)
+- 🎥 [William Candillon - Shader 的博弈](https://www.youtube.com/watch?v=wUsFNlas620)：此影片極少旁白，展示 react-native-skia 的強大潛力。
+- 🎥 [Theo - Android 的永久性變革](https://www.youtube.com/watch?v=ucZx1ArrIVQ)
+- 🎙️ [RNR 326 - React Native 十週年 🎉](https://infinite.red/react-native-radio/rnr-326-react-native-turns-10)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [由 ArkType 維護者提出的 TypeScript PR](https://github.com/microsoft/TypeScript/pull/61505)：對於大量使用 Zod 或 ArkType 等「schema」的程式碼庫，可能即將迎來巨大的效能提升。
+- 📜 [Safari 18.4 中的 WebKit 功能](https://webkit.org/blog/16574/webkit-features-in-safari-18-4/)：發佈了多項功能，包括 3 個 TC39 提案。Iterator Helpers 現已在所有瀏覽器和 Node.js 中可用！
+- 📜 [2025 年 2 月 TC39 全體會議摘要](https://blogs.igalia.com/compilers/2025/03/27/summary-of-the-february-2025-tc39-plenary/)
+- 📜 [使用 Intl.Collator 實現更快的字串排序](https://claritydev.net/blog/faster-string-sorting-intl-collator)
+- 📜 [禁止的請求標頭](https://macarthur.me/posts/forbidden-request-headers/)
+- 📜 [files-bucket-server 中因路徑遍歷導致的 Node.js API 安全漏洞](https://www.nodejs-security.com/blog/nodejs-api-security-vulnerabilities-path-traversal-files-bucket-server/)
+- 📦 [Vitest 3.1](https://github.com/vitest-dev/vitest/releases/tag/v3.1.0)
+
+---
+
+## 🤭 趣聞 {#fun}
+
+[![alt](/emails/issues/228/next_burn.jpg)](https://x.com/aidenybai/status/1904294570533572817)
+
+下次見！👋

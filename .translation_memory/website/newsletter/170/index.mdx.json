@@ -1,0 +1,518 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/170/index.mdx",
+  "source_file_content_hash": "286548e2eb6903ea4ce0bbef9c7dfe9b69b256ab6041575b8a590d5a9ba68f99",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /170\ntitle: \"This Week In React #170: Waku, Remix, Donuts, RSC resentment, React 19, Aria Components, Storybook, Postgres Components, hydration, streams, VisionOS, atob, Maestro, Orbit, Tamagui, VisionCamera...\"\nauthors: [slorber, bndkt]\ndate: 01-17-2024\n---",
+      "source_content_hash": "49be817f76e8c25e792ce958b09c6d0bd43b7e5138fe3ec8b188e5ad1093810a",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "This week we had some really great React articles, but also interesting releases from Waku and Remix. The community shared mitigated but interesting feedback on React Server Components, regarding complexity and ownership.",
+      "source_content_hash": "ccab3bbe51db7161372e78833dc8826010f10d40c7d26351709c67aaae829ca7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週我們有一些非常棒的 React 文章，同時也有來自 Waku 和 Remix 的有趣版本發布。社群針對 React Server Components 的複雜性和所有權問題，分享了經過緩和但有趣的回饋。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "On the React Native side, it's calm. We are eagerly waiting for the Expo SDK 50 which this time is released much later than the beta. We are also waiting for the official launch of VisionOS, a new platform that React Native will support.",
+      "source_content_hash": "4628512c4e71b7e669c9cecda06019bb0a87f6c5dfa7d040fab5f622048c809c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "在 React Native 方面則較為平靜。我們正熱切等待 Expo SDK 50 的發布，這次的正式版比測試版晚了很多。我們也在等待 VisionOS 的正式推出，這是一個 React Native 將支援的新平台。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "I just [celebrated 10 years of React experience](https://twitter.com/sebastienlorber/status/1747307299356447148) 🙉 It's hard to believe how my career changed thanks to React, considering I used to really dislike JavaScript.",
+      "source_content_hash": "39be29bc278494e3d13efc508d97781bd0c08ffcca3e1ac08d3c727e5f83ad76",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我剛剛[慶祝了 10 年的 React 經驗](https://twitter.com/sebastienlorber/status/1747307299356447148) 🙉 很難相信我的職業生涯因為 React 而改變，尤其考慮到我以前真的很不喜歡 JavaScript。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**💡 [在 Twitter 上查看本通訊](https://slo.im/thread) - 視覺格式 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "507b4652",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fcd52337",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_fcd52337"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "42e34e45",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_42e34e45"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "caf67047",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "[![CMS with Inline Visual editing for Next.js, Remix and Gatsby](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)",
+      "source_content_hash": "e89db264458429cbe0a1bde57166596ead43db06f5a0abec8ef9d1790a424142",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![具有內嵌視覺編輯功能的 CMS，適用於 Next.js、Remix 和 Gatsby](/emails/issues/169/reactbricks.jpg)](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "**[CMS with Inline Visual editing for Next.js, Remix and Gatsby](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)**",
+      "source_content_hash": "14ab5cb79e9d19bdc3da4e2f50d577967971463a9c514b6731a0f01e0bb1a8bf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[具有內嵌視覺編輯功能的 CMS，適用於 Next.js、Remix 和 Gatsby](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "[**Set up a project in just 1 minute**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email) with the CLI and define your own Visual blocks as React components to convey your pixel-perfect corporate brand, using any CSS framework.",
+      "source_content_hash": "d3cdd2eff51dbe3b2d1178ce740d5636ba258ee9e0b244d1b4714dbec80e4a90",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**只需 1 分鐘即可設定專案**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email) 使用 CLI，並將您自己的視覺區塊定義為 React 元件，以傳達您像素完美的企業品牌，並使用任何 CSS 框架。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "Content editors can easily use these blocks to compose pages visually, just like using a word processor, without compromising the design system.",
+      "source_content_hash": "6b38e1bcd98970bb30ecedea484b9defb1939da083a3ce7df622eab3da0899aa",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "內容編輯者可以輕鬆使用這些區塊來視覺化地組合頁面，就像使用文書處理器一樣，而不會破壞設計系統。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "React Bricks is enterprise-ready with Digital Assets Management, Advanced SEO, Collaboration, Scheduled Publishing, Multilanguage, Integrations with external data sources, Approval Workflow, Single Sign-On, Multiple environments, Backup and Change history.",
+      "source_content_hash": "37c55b642e5229bc7b36e008f9f29c44762405ddce84cc50d6f0e84568127bf4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "React Bricks 具備企業級功能，包括數位資產管理、進階 SEO、協作、排程發布、多語言、與外部資料來源整合、審核工作流程、單一登入、多環境、備份和變更歷史記錄。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "Trusted by corporate clients such as The Weather Channel, Deel.com, La Banque Postale, leading eCommerce sites and over 8,500 users worldwide.  \n[**Get started today!**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)",
+      "source_content_hash": "68f4a6870ea39b592c06672285e3a8b4a971baffee010cf2e248025dd9494d06",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "受到企業客戶的信賴，例如 The Weather Channel、Deel.com、La Banque Postale、領先的電子商務網站以及全球超過 8,500 名用戶。  \n[**立即開始！**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "76a8033c",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "35a77014",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "13d9cd70",
+      "source_content": "[![Waku 0.19](/emails/issues/170/waku.jpg)](https://waku.gg/blog/introducing-create-pages)",
+      "source_content_hash": "375ce868b06246bc3544bb57813df54be89636d9bef8240309083f951bb85c88",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Waku 0.19](/emails/issues/170/waku.jpg)](https://waku.gg/blog/introducing-create-pages)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29528c8d",
+      "source_content": "**[Waku 0.19](https://waku.gg/blog/introducing-create-pages)**",
+      "source_content_hash": "5fc634c719bd9ca791481272804e8c8a6f4e8429b7cc0e88e49f2cf26f0fc2be",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[Waku 0.19](https://waku.gg/blog/introducing-create-pages)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "This release introduces a new `createPage` API for creating layouts and pages programmatically. This notably marks the shift of Waku from being a React Server Components learning experience to becoming a real production-ready React framework. A lightweight file-based page route is expected for v0.20.",
+      "source_content_hash": "e60599304bde10054fdd497a9da6fbdaa680db21bfae5be40fb06737cf9e49fc",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "此版本引入了新的 `createPage` API，用於以程式設計方式建立佈局和頁面。這標誌著 Waku 從一個 React Server Components 的學習體驗轉變為真正的生產就緒 React 框架。預計在 v0.20 中會有一個輕量級的基於檔案的路由。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5f01394b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "[![Delicious Donut Components](/emails/issues/170/donuts.jpg)](https://frontendatscale.com/blog/donut-components/)",
+      "source_content_hash": "ed19056c4d03f70c59b426fce42fb889b9fc3a7afc36ee7c3fa917c4ab018ef4",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![美味的甜甜圈元件](/emails/issues/170/donuts.jpg)](https://frontendatscale.com/blog/donut-components/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4d52a261",
+      "source_content": "**[Delicious Donut Components](https://frontendatscale.com/blog/donut-components/)**",
+      "source_content_hash": "c3bc3c211e16d6529f691bdd3063d6df87e94c21ac76088f6c232c5bd82a6f4b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[美味的甜甜圈元件](https://frontendatscale.com/blog/donut-components/)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "23dfb152",
+      "source_content": "This joyful and awesome interactive article uses the donut analogy (client component with a “children” hole) to explain how client/server components can be interleaved. It also covers more advanced RSC composition topics. Today I learned about that fancy server action render prop trick!",
+      "source_content_hash": "f661075e1f691e9e9b2fe240f78bbd1a40dbb7b9a35806c857f2fbb4c5e334da",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這篇令人愉悅且精彩的互動文章使用甜甜圈的比喻（具有「children」孔的客戶端元件）來解釋客戶端/伺服器元件如何交錯。它還涵蓋了更進階的 RSC 組合主題。今天我學到了那個花哨的伺服器動作渲染屬性技巧！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aa7d3f2b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ea0c7bae",
+      "source_content": "- 💸 [Take the Developer Nation Survey - For each completed response, Developer Nation will donate to one of the charities of respondents’ choosing!](https://developereconomics.net/?member_id=thisweekinreact&utm_medium=nl_ad4)\n- 🐦 [Dan Abramov - “React Server Components does not require a server”](https://twitter.com/dan_abramov2/status/1745795274977493317): Another important reminder that RSCs can all run at build time too, and the CI is your server. You can deploy a completely static Next.js site using RSCs to S3 or GitHub Pages.\n- 🐦 [React v19 is coming - React v18.3 is not planned](https://twitter.com/sebastienlorber/status/1747633798374625525)\n- 🐦 [Pre-rendering (SSG) is coming to Remix](https://twitter.com/brophdawg11/status/1747402216925704684)\n- 👀 [React Postgres Components](https://react-postgres-components.vercel.app/): Render React SSR using V8 inside Postgres RPC? Sounds crazy, but works!\n- 📜 [React Libraries for 2024](https://www.robinwieruch.de/react-libraries/): As every year, Robin Wieruch updated his list of recommended React libraries, a good way to discover many libs of the ecosystem.\n- 📜 [Kind of annoyed at React](https://blog.cassidoo.co/post/annoyed-at-react/): Cassidy shares a reasonable take on the current state of React that seems to resonate with the community, notably 🐦 [Tanner Linsley using React with increasing resentment](https://twitter.com/tannerlinsley/status/1746970043836158330).\n- 📜 [React, where are you going?](https://dev.to/matfrana/react-where-are-you-going-5284): Matteo builds on top of Cassidy’s take and explains his frustration regarding React ownership and increasing complexity. He advocates for a financially sustainable community-driven framework. What struck me is that adding RSC support to their lib React-Bricks decreased the DX (also confirmed by a few others, 🐦 [tweet](https://twitter.com/sebastienlorber/status/1747643069460021405)).\n- 📜 [Streams and React Server Components](https://minimalistweb.dev/p/streams-and-react-server-components): Even apart from RSC, this is a great deep dive into the Streams APIs from a Waku contributor.\n- 📜 [Server-side rendering local dates without FOUC](https://blog.6nok.org/server-side-rendering-local-dates-without-fouc/): It’s common to get React hydration mismatches when trying to render time in the user timezone. This suggests to inline a script to modify the DOM SSR-rendered time just before React hydrates to avoid the mismatch.\n- 📜 [How to setup Client-Server Relaying in Next.js](https://ericbureltech.hashnode.dev/how-to-setup-client-server-relaying-in-nextjs): Explains how we can render a dynamic value on the server, and then let SWR take over that value on the client.\n- 📜 [Say Hello to Panda CSS - The New CSS-in-JS Library with Zero Runtime](https://www.telerik.com/blogs/say-hello-panda-css-new-css-js-library-zero-runtime)\n- 📜 [Build Dynamic Forms with React Hook Form](https://claritydev.net/blog/build-dynamic-forms-react-hook-form)\n- 📦 [Remix 2.5 - SPA mode](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v250): Deploy Remix apps without a server (e.g. on GitHub pages) using SPA mode, generating a single `index.html` file.\n- 📦 [React-Aria-Components + Tailwind starter kit - New set of beautifully styled component that you can modify](https://react-spectrum.adobe.com/react-aria/getting-started.html#starter-kits)\n- 🎥 [A Beginner’s Guide to Storybook 7 with React - free Egghead course](https://egghead.io/courses/a-beginner-s-guide-to-storybook-7-with-react-56f61ecf)\n- 🔐 [Critical security vulnerability in @clerk/nextjs - upgrade to 4.29.3](https://clerk.com/changelog/2024-01-12)",
+      "source_content_hash": "0f4d30d1ea5f8863aecf61e945de5dc99fd073043edd50704a86fa04681bb693",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [參與 Developer Nation 調查 - 每完成一份回覆，Developer Nation 將捐贈給受訪者選擇的慈善機構！](https://developereconomics.net/?member_id=thisweekinreact&utm_medium=nl_ad4)\n- 🐦 [Dan Abramov -「React Server Components 並不需要伺服器」](https://twitter.com/dan_abramov2/status/1745795274977493317)：再次重要提醒，RSC 也可在構建時運行，CI 就是你的伺服器。你可以將完全靜態的 Next.js RSC 站點部署到 S3 或 GitHub Pages。\n- 🐦 [React v19 即將來臨 - React v18.3 不在計劃中](https://twitter.com/sebastienlorber/status/1747633798374625525)\n- 🐦 [Remix 即將支援預渲染 (SSG)](https://twitter.com/brophdawg11/status/1747402216925704684)\n- 👀 [React Postgres Components](https://react-postgres-components.vercel.app/)：在 Postgres RPC 中使用 V8 渲染 React SSR？聽起來瘋狂，但可行！\n- 📜 [2024 年 React 函式庫推薦](https://www.robinwieruch.de/react-libraries/)：Robin Wieruch 照例更新了推薦的 React 函式庫清單，是發掘生態系工具的好途徑。\n- 📜 [對 React 有些惱火](https://blog.cassidoo.co/post/annoyed-at-react/)：Cassidy 分享對 React 現狀的合理看法，引起社群共鳴，特別是 🐦 [Tanner Linsley 帶著日益增加的怨恨使用 React](https://twitter.com/tannerlinsley/status/1746970043836158330)。\n- 📜 [React，你要去向何方？](https://dev.to/matfrana/react-where-are-you-going-5284)：Matteo 基於 Cassidy 的觀點，闡述對 React 所有權和複雜性增加的挫折感。他主張建立財務可持續的社群驅動框架。值得注意的是，為 React-Bricks 添加 RSC 支援反而降低了開發體驗（多人確認此點，🐦 [推文](https://twitter.com/sebastienlorber/status/1747643069460021405)）。\n- 📜 [串流與 React Server Components](https://minimalistweb.dev/p/streams-and-react-server-components)：即使撇開 RSC，這篇由 Waku 貢獻者撰寫的文章也是對 Streams API 的深度解析。\n- 📜 [無 FOUC 的伺服器端渲染本地時間](https://blog.6nok.org/server-side-rendering-local-dates-without-fouc/)：在用戶時區渲染時間常導致 React 水合不匹配。本文建議在 React 水合前內嵌腳本修改 SSR 渲染的時間以避免不匹配。\n- 📜 [如何在 Next.js 中設置客戶端-伺服器轉發](https://ericbureltech.hashnode.dev/how-to-setup-client-server-relaying-in-nextjs)：解釋如何在伺服器渲染動態值，再讓 SWR 在客戶端接管該值。\n- 📜 [認識 Panda CSS - 零運行時的 CSS-in-JS 新函式庫](https://www.telerik.com/blogs/say-hello-panda-css-new-css-js-library-zero-runtime)\n- 📜 [使用 React Hook Form 建立動態表單](https://claritydev.net/blog/build-dynamic-forms-react-hook-form)\n- 📦 [Remix 2.5 - SPA 模式](https://github.com/remix-run/remix/blob/main/CHANGELOG.md#v250)：透過 SPA 模式在無伺服器環境部署 Remix 應用（如 GitHub Pages），只生成單一 `index.html` 檔案。\n- 📦 [React-Aria-Components + Tailwind 入門套件 - 可自訂樣式的新元件集](https://react-spectrum.adobe.com/react-aria/getting-started.html#starter-kits)\n- 🎥 [Storybook 7 與 React 初學者指南 - 免費 Egghead 課程](https://egghead.io/courses/a-beginner-s-guide-to-storybook-7-with-react-56f61ecf)\n- 🔐 [@clerk/nextjs 嚴重安全漏洞 - 請升級至 4.29.3](https://clerk.com/changelog/2024-01-12)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2128cb26",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_2128cb26"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2ff0f46f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0a103a02",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8126f763",
+      "source_content": "[![Process Documents using React PDF Library by Apryse](/emails/issues/170/apryse.jpg)](https://bit.ly/3He15PD)",
+      "source_content_hash": "7ca456f95f7f31baf0b09fd6c89a9437ea7ae5a078aab0b4e5a557cd1d5dbd4e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![使用 Apryse 的 React PDF 函式庫處理文件](/emails/issues/170/apryse.jpg)](https://bit.ly/3He15PD)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "**[Process Documents using React PDF Library by Apryse](https://bit.ly/3He15PD)**",
+      "source_content_hash": "1e88d6d360f8e4c06bfe20cde742243efe56c26080339b445580be1e149a775b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[使用 Apryse 的 React PDF 函式庫處理文件](https://bit.ly/3He15PD)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "Transform your applications with Apryse's React PDF Library. Seamlessly integrate an exceptional viewer experience for web, mobile, and desktop. View, edit, redact and annotate with support for PDFs, Microsoft Office, video, images, HTML, and more.",
+      "source_content_hash": "26278e398aa02b78bb376e2178c5860a9f37038c10da32e0811338e3a445b8ea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "透過 Apryse 的 React PDF 函式庫改造您的應用程式。無縫整合卓越的檢視器體驗，適用於網頁、行動裝置和桌面平台。支援 PDF、Microsoft Office、影片、圖像、HTML 等多種格式的檢視、編輯、編校和註解功能。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "Start your free trial [today](https://apryse.com/form/contact-sales?utm_source=email%20newsletter&utm_medium=email&utm_campaign=cta%20button).",
+      "source_content_hash": "b07c6ac0272e242ab5174a3b6f93d98b76c6f953d453ad6fce944a27034193c0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "立即[開始免費試用](https://apryse.com/form/contact-sales?utm_source=email%20newsletter&utm_medium=email&utm_campaign=cta%20button)。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b805e2c6",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b10963d7",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dee20070",
+      "source_content": "- 💸 [Moropo - Build and Run Open Source React Native Tests Directly From Your Browser](https://www.moropo.com?utm_source=newsletter&utm_medium=emails&utm_campaign=twir-20240117)\n- 👀 [Expo 50 launch live stream announced for January 31, 2024](https://www.youtube.com/watch?v=cKFSVUo3AnI)\n- 👀 [atob() and btoa() were just added to Hermes](https://github.com/facebook/hermes/commit/d2177c31b271e92d1725742605b53d7f6e8acf3e)\n- 👀 [ChatGPT React Native Buddy](https://chat.openai.com/g/g-S9qpp72cb-react-native-buddy)\n- 📅 [App.js Conf Call for Papers is ending January 28](https://appjs.co/#CFP)\n- 📜 [Unlocking New Possibilities with Maestro: Beyond Automated Testing](https://www.bam.tech/article/unlocking-new-possibilities-with-maestro-beyond-automated-testing): Introduction on how to do automatic visual testing of React Native apps using Maestro.\n- 📦 [Official Tamagui design system Figma released](https://www.figma.com/community/file/1326593766534421119/tamagui-v1-2-0): Create designs using Tamagui components in Figma.\n- 📦 [React Native Test App 3.0](https://github.com/microsoft/react-native-test-app/releases/tag/3.0.0): Microsoft’s test app for library authors. Mainly a clean-up release, dropping Node 14, React Native 0.65 and earlier, as well as Flipper.\n- 📦 [React Native visionOS with new CLI commands](https://github.com/callstack/react-native-visionos): visionOS will soon be available and the community is racing to get React Native ready for it.\n- 📦 [vision-camera-resize-plugin - Frame Processor plugin for fast buffer resizing](https://github.com/mrousavy/vision-camera-resize-plugin)\n- 📦 [Expo Orbit 1.0.2](https://expo.dev/orbit)\n- 🎥 [Simon Grimm - Better than React Native Stylesheet - Unistyles](https://www.youtube.com/watch?v=OT5hQbvGRW8)\n- 🎙️ [Rocket Ship 25 - EAS, Expo Prebuild & SDK 50 with Kadi Kraman](https://podcast.galaxies.dev/episodes/025-eas-expo-prebuild-sdk-50-with-kadi-kraman)\n- 🎙️ [React Native Show 33 - React Native at Scale With Rafael Mendiola](https://www.callstack.com/podcasts/react-native-at-scale-with-rafael-mendiola)",
+      "source_content_hash": "1071ae9700703d525bb4d8a405b6ef9bc59befe1a383d48106af06825faed0b7",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [Moropo - 直接在瀏覽器中建置並執行開源 React Native 測試](https://www.moropo.com?utm_source=newsletter&utm_medium=emails&utm_campaign=twir-20240117)\n- 👀 [Expo 50 發布直播宣布於 2024 年 1 月 31 日舉行](https://www.youtube.com/watch?v=cKFSVUo3AnI)\n- 👀 [atob() 和 btoa() 已加入 Hermes](https://github.com/facebook/hermes/commit/d2177c31b271e92d1725742605b53d7f6e8acf3e)\n- 👀 [ChatGPT React Native 夥伴](https://chat.openai.com/g/g-S9qpp72cb-react-native-buddy)\n- 📅 [App.js Conf 徵稿截止日期為 1 月 28 日](https://appjs.co/#CFP)\n- 📜 [使用 Maestro 解鎖新可能性：超越自動化測試](https://www.bam.tech/article/unlocking-new-possibilities-with-maestro-beyond-automated-testing): 介紹如何透過 Maestro 對 React Native 應用程式進行自動視覺測試。\n- 📦 [官方 Tamagui 設計系統 Figma 發布](https://www.figma.com/community/file/1326593766534421119/tamagui-v1-2-0): 在 Figma 中使用 Tamagui 元件建立設計。\n- 📦 [React Native 測試應用程式 3.0](https://github.com/microsoft/react-native-test-app/releases/tag/3.0.0): 微軟為函式庫作者提供的測試應用程式。主要為清理版本，放棄 Node 14、React Native 0.65 及更早版本，以及 Flipper。\n- 📦 [React Native visionOS 搭配新 CLI 命令](https://github.com/callstack/react-native-visionos): visionOS 即將推出，社群正全力讓 React Native 做好準備。\n- 📦 [vision-camera-resize-plugin - 用於快速緩衝區調整大小的影格處理器外掛](https://github.com/mrousavy/vision-camera-resize-plugin)\n- 📦 [Expo Orbit 1.0.2](https://expo.dev/orbit)\n- 🎥 [Simon Grimm - 比 React Native Stylesheet 更好 - Unistyles](https://www.youtube.com/watch?v=OT5hQbvGRW8)\n- 🎙️ [Rocket Ship 25 - EAS、Expo Prebuild 與 SDK 50 專訪 Kadi Kraman](https://podcast.galaxies.dev/episodes/025-eas-expo-prebuild-sdk-50-with-kadi-kraman)\n- 🎙️ [React Native Show 33 - 大規模使用 React Native 專訪 Rafael Mendiola](https://www.callstack.com/podcasts/react-native-at-scale-with-rafael-mendiola)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "70cef2c1",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7974af84",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2979d081",
+      "source_content": "- 📜 [Module Federation added to Rspack](https://www.rspack.dev/blog/module-federation-added-to-rspack.html)\n- 📜 [Rust-Based JavaScript Linters: Fast, But No Typed Linting Right Now](https://www.joshuakgoldberg.com/blog/rust-based-javascript-linters-fast-but-no-typed-linting-right-now/)\n- 📜 [npm in Review: A 2023 Retrospective on Growth, Security, and Quirky Facts](https://socket.dev/blog/2023-npm-retrospective)\n- 📜 [Is htmx Just Another JavaScript Framework?](https://htmx.org/essays/is-htmx-another-javascript-framework/)\n- 📜 [Designing better target sizes (in CSS)](https://ishadeed.com/article/target-size/)\n- 📜 [Node.js Security Progress Report](https://openjsf.org/blog/nodejs-security-progress-report-january24?utm_content=278704719&utm_medium=social&utm_source=twitter&hss_channel=tw-91985735)\n- 📦 [Node.js 21.6 - permission model improvements](https://nodejs.org/en/blog/release/v21.6.0)\n- 📦 [gql.tada - TypeScript that understands GraphQL](https://github.com/0no-co/gql.tada)\n- 📦 [Lightning CSS 1.23](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.23.0)\n- 📦 [Prettier 3.2 - JSONC, Angular’s ICU expression](https://prettier.io/blog/2024/01/12/3.2.0)\n- 📦 [fsx - Modern filesystem API for JavaScript](https://humanwhocodes.com/blog/2024/01/fsx-modern-filesystem-api-javascript/)",
+      "source_content_hash": "b6d258b106108c79d294919fe22b6dfa224fd5eab8ac640426136d6886e7c351",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📜 [Rspack 加入模組聯邦功能](https://www.rspack.dev/blog/module-federation-added-to-rspack.html)\n- 📜 [基於 Rust 的 JavaScript Linter：速度快，但目前不支援型別檢查](https://www.joshuakgoldberg.com/blog/rust-based-javascript-linters-fast-but-no-typed-linting-right-now/)\n- 📜 [npm 回顧：2023 年成長、安全與趣聞總覽](https://socket.dev/blog/2023-npm-retrospective)\n- 📜 [htmx 只是另一個 JavaScript 框架嗎？](https://htmx.org/essays/is-htmx-another-javascript-framework/)\n- 📜 [設計更佳目標尺寸 (CSS 實作)](https://ishadeed.com/article/target-size/)\n- 📜 [Node.js 安全性進度報告](https://openjsf.org/blog/nodejs-security-progress-report-january24?utm_content=278704719&utm_medium=social&utm_source=twitter&hss_channel=tw-91985735)\n- 📦 [Node.js 21.6 - 權限模型改進](https://nodejs.org/en/blog/release/v21.6.0)\n- 📦 [gql.tada - 理解 GraphQL 的 TypeScript](https://github.com/0no-co/gql.tada)\n- 📦 [Lightning CSS 1.23](https://github.com/parcel-bundler/lightningcss/releases/tag/v1.23.0)\n- 📦 [Prettier 3.2 - 支援 JSONC、Angular ICU 表達式](https://prettier.io/blog/2024/01/12/3.2.0)\n- 📦 [fsx - 現代化 JavaScript 檔案系統 API](https://humanwhocodes.com/blog/2024/01/fsx-modern-filesystem-api-javascript/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "714b728f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "47cd8dd6",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣味 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "692c6053",
+      "source_content": "[![alt](/emails/issues/170/meme.jpg)](https://twitter.com/tlakomy/status/1745394119889801454?s=20)",
+      "source_content_hash": "7d7b03a0219b4c57c6fbcb4c29fc7edacae0e8ca071ef05b2277a6455f1f49d1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![迷因圖](/emails/issues/170/meme.jpg)](https://twitter.com/tlakomy/status/1745394119889801454?s=20)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "383fbdd2",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下次見！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/170/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.090246+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "286548e2eb6903ea4ce0bbef9c7dfe9b69b256ab6041575b8a590d5a9ba68f99"
+  }
+}

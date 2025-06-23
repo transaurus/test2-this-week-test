@@ -1,0 +1,231 @@
+---
+slug: /122
+title: "This Week In React #122: Next.js 13, Turbopack, Remixing Shopify, React-Three-Fiber Journey, Gatsby Valhalla, Expo 47, Rive, Storybook, Asta..."
+authors: [slorber]
+date: 11-01-2022
+---
+
+大家好！
+
+多麼精彩又充滿轉折的一週啊！
+
+- Next.js 13 讓我們得以運用 React 的最新創新
+- Turbopack 可能繼承 Webpack 的地位
+- Shopify 收購了 Remix
+- Gatsby 即將發布 v5 並使其資料層框架無關
+- Expo 的 SDK 47 前景相當令人期待
+
+另外別錯過 Three.js Journey 課程的重大更新，新增了 React-Three-Fiber 模組。我為這次發布準備了促銷代碼 ["TWIR"](https://threejs-journey.com/join/TWIR)。這將是未來我建立"優惠"頁面後首個收錄的課程。
+
+我正在測試新格式！這次耗時遠超平常 😅。若您願意支持我持續這項工作，[轉推](https://slo.im/thread)、提供見證或推薦給朋友都將是莫大幫助 🙏。訂閱規模越大，我越有資源持續改進內容。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上瀏覽本期通訊](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Sizzy - 開發者專用瀏覽器](/emails/issues/220/sizzy.jpg)](https://sizzy.co/?utm_campaign=newsletter&utm_source=thisweekinreact)
+
+各行各業的專業人士都有專屬工具，為何網頁開發者仍在使用祖母在亞馬遜購物的瀏覽器？
+
+若您開啟 localhost:3000 時不使用 Sizzy，就是在浪費寶貴時間。
+
+**使用 Sizzy 前：** 網頁開發令人焦慮、響應式設計困難重重、分頁和應用程式堆積如山。
+
+**使用 Sizzy 後：** 所需工具一應俱全、響應式設計輕鬆完成、無需切換工作環境。
+
+您可以[點此下載](https://sizzy.co/?utm_campaign=newsletter&utm_source=thisweekinreact)，享受 14 天免費試用！
+
+---
+
+## ⚛️ React {#react}
+
+[![Next.js 13 主題演講投影片](/emails/issues/122/nextjs13.jpg)](https://nextjs.org/blog/next-13)
+
+**[Next.js 13 - 動態無極限](https://nextjs.org/blog/next-13)**
+
+新版 Next.js 以測試版形式推出全新路由系統和巢狀佈局。遷移採漸進式且可選：需將現有頁面移至新的 `app/` 目錄。此舉啟用了最新創新功能，例如 React 伺服器元件及對 Edge + Node.js 運行環境的 SSR 串流支援。
+
+⚡️ 其他重大改進：
+
+- Turbopack：基於 Rust 的新打包工具（alpha 階段，詳見下文）
+- next/image：更輕量、靈活且快速的圖片元件，避免版面位移
+- @next/font：高效自託管字體並避免版面位移（另見上週介紹的 [Fontaine](https://twitter.com/danielcroe/status/1586472544491950080)）
+
+💬 評論：
+
+- [Dan Abramov](https://twitter.com/dan_abramov/status/1585076899126345728) 對此次發布感到興奮，因其為 React 追求的目標架構提供了具體實現
+- [Andrew Clark](https://twitter.com/acdlite/status/1585029529361612801) 解釋了他具爭議性的論點「Next.js 13 才是真正的 React 18 發布版」
+- [Matt Kane](https://twitter.com/ascorbic/status/1585004156615479296) 認為 React 與 Next.js 的綁定過於緊密
+- [Zach Leatherman](https://twitter.com/zachleat/status/1584995586918731776) 指出 Next.js 13 的 Hello World 範例仍傳輸過多 JavaScript 程式碼
+
+🔗 實用連結：
+
+- 🎥 [Next.js 大會主題演講](https://www.youtube.com/watch?v=NiknNI_0J48)
+- 🎥 [Fireship - Next.js 13... 這改變了一切](https://www.youtube.com/watch?v=_w0Ikk4JY7U)
+- 🧵 [Next.js 升級指南 - 視覺化串講](https://twitter.com/shadcn/status/1584971527820541953)
+
+---
+
+[![Turbopack 主題演講幻燈片](/emails/issues/122/turbopack.jpg)](https://vercel.com/blog/turbopack)
+
+**[推出 Turbopack：基於 Rust 的 Webpack 繼任者](https://vercel.com/blog/turbopack)**
+
+Vercel 聘請了 Tobias Koppers（Webpack 創建者）開發 Turbopack，這是一款基於 Rust 的全新高速打包工具。目前該工具處於 alpha 階段，主要支援 Next.js，功能有限。後續將增加對其他框架（Svelte、Vue...）和功能（Tailwind...）的支援。
+
+Turbopack 針對開發者體驗進行優化，Vercel 宣稱其速度比 Webpack 快 700 倍，比 Vite 快 20 倍。它基於 Turbo（一個 Rust 記憶化框架），能夠獨立快取每個函數的執行結果。Vercel 還發布了一篇[文章](https://turbo.build/blog/turbopack-benchmarks)，提供更詳細的基準測試數據。
+
+💬 評論：
+
+- [Jared Palmer](https://twitter.com/jaredpalmer/status/1584971637694222336) 解釋快取機制原理，並指出 Turborepo/Turbopack 可能合併
+- [Evan You](https://twitter.com/youyuxi/status/1585040261922820096) 質疑基準測試數據，創建了[「Turbopack 真的比 Vite 快 10 倍嗎？」](https://github.com/yyx990803/vite-vs-next-turbo-hmr/discussions/8)討論頁面。Vite 預設未使用 SWC，且發布的基準測試依賴 Babel。Vite 可用 Turbopack 替換 esbuild/Rollup
+- [Sebastian McKenzie](https://twitter.com/sebmck/status/1584971938786861056) 指出冷啟動時性能增益相對較小（4倍），可能因初始化快取開銷導致
+- [Devon Govett](https://twitter.com/devongovett/status/1585035737971724288) 提到架構與 Parcel 類似
+- [Amjad Masad](https://twitter.com/amasad/status/1585001646782033921) 指出 React-Native 的 Metro 打包工具早已採用類似快取系統
+
+---
+
+[![Remix 與 Shopify 的融合](/emails/issues/122/remixing.jpg)](https://shopify.engineering/remix-joins-shopify)
+
+**[Remix 加入 Shopify 以推動 Web 發展](https://shopify.engineering/remix-joins-shopify)**
+
+Remix 已加入 Shopify，將應用於其 Hydrogen 電子商務元框架及其他專案。Hydrogen 2.0 將以 Remix API 取代 React Server Components！他們發現 Remix 模型比 Server Components 更易理解且功能更強大。
+
+對我而言，這是一次極佳的收購。Shopify 能專注於 Hydrogen 的價值主張而非基礎架構問題，並受益於 Remix 的漸進增強特性，這對電子商務尤其重要。更不用說 Remix 已與 React 解耦，且 Shopify 正在開發框架無關的 [Hydrogen UI](https://github.com/Shopify/hydrogen-ui) 函式庫：Shopify 將能觸及不同框架（Vue、Svelte...）的開發者，無需強制使用 React，同時依賴共享的基礎設施。
+
+💬 評論：
+
+- [Josh Larson](https://twitter.com/jplhomer/status/1587095536833859584) 曾參與 Hydrogen v1 開發，列舉了遇到的挑戰，並未質疑 React Server Components 的價值（其在 Next.js 13 的實現優於 Hydrogen v1）。
+- [Ryan Florence](https://twitter.com/ryanflorence/status/1587171069915385856) 提到 Shopify 並不反對 Server Components，未來可能重新引入 Remix。
+- [Ryan Florence](https://twitter.com/ryanflorence/status/1587090973594558464) 解釋此收購將使團隊能全力投入 Remix 開發。
+- [Guillermo Rauch](https://twitter.com/rauchg/status/1587104330053664768) 認為前端應與 Headless 後端解耦。[Anthony Frehner](https://twitter.com/frehner_a/status/1587107928099651586) 回應 Next.js 支援將加入 Hydrogen UI。
+
+🔗 實用連結：
+
+- 📜 [Hydrogen 發展藍圖](https://hydrogen.shopify.dev/roadmap/) 已更新更多技術細節。
+- 📜 [Remixing Shopify](https://remix.run/blog/remixing-shopify)：Remix 團隊公告，其將保持為獨立的開源 React 框架，與電商用途解耦。
+- 🎥 [Fireship - 當你的 JavaScript 框架被收購時](https://www.youtube.com/watch?v=HleppfVh8jc)
+
+---
+
+[![Three.js Journey 轉向 React](/emails/issues/122/r3f.jpg)](https://twitter.com/bruno_simon/status/1585222892769497089)
+
+**[Three.js Journey 轉向 React](https://twitter.com/bruno_simon/status/1585222892769497089)**
+
+Three.js Journey 是透過 Three.js 學習建立網頁 3D 場景的權威課程。Bruno Simon 剛發布了 24 小時的新影片，基於 [React-Three-Fiber](https://github.com/pmndrs/react-three-fiber) 實現——該函式庫為 Three.js 帶來宣告式開發模式。3D 技術正進入我們的應用程式：如果你想突破表單和商業應用的框架，現在正是深入學習的良機。我也[正在學習此課程](https://github.com/slorber/react-three-fiber-journey)，收穫超乎預期！
+
+Bruno 提供限時優惠碼 ["TWIR"](https://threejs-journey.com/join/TWIR)，享 30% 折扣（或減 $66），有效期 10 天。聲明：此非贊助——我真心認為課程極佳，更新後對 React 開發者更具實用價值。
+
+我計劃近期建立優惠專頁，收錄其他優質課程（本人不抽取佣金）。歡迎告訴我你最感興趣的課程，我將聯繫相關作者！
+
+---
+
+- 🤔 [React 核心 - 新增 fetch 儀器化以去重複請求](https://github.com/facebook/react/pull/25516)：對 `fetch` 進行猴子補丁（monkey-patching）是[具爭議的](https://github.com/facebook/react/issues/25573)。
+- 💬 [RFC - TypeScript + React - 允許函式元件渲染任何內容](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/62876)
+- 📜 [全端元件](https://www.epicweb.dev/full-stack-components)：Kent C. Dodds 解釋 Remix 能建立真正的全端元件，將前端和後端程式碼封裝在同個檔案中。Remix 的全端模式不限於路由，也能透過 `useFetcher` 鉤子應用於微互動：如按鈕、自動完成...
+- 📜 [React 應用中 Rive 動畫的優化技巧](https://pixelpoint.io/blog/rive-react-optimizations/)：Rive 是比 Lottie 更高效的動畫函式庫。Alex 說明如何在 Gatsby 或 Next.js 應用中優化 Rive 動畫加載：自託管 WASM 執行環境、Webpack 加載器、預加載、懶加載... 這些可應用於其他情境的實用技巧。
+- 📜 [立即在 Netlify 部署 Next.js 13](https://www.netlify.com/blog/deploy-nextjs-13/)：Netlify 支援最新 Next.js 13 創新功能。
+- 📜 [使用 Storybook 測試運行器進行程式碼覆蓋率分析](https://storybook.js.org/blog/code-coverage-with-the-storybook-test-runner/)：完整概述 Storybook 的測試功能。現可透過 [Istanbul](https://istanbul.js.org/) 儀器化生成覆蓋率報告，報告格式可自訂。
+- 📜 [Gatsby Slice API：高精度增量建置](https://www.gatsbyjs.com/blog/gatsby-slice-api/)：說明 Gatsby 5 新 API 如何提升佈局元件（頁首、頁尾）更新時的建置效能。
+- 📜 [為查詢快取播種](https://tkdodo.eu/blog/seeding-the-query-cache)：描述 React-Query 使用 Suspense 時可能出現的瀑布流問題。建議在元件掛載前使用 `prefetchQuery` 最大化優化加載，並提出 React-Query 整合最新 React 創新的方向。
+- 📜 [使用 Fresh 建立部落格](https://deno.com/blog/build-a-blog-with-fresh)：Fresh 是基於 Deno 的 Preact 框架
+- 📦 [Gatsby 5](https://twitter.com/GatsbyJS/status/1587136776828772353)：新版本預計今日發布！[Gatsby Valhalla 內容中心](https://twitter.com/GatsbyJS/status/1587489648397410320)將使 Gatsby 的 GraphQL 資料層能於其他框架中使用！
+- 📦 [Docusaurus 2.2](https://twitter.com/docusaurus/status/1586347397667495936)：支援 Mermaid 圖表
+- 📦 [Asta](https://github.com/yisar/asta)：受 Qwik 和 Marko 啟發的新可恢復 SSR 框架，採用類 React 語法。持續發展中！
+- 📦 [TanStack Query 4.14](https://twitter.com/TkDodo/status/1587411685517697028)：新增 ESLint 插件
+- 📦 [Remix Forms 1.0](https://twitter.com/danielweinmann/status/1587465389990084609)
+- 📦 [Downshift 7.0](https://github.com/downshift-js/downshift/releases/tag/v7.0.0)
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![Sunsama - 數千名軟體工程師如何在保持生產力的同時避免倦怠](/emails/issues/121/sunsama.jpg)](https://www.sunsama.com/a/this-week-in-react)
+
+**[數千名軟體工程師如何在保持生產力的同時避免倦怠](https://www.sunsama.com/a/this-week-in-react)**
+
+您知道工作成果的重要性遠超過投入的時間。**[Sunsama](https://www.sunsama.com/a/this-week-in-react)** 一直是數千名開發者的內部秘訣，他們用它減少工時卻達成更多成果。
+
+透過與 JIRA、Github 和 Notion 的整合，擺脫無止境的分頁切換。設定每日時間盒，為興趣愛好和副業項目創造空間。
+
+最棒的部分？他們提供 **[14 天免費試用](https://www.sunsama.com/a/this-week-in-react)**（無需信用卡），讓您從今天開始高效產出。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![Expo SDK 47 beta 現已推出](/emails/issues/122/expo47.jpg)](https://blog.expo.dev/expo-sdk-47-beta-is-now-available-fa760eea1908)
+
+**[Expo SDK 47 beta 現已推出](https://blog.expo.dev/expo-sdk-47-beta-is-now-available-fa760eea1908)**
+
+新版 Expo SDK 將進行為期一週的 beta 測試。重點更新包括：
+
+- 升級至 React-Native 0.70.4 和 React 18.1
+- Hermes 引擎現支援 iOS 版 Expo Go，並將從 SDK 48 起成為預設 JS 引擎
+- 多個 Expo 模組支援 Fabric 架構
+- Expo Modules API 1.0 可輕鬆用 Swift/Kotlin 建立原生 Fabric 模組
+- React-Navigation 檔案系統路由功能進入 beta 階段，最新版本 [v0.0.34](https://twitter.com/Baconbrix/status/1587303631602307076) 相容 SDK 47
+
+我們將於下週提供更多細節，這顯然是搭載多項亮眼新功能的重要版本！
+
+---
+
+- 💡 [Andrew Clark: "我希望有天能看到 Expo 採納 Server Components。我們確實該為 React-Native 實現 Server Components..."](https://twitter.com/Baconbrix/status/1585058874864062466): 我對 Server Components 在 React-Native 的應用 [關注已久](https://twitter.com/sebastienlorber/status/1470810351197433863)，非常高興這件事終於被「正式」公開提出！
+- 📦 [React-Native-Gesture-Handler 2.8](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.8.0)
+- 📦 [React-Native-Fast-Shadow](https://github.com/alan-eu/react-native-fast-shadow)
+- 🐦 [React-Native Android 提升建置速度 + 新增 `--active-arch-only` 旗標](https://twitter.com/o_kwasniewski/status/1585270027942502404)
+- 📜 [Stripe Identity：簡化身份驗證流程](https://www.callstack.com/blog/stripe-identity-id-authentication-made-simple)
+- 📜 [React Native - 整合至現有應用程式指南 - Android](https://michalchudziak.dev/blog/integration-with-existing-apps-android)
+- 📜 [React Native - 整合至現有應用程式指南 - iOS](https://michalchudziak.dev/blog/integration-with-existing-apps-ios)
+- 🎙️ [The React Native Show #17 - React Native 新架構](https://www.callstack.com/podcasts/react-native-new-architecture-ep-17)
+- 🎙️ [The React Native Show Podcast: Coffee Talk #6 - Webpack & Callstack 專家解讀 Next.js Conf](https://www.callstack.com/podcasts/webpack-callstack-experts-take-on-next-js-conf-coffee-talk-6)
+- 🎙️ [RNR 250 - React Native Firebase](https://reactnativeradio.com/episodes/rnr-250-react-native-firebase-tl-dr)
+- 🔗 [React Native 社群地圖](https://lifeiswhat.notion.site/The-React-Native-Community-Map-07f3221c294d4c8ab65a13cf1dee6901)
+- 🗣 [Wix Engineering - 正式成為 React Native 官方合作夥伴](https://www.wix.engineering/post/wix-engineering-now-an-official-react-native-partner)
+
+---
+
+## 🧑‍💻 工作機會 {#jobs}
+
+🧑‍💼 [**Product Engineer at Causal, Remote/London/NY, $150-250k**](https://jobs.lever.co/causal-app/4acaafbe-ef3d-45a6-bbe6-687c022d727c?lever-origin=applied&lever-source%5B%5D=thisweekinreact.com)
+
+Causal 為 A 輪新創（獲 Coatue/Accel 投資），開發整合式數字運算與資料視覺化工具。徵求能解決複雜 UX/效能挑戰的資深 React 工程師。
+
+🧑‍💼 [**G2i - 100% 遠端 React Native 職缺**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我們開設多個 React Native 開發職缺！薪資約 16 萬美元 + 10% 獎金。需具備 RN 實際生產經驗且位於美國。私訊 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解詳情，請註明來自 This Week in React。
+
+💡 [如何發布職缺？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [Babel 7.20](https://babeljs.io/blog/2022/10/27/7.20.0)：支援 Deno 目標平台與 TS 4.9 的 `satisfies`！
+- [TypeScript 4.9 RC 發布](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-rc/)：新增 `satisfies` 運算子！
+- [Node v18.12.0 (LTS)](https://nodejs.org/en/blog/release/v18.12.0/)：首個 v18 LTS 版本
+- [開源新型 TypeScript 類型檢查器](https://kdy1.dev/posts/2022/10/open-sourcing-stc)：swc 作者開源其 Rust 開發的類型檢查器 stc
+- [npm v9.0.0](https://github.blog/changelog/2022-10-24-npm-v9-0-0-released/)
+- [Vercel 收購 Splitbee 擴展第一方分析工具](https://vercel.com/blog/vercel-acquires-splitbee)
+- [Deno 1.27：IDE 重大改進](https://deno.com/blog/v1.27)
+- [Chrome 108 Beta](https://developer.chrome.com/blog/chrome-108-beta/)
+- [Vite 3.2](https://twitter.com/vite_js/status/1585261680841424897)
+- [Vite 實驗性開發伺服器持久性快取](https://twitter.com/Akryum/status/1585769403781505024)
+- [兩種 JavaScript](https://remysharp.com/2022/10/13/two-javascripts)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![Next.js 13 - 1299 美元價格 - 蘋果風格發表會惡搞](/emails/issues/122/meme.jpg)](https://twitter.com/thekitze/status/1584974847306002432)

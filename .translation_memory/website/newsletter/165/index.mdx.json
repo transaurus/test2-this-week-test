@@ -1,0 +1,507 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/165/index.mdx",
+  "source_file_content_hash": "cf54b5fdbb60bad20998bde9449f8b4957489f8ac4054a71f009c07243ee63cc",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /165\ntitle: \"This Week In React #165: StyleX, CSS Hooks, PandaCSS, Tailwind, Redux, Astro, Next.js, Remix, Storybook, React-Native 0.73, State of React-Native, Skia text layouts, Expo EAS...\"\nauthors: [slorber]\ndate: 12-06-2023\n---",
+      "source_content_hash": "4e0adf4017aa6ed6a8910167edd1eef31c636f7ff9305b8ba0ac8287a83a5d7f",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "I've found this week's CSS news particularly interesting! StyleX, CSS Hooks, Panda, Tailwind, CSS4...",
+      "source_content_hash": "26f09ce82b63f40323566200e31426cbe9a25a1dff7b9d9ede1b008f8f5511ab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我覺得本週的 CSS 新聞特別有趣！StyleX、CSS Hooks、Panda、Tailwind、CSS4..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "The State of React Native survey is open. A new \"bridgeless mode\" will be introduced in version 0.73 (which has just been released 5 minutes before hitting publish lol!)",
+      "source_content_hash": "62a126ab19a17d4a45584a28c78e54f0375ccd38901525c9a9ad20248dc26ca0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "React Native 現況調查已開放。全新的「bridgeless 模式」將在 0.73 版本中推出（就在發佈前 5 分鐘剛釋出，哈哈！）"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e883b2cc",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_e883b2cc"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "**💡 [Check this newsletter on Twitter](https://slo.im/thread) - visual format 🎨**",
+      "source_content_hash": "3beb2df9a1d25a34c6f82cb169843b859a52d0f47e9d2561f86f5ceb1ced8fac",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**💡 [在 Twitter 查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f7f1cb2",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "92f4ea84",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_92f4ea84"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5dfba1c3",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_5dfba1c3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1856ef44",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "79b2d0b9",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "[![In-App Subscriptions Made Easy](/emails/issues/165/RevenueCat.jpg)](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)",
+      "source_content_hash": "bc5562fc7a08382122d045352dc7560204d674c3c1034d0190783415ba1576cf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![輕鬆實現應用內訂閱](/emails/issues/165/RevenueCat.jpg)](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "**[In-App Subscriptions Made Easy](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)**",
+      "source_content_hash": "239eea7f98fd554bcf37ec20eb090acbfed962da6cfd466230176478351310d5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[輕鬆實現應用內訂閱](https://www.revenuecat.com?utm_source=twir&utm_medium=sponsorship&utm_campaign=dec_23)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "RevenueCat gives you everything you need to monetize, analyze, and grow your app business. Effortlessly control customer access and entitlements, manage data, and experiment with pricing. See why over 30,000 apps trust RevenueCat to power their in-app purchase infrastructure.",
+      "source_content_hash": "c6da2f2f57bdd089a400a54dfd9ef373cf2dfe0902019f728e1cfcb766c3862c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "RevenueCat 提供您應用業務變現、分析和成長所需的一切。輕鬆控制客戶存取權限與授權、管理數據並實驗定價策略。了解為何超過 30,000 個應用程式信任 RevenueCat 來驅動其應用內購買基礎架構。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f1a2a0d3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "109ace10",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "[![StyleX](/emails/issues/165/stylex.jpg)](https://github.com/facebook/stylex)",
+      "source_content_hash": "9278550f252cf62a32a28529d59a065b2ee869aa7b4c4be21a96648227f64c37",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![StyleX](/emails/issues/165/stylex.jpg)](https://github.com/facebook/stylex)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[**StyleX**](https://github.com/facebook/stylex)",
+      "source_content_hash": "1483816bcd2c2e124bf6c76e8321334ab855503c8446c1831431446a5e993058",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[**StyleX**](https://github.com/facebook/stylex)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "50746522",
+      "source_content": "Meta's CSS-in-JS solution is finally open-sourced, after a long wait. It is used on major apps such as Facebook, Instagram and WhatsApp. It is not strictly coupled with React. Atomic CSS will be extracted at build time, and there is a lightweight runtime for concatenating classes. TypeScript support is well-thought-out. The API is minimalist, relying mainly on 2 functions: `create` and `props`. We'll see how this new solution will position itself in an ecosystem that is already fairly competitive with Tailwind, Panda and a few others.",
+      "source_content_hash": "ec68dc14ec6914b043a973ebdd5ab4902270d87a05ffa27f16d5cb44d3647995",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Meta 的 CSS-in-JS 解決方案經過漫長等待終於開源，已在 Facebook、Instagram 和 WhatsApp 等主要應用中實際使用。它並非嚴格與 React 綁定，原子化 CSS 將在編譯時提取，並透過輕量級運行時拼接類別。TypeScript 支援經過精心設計，API 極簡主義，主要依賴兩個函數：`create` 和 `props`。我們將觀察這個新方案在已有 Tailwind、Panda 等競爭對手的生態系中如何定位。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "See also:",
+      "source_content_hash": "666cc0d398f5f62c072c58c60d9cfe6c1c987224eace574fe6cd53c7efac137c",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "另請參閱："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "824626b3",
+      "source_content": "- 🎥 [Jack Herrington - StyleX: Meta's Solution To CSS At Scale](https://www.youtube.com/watch?v=6ZDiGtg1jN4)\n- 🎥 [Theo T3 - Facebook Tried Tailwind, Then Built This Instead](https://www.youtube.com/watch?v=PHV94q7BivI)",
+      "source_content_hash": "ce39cf631229c9bf4f48da9b39fa92ccd3742722a6eccbada60a8ab0e6593c95",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 🎥 [Jack Herrington - StyleX：Meta 的大規模 CSS 解決方案](https://www.youtube.com/watch?v=6ZDiGtg1jN4)\n- 🎥 [Theo T3 - Facebook 嘗試 Tailwind 後，改為打造此方案](https://www.youtube.com/watch?v=PHV94q7BivI)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "67c8996f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "[![CSS Hooks](/emails/issues/165/csshooks.jpg)](https://css-hooks.com/)",
+      "source_content_hash": "8f1d55752b395051a9381adf1c85743ed961ea10643843f47d55d6fe895bf26d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![CSS Hooks](/emails/issues/165/csshooks.jpg)](https://css-hooks.com/)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98d26038",
+      "source_content": "CSS library with React bindings, offering a real return to basics via inline styles. In [From CSS madness to CSS Hooks](https://nsaunders.dev/posts/css-madness-to-hooks), the author explains how he uses a variable CSS trick to support missing features such as media-queries, pseudo-selectors and so on.",
+      "source_content_hash": "a668a71dec5392357f92c5f2f64727e2465a11f1781f56f8d8f743ca8f63e054",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "具備 React 綁定的 CSS 函式庫，透過行內樣式實現真正的回歸基礎。作者在[從 CSS 混亂到 CSS Hooks](https://nsaunders.dev/posts/css-madness-to-hooks) 中解釋如何運用變數 CSS 技巧支援媒體查詢、偽類選擇器等缺失功能。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d3649a1e",
+      "source_content": "Personally, I've always preferred the DX of inline styles, but in practice this is too limited and doesn't always perform well. It remains to be seen whether this innovation will hold up in practice. Mark Dalgleish (🐦 [tweet](https://twitter.com/markdalgleish/status/1729399475494608923)) is excited about it. Note Adam Wathan probably wouldn't have created Tailwind if inline styles had better support (🐦 [tweet](https://twitter.com/adamwathan/status/1732209400641724785)).",
+      "source_content_hash": "731fb7a4fd7947ca21cfcd91a517017761ebcd8b236c2ac7441010f2f2ca7e9a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "個人而言，我一直偏好行內樣式的開發體驗，但實務上功能過於受限且效能表現不穩定。此創新方案能否經得起實踐考驗尚待觀察。Mark Dalgleish (🐦 [推文](https://twitter.com/markdalgleish/status/1729399475494608923)) 對此感到興奮。值得注意的是，若行內樣式支援更完善，Adam Wathan 可能就不會創造 Tailwind (🐦 [推文](https://twitter.com/adamwathan/status/1732209400641724785))。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6e9a41d8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "30193704",
+      "source_content": "- 💸 [Developer Nation Survey - What's next for developers in 2024 and beyond? Take the survey and win prizes!](https://developereconomics.net/?member_id=thisweekinreact&utm_medium=nl_ad1)\n- 👀 [Remix RFC - Client Data (clientLoader, clientAction)](https://github.com/remix-run/remix/discussions/7634): new exports should soon be supported by Remix, making it easier for those who wish to migrate React-Router apps to Remix\n- 🐦 [Using TanStack React Query v5 + Router preview](https://twitter.com/tannerlinsley/status/1730621837212876829)\n- 📜 [How does xxx compare to Panda CSS](https://www.astahmer.dev/posts/how-does-xxx-compares-to-panda-css): good presentation of Panda CSS by its maintainer, who also outlines its current limitations. A modern CSS-in-JS solution based on static analysis and compatible with Server Components. There is a light JS runtime, but the atomic CSS remains extracted at build time.\n- 📜 [Tailwind has a scalability problem. How can we solve that?](https://byteofdev.com/posts/scale-tailwindcss/): suggests using `cva` (Class Variance Authority) to make Tailwind code more digestible in a React context.\n- 📜 [Guide to fast websites with Next.js: Tips for maximizing server speeds and minimizing client burden](https://vercel.com/blog/guide-to-fast-websites-with-next-js-tips-for-maximizing-server-speeds): guest post on an agency's Vercel blog explaining the Next.js techniques used to achieve very good performance.\n- 📜 [Fastest Way of Passing State to JavaScript, Re-visited](https://calendar.perfplanet.com/2023/fastest-way-passing-state-javascript-revisited/): SSR-based React/Redux apps need to send the store data to the client-side for hydration. Presents 3 techniques with their performance.\n- 📜 [Keep Your Loader Data Fresh in Remix](https://sergiodxa.com/tutorials/keep-your-loader-data-fresh-in-remix): shows how to call the `useRevalidator` hook when the connection is restored or the tab regains focus.\n- 📜 [Build your own StorybookGPT](https://storybook.js.org/blog/build-your-own-storybook-gpt/): explains how to use AI to generate your stories automatically.\n- 📜 [Introducing React components for the Maps JavaScript API](https://cloud.google.com/blog/products/maps-platform/introducing-react-components-for-the-maps-javascript-api/): Google is finally officially sponsoring the development of a React lib for Google Maps.\n- 📜 [Slack - Building Custom Animations in the Workflow Builder](https://slack.engineering/building-custom-animations-in-the-workflow-builder/): feedback from Slack on the implementation of drag-and-drop features with `react-beautiful-dnd `.\n- 📜 [How Relay Enables Optimal Data Fetching](https://relay.dev/blog/2023/10/24/how-relay-enables-optimal-data-fetching/)\n- 📜 [TanStack Router – modern React for the rest of us](https://swizec.com/blog/tanstack-router-modern-react-for-the-rest-of-us/)\n- 📜 [Handling HTML within React i18next translations](https://rafaelcamargo.com/blog/handling-html-within-react-i18next-translations/)\n- 📜 [A minimal dependency-free translation system for Next.js](https://www.thomasledoux.be/blog/minimal-dependency-free-translation-system-nextjs)\n- 📜 [An Introduction To Full Stack Composability](https://www.smashingmagazine.com/2023/11/introduction-full-stack-composability/)\n- 📦 [Redux Toolkit 2.0, Redux 5.0, React-Redux 9.0, Reselect 5.0, Redux-Thunk 3.0](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.0.0): big synchronised update of all Redux packages. Includes new features (`combineSlices`), improvements in size, performance, typing, and removal of deprecated features.\n- 📦 [Astro 4.0 - Dev Toolbar, i18n routing, Incremental Content Caching, View Transition APIs...](https://astro.build/blog/astro-4/)\n- 📦 [Storybook 7.6 - switch to SWC, faster, react-docgen upgrade, controls improvement, doctor CLI...](https://storybook.js.org/blog/storybook-7-6/)\n- 📦 [Remix Dev Tools 3.5 - Vite support](https://github.com/Code-Forge-Net/Remix-Dev-Tools/releases/tag/v3.5.0)\n- 📦 [Starlight 0.14 - Plugin API](https://github.com/withastro/starlight/releases/tag/%40astrojs%2Fstarlight%400.14.0)\n- 📦 [Jotai 2.6 - use `<Provider>` in React Server Components](https://github.com/pmndrs/jotai/releases/tag/v2.6.0)\n- 🎥 [React Server Components Panel Discussion - React Summit US 2023](https://www.youtube.com/watch?v=ujaTs-5LEWM)\n- 🎥 [Lee Robinson - Introduction to Next.js and React](https://www.youtube.com/@leerob)",
+      "source_content_hash": "c6c08b1fee68dcff7bbdd14c1357772148cc5134e47c297df31e44a747b08579",
+      "node_type": "list",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_30193704"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3e8b4b41",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_3e8b4b41"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c46c3e3d",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2e771fd0",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "[![Breakpoints and console.log is the past, time travel is the future](/emails/issues/165/Breakpoints.jpg)](https://wallabyjs.com/?referrer=ThisWeekInReact1)",
+      "source_content_hash": "f7640c68979f1d93cede58d7cf1cdc80a5f9ccf08dc61f3dc43af0e08823f4a9",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![中斷點和 console.log 已成過去，時間旅行才是未來](/emails/issues/165/Breakpoints.jpg)](https://wallabyjs.com/?referrer=ThisWeekInReact1)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "**[Breakpoints and console.log is the past, time travel is the future](https://wallabyjs.com/?referrer=ThisWeekInReact1)**",
+      "source_content_hash": "994bb39014e5bdbcf037fb5ad8dedb1e53f80d9f9f3e3034746271d7bc7c6dea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[中斷點和 console.log 已成過去，時間旅行才是未來](https://wallabyjs.com/?referrer=ThisWeekInReact1)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6b77b644",
+      "source_content": "15x faster JavaScript debugging than with breakpoints and console.log.",
+      "source_content_hash": "eaf84dd33d500abceed6c41828e8a5138810a76a8d48acd80a468ca14ce91f27",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "比使用中斷點和 console.log 快 15 倍的 JavaScript 除錯。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "[Wallaby.js](https://wallabyjs.com/?referrer=ThisWeekInReact1) runs your tests immediately as you type, with runtime values, errors, and code coverage displayed in real-time right next to your code.",
+      "source_content_hash": "2d60c40318bc450660fe95ee2b0b390c0d873909b9af7bc7543ba8abc1594577",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[Wallaby.js](https://wallabyjs.com/?referrer=ThisWeekInReact1) 在您輸入時立即執行測試，並在程式碼旁邊即時顯示執行時的值、錯誤和程式碼覆蓋率。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "Designed specifically for testing, Wallaby features include a [Time Travel Debugger](https://wallabyjs.com/docs/intro/time-travel-debugger.html?referrer=ThisWeekInReact1), the ability to only run opened test files, and more.",
+      "source_content_hash": "a8fd121098b2f73fcda0483ba4d31fb855e4278797a8e0a72c6cd5f464b0128a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "專為測試設計，Wallaby 功能包括[時間旅行除錯器](https://wallabyjs.com/docs/intro/time-travel-debugger.html?referrer=ThisWeekInReact1)、僅執行已開啟的測試檔案等功能。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7fc4bca5",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a138e327",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "936011bd",
+      "source_content": "- 📦[React Native 0.73 - Debugging Improvements, Stable Symlink Support, and more](https://reactnative.dev/blog/2023/12/06/0.73-debugging-improvements-stable-symlinks): this has just been published, I'll cover it next week 😄\n- 📊 [State of React Native 2023](https://survey.stateofreactnative.com/): the React-Native survey is back for the 2nd year. Your answers have an impact, and will help us prioritise the most requested improvements.\n- 🐦 [\"Inspect Element\" in iOS Safari with  Actions and Expo Config Plugins](https://twitter.com/Baconbrix/status/1731407884624310708)\n- 📖 [Expo Router docs - Migrate from Expo Webpack](https://docs.expo.dev/router/migrate/from-expo-webpack/)\n- 💬 [React-Native 0.73 - Introducing Bridgeless Mode](https://github.com/reactwg/react-native-new-architecture/discussions/154): React-Native 0.73 offers a new flag to fully disable the old architecture bridge, still used by default for certain features: error handling, event emitters, timers, etc. An interop layer should make the transition easier, but some API calls will have to be migrated manually.\n- 💬 [React-Native 0.74 - Will bump Android `minSdk` to v6 (API 23)](https://github.com/react-native-community/discussions-and-proposals/discussions/740)\n- 📜 [Shopify - Getting Started with React Native Skia](https://shopify.engineering/getting-started-with-react-native-skia): a good introduction to React-Native-Skia, why use it, its integration with Reanimated, its integrated effects, its web support...\n- 📜 [How to change root view background color in React Native for iOS?](https://www.oskarkwasniewski.dev/blog/react-native-change-native-background-color)\n- 📜 [Expo EAS - Speed up your development workflow with Automatic GitHub builds](https://expo.dev/changelog/2023/11-29-automatic-github-builds)\n- 📜 [Expo EAS - Introducing Build Annotations](https://expo.dev/changelog/2023/12-01-build-annotations)\n- 📦 [React-Native-Skia - Text layouts / Paragraph support](https://shopify.github.io/react-native-skia/docs/text/paragraph/)\n- 📦 [React-Native-VisionOS](https://github.com/callstack/react-native-visionos): now available to try on npm (🐦 [demo](https://twitter.com/o_kwasniewski/status/1729453555201802495))\n- 🎙️ [React Native Radio 281 - Real Life React Native : Benedikt Müller of Share My Stack](https://reactnativeradio.com/episodes/rnr-281-real-life-react-native-benedikt-muller-of-share-my-stack)",
+      "source_content_hash": "ef0b7229bac889e389f4753e11ca1cabddf83baaf53a6c90890518f0e0d76144",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 📦[React Native 0.73 - 除錯改進、穩定的符號連結支援等](https://reactnative.dev/blog/2023/12/06/0.73-debugging-improvements-stable-symlinks)：這剛發布，我將在下週詳細介紹 😄\n- 📊 [2023 年 React Native 狀態調查](https://survey.stateofreactnative.com/)：React-Native 調查已進入第二年，您的回答將影響優先級排序\n- 🐦 [透過  Actions 和 Expo 配置插件在 iOS Safari 實現「檢查元素」](https://twitter.com/Baconbrix/status/1731407884624310708)\n- 📖 [Expo Router 文件 - 從 Expo Webpack 遷移](https://docs.expo.dev/router/migrate/from-expo-webpack/)\n- 💬 [React-Native 0.73 - 無橋接模式介紹](https://github.com/reactwg/react-native-new-architecture/discussions/154)：透過新標誌完全停用舊架構橋接，互操作層簡化遷移過程\n- 💬 [React-Native 0.74 - 將提升 Android `minSdk` 至 v6 (API 23)](https://github.com/react-native-community/discussions-and-proposals/discussions/740)\n- 📜 [Shopify - React Native Skia 入門指南](https://shopify.engineering/getting-started-with-react-native-skia)：整合 Reanimated 與跨平台支援的完整介紹\n- 📜 [在 iOS 的 React Native 中更改根視圖背景顏色](https://www.oskarkwasniewski.dev/blog/react-native-change-native-background-color)\n- 📜 [Expo EAS - 透過自動 GitHub 建置加速工作流程](https://expo.dev/changelog/2023/11-29-automatic-github-builds)\n- 📜 [Expo EAS - 建置註解功能發布](https://expo.dev/changelog/2023/12-01-build-annotations)\n- 📦 [React-Native-Skia - 文字佈局/段落支援](https://shopify.github.io/react-native-skia/docs/text/paragraph/)\n- 📦 [React-Native-VisionOS](https://github.com/callstack/react-native-visionos)：npm 現可試用 (🐦 [演示](https://twitter.com/o_kwasniewski/status/1729453555201802495))\n- 🎙️ [React Native Radio 第 281 集 - 真實案例：Share My Stack 的 Benedikt Müller](https://reactnativeradio.com/episodes/rnr-281-real-life-react-native-benedikt-muller-of-share-my-stack)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "55ba2007",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "638efb88",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "10e4f9ca",
+      "source_content": "- 🧵 [Evan You about \"bundle-less doesn't scale\" discussions](https://twitter.com/youyuxi/status/1730537401217610234)\n- 📜 [Updates from the 99th TC39 meeting - Array Grouping stage 4, Promise.withResolvers stage 4](https://dev.to/hemanth/updates-from-the-99th-tc39-meeting-15hn)\n- 📜 [Prettier's CLI: A Performance Deep Dive](https://prettier.io/blog/2023/11/30/cli-deep-dive)\n- 📜 [Biome formatter wins the Prettier challenge](https://biomejs.dev/blog/biome-wins-prettier-challenge/)\n- 📜 [Let’s learn how modern JavaScript frameworks work by building one](https://nolanlawson.com/2023/12/02/lets-learn-how-modern-javascript-frameworks-work-by-building-one/)\n- 📜 [Web Components Eliminate JavaScript Framework Lock-in](https://jakelazaroff.com/words/web-components-eliminate-javascript-framework-lock-in/)\n- 📜 [Track Frontend JavaScript exceptions with Playwright fixtures](https://www.checklyhq.com/blog/track-frontend-javascript-exceptions-with-playwright/)\n- 📦 [XState 5.0 - Everything is an actor](https://stately.ai/blog/2023-12-01-xstate-v5)\n- 📦 [Fresh 1.6 - Tailwind CSS plugin, simplified typings and more](https://deno.com/blog/fresh-1.6)\n- 📦 [Vitest 1.0](https://github.com/vitest-dev/vitest/releases/tag/v1.0.0)\n- 📦 [Hono 3.11 - Error Boundary](https://github.com/honojs/hono/releases/tag/v3.11.0)\n- 🎥 [CSS4 Is Coming](https://www.youtube.com/watch?v=j4mOm1qic7k)",
+      "source_content_hash": "716f525b1d50c368bdb5885ed16811412b634c997ec69ce193574cd8cc59a1b5",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 🧵 [尤雨溪談論「無打包方案無法擴展」的討論](https://twitter.com/youyuxi/status/1730537401217610234)\n- 📜 [第99屆TC39會議更新 - 陣列分組進入第4階段，Promise.withResolvers進入第4階段](https://dev.to/hemanth/updates-from-the-99th-tc39-meeting-15hn)\n- 📜 [Prettier CLI：效能深度探討](https://prettier.io/blog/2023/11/30/cli-deep-dive)\n- 📜 [Biome格式化工具贏得Prettier挑戰](https://biomejs.dev/blog/biome-wins-prettier-challenge/)\n- 📜 [透過實作現代JavaScript框架了解其運作原理](https://nolanlawson.com/2023/12/02/lets-learn-how-modern-javascript-frameworks-work-by-building-one/)\n- 📜 [Web Components消除JavaScript框架鎖定問題](https://jakelazaroff.com/words/web-components-eliminate-javascript-framework-lock-in/)\n- 📜 [使用Playwright fixtures追蹤前端JavaScript異常](https://www.checklyhq.com/blog/track-frontend-javascript-exceptions-with-playwright/)\n- 📦 [XState 5.0 - 萬物皆為Actor](https://stately.ai/blog/2023-12-01-xstate-v5)\n- 📦 [Fresh 1.6 - Tailwind CSS插件、簡化類型設定等](https://deno.com/blog/fresh-1.6)\n- 📦 [Vitest 1.0](https://github.com/vitest-dev/vitest/releases/tag/v1.0.0)\n- 📦 [Hono 3.11 - 錯誤邊界](https://github.com/honojs/hono/releases/tag/v3.11.0)\n- 🎥 [CSS4即將來臨](https://www.youtube.com/watch?v=j4mOm1qic7k)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dc45ba24",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a461a67b",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣聞 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e77cf7c6",
+      "source_content": "[![alt](/emails/issues/165/meme.jpg)](https://twitter.com/bndkt/status/1729743347370139940)",
+      "source_content_hash": "67eb37b9930b0ff25d768a31ba7f08d61da4adc50dc1446c0424c52745398fd0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![alt](/emails/issues/165/meme.jpg)](https://twitter.com/bndkt/status/1729743347370139940)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "bb1346b6",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "下次見！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/165/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.090616+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "cf54b5fdbb60bad20998bde9449f8b4957489f8ac4054a71f009c07243ee63cc"
+  }
+}

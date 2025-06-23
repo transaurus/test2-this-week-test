@@ -1,0 +1,148 @@
+---
+slug: /154
+title: "This Week In React #154: Server Components, Remix, Next.js, Redwood, Million, Lucia, ElementRef, Partially Controlled, SVG Sprites, NextUI, Storybook, Hermes, require.context..."
+authors: [slorber]
+date: 08-01-2023
+image: /img/TWIR_POST.png
+---
+
+大家好！
+
+本週我們再次帶來精彩的 React 文章，尤其是關於伺服器元件的內容！
+
+上週我詢問大家偏好直接連結還是 Twitter 連結，答案非常一致：**直接連結**。此外，Twitter/X 的匿名用戶體驗已惡化，無法查看討論內容。因此我將盡量避免 Twitter 連結，少數例外情況會使用 🐦 表情符號標示。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本期通訊](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![Frontendmasters](/emails/issues/151/frontendmasters.png)](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)
+
+**[企業級 UI 開發（使用 React）：測試與程式碼品質](https://frontendmasters.com/courses/enterprise-ui-dev/?utm_source=email&utm_medium=thisweekinreact&utm_content=uidev)**
+
+正在管理或遷移大型應用程式和程式碼庫？本影片課程涵蓋高效擴展同時保持程式碼品質的關鍵知識，包括單元測試、CI 流程、模擬測試、程式碼覆蓋率等內容。
+
+---
+
+## ⚛️ React {#react}
+
+[![深入理解 React 伺服器元件](/emails/issues/154/understandingrsc.jpg)](https://vercel.com/blog/understanding-react-server-components)
+
+[**深入理解 React 伺服器元件**](https://vercel.com/blog/understanding-react-server-components)
+
+Vercel 新發布的文章全面解析 React 伺服器元件，包含其在 Next.js 的實現原理、存在意義、適用場景與限制。同時涵蓋相關主題：伺服器操作、程式碼分割、快取機制、Suspense 及選擇性水合等技術。
+
+---
+
+[![遷移 50,000 行程式碼至 React 伺服器元件前我希望知道的事](/emails/issues/154/everythingrsc.jpg)](https://www.mux.com/blog/what-are-react-server-components)
+
+[**遷移 50,000 行程式碼至 React 伺服器元件前我希望知道的事**](https://www.mux.com/blog/what-are-react-server-components)
+
+關於 RSC 的深度好文！詳細記錄 Mux 公司在採用過程中遇到的三大挑戰：CSS-in-JS 不可用、React Context 限制以及複雜度提升。同時解答諸多關鍵問題，並提供漸進式採用 RSC 的實施策略。
+
+---
+
+- 👀 [React 工作小組 - 支援 React Server Components 的函式庫清單](https://github.com/reactwg/server-components/discussions/6)
+- 🐦 [React 開發者，是時候開始使用 `Array.prototype.with()` 了](https://twitter.com/sebastienlorber/status/1686059338647957509)
+- 📜 [使用 React Server Components 將 dbt™ 文件速度提升 20 倍](https://dagster.io/blog/dbt-docs-on-react)：關於將 Angular 1 應用程式遷移至 Next.js App Router 和 React Server Components 的概念驗證回饋。在載入時間、記憶體消耗和 CPU 阻塞方面報告了非常顯著的增益。
+- 📜 [Shopify 的平台就是 Web 平台](https://shopify.engineering/shopifys-platform-is-the-web-platform)：Shopify 現在推薦使用 Remix 建立「管理應用程式」，這些應用程式在 iframe 中執行，並透過基於 `postMessage()` 的「應用程式橋接器」與父應用程式通訊。對於需要解耦的平台建構者來說，這是個有趣的前端/React 架構。
+- 📜 [部分受控元件：React 中的宣告式設計模式](https://www.jameskerr.blog/posts/partially-controlled-react-components/)：介紹新術語/概念，描述能夠按需提供受控/非受控狀態的元件，其細粒度可應用於整個狀態或部分狀態。
+- 📜 [在 React 中使用 SVG 精靈圖示](https://www.jacobparis.com/content/svg-icons)：說明如何在 Remix 環境中透過代碼生成步驟使用 SVG 精靈（比 React SVG 元件更優化）。
+- 📜 [使用 ElementRef 強型別化 useRef](https://www.totaltypescript.com/strongly-type-useref-with-elementref)：介紹 TypeScript 的 `ElementRef` 類型，用於從任何元件取得 React ref 的類型，類似 `ComponentProps` 的運作方式。
+- 📜 [10 個提升網頁應用速度的 React 效能優化技巧](https://techreactlearning.blogspot.com/2023/07/10-essential-react-performance.html)
+- 📜 [Remix 錯誤處理精要](https://otiv.dev/blog/essential-remix-error-handling)
+- 📦 [Lucia v2.0](https://lucia-auth.com/blog/lucia-2)：近期勢頭強勁的 TypeScript 身份驗證函式庫，包含 Next.js 和 Remix 整合。
+- 📦 [Million.js 自動模式測試版](https://million.dev/docs/automatic)：現在會分析 React 代碼並自動使用 Million.js 進行優化！
+- 📦 [Redwood v6](https://github.com/redwoodjs/redwood/releases/tag/v6.0.0)：新穩定版本包含 Vite、Prisma 5、Storybook 7、Suspense Router... 為串流支援和 React Server Components 奠定基礎。
+- 📦 [NextUI 2.0 版](https://nextui.org/blog/nextui-v2)
+- 📦 [Joi UI 測試版 - MUI 團隊的設計無關函式庫](https://mui.com/joy-ui/getting-started/)
+- 📦 [Storybook 7.2](https://storybook.js.org/blog/july-2023-update/)
+- 📦 [Auto-Form - 基於 zod 架構自動建立 @shadcn/ui 表單](https://github.com/vantezzen/auto-form)
+- 📦 [Framer Motion 10.5 - inView API](https://www.framer.com/motion/in-view/)
+- 📦 [Zustand 4.4](https://github.com/pmndrs/zustand/releases/tag/v4.4.0)
+- 🎥 [必須了解的 App Router 秘密：使用 Promise 傳遞 Props](https://www.youtube.com/watch?v=ViVa5JPGrf4)
+- 🎙️ [本月 React 動態 – 2023 年 7 月](https://podcasters.spotify.com/pod/show/reactiflux/episodes/This-Month-in-React--July-2023-e27ijk5)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![CoderPad：在共同工作之前先一起編寫程式](/emails/issues/154/coderpad.png)](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)
+
+[**CoderPad：在共同工作前先一起編碼**](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)
+
+招募前端開發者很困難。😩 但已有超過 4,000 個工程團隊 —— 包括 Netflix、Spotify 和 LinkedIn —— 找到了更好的方法！🤠 跳過演算法面試，**在完全可自訂且協作的 IDE 中進行前端面試** —— 您可在此：
+
+- 拖放 React（以及 Angular 或 Vue）程式庫
+- 透過 npm install 安裝套件
+- 允許候選人在面試中即時使用 ChatGPT
+- 在面試後觀看並分享程式碼重播
+
+使用 CoderPad 進行快速、公平且真實的編碼面試，讓候選人和面試官都信任。[立即免費註冊，充滿信心地招募](https://coderpad.io/?utm_medium=3pmedia&utm_source=ThisWeekInReact&utm_campaign=23-Q3-3PMedia-ThisWeekInReact-ACQ-All-Global-Newsletter)。
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![在 React Native 中使用 Flashlight 測量 Hermes 引擎效能](/emails/issues/154/hermes.jpg)](https://www.bam.tech/article/measure-hermes-engine-performance-in-react-native-with-flashlight)
+
+[**在 React Native 中使用 Flashlight 測量 Hermes 引擎效能**](https://www.bam.tech/article/measure-hermes-engine-performance-in-react-native-with-flashlight)
+
+BAM 的開發者使用其效能工具 [Flashlight](https://github.com/bamlab/flashlight) 對 Hermes 運行時在 React-Native Android 應用程式的啟動時間和記憶體消耗的影響進行了基準測試。對於仍有疑慮者，Hermes 明顯優於 JSC。
+
+---
+
+- 🐦 [Apple Store - 前 100 名運動類應用中有五分之一使用 React-Native](https://twitter.com/Baconbrix/status/1684579413688750082)
+- 🐦 [React-Native 現已具備端到端測試](https://twitter.com/SzymonRybczak/status/1684870142839160832)：對 React-Native 發布流程和品質保證來說是個好消息，官方 RNTester 應用現已使用 Appium 和 WebDriver 進行測試。
+- 📜 [React Native 支援動態導入](https://dev.to/dannyhw/dynamic-imports-supported-in-react-native-273j)：為滿足 Expo Router 需求，Webpack 的 `require.context` 功能（用於動態導入模組資料夾）已被移植到 Metro。這使得 [Storybook React-Native 6.5.5](https://github.com/storybookjs/react-native/releases/tag/v6.5.5) 可在預覽模式下無需程式碼生成步驟建立故事索引，並開啟其他可能性。
+- 📜 [Apple - 需聲明使用理由的 API 列表現已提供](https://developer.apple.com/news/?id=z6fu1dcu)：React-Native iOS 開發者需為新限制做好準備。
+- 📦 [VisionCamera 3.0.0-rc.4](https://github.com/mrousavy/react-native-vision-camera/releases/tag/v3.0.0-rc.4)：此 RC 版包含多項重大變更，為預期的 v3 正式版做準備。
+- 🎥 [如何使用 React Native Reanimated 製作底部工作表](https://www.youtube.com/watch?v=lYYiuXcTnnE)
+
+## 🧑‍💻 職缺 {#jobs}
+
+🧑‍💼 [**Passionfroot - 資深全端工程師 (Remix) - €160k+，柏林/遠端**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfroot 的使命是透過 YouTube、Podcast、社交媒體和新聞通訊賦能未來的獨立企業。加入我們，共同打造能讓全球創作者建立可擴展、可持續業務的工具。
+
+🧑‍💼 [**Callstack - 高級 React Native 開發人員 - 全遠端，B2B 合約月薪淨額 PLN 21-32k**](https://www.callstack.com/senior-react-native-developer)
+
+您是否想開發全球最多人使用的應用程式？是否希望共同打造 React Native 技術？加入 Callstack 的 React & React Native 領導者團隊。詳情請參閱官網。我們期待您的申請 — 展現您的實力吧！
+
+🧑‍💼 [**G2i - 100% 遠端 React Native 職缺**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我們有多個專注 React Native 的開發職缺開放！薪資約 160k 美元外加 10% 獎金。需具備 RN 實際生產經驗且位於美國。私訊 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解詳情，別忘了提及 This Week in React。
+
+💡 [如何發布職缺？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [新版非官方 Observable API 提案](https://github.com/domfarolino/observable)
+- 📊 [協助設計首屆 State of HTML 調查！](https://lea.verou.me/blog/2023/design-state-of-html/)
+- 📜 [核心網頁指標用於搜尋引擎優化](https://csswizardry.com/2023/07/core-web-vitals-for-search-engine-optimisation/)
+- 📜 [Jamstack 正式終結了嗎？](https://remotesynthesis.com/blog/goodbye-jamstack/)
+- 📜 [七月份網頁平台新動態](https://web.dev/web-platform-07-2023/)
+- 📜 [dnt — 發布適用 ESM 和 CommonJS 的混合 npm 模組](https://deno.com/blog/publish-esm-cjs-module-dnt)
+- 📦 [Woodpile - 以 JavaScript 實作的 SWC AST 訪問器](https://github.com/kwonoj/woodpile)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/154/meme.jpg)](https://twitter.com/fireship_dev/status/1684324664699674625)
+
+再見！👋

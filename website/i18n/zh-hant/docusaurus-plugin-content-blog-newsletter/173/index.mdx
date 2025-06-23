@@ -1,0 +1,174 @@
+---
+slug: /173
+title: "This Week In React #173: Million, Storybook, visionOS, Expo, Conform, Next.js, Remix, Astro, Apollo, useFormStatus, Framer Motion, Ariakit, Reanimated, TypeScript, JQuery, Express, Interop..."
+authors: [slorber, bndkt]
+date: 02-07-2024
+---
+
+大家好！
+
+本週我們有許多精彩的 React 文章和一些有趣的發布。React 似乎不斷受到批評，但總體而言，這些論點總是千篇一律，其中許多顯得有些過時，且從未承認 React 比其他解決方案做得更好的地方。
+
+React Native 領域正被 Vision Pro 的正式推出所席捲！
+
+本週我們嘗試新做法，推出首個[專門討論 React Native 的 Twitter 討論串](https://twitter.com/bndkt/status/1755203992039424377)。請告訴我們您的想法。
+
+下週電子報將暫停一期，我們將於 2 月 21 日回歸 👋。
+
+另外想請您幫個小忙：能否回覆這封郵件，簡單說聲「哈囉」或留下評論？這有助於提升我們的郵件送達率。感謝！
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本週電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![適用 Next.js App Routing 的內嵌視覺編輯 CMS](/emails/issues/173/reactbricks.jpg)](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)
+
+**[適用 Next.js App Routing 的內嵌視覺編輯 CMS](https://reactbricks.com?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)**
+
+[**1 分鐘內完成專案設置**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)：透過 CLI 定義自己的視覺區塊作為 React 元件，使用任何 CSS 框架傳達像素級完美的企業品牌。試用新版支援 Server Components 的 Next.js 入門套件！
+
+內容編輯者能輕鬆使用內容區塊視覺化組合頁面，如同使用文書處理器般直覺，且完全不會影響設計品質。
+
+React Bricks 具企業級功能：數位資產管理、進階 SEO、即時協作、排程發布、多語言支援、外部 API 整合、審核工作流、多環境部署、變更歷史記錄等。
+
+受 The Weather Channel、Deel.com、La Banque Postale 等企業客戶及全球超過 9,000 位用戶信賴。  
+[**立即開始使用！**](https://reactbricks.com/sign-up?utm_source=twir&utm_campaign=twir_2024&utm_medium=email)
+
+---
+
+## ⚛️ React {#react}
+
+[![Million 3.0](/emails/issues/173/million.jpg)](https://million.dev/blog/million-3)
+
+**[Million 3.0](https://million.dev/blog/million-3)**
+
+Million 是 React 的優化編譯器。此新版為完全重寫，修復了先前版本的缺陷，處理更多邊緣案例，帶來全新的優化 hydration 系統並提升穩定性。
+
+Million 似乎計劃協助我們調試並長期維持卓越的網頁效能。根據其 🐦 [發布預告](https://twitter.com/aidenybai/status/1753456530652107072)，Million Linter 已列入開發藍圖。
+
+---
+
+- 💸 [Product for Engineers - PostHog's newsletter helping engineers build their product skills.](https://newsletter.posthog.com/?utm_source=twir&utm_campaign=twir)
+- 👀 [React Types PR - JSDoc comments](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/68409): Matt Pocock is working on increasing our DX when using React with TypeScript.
+- 📜 [Avoid using React’s `useFormStatus`](https://allanlasser.com/posts/2024-01-26-avoid-using-reacts-useformstatus): An interesting article presenting shortcomings of this new React hook. It requires to be used under a `<form>` element, yet placing a submit `<button>` outside a form is perfectly valid HTML. Suggests using an async transition as an alternative.
+- 📜 [Direction-aware animations in Framer Motion](https://sinja.io/blog/direction-aware-animations-in-framer-motion): A pleasant interactive article showing how to animate list/details views and carousel slides in the correct direction for enter/exist animations.
+- 📜 [Open Sourcing the Remix Website](https://remix.run/blog/oss-remix-dot-run): The Remix team think there are more benefits than drawbacks to open-source their website. You can now study how their homepage scroll experience is implemented, or how they SSR their docs pages.
+- 📜 [Dockerizing a Next.js Application with GitHub Actions](https://mxd.codes/articles/ci-cd-for-nextjs-with-github-actions): Builds the default Dockerfile provided by Vercel with appropriate env variables, and publishes it to your container registry.
+- 📜 [Removing React is just weakness leaving your codebase](https://begin.com/blog/posts/2024-01-26-removing-react-is-just-weakness-leaving-your-codebase): Interesting criticism I can’t really agree with 😅 to me React doesn’t change that often, existing code doesn’t need to be rewritten and CSS-in-JS, well we know runtime-based libs are a problem for a while… And even React devs today rely more and more on web fundamentals than ever.
+- 📜 [It feels like React is getting a bit of a kicking recently](https://piccalil.li/blog/react-is-getting-a-bit-of-a-kicking-recently/): A more nuanced reply to the criticism above. React isn’t perfect, but isn’t going anywhere, and the web platform doesn’t currently give us all the tools we need.
+- 📜 [How to stream files from Next.js Route Handlers](https://www.ericburel.tech/blog/nextjs-stream-files): Shows how to serve dynamic/generated files without loading them in memory. You might need to convert Node.js streams to web streams.
+- 📜 [How to Detect Clicks Anywhere on a Page in React](https://spacejelly.dev/posts/how-to-detect-clicks-anywhere-on-a-page-in-react): TIL about the event.composedPath() API.
+- 📜 [How streaming helps build faster web applications](https://vercel.com/blog/how-streaming-helps-build-faster-web-applications)
+- 📜 [Lessons Learned from Developing DevCycle's Next.js SDK](https://blog.devcycle.com/feature-flagging-with-next-js-lessons-learned-from-developing-devcycles-sdk/): Their feature-flag SDK had to support Server/Client Components, streaming and Suspense.
+- 📜 [How to generate responsive images on Remix with Unpic](https://unpic.pics/blog/responsive-images-on-remix/)
+- 📜 [Enhance Your React App's Scalability using Storybook and Chromatic](https://dainemawer.com/articles/enhance-your-react-apps-scalability-using-storybook-and-chromatic)
+- 📜 [Tale of a Refactor - Payment system](https://commerce.nearform.com/blog/2024/tale-of-a-refactor/)
+- 📜 [How we Increased Search Traffic by 20x in 4 Months with the Next.js App Router](https://hardcover.app/blog/next-js-app-router-seo)
+- 📜 [How I generate Open Graph images for my Astro-based blog](https://techsquidtv.com/blog/generating-open-graph-images-for-astro/)
+- 📜 [Building a blog with Next.js App Router and MDX](https://www.alexchantastic.com/building-a-blog-with-next-and-mdx)
+- 📜 [React Intersection Observer - A Practical Guide](https://www.builder.io/blog/react-intersection-observer)
+- 📦 [Storybook 8 Beta - RSC support, SWC compiler, Vitest, major performance and compatibility improvements, on-the-fly visual tests…](https://storybook.js.org/blog/storybook-8-beta/)
+- 📦 [Conform 1.0 - Type-safe progressive enhancement form validation library for Remix and Next.js](https://github.com/edmundhung/conform/releases/tag/v1.0.0)
+- 📦 [Safe NextJS Navigation - Typesafe navigation for NextJS App Router](https://github.com/lukemorales/next-safe-navigation)
+- 📦 [Astro 4.3 - i18n domains, html output control, ComponentProps utility type…](https://astro.build/blog/astro-430/)
+- 📦 [Apollo Client 3.9 - Suspense data-fetching, query preloading, memory optimizations, useQueryRefHandlers hook…](https://www.apollographql.com/blog/whats-new-in-apollo-client-3-9)
+- 📦 [Remix 2.6.0 - Cloudflare support for Vite plugin (unstable)](https://github.com/remix-run/remix/blob/main/CHANGELOG.md)
+- 📦 [Sonner 1.4 - Toast component](https://github.com/emilkowalski/sonner/releases/tag/v1.4.0)
+- 📦 [Ariakit 0.4 - better support for CSS animations and transitions](https://ariakit.org/changelog#040)
+- 📦 [React-resizable-panels 2.0 - Support for multi-panel resize](https://github.com/bvaughn/react-resizable-panels/releases/tag/2.0.0)
+- 🎥 [Lee Robinson - Next.js App Router Authentication (Sessions, Cookies, JWTs)](https://www.youtube.com/watch?v=DJvM2lSPn6w)
+- 🎥 [Jack Herrington - Five Application Killing React Anti-Patterns](https://www.youtube.com/watch?v=ZkQPxP4wlE8)
+- 🎙️ [Dan Abramov on React, RSCs, and the future](https://podrocket.logrocket.com/dan-abramov-react-rscs-future)
+
+<SubscribeFormEmbed placement="middle" />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![最全面的使用者管理平台](/emails/issues/172/clerk.jpg)](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-7-24)
+
+**[最全面的使用者管理平台](https://clerk.com/?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-7-24)**
+
+Clerk 簡化了 React 應用的身份驗證和使用者管理，確保現代化網頁能快速部署。
+
+體驗 Clerk 的優勢：
+
+- 💅 預建置的 UI 元件：登入、註冊、使用者檔案和組織管理。可使用任何 CSS 函式庫自訂並部署於您的網域
+- 📦 支援 React、React Native、Next.js、Redwood、Remix 等框架的 SDK
+- ⚡ 與 Firebase、Supabase、Convex 等 BaaS 供應商的整合
+- 🎁 開箱即用的使用者管理、社群登入、魔法連結、多因素驗證等功能
+
+透過 Clerk 的[快速入門與教學](https://clerk.com/docs/quickstarts/overview?utm_source=sponsorship&utm_medium=newsletter&utm_campaign=thisweekinreact&utm_term=02-07-24)立即啟動您的專案 🚀
+
+---
+
+## 📱 React-Native {#react-native}
+
+本節現由 [Benedikt](https://twitter.com/bndkt) 共同撰寫，我們還在 Twitter 上開設了新的 [React Native 討論串](https://twitter.com/bndkt/status/1755203992039424377)！請告訴我們您的想法，並按讚或轉推支持我們 😍。
+
+[![宣佈 React Native 支援 Apple Vision Pro](/emails/issues/173/visionos.jpg)](https://www.callstack.com/blog/announcing-react-native-for-apple-vision-pro)
+
+**[宣佈 React Native 支援 Apple Vision Pro](https://www.callstack.com/blog/announcing-react-native-for-apple-vision-pro)**
+
+上週 Apple 發佈了 Vision Pro，至少部分 React Native 社群對能用喜愛的框架為新平台開發體驗感到興奮。目前有兩種途徑（🐦 [並行比較](https://twitter.com/o_kwasniewski/status/1754520654219493408)）可將 React Native 帶入 visionOS：
+
+- 如同在 macOS 上執行 iOS 應用，您可在 App Store Connect 勾選選項，以「相容模式」在 visionOS 上啟用應用程式。參閱 🐦 [Evan Bacon 如何在 10 分鐘內佈建、建置並安裝 Expo 應用至 visionPro](https://twitter.com/Baconbrix/status/1753927218697208102)。但相容模式應用無法利用 visionOS 的「空間運算」能力，僅是在空間中顯示 iPad 畫面。
+
+- 若要真正為新平台優化應用，需調整額外的原生能力。這正是由 Oskar Kwaśniewski 主導、Callstack 推出的 visionOS 平台解決方案。
+
+雖然處於早期階段，但看到 React Native 如此快速擁抱新平台令人振奮！首款 React Native visionOS 應用 [Spacial Noise](https://apps.apple.com/us/app/spatial-noise/id6477335349) 已登上 App Store。
+
+---
+
+- 💸 [Moropo - Mobile Testing Infrastructure That Integrates Seamlessly With Expo EAS ](https://www.moropo.com?utm_source=newsletter&utm_medium=emails&utm_campaign=twir-20240207)
+- 👀 [RFC - React Native Frameworks](https://github.com/react-native-community/discussions-and-proposals/pull/759): 你是否曾想過 React Native、Expo 和其他社群工具之間的界線在哪？界線模糊，而此 RFC 旨在透過引入「React Native 框架」的概念來釐清。
+- 👀 [CSS4 color functions](https://github.com/facebook/react-native/pull/42831) and [DisplayP3 color](https://github.com/facebook/react-native/pull/42830): 更多色彩選項（例如 Wide Gamut）即將登陸 React Native。
+- 🐦 [Expo is dogfooding Expo web and Expo Router on their new blog](https://twitter.com/Baconbrix/status/1755026874047123843)
+- 🐦 [Shopify continues to bet on React Native](https://x.com/mustafa01ali/status/1753477532668600653?s=20)
+- 📖 [Expo Docs - Build Expo apps for TV](https://x.com/expo/status/1754208200935518292?s=20): 「React Native everywhere」正日益成真。得益於 Expo 配置插件，Apple TV 和 Android TV 的實驗性支援現在已直接可用。這是一個超級令人興奮的發展，我確信它將繼續擴展到 macOS、visionOS 等平台……
+- 📖 [Improved Metro bundler docs from Expo](https://docs.expo.dev/guides/customizing-metro/): 解釋套件分割（bundle splitting）、tree shaking 和 minification 如何運作，以及 Metro 現在如何也用於網頁。
+- 📜 [What every dev should know about using Environment Variables](https://expo.dev/blog/what-are-environment-variables): 在 RN 中正確處理環境變數至關重要，否則您可能會將（並因此暴露）機密資訊傳送至客戶端。
+- 📜 [Fingerprint your native runtime with @expo/fingerprint](https://expo.dev/blog/fingerprint-your-native-runtime): 判斷 RN 應用程式的 JS 套件更新是否需要新的原生建置是一個棘手的問題。在 SDK 50 中，Expo 發布了 Fingerprint，它基本上建立了一個代表 RN 應用程式所有「原生表面積」的單一雜湊值，然後可用於觸發新的原生建置。
+- 📜 [6 reasons to use EAS Update](https://expo.dev/blog/6-reasons-to-use-eas-update): 你知道重新發布功能嗎？在閱讀這篇文章之前，我並不知道。在升級搞砸的情況下，你可以快速重新發布先前（可運作）的更新！
+- 📜 [How to add a new target to your file with Expo config plugin?](https://www.reactnativecrossroads.com/posts/config-plugin-expo-add-target)
+- 📦 [React Native Storybook 7 - CSF 3, TypeScript, Markdown, Automatic story loading, Auto-generation for controls](https://storybook.js.org/blog/react-native-storybook-7/)
+- 📦 [React Native Test App 3.1 - Support for bridgeless mode](https://github.com/microsoft/react-native-test-app/releases/tag/3.1.0)
+- 🎥 [William Candillon - JavaScript Animations in 2024](https://www.youtube.com/watch?v=AHh3Bt7JpRs): 下一版的 Reanimated 將支援 JavaScript 產生器。William 使用 yield 在 while (true) 迴圈中重寫了他的 3 個自訂 Reanimated 動畫範例。
+- 🎥 [Simon Grimm - The Time for React Native is Now](https://www.youtube.com/watch?v=COH_XhlMyZ4)
+- 🎙️ [RNR 287 - Special Guest - Charlie Cheever](https://reactnativeradio.com/episodes/rnr-287-special-guest-charlie-cheever): 對我來說，Expo 一直是作為 React Native 之上的一層。但你知道嗎，Charlie Cheever 和 James Ide 甚至在 React Native 出現之前就開始開發 Expo？
+- 🎙️ [Rocket Ship 28 - Expo Router & Universal React Native Apps with Evan Bacon](https://share.transistor.fm/s/e9f2b98e)
+- 🎙️ [The React Native Show 34 - Results of the State of React Native 2023 Survey](https://www.callstack.com/podcasts/state-of-react-native-2023)
+
+---
+
+## 🔀 其他 {#other}
+
+- 👀 [Interop 2024 儀表板 - 瀏覽器今年將優先處理的事項](https://wpt.fyi/interop-2024)
+- 👀 [Express Forward - Express v5、v6、v7 的發展計劃](https://github.com/expressjs/discussions/issues/160)
+- 📜 [無伺服器的下一階段演進：有狀態化](https://sunilpai.dev/posts/the-future-of-serverless/)
+- 📜 [TotalTypeScript - 簡寫方法語法被視為有害](https://www.totaltypescript.com/method-shorthand-syntax-considered-harmful)
+- 📜 [TotalTypeScript - 當 'as never' 成為唯一可行方案時](https://www.totaltypescript.com/as-never)
+- 📜 [為我的自動化遊戲榨取 JavaScript 的最後一絲效能](https://ruoyusun.com/2024/01/23/cividle-optimization.html)
+- 📜 [2024 年 Favicon 實作指南：滿足多數需求的六個檔案](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs)
+- 📜 [在驗證器中使用品牌型別](https://stack.convex.dev/using-branded-types-in-validators)
+- 📦 [Turborepo 1.12](https://turbo.build/blog/turbo-1-12-0)
+- 📦 [jQuery 4.0.0 beta](https://blog.jquery.com/2024/02/06/jquery-4-0-0-beta/)
+
+---
+
+## 🤭 趣味 {#fun}
+
+[![alt](/emails/issues/173/meme.jpg)](https://twitter.com/wesbos/status/1754347448623890719)
+
+再會！👋

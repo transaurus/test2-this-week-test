@@ -1,0 +1,175 @@
+---
+slug: /141
+title: "This Week In React #141: 20.000 subscribers 🥳, Next.js, Storybook, React Visualized, Remix, Chakra, Modern.js, Reselect, React-Native Benchmarks, Expo..."
+authors: [slorber]
+date: 04-11-2023
+---
+
+大家好！
+
+我們剛達成了里程碑：現在訂閱人數已**突破 20,000 人**！🥳️
+
+感謝大家每週撥冗關注，協助這個專案成長！若想幫忙：**口碑推薦**效果極佳。我正在建立**推薦計畫**，很快就能找出最佳推廣大使並表達感謝或給予回報。
+
+擁有足夠的讀者基數至關重要：這能幫助找到[贊助商](https://thisweekinreact.com/sponsor)，彌補我投入 50% 時間的成本。歷經三年努力，終於達到永續經營：這讓我能自由嘗試新點子而不必承擔過多風險。
+
+本週重點包括 Next.js 13.3 和 Storybook 7.0 發布。React Visualized 是初學者的優質資源。我發現了 Modern.js，還有關於 React、Remix 和 Chakra UI 的精彩文章。React-Native 方面則較為平靜。
+
+React-Native 開發者別錯過 5/10-12 在克拉科夫的 [App.js](https://appjs.co/) 大會。去年我參會的[體驗極佳](https://twitter.com/sebastienlorber/status/1536636851230060544) 👌。他們提供我們[研討會 -20% 優惠](https://ti.to/appjs/2023/discount/ThisWeekinReact20)。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 查看本期快訊](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助 {#sponsor1}
+
+[![React-admin](/emails/issues/141/react_admin.png)](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[React-admin - 開源 B2B 應用框架](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+單頁應用（SPA）仍是基於 REST/GraphQL API 開發管理後台、B2B 應用和 ERP 系統的最佳選擇。[React-admin](https://marmelab.com/react-admin/?utm_source=newsletter&utm_term=this-week-in-react) 正是**構建 SPA 的開源參考框架**。
+
+提供 150+ 商業導向組件庫。這不是單純的 UI 套件：它整合頂級 React UI 套件 MUI。透過聚合業界最佳函式庫並處理繁瑣事務，大幅提升開發效率。
+
+最大優勢？頂尖開發者體驗，佐以卓越文件和活躍社群。[只需 30 分鐘即可上手](https://marmelab.com/react-admin/Tutorial.html) 🚀
+
+持續**維護 5 年**，全球逾 20,000 開發者採用。免費永久使用！😁
+
+---
+
+## ⚛️ React {#react}
+
+[![Next.js 13.3](/emails/issues/141/nextjs13.3.jpg)](https://nextjs.org/blog/next-13-3)
+
+**[Next.js 13.3](https://nextjs.org/blog/next-13-3)**
+
+本次發布帶來多項亮眼功能。全新的 App Router 即將進入穩定階段。
+
+- 檔案式 Metadata API：新的檔案系統慣例，用於產生網站地圖、robots 檔案、favicon 等。另請參閱此[視覺化串流](https://twitter.com/delba_oliveira/status/1645840553597362176)。
+- 動態 Open Graph 圖片：在 Next.js 中直接整合 `@vercel/og` 和 Satori，透過 JSX 和 CSS/Tailwind 產生社群卡片。
+- 靜態匯出：Next.js 可以在建置時執行 Server Components，並產生不需伺服器運行時的靜態應用程式輸出。
+- 平行路由：佈局元件可以定義多個插槽，這些插槽將由不同頁面填入。
+- 攔截路由：允許實作「Instagram」類型路由模式，根據來源位置，照片可以在模態框或全螢幕中開啟。
+- 以及其他多項改進。
+
+---
+
+[![React, Visualized](/emails/issues/141/visualized.jpg)](https://react.gg/visualized)
+
+**[React 視覺化](https://react.gg/visualized)**
+
+一個非常棒的視覺化互動資源，用於探索 React。與團隊中的 React 初學者分享。
+
+---
+
+- 👀 [Modern.js](https://modernjs.dev/en): ByteDance devs don't only offer rspack, but also a complete React meta-framework, and a whole ecosystem of tools. Keep an eye on this!
+- 👀 [Next.js RFC - `next/third-parties`](https://github.com/vercel/next.js/discussions/48256): the goal is to create wrappers on top of `next/script` to facilitate the integration of popular libraries like Google Analytics.
+- 👀 [Next.js PR - Add Zod and router state validation](https://github.com/vercel/next.js/pull/46962)
+- 👀 [Reselect PR - Add experimental new memoizers: autotrack, weakmap, and signalis](https://github.com/reduxjs/reselect/pull/605)
+- 📜 [Storybook 7.0](https://storybook.js.org/blog/storybook-7-0/): the blog post has just been published! Big release that we already talked about several times.
+- 📜 [The future of Chakra UI](https://www.adebayosegun.com/blog/the-future-of-chakra-ui): Chakra UI wants to switch to zero-runtime CSS-in-JS to be compatible with Server Components. Aims to be a universal library with a good DX. They are creating Panda for CSS-in-JS, and Ark to help with the integration of agnostic Zag.js state machines.
+- 📜 [Fighting inter-component HTML bloat](https://elisehe.in/2023/03/27/minimal-html-in-design-systems.html): a good article that advises to avoid creating useless DOM wrapper elements in a React context. Suggests some interesting solutions that I didn't know, like Radix `asChild`.
+- 📜 [Server-side render dates across timezones with Remix](https://www.jacobparis.com/guides/remix-ssr-dates): cookie-based solution to solve React hydration issues related to a different timezone between client and SSR.
+- 📜 [Framework popularity on Netlify](https://www.netlify.com/blog/framework-popularity-on-netlify/): stats on the use of many React frameworks at Netlify. Glad to see Docusaurus there!
+- 📜 [Generate open graph social preview images with Remix](https://www.jacobparis.com/guides/remix-og): as `@vercel/og` only runs on Vercel, this solution gives a similar result using Satori and svg2img.
+- 📜 [Why & How We Retired Elm at Culture Amp](https://kevinyank.com/posts/on-endings-why-how-we-retired-elm-at-culture-amp/): feedback on the choice to use Elm or React over time.
+- 📜 [The Most Common Mistakes When Using React](https://claritydev.net/blog/the-most-common-mistakes-when-using-react)
+- 📜 [Improving React Testing Library Tests](https://claritydev.net/blog/improving-react-testing-library-tests)
+- 📜 [NextJS - SPA or MPA?](https://www.code-insights.dev/posts/nextjs-spa-or-mpa)
+- 📦 [React Aria Components alpha](https://twitter.com/devongovett/status/1643988004577619971): to facilitate the use of React-Aria and other React-Aria + React-Spectrum updates.
+- 📦 [Astro 2.2](https://astro.build/blog/astro-220/): `assetPrefix` to use a CDN and changes on the `image()` helper for the collections schema.
+- 📦 [Next-Auth v4.22](https://twitter.com/nextauthjs/status/1645004172725551104): support Route Handlers support.
+- 📦 [next-seo v6](https://github.com/garmeeh/next-seo/releases/tag/v6.0.0): recommande d'utiliser les nouvelles API Next.js avec le App Router.
+- 📦 [Deno SaaS Kit](https://github.com/denoland/saaskit): official Deno boilerplate to create SaaS, based on Fresh and Preact.
+- 🎥 [Secret React Server Component Patterns They Don't Want You To Know](https://www.youtube.com/watch?v=ciQdQkT0bZk): interesting for those who want to know more about Wakuwork and its RSC capabilities not present in Next.js 13.
+- 🎥 [Why React breaks your app – on purpose](https://www.youtube.com/watch?v=1UOAI7pFDek): explains why React renders the app twice with Strict Mode.
+- 🎥 [React Server Components without NextJS - A 1 minute guide](https://twitter.com/BHolmesDev/status/1643990398824763393): great short RSC overview.
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+[![Tina.io is a headless CMS for Markdown-powered sites](/emails/issues/140/tinacms.jpg)](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)
+
+**[Tina.io 是一個為 Markdown 驅動網站提供的無頭 CMS](https://tina.io/?utm_source=newsletter&utm_term=this-week-in-react)**
+
+- 用於 Markdown 檔案的編輯 UI
+- MDX 元件的 UI
+- 支援靜態 (SSG) 和伺服器端渲染 (SSR)
+- 可選的視覺化編輯（即時預覽）
+- 使用可重複使用的區塊建構
+
+測試一個入門網站
+
+- [Docusaurus](https://github.com/tinacms/tinasaurus)（Github）
+- [Next.js + Tailwind 含視覺編輯](https://github.com/tinacms/tina-cloud-starter)（Github）
+
+或者執行 `npx create-tina-app@latest`，然後訪問 `localhost:3000/admin`
+
+觀看 [4 分鐘的示範影片](https://www.youtube.com/watch?v=zRkeKSZjlyw)
+
+---
+
+## 📱 React Native {#react-native}
+
+- 📜 [在 React Native 中安全地管理環境變數](https://www.bam.tech/article/managing-environment-variables-securely-in-react-native)
+- 📜 [Expo - EAS Build 的 M1/M2 遷移時間表](https://blog.expo.dev/m1-m2-migration-timeline-for-eas-build-22bd6c49f1b3)
+- 👀 [新架構效能基準測試](https://github.com/reactwg/react-native-new-architecture/discussions/123)：在此綜合基準測試中，新架構僅比舊架構稍快一些。注意：效能並非採用新架構的唯一原因。v0.72 修復了一些效能問題。
+- 👀 [即將推出：Expo 中的環境變數](https://twitter.com/Baconbrix/status/1644731840132169728)
+- 👀 [Expo-MDX 支援全域元件](https://twitter.com/Baconbrix/status/1645477524606943248)
+- 📦 [React-Native 0.72.0-RC.1](https://github.com/facebook/react-native/releases/tag/v0.72.0-rc.1)
+- 📦 [react-native-keyboard-controller 1.5](https://twitter.com/ziusko/status/1645322969453932576)：互動式鍵盤，可透過手勢關閉鍵盤。
+- 📦 [react-native-quick-sqlite](https://twitter.com/mrousavy/status/1643991438450114563)：套件現由 Margelo 維護。
+- 🐦 ["Hermes 最近超越 JavaScriptCore，成為 EAS Build 中最受歡迎的 JavaScript 引擎！"](https://twitter.com/expo/status/1645540179724353536)
+- 🎥 [如何使用 React-Native Firebase 建立 Expo 應用程式](https://www.youtube.com/watch?v=mZlKwRV4MC8)
+- 🎥 [freeCodeCamp React-Native 課程](https://www.youtube.com/watch?v=obH0Po_RdWk)
+- 👥 [App.js](https://appjs.co/) (克拉科夫，5 月 10-12 日) 為我們提供[工作坊 -20% 折扣](https://ti.to/appjs/2023/discount/ThisWeekinReact20) (優惠碼 "ThisWeekinReact20")。
+- 👥 [Chain React](https://chainreactconf.com/) (波特蘭，5 月 18-19 日) 為我們提供門票 -10% 折扣 (優惠碼 "thisweekinreact")。
+
+---
+
+## 🧑‍💻 職缺 {#jobs}
+
+🧑‍💼 [**Passionfroot - 資深全端工程師 (Remix) - €160k+，柏林/遠端**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfroot 的使命是透過 YouTube、Podcast、社群媒體和新聞通訊，賦能未來的獨立企業。加入我們，一起打造一個能讓全球創作者建立可擴展、可持續業務的工具。
+
+🧑‍💼 [**Callstack - 資深 React Native 開發者 - 全遠端，B2B 每月淨收入 PLN 21-32k**](https://www.callstack.com/senior-react-native-developer)
+
+您是否想要開發世界上最常用的應用程式？您是否想共同創造 React Native 技術？加入 Callstack 的 React 和 React Native 領導者團隊。查看我們的網站以獲取更多詳細資訊。我們期待看到您的申請 — 向我們展示您的才華！
+
+🧑‍💼 [**G2i - 100% 遠端 React Native 職缺**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我們有多個專注於 React Native 的開發者職缺開放！薪資約為 160k 美元外加 10% 獎金。您必須具備 RN 的實際生產經驗且位於美國境內。私訊 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解更多，別忘了提及 This Week in React。
+
+💡 [如何發布職缺？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [JSPM CLI 重新發佈](https://jspm.org/jspm-cli)：套件管理工具押注於導入映射 (import maps)。
+- [lazyrepo - npm/pnpm/yarn monorepos 的快取任務執行器](https://github.com/ds300/lazyrepo)
+- [AWS Lambda 引入回應承載串流](https://aws.amazon.com/fr/about-aws/whats-new/2023/04/aws-lambda-response-payload-streaming/)
+- [Vercel - 改善 Edge Middleware 和 Edge Functions 的 Node.js 相容性](https://vercel.com/changelog/improved-node-js-compatibility-for-edge-middleware-and-edge-functions)
+- [W3C - 首個公開草案 - Badging API](https://www.w3.org/blog/news/archives/9878)
+- [Node.js 19.9](https://nodejs.org/en/blog/release/v19.9.0)
+- [Vitest 0.30](https://twitter.com/sheremet_va/status/1645063635712999427)
+
+---
+
+## 🤭 趣事 {#fun}
+
+[![React 是個錯誤](/emails/issues/141/meme.jpg)](https://twitter.com/sebastienlorber/status/1645823352693506048)
+
+再見！👋

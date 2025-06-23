@@ -1,0 +1,165 @@
+---
+slug: /134
+title: "This Week In React #134: Gatsby ➡️ Netlify, React DOM for Native, XState, Flashlight, re-renders, Custom Hooks, Ignite Cookbook..."
+authors: [slorber]
+date: 02-07-2023
+---
+
+大家好！
+
+Gatsby 剛被 Netlify 收購了 🤯！
+
+如果你對 React-Native 的跨平台開發感興趣，有一篇非常值得閱讀的 RFC。
+
+這週相對平靜，時機剛好，因為我時間不多 😄。我正在為下週的電子報做最後準備，內容會有些不同。
+
+<!-- truncate -->
+
+**💡 [在 Twitter 上查看本電子報](https://slo.im/thread) - 視覺化格式 🎨**
+
+---
+
+import Support from "@site/newsletter/_support.mdx";
+
+<Support />
+
+---
+
+## 💸 贊助商 {#sponsor1}
+
+[![refine](/emails/issues/132/refine.png)](https://github.com/refinedev/refine)
+
+[**refine - 100% 開源、無頭 React 框架，用於構建 CRUD 應用**](https://github.com/refinedev/refine)
+
+準備好將你的技能提升到新水平！我們激動地宣布舉辦開源 refine 黑客松
+
+你可以贏得 1500 美元和專屬周邊套裝！
+
+我們很高興與 Strapi、Appwrite、Meilisearch 和 Medusa 合作。他們贊助本次 refine 黑客松，獲勝者將獲得每家提供的周邊套裝！
+
+[查看更多黑客松資訊](https://s.refine.dev/hackathon)。
+
+---
+
+## ⚛️ React {#react}
+
+[![Netlify 收購 Gatsby Inc. 以加速模組化網頁架構的採用](/emails/issues/134/netlify-gatsby.jpg)](https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/)
+
+**[Netlify 收購 Gatsby Inc. 以加速模組化網頁架構的採用](https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/)**
+
+這是本週重大新聞。Gatsby Inc. 被 Netlify 收購。該框架現歸入 Netlify 旗下，與 Eleventy 和 SolidJS 並列，並將持續發展。雲端功能（包括 [Valhalla 內容中心](https://www.gatsbyjs.com/products/valhalla-content-hub/)）將整合進 Netlify 的服務。新口號是「模組化架構」。Gatsby 目前並非最熱門的 React 框架，但我認為此次收購具有戰略意義，尤其考量其內容中心與所有 CMS 整合功能。相較於 Netlify 的選配付費功能，Gatsby Cloud 更難被採用，對於未使用 Gatsby 框架的網站尤其如此。
+
+另請參閱：
+
+- 📜 [Gatsby 加入 Netlify](https://www.gatsbyjs.com/blog/gatsby-is-joining-netlify/)
+- 📜 [Netlify 收購困境中的 Jamstack 競爭對手 Gatsby](https://thenewstack.io/netlify-acquires-gatsby-its-struggling-jamstack-competitor/)
+- 🎥 [為何有人要收購 Gatsby？](https://www.youtube.com/watch?v=5HE6FcOpit8)
+
+---
+
+[![在 React 中實現全域狀態機器](/emails/issues/134/xstate.jpg)](https://stately.ai/blog/making-state-machines-global-in-react)
+
+**[在 React 中實現全域狀態機器](https://stately.ai/blog/making-state-machines-global-in-react)**
+
+介紹 XState 3.1 中新增的 `createActorContext` API。該 API 能簡化全域 XState 狀態機的創建，並與 React context 關聯。可使用選擇器系統，或透過 provider 提供自訂狀態機（這對於從父組件 `props` 自訂狀態機非常便利）。
+
+---
+
+- 📜 [React 遞歸重新渲染子組件，但有個細微差別](https://alexsidorenko.com/blog/react-render-children-prop/)：圖文並茂的文章，說明組件拆分和狀態共置如何避免不必要的重新渲染。
+- 📜 [自訂 React Hooks 及其使用時機](https://thoughtbot.com/blog/custom-react-hooks)：有時必須建立自訂 Hook，即使它們並非設計成可重用。但需注意：不必要的抽象化也有成本。
+- 📜 [你必須知道的 TypeScript 工具類型](https://www.builder.io/blog/utility-types)：特別介紹 `Awaited` 和 `ReturnType`，以及在 React 情境中的 `Readonly`。
+- 📜 [新版 React 官方文件中的最佳實踐](https://sebastiancarlos.com/react-js-best-practices-from-the-new-docs-1c65570e785d)：想概覽新文件內容的開發者值得一讀。我對某些評論持不同意見，尤其別錯過[被低估的 useSyncExternalStore](https://thisweekinreact.com/articles/useSyncExternalStore-the-underrated-react-api) 😄。
+- 📜 [WebStorm 宣布正式支援 Astro](https://astro.build/blog/astro-webstorm-support/)
+- 📜 [解密 React 應用的 UI 框架與主題機制](https://www.velotio.com/engineering-blog/demystifying-ui-frameworks-and-theming-for-react-apps)
+- 🎥 [在 React 應用中使用 Svelte](https://www.youtube.com/watch?v=FrusJNycQvk)
+- 👀 [Shopify.com 採用 Remix](https://twitter.com/remix_run/status/1622666016135475200)
+- 👀 [`create-astro` CLI 重新設計](https://twitter.com/n_moore/status/1621524815550074880)
+- 📦 [Ionic 7 Beta](https://ionic.io/blog/announcing-the-ionic-7-beta)
+- 📦 [Netlify/Remix-Compute](https://github.com/netlify/remix-compute)：Remix + Netlify 適配器
+
+<SubscribeFormEmbed />
+
+---
+
+## 💸 贊助商 {#sponsor2}
+
+**[![Build and Run Synthetic Monitoring That Scales](/emails/issues/134/checkly.jpg)](https://www.checklyhq.com/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react-february)**
+
+**[建立並運行可擴展的合成監控](https://www.checklyhq.com/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react-february)**
+
+**[Checkly](https://www.checklyhq.com/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react-february)** 讓您輕鬆部署 Playwright 腳本來監控應用程式、網站和 API，從開發到生產環境皆適用。驗證關鍵用戶流程、收集錯誤追蹤、擷取螢幕截圖並記錄效能指標，全面掌握應用程式在全球用戶端的表現！
+
+使用 [Checkly](https://www.checklyhq.com/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react-february) 可實現：
+
+- ✅ 執行可編程的 API 和瀏覽器檢查，驗證應用效能
+- ✅ 檢查失敗時即時告警，輕鬆與現有技術棧整合
+- ✅ 運用 Playwright 和 JavaScript 最大化監控與測試效益
+
+[立即免費監控您的應用](https://www.checklyhq.com/?utm_medium=email&utm_source=newsletter&utm_campaign=this-week-in-react-february)
+
+---
+
+## 📱 React-Native {#react-native}
+
+[![適用於原生的 React DOM（減少 API 碎片化）](/emails/issues/134/rn-web.jpg)](https://github.com/necolas/discussions-and-proposals/blob/reduce-fragmentation/proposals/0000-reduce-fragmentation.md)
+
+**[適用於原生的 React DOM（減少 API 碎片化）](https://github.com/necolas/discussions-and-proposals/blob/reduce-fragmentation/proposals/0000-reduce-fragmentation.md)**
+
+由 Nicolas Gallagher（Meta / React-Native-Web）提出的[RFC](https://github.com/react-native-community/discussions-and-proposals/pull/496) 已更新。目標是盡可能讓 React-Native API 與 Web API 對齊，包括 DOM 元素如 `div`、`span`，甚至 `select`！"一次學習，隨處運行" 可能逐步轉變為 "一次編寫，隨處運行"。社群反應相當分歧。我們需要時間沉澱思考這是否是個好主意 😄，考慮到這個雄心勃勃專案的規模，顯然不會明天就實現！
+
+---
+
+- 📜 [如何切換 React Native Storybook 和應用程式](https://dev.to/dannyhw/how-to-swap-between-react-native-storybook-and-your-app-p3o)：適用於擁有 React-Native Storybook 的實用技巧。個人偏好開發時在選單列設置按鈕來開關 Storybook、切換 API 環境等... 長期來看，打造專屬開發者體驗（DX）能節省大量時間。
+- 📦 [Flashlight.dev](https://flashlight.dev/)：Flashlight 是項新服務，旨在成為行動端的 Lighthouse，包含便利的 Flashlight Cloud 方案。專案前身為 [Android-Performance-Profiler](https://twitter.com/almouro/status/1622588283740880897)。
+- 📖 [React Native 的 Ignite 食譜](https://ignitecookbook.com/)：簡明的 React-Native 逐步實作指南。
+- 🎨 [SolidJS + NativeScript 運行 React-Native-WebView 的演示](https://twitter.com/ammarahm_ed/status/1622259723729764354)：Open Native 的承諾化為實踐，對原生程式碼的可移植性相當有趣。
+- 👀 [白宮呼籲提升行動平台間的互通性](https://twitter.com/JI/status/1620948253381632000)
+- 🎙️ [React-Native-Radio 第 258 集 - AI 機器人編寫 React Native？！](https://reactnativeradio.com/episodes/r258-robots-coding-react-native)
+
+---
+
+## 🧑‍💻 職缺 {#jobs}
+
+🧑‍💼 [**Passionfroot - 資深全端工程師（Remix） - €160k+，柏林/遠端**](https://passionfroot.recruitee.com/o/senior-fullstack-engineer)
+
+Passionfroot 的使命是透過 YouTube、Podcast、社群媒體和電子報，賦能未來的獨立事業。加入我們，共同打造協助全球創作者建立可擴展、可持續商業模式的工具。
+
+🧑‍💼 [**Callstack - 資深 React Native 開發者 - 完全遠端，B2B 月薪淨額 21-32k 波蘭幣**](https://www.callstack.com/senior-react-native-developer)
+
+您想參與開發全球最多人使用的應用程式嗎？您是否渴望共同打造 React Native 技術？加入 Callstack 的 React 與 React Native 領導團隊。詳情請參閱官網。我們期待您的申請——展現您的實力！
+
+🧑‍💼 [**G2i - 100% 遠端 React Native 職缺**](https://twitter.com/gabe_g2i/status/1563204813881425926?s=20&t=ArRLC77BpRwXXCdx8fnUqw)
+
+我們有數個專注於 React Native 的開發職缺開放！薪資約為 16 萬美元外加 10% 獎金。應徵者需具備 RN 實際生產環境經驗且位於美國。請私訊 [@gabe_g2i](https://twitter.com/gabe_g2i) 了解更多，別忘了提及 This Week in React。
+
+💡 [如何發布職缺？](https://thisweekinreact.com/sponsor)
+
+---
+
+## 🔀 其他 {#other}
+
+- [第 94 次 TC39 會議更新](https://dev.to/hemanth/updates-from-the-94th-tc39-meeting-48mb)：進入下一階段的最終提案清單。特別期待 [AsyncContext](https://twitter.com/sebastienlorber/status/1620391460679065601)、陣列複製修改以及 WeakMap 鍵值符號化（對 [Records & Tuples](https://sebastienlorber.com/records-and-tuples-for-react) 至關重要）
+- [Deno - 網路的未來（與過去）是伺服器端渲染](https://deno.com/blog/the-future-and-past-is-server-side-rendering)
+- [WebKit - 2023 年推動互通性向前邁進](https://webkit.org/blog/13706/interop-2023/) + [Chrome - Interop 2023：持續改進開發者體驗](https://web.dev/interop-2023/)
+- [理解單型態可將 JavaScript 效能提升 60 倍](https://twitter.com/mhevery/status/1622499229813047296)
+- [加速 JavaScript 生態系 - eslint](https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-3/)
+- [Google 正致力於將 Chromium 引入 iOS](https://twitter.com/OpenWebAdvocacy/status/1621653519274246144) + [Mozilla 正開發 iOS 版 Firefox](https://twitter.com/OpenWebAdvocacy/status/1622898924775415808)
+- [2023 年及未來的響應式設計指南](https://ishadeed.com/article/responsive-design/)
+- [SvelteKit 的商業案例](https://elliscs.hashnode.dev/a-business-case-for-sveltekit)
+- [Node.js 19.6](https://twitter.com/ruyadorno/status/1621186886470361093)
+- [Ada 1.0 - 全新 Node.js URL 解析器](https://twitter.com/nodejs/status/1622707746716917761)
+- [Vite 4.1](https://twitter.com/vite_js/status/1621149774627094535)
+- [別使用回傳類型，除非...](https://www.youtube.com/watch?v=nwSe95uFN8E)
+- [TypeScript 中回傳類型的風險](https://www.youtube.com/watch?v=I6V2FkW1ozQ)
+- [學習圖片 - 網頁圖片深度課程](https://web.dev/learn/images/)
+- [分叉 Chrome 在終端機渲染](https://fathy.fr/carbonyl)
+
+---
+
+## 🤭 趣味 {#fun}
+
+太狠了 😅 他為什麼這麼刻薄！
+
+[![alt](/emails/issues/134/meme.png)](https://twitter.com/ThePrimeagen/status/1620827474681827333)
+
+下次見！👋

@@ -1,0 +1,584 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/114.mdx",
+  "source_file_content_hash": "6bced1e7093a298ec6c46b7c7708e7833d814d4956152bef65322a14fcae60df",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /114\ntitle: \"This Week In React #114: 🎉 official launch of Docusaurus 2.0 🥳️\"\nauthors: [slorber]\ndate: 08-01-2022\n---",
+      "source_content_hash": "bd804c6c289d22e49a39bb1265cd66a785f9098f0b33cd9a22aeee1f40e7239a",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "This Week In React #114: 🎉 official launch of Docusaurus 2.0 🥳️",
+      "source_content_hash": "04f623ba0514ad68fb2d7ee7b157dd62e99120b7e718f89cc7eb8063a4b13173",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週 React 動態 #114：🎉 Docusaurus 2.0 正式發布 🥳️"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fc91ee08",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_fc91ee08"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "Hello everyone!",
+      "source_content_hash": "2151adce5b055402b1d03a650e5993e3d4c4b99287a27d008a0343af9dd5a691",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "🎉 It is the [**official launch of Docusaurus 2.0**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)!",
+      "source_content_hash": "476384926798c22f6c1ed525c9a1327b50bab6a3f92a2d45ef242a59ac0502a8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🎉 這是 [**Docusaurus 2.0 的正式發布**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86b54d44",
+      "source_content": "It is the **Meta Open Source (Facebook)** project I maintain: a documentation static-site-generator, based on Node.js and React. It allows you to focus on content: just write Markdown files. Docusaurus is truly customizable and respects your company's branding. It is already powering many great docs sites you know: React-Native, Supabase, Redux, Tauri, Electron, Courier, Ionic, Figma, Snapchat, Prettier, Babel, Solana, Cardano...",
+      "source_content_hash": "f06f2b280480073013bd86ac26a6fce55c438990171a07eb6be2eea288cee22a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這是我維護的 **Meta 開源（Facebook）** 專案：一個基於 Node.js 和 React 的文件靜態網站生成器。它能讓你專注於內容：只需撰寫 Markdown 檔案。Docusaurus 高度可自訂且尊重品牌形象，目前已驅動許多知名文件網站：React-Native、Supabase、Redux、Tauri、Electron、Courier、Ionic、Figma、Snapchat、Prettier、Babel、Solana、Cardano..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "39b3772c",
+      "source_content": "🙏 We are also launching [**ProductHunt**](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), [**Hacker News**](https://news.ycombinator.com/item?id=32303052&utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) and [**Twitter**](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter): if you like the project, please **vote** and share your opinion 😃",
+      "source_content_hash": "e48dff683751f452043bc83d41416378467c1ad693eb2be7970d629d026443fb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🙏 我們同時在 [**ProductHunt**](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)、[**Hacker News**](https://news.ycombinator.com/item?id=32303052&utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 和 [**Twitter**](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 發布：若喜歡本專案，請**投票**並分享意見 😃"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "🎙️ My podcast on Docusaurus with [The Developer's Bakery](https://thebakery.dev/39/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) just came out too 😉",
+      "source_content_hash": "92a2675c4647d6042661f25b8e8e61b6f7e7432aab37bd4bf2231a279bd57e3e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "🎙️ 我在 [The Developer's Bakery](https://thebakery.dev/39/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 的 Docusaurus 專訪播客也上線了 😉"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "98cfbd53",
+      "source_content": "[![](https://s3.amazonaws.com/revue/items/images/017/224/019/mail/social-card.png?1659345670)](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "f679c9a620a85f6a1d73010db04f15b6ea8574022536e54268c2e9f0ff93f6b3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![](https://s3.amazonaws.com/revue/items/images/017/224/019/mail/social-card.png?1659345670)](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "**Note**: make sure to read the official [**Announcing Docusaurus 2.0**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0) post: it is more detailed than this one, which is my personal summary.",
+      "source_content_hash": "55bd60e29ce64704bbeb3c82f6018170e86bcc91a2991d84a3c6f34cca2ab629",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**注意**：請務必閱讀官方 [**Docusaurus 2.0 發布公告**](https://docusaurus.io/blog/2022/08/01/announcing-docusaurus-2.0)，該文比本篇個人摘要更詳盡。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3c36424c",
+      "source_content": "## What is Docusaurus?",
+      "source_content_hash": "355d26c0bd4e064a138bd1e89218b1772523e21469e58950647adde0e1e58b4d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 什麼是 Docusaurus？"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "Meta has a lot of internal/external projects, which have to be documented each time. It's hard enough to write docs, and if you have to customize a site each time, it becomes a time sink.",
+      "source_content_hash": "f7536246524c807b4e3c50b71368e4a856803fd9d0be024380ea2b80e4945ae0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Meta 有大量內外部專案需持續編寫文件。撰寫文件已具挑戰性，若每次還需自訂網站，更會耗費大量時間。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "In 2017 they started copy/pasting a Jekyll template for each project, but it quickly became difficult to maintain.",
+      "source_content_hash": "7076b467ccf6da3ec53d87f72cd29214c066c7abd035bf13411acf93b949e676",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "2017 年時他們開始為每個專案複製貼上 Jekyll 模板，但維護迅速變得困難。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7499a4e7",
+      "source_content": "In 2017, they decided to create Docusaurus, a React-based static site generator in Node.js, which will \"hide\" the technical stack of the site and allow to **focus on the content**: writing **Markdown** files. It is a bit like Create-React-App, but for creating content sites: docs, blog, landing pages...",
+      "source_content_hash": "2890f580856fc8866f775f045355bed6d9a84fdcb73720b4cf4fee51e698eca8",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "2017 年，他們決定建立 Docusaurus——基於 Node.js 和 React 的靜態網站生成器，可「隱藏」技術堆疊並讓你**專注內容**：撰寫 **Markdown** 檔案。類似 Create-React-App，但專為內容網站設計：文件、部落格、登陸頁面..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "517051a7",
+      "source_content": "The v1 of Docusaurus quickly became popular, used by React-Native, Jest, Babel, Prettier...",
+      "source_content_hash": "7eebe1aec0e6e8beb7c6e0fff7d5c3aa262a1b588b5627bd458da87a80f7db54",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Docusaurus v1 迅速普及，被 React-Native、Jest、Babel、Prettier 等專案採用..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "![Sites using Docusaurus v1](https://s3.amazonaws.com/revue/items/images/017/224/025/original/v1.gif?1659345706)",
+      "source_content_hash": "c17f7be446fa8421f3f9aecc2ecf5df760fde736d81ca1df2d6f769f3706e80a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "![使用 Docusaurus v1 的網站](https://s3.amazonaws.com/revue/items/images/017/224/025/original/v1.gif?1659345706)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5ef5fda3",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d04259b",
+      "source_content": "## Toward Docusaurus v2",
+      "source_content_hash": "b00b32db5004edb55b8f70d24b64606b5011f5c07caea718f3a812cc8a3ff9a7",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 邁向 Docusaurus v2"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95e9ba12",
+      "source_content": "Following the release of v1, Meta realized some limitations of v1:",
+      "source_content_hash": "40f19ee379c55098e6239e791572b65d4ad5caba822a10d9b0c4d3ad6f16abbb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "v1 發布後，Meta 意識到其限制："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "824626b3",
+      "source_content": "- uses React but only on the server side: no hydration nor Single-Page-App navigation\n- the repo was quite monolithic, difficult to maintain and test\n- not very extensible, there was no plugin system\n- the theming was relatively limited, and v1 sites look very similar",
+      "source_content_hash": "b1a87743e3b21e21d434b0b02787f0d725e21de60bd02caadaaaf0cc2a03d475",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 僅在伺服器端使用 React：沒有水合（hydration）也沒有單頁應用程式（SPA）導航\n- 儲存庫結構相當龐大單一，難以維護和測試\n- 擴展性不足，缺乏插件系統\n- 主題功能相對有限，且 v1 網站外觀高度相似"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c504c207",
+      "source_content": "In 2018, Meta decided to **re-create Docusaurus from scratch**, with a brand new architecture:",
+      "source_content_hash": "cf6d2928b99a50f0e7c2a03d129c816e4d821281e4e3b922edc6c6877df7c84b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "2018 年，Meta 決定**從頭重建 Docusaurus**，採用全新的架構："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "310e47b7",
+      "source_content": "- React used client and server side (like Next.js, Remix, Gatsby...)\n- Plugin system: allows the community to contribute useful features (OpenAPI integration, local search engine, Sass support...)\n- Much more flexible theming system: possible to override any React component of the theme\n- MDX (Markdown + React) to make your documentation interactive",
+      "source_content_hash": "52f3b9a2dfd2b0097ee088c24750676d791e8e42cf91d4dc7d994d5d6b14797d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 在客戶端和伺服器端都使用 React（類似 Next.js、Remix、Gatsby...）\n- 插件系統：讓社群能貢獻實用功能（OpenAPI 整合、本地搜尋引擎、Sass 支援等）\n- 更靈活的主題系統：可覆寫主題中的任何 React 元件\n- MDX（Markdown + React）讓文件具備互動性"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "Docusaurus 2.0 has been in alpha/beta for **4 years** 🤪, and we finally released the **first stable version**! We delayed this release because it wasn't obvious to respect Semantic Versioning before.",
+      "source_content_hash": "f3b04f0a27c5be0e3e610e469a654b7b5b1f7e14164e38626a5ebe7111c76648",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Docusaurus 2.0 經歷了 **4 年** 🤪 的 alpha/beta 階段，終於發布**首個穩定版本**！延遲發布是因先前難以符合語義化版本規範。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "40158b4b",
+      "source_content": "Today, Docusaurus v2 is available with a lot of features, and it would be difficult to list them all: docs, blog, versioning, theming, dark mode, i18n, a11y, SEO, TypeScript, PWA, Algolia DocSearch, MDX...",
+      "source_content_hash": "9d3c21da0e7f41d9c15fa5207b7df1e7899fe7c2254e5c4be9b8cbfaaa970e9e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "如今 Docusaurus v2 具備眾多功能，難以完整列舉：文件系統、部落格、版本控制、主題、深色模式、國際化（i18n）、無障礙（a11y）、SEO、TypeScript、PWA、Algolia DocSearch、MDX..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "818747ba",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c315c636",
+      "source_content": "## Who uses Docusaurus 2.0?",
+      "source_content_hash": "139974976c2469157a07fac02b6138574e546ea893cb93cce3fdad4ca245d279",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 誰在使用 Docusaurus 2.0？"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "531437ca",
+      "source_content": "A lot of companies have already adopted Docusaurus 2.0 despite the fact that it is in beta. The v2 is already much more popular than the v1, and we have almost half of the npm downloads of Gatsby!",
+      "source_content_hash": "79f4e1e8328f44356957d2de28464ef640a5252cfc57f99c7c03209adea1ba1a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "儘管處於 beta 階段，眾多公司已採用 Docusaurus 2.0。v2 的熱門程度遠超 v1，npm 下載量已達 Gatsby 的近半數！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "06e24cc0",
+      "source_content": "![npm growth](https://s3.amazonaws.com/revue/items/images/017/224/035/mail/npm-downloads.png?1659345822)",
+      "source_content_hash": "5fb524ed7c57bf0a4e56b526f19bc7a81016c2cc9a89456d563d81bb14a88984",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "![npm 增長量](https://s3.amazonaws.com/revue/items/images/017/224/035/mail/npm-downloads.png?1659345822)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7f71ff2a",
+      "source_content": "Our [**site showcase**](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) already contains almost 300 sites.",
+      "source_content_hash": "4e201dc48047d64ec7fceb742573f5392f3770df94c7997737c156fdaa0425b7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們的 [**網站展示區**](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter) 已收錄近 300 個站點。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "147e8550",
+      "source_content": "And it is far from being exhaustive since so many sites have not yet been added: [Figma](https://www.figma.com/plugin-docs/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), [Snapchat](https://docs.snap.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), [Courier](https://www.courier.com/docs/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter), [1Password](https://developer.1password.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)...",
+      "source_content_hash": "62cc930b225ed44bab94cc15a441eec3429cbf463e4dbc8979d4236d8a744a3e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "這遠非完整清單，仍有大量網站尚未加入：[Figma](https://www.figma.com/plugin-docs/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)、[Snapchat](https://docs.snap.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)、[Courier](https://www.courier.com/docs/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)、[1Password](https://developer.1password.com/?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "883231d4",
+      "source_content": "Not to mention the many internal sites of companies like Microsoft, LinkedIn, Shopify...",
+      "source_content_hash": "8d5f67d41bf96cb49922cceb12aef384abc9f37df706fdbcfd864037e7cd0c96",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "更遑論 Microsoft、LinkedIn、Shopify 等企業的眾多內部網站..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6cc549f2",
+      "source_content": "Some examples:",
+      "source_content_hash": "682a7827d9d4c48c4cc733ee4391e7d69f07bb54218a7f232ae4db61ff08635b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "部分範例："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6384b3d4",
+      "source_content": "- **Big tech**: Microsoft, Snapchat, Shopify, LinkedIn, Meta, SAP, ByteDance, Lacework, Palo Alto Network...\n- **Startups**: Supabase, Ionic, Hasura, Figma, Courier, CodeSandbox, StackBlitz, Redis, Algolia, Hashnode...\n- **OSS**: React-Native, Redux, React-Navigation, Jest, Testing Library, Gulp, Babel, Lerna, pnpm, Electron, Tauri...\n- **Web3**: Iota, Solana, Cardano, Neo, SushiSwap...",
+      "source_content_hash": "b80f0ea12b4f205bcf5cc323870cd47ac4ddc4fc1cf8b3daad8012823c376782",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- **大型科技公司**：Microsoft、Snapchat、Shopify、LinkedIn、Meta、SAP、ByteDance、Lacework、Palo Alto Network...\n- **新創企業**：Supabase、Ionic、Hasura、Figma、Courier、CodeSandbox、StackBlitz、Redis、Algolia、Hashnode...\n- **開源專案**：React-Native、Redux、React-Navigation、Jest、Testing Library、Gulp、Babel、Lerna、pnpm、Electron、Tauri...\n- **Web3 生態**：Iota、Solana、Cardano、Neo、SushiSwap..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a5c5772a",
+      "source_content": "We also have a lot of sites with beautiful customizations that really respect the brand image of the company.",
+      "source_content_hash": "170912bf53f9168714b07fe0bf62e3711346e51759dfb7415d76d7c8f40b4635",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "許多網站更實現了精美客製化，完美呼應品牌形象。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "![Sites using Docusaurus v2](https://s3.amazonaws.com/revue/items/images/017/224/051/original/showcase-2.gif?1659345869)",
+      "source_content_hash": "3bacfb012811b9303b4844e73e9d53bcf0dec61daeb44c4297044c92730f3e1e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "![使用 Docusaurus v2 的網站](https://s3.amazonaws.com/revue/items/images/017/224/051/original/showcase-2.gif?1659345869)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "be625c00",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3a8d2b95",
+      "source_content": "## My role in all this?",
+      "source_content_hash": "e51540963d1aaa8ac9c8611143a1b057ba6c5688d30ab6df5fa8a0d793de37dd",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 我在其中扮演的角色？"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5803caac",
+      "source_content": "Two years ago, I was scrolling on Twitter when I came across this:",
+      "source_content_hash": "205f273ae215c7606c8a5cd59c6b7916b079301b9c9538886eda8e177d3e7adb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "兩年前，我在 Twitter 瀏覽時偶然發現："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "51867d16",
+      "source_content": "[![](https://user-images.githubusercontent.com/749374/182660849-cc39d9d0-85ad-481c-a681-743a9c5b20c7.png)](https://twitter.com/sebastienlorber/status/1232059882091749376)",
+      "source_content_hash": "7b1fd8bbc1a796244d6004b58600cac114f0eda3ec62921e9eba3a31e2cabab6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![](https://user-images.githubusercontent.com/749374/182660849-cc39d9d0-85ad-481c-a681-743a9c5b20c7.png)](https://twitter.com/sebastienlorber/status/1232059882091749376)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "785750ac",
+      "source_content": "**Pro tip**: join Twitter and be open 😄 It can lead to interesting career opportunities!",
+      "source_content_hash": "7a19791b18a135b96ad7fe57474c92a48181e0e1b5b68bdd5c7c5c7586e43d8a",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**專業建議**：加入 Twitter 並保持開放態度 😄 這可能會帶來有趣的職業機會！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "82e90254",
+      "source_content": "I thought it was a great opportunity: working for Facebook as a freelancer on an open-source project doesn't happen every day. It was supposed to last 3 months, but it ended up lasting much longer: I've been working on Docusaurus for more than 2 years now!",
+      "source_content_hash": "378a8efd2fddfc75fb458724bbceae5917652ed8ad58de0794ad78aeefd7a307",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我認為這是絕佳機會：以自由工作者身份為 Facebook 從事開源專案並非天天可見。原本預計持續 3 個月，但最終延續更久：我已在 Docusaurus 上工作超過 2 年！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2822251a",
+      "source_content": "I have the chance to work in a very flexible way, with great autonomy, which also allows me to run this newsletter on the side.",
+      "source_content_hash": "1ba980ce3cdb669890561f005ca4a08824dfa3c5537348b93a45978cc51a6460",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我很幸運能以高度靈活的方式工作，擁有充分自主權，這也讓我能同時經營這份通訊。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "25212439",
+      "source_content": "It's really cool to see Docusaurus becoming popular, I really feel like my work has a real impact. I hope I've inspired you to try this tool and I can't wait to see the sites you create! Don't forget to send them to our [site showcase](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)!",
+      "source_content_hash": "59330c4a90a69507b9638b5369ff9da567d43ecd69f9791757c8d83f0ffde305",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "看到 Docusaurus 日益流行真的很棒，我確實感受到工作的實際影響力。希望這能激勵您嘗試此工具，期待見到您建立的網站！別忘了提交至我們的[網站展示區](https://docusaurus.io/showcase?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4c30a6aa",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "54bafb10",
+      "source_content": "## Help us",
+      "source_content_hash": "f5bedfbc77d717c71d233046fcc49d3d4155c6098a1c1c18822ffba5ae000c67",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 幫助我們"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4be28ed1",
+      "source_content": "I would really appreciate if you could help us **make the launch a success**. An upvote, retweet, or comment helps us a lot!",
+      "source_content_hash": "52977f3a1d7f93e9a8952b7014496b873db670c0b4367f37bdc8e5d93994d805",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "若您能協助我們**讓發布圓滿成功**，我將不勝感激。按讚、轉推或留言都能帶來巨大幫助！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0e80209e",
+      "source_content": "The main platforms we are launching on:",
+      "source_content_hash": "aa6bee48ee06de887a89501851189913db8dc88f1657b7a438c876840335a4ab",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們發布的主要平台："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "38417f80",
+      "source_content": "- [Twitter](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- [Product Hunt](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- [Hacker News](https://news.ycombinator.com/item?id=32303052&utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)",
+      "source_content_hash": "9fb73b3765f0b791f93d6e353d5e845ba9d582944bcfc4b6d51c4d490250ab4c",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- [Twitter](https://twitter.com/docusaurus/status/1554000364432769025?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- [Product Hunt](https://www.producthunt.com/posts/docusaurus-2-0?utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)\n- [Hacker News](https://news.ycombinator.com/item?id=32303052&utm_campaign=This%20Week%20In%20React&utm_medium=email&utm_source=Revue%20newsletter)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e9313fef",
+      "source_content": "Thanks and see you soon with some fresh React news :)",
+      "source_content_hash": "14189d1124d170c4726a59e2618b62b6a0b62aaa63c62451fd41fc5737b06918",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "感謝您，我們將很快帶來新鮮的 React 消息 :)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1b4de6df",
+      "source_content": "![Our cutest mascot Slash 💕](https://s3.amazonaws.com/revue/items/images/017/224/190/mail/CleanShot_2022-08-01_at_11.08.03_402x.png?1659346116)",
+      "source_content_hash": "4f39bc14001bdada72e32163e9045743f8d8d6eb5cc7f41a877285b91112ba35",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "![我們最可愛的吉祥物 Slash 💕](https://s3.amazonaws.com/revue/items/images/017/224/190/mail/CleanShot_2022-08-01_at_11.08.03_402x.png?1659346116)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1958bc43",
+      "source_content": "Our cutest mascot Slash 💕",
+      "source_content_hash": "769190ed54dbc8e921543ceb3cc18fc1d165e8a758ea2923d6c62f33457f68e3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們最可愛的吉祥物 Slash 💕"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/114.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.073008+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "6bced1e7093a298ec6c46b7c7708e7833d814d4956152bef65322a14fcae60df"
+  }
+}

@@ -1,0 +1,969 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "src/pages/sponsor.mdx",
+  "source_file_content_hash": "786296582ced55e51e9a6f6be85a52327306175710d6e0f530f5c362fcc9e24e",
+  "segments": [
+    {
+      "segment_id": "a9b642df",
+      "source_content": "import {\n  newsletterStats,\n  sponsorshipCalendarLink,\n  lastIssueLink,\n} from \"@site/src/newsletter\";\nimport {\n  PrimaryAdExample,\n  SecondaryAdExample,\n} from \"@site/src/components/AdExamples\";",
+      "source_content_hash": "60e793b5857ad0f8547c2a672e4238ec2c325e4f9b9ee27d6e6bc33fb55a763c",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_a9b642df"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8a5f6a7b",
+      "source_content": "# Sponsor the newsletter",
+      "source_content_hash": "a5cf80f00f4ef21063eb967b586b28127eb742273e9b08110a5af74d2dafe734",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "# 贊助電子報"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "180bddb1",
+      "source_content": "Reach a **qualified and engaged** audience of **mid/senior React developers** with an ad in our [weekly newsletter](/newsletter).",
+      "source_content_hash": "bb46abf3e6911f5f0dfd2202d4056bb24152c7d3af045c417cc142e55553f999",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "透過在我們的[每週電子報](/newsletter)投放廣告，觸及**高質量且高度參與**的**中高階 React 開發者**受眾。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cf898102",
+      "source_content": "Get in touch:",
+      "source_content_hash": "168f130ad05007fd88d6b016fd73ba38135b47244623a994c2f835f7f0e0eee2",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "聯繫方式："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "84758135",
+      "source_content": "- by email at [**sponsor@thisweekinreact.com**](mailto:sponsor@thisweekinreact.com?subject=Sponsorship)\n- or fill the [**contact form**](https://thisweekinreact.com/sponsor/form)",
+      "source_content_hash": "a27f7c807e30f5a9646a7d3c88a5f22118afb6949e2fb8774973264f78a8032a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 發送郵件至 [**sponsor@thisweekinreact.com**](mailto:sponsor@thisweekinreact.com?subject=Sponsorship)\n- 或填寫[**聯絡表單**](https://thisweekinreact.com/sponsor/form)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1acb9a05",
+      "source_content": "Last updated: **February 2025**.",
+      "source_content_hash": "f9c051e53614248d2576d4945c76df9bfb4aa23097ebe85401536e3aafccd1ce",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "最後更新於：**2025年2月**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## TLDR",
+      "source_content_hash": "20923b9fb79d5ff45f5691db457c4796246c5c5f1b47806da7ae8462a8457406",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 重點摘要"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1941846d",
+      "source_content": "<ul>\n  <li>\n    <b>Advertise</b>\n    <>: a product, course, blog post, conference...</>\n  </li>\n  <li>\n    <b>Placements</b>\n    <>: 1st sponsor, 2nd sponsor, sponsored link, custom...</>\n  </li>\n  <li>\n    <b>Subscribers count</b>\n    <>: </>\n    <span>{newsletterStats.all.subscribersCount}</span>\n  </li>\n  <li>\n    <>\n      <b>Open-rate</b>\n      <>: </>\n      <span>{newsletterStats.all.openRate}%</span>\n    </>\n  </li>\n  <li>\n    <>\n      <b>Click-rate</b>\n      <>: </>\n      <span>{newsletterStats.all.clickRate}%</span>\n    </>\n  </li>\n  <li>\n    <b>Readers at</b>\n    <>\n      {\n        \": Meta, Google, Microsoft, GitHub, Shopify, Amazon, Stripe, Cloudflare, ByteDance, Figma, Uber...\"\n      }\n    </>\n  </li>\n  <li>\n    <b>Most popular offer</b>\n    <>: </>\n    <a href=\"#sponsor-1st\">4 x 1st sponsor slots</a>\n  </li>\n  <li>\n    <b>Booking</b>\n    <>: </>\n    <>email us at </>\n    <a href=\"mailto:sponsor@thisweekinreact.com?subject=Sponsorship\">\n      <b>{\"sponsor@thisweekinreact.com\"}</b>\n    </a>\n    <> or </>\n    <a href=\"https://thisweekinreact.com/sponsor/form\">\n      <b>fill this form</b>\n    </a>\n  </li>\n</ul>",
+      "source_content_hash": "33e2293d9d9e5fbdc6d8ab2c3ddafe8264def890f63065dac4d2c1b258a4b751",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_1941846d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "aac83236",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "66819c78",
+      "source_content": "## Audience {#audience}",
+      "source_content_hash": "5836b2873d71c222a2d57c13e151d2fcbba49ec4cd48b0fa52af22532b239aac",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 受眾分析 {#audience}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fbc2db85",
+      "source_content": "The audience of our [weekly newsletter](/newsletter) is **qualitative and engaged**, with open-rates way above the industry standard.",
+      "source_content_hash": "5ff125262f9fdd4499c44a7253aee91191afdb3d290f050931a04b66007865b1",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們[每週電子報](/newsletter)的讀者具有**高質量與高參與度**，開啟率遠超行業標準。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "759d12dd",
+      "source_content": "### 📜 Content {#content}",
+      "source_content_hash": "c5a64d0088083ae1c22e4705856d9eda0e7610cf96c6f760ab563dea9e05d26a",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### 📜 內容定位 {#content}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "74dd7937",
+      "source_content": "Our editorial line assumes readers are:",
+      "source_content_hash": "f517541dda8e4c2dc5e054f79f06272307d8c25978e57c3774ed005dbafa3a17",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "編輯方針假設讀者具備以下特徵："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "49f9f337",
+      "source_content": "- **React developers**: we cover the whole React ecosystem\n- **React-Native developers**: there's a dedicated section in the newsletter\n- **experienced**: they know React well and are not interested in beginner-friendly content\n- **passionate**: they want to stay on top of their favorite technology\n- **open-minded**: they also want to know about non-React news that are relevant to them\n- **respecting their time**: they want a pre-filtered qualitative content",
+      "source_content_hash": "f977442afbe8510fabbb4008cebf8d1fa69d3c59f8f2cfe06bb41b30fa38d884",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- **React 開發者**：涵蓋整個 React 生態系統\n- **React-Native 開發者**：電子報設有專屬區塊\n- **經驗豐富**：熟悉 React 且不關注初階內容\n- **技術熱忱**：期望掌握最新技術動態\n- **開放態度**：關注 React 外相關技術動向\n- **時間敏感**：需要預先篩選的高質量內容"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f9d6f2bf",
+      "source_content": "<details>\n  <summary>What makes this newsletter unique</summary>\n\nIt is a weekly curation of news **for** React developers, not just about React. And in particular for **mid/senior** developers that are already productive using React.\n\nWe focus on what's **really new** in an **exhaustive** way. There's usually **a lof of external links**, but readers aren't expected to click all of them: simply reading the headlines and comments usually provide enough value.\n\nWe **filter content** heavily, and generally exclude:\n\n- content produced for SEO, based on keyword analysis\n- listicles, 101's\n- verbose step-by-step tutorials\n- promotional product tutorials\n- most UI libraries and npm packages\n\n</details>",
+      "source_content_hash": "f48962657db9dfae21469abe5d4a8ce275cd1aa3a30354d057654960de41839c",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_f9d6f2bf"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f018dbb4",
+      "source_content": "<details>\n  <summary>About the author - Sébastien Lorber</summary>\n\n[**Sébastien Lorber**](https://www.linkedin.com/in/sebastienlorber) ([@sebastienlorber](https://twitter.com/sebastienlorber)) is a **React early-adopter** and user since [January 2014](https://stackoverflow.com/questions/21352587/does-react-use-requestanimationframe-if-so-how-does-it-use-it).\n\nWith **a decade of React experience**, he has the credibility and authority to know exactly what is interesting to a senior React developer, and is able to provide **unique insight**.\n\nSince 2020, he has been **working for Meta** as a freelancer. He is the **lead maintainer of [Docusaurus](https://github.com/facebook/docusaurus)**, a React static site generator for creating beautiful documentation websites, one of Meta's most successful open source project.\n\n</details>",
+      "source_content_hash": "f2f112b394700ce55084ab34cfbf3a64b6b11cefc089a6115582a861067d477e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_f018dbb4"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b3dd1be3",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_b3dd1be3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "36d6c3de",
+      "source_content": "### 🌍 Demography {#demography}",
+      "source_content_hash": "4b45f3e8f8870f5ddf4d76d48940dc736c93e1c27ed5698b4c2ca9ff1b9446c9",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### 🌍 地域分佈 {#demography}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c364340c",
+      "source_content": "Our audience is well-balanced, with the largest share in **Europe** (40%) followed by **North America** (18%).",
+      "source_content_hash": "39ee2eafef6201265f47f60f201e11013a57ce88c86a3be1d82f79b6caeeaccb",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "受眾地域均衡，**歐洲**佔比最高（40%），其次為**北美**（18%）。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f45239ba",
+      "source_content": "![Substack audience demography stats](/img/audience-demography.png)",
+      "source_content_hash": "a0f8692c4fd745ea76548372df7e086c5b3d20f72ac246612d0b45142a96940e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "![Substack 受眾地域統計圖表](/img/audience-demography.png)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f1c1cd6",
+      "source_content": "### 📈 Stats {#stats}",
+      "source_content_hash": "0431134bdf4a68a4fc4f2db7d8cc8c2030379a04bdf3e5b991ad2fd736d6302b",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### 📈 數據統計 {#stats}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "88cb26ec",
+      "source_content": "<SponsoringTabsStats>\n  <details>\n    <summary><b>Email provider screenshot</b>{\" (April 2024)\"}</summary>\n        <img alt=\"screenshot\" src=\"/img/CK_TWIR_STATS.jpg\" />\n  </details>\n  <details>\n    <summary><b>About the open-rate </b> - an unreliable metric</summary>\n\n            - [iOS 15 prevents email tracking](https://phoscreative.com/articles/ios15-email-marketing/)\n            - [Gmail clipping prevents email tracking](https://convertkit.com/sender-reputation)\n            - Readers use privacy tooling: [StoopInbox](https://stoopinbox.com/), [Kill The Newsletter](https://kill-the-newsletter.com/), [FeedBin](https://feedbin.com/), [ReadWise](https://readwise.io/), [Feedly](https://feedly.com/), [Newsletterss](https://newsletterss.com/), [Mailbrew](https://mailbrew.com/), [ProtonMail](https://proton.me/), [Apple Private Relay Email](https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_js/communicating_using_the_private_email_relay_service), [Firefox Relay](https://relay.firefox.com/)...\n\n    </details>\n\n</SponsoringTabsStats>",
+      "source_content_hash": "9d93f820235465a1cd97dcb9f74677083f495e7c55fad6967595948d0d082c47",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_88cb26ec"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9e0ba9d0",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_9e0ba9d0"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b77e7669",
+      "source_content": "### 🗣 Testimonials {#testimonials}",
+      "source_content_hash": "657899ab2a597bec700a43728092de200412502f1761d0b780ab3d5e9d598c4d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### 🗣 見證分享 {#testimonials}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "619c3209",
+      "source_content": "Readers regularly express their satisfaction. Check our **[Twitter testimonials](https://twitter.com/sebastienlorber/timelines/1448942785814466561)**.",
+      "source_content_hash": "5d2d8ded33e385eda34a4862fadf0ab70ee78cc0afb905b577e2a1682d91c443",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "讀者持續表達高度滿意，查看我們的**[Twitter 見證專區](https://twitter.com/sebastienlorber/timelines/1448942785814466561)**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "24d53e93",
+      "source_content": "<SponsoringTabsTestimonials />",
+      "source_content_hash": "f96d0fdb6409ec3e671fd371e27a84a0d9b8178d2951f5eab327ef84afef3c40",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_24d53e93"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b6796530",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ee213c98",
+      "source_content": "## Placements {#placements}",
+      "source_content_hash": "b6d94a45739ef99be974c1e6aa14204004611fed40c5f57b395d59c50f00d526",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 廣告版位 {#placements}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "008183b0",
+      "source_content": "We offer multiple sponsored placements, each of them has a different price.",
+      "source_content_hash": "61e96fa9d35e5286c102ad66460ed4329c5b222929d1907469e37940889ffab3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "提供多種贊助版位，各版位定價不同。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0ddaa835",
+      "source_content": "The newsletter structure stays the same every week:",
+      "source_content_hash": "9bafcece2476bfe6979c32ed828d4a21417bbd8bb5f848836be8fe613960777d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "電子報每週維持固定結構："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f6fa9f3",
+      "source_content": "<BrowserWindow url={lastIssueLink}>\n\n- 👋 Introduction\n- 🥇 [**1st sponsor**](#sponsor-1st)\n- ⚛️ React section:\n  - 👀 Headlines\n  - ⚡ [**React Link sponsor**](#sponsor-link)\n  - 🔗 Links\n  - ⚡ [**React Link sponsor**](#sponsor-link)\n  - 🔗 Links\n- 🥈 [**2nd sponsor**](#sponsor-2nd)\n- 📱 React-Native section:\n  - 👀 Headlines\n  - ⚡ [**React Native Link sponsor**](#sponsor-link)\n  - 🔗 Links\n- 🔀 Other section\n- 🤭 Fun section\n\n</BrowserWindow>",
+      "source_content_hash": "91ed9c74dffb1b72bb734ffe58cd1b88c4a58bfe82ce72fce356806d6612c611",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_8f6fa9f3"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b8c004ac",
+      "source_content": "<span>\n  <>Check our </>\n  <b>\n    <a href={lastIssueLink}>last newsletter issue</a>\n  </b>\n  <> to get a better idea!</>\n</span>",
+      "source_content_hash": "b483a8a3603d90e7790bba8b58e618fe6079bbc7d6d59fe0a0179aed0890bd34",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_b8c004ac"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4cf02ae6",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_4cf02ae6"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6bb4b070",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_6bb4b070"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "17fd5988",
+      "source_content": "### 🥇 1st sponsor {#sponsor-1st}",
+      "source_content_hash": "c4c7786171cc57c51a16042fc7a034e405c217709a29895eb1cc98f802075b1d",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### 🥇 首位贊助 {#sponsor-1st}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3208eb29",
+      "source_content": "This placement offers a generous ad copy length at the beginning of the newsletter, before the React section.",
+      "source_content_hash": "5a19893733f10bd16b24c492502202df8f9ccb8a162bed5a7108ed46d80ec763",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "此版位位於電子報開端（React 專區前），提供充裕廣告文案空間。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "29436d5c",
+      "source_content": "<details>\n  <summary>Ad constraints and example</summary>\n\n**Placement constraints:**\n\n- **Title**: 55 characters max, 1 link\n- **Body**: 800 characters max, max 2 links, max 3 line breaks, decent usage of bold/smileys/list\n- **Image**: horizontal banner - ideally 1200x600px\n\n<PrimaryAdExample />\n\n</details>",
+      "source_content_hash": "112b3f21152cd89054fef421fdb310b58e8d33c737cddcf451d11c259cd9d54d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_29436d5c"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "151776a7",
+      "source_content": "<SponsoringTabsFirstSponsor />",
+      "source_content_hash": "3340ccef78a0e1c4b4c384a8243680a78b24dbf56986ed44a60cb4d118664af0",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_151776a7"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b150092b",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_b150092b"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dc825187",
+      "source_content": "### 🥈 2nd sponsor {#sponsor-2nd}",
+      "source_content_hash": "571b306a29c4ba078b1c4ae4c37328b99a64224c62eaaa9cda0d5d27a4f47fc9",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### 🥈 次位贊助 {#sponsor-2nd}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "833ce577",
+      "source_content": "This placement appears in the middle of the newsletter, in between the React and React-Native sections.",
+      "source_content_hash": "69acd9f80c625fef6b6a68e87e5a2ac7e237520daab17811f7f4e3e216348ee3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "此版位位於電子報中段（React 與 React-Native 專區之間）。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "70c65cb9",
+      "source_content": "<details>\n    <summary>Ad constraints and example</summary>\n\n    **Placement constraints:**\n    - **Title**: 55 characters max, 1 link\n    - **Body**: 800 characters max, max 1 link, max 2 line breaks, decent usage of bold/smileys/list\n    - **Image**: horizontal banner - ideally 1200x600px\n\n    <SecondaryAdExample />\n\n</details>",
+      "source_content_hash": "6050028f74c50418a53c1cbd35540dca1597f8a9175209004920338c31b66b01",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_70c65cb9"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "de60fdf8",
+      "source_content": "<SponsoringTabsSecondSponsor />",
+      "source_content_hash": "0d204cfff12a9e2960760137d62e7a6c2cf4f6700c71d8bbb12a4bcfa2152e12",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_de60fdf8"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8ef9aa8b",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_8ef9aa8b"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8a5f54",
+      "source_content": "### ⚡️ Sponsored Link {#sponsor-link}",
+      "source_content_hash": "cf8f111cc05426beea9f72294942a54ab717dd4b1c0884a7b2407d72970edfbe",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### ⚡️ 贊助連結 {#sponsor-link}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "4033c370",
+      "source_content": "Sponsored Links are sponsored links inserted in the React or React-Native newsletter sections, alongside the regular content. **Subscribers can't miss them**, right between the section headlines and the list of links they are interested in.",
+      "source_content_hash": "69f3d3b54a663b2b9c60cce05c3b677f9e7061342c434db51c8a071809556110",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "贊助連結嵌入 React 或 React-Native 專區，與常規內容並列。位於專區標題與連結列表之間，**訂閱者絕不會錯過**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dfb6fc67",
+      "source_content": "There's up to 2 sponsored links per section. When there's more than 1 sponsored link, the 2nd link appears in the middle of the section.",
+      "source_content_hash": "6ca392655f46a97e620b38b28dd20d02754f711af9f52a95e6c61bfde028db1e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "每專區最多2個贊助連結。多於1個時，第二連結將出現在專區中段。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d638060b",
+      "source_content": "<details>\n    <summary>Ad constraints and example</summary>\n\n    **Placement constraints:**\n    - **Title**: 140 characters max\n    - **Title**: plain text, no bold/emojis/uppercase and other attention-grabbing hacks\n    - **Title**: respects the pattern `ProductName - Description` whenever possible\n\n    **Sponsored Links examples:**\n    - [Zero To Shipped - Master Fast-Paced Fullstack Development and finally ship that product](https://www.zerotoshipped.com/)\n    - [Ably Realtime Hackathon - Create a real-time React app, win $19,000 in prizes - from real-time dashboards to collaborative experiences!](https://ably.devpost.com/?utm_campaign=23-hackathon&utm_source=thisweekinreact&utm_medium=referral)\n    - [Blitz - Build React Native Apps Faster for iOS, Android, and Web!](https://www.blitz-rn.com/)\n    - [Moropo - build and scale open-source React Native tests 10x quicker](https://www.moropo.com/for-react-native?utm_source=newsletter&utm_medium=emails&utm_campaign=twir-20231018)\n\n</details>",
+      "source_content_hash": "ccb7c7b535c2366362d698a93fff4e5db2ade32dee3cc7dd41e8b249f28c7e0e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_d638060b"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d29a812c",
+      "source_content": "<SponsoringTabsQuickLinkSponsor />",
+      "source_content_hash": "66bf44f458229ecf31eef4f7cd5e48328aafc182bc23d9a416704848cb49d91e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_d29a812c"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6088d88d",
+      "source_content": "<br />",
+      "source_content_hash": "7a1718a3cc58b9857b9d014b1a18d3079f9e1351abfe90d4f864b6be42c34c9d",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_6088d88d"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d94ec07c",
+      "source_content": ":::tip[Use sponsored links to]\n\n- promote a React or React-Native product\n- promote a relevant **piece of content** such as a product tutorial blog post\n- improve your **SEO profile** with a new do-follow backlink\n- **remind** the audience of an already-promoted product and stay top-of-mind\n- get a **lower Cost-Per-Click**: favor number of clicks instead of brand awareness\n- drive traffic to your site for creating qualified retargeting look-alike audiences\n\n:::",
+      "source_content_hash": "59242b6d914ef3442873245a0531ae9b9443cf4dc80f974e3a7edf2776d7df13",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "zh-hant": ":::tip[使用贊助連結來]\n\n- 推廣 React 或 React-Native 產品\n- 宣傳相關的**內容作品**，例如產品教學部落格文章\n- 透過新的 do-follow 反向連結提升**SEO 表現**\n- **提醒**觀眾已推廣過的產品，保持品牌印象\n- 獲得**更低的單次點擊成本**：側重點擊量而非品牌曝光\n- 導流至網站以建立精準的再行銷類似受眾\n\n:::"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "846134ef",
+      "source_content": "### 🧑‍🎨 Custom",
+      "source_content_hash": "7b4370f8a0380b0c661c87d1f9300e1d0b2d52d582710bf68aa04b80b2f87ad5",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### 🧑‍🎨 自訂方案"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "53e725dc",
+      "source_content": "Reach out to [sponsor@thisweekinreact.com](mailto:sponsor@thisweekinreact.com?subject=Custom%20sponsorship%20offering) to explain us your marketing goals. We can create custom offers including:",
+      "source_content_hash": "4af3599d0aae389b5f95ab2d0f05d9ed03a85ed93fff0d5ee13d9c232c5de04f",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "請聯繫 [sponsor@thisweekinreact.com](mailto:sponsor@thisweekinreact.com?subject=Custom%20sponsorship%20offering) 說明您的行銷目標。我們可提供客製方案包括："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ce3bcadf",
+      "source_content": "- custom placement bundles with quantity discounts\n- sponsored placement at the top of the email on our occasional [React articles](/articles)\n- sponsored smart placement, tightly integrated in an article we write related to your product",
+      "source_content_hash": "d0b9f8c1e45eeed43ec45c1bb439fb8366ec56f5f782622b38d4b12762ba938a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 含批量折扣的自訂版位組合\n- 在我們不定期發佈的 [React 文章](/articles)頂部贊助位置\n- 與產品相關的專題文章深度整合的智能贊助版位"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "47d25dfc",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1d7c4366",
+      "source_content": "## Order process {#order-process}",
+      "source_content_hash": "5be8fa4c29f8ccb71f16654233b5c3a1b01e910cc9d1de7f7dc8ff7491ba56d1",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 訂購流程 {#order-process}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7fa65ec5",
+      "source_content": "The easiest way is to simply contact us, we'll get back to you asap, explaining everything:",
+      "source_content_hash": "39eb998d2e70a1e379e94ec59b40c333a574afd6557f0655822fc4c173b1e89d",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "最簡便方式是直接聯繫我們，我們將盡快回覆並說明所有細節："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "efec3fce",
+      "source_content": "- send an email at [**sponsor@thisweekinreact.com**](mailto:sponsor@thisweekinreact.com?subject=Sponsorships)\n- fill the [**contact form**](https://thisweekinreact.com/sponsor/form)",
+      "source_content_hash": "297c835ffbd4e142d50783b5e1b17c2064c83fadfcb40fb09babd13c3ef4413b",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 寄送郵件至 [**sponsor@thisweekinreact.com**](mailto:sponsor@thisweekinreact.com?subject=Sponsorships)\n- 填寫 [**聯繫表單**](https://thisweekinreact.com/sponsor/form)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f3fc8281",
+      "source_content": "### ⏱ Now {#now}",
+      "source_content_hash": "87d1884fdaa188c83274354f67b1b1c09881fac3f27a63dc743a1d465dd04550",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### ⏱ 立即下單 {#now}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "60e22db4",
+      "source_content": "Alternatively, you can also provide us with all the information we need straight away, and follow these steps:",
+      "source_content_hash": "0dd63fdec19c01f4d0d0344cb6982388cd38fdf5707a8d35848d61d25b37b897",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "您亦可直接提供所需資訊，並遵循以下步驟："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "af22f0d4",
+      "source_content": "- select your [placement](#placements) and number of issues\n- select available dates on the [public sponsorship calendar](https://thisweekinreact.com/calendar)\n- prepare your company details for invoicing\n- email us at [sponsor@thisweekinreact.com](mailto:sponsor@thisweekinreact.com?subject=Sponsorship)\n- acknowledge receipt of our invoice",
+      "source_content_hash": "42a33264a2336ed05a511eaf54cb270f98417bb75486ed8efcc3ef2d4ba94e1d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 選擇[版位類型](#placements)與期數\n- 於[公開贊助行事曆](https://thisweekinreact.com/calendar)選取可用日期\n- 準備公司開票資訊\n- 郵件聯繫 [sponsor@thisweekinreact.com](mailto:sponsor@thisweekinreact.com?subject=Sponsorship)\n- 確認收到我們的發票"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8517ac25",
+      "source_content": "**Useful additional information to provide**:",
+      "source_content_hash": "1a797840c39759c9677e18f1766bafaa98f30755409011e43bdda95007888ba7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**建議提供的補充資訊**："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7bae3301",
+      "source_content": "- let us know if you have strict calendar constraints, such as a fixed-date event\n- give us a list of companies you don't want to advertise alongside in the same issue",
+      "source_content_hash": "c3858e64669a0ebed65a21e7b99a8f3379e0e250923a2c74a06ff6fb68ffdd53",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 告知是否有嚴格時間限制（如固定日期活動）\n- 提供不希望同期出現的競業公司清單"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f527cbc4",
+      "source_content": "<details>\n\n<summary>We suggest using the following email template</summary>\n\n```txt\nHi\n\nWe would like to sponsor This Week In React.\n\nBooking informations:\n- Sponsorship placement: 1st sponsor\n- Number of issues: 4\n- Price: 1000€\n\nRequested dates (dd/MM/yyyy):\n- 06/09/2022\n- 27/09/2022\n- 04/10/2022\n- 11/10/2022\n\nAdditional information:\n- We are flexible for the dates: yes / no\n- Competitors we do not want to advertise alongside in the same issue: Company1, Company2...\n\nCompany details for invoicing:\n- Company Name: ACME Corp\n- Street: 42 Software Street,\n- Postal code: 94102\n- City: San Francisco\n- VAT / tax number (if applicable):\n- Contact email: marketing@acme.com\n\nIf this booking order is valid, please send us an invoice asap.\n\nWe will send the ad copy before the 31/08/2022\n```\n\n</details>",
+      "source_content_hash": "88a703d5bdb3b79f871fd079132d39f5f39ce0ad2621c86d11901f68a2f2c9ab",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_f527cbc4"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fe45329d",
+      "source_content": "### ⏳ Later {#later}",
+      "source_content_hash": "ca7d20eb2d5794715c0bc7003a60b67d1ae8a39875ea41eb9c369c42f72f0f08",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### ⏳ 後續流程 {#later}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e17d0554",
+      "source_content": "Once the order is complete:",
+      "source_content_hash": "0fe9396f813904ed01e8e1327e600259fdb4e4e2f730e398c99c4e54acbe0498",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "訂單完成後："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "56b7a03f",
+      "source_content": "- you pay the invoice under 15 days, before the publication date\n- we give you access to our sponsor portal\n- you provide the ad copy at least one week before the issue date\n- we review and validate the ad copy\n- we include the ad in the newsletters 🎉",
+      "source_content_hash": "94ff63f6040bdd88369b2b55cb127c4fc7b3378bddfe7a80716c85f9425f0718",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 於刊物發行前15天支付發票\n- 我們提供贊助商入口網站權限\n- 至少於發行日前一週提交廣告文案\n- 我們審核並確認廣告內容\n- 將廣告納入電子報中 🎉"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e7851494",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d67910b8",
+      "source_content": "## To sponsor or not?",
+      "source_content_hash": "6221d161f825b12c50e9c74073f1e2689f32e42442e74f459e7e0d91e4986e4c",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 是否適合贊助？"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b6abd1ad",
+      "source_content": "Make sure your ad is relevant to the target audience.",
+      "source_content_hash": "454986d06187e42fee7b73efaa50cd4dd9496510d432c5a30e21c428c897d7ea",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "請確保廣告與目標受眾相關。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a6f3574e",
+      "source_content": "### ✅ Good fit",
+      "source_content_hash": "317dd9fc72b2184cfa71998a3f194885f27a8c21391ef91ad7405be9fae365fc",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### ✅ 合適類型"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8048bacc",
+      "source_content": "- Reach **mid/senior React developers**\n- Reach **cross-platform enthusiasts**, using both **React and React-Native**\n- Reach **open-minded** developers using JavaScript, TypeScript, Node.js...\n- Reach **decision makers**: CTOs, tech leads, engineering managers...",
+      "source_content_hash": "df36b0d10ae2d270256fffaefa073b6d707e7f99a0bb4d92602448354d5deabf",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 觸及**中高階 React 開發者**\n- 接觸**跨平台技術愛好者**，同時使用 **React 與 React-Native**\n- 觸及**開放型**開發者（使用 JavaScript、TypeScript、Node.js...）\n- 觸及**決策者**：技術長、技術主管、工程經理..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dbd99edb",
+      "source_content": "### ❌ Bad fit",
+      "source_content_hash": "3f167c55203ee5dd3532d1dbdaeccd9434982c706b3e1ace7967d0cbfff56dfe",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "### ❌ 不合適類型"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "889194b9",
+      "source_content": "- Reach an audience of only **junior** React developers\n- Promote something **irrelevant** to React developers",
+      "source_content_hash": "ecb3618c56c215de700b9ca80397296b61b01b38fd0862e206fdd2a0776a2ee4",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 僅觸及**初階**React 開發者\n- 推廣與 React 開發者**無關**的內容"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ebcb8dc6",
+      "source_content": ":::info\n\nWe will tell you if we think your ad is not a good fit.\n\n:::",
+      "source_content_hash": "70507cca465a8e3f933ccbe4db86d19760c8b53bfa5a05e0e8b1ba4d725dee86",
+      "node_type": "containerDirective",
+      "translatable": true,
+      "translations": {
+        "zh-hant": ":::info\n\n若廣告不適合，我們將主動告知。\n\n:::"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "dbef9cf5",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fa461c90",
+      "source_content": "## Past Sponsors",
+      "source_content_hash": "1082e5044cf7667f8a090c82be62a5380fa85103214296ca1944dad7070a93cb",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 過往贊助商"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fe2c7f95",
+      "source_content": "**Previous sponsors include**: PostHog, Axiom, WorkOS, Clerk, Omlet, Highlight, FrontendMaster, Ably, AG Grid, Graphite Grid, NLUX, RevenueCat, Stream, PowerSync, Callstack, Software Mansion, Meilisearch, Storyblok, Retool, Sizzy, CoderPad, React-Bricks, Refine, Apryse, Suncel, React-Admin, TinaCMS, Checkly, SurveyJS, FrontendMasters, Flycode, WithFrame, Meteor, Hashnode, Sunsama, Moropo, RemixTape, Storetasker, Porkbun, Tripetto, MightyMeld, UXPin, Cambly, Nylas, Indy, TechTree...",
+      "source_content_hash": "646f508e8975acb49aa0e898b5eadaf1b000e005401f51fc4fb14821cde5ed67",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**過去的贊助商包括**：PostHog、Axiom、WorkOS、Clerk、Omlet、Highlight、FrontendMaster、Ably、AG Grid、Graphite Grid、NLUX、RevenueCat、Stream、PowerSync、Callstack、Software Mansion、Meilisearch、Storyblok、Retool、Sizzy、CoderPad、React-Bricks、Refine、Apryse、Suncel、React-Admin、TinaCMS、Checkly、SurveyJS、FrontendMasters、Flycode、WithFrame、Meteor、Hashnode、Sunsama、Moropo、RemixTape、Storetasker、Porkbun、Tripetto、MightyMeld、UXPin、Cambly、Nylas、Indy、TechTree..."
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "99b95415",
+      "source_content": "## FAQ",
+      "source_content_hash": "b07ed55203f0d88ebed77a69ea750333f4f62ec38193b32272aa2987376f7b86",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 常見問題"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "988e25db",
+      "source_content": "<details>\n  <summary>Why are some dates unavailable</summary>\n\nThis newsletter is mostly run by a [single person](https://twitter.com/sebastienlorber) who sometimes has to take vacations 😅\n\nI prefer to be pessimistic and open sponsorship slots once I'm sure I will be available.\n\n</details>",
+      "source_content_hash": "c0daf045886d6eef6a1b9b26cc5df473874b90930e2c19d1fc7f1236d42e805f",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_988e25db"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b6be16eb",
+      "source_content": "<details>\n  <summary>Are the sponsorship dates contractual?</summary>\n\nThe respect of sponsorship dates are a best effort and **not contractual**, unless we sign a contract.\n\nThis newsletter is mostly run by a [single person](https://twitter.com/sebastienlorber), and unexpected life events can happen.\n\nThat can lead to offset the upcoming sponsorship slots. In practice, your dates shouldn't be delayed by more than one issue/week.\n\nWe will let you know if publication dates are postponed, and look for a solution together in case your dates are not flexible.\n\n</details>",
+      "source_content_hash": "1d13830fecc5a3b9a70bb2d87638331d962c9efb963d1a72c66b375d3047cf8a",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_b6be16eb"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "9393abf4",
+      "source_content": "<details>\n  <summary>Do you provide tracking / reporting?</summary>\n\nWe don't provide any reporting by default, but you can ask for a basic reporting one week after the send.\n\nTo measure the result of your newsletter campaign, we suggest:\n\n- to add [`utm_` querystring parameters](https://en.wikipedia.org/wiki/UTM_parameters) (we automatically add some default utm parameters in case you don't provide them)\n- to provide your own tracking links to count clicks (please do not use [bit.ly](https://bit.ly/), it often flag emails as spam on some email clients, we prefer [dub.sh](https://dub.co/) using your own custom domain)\n\nIn the future, we will look into providing a good reporting automatically.\n\n</details>",
+      "source_content_hash": "89ce64c1cc6d9e553d948d54a1a201e01122880ea0a85a575bd6112e886a9896",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_9393abf4"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fddb336e",
+      "source_content": "<details>\n  <summary>Why are prices higher for a single issue?</summary>\n\nTo keep a positive ROI for us, we have to take into account the time it takes to manage sponsorships: sales, support, booking, invoicing, ad copy reviews, email integration...\n\n</details>",
+      "source_content_hash": "4c117a8c4c4e06291055a35c03dc9dc749db997d1f8b490eb4c4e452a08c8969",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_fddb336e"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e60524a4",
+      "source_content": "<details>\n  <summary>\nWhy is the sponsorship calendar public?\n  </summary>\n\nThis newsletter is being built in public, in a transparent way:\n\n- Check our [public spreadsheet](https://thisweekinreact.com/calendar)\n- The [Indie Hackers product page](https://thisweekinreact.com/ih) provides monthly reportings on turnover, growth...\n\nIn case you don't want your company's name to appear in our public calendar, please give us a company alias name.\n\n</details>",
+      "source_content_hash": "2433fc17cc8911a4df502d30dd196fee20f89a95f31b665b7ea5040c4f334427",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_e60524a4"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0866fb3e",
+      "source_content": "<details>\n    <summary>\n        What happens if I don't submit my ad copy on time?\n    </summary>\n\n    It is your responsibility to provide the ad copy on time, at least one week before the publication date.\n\n    Unless we have an agreement, it is not possible to cancel a sponsorship slot at the last minute. We will have to run your ad, no matter what.\n\n    In case we don't receive your ad copy on time, we will:\n    - use the copy of a previous ad, if possible\n    - fallback to a quick-and-dirty ad we create ourselves based on your ad landing page\n\n    For these reasons, we strongly recommend to submit your ad copy on time, including ad updates.\n\n</details>",
+      "source_content_hash": "24ffc337e537a8757312a22e02158e0a2a91700b235bb7c16a255efd43b3b3b5",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_0866fb3e"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "5b223f7f",
+      "source_content": "<details>\n    <summary>\n        What happens if my ad gets scheduled the same day as a company I don't like, or a competitor?\n    </summary>\n\n    Our newsletter has multiple placements, and it is possible that your ad gets matched with another ad that does not please you.\n\n    We understand that you might not want to broadcast your ad the same newsletter as your competitors. In practice, we think it is not a big deal, and many paid marketing channels (such as Google search ads) display competitors already.\n\n    However, in case there are companies and competitors you absolutely don't want to advertise alongside, we kindly ask you to be proactive and provide us with an exhaustive list of companies you do not want to be matched with.\n\n    If you don't provide such a list when booking a slot, we will do our best to not match you with a competitor on a best-effort basis based on our intuition, but there will be no guarantee.\n\n    Please keep in mind that our sales/booking team doesn't always have perfect knowledge of who's competing with whom, and to what extent. You know better than us whose companies you don't want to be matched with.\n\n</details>",
+      "source_content_hash": "930df995ff6fc742d5c3de21177f06402ac06a5cfb65a795b74202109f5d1906",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_5b223f7f"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-pages/sponsor.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.127425+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "786296582ced55e51e9a6f6be85a52327306175710d6e0f530f5c362fcc9e24e"
+  }
+}

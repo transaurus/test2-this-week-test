@@ -1,0 +1,551 @@
+{
+  "source_file_path_relative_to_docusaurus_root": "newsletter/221/index.mdx",
+  "source_file_content_hash": "df67960d143f58f2359701f97b896d4ca0a0b214fb2822f89da886f371b61736",
+  "segments": [
+    {
+      "segment_id": "58cfcc64",
+      "source_content": "---\nslug: /221\ntitle: \"This Week In React #221: State of React, React Router, Rsbuild, ProseMirror, Redux, React Hook Form, Base UI, RSC, React Admin | AI & RN, Expo, Strict DOM, Polygen, Ignite, New Arch, Radon, macOS, Universal RSC, Gesture Handler | TypeScript, Prettier, esbuild...\"\nauthors: [cyrilbo, matthieugicquel]\ndate: 02-12-2025\n---",
+      "source_content_hash": "d155c298d27e7919619f2aec1d9001b6d68428bef436b951365b4e02950d2a10",
+      "node_type": "yaml",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_58cfcc64"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "3fbbcc07",
+      "source_content": "Hi everyone!",
+      "source_content_hash": "74f0ad91d86b741b73b5f7286d6fbc16b75d9684d1474eb706eb0bed617ae030",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "大家好！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "7e5c5a39",
+      "source_content": "Cyril and Matthieu from [Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact) here 👋, standing in for Seb to bring you the latest news from React and React Native!",
+      "source_content_hash": "435da33c5d7b912e2748076fee1a554b0625b1890a3b6ab34a9bbe5514860ee5",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們是來自 [Theodo Apps](https://apps.theodo.com/en?utm_source=thisweekinreact) 的 Cyril 和 Matthieu 👋，代替 Seb 為大家帶來 React 和 React Native 的最新消息！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8d66f911",
+      "source_content": "This week we’ve been carefully reading the [State of React 2024](https://2024.stateofreact.com) survey results, and also found quite a few interesting articles. Things have been quieter when it comes to new releases.",
+      "source_content_hash": "2bca6a97e887c6875881765dd2a41c85f328bef9c30329a5f0a82cfcf85f5f76",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "本週我們仔細閱讀了 [State of React 2024](https://2024.stateofreact.com) 的調查結果，同時也發現了幾篇有趣的文章。在新版本發布方面則較為平靜。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ad8fd492",
+      "source_content": "Check our partner conf [App.js](https://appjs.co?utm_source=thisweekinreact), happening May 28-30 in 🇵🇱 Kraków! The biggest React Native and Expo-focused conference gives us a 15% discount with code \"TWIR\". Want to [submit a talk](https://docs.google.com/forms/u/1/d/e/1FAIpQLSeKSqxwrTdJJavOFgK-UA25K-hJPmZ5wnZDY7UUo9ULDuckkA/viewform?usp=send_form)? Hurry—CFP is closing soon!",
+      "source_content_hash": "a868641a11d5a86ce4d2f3712bc5bd883c8f3de7259a986e68045ad6de66f420",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "查看我們的合作會議 [App.js](https://appjs.co?utm_source=thisweekinreact)，將於 5 月 28 日至 30 日在 🇵🇱 克拉科夫舉行！這個最大的 React Native 和 Expo 主題會議提供我們 15% 的折扣，優惠碼為「TWIR」。想要[提交演講](https://docs.google.com/forms/u/1/d/e/1FAIpQLSeKSqxwrTdJJavOFgK-UA25K-hJPmZ5wnZDY7UUo9ULDuckkA/viewform?usp=send_form)？請加快腳步 — CFP 即將截止！"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6429a3aa",
+      "source_content": "<!-- truncate -->",
+      "source_content_hash": "2f8566552e3b92233817e9029faa608a0a7bde771612eb57367d8dad692fdcb4",
+      "node_type": "comment",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_6429a3aa"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6c991806",
+      "source_content": "import Support from \"@site/newsletter/_support.mdx\";",
+      "source_content_hash": "975eab953a89007801994cce815a49a9eaf91e0d762f605383f3f9df95d14355",
+      "node_type": "mdxjsEsm",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_6c991806"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8f488ab5",
+      "source_content": "<Support />",
+      "source_content_hash": "ccf388701b7274f8813ca04572ee33d7fea8a1765c79b588913ef27778ce9f8e",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_8f488ab5"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "fb3d50cd",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95b38f97",
+      "source_content": "## 💸 Sponsor {#sponsor1}",
+      "source_content_hash": "b0c7ddd1935ba7d1cc26f8b0a8c6a2e57ae0f17fca3daf2287090cc4f69266af",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor1}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ccc88b4c",
+      "source_content": "[![EAS Workflows: Fast, flexible React Native CI/CD](/emails/issues/221/eas-workflows.jpg)](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)",
+      "source_content_hash": "f5729ba870978732c5fd7240bb80fe62d74427444cae77ea327b95df41b81083",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![EAS Workflows：快速、靈活的 React Native CI/CD](/emails/issues/221/eas-workflows.jpg)](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d9172fa4",
+      "source_content": "**[EAS Workflows: Fast, flexible React Native CI/CD](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)**",
+      "source_content_hash": "6c98694e6f100e40cdc882f4b40655a529ed56850c82ee1af510daa5884a98a3",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[EAS Workflows：快速、靈活的 React Native CI/CD](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "26524352",
+      "source_content": "When you wake up in the morning how many different yaml files do you want to manage? With EAS Workflows, you have **everything in one place**.",
+      "source_content_hash": "88916083d1b3eac6b556075b7f60e4139bbb2e923fe0085c1794324f3124e644",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "當你早上醒來時，你想管理多少個不同的 yaml 文件？使用 EAS Workflows，你就能**將所有內容集中在一處**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "73ab96a3",
+      "source_content": "• Automate builds  \n• Run e2e tests  \n• Send previews  \n• Submit to stores  \n• GitHub triggers, lint checks, slack notifications...so much more",
+      "source_content_hash": "879273a4f3e9eddc6fb76d5bf2139f08542fc6342f82fc339fdd78c7a79f91af",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "• 自動化建置  \n• 執行端對端測試  \n• 發送預覽  \n• 提交至商店  \n• GitHub 觸發器、lint 檢查、Slack 通知……等等更多"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "135468ee",
+      "source_content": "With EAS Workflows you can **automate and sequence** all your builds/updates/submissions. Package up all the commands in a workflow and go drink a coffee. You deserve it.",
+      "source_content_hash": "c387299c96ecd3812877f6c1ae66498d4b5deaab81f8657f0f9afc744cd09b3b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "透過 EAS Workflows，你可以**自動化並排序**所有的建置/更新/提交。將所有指令打包到一個工作流程中，然後去喝杯咖啡。這是你應得的。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "33331f27",
+      "source_content": "[Start building and deploying faster for FREE today →](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)",
+      "source_content_hash": "63f215ab6a648f5ad7f78176c3ed8138a422caa61d6c2bd2c9108486b00df9a0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[立即免費開始更快地建置和部署 →](https://expo.dev/eas/workflows?utm_source=twir+newsletter&utm_medium=email&utm_campaign=twir-workflows&utm_id=TWIR)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "602e59c7",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "54268405",
+      "source_content": "## ⚛️ React {#react}",
+      "source_content_hash": "2145fe1efd741f148630db06a428a5b42620bb96ca154c435c71eebb891d0699",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## ⚛️ React {#react}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8af76f3d",
+      "source_content": "[![State of React 2024 - Survey Results](/emails/issues/221/state-of-react.png)](https://2024.stateofreact.com)",
+      "source_content_hash": "d7369a9ec00406c56035f067644c8aa113e7d44802deec6f81a8d53e4f452fb0",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![State of React 2024 - 調查結果](/emails/issues/221/state-of-react.png)](https://2024.stateofreact.com)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a9d49f92",
+      "source_content": "**[State of React 2024 - Survey Results](https://2024.stateofreact.com)**",
+      "source_content_hash": "18b59430449b3236e0a8c7024d0ff71f991830ae7fac2462350a201296a33733",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[State of React 2024 - 調查結果](https://2024.stateofreact.com)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a44047a5",
+      "source_content": "The results of State of React 2024 are out. It is a gold mine of information and we can’t possibly talk about everything here but here are a few highlights:",
+      "source_content_hash": "9df7dfab0fb88413bee7e9b724235c49803d37049bcfb10d2e76a46af6e8a0be",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "State of React 2024 的結果已經出爐。這是一個資訊金礦，我們無法在此談論所有內容，但以下是一些重點："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b4ef1e56",
+      "source_content": "- Of the “new” React features, Server Components are the most popular with 40% of the ~7000 respondents having “used it”, probably thanks to Next.js…\n- `forwardRef` is the most disliked React API, and is going away!\n- Have you heard about React’s Taint API? It looks like 80% of React devs have not, which is understandable since it’s experimental.\n- There’s not that much movement in the \\#1 spot: Next.js, TanStack Query, Axios, Jest, and Zod are still the most frequently used.\n- A few rising stars: Zustand and Vitest got more users, TanStack Start is \\#1 in interest even though almost no one has used it yet.",
+      "source_content_hash": "4ce68a517a58e25bd794016c8119d0db1e4f87776ddf3521596b160e611c4974",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 在「新」的 React 功能中，伺服器元件最受歡迎，約 7000 名受訪者中有 40% 表示「使用過」，這可能要歸功於 Next.js……\n- `forwardRef` 是最不受歡迎的 React API，而且即將消失！\n- 你聽說過 React 的 Taint API 嗎？看起來有 80% 的 React 開發者沒聽過，這可以理解，因為它還是實驗性的。\n- 排名第一的位置變化不大：Next.js、TanStack Query、Axios、Jest 和 Zod 仍然是最常用的工具。\n- 一些新星：Zustand 和 Vitest 的使用者增加了，TanStack Start 在興趣度上排名第一，儘管幾乎還沒有人使用過它。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "e536ea0d",
+      "source_content": "Seb wrote the [survey conclusion](https://2024.stateofreact.com/en-US/conclusion/) — be sure to check it out! 🙂",
+      "source_content_hash": "6f7e6f9e2642bcdc5e560db580212d989db160435b68e15d6f13b49cbca62097",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "Seb 撰寫了[調查結論](https://2024.stateofreact.com/en-US/conclusion/) — 記得去看看！🙂"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "b760ab3f",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "24c174ca",
+      "source_content": "- 💸 [Meet Harmony - An open source library for composing consistent and highly performant platforms from independent business features](https://bit.dev/blog/meet-harmony-a-practical-solution-for-composability?utm_source=This-Week-In-React&utm_id=7&utm_medium=newsletter)\n- 👀 [@rsbuild/plugin-react-router](https://github.com/rspack-contrib/rsbuild-plugin-react-router): Not yet on npm, but may soon be a faster alternative to Vite for bundling React Router apps in framework mode.\n- 📜 [How React Router works under the hood](https://tigerabrodi.blog/how-react-router-works-under-the-hood): From initial request to hydration, client-side navigation and actions.\n- 📜 [Why I rebuilt ProseMirror’s renderer in React](https://smoores.dev/post/why_i_rebuilt_prosemirror_view/): Prosemirror (a text editor) manages its own state and virtual DOM, and it did not play well with React. This is a deep dive on the issues it caused, and the solution: using React directly instead of trying to “bridge the gap”.\n- 📜 [Promises across the void: Streaming data with RSC](https://edspencer.net/2024/7/12/promises-across-the-void-react-server-components): React can send not-yet resolved promises from the server and finish awaiting them on the client. This article from a few months ago explains how this works.\n- 📜 [What Do We Do with You, Old React?](https://www.manuelsanchezdev.com/blog/what-to-do-with-old-react-upgrading-to-modern-react): Tips on upgrading codebases that still use class components and “old” Redux.\n- 📜 [We Replaced Our React Frontend with Go and WebAssembly](https://dagger.io/blog/replaced-react-with-go): They explain why this was the right choice for them, but probably don’t do this at home.\n- 📜 [Handling Relationships in React Admin](https://marmelab.com/blog/2025/02/06/handling-relationships-in-react-admin.html): The included components (`<ReferenceField>` and its friends) usually do what you need, but this also explains how to build custom ones.\n- 📜 [Create React App Officially Deprecated Amid React 19 Compatibility Issues](https://socket.dev/blog/create-react-app-officially-deprecated?utm_medium=feed): If you’ve not heard about this, catch up with this recap.\n- 📜 [How to start a React Project in 2025](https://www.robinwieruch.de/react-starter/)\n- 📜 [Master Redux Action Best Practices & Make Debugging Easy](https://janhesters.com/blog/master-redux-action-best-practices-and-make-debugging-easy)\n- 📦 [React Hook Form resolvers 4.0](https://github.com/react-hook-form/resolvers/releases/tag/v4.0.0): Adds a [standard-schema](https://github.com/standard-schema/standard-schema) resolver, so you can switch easily between validation libraries that conform to the standard-schema specification.\n- 📦 [Base UI v1.0.0 alpha 6](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.6): This eagerly awaited collection of unstyled components is making its way through the alpha phase\n- 🎥 [Jack Herrington \\- Proof That React With RSCs is 2X Faster\\!](https://www.youtube.com/watch?v=AJvbnNFHx0A)\n- 🎙️ [Rocket Ship 60 \\- Module Federation, RSCs & Universal Apps with Jack Herrington](https://share.transistor.fm/s/144c4947)",
+      "source_content_hash": "832f818fdbb37ee9f1a7e1f0c5fcb0c260cb4b6784c5b806a73ac12a52e63c5a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [認識 Harmony - 一個開源函式庫，用於從獨立業務功能組成一致且高效能的平台](https://bit.dev/blog/meet-harmony-a-practical-solution-for-composability?utm_source=This-Week-In-React&utm_id=7&utm_medium=newsletter)\n- 👀 [@rsbuild/plugin-react-router](https://github.com/rspack-contrib/rsbuild-plugin-react-router)：尚未發布至 npm，但可能很快成為框架模式下打包 React Router 應用程式的更快替代方案，取代 Vite。\n- 📜 [React Router 底層運作原理](https://tigerabrodi.blog/how-react-router-works-under-the-hood)：從初始請求到水合處理、客戶端導航與操作的全過程。\n- 📜 [為何我在 React 中重建 ProseMirror 的渲染器](https://smoores.dev/post/why_i_rebuilt_prosemirror_view/)：Prosemirror（文字編輯器）管理自身狀態和虛擬 DOM，與 React 相容性不佳。本文深入探討相關問題及解決方案：直接使用 React 而非嘗試「橋接差異」。\n- 📜 [跨越虛空的承諾：使用 RSC 串流資料](https://edspencer.net/2024/7/12/promises-across-the-void-react-server-components)：React 能從伺服器傳送尚未解析的 promise 並在客戶端完成等待。數月前的文章解釋此機制原理。\n- 📜 [老舊 React 該何去何從？](https://www.manuelsanchezdev.com/blog/what-to-do-with-old-react-upgrading-to-modern-react)：升級仍使用類別元件和「舊版」Redux 程式碼庫的技巧。\n- 📜 [我們用 Go 和 WebAssembly 取代了 React 前端](https://dagger.io/blog/replaced-react-with-go)：解釋為何這是他們的合理選擇，但請勿輕易模仿。\n- 📜 [在 React Admin 中處理關聯關係](https://marmelab.com/blog/2025/02/06/handling-relationships-in-react-admin.html)：內建元件（`<ReferenceField>` 等）通常能滿足需求，本文同時說明如何建立自訂元件。\n- 📜 [Create React App 因 React 19 相容問題正式棄用](https://socket.dev/blog/create-react-app-officially-deprecated?utm_medium=feed)：若未聽聞此事，可透過本文回顧瞭解。\n- 📜 [2025 年如何啟動 React 專案](https://www.robinwieruch.de/react-starter/)\n- 📜 [掌握 Redux Action 最佳實踐 & 簡化除錯流程](https://janhesters.com/blog/master-redux-action-best-practices-and-make-debugging-easy)\n- 📦 [React Hook Form resolvers 4.0](https://github.com/react-hook-form/resolvers/releases/tag/v4.0.0)：新增 [standard-schema](https://github.com/standard-schema/standard-schema) 解析器，可輕鬆切換符合標準規範的驗證函式庫。\n- 📦 [Base UI v1.0.0 alpha 6](https://github.com/mui/base-ui/releases/tag/v1.0.0-alpha.6)：這套備受期待的無樣式元件集正處於 alpha 階段\n- 🎥 [Jack Herrington - 實證 RSC 版 React 效能提升兩倍！](https://www.youtube.com/watch?v=AJvbnNFHx0A)\n- 🎙️ [Rocket Ship 第 60 集 - 與 Jack Herrington 探討模組聯邦、RSC 與通用應用](https://share.transistor.fm/s/144c4947)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "95729a46",
+      "source_content": "<SubscribeFormEmbed placement=\"middle\" />",
+      "source_content_hash": "eaa981a2bbab3e5ce47079c224ec6b180243b0ff962626e0303a55bdc1980160",
+      "node_type": "mdxJsxFlowElement",
+      "translatable": false,
+      "translations": {
+        "zh-hant": "@@untranslatable_placeholder_95729a46"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0170c674",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8a9b6c26",
+      "source_content": "## 💸 Sponsor {#sponsor2}",
+      "source_content_hash": "03846d29870cbb4676b304bf402d17aa134f1d4c27db780745c0252cf356bd40",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 💸 贊助商 {#sponsor2}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a1fa5396",
+      "source_content": "[![Optimizing Vercel Costs: Real-World Strategies](/emails/issues/221/pagepro.jpg)](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter&utm_medium=email&utm_campaign=this-week-in-react-expert-session&utm_id=this-week-in-react)",
+      "source_content_hash": "430cc3c33bf130e0ab2151c72786afc33d1b1adc7c78ab446faf2d74e0e49faf",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![優化 Vercel 成本：真實世界策略](/emails/issues/221/pagepro.jpg)](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter&utm_medium=email&utm_campaign=this-week-in-react-expert-session&utm_id=this-week-in-react)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "ec619944",
+      "source_content": "**[Optimizing Vercel Costs: Real-World Strategies](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter&utm_medium=email&utm_campaign=this-week-in-react-expert-session&utm_id=this-week-in-react)**",
+      "source_content_hash": "c74edfc0b5b41ad7d91e038751e3c0f05aa5c6d0560dfe3bbf11e83a12e5f06e",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**[優化 Vercel 成本：真實世界策略](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter&utm_medium=email&utm_campaign=this-week-in-react-expert-session&utm_id=this-week-in-react)**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "2547a6bb",
+      "source_content": "Deploying Next.js apps on Vercel is easy, but optimizing hosting costs? That’s a different story.",
+      "source_content_hash": "fa50cb557dfd5631d2e9afcdf505618073057c6ca54a0b8dedb5318c70edcfb7",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "在 Vercel 上部署 Next.js 應用程式很簡單，但優化託管成本？那就是另一回事了。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0750bfa1",
+      "source_content": "Join Chris Lojniewski and Jakub Dakowicz of Pagepro on **February 20th, 11 AM EST** for a deep analysis of Vercel cost optimization strategies. Learn how to identify what drives your costs and reduce them with **code-level optimizations** like adjusting prefetching to avoid excessive function calls, choosing proper rendering methods, and trimming unnecessary data transfers.",
+      "source_content_hash": "b0386400d4dd86bcf0d31dd710138f3da9baa305bcae250bb61f01848deb8284",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "加入 Pagepro 的 Chris Lojniewski 和 Jakub Dakowicz，於**2月20日美東時間上午11點**深入分析 Vercel 成本優化策略。學習如何識別成本驅動因素，並透過**程式碼層級優化**來降低成本，例如調整預取機制避免過度函數呼叫、選擇合適的渲染方法，以及削減不必要的資料傳輸。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "86348f98",
+      "source_content": "They’ll also show you how to **minimize reliance on Vercel’s premium features** with feature externalization - offloading analytics, image optimization, and password protection. Plus, they’ll break down when enterprise pricing is worth considering and when you’re better off with alternatives. **Stop overpaying, and [register today](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter&utm_medium=email&utm_campaign=this-week-in-react-expert-session&utm_id=this-week-in-react)**.",
+      "source_content_hash": "73f8dc0197e468e02c6e3f4cc45a2517249cdf5505ce12ef56da3e1c0d3a4f27",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "他們還將展示如何透過功能外部化（將分析、圖片優化和密碼保護等任務卸載）**減少對 Vercel 高階功能的依賴**。此外，他們將解析何時值得考慮企業級定價方案，以及何時選擇替代方案更為合適。**立即停止過度支付，[今天就報名參加](https://pagepro.co/nextjs-hosting-cost-optimization?utm_source=newsletter&utm_medium=email&utm_campaign=this-week-in-react-expert-session&utm_id=this-week-in-react)**。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f6b04a59",
+      "source_content": "## 📱 React-Native {#react-native}",
+      "source_content_hash": "e47537b9fd461d0e558bb123495dc21b5108001b90b1bc4843e80488afcd6c99",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 📱 React-Native {#react-native}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a311e967",
+      "source_content": "[![Bolt x Expo](/emails/issues/221/bolt-expo.jpg)](https://expo.dev/blog/bolt-expo-integration-announcement)",
+      "source_content_hash": "d6da5fa2c6a290acda37cbcaccc962f4a4ad660a724604c915e7d66d2c908434",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![Bolt x Expo](/emails/issues/221/bolt-expo.jpg)](https://expo.dev/blog/bolt-expo-integration-announcement)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "eb51d107",
+      "source_content": "**Building apps with AI**",
+      "source_content_hash": "017cad7c5c9f7dc43914ed085a4e463377ac81a3ba93182b635b55877e75fe06",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "**用 AI 建置應用程式**"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "1862c5fe",
+      "source_content": "We don't talk too much about LLMs in this newsletter (we guess you already hear about it more than enough 😅) but with all the announcements this week we thought it was a good time to give you an update.",
+      "source_content_hash": "c6f4a5d6330442502bc7e6d3c70cdf35b9b5440ee75d96e6701d899946a86330",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "我們在本通訊中較少討論大型語言模型（猜測各位已聽得夠多了 😅），但鑑於本週眾多公告，我們認為是時候提供最新動態。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "6ca4479f",
+      "source_content": "The big news: **[Bolt and Expo have partnered](https://expo.dev/blog/bolt-expo-integration-announcement)** to add (React-)Native mobile apps support to Bolt. Right now you can preview your AI-generated apps on the web, but you need to download the code to go further. They plan to add an integration with EAS to deploy to production in the future.",
+      "source_content_hash": "cc2e24136bd57e6c8cbb8528fb3d6dc40ca7a895b0345b1c924627448f5fc46b",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "重大消息：**[Bolt 與 Expo 已達成合作](https://expo.dev/blog/bolt-expo-integration-announcement)**，將為 Bolt 添加 (React-)Native 行動應用支援。目前您可在網頁上預覽 AI 生成的應用程式，但需下載程式碼才能進一步開發。他們計劃未來整合 EAS 以實現生產環境部署。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "a2c0166e",
+      "source_content": "Some competitors also had things to announce:",
+      "source_content_hash": "a2858b839e26001c406451f361fdc298f8a0d4b2cf9a1c6fc3db0a37776fcac6",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "部分競爭對手也有新動態："
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cd1d0fe2",
+      "source_content": "- There's now an official Expo template in Replit, and [a demo video you can watch](https://www.youtube.com/watch?v=mTm_dCF53qk). Replit has an app, so you can build apps from an app.\n- A startup called a0 [launched a v0-like service](https://a0.dev) to generate RN apps.",
+      "source_content_hash": "4291ab20c0f9a3c8add305c86de184239bc863f083cbe3beee41cfcaa3c6d163",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- Replit 現已提供官方 Expo 模板，[並可觀看示範影片](https://www.youtube.com/watch?v=mTm_dCF53qk)。Replit 擁有專屬應用程式，讓您能透過應用程式建置應用程式。\n- 新創公司 a0 [推出類 v0 服務](https://a0.dev)，專門生成 React Native 應用程式。"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "04837130",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "38417f80",
+      "source_content": "- 💸 [Codemagic - a great App Center alternative for React Native devs! 8x faster builds, CodePush, automated distribution. 1-month free trial!](https://codemagic.io/migration-from-app-center/?utm_source=newsletter&utm_medium=email&utm_campaign=app_center_this_week_react)\n- 🐦 [This is not React Native](https://x.com/mrousavy/status/1889358737930068051): Mark is working on a new UI library based based React, JSI and NitroModules but **without** React Native. It uses SwiftUI and Compose under the hood.\n- 🐦 [DeepSeek R1 running locally in a React App:](https://x.com/SzymonRybczak/status/1889412928694002004) The repo is open-sourced [here](https://github.com/callstackincubator/ai). Please note that it is highly experimental and may add up to 1GB to your app.\n- 👀 [Expo Universal React Server Components + AI chat app demo](https://github.com/EvanBacon/expo-ai): Evan Bacon just open-sourced the app he demoed on various conf talks.\n- 💬 [React Strict DOM - Production readiness and adoption](https://github.com/facebook/react-strict-dom/discussions/270): Nicolas Gallagher shared an interesting update, mentioning RSD is used in production by Meta.\n- 🗓 [React Universe Conf](https://www.reactuniverseconf.com/?utm_campaign=RUC2025&utm_source=TWIRpartnership&utm_content=savethedate) \\- 🇵🇱 Wrocław - 2-4 September. Call for Papers is now open! Get a 10% discount with code \"TWIR\".\n- 📜 [Bringing WebAssembly to React Native With Polygen](https://www.callstack.com/blog/bringing-webassembly-to-react-native-with-polygen): Polygen allows WebAssembly to run in React Native with near-native performance by compiling modules to native code, overcoming iOS JIT restrictions. This is a novel approach compared to existing solutions like react-native-webassembly, which relied on Wasm interpretation.\n- 📜 [Increase your Expo-nent power with Ignite Generators](https://expo.dev/blog/increase-your-expo-power-with-ignite-generators): Ignite is a well known React Native app boilerplate, but it can be leveraged as a generator in any React Native project, including Expo apps, to automate the creation of screens, components, and state slices.\n- 📜 [How does React Native's New Architecture affect performance?](https://dev.to/anishamalde/how-does-react-natives-new-architecture-affect-performance-1dkf): Anisha conducted a benchmark revealing performance improvements of up to 1000ms when enabling the New Architecture for a React Native TV app, where performance is crucial.\n- 📜 [Bridgeless Native Development](https://www.callstack.com/blog/bridgeless-native-development): Short summary of the methods used over the years to bridge native code (NativeModule, TurboModule, NitroModule).\n- 📜 [How to Profile Native Code in React Native Using Tracy](https://www.callstack.com/blog/how-to-profile-native-code-react-native-with-tracy)\n- 📜 [How to build a live activity with Expo, SwiftUI and React Native](https://christopher.engineering/en/blog/live-activity-with-react-native/)\n- 📦 [Radon IDE v1.3](https://github.com/software-mansion/radon-ide/releases/tag/v1.3.0): built-in Network Inspector, Redux DevTools support, debugger improvements.\n- 📦 [React Native Gesture Handler v2.23](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.23.0): The old API will be deprecated.\n- 📦 [React Native macOS v0.77](https://github.com/microsoft/react-native-macos/releases/tag/react-native-macos%400.77.0)\n- 📦 [React Native Reanimated Carousel v4.0](https://rn-carousel.dev/migration-v4): Container Styling, Minimum Scroll Distance, Fixed Direction Scrolling, Progress Change Handling, Enhanced Pagination Components, Improved Web Support.\n- 🎙️ [RNR 321 \\- Expo DOM with Evan Bacon](https://www.reactnativeradio.com/episodes/rnr-321-expo-dom-with-evan-bacon)",
+      "source_content_hash": "d42f4b47276335111fcaaf7ee860154f7cf19eb624515481f18ecd04e0026c0a",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 💸 [Codemagic - React Native 開發者的絕佳 App Center 替代方案！建置速度快 8 倍，具備 CodePush 和自動化分發功能。1 個月免費試用！](https://codemagic.io/migration-from-app-center/?utm_source=newsletter&utm_medium=email&utm_campaign=app_center_this_week_react)\n- 🐦 [這不是 React Native](https://x.com/mrousavy/status/1889358737930068051)：Mark 正在開發基於 React、JSI 和 NitroModules 的新 UI 函式庫，但**不包含** React Native。底層採用 SwiftUI 和 Compose 技術。\n- 🐦 [DeepSeek R1 在 React App 中本地運行：](https://x.com/SzymonRybczak/status/1889412928694002004) 儲存庫已在[此處](https://github.com/callstackincubator/ai)開源。請注意此為高度實驗性專案，可能使應用程式增加最多 1GB 的體積。\n- 👀 [Expo 通用 React Server Components + AI 聊天應用程式示範](https://github.com/EvanBacon/expo-ai)：Evan Bacon 開源了他在多場研討會中示範的應用程式。\n- 💬 [React Strict DOM - 生產環境就緒與採用情況](https://github.com/facebook/react-strict-dom/discussions/270)：Nicolas Gallagher 分享了重要更新，指出 Meta 已在生產環境使用 RSD。\n- 🗓 [React Universe 大會](https://www.reactuniverseconf.com/?utm_campaign=RUC2025&utm_source=TWIRpartnership&utm_content=savethedate) \\- 🇵🇱 弗羅茨瓦夫 - 9月2-4日。徵稿活動現已開放！使用代碼 \"TWIR\" 可享 9 折優惠。\n- 📜 [透過 Polygen 將 WebAssembly 帶入 React Native](https://www.callstack.com/blog/bringing-webassembly-to-react-native-with-polygen)：Polygen 透過將模組編譯為原生代碼，讓 WebAssembly 在 React Native 中以接近原生的效能運行，克服 iOS JIT 限制。此方法相較於依賴 Wasm 解釋的 react-native-webassembly 等方案更為創新。\n- 📜 [使用 Ignite Generators 強化 Expo 能力](https://expo.dev/blog/increase-your-expo-power-with-ignite-generators)：Ignite 是知名 React Native 應用程式樣板，也可作為生成器用於任何 React Native 專案（含 Expo 應用），自動化建立畫面、元件和狀態片段。\n- 📜 [React Native 新架構如何影響效能？](https://dev.to/anishamalde/how-does-react-natives-new-architecture-affect-performance-1dkf)：Anisha 的基準測試顯示，在效能至關重要的 React Native TV 應用中啟用新架構後，效能提升高達 1000 毫秒。\n- 📜 [無橋接器原生開發](https://www.callstack.com/blog/bridgeless-native-development)：簡要總結多年橋接原生代碼的方法演進（NativeModule、TurboModule、NitroModule）。\n- 📜 [使用 Tracy 分析 React Native 原生代碼](https://www.callstack.com/blog/how-to-profile-native-code-react-native-with-tracy)\n- 📜 [使用 Expo、SwiftUI 和 React Native 建立即時活動](https://christopher.engineering/en/blog/live-activity-with-react-native/)\n- 📦 [Radon IDE v1.3](https://github.com/software-mansion/radon-ide/releases/tag/v1.3.0)：內建網路檢查器、支援 Redux DevTools、除錯器改進。\n- 📦 [React Native Gesture Handler v2.23](https://github.com/software-mansion/react-native-gesture-handler/releases/tag/2.23.0)：舊版 API 即將棄用。\n- 📦 [React Native macOS v0.77](https://github.com/microsoft/react-native-macos/releases/tag/react-native-macos%400.77.0)\n- 📦 [React Native Reanimated Carousel v4.0](https://rn-carousel.dev/migration-v4)：容器樣式設定、最小捲動距離、固定方向捲動、進度變化處理、增強型頁碼元件、改進網頁支援。\n- 🎙️ [RNR 第 321 集 \\- 與 Evan Bacon 探索 Expo DOM](https://www.reactnativeradio.com/episodes/rnr-321-expo-dom-with-evan-bacon)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "566c958b",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "c35e5786",
+      "source_content": "## 🔀 Other {#other}",
+      "source_content_hash": "69595cc39799880bc0d1fc8a3110e4c08af4c6092069c95b37b577cd95ab04c8",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🔀 其他 {#other}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "d8460b5b",
+      "source_content": "- 👀 [`require(esm)` has been backported to Node.js 20](https://github.com/nodejs/node/pull/56927)\n- 📜 [TypeScript: the `satisfies` operator](https://2ality.com/2025/02/satisfies-operator.html): Confirming object shape correctness without altering types, validating optional properties in objects, checking the structure of enum-like objects, ensuring proper object keys for APIs and more…\n- 📜 [There are a lot of ways to break up long tasks in JavaScript](https://macarthur.me/posts/long-tasks/)\n- 📜 [Style-observer: JS to observe CSS property changes, for reals](https://lea.verou.me/blog/2025/style-observer/)\n- 📜 [Optimizing Images for Web Performance](https://frontendmasters.com/blog/optimizing-images-for-web-performance/)\n- 📜 [CSS Custom Functions experiments in Chrome Canary](https://www.bram.us/2025/02/09/css-custom-functions-teaser/)\n- 📦 [Prettier 3.5 - TS config file, `objectWrap` option, `experimentalOperatorPosition` option](https://prettier.io/blog/2025/02/09/3.5.0)\n- 📦 [esbuild 0.25 - Various fixes and some backwards-incompatible changes](https://github.com/evanw/esbuild/releases/tag/v0.25.0)",
+      "source_content_hash": "82a5ca728dfaa992f1068d23ff452b766da04259d4d2e7ffa901856401fc359d",
+      "node_type": "list",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "- 👀 [`require(esm)` 已回溯移植至 Node.js 20](https://github.com/nodejs/node/pull/56927)\n- 📜 [TypeScript: `satisfies` 運算子](https://2ality.com/2025/02/satisfies-operator.html)：確認物件形狀正確性而不改變類型、驗證物件中的可選屬性、檢查枚舉類物件的結構、確保 API 的物件鍵正確性等等…\n- 📜 [JavaScript 中有多種拆分長任務的方法](https://macarthur.me/posts/long-tasks/)\n- 📜 [Style-observer：真正用 JavaScript 觀察 CSS 屬性變化](https://lea.verou.me/blog/2025/style-observer/)\n- 📜 [網頁效能優化圖像指南](https://frontendmasters.com/blog/optimizing-images-for-web-performance/)\n- 📜 [Chrome Canary 中的 CSS 自訂函數實驗](https://www.bram.us/2025/02/09/css-custom-functions-teaser/)\n- 📦 [Prettier 3.5 - TS 設定檔、`objectWrap` 選項、`experimentalOperatorPosition` 選項](https://prettier.io/blog/2025/02/09/3.5.0)\n- 📦 [esbuild 0.25 - 多項修復及部分向後不兼容變更](https://github.com/evanw/esbuild/releases/tag/v0.25.0)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "8144f6e8",
+      "source_content": "---",
+      "source_content_hash": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "node_type": "thematicBreak",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "---"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "0d5321b7",
+      "source_content": "## 🤭 Fun {#fun}",
+      "source_content_hash": "166530139247b303ad0d04e8034fd1df64222c87cf13c7acbb021f2245251698",
+      "node_type": "heading",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "## 🤭 趣聞 {#fun}"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "cfeb9eb1",
+      "source_content": "[![React npm screenshot with downdloads at 0](/emails/issues/221/meme.jpg)](https://x.com/andrii_sherman/status/1887492134426558849)",
+      "source_content_hash": "7c101c40f6068348912f88584ca5cfb05583a0cbbbb11ee0d11dbdab8d2d33df",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "[![React npm 截圖顯示下載量為 0](/emails/issues/221/meme.jpg)](https://x.com/andrii_sherman/status/1887492134426558849)"
+      },
+      "invalid_translations": {}
+    },
+    {
+      "segment_id": "f7e6e884",
+      "source_content": "See ya! 👋",
+      "source_content_hash": "517b37004b38f06801a35a9ca72a37d8c5ee185d507f65ca8d864ece0d0170ef",
+      "node_type": "paragraph",
+      "translatable": true,
+      "translations": {
+        "zh-hant": "再會！👋"
+      },
+      "invalid_translations": {}
+    }
+  ],
+  "target_i18n_subpath": "docusaurus-plugin-content-blog-newsletter/221/index.mdx",
+  "last_updated_timestamp": "2025-06-23T14:12:36.132818+00:00",
+  "schema_version": "1.0",
+  "translated_versions": {
+    "zh-hant": "df67960d143f58f2359701f97b896d4ca0a0b214fb2822f89da886f371b61736"
+  }
+}
