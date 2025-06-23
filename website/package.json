@@ -13,7 +13,7 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "build-locale:zh-hant": "docusaurus build --locale zh-hant"
+    "build-locale:zh-hant": "docusaurus build"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
